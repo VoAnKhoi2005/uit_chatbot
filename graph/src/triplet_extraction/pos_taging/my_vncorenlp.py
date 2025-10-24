@@ -23,7 +23,7 @@ vncorenlp_pos_map = {
 
 def init_vncorenlp(vncorenlp_dir, annotators=None):
     if annotators is None:
-        annotators = ["wseg", "pos", "ner", "parse"]
+        annotators = ["wseg"] #["wseg", "pos", "ner", "parse"]
     if "rdrsegmenter" not in globals():
         import py_vncorenlp
         rdrsegmenter = py_vncorenlp.VnCoreNLP(
@@ -99,7 +99,7 @@ def process_sentence(text: str, rdrsegmenter, verbose: bool = True) -> dict:
     results["pos_annotation"] = pos_annot
 
     # 5. Triplet extraction
-    concepts = []
+    triplets = []
     concept1_tokens = []
     concept2_tokens = []
     relation_tokens = []
@@ -112,8 +112,8 @@ def process_sentence(text: str, rdrsegmenter, verbose: bool = True) -> dict:
                     " ".join(relation_tokens),
                     " ".join(concept2_tokens)
                 )
-                if triplet not in concepts:  # chỉ thêm nếu chưa tồn tại
-                    concepts.append(triplet)
+                if triplet not in triplets:  # chỉ thêm nếu chưa tồn tại
+                    triplets.append(triplet)
 
                 concept1_tokens = concept2_tokens
                 concept2_tokens = []
@@ -127,17 +127,17 @@ def process_sentence(text: str, rdrsegmenter, verbose: bool = True) -> dict:
 
     # Append last triplet if complete
     if concept1_tokens and relation_tokens and concept2_tokens:
-        concepts.append((
+        triplets.append((
             " ".join(concept1_tokens),
             " ".join(relation_tokens),
             " ".join(concept2_tokens)
         ))
 
-    results["concepts"] = concepts
+    results["concepts"] = triplets
 
     if verbose:
         print("\n5. Extracted triplets:")
-        for c in concepts:
+        for c in triplets:
             print(c)
 
     return results

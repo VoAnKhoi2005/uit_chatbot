@@ -1,9 +1,9 @@
 from neo4j import GraphDatabase
 
 
-def init_neo4j(uri, username, password, db_name):
+def init_neo4j(uri, username, password):
     driver = GraphDatabase.driver(uri, auth=(username, password))
-    return driver.session(database=db_name)
+    return driver
 
 def insert_triplet(tx, concept1, relation, concept2, c1_metadata=None, c2_metadata=None, rel_metadata=None):
     query = """
@@ -37,5 +37,38 @@ def insert_triplet(tx, concept1, relation, concept2, c1_metadata=None, c2_metada
         rel_metadata=rel_metadata or {}
     )
 
-def delete_all(tx):
-    tx.run("MATCH (n) DETACH DELETE n")
+
+def insert_triplet_batch(tx, triplets_list, metadata):
+    """
+    Chèn một danh sách các triplet (batch) trong một giao dịch duy nhất.
+    'triplets_list' là list của dict: [{'c1': 'a', 'r': 'b', 'c2': 'c'}, ...]
+    'metadata' là dict chứa thông tin tài liệu.
+    """
+    # Sử dụng apoc.coll.toSet để đảm bảo metadata không bị trùng lặp
+    query = """
+    UNWIND $triplets as triplet
+    WITH triplet WHERE triplet.c1 IS NOT NULL AND triplet.r IS NOT NULL AND triplet.c2 IS NOT NULL
+
+    MERGE (c1:Concept {name: triplet.c1})
+    ON CREATE SET c1 = $metadata, c1.document_id = [$metadata.document_id], c1.title = [$metadata.title], c1.document_number = [$metadata.document_number]
+    ON MATCH SET
+        c1.document_number = apoc.coll.toSet(coalesce(c1.document_number, []) + [$metadata.document_number]),
+        c1.title           = apoc.coll.toSet(coalesce(c1.title, []) + [$metadata.title]),
+        c1.document_id     = apoc.coll.toSet(coalesce(c1.document_id, []) + [$metadata.document_id])
+
+    MERGE (c2:Concept {name: triplet.c2})
+    ON CREATE SET c2 = $metadata, c2.document_id = [$metadata.document_id], c2.title = [$metadata.title], c2.document_number = [$metadata.document_number]
+    ON MATCH SET
+        c2.document_number = apoc.coll.toSet(coalesce(c2.document_number, []) + [$metadata.document_number]),
+        c2.title           = apoc.coll.toSet(coalesce(c2.title, []) + [$metadata.title]),
+        c2.document_id     = apoc.coll.toSet(coalesce(c2.document_id, []) + [$metadata.document_id])
+
+    MERGE (c1)-[r:RELATION {name: triplet.r}]->(c2)
+    ON CREATE SET r.source_document_ids = [$metadata.document_id]
+    ON MATCH SET
+        r.source_document_ids = apoc.coll.toSet(coalesle(r.source_document_ids, []) + [$metadata.document_id])
+    """
+    tx.run(query, triplets=triplets_list, metadata=metadata)
+
+def delete_all(session):
+    session.run("MATCH (n) DETACH DELETE n")

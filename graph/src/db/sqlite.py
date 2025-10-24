@@ -29,7 +29,7 @@ def extract_from_sqlite(cursor, id: int, include_parent=False):
 
     return results[::-1]
 
-def extract_random_from_sqlite(cursor, include_parent=True):
+def extract_random_diem_from_sqlite(cursor, include_parent=True):
     cursor.execute("SELECT * FROM laws WHERE title LIKE '%Điểm%'")
     rows = cursor.fetchall()
     if not rows:
@@ -53,3 +53,20 @@ def extract_random_from_sqlite(cursor, include_parent=True):
             current = parent_dict
 
     return results[::-1]
+
+def extract_random_from_sqlite(cursor):
+    cursor.execute("SELECT * FROM laws ORDER BY RANDOM() LIMIT 1")
+    row = cursor.fetchone()
+    if not row:
+        return None
+
+    columns = [col[0] for col in cursor.description]
+    return dict(zip(columns, row))
+
+def extract_all_from_sqlite(cursor, table_name):
+    query = f"SELECT * FROM {table_name}"
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    if not rows:
+        return None
+    return rows
