@@ -64,9 +64,13 @@ def extract_random_from_sqlite(cursor):
     return dict(zip(columns, row))
 
 def extract_all_from_sqlite(cursor, table_name):
-    query = f"SELECT * FROM {table_name}"
-    cursor.execute(query)
+    cursor.execute(f"SELECT * FROM {table_name}")
     rows = cursor.fetchall()
     if not rows:
-        return None
-    return rows
+        return []
+
+    # Get column names from the cursor description
+    columns = [desc[0] for desc in cursor.description]
+
+    # Convert each row (tuple) to a dict
+    return [dict(zip(columns, row)) for row in rows]

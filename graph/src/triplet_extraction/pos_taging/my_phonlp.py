@@ -47,9 +47,9 @@ def process_sentence(df):
     relation_groups = [[]]
 
     verb_deprel_tag = ['root', 'vmod', 'nmod', 'x', 'conj', 'prd', 'tpc', 'dep']
-    remove_POS_tag = ["R", "CH", "E", "L"]
+    remove_POS_tag = ["R", "CH", "E", "L", "M"]
     coord_POS_tag = ["C"]
-    coord_words = {"và", "hoặc", ","}
+    coord_words = {"và", "hoặc", ",", ";"}
 
     def ids_to_string(id_list):
         id_list = sorted(set(id_list))

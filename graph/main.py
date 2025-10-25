@@ -15,6 +15,7 @@ def main():
     )
     vncorenlp_client = init_vncorenlp(r"E:\Github\LawAssistant\triplet_extraction\VnCoreNLP-1.2")
     phoNLP_model = phonlp.load(save_dir=r"E:\Github\uit_chatbot\graph\phonlp")
+    synonym_dict = load_synonym_dict(r"E:\Github\uit_chatbot\graph\listSameKey.txt")
 
     try:
         with neo4j_driver.session(database="ontology") as session:
@@ -27,10 +28,10 @@ def main():
 
             for i, row in enumerate(tqdm(rows, desc="Đang xử lý văn bản", unit="văn bản")):
                 sentence = row['content']
-
                 if not sentence or not sentence.strip():
                     continue
 
+                sentence = clean_text(sentence)
                 segmented_text = vncorenlp_client.word_segment(sentence)
                 annotation = phoNLP_model.annotate(text=segmented_text[0])
                 df = parsing_result(annotation)
@@ -43,7 +44,11 @@ def main():
                     }
 
                     triplets_list = [
-                        {"c1": c1, "r": r, "c2": c2}
+                        {
+                            "c1": normalize_term(c1, synonym_dict),
+                            "r":  normalize_term(r, synonym_dict),
+                            "c2": normalize_term(c2, synonym_dict)
+                        }
                         for (c1, r, c2) in result
                         if c1 and r and c2
                     ]
@@ -68,7 +73,6 @@ def main():
         if 'neo4j_driver' in locals():
             neo4j_driver.close()
         print("\nĐã đóng tất cả kết nối. Hoàn thành.")
-
 
 if __name__ == "__main__":
     main()
