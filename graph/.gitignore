@@ -1,1 +1,13 @@
 *.env
+
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+data/
+
+*.pt
+
+listSameKey.txt

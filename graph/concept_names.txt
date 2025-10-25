@@ -1,0 +1,4023 @@
+A153
+A19
+A32
+B167
+B169
+B177
+B179
+C10
+C100
+C105
+C160
+C181
+C182
+C188
+C194
+C2
+C228
+C293
+C71
+C78
+C79
+C8
+C83
+C84
+C85
+D108
+D28
+D3
+D65
+E134
+F120
+F14
+F207
+F263
+F273
+F275
+F278
+F66
+F8
+G126
+G148
+G154
+G163
+G164
+G179
+G191
+G194
+G196
+G230
+G267
+G281
+G285
+G293
+G43
+G63
+G71
+G72
+G89
+G9
+H112
+H113
+H185
+H213
+H230
+H30
+H38
+H4
+H42
+H43
+H5
+H67
+H73
+H83
+H90
+I10
+I101
+I133
+I136
+I140
+I141
+I2
+I3
+I42
+I43
+I45
+I7
+I70
+I73
+J114
+J138
+J157
+J182
+J210
+J219
+J220
+J225
+J226
+J227
+J228
+J229
+J231
+J235
+J33
+J35
+J41
+J47
+J60
+J80
+J82
+K205
+K32
+K59
+K71
+K79
+K84
+L10
+L106
+L144
+L145
+L151
+L174
+L179
+L207
+L226
+L233
+L242
+L259
+L264
+L267
+L29
+L32
+L34
+L36
+L54
+L83
+L84
+M103
+M106
+M107
+M109
+M120
+M123
+M125
+M126
+M129
+M131
+M132
+M135
+M136
+M15
+M152
+M157
+M159
+M16
+M164
+M18
+M189
+M19
+M209
+M213
+M221
+M52
+M75
+M76
+M80
+M83
+M91
+M93
+M94
+M96
+M97
+N101
+N110
+N127
+N133
+N14
+N152
+N153
+N165
+N167
+N17
+N18
+N183
+N190
+N193
+N194
+N213
+N219
+N221
+N223
+N227
+N228
+N230
+N235
+N255
+N257
+N258
+N269
+N275
+N293
+N3
+N302
+N303
+N304
+N305
+N308
+N311
+N327
+N333
+N335
+N336
+N351
+N357
+N365
+N366
+N367
+N37
+N44
+N45
+N5
+N54
+N6
+N61
+N66
+N7
+N8
+N80
+N89
+N91
+N94
+N99
+NEW01
+an ninh quốc gia
+an ninh trật tự an toàn giao thông đường bộ
+an ninh trật tự theo
+an ninh tuyến giao thông đường bộ
+an toàn bến xe
+an toàn chợ
+an toàn công trình
+an toàn công trình công cộng tập trung đông người
+an toàn công trình quá trình khai thác
+an toàn giao thông
+an toàn giao thông an toàn công trình
+an toàn giao thông công trình đường bộ khai thác
+an toàn giao thông xảy tuyến đường trung ương
+an toàn giao thông đường
+an toàn giao thông đường bộ
+an toàn hiện trường vụ tai nạn giao thông đường bộ
+an toàn khai thác
+an toàn khi
+an toàn khi vận hành
+an toàn khu vực
+an toàn khu vực thi công đường bộ
+an toàn khu vực tổ chức
+an toàn khu vực đông dân cư
+an toàn kỹ thuật
+an toàn nơi
+an toàn nơi trên
+an toàn nơi đó
+an toàn quá trình khai thác
+an toàn sử dụng
+an toàn sử dụng an toàn
+an toàn trường hợp
+an toàn trường hợp sau đây
+an toàn trường hợp đó
+an toàn vận hành
+ban chỉ huy phòng chống thiên tai
+ban ngày khi
+ban đầu thực hiện công việc đó
+barie trạm
+biên bản nghiệm thu có
+biên bản nghiệm thu hoàn thành công trình đưa khai thác
+biến dạng công trình đường bộ
+biến dạng nghiêng lún nứt chuyển vị
+biển báo
+biển báo hiệu
+biển báo hiệu chỉ dẫn
+biển báo hiệu đường bộ
+biển số xe
+biển số xe cơ giới
+biển số xe cơ giới xe máy chuyên dùng
+biển số xe cơ giới xe máy chuyên dùng trường hợp biển số xe bị mờ hỏng
+biển số xe loại khác
+biển số xe nền màu trắng
+biển số xe nền màu trắng chữ
+biển số xe nền màu trắng chữ màu đỏ số màu đen
+biển số xe nền màu vàng chữ
+biển số xe nền màu xanh chữ
+biển số xe nền màu đỏ
+biển số xe quy định điểm khoản điều
+biển số xe quy định điểm khoản điều này
+biển số xe theo
+biển số xe theo mã định danh
+biển số xe thời hạn tháng ngày
+biển số xe trúng
+biển số xe trúng đấu giá
+biển số xe tạm thời khi phải
+biển số xe tạm thời trường hợp quy định điều luật này
+biển số xe đúng quy định pháp luật
+biển số xe được
+biển số đăng ký
+biểu hiện xuống cấp bảo đảm an toàn
+biểu hiện xuống cấp ảnh hưởng an toàn
+biểu hiện xuống cấp ảnh hưởng an toàn sử dụng
+biểu mẫu điện tử
+biểu mẫu điện tử bản
+biểu mẫu điện tử bản kê linh kiện chính sử dụng
+biểu mẫu điện tử giấy đề nghị
+biểu mẫu điện tử giấy đề nghị mẫu số phụ lục ban hành
+biểu mẫu điện tử giấy đề nghị thẩm định thiết kế
+biểu mẫu điện tử khi người
+biểu mẫu điện tử trường hợp nộp
+biểu mẫu điện tử trường hợp nộp thông qua hệ thống dịch vụ công trực tuyến
+biểu mẫu điện tử trường hợp nộp thông qua hệ thống dịch vụ công trực tuyến bản
+biểu mẫu điện tử văn bản đề nghị
+biện pháp bảo vệ mặt đường
+biện pháp bảo đảm an toàn giao thông đường bộ
+biện pháp giải quyết thẩm quyền
+biện pháp khắc phục
+biện pháp khắc phục cơ quan
+biện pháp khắc phục kịp thời
+biện pháp nghiệp vụ theo
+biện pháp ngăn chặn theo
+biện pháp phòng ngừa
+biện pháp sau đây
+biện pháp sửa chữa
+biện pháp xử lý
+biện pháp xử lý kịp thời quá trình khai thác
+biện pháp đảm bảo an toàn giao thông công trình
+biện pháp đảm bảo giao thông khẩn cấp tuyến đường
+bom mìn vật liệu
+bánh chạy động cơ
+bánh trở
+báo cáo báo cáo tình hình hoạt động
+báo cáo báo cáo định kỳ tháng cuối năm
+báo cáo báo cáo định kỳ tháng đầu năm
+báo cáo bộ giao thông vận tải ngày tháng kỳ báo cáo báo cáo định kỳ tháng cuối năm
+báo cáo bộ giao thông vận tải ngày tháng kỳ báo cáo báo cáo định kỳ tháng đầu năm
+báo cáo công tác phòng
+báo cáo công tác quản lý
+báo cáo cơ quan
+báo cáo cấp
+báo cáo doanh thu dịch vụ
+báo cáo dịch vụ bưu chính cơ quan
+báo cáo dữ liệu phân tích
+báo cáo fax
+báo cáo fax cơ quan
+báo cáo hoạt động trạm
+báo cáo hàng năm
+báo cáo hàng năm ngày tháng kỳ báo cáo
+báo cáo hình thức văn bản giấy
+báo cáo hệ thống thư điện tử cơ quan
+báo cáo kinh tế kỹ thuật
+báo cáo kinh tế kỹ thuật sửa chữa công trình
+báo cáo kinh tế kỹ thuật đầu tư
+báo cáo kiểm tra
+báo cáo kết quả
+báo cáo kết quả kiểm định
+báo cáo kết quả quan trắc
+báo cáo kết quả thử nghiệm chất lượng an toàn kỹ thuật
+báo cáo kết quả thử nghiệm cơ sở thử nghiệm
+báo cáo nghiên cứu khả thi dự án
+báo cáo nghiên cứu khả thi dự án đầu tư theo phương thức ppp
+báo cáo nghiên cứu khả thi đầu tư
+báo cáo năm
+báo cáo phương thức
+báo cáo phương thức fax
+báo cáo phương thức gửi trực tiếp
+báo cáo phương thức khác quy định pháp luật cơ quan
+báo cáo phương thức khác theo
+báo cáo phương thức khác theo quy định pháp luật cơ quan
+báo cáo phương thức phương thức khác theo
+báo cáo phương thức quy định
+báo cáo phương thức sau
+báo cáo sở giao thông vận tải
+báo cáo theo mẫu biểu số liệu báo cáo
+báo cáo tháng đầu năm
+báo cáo thời gian
+báo cáo thử nghiệm thể hiện kiểu loại linh kiện nhập khẩu
+báo cáo trực tiếp cơ quan
+báo cáo tên
+báo cáo tình hình
+báo cáo tình hình hoạt động
+báo cáo tình hình hoạt động vận tải đường bộ địa phương
+báo cáo tần suất định kỳ tháng
+báo cáo việc
+báo cáo việc quản lý
+báo cáo được thể hiện hình thức văn bản giấy
+báo cáo định kỳ hàng năm
+báo cáo định kỳ hàng quý
+báo cáo định kỳ hàng quý ngày tháng cuối quý
+báo cáo định kỳ hàng quý tình hình chất lượng công trình đường bộ được
+báo cáo định kỳ hàng tháng
+báo cáo định kỳ quý
+báo cáo định kỳ tháng cuối năm
+báo cáo định kỳ tháng cuối năm ngày tháng năm tiếp theo
+báo cáo định kỳ tháng đầu năm
+báo cáo định kỳ tháng đầu năm ngày tháng kỳ báo cáo
+báo hiệu biển báo
+báo hiệu cảnh báo nguy hiểm
+báo hiệu khác dành người
+báo hiệu màu đỏ điểm cuối cùng hàng hoá
+báo hiệu màu đỏ điểm đầu
+báo hiệu màu đỏ điểm đầu hàng hoá
+báo hiệu đường bộ
+báo hiệu đường bộ theo thứ tự ưu tiên trên dưới
+bên giao
+bên liên quan
+bên nhận
+bình đồ duỗi thẳng
+băng ghi hình tình trạng công trình
+bản cam kết cơ sở sản xuất việc kiểu loại xe đề nghị
+bản cam kết việc kiểu loại sản phẩm kiểm tra
+bản cam kết việc kiểu loại xe đề nghị
+bản chính
+bản chính hồ sơ trường hợp
+bản chính hồ sơ đăng ký
+bản chính khi nộp trực tiếp
+bản chính trường hợp
+bản chính trường hợp nộp trực tiếp
+bản chính tài liệu hướng dẫn
+bản chính tài liệu sau
+bản chính tài liệu thiết kế trường hợp nộp trực tiếp
+bản dạng điện tử
+bản dạng điện tử hồ sơ đăng ký
+bản dạng điện tử trường hợp nộp
+bản dạng điện tử trường hợp nộp thông qua hệ thống dịch vụ công trực tuyến
+bản dạng điện tử trường hợp nộp thông qua hệ thống dịch vụ công trực tuyến bản vẽ kỹ thuật kèm thông số sản phẩm
+bản gốc bản vẽ hoàn công
+bản gốc giấy biên nhận còn hiệu lực chi nhánh ngân hàng nước ngoài
+bản gốc giấy biên nhận còn hiệu lực trường hợp xe được
+bản gốc giấy biên nhận còn hiệu lực tổ chức tín dụng
+bản gốc giấy tờ xác nhận tổ chức tín dụng
+bản hồ sơ thiết kế trường hợp cơ sở thiết kế khác cơ sở sản xuất
+bản hồ sơ thiết kế trường hợp cơ sở thiết kế là cơ sở sản xuất
+bản kê linh kiện chính sử dụng
+bản kê linh kiện chính sử dụng lắp ráp động cơ
+bản sao có
+bản sao có xác nhận cơ sở sản xuất
+bản sao có xác thực
+bản sao có xác thực cơ sở thiết kế được
+bản sao giấy
+bản sao giấy đề nghị thẩm định thiết kế mẫu phụ lục ban hành
+bản sao hồ sơ
+bản sao trường hợp
+bản sao tài liệu
+bản sao điện tử
+bản sao điện tử có giá trị pháp lý
+bản sao điện tử có giá trị pháp lý khi nộp
+bản sao điện tử có giá trị pháp lý trường hợp nộp
+bản sao điện tử cơ sở thiết kế
+bản sao điện tử giấy chứng nhận thẩm định thiết kế
+bản sao điện tử hồ sơ
+bản sao điện tử trường hợp
+bản sao điện tử trường hợp nộp
+bản thuyết minh
+bản thuyết minh ký hiệu số đóng sản phẩm
+bản thuyết minh thiết kế kỹ thuật
+bản thông số tính năng kỹ thuật tổng thành hệ thống liên quan nội dung tính toán thiết kế
+bản thống kê tổng thành hệ thống sản xuất nước
+bản tính bản vẽ thuyết minh
+bản tính bản vẽ thuyết minh theo
+bản tính hồ sơ thiết kế
+bản vẽ hoàn công
+bản vẽ hồ sơ thiết kế
+bản vẽ kỹ thuật
+bản vẽ kỹ thuật hồ sơ thiết kế được cơ quan
+bản vẽ thi công
+bản điện tử bản thuyết minh thiết kế kỹ thuật
+bản điện tử bản vẽ kỹ thuật hồ sơ thiết kế
+bản đăng ký
+bảng mục phụ lục này
+bảng trên cơ quan nhà nước
+bảo hiểm thất nghiệp
+bảo hiểm xã hội bảo hiểm y tế bảo hiểm thất nghiệp
+bảo hiểm xã hội bảo hiểm y tế bảo hiểm thất nghiệp kinh phí công đoàn
+bảo hiểm y tế
+bảo vệ môi trường
+bất hợp lý tổ chức giao thông cơ quan cảnh sát giao thông
+bến người
+bến người được
+bến phà
+bến phà cầu phao hầm đường bộ
+bến phà đường bộ
+bến phà đường bộ hệ thống quốc lộ
+bến phương tiện giao thông đường bộ
+bến xe khách
+bệnh từng hạng giấy phép lái xe
+bộ giao thông
+bộ giao thông vận tải
+bộ giao thông vận tải phê duyệt
+bộ giao thông vận tải phê duyệt kế hoạch bảo trì điều chỉnh
+bộ giao thông vận tải tổng cục đường bộ việt nam
+bộ hồ sơ
+bộ hồ sơ cơ quan
+bộ hồ sơ kỹ thuật
+bộ hồ sơ kỹ thuật bản sao
+bộ hồ sơ thiết kế
+bộ hồ sơ thiết kế theo
+bộ hồ sơ thiết kế trường hợp
+bộ hồ sơ thiết kế đầy đủ
+bộ hồ sơ đăng ký
+bộ hồ sơ đề nghị
+bộ khi
+bộ luật này
+bộ luật số
+bộ ngành
+bộ phận công trình
+bộ phận công trình bị
+bộ phận công trình mình thiết kế cùng hồ sơ thiết kế
+bộ phận công trình đường bộ khác thiết kế
+bộ phận gián tiếp
+bộ phận gián tiếp đơn vị
+bộ phận hạng mục công trình
+bộ phận hạng mục kết cấu thiết bị
+bộ phận lao động trực tiếp
+bộ phận liên quan
+bộ phận liên quan ca trực được
+bộ qua đường
+bộ trưởng bộ công an
+bộ trưởng bộ giao thông vận tải
+bộ trưởng bộ xây dựng
+bộ tài chính
+bộ tài liệu theo
+bộ tài liệu thiết kế dạng điện tử
+bộ xe lăn người khuyết tật
+bộ xây dựng
+bộ được
+bụi bẩn suốt quá trình vận chuyển đường
+ca khoảng thời gian sau khi
+ca làm việc
+ca làm việc bình thường đêm
+ca làm việc đơn vị
+camera giám sát điều hoà không khí
+cao hơn
+cao năng lực lực lượng
+cbtctdd năm
+cbthtkt năm
+cbtnăm tổng chi phí
+cbtvd
+chi nhánh ngân hàng nước ngoài
+chi phí bảo dưỡng
+chi phí bảo trì
+chi phí bảo trì hạng mục công trình dân dụng năm
+chi phí bảo trì khác năm cộng chi phí
+chi phí bảo trì năm
+chi phí bảo trì năm có thay thế thiết bị
+chi phí bảo trì năm tính toán
+chi phí bảo trì thứ thời hạn hợp đồng dự án
+chi phí bảo trì vòng đời
+chi phí bảo trì vòng đời công trình trạm
+chi phí bộ phận gián tiếp theo
+chi phí bộ phận phục vụ gián tiếp khác
+chi phí cần thiết khác
+chi phí dự phòng yếu tố trượt giá giai đoạn vận hành khai thác
+chi phí dự án
+chi phí hạng mục an toàn giao thông
+chi phí hội họp
+chi phí khi cần thiết
+chi phí khác
+chi phí khác liên quan
+chi phí kiểm toán thẩm tra
+chi phí liên quan khác theo
+chi phí mua sắm
+chi phí máy móc thiết bị văn phòng
+chi phí mục này người
+chi phí nhân công theo hệ số bình quân
+chi phí nhân công trực tiếp
+chi phí này
+chi phí phần này
+chi phí quy định điểm khoản điều nghị định số
+chi phí quản lý
+chi phí quản lý bảo trì vận hành công trình đường bộ
+chi phí quản lý bảo trì vận hành công trình đường bộ sử dụng vốn nhà nước
+chi phí quản lý chủ sở hữu
+chi phí quản lý vận hành khai thác
+chi phí quản lý vận hành khai thác bảo trì công trình
+chi phí rà
+chi phí sửa chữa
+chi phí thiết bị
+chi phí thiết bị lắp đặt hạng mục công trình hạ tầng kỹ thuật
+chi phí thông tin
+chi phí thực hiện
+chi phí thực hiện bảo trì kế hoạch bảo trì hàng năm
+chi phí thực hiện công tác sau
+chi phí thực hiện công việc bảo trì
+chi phí thực hiện công việc bảo trì quản lý
+chi phí thực hiện công việc bảo trì quản lý vận hành công trình
+chi phí tiền lương
+chi phí tiền lương chi phí nhân công giá đơn giá sản phẩm dịch vụ công sử dụng kinh phí ngân sách nhà nước doanh nghiệp
+chi phí trực tiếp thực hiện
+chi phí tư vấn
+chi phí tư vấn phục vụ
+chi phí tư vấn phục vụ bảo trì công trình đường bộ quy định
+chi phí tư vấn phục vụ bảo trì công trình đường bộ theo quy định
+chi phí văn phòng phẩm
+chi phí vận hành
+chi phí vận hành khai thác công trình đường bộ
+chi phí xây dựng
+chi phí đi lại
+chi phí điện nước
+chi phí đào tạo nâng cao trình độ nhân viên
+chi phí đó chi phí vận hành ca ngày làm việc
+chi phí đúng quy định nhà nước
+chi phí đầu tư
+chi phí đền bù
+chi phí địa bàn
+chi phí đồng phục nhân viên
+chi tiết quy phạm tiêu chuẩn quy chuẩn kỹ thuật
+chiều cao lớn
+chiều cao tối đa hàng hoá phải
+chiều rộng đủ làn xe cơ giới
+chuyên môn
+chuyển vị công trình đường bộ
+chân chống
+chính quyền địa phương nơi gần chủ sở hữu
+chính đáng theo
+chướng ngại vật phía trước
+chướng ngại vật đường
+chất kích thích khác
+chất lượng
+chất lượng an toàn kiểu loại xe
+chất lượng an toàn kỹ thuật
+chất lượng bảo trì
+chất lượng công trình
+chất lượng công trình phục vụ công tác bảo trì
+chất lượng công trình vào
+chất lượng công trình xây dựng
+chất lượng công trình đường bộ
+chất lượng công tác
+chất lượng công tác bảo dưỡng được
+chất lượng công tác bảo trì theo đúng quy định pháp luật
+chất lượng cơ sở sản xuất
+chất lượng cơ sở sản xuất còn hiệu lực
+chất lượng giai đoạn vận hành
+chất lượng hiện trạng công trình
+chất lượng hiện trạng công trình phục vụ việc
+chất lượng hình thức trực tiếp hình thức
+chất lượng kiểu loại cơ quan nhà nước
+chất lượng nhập khẩu mẫu quy định phụ lục iiic kèm thông tư này
+chất lượng phục vụ công tác
+chất lượng sản phẩm xây dựng bộ phận công trình đường bộ
+chất lượng theo
+chất lượng xuất xưởng
+chất đó người
+chế độ báo cáo
+chế độ báo cáo theo
+chế độ báo cáo tổng cục đường bộ việt nam
+chế độ người lao động bộ phận gián tiếp
+chế độ người lao động bộ phận gián tiếp theo
+chỉ dẫn hướng dẫn tư vấn thiết kế nhà cung cấp thiết bị công nghệ
+chỉ dẫn hướng dẫn đó
+chỉ dẫn kỹ thuật thi công
+chỉ dẫn kỹ thuật vận hành
+chỉ dẫn nhà sản xuất
+chỉ huy ca
+chỉ số nhám
+chỉ tiêu kỹ thuật
+chỗ người lái xe
+chỗ người lái xe chỗ
+chủ phương tiện
+chủ sở hữu
+chủ sở hữu công trình
+chủ sở hữu công trình đường bộ
+chủ sở hữu xe
+chủ thể liên quan quá trình vận hành khai thác bảo trì công trình đường bộ
+chủ trương danh mục bổ sung thực hiện công việc quy định điểm khoản điều này
+chủ xe
+chủ xe cơ giới xe máy chuyên dùng
+chủ xe đề nghị
+chủ đầu tư
+chủ đầu tư nhà thầu thi công
+chủ đầu tư đơn vị liên quan
+chức năng công dụng đặc biệt
+chức năng cảnh báo
+chức năng khi
+chức năng đặc biệt
+chứng minh thư công vụ cơ quan
+chứng minh thư ngoại giao cơ quan đó
+chứng minh thư ngoại giao tổ chức đó
+chứng nhận chất lượng an toàn kỹ thuật
+chứng nhận đăng ký xe
+chứng từ
+chứng từ xuất
+cuối ca
+cá nhân khác
+cá nhân liên quan
+cá nhân liên quan công tác
+cá nhân liên quan vụ tai nạn giao thông đường bộ
+cá nhân quy định điểm a
+cá nhân thực hiện kiểm định
+cá nhân thực hiện quan trắc công trình
+cá nhân trúng
+cách thức thực hiện
+cách thức trình tự nội dung quản lý
+cán bộ nhân viên
+có làn đường giảm tốc người
+có quy trình bảo trì
+công cụ hỗ trợ
+công dụng đặc biệt
+công nghệ liên quan trật tự an toàn giao thông đường bộ
+công nghệ phục vụ
+công nhân làm nhiệm vụ duy tu
+công năng
+công suất
+công suất động cơ
+công suất động cơ lớn hơn kw
+công suất động cơ điện dưới kw
+công suất động cơ điện kw
+công suất động cơ điện kw dưới kw
+công suất động cơ điện kw trở
+công suất động cơ điện trên kw
+công thức cbthtkt năm gxdhtkt
+công thức sau
+công thức sau cbtctdd năm gxdctdd
+công thức sau cbtnăm cbtctdd năm cbthtkt năm
+công trình biển
+công trình bảo đảm an toàn
+công trình bến phà đường bộ
+công trình bị hư hỏng
+công trình bộ phận công trình đường bộ
+công trình cscct
+công trình công cộng tập trung đông người
+công trình công nghiệp vật liệu xây dựng được
+công trình cấp cấp đặc biệt hệ thống đường trung ương
+công trình cấp i
+công trình cấp điện
+công trình cấp đặc biệt
+công trình cầu hầm đường bộ hồ sơ lý lịch cầu
+công trình dân dụng sau thuế
+công trình dân dụng theo
+công trình dân dụng thuế
+công trình dân dụng được
+công trình dự án
+công trình dự án theo
+công trình dự án theo quy định hợp đồng dự án
+công trình dự án theo quy định thông tư này
+công trình hoàn thành
+công trình hạ tầng kỹ thuật theo
+công trình hạ tầng kỹ thuật đô thị
+công trình hạng mục công trình công việc
+công trình hầm có
+công trình khi hư hỏng được
+công trình khi số liệu quan trắc có dấu hiệu bất thường
+công trình khi số liệu quan trắc vượt giá trị giới hạn cho phép
+công trình khác
+công trình khác theo
+công trình mình
+công trình mình quản lý
+công trình mình quản lý khi
+công trình mất an toàn giao thông
+công trình nhà thầu quản lý
+công trình phụ trợ khác đường bộ
+công trình quy định pháp luật
+công trình quy định thời hạn dự kiến
+công trình quá trình khai thác
+công trình sửa chữa kế hoạch bảo trì phê duyệt
+công trình theo
+công trình thiết bị lắp đặt công trình
+công trình thiết kế
+công trình thiết yếu phạm vi hành lang an toàn đường bộ
+công trình trường hợp hư hỏng
+công trình trường hợp quy định điểm khoản điều này
+công trình trường hợp thuộc
+công trình trạm
+công trình tương tự
+công trình xây dựng khẩn cấp
+công trình xây dựng theo
+công trình xây dựng đây
+công trình xây dựng đưa sử dụng
+công trình đúng công năng
+công trình đúng công suất công năng
+công trình đưa
+công trình đưa khai thác quy định khoản điều thẩm quyền phê duyệt
+công trình đường bộ
+công trình đường bộ chủ sở hữu
+công trình đường bộ công trình quy định phụ lục ban hành
+công trình đường bộ công trình đường bộ
+công trình đường bộ công trình đường bộ khai thác
+công trình đường bộ cơ sở hạ tầng phục vụ gồm nhà làm việc
+công trình đường bộ hiệu quả
+công trình đường bộ hàng năm
+công trình đường bộ hàng năm được phê duyệt
+công trình đường bộ hình thức đối tác công tư
+công trình đường bộ hư hỏng xuống cấp
+công trình đường bộ hệ thống
+công trình đường bộ hệ thống thu thập
+công trình đường bộ hệ thống xử lý gồm hệ thống lưu trữ
+công trình đường bộ hệ thống đường trung ương
+công trình đường bộ hệ thống đường trung ương thẩm quyền
+công trình đường bộ khai thác
+công trình đường bộ khai thác có yêu cầu đặc thù
+công trình đường bộ khi
+công trình đường bộ khi bàn giao cơ quan
+công trình đường bộ mình quản lý
+công trình đường bộ nguồn vốn khác
+công trình đường bộ năm ngày tháng
+công trình đường bộ phạm vi quản lý
+công trình đường bộ phạm vi được
+công trình đường bộ phục vụ việc
+công trình đường bộ quy định điểm khoản
+công trình đường bộ quá trình khai thác
+công trình đường bộ theo
+công trình đường bộ theo pháp luật
+công trình đường bộ theo quy chuẩn tiêu chuẩn kỹ thuật quy trình bảo trì
+công trình đường bộ theo đúng quy định pháp luật
+công trình đường bộ thi công
+công trình đường bộ thường xuyên định kỳ
+công trình đường bộ thời hạn bảo hành
+công trình đường bộ tiêu chuẩn thiết kế tiêu chuẩn kỹ thuật quy trình bảo trì
+công trình đường bộ trường hợp quy định khoản điều
+công trình đường bộ trường hợp đặc thù
+công trình đường bộ tuyến đường được
+công trình đường bộ tổng cục đường bộ việt nam
+công trình đường bộ từng quý ngày tháng
+công trình đường bộ tự
+công trình đường bộ vượt
+công trình đường bộ được
+công trình đường bộ được đầu tư xây dựng mới cải tạo nâng cấp
+công trình đường bộ đầu tư
+công trình đường bộ đầu tư xây dựng
+công trình đường bộ định kỳ từng quý ngày tháng
+công trình đường mình quản lý
+công trình đường ô tô cấp i trở
+công trình được
+công trình được duyệt
+công trình đầu tư theo hình thức ppp
+công trình đặc thù khác
+công trình đột xuất yêu cầu
+công tác bảo dưỡng thường xuyên công trình đường bộ
+công tác bảo trì
+công tác bảo trì tuyến đường
+công tác bảo vệ
+công tác bảo vệ phân làn xe
+công tác giám sát
+công tác giám sát hậu kiểm
+công tác giám sát hậu kiểm trạm
+công tác giám sát kiểm vé lượt cuối ca lượt xe
+công tác hậu kiểm
+công tác kế toán
+công tác nghiệm thu cơ quan
+công tác quản lý
+công tác quản lý bảo dưỡng thường xuyên sử dụng nguồn vốn ngân sách địa phương
+công tác quản lý bảo dưỡng thường xuyên sử dụng ngân sách trung ương
+công tác quản lý nhà nước
+công tác quản lý tuyến đường
+công tác thanh tra
+công tác thu
+công tác trực tiếp bán soát vé
+công tác trực tiếp bán soát vé cabin
+công tác tuần tra
+công tác vận hành
+công tác điều hành
+công tác đấu thầu đặt hàng
+công việc bảo dưỡng
+công việc bảo trì
+công việc bảo trì kế hoạch bảo trì hàng năm
+công việc cơ quan nhà nước
+công việc cần thiết bổ sung
+công việc cần thiết khác
+công việc cần thiết khác cấp
+công việc cần thiết khác liên quan
+công việc khác
+công việc khác ngày tháng hàng năm
+công việc khác theo
+công việc khảo sát
+công việc kiểm tra
+công việc kế hoạch
+công việc kế hoạch bảo trì
+công việc kế hoạch bảo trì duyệt
+công việc quy định khoản điều nghị định số
+công việc quy định điểm nêu trên
+công việc quản lý
+công việc sau
+công việc sửa chữa đột xuất có giá trị nhỏ hơn đồng
+công việc sửa chữa đột xuất có giá trị đồng đồng
+công việc theo
+công việc tư vấn
+công việc tư vấn khác theo
+công việc tổ chức
+công việc đó
+công việc được
+công việc được ưu tiên
+công việc ưu tiên cho phép
+công việc ưu tiên kế hoạch bảo trì hàng năm
+công vụ
+công vụ được
+công ước liên hợp quốc giao thông đường bộ năm được
+công ước quốc tế tương ứng
+công ước viên
+công-te-nơ máy vật liệu trang thiết bị
+cùng hạng
+căn cứ chỉ dẫn kỹ thuật này thiết kế cơ sở dự án loại thiết bị công nghệ vận hành khai thác công trình chế độ hao mòn
+căn cứ lập quy trình
+cơ quan chức năng
+cơ quan công an
+cơ quan công an khi phát hiện
+cơ quan công an nơi
+cơ quan công an uỷ ban nhân dân nơi gần
+cơ quan cảnh sát giao thông
+cơ quan kiểm tra
+cơ quan nhận
+cơ quan nhận báo cáo hệ thống thư điện tử
+cơ quan nhận báo cáo phương thức sau gửi trực tiếp dịch vụ bưu chính fax hệ thống thư điện tử
+cơ quan quy định khoản điều này
+cơ quan quy định điểm a
+cơ quan quyết định công việc sửa chữa đột xuất điểm này
+cơ quan quản lý nhà nước có thẩm quyền
+cơ quan thẩm quyền
+cơ quan thẩm định
+cơ quan tổ chức cá nhân có
+cơ quan tổ chức cá nhân có liên quan
+cơ sở bộ phận kết cấu công trình xem xét
+cơ sở dữ liệu
+cơ sở dữ liệu bảo hiểm chủ xe cơ giới
+cơ sở dữ liệu chi phí quản lý
+cơ sở dữ liệu chứng chỉ
+cơ sở dữ liệu cầu
+cơ sở dữ liệu cầu hồ sơ
+cơ sở dữ liệu hành trình phương tiện giao thông đường bộ
+cơ sở dữ liệu khác liên quan công tác
+cơ sở dữ liệu người
+cơ sở dữ liệu quản lý thời gian
+cơ sở dữ liệu tai nạn giao thông đường bộ
+cơ sở dữ liệu trật tự an toàn giao thông đường bộ
+cơ sở dữ liệu xe máy chuyên dùng
+cơ sở dữ liệu đào tạo
+cơ sở dữ liệu đường bộ
+cơ sở dữ liệu đường bộ hồ sơ
+cơ sở dữ liệu đường bộ kết cấu hạ tầng giao thông đường bộ
+cơ sở lập quy trình bảo trì
+cơ sở nhập khẩu
+cơ sở nhập khẩu bổ sung
+cơ sở nhập khẩu thời gian
+cơ sở nhập khẩu thời hạn ngày làm việc
+cơ sở quy mô công suất
+cơ sở sản xuất
+cơ sở sản xuất trường hợp
+cơ sở sản xuất tự
+cơ sở thiết kế
+cơ sở thiết kế nộp hồ sơ hình thức phù hợp khác cơ quan đăng kiểm
+cơ sở thiết kế nộp hồ sơ hệ thống bưu chính cơ quan đăng kiểm
+cơ sở thiết kế nộp hồ sơ hệ thống dịch vụ công trực tuyến cơ quan đăng kiểm
+cơ sở thiết kế nộp hồ sơ trực tiếp cơ quan đăng kiểm
+cơ sở thử nghiệm
+cơ sở trường hợp
+cơ sở việc cải tạo
+cả
+cả chi phí bảo dưỡng công trình
+cả chi phí bảo dưỡng hệ thống
+cả chi phí thiết bị lắp đặt công trình dân dụng
+cả khoản người
+cả năm
+cả tay khi lái xe
+cả thời gian thực hiện
+cả tiền điện tính giá ca máy
+cả trạm giao dịch thanh toán phương tiện
+cả xe đạp điện
+cảng nhà máy
+cảnh sát giao thông thực hiện
+cấp bậc bình quân nhân công tham gia
+cấp bậc nhân công
+cấp bậc tương ứng
+cấp hạng mục công trình
+cấp điện
+cấu trúc biểu mẫu chứng nhận đăng ký xe biển số xe
+cấu tạo mốc quan trắc
+cần cẩu
+cần cẩu phục vụ việc
+cầu cống
+cầu hẹp
+cầu phao
+cầu phao người
+cầu phao theo thứ tự ưu tiên trên dưới
+cầu phao đường bộ
+cầu vượt dành người
+cầu yếu
+cầu đường bộ
+cầu đường bộ cầu phao đường bộ
+cọc h
+cọc tiêu
+cố định đường bộ
+cột km
+cục đăng kiểm việt nam
+cụm trục xe
+danh mục bản vẽ kèm theo
+danh mục công trình đường bộ bắt buộc phải quan trắc quá trình khai thác sử dụng được
+danh mục hồ sơ
+danh mục khối lượng công việc
+danh mục kèm
+danh mục phụ tùng
+danh mục quy định điểm khoản này
+danh mục sản phẩm hàng hoá phải
+danh mục thiết bị
+danh mục thiết bị phụ tùng vật tư dự trữ thay thế
+danh mục tuyến đường cần thiết
+danh mục tuyến đường ưu tiên
+danh mục tuyến đường ưu tiên cho phép
+danh mục tuyến đường ưu tiên quy định điểm khoản điều này
+danh mục vật tư dự trữ
+danh tính bản thân cơ quan
+danh tính người liên quan vụ tai nạn giao thông đường bộ cơ quan
+de
+doanh nghiệp
+doanh nghiệp dự án
+doanh nghiệp dự án công tác
+doanh nghiệp dự án việc
+doanh nghiệp dự án việc vận hành
+doanh nghiệp dự án đầu tư xây dựng
+doanh nghiệp hợp tác xã
+doanh nghiệp hợp tác xã kinh doanh vận tải
+doanh nghiệp hợp tác xã kinh doanh vận tải phương thức
+doanh nghiệp hợp tác xã kinh doanh vận tải đường bộ việt lào
+doanh nghiệp kinh doanh vận tải
+doanh nghiệp kinh doanh vận tải phương thức gửi nhận báo cáo
+doanh nghiệp kinh doanh vận tải đường bộ
+doanh nghiệp kinh doanh vận tải đường bộ việt nam campuchia
+doanh nghiệp quản lý
+doanh nghiệp tự
+doanh nghiệp đó
+doanh nghiệp đầu tư
+doanh nghiệp đầu tư xây dựng
+doanh thu nhà đầu tư
+dung tích làm việc
+dung tích tương đương
+dung tích xi-lanh cm3
+dung tích xi-lanh cm3 dưới cm3
+dung tích xi-lanh cm3 trở
+dung tích xi-lanh dưới cm3
+dung tích xi-lanh trên cm3
+dây chuyền công nghệ lắp đặt công trình
+dây đai an toàn phù hợp lứa tuổi theo
+dạng điện tử trường hợp nộp
+dấu hiệu bất thường khác có khả năng gây
+dấu hiệu bất thường khác cần
+dấu hiệu khác mặt đường
+dấu hiệu lún
+dấu hiệu nguy hiểm
+dấu hiệu tội phạm cơ quan
+dấu hiệu tội phạm việc giải quyết
+dấu hiệu tội phạm việc điều tra
+dấu vết thân thể người
+dịch bệnh
+dịch vụ bưu chính
+dịch vụ phà
+dịch vụ vận hành
+dịch vụ vận hành khai thác bến phà đường bộ hệ thống quốc lộ
+dịch vụ đường bộ
+dữ liệu bộ
+dữ liệu bộ ngành
+dữ liệu chi phí
+dữ liệu chi phí khi sử dụng
+dữ liệu chi phí quản lý
+dữ liệu cá nhân
+dữ liệu công trình
+dữ liệu cơ sở dữ liệu khác
+dữ liệu hệ thống
+dữ liệu hệ thống camera tuyến giao thông
+dữ liệu hệ thống camera đô thị
+dữ liệu hệ thống cơ sở dữ liệu sau đây
+dữ liệu hệ thống giám sát bảo đảm an ninh trật tự an toàn giao thông đường bộ
+dữ liệu hệ thống thiết bị kỹ thuật nghiệp vụ
+dữ liệu hệ thống xử lý biển báo điện tử
+dữ liệu hệ thống đèn tín hiệu giao thông đường bộ
+dữ liệu liên quan khác
+dữ liệu mặt đường
+dữ liệu phân tích
+dữ liệu quy định khoản
+dữ liệu thiết bị
+dữ liệu thiết bị cân trạm
+dữ liệu thu thập hệ thống giám sát bảo đảm an ninh trật tự an toàn giao thông đường bộ
+dữ liệu thu thập hệ thống giám sát bảo đảm an ninh trật tự an toàn giao thông đường bộ được
+dữ liệu trung tâm
+dữ liệu tải trọng xe ngành giao thông vận tải hệ thống đường bộ cả nước
+dữ liệu đường hệ thống xử lý
+dự toán
+dự toán bảo dưỡng thường xuyên bảo đảm
+dự toán bảo dưỡng thường xuyên công trình đường bộ được
+dự toán chi phí
+dự toán chi phí quản lý
+dự toán công việc
+dự toán hoạt động
+dự toán kinh phí cấp
+dự toán kinh phí hoàn thành ngày tháng hàng năm
+dự toán kiểm tra
+dự toán thu
+dự toán tiền lương ngày công ngày bình thường
+dự án chuyển tiếp năm trước sang năm sau
+dự án sửa chữa theo
+dự án đầu tư
+dự án đầu tư cải tạo công trình đường bộ việc
+dự án đầu tư mở rộng công trình đường bộ việc
+dự án đầu tư nâng cấp công trình đường bộ việc
+dự án đầu tư xây dựng mới cải tạo nâng cấp công trình đường bộ nhà thầu
+dự án đầu tư xây dựng mới cải tạo nâng cấp công trình đường bộ nhà thầu thiết kế
+dự án đầu tư xây dựng mới cải tạo nâng cấp mở rộng công trình đường bộ việc
+dự án đầu tư xây dựng mới việc
+dự án đầu tư được duyệt
+ece ec
+fax
+ghế ngồi phù hợp lứa tuổi theo
+giao thông
+giao thông an toàn
+giao thông an toàn theo quy định pháp luật giao thông đường bộ
+giao thông an toàn thông suốt
+giao thông bước
+giao thông bước theo quy định bộ trưởng bộ giao thông vận tải
+giao thông cho phép
+giao thông công trình đường bộ thi công
+giao thông khẩn cấp tuyến đường
+giao thông nhân viên kỹ thuật trực trạm
+giao thông phải
+giao thông theo
+giao thông thiết bị điện tử
+giao thông tác động công trình
+giao thông tạm thời
+giao thông tải trọng khai thác tốc độ thành phần xe
+giao thông vị trí nguy hiểm
+giao thông đi từng chuyến phà
+giao thông đoạn
+giao thông đoạn đường mình quản lý
+giao thông đoạn đường thi công có mặt đường bị
+giao thông đúng phạm vi tuyến đường thời gian được cơ quan
+giao thông đường bộ
+giao thông đường bộ an toàn thông suốt
+giao thông đường bộ chấp hành pháp luật trật tự an toàn giao thông đường bộ
+giao thông đường bộ chấp hành yêu cầu kiểm tra
+giao thông đường bộ gây tai nạn
+giao thông đường bộ khi
+giao thông đường bộ khi cần thiết
+giao thông đường bộ khác
+giao thông đường bộ liên quan tai nạn giao thông đường bộ
+giao thông đường bộ lãnh thổ việt nam
+giao thông đường bộ người
+giao thông đường bộ người lái xe
+giao thông đường bộ phía bên phải người
+giao thông đường bộ phía bên trái người
+giao thông đường bộ phía sau người
+giao thông đường bộ phía trước người
+giao thông đường bộ theo
+giao thông đường bộ tất cả hướng
+giao thông đường bộ đáp ứng quy định điểm khoản điều luật này
+giao thông đường bộ được
+giao thông được
+giá ca máy
+giá ca máy từng loại máy móc thiết bị
+giá cước vận tải
+giá dịch vụ sự nghiệp công quản lý
+giá loại vật liệu này cơ sở
+giá này
+giá trị cho phép
+giá trị công trình đường bộ
+giá trị giới hạn nhà thầu thiết kế
+giá trị giới hạn thông số này
+giá trị hợp đồng
+giá trị nhỏ hơn đồng
+giá trị pháp lý
+giá trị pháp lý hồ sơ
+giá trị pháp lý hợp đồng đóng mới phương tiện
+giá trị pháp lý tờ
+giá trị quy định hợp đồng
+giá trị quyết toán công trình
+giá trị sản phẩm xây dựng bộ phận công trình đường bộ
+giá trị sử dụng
+giá trị sử dụng phạm vi lãnh thổ việt nam
+giá trị thời hạn sử dụng
+giá trị được
+giá trị đồng trở
+giá vật liệu xây dựng theo mức giá
+giá đèo hàng
+gió mưa bão lũ lụt động đất va đập cháy
+giúp đỡ kịp thời người
+giải pháp kỹ thuật
+giấy chứng nhận hình thức phù hợp khác
+giấy chứng nhận hệ thống bưu chính
+giấy chứng nhận hệ thống dịch vụ công trực tuyến
+giấy chứng nhận mẫu quy định phụ lục iiib ban hành
+giấy chứng nhận thẩm định thiết kế
+giấy chứng nhận thẩm định thiết kế mẫu quy định phụ lục ban hành
+giấy chứng nhận thời hạn ngày làm việc
+giấy chứng nhận trực tiếp trụ sở cơ quan
+giấy chứng nhận trực tiếp trụ sở cục
+giấy chứng nhận đủ điều kiện hoạt động
+giấy chứng nhận đủ điều kiện hoạt động cơ sở
+giấy phép lái xe
+giấy phép lái xe bộ công an
+giấy phép lái xe bộ quốc phòng
+giấy phép lái xe còn điểm
+giấy phép lái xe có thời hạn
+giấy phép lái xe cơ quan
+giấy phép lái xe cơ quan nhà nước
+giấy phép lái xe hạng a
+giấy phép lái xe hạng a điều kiện hạn chế
+giấy phép lái xe hạng a1
+giấy phép lái xe hạng a1 a
+giấy phép lái xe hạng a1 a b c1
+giấy phép lái xe hạng a2
+giấy phép lái xe hạng a3
+giấy phép lái xe hạng a4
+giấy phép lái xe hạng b
+giấy phép lái xe hạng b điều kiện hạn chế
+giấy phép lái xe hạng b1
+giấy phép lái xe hạng b1 b2
+giấy phép lái xe hạng b1 số tự động
+giấy phép lái xe hạng b2
+giấy phép lái xe hạng be
+giấy phép lái xe hạng c
+giấy phép lái xe hạng c d1 d2 d be c1e ce d1e d2e
+giấy phép lái xe hạng c1
+giấy phép lái xe hạng c1e
+giấy phép lái xe hạng ce
+giấy phép lái xe hạng d
+giấy phép lái xe hạng d d1e d2e de
+giấy phép lái xe hạng d sang giấy phép lái xe hạng d2
+giấy phép lái xe hạng d1
+giấy phép lái xe hạng d1e
+giấy phép lái xe hạng d2
+giấy phép lái xe hạng d2e
+giấy phép lái xe hạng de
+giấy phép lái xe hạng e
+giấy phép lái xe hạng e đổi
+giấy phép lái xe hạng fb2
+giấy phép lái xe hạng fc
+giấy phép lái xe hạng fe
+giấy phép lái xe hạng fe sang giấy phép lái xe hạng de
+giấy phép lái xe khi
+giấy phép lái xe nhau
+giấy phép lái xe nước ngoài
+giấy phép lái xe nước ngoài cơ quan
+giấy phép lái xe phù hợp loại xe điều khiển
+giấy phép lái xe quốc gia
+giấy phép lái xe quốc gia được
+giấy phép lái xe quốc gia được cấp
+giấy phép lái xe quốc tế
+giấy phép lái xe trường hợp
+giấy phép lái xe trường hợp giấy phép lái xe bị
+giấy phép lái xe trường hợp giấy phép lái xe bị hỏng
+giấy phép lái xe trường hợp sau đây
+giấy phép lái xe trường hợp thời hạn ghi giấy phép lái xe
+giấy phép lái xe việt nam
+giấy phép lái xe đó
+giấy phép lái xe được
+giấy phép lái xe được cấp ngày luật này có hiệu lực thi hành
+giấy tờ
+giấy tờ chứng nhận hoàn thành thủ tục nhập khẩu
+giấy tờ khác
+giấy tờ sau
+giấy tờ tương đương
+giấy tờ đó
+giới hạn quy định
+giữa báo giá nhà sản xuất
+giữa cơ quan nhà nước thẩm quyền nhà đầu tư doanh nghiệp dự án
+giữa địa điểm
+gxdctdd
+gxdhtkt
+hao phí lao động định mức công tác trực tiếp nhân đơn giá ngày công tương ứng
+hiểm khi
+hiện trường khi
+hiện trường khi phải
+hiện trường khi xét
+hiện trường phương tiện tử thi công trình đường bộ liên quan trực tiếp vụ tai nạn giao thông đường bộ
+hiện trường vụ tai nạn giao thông đường bộ
+hiện tượng hư hỏng công trình
+hiện tượng hư hỏng thiết bị lắp đặt công trình
+hiện tượng xuống cấp công trình
+hiện tượng xuống cấp thiết bị lắp đặt công trình
+hiệu lệnh báo hiệu người
+hiệu lệnh người
+hiệu lệnh tay bên phải
+hiệu lực giấy phép
+hiệu lực phù hợp loại xe điều khiển
+hiệu lực phù hợp loại xe điều khiển cơ quan
+hiệu lực sử dụng
+hiệu lực trường hợp giấy phép lái xe
+hiệu lực trường hợp giấy phép lái xe bị
+hiệu quả giao thông
+hoạt động bán
+hoạt động bến xe địa bàn
+hoạt động ghi nhận thông số kỹ thuật khác công trình đường bộ
+hoạt động ghi nhận thông số kỹ thuật khác môi trường xung quanh thời gian
+hoạt động hệ thống
+hoạt động hỗ trợ tổ chức cá nhân tham gia
+hoạt động khác
+hoạt động khác theo
+hoạt động khắc phục hư hỏng công trình được
+hoạt động kiểm tra
+hoạt động kiểm tra thông số kỹ thuật khác sản phẩm xây dựng bộ phận công trình đường bộ
+hoạt động kiểm tra đánh giá thời hạn
+hoạt động kiểm định
+hoạt động kiểm định xây dựng công trình đường bộ
+hoạt động quy định khoản điều này
+hoạt động sửa chữa
+hoạt động thanh tra
+hoạt động thu phí khi doanh nghiệp khắc phục xong hư hỏng xuống cấp công trình đường bộ
+hoạt động thu phí trường hợp doanh nghiệp thực hiện việc quản lý
+hoạt động thời gian
+hoạt động trông coi
+hoạt động trạm
+hoạt động tuần tra kiểm soát
+hoạt động tổ chức cá nhân giúp đỡ
+hoạt động vận tải phạm vi toàn quốc
+hoả hoạn
+hàng bánh
+hàng bánh có
+hàng chuyên dùng
+hàng hoá bảo đảm an toàn
+hàng hoá khoang
+hàng hoá người lái xe
+hàng hoá nhập khẩu tổ chức cá nhân nhập khẩu
+hàng hoá theo
+hàng hoá vượt
+hàng hoá vượt quá khổ giới hạn xe
+hàng hoá vận chuyển có
+hàng hoá vận chuyển xe
+hàng hoá vận chuyển xe được
+hàng hoá xe ô tô người lái xe
+hàng hoá xếp
+hàng hoá đường bộ trường hợp
+hàng hoá đường bộ việt lào
+hàng hoá đường bộ việt nam campuchia
+hàng hoá đường sắt đường thuỷ nội địa hàng không hàng hải phù hợp
+hàng khi
+hàng kể cả xe ô tô
+hàng ngang
+hàng ngày đường ô tô cấp i trở
+hàng năm căn cứ công việc
+hàng năm theo
+hàng năm tổ chức
+hàng quá tải
+hàng quá tải trạm
+hàng quá tải trọng
+hàng rời vật liệu xây dựng phế thải
+hàng siêu trường siêu trọng hàng hoá nguy hiểm
+hàng siêu trường siêu trọng khi phương thức
+hàng theo chiều di chuyển
+hàng tháng
+hàng trường hợp
+hàng xe quá tải trọng trạm
+hành chính
+hành chính lĩnh vực trật tự an toàn giao thông đường bộ
+hành khách hàng hoá
+hành khách hàng hoá đường bộ việt nam campuchia
+hành khách theo
+hành khách vận chuyển có
+hành khách xe ô tô
+hành khách đúng nơi quy định
+hành khách đường bộ việt lào
+hành khách đường bộ việt nam campuchia
+hành khách được
+hành lang an toàn đường bộ
+hành lý hàng hoá bảo đảm an toàn
+hành vi bám phương tiện khác
+hành vi cản trở
+hành vi khác gây
+hành vi kéo phương tiện khác
+hành vi vi phạm
+hành vi vi phạm quy định pháp luật
+hành vi đẩy phương tiện khác
+hình thức dừng
+hình thức phù hợp khác
+hình thức phù hợp khác cơ quan
+hình thức phù hợp khác cục
+hình thức tuần tra kiểm soát
+hình thức văn bản giấy
+hình thức văn bản điện tử
+hình thức đấu thầu
+hình ảnh người lái xe
+hình ảnh người lái xe theo
+hình ảnh trẻ em mầm non học sinh
+hơn cm3
+hơn kg
+hơn kw
+hơn mép thành thùng xe tối thiểu cm
+hơn tháng lần
+hư hỏng công trình
+hư hỏng ảnh hưởng an toàn giao thông an toàn công trình
+hướng dẫn bộ
+hướng dẫn cơ quan nhà nước
+hướng dẫn người
+hướng dẫn nhằm
+hướng dẫn phụ lục ban hành
+hướng dẫn sử dụng định mức này
+hạng a
+hạng a1
+hạng a2
+hạng b
+hạng b1
+hạng b1 quy định điểm đ
+hạng b2
+hạng b2 d quy định điểm
+hạng be
+hạng c
+hạng c1
+hạng c1e
+hạng ce
+hạng d
+hạng d d1e d2e de
+hạng d1
+hạng d1e
+hạng d2
+hạng d2e
+hạng e
+hạng fb2
+hạng fb2 fd
+hạng fc
+hạng fd
+hạng giấy phép lái xe hạng b hạng
+hạng giấy phép lái xe hạng b hạng c1
+hạng giấy phép lái xe hạng b hạng d1
+hạng giấy phép lái xe hạng b hạng d2
+hạng giấy phép lái xe hạng b lên hạng be
+hạng giấy phép lái xe hạng c lên hạng ce
+hạng giấy phép lái xe hạng c lên hạng d1
+hạng giấy phép lái xe hạng c lên hạng d2
+hạng giấy phép lái xe hạng c1 hạng c
+hạng giấy phép lái xe hạng c1 hạng c1e
+hạng giấy phép lái xe hạng c1 hạng d1
+hạng giấy phép lái xe hạng c1 hạng d2
+hạng giấy phép lái xe hạng d lên hạng de
+hạng giấy phép lái xe hạng d1 hạng d1e
+hạng giấy phép lái xe hạng d1 lên hạng d
+hạng giấy phép lái xe hạng d1 lên hạng d2
+hạng giấy phép lái xe hạng d2
+hạng giấy phép lái xe hạng d2 hạng d2e
+hạng mục an toàn giao thông
+hạng mục an toàn giao thông đường bộ
+hạng mục công trình
+hạng mục công trình dân dụng
+hạng mục công trình hạ tầng kỹ thuật htkt
+hạng mục công trình hạ tầng kỹ thuật khác
+hạng mục công trình thiết bị sửa chữa phần mềm
+hạng mục công trình đường bộ
+hạng mục cần thiết khác
+hạng mục cần thiết nhằm
+hạng mục hệ thống thông tin
+hạng sau đây
+hầm bến phà cầu phao cầu quay cầu cất
+hầm dành người
+hậu quả bão lũ lụt ngành đường bộ
+hậu quả thiên tai
+hậu quả thiên tai lĩnh vực đường bộ
+hậu quả thiệt hại người
+hệ số
+hệ số lương tăng thêm bình quân
+hệ thống bưu chính
+hệ thống bưu chính bản
+hệ thống bưu chính cơ quan
+hệ thống bưu chính người nhận
+hệ thống camera tuyến giao thông
+hệ thống camera đô thị
+hệ thống công nghệ
+hệ thống cơ sở dữ liệu
+hệ thống cơ sở dữ liệu sau đây
+hệ thống cấp điện nước
+hệ thống cọc mốc hành lang an toàn đường bộ
+hệ thống dịch vụ công trực tuyến
+hệ thống dịch vụ công trực tuyến cơ quan
+hệ thống giao thông thông minh
+hệ thống giám sát bảo đảm an ninh trật tự an toàn giao thông đường bộ
+hệ thống khảo sát
+hệ thống kỹ thuật
+hệ thống kỹ thuật trạm
+hệ thống lái xe đó
+hệ thống máy móc thiết bị
+hệ thống này
+hệ thống phương tiện thiết bị dữ liệu
+hệ thống quản lý
+hệ thống thiết bị cân
+hệ thống thiết bị kỹ thuật nghiệp vụ
+hệ thống thu dừng dừng đèn tín hiệu giao thông
+hệ thống thư điện tử
+hệ thống đèn tín hiệu giao thông đường bộ
+hệ thống đăng ký
+hệ thống đường bộ trung ương
+hệ thống đường trung ương
+hệ thống đường trung ương bao gồm cả đường doanh nghiệp
+hệ thống đường trung ương bộ giao thông vận tải
+hệ thống đường trung ương cơ quan
+hệ thống đường trung ương cục
+hệ thống đường trung ương phương thức gửi nhận báo cáo
+hệ thống đường trung ương tổng cục đường bộ việt nam
+hệ thống đường trung ương đơn vị được phân cấp quản lý quốc lộ
+hệ thống đường trung ương đơn vị được uỷ quyền quản lý quốc lộ
+hệ thống đường địa phương
+hệ thống đường địa phương cơ quan
+hệ thống đường địa phương người
+hệ thống đường địa phương việc
+hệ thống đường địa phương việc phân cấp phê duyệt quy trình
+học sinh tiểu học
+hồ sơ cơ quan kiểm tra hình thức trực tiếp
+hồ sơ cọc mốc đền bù
+hồ sơ dạng điện tử trường hợp
+hồ sơ dự thầu hồ sơ đề xuất
+hồ sơ hình thức phù hợp khác
+hồ sơ hình thức phù hợp khác cơ quan
+hồ sơ hệ thống bưu chính
+hồ sơ hệ thống bưu chính cơ quan
+hồ sơ hệ thống dịch vụ công trực tuyến
+hồ sơ hệ thống dịch vụ công trực tuyến cơ quan
+hồ sơ khi hồ sơ đăng ký
+hồ sơ kiểm tra
+hồ sơ kiểm tra linh kiện
+hồ sơ kiểm tra linh kiện nhập khẩu
+hồ sơ kiểm tra xe cơ giới
+hồ sơ lý lịch cầu hầm
+hồ sơ lý lịch cầu hồ sơ lý lịch hầm
+hồ sơ mời thầu hồ sơ yêu cầu
+hồ sơ nộp hệ thống dịch vụ công trực tuyến
+hồ sơ nộp trực tiếp
+hồ sơ phương tiện đóng nước
+hồ sơ phục vụ
+hồ sơ sửa chữa đột xuất theo
+hồ sơ sự cố
+hồ sơ theo
+hồ sơ thiết bị
+hồ sơ thiết bị công nghệ
+hồ sơ thiết kế
+hồ sơ thiết kế chủ phương tiện
+hồ sơ thiết kế gồm bộ hồ sơ
+hồ sơ thiết kế theo
+hồ sơ thiết kế điều chỉnh
+hồ sơ thiết kế đơn vị
+hồ sơ thiết kế được
+hồ sơ thẩm định tài liệu hướng dẫn
+hồ sơ thực hiện
+hồ sơ thực hiện trực tiếp
+hồ sơ trạng thái ban đầu công trình cầu
+hồ sơ trạng thái ban đầu công trình hầm
+hồ sơ trực tiếp
+hồ sơ trực tiếp cơ quan
+hồ sơ trực tiếp trụ sở cơ quan thẩm định
+hồ sơ tài liệu
+hồ sơ tài liệu giai đoạn đầu tư
+hồ sơ tài liệu nhà thầu
+hồ sơ tài liệu nhà thầu quản lý
+hồ sơ tài liệu quy định dự án
+hồ sơ tài liệu quy định điểm a đ
+hồ sơ tài liệu quy định điểm a đ e g
+hồ sơ tài liệu theo
+hồ sơ xe
+hồ sơ đăng ký
+hồ sơ đăng ký chứng nhận linh kiện
+hồ sơ đăng ký chứng nhận linh kiện trừ động cơ nguyên chiếc nhập khẩu
+hồ sơ đăng ký chứng nhận linh kiện được nhập khẩu nước ngoài
+hồ sơ đăng ký chứng nhận xe
+hồ sơ đề nghị
+hồ sơ đề nghị kiểm định
+hồ sơ đề nghị thẩm định thiết kế
+hỗn hợp làn trở
+hội chợ triển lãm thương mại
+hội nghị hội chợ triển lãm thể dục thể thao du lịch
+hợp tác xã
+hợp tác xã kinh doanh
+hợp tác xã kinh doanh vận tải
+hợp tác xã kinh doanh vận tải phương thức
+hợp tác xã kinh doanh vận tải đường bộ
+hợp tác xã kinh doanh vận tải đường bộ việt nam campuchia
+hợp đồng dự án
+hợp đồng dự án chi phí bảo trì
+hợp đồng dự án hạng mục được
+hợp đồng dự án nội dung cần thiết khác
+hợp đồng dự án phương án
+hợp đồng dự án quy chuẩn tiêu chuẩn kỹ thuật
+hợp đồng dự án thời gian thực hiện
+hợp đồng dự án thực hiện
+hợp đồng dự án việc tiến hành
+hợp đồng dự án đối tác công tư
+hợp đồng ký
+hợp đồng nhà thầu
+hợp đồng nhà thầu thực hiện
+hợp đồng ppp
+hợp đồng ppp thực hiện
+hợp đồng trước thời hạn
+kdd
+kg
+khi bộ phận công trình
+khi có
+khi có dấu hiệu bất thường khác dẫn
+khi có nguyên nhân
+khi công trình
+khi công trình có kế hoạch bảo trì được phê duyệt
+khi công trình đảm bảo an toàn việc khai thác
+khi cần
+khi cần xác định
+khi dự án
+khi giấy phép lái xe
+khi giấy phép lái xe quá thời hạn tạm giữ quy định pháp luật
+khi giấy phép lái xe thuộc trường hợp sau đây
+khi giấy phép lái xe được
+khi họ phát hiện yếu tố bất hợp lý
+khi hồ sơ đăng ký
+khi hồ sơ đầy đủ
+khi khắc phục sự cố
+khi kết quả
+khi lắp đặt công trình
+khi ngân sách nhà nước chi
+khi người
+khi người lái xe chuẩn bị ra đường cao tốc người lái xe
+khi người lái xe dừng
+khi người đó nộp đủ số tiền trúng
+khi nhập làn đường đường cao tốc người lái xe
+khi phải
+khi sửa chữa hư hỏng
+khi sửa chữa đường bộ khai thác
+khi thi công
+khi tiêu chuẩn kỹ thuật bảo trì được sửa đổi
+khi trời tối
+khi trời tối người lái xe
+khi trực tiếp phát hiện bất hợp lý tổ chức giao thông cơ quan cảnh sát giao thông
+khi trực tiếp phát hiện nguy cơ mất an toàn công trình đường bộ
+khi trực tiếp phát hiện nguy cơ mất an toàn công trình đường bộ cơ quan cảnh sát giao thông
+khi tín hiệu đèn
+khi tín hiệu đèn màu vàng nhấp nháy
+khi tải trọng lưu lượng khai thác khác thiết kế
+khi xe
+khi xe chạy
+khi xe đạt tốc độ km/h
+khi xe ở phà người được
+khi xuất hiện ùn tắc giao thông
+khi xuất hiện ùn tắc giao thông cơ quan
+khi xảy ra
+khi xảy ra hư hỏng công trình
+khi xảy sự cố
+khi xảy thiệt hại công trình đường bộ
+kho biển số xe
+kho lưu trữ khác
+kho vật tư dự phòng phục vụ
+khoản bảo hiểm
+khoản chi khác nhân công trực tiếp theo quy định hiện hành pháp luật
+khoản chi phí
+khoản chi phí đó
+khoản khoản
+khoản khoản điều thông tư số
+khoản này
+khoản này cơ quan
+khoản phụ cấp
+khoản phụ cấp khác
+khoản phụ cấp lương theo
+khoản phụ cấp tiền lương
+khoản điều
+khoản điều luật này
+khoản điều luật này cơ quan cảnh sát giao thông
+khoản điều nghị định số
+khoản điều này
+khoản điều thông tư này
+khoản điều thông tư này khi nộp hệ thống dịch vụ công trực tuyến
+khoản điều thông tư số
+khoản đóng góp
+khoảng cách an toàn
+khoảng thời gian công trình
+khoảng thời gian công trình được
+khoảng thời gian thực hiện
+khoảng thời gian thực hiện công việc bảo dưỡng
+khtkt
+khu vực tai nạn khi công trình đường bộ bị
+khu vực tai nạn trường hợp công trình đường bộ bị hư hỏng
+khu vực thi công đường bộ
+khu vực tổ chức
+khu vực đông dân cư
+khác pháp luật
+khác pháp luật có
+khác vụ tai nạn giao thông đường bộ
+khách công cộng
+khách lên xe điểm
+khách xuống xe điểm
+khí thải xe mô tô
+khí thải xe mô tô xe gắn máy
+khả năng chống
+khả năng chống chói
+khả năng chở quá tải
+khấu hao làm cơ sở xác định định mức khấu hao
+khỏi khu vực nguy hiểm
+khối lượng bản thân
+khối lượng bản thân lớn hơn kg
+khối lượng bản thân quá tải trọng đường bộ
+khối lượng cho phép
+khối lượng cho phép xe
+khối lượng công việc
+khối lượng công việc cần
+khối lượng công việc thực hiện
+khối lượng công việc thực hiện được
+khối lượng dự án chuyển tiếp năm trước sang năm sau
+khối lượng phân bổ trục xe
+khối lượng số lượng công việc cần thiết khác
+khối lượng số lượng nhân công chuyên gia
+khối lượng theo
+khối lượng theo thiết kế
+khối lượng theo thiết kế kg
+khối lượng theo thiết kế trên kg
+khối lượng thiết kế kg
+khối lượng thiết kế trên kg
+khối lượng toàn bộ
+khối lượng toàn bộ theo thiết kế trên kg
+khối lượng vật liệu vật tư tiêu hao ca ngày làm việc trạm quy trình vận hành
+kinh phí
+kinh phí công đoàn
+kinh phí công đoàn bộ phận lao động trực tiếp người lao động
+kinh phí danh mục
+kinh phí ghi danh mục được
+kinh phí hoạt động
+kinh phí hoạt động trạm
+kinh phí phương thức thực hiện
+kinh phí sửa chữa đột xuất
+kinh tế xã hội
+kiến nghị đề xuất
+kiến thức pháp luật giao thông đường bộ
+kiểm định chất lượng công trình
+kiểm định chất lượng công trình phục vụ công tác bảo trì
+kiểm định chất lượng công trình đường bộ
+kiểm định chất lượng công trình đường bộ phục vụ công tác bảo trì
+kiểm định xây dựng công trình đường bộ
+kiểm định định kỳ
+kiểu dáng có
+kiểu dáng dạng điện tử trường hợp nộp
+kiểu loại cơ quan
+kiểu loại được phê duyệt
+kích thước bao ngoài xe
+kích thước chính vật liệu chế tạo
+kích thước giới hạn cho phép
+kích thước giới hạn cho phép xe theo quy chuẩn kỹ thuật quốc gia xe cơ giới
+kích thước nội dung
+kích thước quá khổ giới hạn đường bộ
+kích thước xe cơ giới xe máy chuyên dùng tham gia giao thông đường bộ
+kín hàng rời vật liệu xây dựng phế thải
+ký hiệu cv
+ký hiệu ng
+ký hiệu nn
+ký hiệu qt
+kế hoạch bảo trì
+kế hoạch bảo trì cơ sở hiện trạng công trình theo
+kế hoạch bảo trì cơ sở quy trình bảo trì được duyệt
+kế hoạch bảo trì duyệt cơ quan nhà nước
+kế hoạch bảo trì hàng năm
+kế hoạch bảo trì hàng năm căn cứ công việc
+kế hoạch bảo trì hàng năm căn cứ thông tin quy mô
+kế hoạch bảo trì hàng năm căn cứ tiêu chuẩn kỹ thuật
+kế hoạch bảo trì hàng năm căn cứ định mức kinh tế kỹ thuật công việc
+kế hoạch bảo trì hàng năm hệ thống đường trung ương
+kế hoạch bảo trì hệ thống đường trung ương
+kế hoạch bảo trì ngày tháng năm trước liền kề
+kế hoạch bảo trì năm
+kế hoạch bảo trì năm căn cứ căn cứ trên
+kế hoạch bảo trì năm căn cứ dữ liệu khác tuyến đường
+kế hoạch bảo trì năm căn cứ lịch sử sửa chữa
+kế hoạch bảo trì năm căn cứ tình trạng công trình đường bộ
+kế hoạch bảo trì năm hệ thống đường trung ương
+kế hoạch bảo trì năm sau vòng ngày kể ngày
+kế hoạch bảo trì quy định quy định pháp luật có
+kế hoạch bảo trì quy định thông tư này
+kế hoạch bảo trì sử dụng vốn ngân sách nhà nước theo
+kế hoạch bảo trì theo
+kế hoạch bảo trì điều chỉnh
+kế hoạch bảo trì được duyệt
+kế hoạch bảo trì được giao
+kế hoạch phòng
+kế hoạch sửa chữa
+kết cấu
+kết cấu chịu lực
+kết cấu công trình
+kết cấu hạ tầng giao thông đường bộ
+kết cấu hạ tầng giao thông đường bộ khi phá
+kết cấu hạ tầng giao thông đường bộ theo
+kết cấu nhịp cầu
+kết cấu phù hợp loại động vật chuyên chở
+kết luận cơ quan
+kết quả cơ quan đăng kiểm thẩm định thiết kế
+kết quả cơ sở nhập khẩu thời hạn ngày làm việc
+kết quả hoạt động
+kết quả hoạt động bến xe
+kết quả hoạt động bến xe hàng
+kết quả hoạt động bến xe khách
+kết quả hoạt động vận tải hành khách theo
+kết quả hình thức phù hợp khác
+kết quả hệ thống bưu chính
+kết quả hệ thống dịch vụ công trực tuyến
+kết quả khảo sát
+kết quả khắc phục cá nhân kiến nghị phạm vi nhiệm vụ quyền hạn mình
+kết quả khắc phục cơ quan cảnh sát giao thông phạm vi nhiệm vụ quyền hạn mình
+kết quả khắc phục tổ chức kiến nghị phạm vi nhiệm vụ quyền hạn mình
+kết quả kiểm tra
+kết quả kiểm tra đạt
+kết quả quan trắc
+kết quả thẩm định
+kết quả thử nghiệm cơ sở thử nghiệm
+kết quả thực hiện hàng tháng
+kết quả trúng
+kết quả trực tiếp trụ sở cơ quan kiểm tra
+kết quả tổ chức cá nhân nhập khẩu thời gian ngày làm việc
+kết quả đo đạc
+kể cả vốn nhà nước ngoài ngân sách
+kịp thời bộ phận bán
+kịp thời cơ quan
+kịp thời cảnh sát giao thông nơi gần tai nạn giao thông
+kịp thời dấu hiệu xuống cấp hư hỏng công trình
+kịp thời tình huống phát sinh làn
+kịp thời xử cố máy móc thiết bị ca trực
+kỳ báo cáo
+kỹ thuật theo
+kỹ thuật thiết kế công nghệ thiết kế công trình quy trình vận hành
+lao động ngày công làm việc bình thường
+lao động phải
+linh kiện
+loại chi phí
+loại giấy phép lái xe
+loại giấy tờ khác có
+loại máy móc thiết bị
+loại máy móc thiết bị thiết bị công nghệ
+loại phụ tùng xe cơ giới nhập khẩu
+loại phụ tùng xe cơ giới nhập khẩu sản xuất lắp ráp
+loại xe
+loại xe quy định giấy phép
+loại xe quy định giấy phép lái xe hạng a1 quy định điểm khoản
+loại xe quy định giấy phép lái xe hạng b c1 c
+loại xe quy định giấy phép lái xe hạng b1 quy định điểm đ
+loại xe quy định giấy phép lái xe hạng c quy định điểm khoản này khi
+loại xe quy định giấy phép lái xe hạng e quy định điểm k khoản này khi
+loại xe quy định điểm đ e g
+loại xe điều khiển cơ quan
+loại xe đặc chủng
+luật công an nhân dân
+luật lao động
+luật này
+làn
+làn giao thông xe
+làn thu dừng
+làn xe
+làn đường
+làn đường giảm tốc khi ra khỏi đường cao tốc
+làn đường giảm tốc người lái xe
+làn đường sát bên phải
+làn đường tăng tốc người lái xe
+làn đường đó khi nhập làn đường đường cao tốc
+làn đảm bảo giao thông
+lái xe xe sát hạch
+lái xe xe tập lái
+lãnh thổ việt nam
+lý do chính đáng
+lý do sửa chữa
+lý lịch thiết bị
+lưu lượng
+lưu lượng lớn dự kiến dự án
+lưu lượng phương tiện
+lưu lượng vận tải lớn
+lưu lượng xe
+lương ngân sách nhà nước
+lương thưởng lễ tết chế độ phúc lợi
+lượng vé tồn kho
+lần đầu xe cơ giới
+lần đầu xe máy chuyên dùng
+lệ phí đăng ký
+lịch sử bảo trì
+lịch sử bảo trì hồ sơ
+lỗi in ấn
+lời khai người
+lời khai người có
+lợi ích hợp pháp cá nhân
+lợi ích hợp pháp mình
+lợi ích nhà nước
+lụt bão ngành đường bộ
+lực chính công trình
+lực chính công trình khi bị
+lực công trình cầu
+lực công trình khi số liệu quan trắc có dấu hiệu bất thường
+lực công trình khi số liệu quan trắc vượt giá trị giới hạn cho phép
+lực công trình đường bộ
+lực kết cấu công trình quá trình thi công
+lực lượng
+lực lượng chức năng
+lực lượng cảnh sát giao thông
+lực lượng thực hiện
+lực lượng thực hiện tuần tra kiểm soát
+lực lượng trực tiếp
+lực lượng vũ trang nhân dân
+lực lượng đơn vị khác công an nhân dân được
+minh bạch quỹ
+màu chữ số
+màu sơn theo
+màu tín hiệu đèn giao thông
+màu tín hiệu đèn ưu tiên được
+màu xanh
+màu xanh màu vàng
+màu xanh màu vàng màu đỏ
+máy móc thiết bị
+máy phát điện dự phòng
+máy theo khoản điều này
+máy tính màn hình
+máy tính thiết bị điện tử
+máy được
+mã số thuế
+mã định danh
+mã định danh chủ xe
+mã định danh trường hợp biển số xe quy định điểm khoản điều
+mép đường bên phải theo chiều đi mình
+mình
+mô tô
+mô tô ba bánh
+mô tô ba bánh được
+mô tô bánh
+mô tô bánh xe gắn máy
+mô tô bánh xe mô tô ba bánh xe gắn máy
+mô tô bánh xe mô tô ba bánh xe gắn máy được
+mô tô bánh được
+môi trường khi được
+môi trường tham gia giao thông đường bộ
+môi trường theo
+môi trường xe cơ giới
+môi trường xe cơ giới cải tạo
+môi trường xe cơ giới nhập khẩu
+môi trường xe cơ giới xe máy chuyên dùng
+môi trường xe máy chuyên dùng cải tạo
+môi trường xe máy chuyên dùng theo
+mưa gió bão lũ lụt động đất va đập cháy nổ
+mẫu biểu số liệu
+mẫu biểu số liệu báo cáo
+mẫu quy định phụ lục ban hành
+mẫu quy định phụ lục thông tư này
+mẫu số mẫu số phụ lục thông tư này
+mẫu số phụ lục thông tư này
+mẫu thống nhất
+mẫu đề cương báo cáo
+mặt bằng giá nơi
+mặt bằng giá thời điểm
+mặt bằng thực tế
+mặt đường trơn trượt lầy lội
+mệnh lệnh kế hoạch tuần tra
+mố
+mốc cao độ toạ độ
+mốc đất đường bộ
+mục tiêu sửa chữa
+mục đích an ninh
+mục đích lợi nhuận
+mục đích phục vụ
+mục đích quốc phòng
+mục đích quốc phòng an ninh
+mục đích yêu cầu việc quan trắc
+mức giá
+mức tiêu hao trung bình ngày bằng khối lượng tiêu hao kỳ
+mức độ rạn nứt chỉ số độ gồ ghề
+mức ≤ làn
+nghiệm thu
+nghĩa vụ nộp đủ số tiền trúng
+nghĩa vụ sửa đổi
+nghĩa vụ tài chính
+nghĩa vụ được
+nghĩa vụ được chuyển nhượng biển số xe trúng
+nghĩa vụ được thực hiện hành vi trên
+nghĩa vụ được trao đổi biển số xe trúng
+nghị định số
+nghị định số ngày tháng năm chính phủ
+ngoài hợp đồng dự án ký
+ngoài kế hoạch bảo trì quy định thông tư này
+ngoài quy định hợp đồng dự án
+ngoài quá khổ giới hạn đường bộ
+ngoài xe
+ngoại giao cơ quan lãnh sự
+ngoại giao cơ quan lãnh sự cơ quan đại diện tổ chức quốc tế việt nam
+ngoại giao cơ quan lãnh sự tổ chức quốc tế
+nguy cơ dẫn tai nạn giao thông đường bộ
+nguy cơ làm
+nguy cơ mất an toàn giao thông đường bộ phạm vi nhiệm vụ quyền hạn mình
+nguy cơ sập
+nguy cơ sự cố sập đổ công trình ảnh hưởng sự an toàn
+nguy hiểm người
+nguyên nhân gây
+nguyên nhân hư hỏng giá trị thời hạn sử dụng
+nguyên nhân hư hỏng sản phẩm xây dựng bộ phận công trình đường bộ
+nguyên nhân sự cố
+nguyên nhân sự cố công trình
+nguyên tắc hoạt động quỹ
+nguyên tắc khi
+nguyên tắc kiên quyết đấu tranh
+nguyên tắc kiên quyết đấu tranh phòng
+nguyên tắc điều tra giải quyết tai nạn giao thông đường bộ được
+nguồn chi sự nghiệp kinh tế đường bộ
+nguồn chi tự chủ hành chính cơ quan đơn vị
+nguồn gốc ngân sách nhà nước
+nguồn gốc xe
+nguồn khác theo
+nguồn kinh phí chi thường xuyên ngân sách trung ương
+nguồn kinh phí chi thường xuyên ngân sách trung ương khi
+nguồn kinh phí hợp pháp khác theo
+nguồn ngân sách trung ương dành trạm
+nguồn ngân sách địa phương dành trạm
+nguồn tài chính
+nguồn tài chính đó
+nguồn vốn khác
+nguồn vốn nhà nước ngoài quy định điểm khoản này
+nguồn vốn quỹ
+nguồn động lực động cơ
+ngành
+ngày hoạt động thu phí liên tục
+ngày luật này có hiệu lực thi hành
+ngày làm việc
+ngày làm việc so ngày đề nghị
+ngày làm việc trạm
+ngày lễ tết
+ngày lễ tết đêm
+ngày ngày cuối cùng tháng báo cáo
+ngày nhân ca ca
+ngày nhân ca trừ ca ngày lễ ca
+ngày tháng cuối quý
+ngày tháng hàng năm
+ngày tháng kỳ báo cáo
+ngày tháng kỳ báo cáo báo cáo định kỳ tháng đầu năm
+ngày tháng kỳ báo cáo ngày tháng kỳ báo cáo báo cáo định kỳ tháng cuối năm
+ngày tháng ngày tháng kỳ báo cáo
+ngày tháng ngày tháng kỳ báo cáo báo cáo định kỳ tháng cuối năm
+ngày tháng ngày tháng kỳ báo cáo báo cáo định kỳ tháng đầu năm
+ngày tháng năm tiếp theo
+ngày tháng năm tiếp theo báo cáo định kỳ tháng cuối năm
+ngày tháng năm tiếp theo kỳ báo cáo
+ngày tháng năm trước kỳ báo cáo ngày tháng kỳ báo cáo
+ngày tháng năm trước kỳ báo cáo ngày tháng kỳ báo cáo báo cáo định kỳ tháng đầu năm
+ngày tháng năm trước ngày tháng năm báo cáo
+ngày tháng tiếp theo
+ngày tháng tiếp theo kỳ báo cáo
+ngày tháng trước kỳ báo cáo ngày tháng cuối quý
+ngày được
+ngân sách nhà nước
+ngôn ngữ sử dụng bản vẽ
+ngôn ngữ sử dụng thuyết minh
+ngôn ngữ tiếng việt
+người bánh
+người bánh có
+người bánh có gắn động cơ
+người bệnh đi
+người chuyên dùng
+người chỗ
+người chỗ chỗ
+người chỗ kể chỗ người lái xe
+người có mặt nơi xảy vụ tai nạn giao thông đường bộ
+người diễu hành đoàn
+người dẫn dắt
+người dự
+người già yếu
+người già yếu khi đi qua đường
+người già yếu tham gia giao thông đường bộ
+người giường nằm
+người hàng hoá
+người hành nghề
+người hành nghề lái xe
+người hành nghề lái xe được
+người khiếm thị
+người khiếm thị khi đi đường bộ
+người khuyết tật
+người khuyết tật khi đi
+người khác
+người kể cả xe buýt
+người kể cả xe buýt chỗ kể chỗ người lái xe
+người kể cả xe buýt trên chỗ
+người lao động trực tiếp sản xuất
+người liên quan vụ tai nạn giao thông đường bộ
+người lái loại xe quy định giấy phép
+người lái loại xe ô tô quy định
+người lái loại xe ô tô quy định giấy phép
+người lái loại xe ô tô tải
+người lái xe gắn máy
+người lái xe gắn máy quy định khoản điều này
+người lái xe gắn máy được
+người lái xe kéo rơ moóc
+người lái xe loại xe quy định giấy phép
+người lái xe loại xe quy định giấy phép lái xe hạng b c1 c d1 d2
+người lái xe loại xe ô tô
+người lái xe loại xe ô tô tải
+người lái xe mang đủ giấy tờ
+người lái xe tham gia giao thông đường bộ
+người lái xe xe ô tô
+người lái xe đường cao tốc
+người lái xe được
+người lái xe đủ tuổi
+người nhận
+người này
+người phía sau
+người phương tiện
+người phương tiện giao thông
+người phương tiện hỗ trợ
+người phương tiện hỗ trợ lái xe
+người quy định giấy phép
+người quản lý công trình đường bộ
+người quản lý sử dụng
+người quản lý sử dụng công trình
+người quản lý sử dụng công trình khi
+người quản lý sử dụng công trình lưu trữ
+người quản lý sử dụng công trình đường bộ
+người quản lý sử dụng công trình đường bộ kết quả quan trắc
+người quản lý sử dụng công trình đường bộ nhà thầu
+người quản lý sử dụng đường bộ
+người thùng xe ô tô
+người thừa kế theo quy định pháp luật thừa kế
+người trúng
+người trúng đấu giá
+người trúng đấu giá biển số xe
+người trúng đấu giá chết
+người trúng đấu giá thời hạn ngày
+người trúng đấu giá được
+người trực
+người trực tiếp
+người vi phạm chấm dứt hành vi vi phạm
+người vi phạm chấp hành yêu cầu kiểm tra
+người việt nam
+người vị trí công việc
+người xe
+người xe thực hiện
+người xe thực hiện quy định khoản điều luật này
+người đi
+người điều khiển
+người điều khiển thiết bị khác
+người điều khiển được
+người đó
+người được chở xe gắn máy khi
+người được chở xe mô tô ba bánh khi
+người được chở xe mô tô bánh khi
+người được cấp giấy phép lái xe
+người được cấp giấy phép lái xe còn làm nhiệm vụ quốc phòng
+người được cấp giấy phép lái xe hạng b2
+người đủ tuổi
+người đứng giá đèo hàng
+người đứng xe
+nhau cùng mức đường bộ
+nhau cùng mức đường sắt
+nhau hướng nào tới
+nhiên liệu năng lượng điện năng vật tư phụ tùng thay thế
+nhiều số chi phí quản lý bảo trì vận hành khai thác công trình hạng mục công trình công việc theo quy định điểm đ khoản điều thông tư này
+nhiều đất đá vật liệu rơi vãi ảnh hưởng an toàn giao thông đường bộ
+nhiệm vụ cảnh sát giao thông khi thực hiện tuần tra kiểm soát
+nhiệm vụ hậu
+nhiệm vụ khác theo
+nhiệm vụ khác theo yêu cầu cơ quan công an công tác
+nhiệm vụ khảo sát
+nhiệm vụ khảo sát thiết kế hồ sơ khảo sát thiết kế bản vẽ hoàn công
+nhiệm vụ khẩn cấp
+nhiệm vụ lực lượng thực hiện
+nhiệm vụ này theo quy định bộ trưởng bộ giao thông vận tải
+nhiệm vụ quan trắc
+nhiệm vụ quan trắc được
+nhiệm vụ quan trắc được cơ quan
+nhiệm vụ quan trắc được tổ chức
+nhiệm vụ quốc phòng an ninh
+nhiệm vụ theo
+nhiệm vụ thiết kế
+nhiệm vụ thực hiện
+nhiệm vụ trường hợp khẩn cấp
+nhiệm vụ tuyến quốc lộ uỷ quyền
+nhiệm vụ tuyến quốc lộ được
+nhiệm vụ tuần tra
+nhiệm vụ tình trạng khẩn cấp theo
+nhiệm vụ được giao liên quan khác
+nhu cầu cấp giấy phép lái xe
+nhu cầu quản lý
+nhu cầu sử dụng tiếp
+nhu cầu vé
+nhu cầu đổi
+nhà cung cấp dịch vụ
+nhà cổng trạm nhà quản lý điều hành nhà làm việc nhà nghỉ giữa ca nhà ăn nhà
+nhà hạt
+nhà máy kho
+nhà thầu
+nhà thầu bảo dưỡng
+nhà thầu khác
+nhà thầu khác có đủ điều kiện năng lực
+nhà thầu khác nhà thầu thi công sửa chữa công trình đường bộ
+nhà thầu khác phải nhà thầu kiểm định kiểm tra quan trắc công trình
+nhà thầu khảo sát thiết kế
+nhà thầu kịp thời
+nhà thầu quan trắc
+nhà thầu quản lý
+nhà thầu quản lý bảo dưỡng
+nhà thầu quản lý bảo dưỡng công trình đường bộ
+nhà thầu quản lý vận hành công trình đường bộ khai thác
+nhà thầu quản lý vận hành khai thác
+nhà thầu thi công
+nhà thầu thi công xây dựng
+nhà thầu thi công xây dựng dự án đầu tư xây dựng cải tạo nâng cấp mở rộng sửa chữa công trình đường bộ
+nhà thầu thi công xây dựng dự án đầu tư xây dựng mới
+nhà thầu thực hiện sửa đổi bổ sung quy trình bảo trì
+nhà thầu trường hợp nhà thầu
+nhà thầu vận hành khai thác công trình đường bộ
+nhà trạm
+nhà đầu tư
+nhân sự khác trạm
+nhân viên hành chính kỹ thuật
+nhân viên khác cần thiết việc vận hành
+nhân viên kỹ thuật trực
+nhân viên nước ngoài
+nhân viên phục vụ xe ô tô
+nhãn hàng hoá
+nhường đường người
+nhận giấy phép lái xe
+nhật ký tuần đường đường
+nhật trình
+niên hạn sử dụng
+niên hạn sử dụng quá năm
+niên hạn sử dụng xe cải tạo được
+nút giao thông khác mức cấp trở
+nút giao thông khác mức cấp trở khi thực hiện bảo trì công trình đường bộ đầu tư xây dựng
+năm công tác phòng
+năm i
+năm sau
+năm sau ngày tháng hàng năm
+năm sản xuất
+năm tính ngày tháng ngày tháng năm báo cáo
+năng lượng hệ thống
+năng lượng tiêu hao
+năng lượng xe cơ giới
+năng lực hành vi dân sự
+năng lực hành vi dân sự khi đi
+năng lực hành vi dân sự khi đi đường bộ
+năng lực phục vụ
+năng lực phục vụ công trình
+năng lực phục vụ công trình bộ phận kết cấu công trình xem xét
+nơi cầu cống hẹp đập tràn đường ngầm hầm chui hầm đường bộ
+nơi đường bộ
+nơi đường hẹp đủ xe chạy
+nước cộng hoà xã hội chủ nghĩa việt nam
+nước sạch hệ thống xử lý
+nước thải đảo giao thông bãi
+nạn
+nạn bộ giao thông vận tải
+nạn nhân gia đình nạn nhân tai nạn giao thông đường bộ
+nạn đi
+nền màu
+nồng độ cồn chất ma tuý
+nội dung báo cáo
+nội dung báo cáo được
+nội dung bất hợp lý quy trình bảo trì
+nội dung có
+nội dung công việc khác
+nội dung cần thiết khác
+nội dung duyệt điểm khoản này
+nội dung hồ sơ yêu cầu quy định điểm khoản này trường hợp linh kiện được
+nội dung hồ sơ đăng ký
+nội dung khác
+nội dung khác có
+nội dung khác theo
+nội dung miễn
+nội dung này
+nội dung quan trắc
+nội dung quy chuẩn kỹ thuật quốc gia cơ sở
+nội dung quy chuẩn kỹ thuật quốc gia cơ sở vật chất kỹ thuật
+nội dung quy chuẩn kỹ thuật quốc gia xe cơ giới
+nội dung quy chuẩn kỹ thuật quốc gia xe máy chuyên dùng tham gia giao thông đường bộ
+nội dung quy trình vận hành khai thác
+nội dung quy trình vận hành khai thác trạm giao dịch thanh toán phương tiện
+nội dung quy định khoản điều này
+nội dung quy định điều thông tư này
+nội dung quy định điểm khoản
+nội dung sau đây
+nội dung thủ tục
+nội dung thủ tục cấp giấy chứng nhận đủ điều kiện hoạt động cơ sở
+nội dung thủ tục kiểm định
+nội dung thủ tục tạm đình chỉ
+nội dung trình tự
+nội dung trình tự cấp giấy chứng nhận đủ điều kiện hoạt động cơ sở
+nội dung trình tự kiểm định
+nội dung trình tự thủ tục
+nội dung trình tự tạm đình chỉ
+nội dung tài liệu
+nội dung yêu cầu
+nội dung yêu cầu báo cáo
+nội dung điều tra
+nội dung điều tra giải quyết tai nạn giao thông đường bộ
+nội dung được
+pctt tkcn tổng cục đường bộ việt nam
+phiếu sang tên di chuyển
+phà người
+phà người được
+phà xe cơ giới
+phà xe thô sơ
+pháp luật
+pháp luật chi phí
+pháp luật có
+pháp luật công trình dân dụng
+pháp luật cấm
+pháp luật giá
+pháp luật hoạt động tuần tra
+pháp luật hành vi
+pháp luật hình sự
+pháp luật khi phát hiện
+pháp luật khác
+pháp luật khác có
+pháp luật khác khi
+pháp luật quy chuẩn tiêu chuẩn
+pháp luật quyền ưu đãi miễn trừ ngoại giao
+pháp luật theo
+pháp luật trường hợp người
+pháp luật trật tự an toàn giao thông đường bộ
+pháp luật trật tự an toàn giao thông đường bộ khi
+pháp luật trật tự an toàn giao thông đường bộ việt nam
+pháp luật tố tụng hình sự
+pháp luật việt nam
+pháp luật xây dựng trường hợp cần
+phát sinh tình hình vi phạm
+phép
+phí
+phí có
+phí có công tác này
+phí doanh nghiệp đầu tư
+phí dịch vụ
+phí dừng
+phí dự án
+phí hỗn hợp
+phí khi bảo đảm phương án tài chính
+phí mtc
+phí nhà đầu tư
+phí nhà đầu tư nhà cung cấp dịch vụ
+phí nhà đầu tư trạm kết nối backend
+phí phương tiện
+phí thẩm định
+phí thời hạn
+phí tần suất thực hiện
+phí đơn vị trực tiếp
+phí ≤ làn
+phía bên phải theo chiều đi mình
+phía sau vượt
+phía sau xe
+phía sau xe ban ngày người lái xe
+phía sau xe ban đêm
+phía sau xe được kéo
+phía trước xe kéo
+phòng ban chức năng hoạt động
+phù hợp hạng xe điều khiển
+phúc lợi tập thể
+phương pháp này
+phương pháp này chi phí quản lý
+phương pháp quy định
+phương pháp sau
+phương pháp đo
+phương pháp đầu tiên
+phương thức dịch vụ bưu chính
+phương thức fax
+phương thức gửi
+phương thức gửi nhận báo cáo
+phương thức gửi trực tiếp
+phương thức hệ thống thư điện tử
+phương thức khác theo
+phương thức quy định
+phương thức đặt hàng
+phương tiện bảo đảm an toàn kỹ thuật
+phương tiện cơ quan
+phương tiện dân sự trường hợp cấp bách
+phương tiện giao thông đường bộ di chuyển
+phương tiện giao thông được
+phương tiện khi
+phương tiện khác
+phương tiện khác khi tín hiệu đèn màu vàng nhấp nháy
+phương tiện người lái xe
+phương tiện thiết bị kỹ thuật trạm
+phương tiện thiết bị phục vụ trực tiếp công tác quản lý nhà nước hoạt động
+phương tiện thuộc
+phương tiện thuỷ nội địa mẫu quy định phụ lục thông tư này
+phương tiện thực hiện nhiệm vụ tuần tra
+phương tiện vi phạm
+phương tiện vi phạm dừng
+phương tiện đi ngược chiều
+phương tiện đóng việt nam
+phương tiện đưa đón
+phương tiện đưa đón người trực tiếp tham gia
+phương tiện được
+phương tiện đồ vật tài liệu giấy phép chứng chỉ hành nghề người
+phương án giá
+phương án nhằm
+phương án quan trắc
+phương án quan trắc khối lượng
+phương án quan trắc được phê duyệt
+phạm vi chi phí đầu tư
+phạm vi chiều dài đoạn đường sửa chữa
+phạm vi hoạt động
+phạm vi lý trình đoạn đường sửa chữa
+phạm vi ngày làm việc kể ngày kết thúc
+phạm vi quản lý
+phạm vi quản lý bộ giao thông vận tải
+phạm vi quản lý trực tiếp
+phần chủ yếu khối lượng rơ moóc
+phần lề đường
+phần mềm khác chi phí mua sắm
+phần mềm điện toán phục vụ
+phần mềm điện toán phục vụ lập trình kiểm soát
+phần đáng kể khối lượng sơ mi rơ moóc
+phần động cơ
+phối hợp cơ quan
+phụ cấp lương người được
+phụ lục ban hành
+phụ lục thông tư này
+phụ tùng xe cơ giới
+qua hệ thống bưu chính
+qua hệ thống dịch vụ công trực tuyến
+qua khu vực tai nạn
+qua vạch dừng
+quan trắc bộ phận công trình đường bộ
+quan trắc chất lượng công trình
+quan trắc công trình đường bộ
+quan trắc công trình đường bộ phục vụ công tác bảo trì
+quang học
+quy chuẩn
+quy chuẩn kỹ thuật
+quy chuẩn kỹ thuật có
+quy chuẩn kỹ thuật quốc gia
+quy chuẩn kỹ thuật quốc gia hiện hành
+quy chuẩn kỹ thuật tiêu chuẩn kỹ thuật áp dụng phương tiện
+quy chuẩn kỹ thuật tiêu chuẩn kỹ thuật áp dụng sản phẩm
+quy chuẩn kỹ thuật tiêu chuẩn áp dụng
+quy chuẩn kỹ thuật áp dụng
+quy chuẩn kỹ thuật được giao
+quy chuẩn tiêu chuẩn kỹ thuật
+quy chuẩn tiêu chuẩn kỹ thuật bảo trì
+quy phạm tiêu chuẩn quy chuẩn kỹ thuật
+quy trình
+quy trình bảo trì
+quy trình bảo trì chủ sở hữu
+quy trình bảo trì công trình còn
+quy trình bảo trì công trình tương tự
+quy trình bảo trì duyệt
+quy trình bảo trì hợp lý chủ sở hữu
+quy trình bảo trì hợp lý người quản lý
+quy trình bảo trì hợp đồng dự án kế hoạch
+quy trình bảo trì khi
+quy trình bảo trì nhà cung cấp
+quy trình bảo trì theo
+quy trình bảo trì trường hợp có quy trình bảo trì
+quy trình bảo trì được duyệt
+quy trình công trình hạng mục công trình tương tự phù hợp
+quy trình khai thác
+quy trình riêng công trình mình
+quy trình thao tác sử dụng
+quy trình vận hành
+quy trình vận hành khai thác công trình đường bộ
+quy trình vận hành khai thác cầu có
+quy trình vận hành khai thác cầu cất
+quy trình vận hành khai thác cầu quay
+quy trình vận hành khai thác hầm đường bộ có
+quy trình vận hành khai thác trạm
+quy tắc giao thông đường bộ
+quy tắc giao thông đường bộ khác quy định chương này
+quy tắc giao thông đường bộ sau đây
+quy định
+quy định an toàn
+quy định an toàn giao thông
+quy định an toàn lao động
+quy định biển số xe
+quy định bộ trưởng bộ giao thông vận tải
+quy định bộ trưởng bộ xây dựng
+quy định bộ xây dựng
+quy định chở
+quy định chở hàng
+quy định chở hàng hoá
+quy định chở hàng hoá có
+quy định chở hàng hoá cấm
+quy định chở hàng hoá nguy hiểm
+quy định chở hàng hoá vượt
+quy định chở hàng hoá vượt quá khổ giới hạn xe
+quy định chở hàng lậu
+quy định chở hành khách khoang
+quy định chở hành khách nóc xe
+quy định chở hành lý hàng hoá vượt
+quy định chở hành lý vượt
+quy định chở hành lý vượt quá khổ giới hạn xe
+quy định chở động vật hoang dã
+quy định cơ quan nhà nước
+quy định ece liên hiệp quốc phiên bản tương đương
+quy định hiện hành
+quy định hợp đồng dự án
+quy định khi
+quy định khoản điều này
+quy định khác pháp luật có
+quy định khác pháp luật khi
+quy định kiểm tra việc
+quy định kiểm tra điều kiện bảo đảm an toàn xe khi
+quy định luật này
+quy định luật xây dựng
+quy định nghị định số
+quy định ngôn ngữ sử dụng
+quy định ngôn ngữ sử dụng thuyết minh
+quy định niên hạn sử dụng
+quy định niên hạn xe sau
+quy định niên hạn xe sau khi cải tạo
+quy định niên hạn xe trước khi cải tạo
+quy định này
+quy định pháp luật
+quy định pháp luật an toàn giao thông đường bộ
+quy định pháp luật an toàn thực phẩm
+quy định pháp luật chi phí
+quy định pháp luật có
+quy định pháp luật giá
+quy định pháp luật trật tự
+quy định pháp luật trật tự an toàn giao thông đường bộ việt nam
+quy định pháp luật trật tự an toàn giao thông đường bộ vệ sinh dịch tễ phòng dịch
+quy định pháp luật vệ sinh dịch tễ
+quy định phụ lục ban hành
+quy định phụ lục thông tư này
+quy định quy chuẩn kỹ thuật tiêu chuẩn kỹ thuật áp dụng sản phẩm
+quy định sau
+quy định sau đây
+quy định số người quản lý vận hành
+quy định thông tư này
+quy định thông tư số ngày tháng năm bộ trưởng bộ xây dựng hướng dẫn
+quy định thời gian tính
+quy định tiêu chuẩn kỹ thuật
+quy định trên
+quy định tín hiệu đèn giao thông
+quy định uỷ ban nhân dân cấp tỉnh
+quy định vận chuyển hành khách đúng lịch trình đăng ký
+quy định vận chuyển hành khách đúng lộ trình đăng ký
+quy định điểm
+quy định đó
+quy định được
+quy định được qua đường nơi
+quy định được vượt dải phân cách
+quy định được đu
+quy định để hành khách
+quyết định cấp
+quyết định hành chính hành vi hành chính liên quan quyền
+quyết định thành lập
+quyết định xử phạt
+quyền công tác
+quyền giải trình
+quyền hạn cảnh sát giao thông khi thực hiện tuần tra kiểm soát
+quyền hạn khác theo
+quyền hợp pháp cơ quan tổ chức cá nhân
+quyền lợi hợp pháp cơ quan tổ chức cá nhân
+quyền lợi ích hợp pháp tổ chức cá nhân
+quyền phản ánh trường hợp
+quyền sau đây
+quyền sở hữu
+quyền sở hữu công nghiệp
+quyền sở hữu hợp pháp
+quyền sở hữu toàn dân tài sản
+quyền sở hữu xe
+quyền thời hạn ngày
+quyền trách nhiệm khác công tác quản lý
+quyền tố giác trường hợp
+quyền từ chối yêu cầu
+quyền đi trước
+quyền đi trước xe khác khi
+quyền đi trước xe khác khi xe ưu tiên qua đường
+quyền được
+quyền được thông báo căn cứ
+quyền được thông báo hành vi
+quyền được thông báo nội dung
+quyền được trao đổi biển số xe trúng
+quyền được điều khiển phương tiện
+quyền được đăng ký biển số xe trúng
+quyền ưu tiên đi trước
+quá khổ giới hạn công trình đường bộ
+quá thời hạn ngày kể ngày thông báo
+quá thời hạn năm
+quá trình khai thác
+quá trình quản lý
+quá trình thực hiện
+quá trình vận chuyển người vận chuyển
+quá trình vận chuyển việc
+quá trình vận hành
+quá tải trọng công trình đường bộ
+quá tải trọng cụm trục xe
+quá tải trọng trục xe
+quá tải trọng đường bộ
+quản lý vận hành khai thác
+quốc gia phù hợp loại xe
+quốc tế khác theo
+quốc tế khác theo điều ước quốc tế có
+quốc tế quốc gia
+quốc tế trật tự an toàn giao thông đường bộ
+quỹ hiệu quả
+quỹ kịp thời
+quỹ đúng mục đích
+quỹ đúng pháp luật
+ra tai nạn giao thông đường bộ
+rào chắn
+rõ hành vi
+rõ hành vi chấp hành yêu cầu kiểm tra
+rõ quyền
+rơ moóc
+sai quy định
+sau bảo dưỡng công trình đường bộ
+sau lưng người
+suất vốn đầu tư công trình tương ứng cơ quan
+suốt quá trình vận chuyển đường
+sơ mi rơ moóc
+sơ mi rơ moóc được
+sơ đồ bố trí
+sạt lở đường quốc lộ
+sản phẩm có xác nhận cơ sở trường hợp
+sản phẩm công nghiệp
+sản phẩm dạng điện tử trường hợp nộp thông qua hệ thống dịch vụ công trực tuyến
+sản phẩm dịch vụ công ích
+sản phẩm hàng hoá cơ sở nhập khẩu
+sản phẩm mẫu quy định phụ lục vi ban hành
+sản phẩm trường hợp
+sản phẩm trường hợp nộp thông qua hệ thống dịch vụ công trực tuyến
+sản phẩm xây dựng bộ phận công trình đường bộ
+số biển số xe
+số biển số xe thời hạn năm
+số biển số xe đó
+số biển số xe định danh
+số chuyến phà ngày tháng quý
+số giấy
+số khung số động cơ
+số khung số động cơ mẫu phụ lục kèm theo thông tư này
+số liệu
+số liệu báo cáo
+số liệu báo cáo báo cáo hàng năm
+số liệu báo cáo báo cáo hàng quý
+số liệu báo cáo báo cáo định kỳ tháng cuối năm
+số liệu báo cáo báo cáo định kỳ tháng đầu năm
+số liệu báo cáo cục
+số liệu báo cáo hàng quý tổ chức
+số liệu báo cáo ngày ngày cuối cùng tháng báo cáo
+số liệu báo cáo tổng cục đường bộ việt nam hệ thống đường trung ương
+số liệu báo cáo đơn vị được
+số liệu nhà cung cấp dịch vụ
+số liệu quan trắc
+số liệu đo
+số loại
+số làn
+số lượng ca
+số lượng ca làm việc bình thường ngày
+số lượng ca làm việc bình thường đêm
+số lượng chu kỳ đo
+số lượng hao phí ngày theo
+số lượng người trực tiếp làm việc
+số lượng người trực tiếp làm việc ca
+số lượng này
+số lần
+số màu trắng
+số màu đen
+số ngày làm việc kỳ
+số người
+số người cho phép
+số người cho phép chở người kể người lái xe
+số người cho phép chở người trở kể người lái xe
+số người cho phép chở tối đa người kể người lái xe
+số người trực tiếp tham gia
+số năm thực hiện
+số phương tiện
+số tiền
+số tiền nộp
+số tiền trúng
+số trục xe tiêu chuẩn tích luỹ thiết kế so số trục xe tiêu chuẩn tích luỹ thời gian khai thác
+số điện thoại tổ chức cá nhân kinh doanh
+sở giao thông vận tải
+sở giao thông vận tải phạm vi trách nhiệm quản lý
+sở giao thông vận tải xây dựng
+sở giao thông vận tải xây dựng tỉnh thành phố
+sức khoẻ hành khách
+sức khoẻ theo
+sức người
+sử dụng thực tế kể khi đưa
+sử dụng xe khác
+sửa chữa công trình đường bộ
+sửa chữa khẩn cấp
+sửa chữa định kỳ
+sửa chữa đột xuất công trình
+sửa chữa đột xuất công trình đường bộ
+sự an toàn chịu lực
+sự biến đổi hình học công trình đường bộ
+sự cố cháy xảy hầm cầu
+sự cố công trình
+sự cố công trình hệ thống đường trung ương
+sự cố công trình hệ thống đường trung ương chủ sở hữu
+sự cố công trình hệ thống đường trung ương cơ quan
+sự cố công trình hệ thống đường trung ương doanh nghiệp đầu tư
+sự cố công trình hệ thống đường trung ương nhà thầu
+sự cố công trình theo
+sự cố công trình đường bộ
+sự cố công trình đường bộ theo
+sự cố công trình đường bộ thời gian khai thác
+sự cố công trình đường bộ thời gian khai thác hệ thống đường trung ương cơ quan
+sự cố công trình đường bộ thời gian khai thác được
+sự cố nổ xảy hầm cầu
+sự cố sập
+sự cố thiên tai dịch bệnh
+sự giám sát đăng kiểm
+sự kiện bất khả kháng
+sự làm việc bình thường an toàn công trình đường bộ
+sự làm việc bình thường trạm theo
+sự nghiệp kinh tế đường bộ
+sự phù hợp khi
+sự thông suốt
+tai nạn giao thông
+tai nạn giao thông đường bộ
+tai nạn giao thông đường bộ hiện trường
+tai nạn giao thông đường bộ theo
+tai nạn giao thông đường bộ tuỳ tính chất mức độ vi phạm
+tai nạn giao thông đường bộ xác định có dấu hiệu tội phạm nội dung
+tai nạn giao thông đường bộ xác định có dấu hiệu tội phạm nội dung điều tra
+tai nạn giao thông đường bộ xác định có dấu hiệu tội phạm nội dung điều tra giải quyết tai nạn giao thông đường bộ
+tai nạn giao thông đường bộ đi
+tai nạn giao thông đường bộ được
+tay bên phải
+tay dang ngang
+tay lái bên phải phải
+tay lái bên phải tay lái nghịch
+tay lái bên phải tham gia giao thông việt nam
+tay quay
+thai khi đi qua đường
+thai người già yếu người khuyết tật
+thai được
+tham mưu uỷ ban nhân dân cấp tỉnh quyết định đưa hoạt động trạm
+thanh nối cứng
+thanh tra giao thông địa phương
+thay đổi thiết kế quá trình thi công
+theo bản chính trường hợp nộp trực tiếp
+theo bản dịch tiếng việt
+theo bản sao chứng nhận
+theo bản sao chứng nhận đăng ký xe có
+theo bản sao điện tử có giá trị pháp lý trường hợp nộp
+theo bằng
+theo chứng chỉ
+theo chứng nhận
+theo chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự chủ xe cơ giới
+theo chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự theo
+theo giấy phép lái xe quốc tế khi lái xe
+theo hình thức đối tác công tư
+theo hình thức đối tác công tư công tác
+theo hình thức đối tác công tư khi
+theo phương thức sau
+theo phương thức đối tác công tư nhà đầu tư
+theo quy định luật này
+theo quy định thông tư số ngày tháng năm bộ trưởng bộ xây dựng hướng dẫn
+theo thông tư này
+theo tiêu chuẩn kỹ thuật
+theo điều ước quốc tế
+thiên tai
+thiên tai dịch bệnh
+thiên tai năm sau
+thiết bị bốc dỡ
+thiết bị chuyên dụng
+thiết bị cân
+thiết bị công nghệ
+thiết bị công nghệ công trình trạm
+thiết bị công trình
+thiết bị cần
+thiết bị cần thiết khác
+thiết bị dân sự trường hợp cấp bách
+thiết bị ghi hình
+thiết bị khác
+thiết bị kiểm tra chuyên dụng khi cần thiết
+thiết bị lắp đặt công trình
+thiết bị lắp đặt công trình bị
+thiết bị lắp đặt công trình khi
+thiết bị lắp đặt công trình làm cơ sở việc sửa chữa
+thiết bị lắp đặt công trình trạm
+thiết bị lắp đặt công trình đường bộ
+thiết bị mình
+thiết bị nâng
+thiết bị phòng
+thiết bị phương tiện hệ thống cân
+thiết bị phụ trợ khác
+thiết bị phụ trợ khác quy định khoản điều thông tư này
+thiết bị quy định điểm
+thiết bị rời
+thiết bị rời cần
+thiết bị thông minh hỗ trợ
+thiết bị trợ thính
+thiết bị vận hành
+thiết bị vật tư nhiên liệu
+thiết bị âm thanh
+thiết bị ít hơn ngày
+thiết bị đo
+thiết bị đóng
+thiết bị định kỳ khi sửa chữa
+thiết kế bản chính
+thiết kế bản vẽ thi công
+thiết kế bản vẽ thi công sửa chữa
+thiết kế gồm thành phần quy định
+thiết kế hệ thống bưu chính
+thiết kế hệ thống dịch vụ công trực tuyến
+thiết kế kỹ thuật
+thiết kế kỹ thuật sửa chữa
+thiết kế mẫu phụ lục ban hành
+thiết kế mẫu quy định phụ lục thông tư này
+thiết kế quá trình thi công
+thiết kế trực tiếp trụ sở cục đăng kiểm việt nam
+thiết kế tài liệu hướng dẫn theo
+thiết kế tàu biển
+thiệt hại tai nạn giao thông đường bộ
+thiệt hại tai nạn giao thông đường bộ được
+thoả thuận quốc tế
+thoả thuận quốc tế liên quan trật tự an toàn giao thông đường bộ
+thuyết minh hồ sơ thiết kế
+thuế cơ quan tổ chức cá nhân nước ngoài
+thành phần theo
+thành viên công ước viên
+thành viên cấp
+thành viên điều ước quốc tế
+tháng đầu năm
+tháng đầu năm tính ngày tháng ngày tháng năm báo cáo
+thêm ít nhất tiền lương ngày thường hệ số
+thông báo chủ
+thông báo giá sở xây dựng
+thông báo kết quả trúng
+thông qua biện pháp nghiệp vụ lực lượng chức năng
+thông qua dữ liệu thiết bị
+thông qua hệ thống
+thông qua hệ thống giám sát
+thông qua phương tiện
+thông qua thiết bị
+thông qua thiết bị cân
+thông qua trạm
+thông số
+thông số kỹ thuật
+thông số kỹ thuật khác bộ phận công trình đường bộ
+thông số kỹ thuật khác công trình đường bộ
+thông số kỹ thuật khác sản phẩm xây dựng
+thông số kỹ thuật khác sản phẩm xây dựng bộ phận công trình đường bộ
+thông số kỹ thuật kèm theo bản vẽ kỹ thuật
+thông số kỹ thuật mẫu phụ lục kèm theo thông tư này
+thông số kỹ thuật mẫu quy định phụ lục ban hành
+thông số kỹ thuật mẫu quy định phụ lục v ban hành
+thông số kỹ thuật theo tiêu chuẩn quy chuẩn kỹ thuật quốc gia tương ứng
+thông số kỹ thuật trường hợp nộp
+thông số quan trắc
+thông thường tính ca
+thông tin dữ liệu
+thông tin ghi giấy phép lái xe
+thông tin liên quan vụ tai nạn
+thông tin liên quan vụ tai nạn yêu cầu cơ quan
+thông tin nguy cơ
+thông tin nơi thường trú
+thông tin nơi tạm trú
+thông tin trụ sở
+thông tin tình huống quy định khoản điều
+thông tin tình huống quy định khoản điều này
+thông tin tình huống quy định khoản điều này chức năng nhiệm vụ mình
+thông tin xác thực vụ tai nạn yêu cầu cơ quan
+thông tin đường thông tin tình hình giao thông
+thông tư này
+thông tư này phạm vi ngày làm việc kể ngày
+thông tư này trường hợp nộp thông qua hệ thống dịch vụ công trực tuyến
+thông tư số
+thông tư số ngày bộ lao động thương binh
+thông tư số ngày tháng năm bộ trưởng bộ giao thông vận tải
+thông tư số ngày tháng năm bộ trưởng bộ xây dựng hướng dẫn
+thùng hàng lắp cùng khung xe
+thư báo
+thường xuyên chu kỳ tháng năm
+thường xuyên công trình đường bộ
+thường xuyên dự án ppp
+thường xuyên tình trạng chất lượng công trình được
+thẩm quyền giải quyết
+thẩm quyền ký kết
+thẩm quyền ký kết hợp đồng sau khi
+thẩm quyền nhà nước
+thẩm quyền nước ngoài
+thẩm quyền nước xuất xứ sản phẩm
+thẩm quyền phòng ngừa
+thẩm quyền quyết định
+thẩm quyền quản lý
+thẩm quyền quốc gia
+thẩm quyền việc thay đổi trái phép số khung số máy
+thẩm quyền việt nam
+thẩm quyền xử lý
+thẩm quyền xử lý tổ chức cá nhân vi phạm
+thẩm quyền xử phạt
+thẩm quyền điều chỉnh phương án sử dụng phù hợp
+thẩm định thiết kế chuyển đổi tàu biển thành phương tiện thuỷ nội địa
+thẩm định thiết kế chuyển đổi tàu biển thành phương tiện thuỷ nội địa cơ quan thẩm định
+thẩm định thiết kế phương tiện nhập khẩu người
+thẩm định thiết kế phương tiện nhập khẩu người thực hiện
+thẩm định thiết kế phương tiện nhập khẩu tổ chức cá nhân nhập khẩu
+thẩm định thiết kế sản phẩm công nghiệp cơ quan
+thẩm định thiết kế sản phẩm công nghiệp người đề nghị
+thẩm định thiết kế đóng hoán cải sửa đổi chủ thể thẩm định
+thẩm định thiết kế đóng hoán cải sửa đổi cơ quan thẩm định
+thẩm định thiết kế đóng hoán cải sửa đổi khách hàng
+thẻ thường trú
+thẻ tạm trú việt nam
+thời gian báo cáo
+thời gian bị tước quyền
+thời gian hoàn thành
+thời gian khai thác
+thời gian kiểm tra
+thời gian làm việc ca
+thời gian làm việc ca cả năm
+thời gian người lái xe được phép
+thời gian quan trắc
+thời gian thực hiện
+thời gian vận hành khai thác sử dụng công trình ppp
+thời hiệu
+thời hạn
+thời hạn ban hành quy trình bảo trì riêng công trình
+thời hạn dự kiến
+thời hạn dự kiến sử dụng
+thời hạn giải quyết
+thời hạn giấy phép lái xe được
+thời hạn khai thác
+thời hạn ngày
+thời hạn ngày đó
+thời hạn năm kể ngày cấp
+thời hạn quy định người trúng đấu giá biển số xe
+thời hạn quá năm kể ngày cấp
+thời hạn sử dụng
+thời hạn sử dụng công trình công trình hết tuổi thọ thiết kế
+thời hạn sử dụng theo thiết kế công trình
+thời hạn sử dụng thiết kế
+thời hạn sử dụng thiết kế công trình
+thời hạn sử dụng thiết kế công trình đường bộ
+thời hạn sửa chữa hạng mục công trình khác được
+thời hạn sửa chữa thay thế định kỳ thiết bị lắp đặt công trình
+thời hạn sửa chữa định kỳ thiết bị lắp đặt công trình được
+thời hạn thiết kế
+thời hạn tháng
+thời hạn tháng kể ngày được cấp quyết định
+thời hạn tuổi thọ hạng mục công trình
+thời hạn đăng ký khu kinh tế cửa khẩu quốc tế
+thời hạn đăng ký khu kinh tế thương mại đặc biệt
+thủ quỹ kế toán
+thủ tục cấp giấy chứng nhận đủ điều kiện hoạt động
+thủ tục liên quan công tác nhập
+thủ tục thu hồi
+thủ tục tạm đình chỉ hoạt động giấy chứng nhận đủ điều kiện hoạt động
+thứ tự đó
+thứ tự ưu tiên cao
+thứ tự ưu tiên trên dưới
+thứ tự ưu tiên đi trước
+thứ tự ưu tiên đi trước xe khác
+thứ tự ưu tiên đó
+thực hiện chế độ chính sách hoạt động trạm
+thực hiện có cùng loại cấp công trình quy mô công suất
+thực phẩm tươi sống
+thực tế công trình
+thực tế công trình ngắn hơn tuổi thọ thiết kế
+thực tế công trình đường bộ
+thực tế nhiệm vụ
+tin cơ quan công an
+tin cơ quan công an cơ sở
+tin cơ sở
+tin trường hợp
+tin uỷ ban nhân dân nơi gần
+tiêu chuẩn kỹ thuật
+tiêu chuẩn kỹ thuật bảo trì
+tiêu chuẩn kỹ thuật có
+tiêu chuẩn kỹ thuật quy trình
+tiêu chuẩn kỹ thuật quy trình bảo trì được duyệt kế hoạch bảo trì năm
+tiêu chuẩn kỹ thuật áp dụng
+tiêu chuẩn kỹ thuật áp dụng công trình
+tiêu chuẩn kỹ thuật áp dụng phương tiện
+tiêu chuẩn quy chuẩn kỹ thuật quốc gia tương ứng
+tiêu chuẩn thiết kế
+tiêu phản quang
+tiếng anh
+tiếng anh có
+tiếng việt
+tiếng ồn bụi bẩn suốt quá trình vận chuyển đường
+tiếp khi đi vạch dừng
+tiền ca làm việc
+tiền dịch vụ
+tiền kế hoạch phân công
+tiền lương bộ phận
+tiền lương cán bộ nhân viên
+tiền lương cơ sở
+tiền lương tiền công
+tiền mặt doanh thu
+tiền mặt nhà cung cấp dịch vụ
+tiền mặt theo chứng từ kế toán theo
+tiền mặt vụ thu
+tiền nhà đầu tư nhà cung cấp dịch vụ
+tiền theo
+tiền thu bộ phận
+tiền trúng đấu giá
+tiền trường hợp
+trang phục tuần kiểm
+trang thiết bị an toàn xe
+trang thiết bị cần thiết
+trang thông tin điện tử tổng cục đường bộ việt nam
+trung ương
+trách nhiệm bàn giao chủ
+trách nhiệm báo cáo chính quyền địa phương nơi gần
+trách nhiệm báo cáo hệ thống đường địa phương
+trách nhiệm báo cáo theo
+trách nhiệm báo tin cơ quan công an cơ sở
+trách nhiệm bảo đảm quy định kế hoạch bảo trì được giao
+trách nhiệm bảo đảm quy định quy trình bảo trì được giao
+trách nhiệm bảo đảm quy định quy trình vận hành
+trách nhiệm bảo đảm quy định tiêu chuẩn
+trách nhiệm chi trả chi phí
+trách nhiệm chấp hành quy định pháp luật an toàn giao thông đường bộ
+trách nhiệm chấp hành quy định pháp luật trật tự giao thông đường bộ
+trách nhiệm chất lượng công việc nhà thầu đó
+trách nhiệm chủ xe cơ giới xe máy chuyên dùng
+trách nhiệm chủ xe cơ giới xe máy chuyên dùng được
+trách nhiệm chủ xe khi thực hiện
+trách nhiệm chủ đầu tư
+trách nhiệm cung cấp hồ sơ tài liệu giai đoạn đầu tư xây dựng
+trách nhiệm cung cấp thông tin
+trách nhiệm cung cấp thông tin liên quan vụ tai nạn giao thông đường bộ cơ quan
+trách nhiệm công tác
+trách nhiệm cơ quan
+trách nhiệm cơ quan nhà nước
+trách nhiệm cảnh báo nguy hiểm
+trách nhiệm cập nhật
+trách nhiệm cục
+trách nhiệm cứu chữa kịp thời người
+trách nhiệm dừng phương tiện
+trách nhiệm giám sát nhà thầu bảo dưỡng
+trách nhiệm giám sát nhà thầu khác thực hiện hợp đồng ký
+trách nhiệm giúp đỡ người
+trách nhiệm giải quyết tình huống gây
+trách nhiệm giữ gìn trật tự xe
+trách nhiệm giữ nguyên hiện trường
+trách nhiệm hình sự
+trách nhiệm hướng dẫn hành khách
+trách nhiệm hướng dẫn hành khách an toàn giao thông đường bộ
+trách nhiệm hệ thống đường địa phương
+trách nhiệm hợp tác lực lượng
+trách nhiệm khi
+trách nhiệm khác theo
+trách nhiệm khắc phục kịp thời hư hỏng kết cấu hạ tầng giao thông đường bộ gây
+trách nhiệm khắc phục phạm vi quản lý
+trách nhiệm khắc phục yếu tố
+trách nhiệm kiến nghị người quản lý sử dụng đường bộ xử lý kịp thời
+trách nhiệm kiểm tra cơ quan đơn vị việc
+trách nhiệm kiểm tra hiện trạng công trình khi
+trách nhiệm kiểm tra nhà thầu thực hiện
+trách nhiệm kiểm tra tổ chức thực hiện quy định điểm a
+trách nhiệm kiểm tra yếu tố
+trách nhiệm lưu giữ hồ sơ tài liệu khác phục vụ việc
+trách nhiệm lưu giữ hồ sơ tài liệu khác phục vụ việc vận hành
+trách nhiệm lập
+trách nhiệm lập hồ sơ tài liệu giai đoạn đầu tư xây dựng
+trách nhiệm lập hồ sơ tài liệu khác theo
+trách nhiệm mình
+trách nhiệm người
+trách nhiệm người vi phạm
+trách nhiệm nhà thầu
+trách nhiệm nhà thầu quản lý vận hành khai thác
+trách nhiệm này
+trách nhiệm pháp luật
+trách nhiệm pháp luật tính hợp pháp tài sản đó
+trách nhiệm phương thức thực hiện
+trách nhiệm phạm vi nhiệm vụ quyền hạn mình
+trách nhiệm phối hợp
+trách nhiệm phối hợp chính quyền địa phương
+trách nhiệm phối hợp cơ quan
+trách nhiệm phối hợp cơ quan cảnh sát giao thông
+trách nhiệm phối hợp giải quyết
+trách nhiệm phối hợp tổng cục đường bộ việt nam
+trách nhiệm phối hợp địa phương
+trách nhiệm quy định pháp luật
+trách nhiệm quyết định biện pháp khẩn cấp
+trách nhiệm quyết định hành vi mình theo
+trách nhiệm quản lý
+trách nhiệm quản lý hồ sơ tài liệu khác theo
+trách nhiệm quản lý hồ sơ tài liệu quy định khoản điều thông tư này
+trách nhiệm quản lý nội dung khác
+trách nhiệm sau đây
+trách nhiệm sở giao thông vận tải
+trách nhiệm sử dụng hồ sơ tài liệu khác theo
+trách nhiệm sử dụng hồ sơ tài liệu quy định khoản điều thông tư này
+trách nhiệm sửa chữa hư hỏng
+trách nhiệm tham gia bảo vệ hiện trường
+trách nhiệm tham gia bảo vệ tài sản người
+trách nhiệm theo
+trách nhiệm thông báo cơ quan nhà nước
+trách nhiệm thẩm quyền việc quyết định
+trách nhiệm thống kê yếu tố hình học cấp đường công trình đường bộ vị trí biển báo
+trách nhiệm thực hiện
+trách nhiệm thực hiện biện pháp
+trách nhiệm thực hiện biện pháp chỉ huy
+trách nhiệm thực hiện biện pháp khác theo
+trách nhiệm thực hiện biện pháp quy định khoản điều luật này
+trách nhiệm thực hiện biện pháp đảm bảo an toàn giao thông thời gian khai thác
+trách nhiệm thực hiện biện pháp đảm bảo giao thông an toàn theo quy định pháp luật giao thông đường bộ
+trách nhiệm thực hiện công việc
+trách nhiệm thực hiện công việc theo
+trách nhiệm thực hiện nội dung
+trách nhiệm thực hiện nội dung hợp đồng ký
+trách nhiệm thực hiện nội dung khác
+trách nhiệm thực hiện quy tắc giao thông đường bộ khác quy định chương luật này
+trách nhiệm thực hiện quy định
+trách nhiệm thực hiện quy định thông tư này
+trách nhiệm tiếp nhận hồ sơ tài liệu giai đoạn đầu tư xây dựng
+trách nhiệm tiếp nhận yếu tố
+trách nhiệm trợ giúp người
+trách nhiệm trực
+trách nhiệm tạm thời đình chỉ
+trách nhiệm tạm thời đình chỉ hoạt động giao thông tuyến đường
+trách nhiệm tổ chức
+trách nhiệm tổng cục đường bộ việt nam
+trách nhiệm tổng hợp
+trách nhiệm việc
+trách nhiệm vận hành
+trách nhiệm xử lý phạm vi quản lý
+trách nhiệm đơn vị được phân cấp uỷ quyền quản lý công trình đường bộ
+trách nhiệm đầu tư
+trách nhiệm định kỳ tháng cập nhật
+trách nhiệm ở hiện trường vụ tai nạn giao thông đường bộ khi người cơ quan công an đến
+trên dưới
+trên số biển số xe đó
+trình tự
+trình tự cấp giấy chứng nhận đủ điều kiện hoạt động
+trình tự tạm đình chỉ hoạt động giấy chứng nhận đủ điều kiện hoạt động
+trước khi quan trắc
+trước khi ra khỏi đường cao tốc
+trường hợp bộ giao thông vận tải là chủ đầu tư bộ giao thông vận tải
+trường hợp bộ xây dựng quy định
+trường hợp chuyển nhượng
+trường hợp chủ xe có
+trường hợp cán bộ nhân viên vi phạm
+trường hợp có cầu vượt dành người
+trường hợp có giá trị quyết toán công trình
+trường hợp có hầm dành người
+trường hợp có tiêu chuẩn kỹ thuật bảo trì quy trình bảo trì vận hành khai thác định mức bảo dưỡng dữ liệu chi phí quản lý bảo trì vận hành khai thác công trình tương tự xác định chi phí theo quy định điểm a
+trường hợp có vạch
+trường hợp có đèn tín hiệu
+trường hợp công trình bộ phận công trình đường bộ
+trường hợp công trình đường bộ doanh nghiệp nhà nước
+trường hợp công trình đường bộ xảy ra sự cố dẫn thảm hoạ
+trường hợp công việc sửa chữa đột xuất có giá trị lớn hơn đồng
+trường hợp cơ sở thiết kế
+trường hợp cơ sở thiết kế khác cơ sở sản xuất người
+trường hợp cơ sở thiết kế nộp hệ thống dịch vụ công trực tuyến
+trường hợp cần
+trường hợp cần bảo đảm an toàn chịu lực tổng cục đường bộ việt nam
+trường hợp cần bảo đảm an toàn vận hành khai thác tổng cục đường bộ việt nam
+trường hợp cần nâng cấp phần mềm điện toán hiện đại hoá trạm giao dịch thanh toán phương tiện
+trường hợp cần phá dỡ công trình chủ sở hữu
+trường hợp cần thiết
+trường hợp cần thiết chủ sở hữu
+trường hợp cần xác định định mức khấu hao máy
+trường hợp dải phân cách
+trường hợp giá ca máy có bảng giá ca máy sở
+trường hợp giá vật liệu xây dựng theo công bố giá địa phương
+trường hợp hạn chế nguồn vốn kế hoạch bảo trì khoản này
+trường hợp hệ thống hãm xe được kéo
+trường hợp hồ sơ thiết kế
+trường hợp hồ sơ đăng ký kiểm tra đầy đủ quy định cơ quan
+trường hợp khác
+trường hợp khẩn cấp cần
+trường hợp khẩn cấp khác theo
+trường hợp linh kiện nhập khẩu nước ngoài cung cấp tài liệu giấy
+trường hợp loại vật liệu xây dựng có công bố giá vật liệu xây dựng địa phương đường ô tô cấp i
+trường hợp làm thủ tục sang tên
+trường hợp máy móc thiết bị
+trường hợp người
+trường hợp người vi phạm có hành vi
+trường hợp nhận hệ thống dịch vụ công trực tuyến
+trường hợp nhận trực tiếp trụ sở cơ quan
+trường hợp này
+trường hợp nộp
+trường hợp nộp thông qua hệ thống dịch vụ công trực tuyến
+trường hợp nộp trực tiếp
+trường hợp phương tiện nhập khẩu việt nam
+trường hợp quy chuẩn
+trường hợp quy định khoản điều luật này
+trường hợp quy định điểm khoản
+trường hợp quy định điểm khoản điều này
+trường hợp quy định điểm điểm khoản này
+trường hợp sau
+trường hợp sau đây
+trường hợp sản phẩm công nghiệp nhập khẩu cơ quan
+trường hợp sử dụng tạm thời lòng đường vỉa hè
+trường hợp sửa chữa đột xuất
+trường hợp theo
+trường hợp thu hồi chứng nhận đăng ký xe biển số xe cơ giới xe máy chuyên dùng
+trường hợp thừa kế xe gắn biển số xe trúng đấu giá
+trường hợp tiêu chuẩn
+trường hợp trạm
+trường hợp tuổi thọ
+trường hợp tặng cho xe gắn biển số xe trúng đấu giá
+trường hợp vượt quá khả năng thẩm quyền chức năng nhiệm vụ cơ quan
+trường hợp vượt quá khả năng thẩm quyền chức năng nhiệm vụ cơ quan công an
+trường hợp vật tư vật liệu tiêu hao thường xuyên
+trường hợp xe
+trường hợp xe bánh xích
+trường hợp xe cùng thứ tự ưu tiên đến bến phà
+trường hợp xe cùng thứ tự ưu tiên đến cầu phao
+trường hợp xe cơ giới áp dụng niên hạn sử dụng
+trường hợp xe quá khổ giới hạn
+trường hợp xe quá tải trọng
+trường hợp xe quá tải trọng vượt quá tải trọng công trình đường bộ
+trường hợp xe được
+trường hợp xảy sự kiện bất khả kháng
+trường hợp xử lý kịp thời gây thiệt hại người
+trường hợp điều ước quốc tế
+trường hợp đó
+trường hợp đơn giá vật tư vật liệu có thông báo giá đường ô tô cấp i trở
+trường hợp đường có vỉa hè lề đường đường dành riêng người
+trường hợp đầu tiên thứ tự ưu tiên đi trước
+trường hợp đặc thù
+trường hợp đổi
+trạm an toàn
+trạm giao dịch thanh toán
+trạm giao dịch thanh toán phương tiện
+trạm phó
+trật tự an toàn giao thông đường bộ
+trật tự an toàn giao thông đường bộ khi phát hiện
+trật tự an toàn giao thông đường bộ nơi xảy tình huống
+trật tự an toàn giao thông đường bộ quá trình ngăn chặn
+trật tự an toàn giao thông đường bộ quá trình phát hiện
+trật tự an toàn giao thông đường bộ quá trình xử lý
+trật tự an toàn giao thông đường bộ theo
+trật tự an toàn xã hội
+trật tự tuyến giao thông đường bộ
+trẻ em dưới tuổi khi đi qua đường
+trẻ em mầm non
+trẻ em mầm non học sinh
+trẻ em phụ nữ
+trẻ em tuổi
+trẻ em xe
+trọng tải trên
+trở ngại khách quan
+trở ngại người
+trở ngại phương tiện
+trụ cầu
+trụ sở tổ chức trúng
+trụ tháp cầu treo
+trực quan
+trực tiếp
+trực tiếp cơ quan
+trực tiếp dịch vụ bưu chính fax hệ thống thư điện tử
+trực tiếp hồ sơ cơ quan
+trực đảm bảo giao thông
+tuyến giao thông đường bộ
+tuyến giao thông đường bộ theo quy chuẩn kỹ thuật quốc gia
+tuyến đường hư hỏng mất an toàn giao thông
+tuyến đường ưu tiên
+tuổi phương tiện
+tuổi thọ
+tuổi thọ công trình thiết bị công trình theo
+tuổi thọ sử dụng
+tuổi tối đa người
+tài liệu bộ hồ sơ thiết kế
+tài liệu cần thiết khác
+tài liệu cần thiết khác có
+tài liệu hướng dẫn
+tài liệu hướng dẫn cục
+tài liệu kèm theo
+tài liệu kỹ thuật
+tài liệu kỹ thuật nước ngoài cấp phương tiện
+tài liệu kỹ thuật theo
+tài liệu kỹ thuật tổ chức nước ngoài cấp phương tiện
+tài liệu liên quan
+tài liệu liên quan công việc khác liên quan
+tài liệu này
+tài liệu phục vụ bảo trì công trình đường bộ
+tài liệu phục vụ bảo trì công trình đường bộ bao gồm thiết kế bản vẽ thi công
+tài liệu phục vụ khai thác công trình đường bộ
+tài liệu phục vụ quản lý công trình đường bộ
+tài liệu phục vụ quản lý công trình đường bộ bao gồm thiết kế bản vẽ thi công
+tài liệu phục vụ vận hành khai thác công trình đường bộ
+tài liệu quy định điểm a
+tài liệu quy định điểm a b đ
+tài liệu quy định điểm a khi
+tài liệu sau bản tính bản vẽ thuyết minh
+tài liệu thay thế quy định khoản điều thông tư này
+tài liệu thông số tính năng kỹ thuật xe cơ giới cải tạo
+tài liệu thống kê báo cáo tình hình
+tài liệu điểm a điểm khoản này
+tài liệu đó chủ sở hữu công trình đường bộ
+tài liệu đó người quản lý sử dụng công trình đường bộ
+tài sản công bộ giao thông vận tải
+tài sản công uỷ ban nhân dân cấp
+tài sản cố định
+tài sản hợp pháp chủ phương tiện
+tài sản làn
+tài sản người
+tài sản tai nạn giao thông đường bộ
+tài sản trạm
+tác động nguyên nhân bất khả kháng
+tác động nguyên nhân khách quan khác
+tác động đột xuất
+tác động đột xuất cần
+tác động đột xuất khác
+tác động đột xuất khác phải
+tác động đột xuất đó
+tên báo cáo
+tên bộ phận công trình cần
+tình huống mất an toàn giao thông
+tình huống phát sinh phạm vi công việc được
+tình huống tính chất mức độ nguy hiểm hành vi
+tình huống đột xuất
+tình hình an ninh trật tự an toàn giao thông đường bộ
+tình hình hoạt động
+tình hình hoạt động ca làm việc
+tình hình hoạt động trạm
+tình hình hoạt động vận tải đường bộ mình
+tình hình hư hỏng công trình
+tình hình kết quả
+tình hình người
+tình hình phương tiện
+tình hình thu chi ca làm việc
+tình hình trật tự an toàn giao thông đường bộ
+tình hình tổ chức
+tình hình vi phạm hoạt động kinh doanh
+tình trạng chất lượng công trình được
+tình trạng giao thông
+tình trạng giao thông màn hình
+tình trạng hồ sơ
+tình trạng khai thác
+tình trạng kỹ thuật phương tiện
+tình trạng vé
+tình trạng đường bộ
+tín hiệu báo người
+tín hiệu chỉ dẫn báo hiệu đường bộ
+tín hiệu còi
+tín hiệu còi trường hợp báo hiệu người
+tín hiệu dữ liệu âm thanh hình ảnh hành trình phương tiện
+tín hiệu khẩn cấp xe đi cùng chiều phía trước
+tín hiệu tay
+tín hiệu xin
+tín hiệu đèn
+tín hiệu đèn giao thông
+tín hiệu đèn giao thông theo thứ tự ưu tiên trên dưới
+tín hiệu đèn màu xanh
+tính chất lương
+tính chất thiết bị lắp đặt công trình
+tính chất đầu tư
+tính cả năm làm việc
+tính kíp tiếng
+tính lương thợ giá ca máy
+tính mạng sức khoẻ
+tính tháng
+tính tuần
+tư vấn
+tư vấn thiết kế
+tường bảo vệ
+tạm thời khi phục vụ sự kiện đảng nhà nước
+tạm thời khi đăng ký nước ngoài
+tạm thời trường hợp
+tạm thời trường hợp sau đây
+tạm thời việt nam quá cảnh tạm
+tạp vụ
+tải trọng phương tiện
+tải trọng phương tiện đường bộ
+tải trọng xe
+tải trọng xe cơ giới
+tải trọng xe cơ giới lắp đặt cố định đường bộ
+tải trọng xe cơ giới lực lượng chức năng
+tải trọng xe cơ giới xe máy chuyên dùng tham gia giao thông đường bộ
+tải trọng xe cơ quan
+tải trọng xe cố định
+tải trọng xe cố định hệ thống đường bộ địa phương
+tải trọng xe cố định lưu động
+tải trọng xe cố định quốc lộ
+tải trọng xe hệ thống quản lý
+tải trọng xe hệ thống quốc lộ
+tải trọng xe hệ thống đường bộ
+tải trọng xe hệ thống đường bộ địa phương
+tải trọng xe hệ thống đường địa phương khi
+tải trọng xe lưu động
+tải trọng xe lưu động đơn vị
+tải trọng xe lưu động địa phương
+tải trọng xe mẫu đề cương báo cáo
+tải trọng xe này
+tải trọng xe theo chỉ đạo tổng cục đường bộ việt nam
+tải trọng xe trạm giao dịch
+tải trọng xe tổng cục đường bộ việt nam
+tải trọng xe đường bộ
+tải trọng xe đường bộ phạm vi toàn quốc
+tải trọng xe được
+tải trọng xe địa phương
+tất cả hướng
+tất cả vụ tai nạn giao thông đường bộ xảy
+tầm nhìn bị
+tầm nhìn người lái xe
+tần suất
+tần suất khai thác
+tần suất thực hiện
+tần suất thực hiện báo cáo
+tần suất đơn vị thực hiện báo cáo
+tần suất định kỳ hàng quý
+tần suất định kỳ tháng
+tập tin điện tử
+tặng biển số xe trúng
+tốc độ trường hợp
+tốc độ trường hợp sau đây
+tối đa hàng ghế
+tối đa người
+tối đa người khi
+tối đa người kể người lái xe
+tối đa người trường hợp
+tối đa người trường hợp người già yếu
+tối đa người trường hợp người khuyết tật
+tổ bán
+tổ chức cá nhân
+tổ chức cá nhân có liên quan công tác
+tổ chức cá nhân có liên quan quản lý khai thác
+tổ chức cá nhân liên quan
+tổ chức cá nhân liên quan bảo trì công trình đường bộ
+tổ chức cá nhân liên quan khai thác công trình đường bộ
+tổ chức cá nhân liên quan quản lý công trình đường bộ
+tổ chức cá nhân nhập khẩu
+tổ chức cá nhân nhập khẩu thời gian kiểm tra
+tổ chức cá nhân nhập khẩu địa điểm kiểm tra
+tổ chức cá nhân vi phạm
+tổ chức cá nhân đứng tên giấy chứng nhận đăng ký xe
+tổ chức có mã định danh
+tổ chức khác
+tổ chức liên quan
+tổ chức liên quan công tác
+tổ chức liên quan vụ tai nạn giao thông đường bộ
+tổ chức quy định điểm a
+tổ chức thực hiện kiểm định
+tổ chức tín dụng
+tổ chức tư vấn có đủ điều kiện năng lực quy định pháp luật
+tổ chức đánh giá độc lập
+tổ chức được giao quản lý bảo trì đường bộ
+tổng chi phí
+tổng chi phí bảo trì năm thời hạn hợp đồng
+tổng chi phí nhân công chi phí trực tiếp công tác
+tổng cục đường bộ việt nam
+tổng cục đường bộ việt nam cục
+tổng cục đường bộ việt nam khi
+tổng cục đường bộ việt nam kết quả
+tổng cục đường bộ việt nam mẫu biểu số liệu báo cáo quy định phụ lục thông tư này
+tổng cục đường bộ việt nam ngày tháng kỳ báo cáo báo cáo định kỳ tháng cuối năm
+tổng cục đường bộ việt nam ngày tháng kỳ báo cáo báo cáo định kỳ tháng đầu năm
+tổng cục đường bộ việt nam tạm
+tổng nhân cộng
+tổng số ca làm việc
+tổng thành hệ thống cải tạo thay thế
+tội phạm hoạt động tuyến giao thông đường bộ
+tội phạm khi
+từng loại
+từng loại công trình biển nêu phụ lục ban hành
+tự chạy
+tự nguyện tổ chức cá nhân nước
+tự nguyện tổ chức cá nhân nước ngoài
+tỷ lệ chi phí trực tiếp nhà đầu tư trạm
+tỷ lệ phần trăm
+uỷ ban nhân dân cấp tỉnh
+uỷ ban nhân dân nơi gần
+vai trò trục chính liên kết vùng
+ven đường
+vi phạm hành chính
+vi phạm hành chính có
+vi phạm hành chính trật tự an toàn giao thông đường bộ
+vi phạm pháp luật khác
+vi phạm pháp luật khác theo
+vi phạm theo
+vi phạm địa phương
+việc bảo trì hạng mục công trình
+việc bảo trì hạng mục công trình dưới đây được
+việc bổ sung thay thế hạng mục công trình thiết bị sửa chữa phần mềm
+việc chấp hành quy định quy tắc giao thông đường bộ
+việc chằng
+việc cấp chứng nhận
+việc cấp chứng nhận đăng ký xe máy chuyên dùng
+việc cấp giấy phép lái xe
+việc cấp giấy phép lái xe đó
+việc cấp mới chứng nhận đăng ký xe
+việc cấp đăng ký xe đúng quy định pháp luật
+việc giải quyết theo
+việc hướng dẫn
+việc hồ sơ sự cố công trình
+việc khai thác
+việc khai thác hạng mục công trình dưới đây được
+việc khắc phục vi phạm
+việc kiểm định
+việc kiểm định xây dựng công trình đường bộ
+việc kéo theo đó
+việc mang theo giấy tờ xác nhận
+việc quản lý
+việc quản lý hạng mục công trình
+việc quản lý hạng mục công trình dưới đây được
+việc sửa chữa khẩn cấp
+việc sửa chữa khẩn cấp nhằm
+việc sửa chữa khẩn cấp xử lý sự cố công trình
+việc sửa chữa đột xuất bão lũ lụt
+việc sửa chữa đột xuất công trình đường bộ
+việc thanh tra
+việc thực hiện công việc liên quan
+việc tổ chức
+việc vận hành khai thác hạng mục công trình
+việc yêu cầu này
+việc điều chỉnh bổ sung kế hoạch
+việc điều khiển thiết bị công nghệ
+việc điều tra
+việc điều tra giải quyết vụ tai nạn giao thông đường bộ liên quan người
+việc điều tra giải quyết được
+việc điều tra theo
+việc đào tạo nâng hạng giấy phép lái xe
+việc đổi
+viện trợ
+việt nam
+việt nam hình thức trực tiếp
+vào việt nam du lịch
+vé bảo vệ
+vé bộ phận
+vé bộ phận bán
+vé bộ phận có
+vé cuống vé
+vé thẻ trạm
+vé trạm
+vùng lãnh thổ
+văn bản xử lý
+văn bản điện tử
+văn bản đề nghị
+vũ lực
+vấn đề liên quan ca trực
+vận tải phạm vi toàn quốc
+vận tải đường bộ việt lào
+vận tải đường bộ việt nam campuchia
+vận tốc thiết kế lớn hơn km/h
+vật cồng kềnh
+vật khác
+vật liệu vật tư tiêu hao
+vật liệu xây dựng
+vật tư thiết bị dự phòng phục vụ
+vật tư vật liệu
+vệ sinh xe
+vị trí cân
+vị trí công việc trùng
+vị trí cơ sở
+vị trí gắn xe
+vị trí khác
+vị trí nguy hiểm đường bộ khai thác
+vị trí quan trắc
+vị trí tránh
+vị trí đấu nối
+vị trí độc lập
+vỏ hầm
+vốn ngân sách nhà nước
+vốn ngân sách nhà nước khi bị
+vốn ngân sách nhà nước ngày tháng hàng năm
+vốn ngân sách nhà nước năm
+vốn ngân sách nhà nước năm ngày tháng
+vốn nhà nước
+vốn nhà nước công trình
+vốn nhà nước trường hợp cần
+vốn thực hiện khi
+vụ tai nạn giao thông đường bộ xảy
+vụ việc
+vụ việc theo quy định pháp luật hình sự
+xe biển số xe
+xe biển số xe cơ giới xe máy chuyên dùng
+xe biển số xe trường hợp phải
+xe bánh
+xe bánh có gắn động cơ
+xe bánh có gắn động cơ vận chuyển hành khách hàng hoá
+xe bánh gắn động cơ
+xe bánh gắn động cơ vận chuyển hành khách hàng hoá
+xe bánh khối lượng bản thân được
+xe bánh xe mô tô ba bánh
+xe bánh xe mô tô bánh
+xe bánh xích
+xe bên trái đường một chiều
+xe bến phà
+xe bị
+xe bị mờ hỏng
+xe chạy
+xe chạy thử nghiệm
+xe chỗ dành riêng xe chữa cháy lấy nước
+xe chủ sở hữu đường bộ
+xe chữa cháy cảnh sát phòng cháy chữa cháy
+xe chữa cháy lực lượng khác được huy động đi làm nhiệm vụ chữa cháy
+xe có
+xe có bánh trở
+xe có bánh trở chạy động cơ
+xe có chứng thực
+xe có niên hạn sử dụng
+xe có ít nhất bánh
+xe có động cơ
+xe công an đi
+xe cơ giới
+xe cơ giới công an
+xe cơ giới cơ sở
+xe cơ giới hư hỏng sử dụng
+xe cơ giới khi
+xe cơ giới nước ngoài
+xe cơ giới nước ngoài người nước ngoài
+xe cơ giới qua
+xe cơ giới quân đội
+xe cơ giới xe máy chuyên dùng
+xe cơ giới xe máy chuyên dùng trường hợp
+xe cơ giới xe máy chuyên dùng được
+xe cơ quan
+xe cơ quan cấp trên trực tiếp
+xe cơ quan nhà nước
+xe cơ quan đảng
+xe cơ sở thử nghiệm
+xe cải tạo có niên hạn sử dụng
+xe cảnh sát giao thông
+xe cầu hẹp có làn đường
+xe cứu thương làm nhiệm vụ cấp cứu
+xe giới thiệu hội chợ
+xe giới thiệu triển lãm thương mại
+xe gầm cầu vượt
+xe gần đầu dốc
+xe gắn biển số xe trúng
+xe gắn máy
+xe gắn máy bánh
+xe hoạt động
+xe hàng năm
+xe hư hỏng
+xe hầm đường bộ
+xe hộ đê đi làm nhiệm vụ
+xe khi
+xe khi bảo đảm điều kiện quy định khoản điều này
+xe khi điều kiện thời tiết bảo đảm an toàn việc vượt
+xe khi điều kiện đường không bảo đảm an toàn việc vượt
+xe khác thuộc sở hữu mình
+xe khác vật khác
+xe khẩn cấp
+xe kiểm sát đi
+xe kéo
+xe kéo nhau
+xe kéo xe được
+xe lòng đường trái quy định pháp luật
+xe lăn
+xe lăn dùng người khuyết tật
+xe lăn người khuyết tật
+xe lăn người khuyết tật qua đường
+xe lăn người khuyết tật đi lòng đường người
+xe lực lượng công an đi làm nhiệm vụ khẩn cấp
+xe lực lượng kiểm sát đi làm nhiệm vụ khẩn cấp
+xe lực lượng quân sự đi
+xe lực lượng quân sự đi làm nhiệm vụ khẩn cấp
+xe miệng cống
+xe miệng hầm đường điện cao thế
+xe miệng hầm đường điện thoại
+xe máy chuyên dùng
+xe máy chuyên dùng chuẩn bị
+xe máy chuyên dùng có khối lượng phân bổ cụm trục xe
+xe máy chuyên dùng có khối lượng toàn bộ
+xe máy chuyên dùng có kích thước
+xe máy chuyên dùng có kích thước bao ngoài
+xe máy chuyên dùng khi
+xe máy chuyên dùng khác
+xe máy chuyên dùng khác khi xe được
+xe máy chuyên dùng lắp ráp
+xe máy chuyên dùng người
+xe máy chuyên dùng nhập khẩu
+xe máy chuyên dùng phù hợp loại xe máy chuyên dùng điều khiển
+xe máy chuyên dùng sản xuất
+xe máy chuyên dùng tham gia giao thông đường bộ
+xe máy chuyên dùng đường cao tốc
+xe máy chuyên dùng được
+xe máy chuyên dùng đủ tuổi trở
+xe máy lâm nghiệp
+xe máy nông nghiệp
+xe máy thi công
+xe mô tô ba bánh
+xe mô tô bánh
+xe mô tô xe gắn máy xe thô sơ
+xe mẫu phụ lục kèm theo thông tư này
+xe mẫu quy định phụ lục ban hành
+xe nghiên cứu khoa học
+xe nghiên cứu phục vụ sản xuất
+xe người quản lý sử dụng đường bộ
+xe nhà nước
+xe nhân viên hành chính kỹ thuật
+xe nhập khẩu được
+xe nào
+xe nào gần chỗ tránh hơn
+xe nào ở gần chỗ tránh hơn
+xe nơi cho phép
+xe nơi phần đường
+xe nơi đường
+xe nơi đường bộ
+xe phà trình tự lên
+xe phía sau
+xe phạm vi mét bên cổng trụ sở cơ quan tổ chức có
+xe phạm vi mét tính mép đường
+xe phần đường dành người
+xe phần đường dành phương tiện khác
+xe quá khổ giới hạn
+xe quá khổ giới hạn cho phép xe địa điểm nhập khẩu
+xe quá khổ giới hạn quy định điểm
+xe quá khổ giới hạn xe quá tải trọng xe bánh xích
+xe quá tải
+xe quá tải trọng
+xe theo
+xe thô sơ
+xe trưng bày
+xe trường hợp
+xe trường hợp chứng nhận
+xe trường hợp khi
+xe trường hợp nộp thông qua hệ thống dịch vụ công trực tuyến
+xe trường hợp trên
+xe trường hợp ùn tắc khác
+xe trường hợp đường cong
+xe trạm giao dịch thanh toán phương tiện
+xe tuyến đường khi có
+xe tuyến đường phạm vi quản lý
+xe tuyến đường được
+xe tương tự
+xe tương tự loại xe quy định khoản này
+xe tạm nhập cơ quan tổ chức cá nhân nước ngoài
+xe tổ chức chính trị xã hội
+xe tổ chức cá nhân nước
+xe tổ chức văn phòng đại diện cá nhân nước ngoài
+xe vào
+xe vật nuôi kéo
+xe vỉa hè trái quy định pháp luật
+xe vị trí
+xe vị trí cầu
+xe vị trí cổng trụ sở cơ quan tổ chức có
+xe vị trí phạm vi an toàn đường sắt
+xe vị trí sau đây
+xe vị trí song song cùng chiều xe khác dừng đường
+xe vị trí song song cùng chiều xe khác đỗ đường
+xe xuống dốc
+xe xích lô
+xe ô tô chuyên dùng
+xe ô tô khác khi xe được
+xe ô tô kinh doanh vận tải
+xe ô tô kinh doanh vận tải chở trẻ em mầm non
+xe ô tô kinh doanh vận tải chở trẻ em mầm non học sinh
+xe ô tô người nước ngoài đăng ký nước ngoài
+xe ô tô số tự động
+xe ô tô tải
+xe ô tô tải kể cả ô tô tải chuyên dùng số tự động có trọng tải dưới
+xe ô tô tải máy kéo
+xe ô tô được
+xe ô tô đầu kéo
+xe ô tô đỗ ngược chiều dưới mét đường có làn xe cơ giới đường
+xe ô tô đỗ ngược chiều dưới mét đường phố hẹp
+xe đi
+xe đi làm nhiệm vụ
+xe đi làm nhiệm vụ khắc phục sự cố thiên tai dịch bệnh
+xe đi làm nhiệm vụ tình trạng khẩn cấp theo quy định pháp luật
+xe đi ngược chiều
+xe điểm
+xe đoạn đường cong
+xe đăng ký
+xe đơn vị sự nghiệp công lập
+xe đường
+xe đường bộ
+xe đường bộ trường hợp
+xe đường bộ trường hợp nơi sản xuất ga cảng
+xe đường bộ trường hợp quy định
+xe đường bộ trường hợp sau đây
+xe đường bộ trường hợp xe chở hàng hoá
+xe đường chiều khu vực đỉnh dốc
+xe đường dành riêng xe buýt
+xe được
+xe được kéo
+xe đạp có trợ lực động cơ
+xe đạp máy
+xe đạp điện
+xe đạt yêu cầu cơ quan
+xe ưu tiên
+xong yêu cầu được giải quyết việc đăng ký
+xuất xứ
+xuống cấp
+xuống đường
+xác nhận cơ sở
+xác định nguyên nhân
+xâm phạm quyền sở hữu công nghiệp được
+yêu cầu an ninh trật tự an toàn giao thông đường bộ
+yêu cầu an toàn
+yêu cầu bộ giao thông vận tải hệ thống đường trung ương
+yêu cầu chính quyền địa phương tuyến đường địa phương quản lý
+yêu cầu chủ sở hữu
+yêu cầu chủ đầu tư
+yêu cầu cơ quan
+yêu cầu cơ quan nhà nước
+yêu cầu cơ quan quản lý nhà nước xây dựng
+yêu cầu cần
+yêu cầu cụ thể công việc
+yêu cầu cụ thể nội dung công việc
+yêu cầu cụ thể tiến độ
+yêu cầu cụ thể trình độ chuyên môn nhân công chuyên gia
+yêu cầu cụ thể từng loại công trình
+yêu cầu cụ thể từng loại công việc
+yêu cầu cụ thể đơn giá tiền lương phù hợp nhân công chuyên gia
+yêu cầu cục
+yêu cầu khoản điều này
+yêu cầu kiểm tra
+yêu cầu kỹ thuật
+yêu cầu kỹ thuật xe cơ giới
+yêu cầu kỹ thuật xe máy chuyên dùng
+yêu cầu người quản lý
+yêu cầu sau đây
+yêu cầu thực tế công việc
+yếu tố bất hợp lý đó
+yếu tố gây
+yếu tố quan trọng
+ít nhất nội dung sau
+ít nhất tiền lương ngày thường hệ số
+ô tô chuyên dùng
+ô tô chuyên dùng có khối lượng theo thiết kế
+ô tô chuyên dùng có khối lượng theo thiết kế trên
+ô tô cần cẩu tính giá ca máy
+ô tô tải
+ô tô xe máy
+ô tô đầu kéo
+ý nghĩa quan trọng
+đinh phản quang
+điều hoà không khí hệ thống
+điều khoản
+điều khoản điểm b
+điều kiện bảo đảm an toàn xe
+điều kiện bảo đảm an toàn xe khi
+điều kiện chứng nhận
+điều kiện cụ thể dự án công trình
+điều kiện người
+điều kiện phương tiện
+điều kiện phương tiện khi
+điều kiện phải bảo đảm
+điều kiện quy định khoản
+điều kiện quy định điểm khoản điều này
+điều kiện sau đây
+điều kiện sức khoẻ kết luận cơ sở
+điều kiện trên
+điều kiện trời mưa gió sương khói bụi
+điều kiện tự nhiên nơi
+điều kiện vật chất
+điều luật này
+điều nghị định số
+điều thông tư này
+điều thông tư số
+điều ước quốc tế
+điều ước quốc tế có
+điều ước quốc tế đó
+điểm a khoản điều
+điểm b khoản điều
+điểm b điểm c
+điểm c khoản
+điểm cuối cùng hàng hoá
+điểm d
+điểm d khoản điều
+điểm k khoản
+điểm k l m
+điểm khoản
+điểm khoản này
+điểm khoản này khi
+điểm khoản điều
+điểm khoản điều nghị định số
+điểm khoản điều nghị định số trường hợp quy định điểm khoản điều này
+điểm khoản điều này
+điểm khoản điều này chủ sở hữu
+điểm khoản điều thông tư này
+điểm khoản điều thông tư số
+điểm đ khoản điều nghị định số
+điểm đen
+điểm đen an toàn giao thông
+điểm đen tai nạn giao thông
+điểm đen điểm
+điểm điểm
+điểm điểm khoản điều nghị định số
+điểm điểm khoản điều thông tư số
+điểm điểm điểm khoản điều thông tư số
+đoàn xe
+đoàn xe tang
+đoạn đường thi công
+đoạn đường thi công khai thác
+đèn biển số xe
+đèn chiếu gần khi
+đèn chiếu gần khi đi đoạn đường khu đông dân cư
+đèn chiếu xa
+đèn cảnh báo nhấp nháy màu vàng
+đèn tín hiệu giao thông
+đúng quy trình quy tắc
+đúng quy định pháp luật
+đúng vị trí được phân công
+đăng ký xe biển số xe
+đăng ký xe trường hợp chuyển nhượng
+đĩa ghi hình tình trạng công trình
+đơn giá
+đơn giá bảo trì
+đơn giá ngày công trực tiếp phục vụ công tác
+đơn giá ngày công đó
+đơn giá vật tư vật liệu
+đơn vị công tác
+đơn vị kinh doanh
+đơn vị kinh doanh vận tải
+đơn vị này
+đơn vị quản lý
+đơn vị thiết kế
+đơn vị thu
+đơn vị tính làn
+đơn vị tính thể hiện mức
+đơn vị tổ chức cá nhân
+đơn vị tổ chức cá nhân có
+đơn vị tổ chức cá nhân có liên quan quy định pháp luật
+đơn vị vận tải
+đơn vị đăng kiểm được cục
+đơn vị được
+đơn vị được phân cấp uỷ quyền quản lý công trình đường bộ
+đơn vị được phân cấp uỷ quyền quản lý quốc lộ
+đơn vị đủ điều kiện năng lực hoạt động quy định pháp luật xây dựng
+đường bưu chính
+đường bưu chính người
+đường bộ
+đường bộ chủ sở hữu
+đường bộ cơ quan nhà nước
+đường bộ doanh nghiệp
+đường bộ doanh nghiệp hợp tác xã
+đường bộ doanh nghiệp đầu tư
+đường bộ dự án
+đường bộ dự án đầu tư
+đường bộ gây
+đường bộ hợp tác xã
+đường bộ khai thác
+đường bộ khi
+đường bộ khi phát hiện
+đường bộ khác
+đường bộ người quản lý sử dụng đường bộ
+đường bộ phương thức vận tải khác
+đường bộ phạm vi toàn quốc
+đường bộ quy định khoản điều thông tư này
+đường bộ quốc lộ
+đường bộ tai nạn giao thông
+đường bộ theo thứ tự ưu tiên
+đường bộ trung ương vốn ngân sách nhà nước vốn
+đường bộ trường hợp
+đường bộ trạm
+đường bộ trực tiếp
+đường bộ tuyến đường được
+đường bộ tình trạng hư hỏng công trình đường bộ tai nạn
+đường bộ việt
+đường bộ việt lào
+đường bộ việt nam campuchia
+đường bộ xử lý kịp thời
+đường bộ đơn vị được
+đường bộ được
+đường bộ địa phương
+đường cao tốc người
+đường dành người
+đường dành riêng người
+đường dây dẫn điện
+đường hẹp
+đường khi
+đường khi bảo đảm an toàn
+đường nhánh ra vào cao tốc cửa hầm quy trình bảo trì
+đường nơi
+đường quanh co
+đường tránh cầu tạm đường tràn
+đường xe
+đường xe chạy đường
+đường xe có chướng ngại vật phía trước
+đường xe ra vào
+đường xe đi ngược chiều
+đường ô tô cao tốc
+đường ô tô cao tốc cấp
+đường ô tô cấp i trở
+đường đèo
+đại lý
+đảm bảo giao thông cá nhân có
+đảm bảo giao thông tổ chức có
+đất công trình hạ tầng phục vụ
+đất đường bộ
+đầu kéo kéo sơ mi rơ moóc
+đầu tư xây dựng
+đầy đủ lượng tiền lẻ
+đầy đủ quy định
+đầy đủ theo
+đến nơi
+địa bàn địa phương
+địa điểm kiểm tra
+địa điểm nhập khẩu
+định kỳ
+định kỳ bảo đảm
+định kỳ công trình
+định kỳ công trình đường bộ
+định kỳ hàng năm
+định kỳ hàng năm hạng mục công trình dân dụng
+định kỳ hàng năm hạng mục công trình hạ tầng kỹ thuật gọi tắt
+định kỳ hàng năm hạng mục công trình hạ tầng kỹ thuật htkt
+định kỳ hàng năm trạm đường ô tô cao tốc cấp
+định kỳ hàng năm điểm mục
+định kỳ hàng tháng
+định kỳ hạng mục hạ tầng kỹ thuật năm
+định kỳ kết cấu áo đường
+định kỳ lớp mặt đường tuyến khai thác
+định kỳ mặt đường
+định kỳ năm
+định kỳ năm hạng mục công trình dân dụng
+định kỳ năm hạng mục hạ tầng kỹ thuật
+định kỳ năm trạm đường ô tô cao tốc cấp
+định kỳ thiết bị lắp đặt công trình
+định kỳ tháng
+định kỳ tháng đầu năm
+định kỳ thời hạn
+định kỳ việc
+định mức
+định mức chi phí tỷ lệ phần trăm theo
+định mức công tác gián tiếp
+định mức công tác gián tiếp nhà cung cấp dịch vụ
+định mức công tác gián tiếp nhà đầu tư
+định mức công tác trực tiếp trạm
+định mức lĩnh vực bảo trì
+định mức này
+định mức quản lý
+định mức trên
+định mức tỷ lệ chi phí
+định mức tỷ lệ công tác quản lý
+định mức tỷ lệ công tác quản lý thu
+định mức tỷ lệ phần trăm chi phí
+đối tượng công tác khác quyết định
+đối tượng cần
+đối tượng nghiên cứu
+đối tượng này
+đối tượng phải
+đối tượng phải bảo đảm chất lượng an toàn kỹ thuật
+đối tượng quy định điểm
+đối tượng quy định điểm a
+đối tượng quy định điểm g khoản này
+đối tượng sau đây
+đối tượng thực hiện
+đối tượng thực hiện báo cáo
+đồng bộ trạm
+độ tuổi
+độ tuổi người
+độ tuổi người lái xe được
+động cơ chạy đường ray
+động cơ dùng
+động cơ dẫn động
+động cơ dẫn động là động cơ điện
+động cơ khi sản phẩm
+động cơ mẫu phụ lục kèm theo thông tư này
+động cơ nguyên chiếc nhập khẩu
+động cơ nhiệt
+động cơ trường hợp nộp thông qua hệ thống dịch vụ công trực tuyến
+động cơ trường hợp sản phẩm
+động cơ vận chuyển hành khách hàng hoá
+động vật sống
+đột xuất khi
+đột xuất nhằm
+đột xuất việc
+đủ giấy tờ
+đủ giấy tờ quy định pháp luật
+đủ giấy tờ theo
+đủ số tiền trúng
+đủ sức khoẻ theo
+đủ tiền trúng
+đủ tuổi
+đủ tuổi nam
+đủ tuổi nữ
+đủ tuổi theo
+ảnh chụp tình trạng công trình

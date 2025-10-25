@@ -17,13 +17,3 @@ def extract_triplet_and_store(input_text: str, rdrsegmenter, driver, db_name, do
                     c2_metadata={"document_number": document_number, "document_id": document_id},
                     rel_metadata={"document_number": document_number, "document_id": document_id},
                 )
-
-def extract_triplet(input_text: str, rdrsegmenter, verbose=False):
-    result = []
-    split_text = input_text.split("\n")
-    for t in split_text:
-        if not t.strip():
-            continue
-        res = process_sentence(t, rdrsegmenter, verbose=verbose)
-        result.append(res["concepts"])
-    return result
