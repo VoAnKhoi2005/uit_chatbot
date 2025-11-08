@@ -1,0 +1,1428 @@
+﻿so_hieu,level,title,heading,path,ordinal,parent_item_id,item_id
+108/QD/DHCNTT15/3/2019,chuong,Chương,,0,0,,cbbd1378-acf1-4c00-b9bb-567e60f3f460
+108/QD/DHCNTT15/3/2019,dieu,Điều 1,"Sửa đổi, bổ sung một số Điều, Khoản của “Quy định đào tạo ngoại ngữ đối với",0/1,1,cbbd1378-acf1-4c00-b9bb-567e60f3f460,325c4726-d9b7-41c6-8e0d-ee147ab17702
+108/QD/DHCNTT15/3/2019,khoan,Khoản 1,,0/1/1,1001,325c4726-d9b7-41c6-8e0d-ee147ab17702,93338590-f2ae-4491-8ac5-e69ecfe08009
+108/QD/DHCNTT15/3/2019,khoan,Khoản 2,,0/1/2,1002,325c4726-d9b7-41c6-8e0d-ee147ab17702,c301c77e-8c74-4a8f-b508-3916e9cac194
+108/QD/DHCNTT15/3/2019,khoan,Khoản 3,,0/1/3,1003,325c4726-d9b7-41c6-8e0d-ee147ab17702,d1829196-4845-4d58-b7f0-32e96b86e478
+108/QD/DHCNTT15/3/2019,khoan,Khoản 4,,0/1/4,1004,325c4726-d9b7-41c6-8e0d-ee147ab17702,550c781e-99cb-4eec-bb1f-27f7c6760283
+108/QD/DHCNTT15/3/2019,khoan,Khoản 5,,0/1/5,1005,325c4726-d9b7-41c6-8e0d-ee147ab17702,277f38f4-9794-4fec-bdec-44a94127bb96
+108/QD/DHCNTT15/3/2019,dieu,Điều 2,Quyết định này có hiệu lực kể từ ngày ký.,0/2,2,cbbd1378-acf1-4c00-b9bb-567e60f3f460,27d21d08-8950-47be-86c2-e610b3e908c9
+108/QD/DHCNTT15/3/2019,khoan,Khoản 1,,0/2/1,2001,27d21d08-8950-47be-86c2-e610b3e908c9,966c6a8d-7182-4014-a145-6eee425bbd55
+108/QD/DHCNTT15/3/2019,dieu,Điều 3,"Các Ông/Bà Trưởng các Phòng, Ban, Khoa, Bộ môn có liên quan chịu trách",0/3,3,cbbd1378-acf1-4c00-b9bb-567e60f3f460,fbe8ea5a-c32e-4087-a2e9-0b209066aaab
+108/QD/DHCNTT15/3/2019,khoan,Khoản 1,,0/3/1,3001,fbe8ea5a-c32e-4087-a2e9-0b209066aaab,7f839070-806e-4ad5-b4c8-dcd1d203b261
+1139,chuong,Chương,,0,0,,a885d864-5757-4fd4-9718-5770a1fae702
+1139,dieu,Điều 1,Ban hành kèm theo Quyết định này “Quy định tổ chức thi các môn học hệ đại,0/1,1,a885d864-5757-4fd4-9718-5770a1fae702,24f3c8ea-22e9-47af-ab20-2bedba00f910
+1139,khoan,Khoản 1,,0/1/1,1001,24f3c8ea-22e9-47af-ab20-2bedba00f910,15ad59a5-d016-49e0-8db3-42daa12ca53e
+1139,dieu,Điều 2,"Các Ông/Bà Trưởng các Phòng, Ban, các đơn vị có liên quan và sinh viên chính",0/2,2,a885d864-5757-4fd4-9718-5770a1fae702,b007a86b-eef2-47c3-b7a6-401e97f6150f
+1139,khoan,Khoản 1,,0/2/1,2001,b007a86b-eef2-47c3-b7a6-401e97f6150f,4baa90ea-fa3a-458c-8557-0f1445e1478c
+1139,chuong,Chương 1,,1,1,,3b5d7bc8-71a7-4831-991e-6df5f6431a59
+1139,dieu,Điều 1,Phạm vi điều chỉnh và đối tượng áp dụng,1-Jan,1001,3b5d7bc8-71a7-4831-991e-6df5f6431a59,07f4b2f1-9571-4d5f-8a71-c1ad70a429de
+1139,khoan,Khoản 1,,1/1/2001,1001,07f4b2f1-9571-4d5f-8a71-c1ad70a429de,f7fa6cca-9547-4666-bd06-70c8b6b481be
+1139,khoan,Khoản 2,,1/1/2002,1002,07f4b2f1-9571-4d5f-8a71-c1ad70a429de,604d6062-4f43-49a6-ba7f-9b7663645d56
+1139,diem,Điểm a),,1/1/2/a,1002.01,604d6062-4f43-49a6-ba7f-9b7663645d56,eb0070ce-3927-4f5a-876f-754534bb0ada
+1139,diem,Điểm b),,1/1/2/b,1002.02,604d6062-4f43-49a6-ba7f-9b7663645d56,483dcc0e-9842-4274-a845-c6d2571e507e
+1139,diem,Điểm c),,1/1/2/c,1002.03,604d6062-4f43-49a6-ba7f-9b7663645d56,38446f21-b888-48c6-8ae3-9368a5a0e437
+1139,diem,Điểm d),,1/1/2/d,1002.04,604d6062-4f43-49a6-ba7f-9b7663645d56,c1515d30-beb6-4d38-89d8-03b241d4fc03
+1139,khoan,Khoản 3,,1/1/2003,1003,07f4b2f1-9571-4d5f-8a71-c1ad70a429de,11a12171-70f8-4d34-bcd3-c2c0349c01b6
+1139,dieu,Điều 2,Chỉ đạo công tác thi,2-Jan,1002,3b5d7bc8-71a7-4831-991e-6df5f6431a59,85d3b43d-82fa-490e-a004-953f66c4b3c8
+1139,khoan,Khoản 1,,1/2/2001,2001,85d3b43d-82fa-490e-a004-953f66c4b3c8,6a422f3d-de35-477c-bd71-c51efdf31b5b
+1139,dieu,Điều 3,"Hoạt động thanh tra, kiểm tra, giám sát công tác thi",3-Jan,1003,3b5d7bc8-71a7-4831-991e-6df5f6431a59,c12995b6-7bfe-4cbc-b557-38a2ced46f68
+1139,khoan,Khoản 1,,1/3/2001,3001,c12995b6-7bfe-4cbc-b557-38a2ced46f68,c8b2db71-e216-4ae8-bc47-09d9a1400b5a
+1139,dieu,Điều 4,Điều kiện dự thi,4-Jan,1004,3b5d7bc8-71a7-4831-991e-6df5f6431a59,54b86a0d-17c5-4751-8afc-28419a140001
+1139,khoan,Khoản 1,,1/4/2001,4001,54b86a0d-17c5-4751-8afc-28419a140001,65021dc0-8ebc-475c-965a-b4f98ac4bf31
+1139,khoan,Khoản 2,,1/4/2002,4002,54b86a0d-17c5-4751-8afc-28419a140001,2e68265f-3544-449f-96b7-fdb9d79a2109
+1139,chuong,Chương 2,,2,2,,0fcd1d75-5521-4a7f-a3ad-bfdb21a23678
+1139,dieu,Điều 10,Xử lý các sự cố bất thường của đề thi,10-Feb,2010,0fcd1d75-5521-4a7f-a3ad-bfdb21a23678,92802be6-b552-4160-932a-35cbbc2083a9
+1139,khoan,Khoản 1,,2/10/2001,10001,92802be6-b552-4160-932a-35cbbc2083a9,a3fadec8-4030-4f58-a763-658e952747d1
+1139,khoan,Khoản 2,,2/10/2002,10002,92802be6-b552-4160-932a-35cbbc2083a9,e2c2f935-c599-43aa-bfe7-10107a2057d9
+1139,dieu,Điều 11,Quy trình chuẩn bị cho kỳ thi,11-Feb,2011,0fcd1d75-5521-4a7f-a3ad-bfdb21a23678,fdb1f3cb-46ea-4725-91ee-42043c0cfe63
+1139,khoan,Khoản 1,,2/11/2001,11001,fdb1f3cb-46ea-4725-91ee-42043c0cfe63,f03ecb73-06dd-4084-93af-145efed9a921
+1139,khoan,Khoản 2,,2/11/2002,11002,fdb1f3cb-46ea-4725-91ee-42043c0cfe63,8a9cca00-1f73-401b-9d04-e4abe7ca3559
+1139,khoan,Khoản 3,,2/11/2003,11003,fdb1f3cb-46ea-4725-91ee-42043c0cfe63,f0b0d024-9b9d-4811-bb99-198e4a0840d0
+1139,dieu,Điều 12,Trách nhiệm của cán bộ coi thi,12-Feb,2012,0fcd1d75-5521-4a7f-a3ad-bfdb21a23678,894561d9-bc4e-4fd3-8cdd-412a0efc193b
+1139,khoan,Khoản 1,,2/12/2001,12001,894561d9-bc4e-4fd3-8cdd-412a0efc193b,980219b8-9cbb-4a7e-9abe-491ea54191dd
+1139,khoan,Khoản 10,,2/12/2010,12010,894561d9-bc4e-4fd3-8cdd-412a0efc193b,0182f024-d376-43a6-bd32-babd0906adf1
+1139,khoan,Khoản 11,,2/12/2011,12011,894561d9-bc4e-4fd3-8cdd-412a0efc193b,03054046-9fe0-4b95-9c7d-6553f936c7ad
+1139,khoan,Khoản 12,,2/12/2012,12012,894561d9-bc4e-4fd3-8cdd-412a0efc193b,59302370-deee-4501-b978-a05ed41485a6
+1139,diem,Điểm a),,2/12/12/a,12012.01,59302370-deee-4501-b978-a05ed41485a6,ea56482c-c624-49ed-9749-9a8efcda66d6
+1139,diem,Điểm b),,2/12/12/b,12012.02,59302370-deee-4501-b978-a05ed41485a6,9bd0b702-6f02-4065-9489-8a808ccca567
+1139,diem,Điểm c),,2/12/12/c,12012.03,59302370-deee-4501-b978-a05ed41485a6,367f00d9-ddd8-42a3-be4f-84a081ddb76c
+1139,diem,Điểm d),,2/12/12/d,12012.04,59302370-deee-4501-b978-a05ed41485a6,0b918676-bf23-4194-b114-30daa61867f9
+1139,diem,Điểm e),,2/12/12/e,12012.05,59302370-deee-4501-b978-a05ed41485a6,7fa0d104-1840-4fe0-b9d8-b8168d51c82d
+1139,khoan,Khoản 13,,2/12/2013,12013,894561d9-bc4e-4fd3-8cdd-412a0efc193b,3555412a-fbea-4107-aaa5-308c62f9f4d4
+1139,diem,Điểm a),,2/12/13/a,12013.01,3555412a-fbea-4107-aaa5-308c62f9f4d4,707001bf-37cc-4dca-b4c7-5e3271758b8a
+1139,diem,Điểm b),,2/12/13/b,12013.02,3555412a-fbea-4107-aaa5-308c62f9f4d4,fd450d97-d457-43e6-bb45-40fe0dd72f77
+1139,khoan,Khoản 2,,2/12/2002,12002,894561d9-bc4e-4fd3-8cdd-412a0efc193b,585b6a51-b3a2-455a-9cfb-d0cbd6565167
+1139,khoan,Khoản 3,,2/12/2003,12003,894561d9-bc4e-4fd3-8cdd-412a0efc193b,a6550737-3e5e-443b-9478-464eecd9d4a2
+1139,khoan,Khoản 4,,2/12/2004,12004,894561d9-bc4e-4fd3-8cdd-412a0efc193b,996ddce5-3d86-4d14-bcda-a6e0fabb62e1
+1139,khoan,Khoản 5,,2/12/2005,12005,894561d9-bc4e-4fd3-8cdd-412a0efc193b,6fe49417-c25c-4876-82ef-b51f1923a5a3
+1139,khoan,Khoản 6,,2/12/2006,12006,894561d9-bc4e-4fd3-8cdd-412a0efc193b,0fdd366f-b0c1-4cf0-b96c-91194100e7c6
+1139,khoan,Khoản 7,,2/12/2007,12007,894561d9-bc4e-4fd3-8cdd-412a0efc193b,7789b17c-0acf-4734-b72a-8fd7374a9177
+1139,khoan,Khoản 8,,2/12/2008,12008,894561d9-bc4e-4fd3-8cdd-412a0efc193b,a56ffafc-aa2e-4a85-9ad5-0c64cf8aa7eb
+1139,khoan,Khoản 9,,2/12/2009,12009,894561d9-bc4e-4fd3-8cdd-412a0efc193b,967df5bf-e52d-4b88-8949-218735736db6
+1139,dieu,Điều 13,Trách nhiệm của sinh viên dự thi,13-Feb,2013,0fcd1d75-5521-4a7f-a3ad-bfdb21a23678,b2315ddd-8c4f-4c6f-a329-a85407032552
+1139,khoan,Khoản 1,,2/13/2001,13001,b2315ddd-8c4f-4c6f-a329-a85407032552,2f4d854e-2a19-40c0-94bd-1279371601a1
+1139,khoan,Khoản 2,,2/13/2002,13002,b2315ddd-8c4f-4c6f-a329-a85407032552,7f68e490-95db-4138-a464-b3390bad3b0f
+1139,diem,Điểm a),,2/13/2/a,13002.01,7f68e490-95db-4138-a464-b3390bad3b0f,be033d43-5ad7-4702-9492-a71d0f70e8e7
+1139,diem,Điểm b),,2/13/2/b,13002.02,7f68e490-95db-4138-a464-b3390bad3b0f,597d741e-f1e9-4a7d-8653-e291e6b4971d
+1139,diem,Điểm c),,2/13/2/c,13002.03,7f68e490-95db-4138-a464-b3390bad3b0f,1f71d365-0992-43e8-a457-75596142b48b
+1139,diem,Điểm d),,2/13/2/d,13002.04,7f68e490-95db-4138-a464-b3390bad3b0f,3a3010fb-6ad7-4743-a583-095b69bada29
+1139,diem,Điểm e),,2/13/2/e,13002.05,7f68e490-95db-4138-a464-b3390bad3b0f,928a0aa0-06a1-4364-9efd-d63374fd25e6
+1139,diem,Điểm f),,2/13/2/f,13002.06,7f68e490-95db-4138-a464-b3390bad3b0f,e62cb1d0-2405-42db-b399-0a9077bad05e
+1139,diem,Điểm g),,2/13/2/g,13002.07,7f68e490-95db-4138-a464-b3390bad3b0f,6c9df5e1-98a4-4d28-8c80-ee64c19b7674
+1139,diem,Điểm h),,2/13/2/h,13002.08,7f68e490-95db-4138-a464-b3390bad3b0f,6163d2d0-6383-413c-af0f-6883d79afbf4
+1139,khoan,Khoản 3,,2/13/2003,13003,b2315ddd-8c4f-4c6f-a329-a85407032552,9eed8eee-ced0-442d-b78a-49c296037970
+1139,diem,Điểm a),,2/13/3/a,13003.01,9eed8eee-ced0-442d-b78a-49c296037970,80214b01-dcf7-4790-bcfb-e7171c7ca75e
+1139,diem,Điểm b),,2/13/3/b,13003.02,9eed8eee-ced0-442d-b78a-49c296037970,6bd23781-11b5-4b30-84c3-5eba663162f6
+1139,diem,Điểm c),,2/13/3/c,13003.03,9eed8eee-ced0-442d-b78a-49c296037970,e6cc1b16-d364-479b-a6b3-fdfc094b8876
+1139,diem,Điểm d),,2/13/3/d,13003.04,9eed8eee-ced0-442d-b78a-49c296037970,0ee3a399-3105-4c00-bb71-c65a6c772631
+1139,diem,Điểm e),,2/13/3/e,13003.05,9eed8eee-ced0-442d-b78a-49c296037970,2d0379e6-5e72-425e-b2b8-2a860a5228c4
+1139,khoan,Khoản 4,,2/13/2004,13004,b2315ddd-8c4f-4c6f-a329-a85407032552,334f9186-a415-49ec-8d78-390d502023a1
+1139,diem,Điểm a),,2/13/4/a,13004.01,334f9186-a415-49ec-8d78-390d502023a1,876b542f-ff15-47fe-b737-fb6467ade49e
+1139,diem,Điểm b),,2/13/4/b,13004.02,334f9186-a415-49ec-8d78-390d502023a1,c93d987f-4a89-40c1-a328-c384422c9a18
+1139,diem,Điểm c),,2/13/4/c,13004.03,334f9186-a415-49ec-8d78-390d502023a1,0cbf0738-e64d-48fa-b66e-c9b95b69b38f
+1139,dieu,Điều 14,"Quy trình tổ chức thi (đối với hình thức tự luận, trắc nghiệm)",14-Feb,2014,0fcd1d75-5521-4a7f-a3ad-bfdb21a23678,6c485e28-a5d6-4171-8574-d9633a4c9649
+1139,khoan,Khoản 1,,2/14/2001,14001,6c485e28-a5d6-4171-8574-d9633a4c9649,9f258623-977d-45f5-9716-d7d23da9aa80
+1139,khoan,Khoản 2,,2/14/2002,14002,6c485e28-a5d6-4171-8574-d9633a4c9649,d233fc8f-9d7c-40c2-9aad-e9df350e9846
+1139,dieu,Điều 15,"Quy trình tổ chức thi (đối với hình thức vấn đáp, đồ án)",15-Feb,2015,0fcd1d75-5521-4a7f-a3ad-bfdb21a23678,985f86f2-9748-4dea-929f-e607cb112c11
+1139,khoan,Khoản 1,,2/15/2001,15001,985f86f2-9748-4dea-929f-e607cb112c11,06248417-bd42-45a1-865b-dc3de46a4cff
+1139,khoan,Khoản 1,,2/15/2001,15001,985f86f2-9748-4dea-929f-e607cb112c11,5ea0de31-2e88-403a-a78a-4a25a3ece4f6
+1139,khoan,Khoản 2,,2/15/2002,15002,985f86f2-9748-4dea-929f-e607cb112c11,05d94363-1d37-4e2d-8002-b0f8ff444604
+1139,khoan,Khoản 2,,2/15/2002,15002,985f86f2-9748-4dea-929f-e607cb112c11,52155417-c26b-498b-915c-526ae8d034fc
+1139,khoan,Khoản 2,,2/15/2002,15002,985f86f2-9748-4dea-929f-e607cb112c11,ba7e6348-9a61-49cf-bdb1-af0bee49fde9
+1139,khoan,Khoản 3,,2/15/2003,15003,985f86f2-9748-4dea-929f-e607cb112c11,7f70cca3-8d63-4158-924f-7a0be6d2b743
+1139,khoan,Khoản 3,,2/15/2003,15003,985f86f2-9748-4dea-929f-e607cb112c11,83b03ded-9b9a-4daf-b017-c8cafd094512
+1139,khoan,Khoản 3,,2/15/2003,15003,985f86f2-9748-4dea-929f-e607cb112c11,e5600460-e749-4d9b-836b-0c52d3383c83
+1139,khoan,Khoản 4,,2/15/2004,15004,985f86f2-9748-4dea-929f-e607cb112c11,478ed9ad-85a0-40e8-abc0-c89e863a033c
+1139,khoan,Khoản 5,,2/15/2005,15005,985f86f2-9748-4dea-929f-e607cb112c11,095e47d6-c2a0-4498-9c42-c18531d16ccc
+1139,khoan,Khoản 5,,2/15/2005,15005,985f86f2-9748-4dea-929f-e607cb112c11,14c4710b-73a6-4368-a814-6cefb8237eb5
+1139,khoan,Khoản 6,,2/15/2006,15006,985f86f2-9748-4dea-929f-e607cb112c11,09c23883-a527-4a16-8320-05c9449bb724
+1139,dieu,Điều 5,Trách nhiệm chuẩn bị và tổ chức thi,5-Feb,2005,0fcd1d75-5521-4a7f-a3ad-bfdb21a23678,8cfd8b78-539f-4938-b1fc-1c94e2bb5f73
+1139,khoan,Khoản 1,,2/5/2001,5001,8cfd8b78-539f-4938-b1fc-1c94e2bb5f73,636846b8-4420-493e-8ea4-5db5c327707e
+1139,dieu,Điều 6,"Xếp lịch thi, chuẩn bị danh sách SV dự thi và vật tư thi",6-Feb,2006,0fcd1d75-5521-4a7f-a3ad-bfdb21a23678,da803db9-cd08-46fb-bde3-d9a6332fcdc3
+1139,khoan,Khoản 1,,2/6/2001,6001,da803db9-cd08-46fb-bde3-d9a6332fcdc3,9116c537-7976-4036-9aa2-672cf919ac08
+1139,dieu,Điều 7,Phân công cán bộ coi thi (CBCT),7-Feb,2007,0fcd1d75-5521-4a7f-a3ad-bfdb21a23678,8627807e-b356-4292-8766-a5f4346ef94f
+1139,khoan,Khoản 1,,2/7/2001,7001,8627807e-b356-4292-8766-a5f4346ef94f,9c722de6-fff7-4cf0-9257-d2be1cd8c4bc
+1139,dieu,Điều 8,Ra đề thi và in đề thi,8-Feb,2008,0fcd1d75-5521-4a7f-a3ad-bfdb21a23678,92c68594-1c19-4fd3-ab25-1134af02ce7c
+1139,khoan,Khoản 1,,2/8/2001,8001,92c68594-1c19-4fd3-ab25-1134af02ce7c,4ac7bc1e-9b87-452a-b94c-449a829f354f
+1139,khoan,Khoản 2,,2/8/2002,8002,92c68594-1c19-4fd3-ab25-1134af02ce7c,5f7528cc-6563-41dd-8fcd-49bfb80117e1
+1139,khoan,Khoản 3,,2/8/2003,8003,92c68594-1c19-4fd3-ab25-1134af02ce7c,b1daffa0-01a3-400e-a89d-5ec69b715086
+1139,khoan,Khoản 4,,2/8/2004,8004,92c68594-1c19-4fd3-ab25-1134af02ce7c,8b38ec9c-e6b0-47cf-bd96-6d0a5b6fc8aa
+1139,khoan,Khoản 5,,2/8/2005,8005,92c68594-1c19-4fd3-ab25-1134af02ce7c,3ee8838f-b37b-4a03-8df0-618c7b82d491
+1139,khoan,Khoản 6,,2/8/2006,8006,92c68594-1c19-4fd3-ab25-1134af02ce7c,9310a62c-2b30-4e0d-86ed-ef64f87f6be5
+1139,dieu,Điều 9,Nhân đề thi và đóng gói đề thi,9-Feb,2009,0fcd1d75-5521-4a7f-a3ad-bfdb21a23678,962d674d-2400-457c-8910-ffa497bf1c3d
+1139,khoan,Khoản 1,,2/9/2001,9001,962d674d-2400-457c-8910-ffa497bf1c3d,dec758fb-72c1-4320-b81a-c4a1625c5f7a
+1139,khoan,Khoản 2,,2/9/2002,9002,962d674d-2400-457c-8910-ffa497bf1c3d,e0c2f51d-bd01-4e14-aab7-12e4d352d33a
+1139,khoan,Khoản 3,,2/9/2003,9003,962d674d-2400-457c-8910-ffa497bf1c3d,c43c6062-99a8-406d-86b9-1c56cdf50e20
+1139,khoan,Khoản 4,,2/9/2004,9004,962d674d-2400-457c-8910-ffa497bf1c3d,8796cb41-f68b-4cfa-b822-2554351d6cb5
+1139,khoan,Khoản 5,,2/9/2005,9005,962d674d-2400-457c-8910-ffa497bf1c3d,7f802a34-9cf2-4792-9df8-cbbf591fb193
+1139,khoan,Khoản 6,,2/9/2006,9006,962d674d-2400-457c-8910-ffa497bf1c3d,f414d40f-b93e-484a-83a3-29b322102dcc
+1139,khoan,Khoản 7,,2/9/2007,9007,962d674d-2400-457c-8910-ffa497bf1c3d,ae7ecad1-1602-4138-8981-dd327632e554
+1139,chuong,Chương 3,,3,3,,d8ce0832-7eba-4d5e-9963-47202996b2a6
+1139,dieu,Điều 16,"Chấm thi, nhập điểm và công bố điểm",16-Mar,3016,d8ce0832-7eba-4d5e-9963-47202996b2a6,0e8f066b-7bce-4b2f-bae1-66effea064ab
+1139,khoan,Khoản 1,,3/16/2001,16001,0e8f066b-7bce-4b2f-bae1-66effea064ab,e2287724-2b6e-41ab-bc3a-be96716133e0
+1139,khoan,Khoản 2,,3/16/2002,16002,0e8f066b-7bce-4b2f-bae1-66effea064ab,62cd93e5-4b43-42c3-a743-567b9680d08f
+1139,khoan,Khoản 3,,3/16/2003,16003,0e8f066b-7bce-4b2f-bae1-66effea064ab,c0c79820-93ec-4aa4-9b29-577816acafff
+1139,khoan,Khoản 4,,3/16/2004,16004,0e8f066b-7bce-4b2f-bae1-66effea064ab,900c5a4a-1585-45f2-848a-17eaaf9f80b5
+1139,khoan,Khoản 5,,3/16/2005,16005,0e8f066b-7bce-4b2f-bae1-66effea064ab,5d07582c-e086-4510-885e-16d9d7615236
+1139,khoan,Khoản 6,,3/16/2006,16006,0e8f066b-7bce-4b2f-bae1-66effea064ab,67a48c3e-efd8-4a43-bd6a-311742aa62dd
+1139,khoan,Khoản 7,,3/16/2007,16007,0e8f066b-7bce-4b2f-bae1-66effea064ab,8c7ed615-a17f-4640-8aac-66976ea78ad8
+1139,khoan,Khoản 8,,3/16/2008,16008,0e8f066b-7bce-4b2f-bae1-66effea064ab,2aa4a5ef-48c7-4487-8ed6-30b3639a39f4
+1139,dieu,Điều 17,Quản lý điểm thi,17-Mar,3017,d8ce0832-7eba-4d5e-9963-47202996b2a6,7a8fe791-2ae8-4fc4-b97f-6f483c78a3fa
+1139,khoan,Khoản 1,,3/17/2001,17001,7a8fe791-2ae8-4fc4-b97f-6f483c78a3fa,79941ec5-2755-4b6d-9bf5-adbc361bef41
+1139,khoan,Khoản 2,,3/17/2002,17002,7a8fe791-2ae8-4fc4-b97f-6f483c78a3fa,2b511d36-24d2-4ebb-b915-53dfe71399ff
+1139,khoan,Khoản 3,,3/17/2003,17003,7a8fe791-2ae8-4fc4-b97f-6f483c78a3fa,6d694c4f-3166-4285-99a8-04296b619992
+1139,dieu,Điều 18,Quy trình chấm thi,18-Mar,3018,d8ce0832-7eba-4d5e-9963-47202996b2a6,5003a33e-7880-4da9-895e-95c5adfe049f
+1139,khoan,Khoản 1,,3/18/2001,18001,5003a33e-7880-4da9-895e-95c5adfe049f,c58a3f55-426d-4669-8016-c41593f72e3f
+1139,khoan,Khoản 2,,3/18/2002,18002,5003a33e-7880-4da9-895e-95c5adfe049f,ee20c386-e631-4fbc-97d4-ac11d7d82d71
+1139,khoan,Khoản 6,,3/18/2006,18006,5003a33e-7880-4da9-895e-95c5adfe049f,b012808c-ffda-4c6f-a68c-f9c30cff45b9
+1139,khoan,Khoản 7,,3/18/2007,18007,5003a33e-7880-4da9-895e-95c5adfe049f,a957cbab-e712-429d-9833-f015b2cab41b
+1139,chuong,Chương 4,,4,4,,e2d60095-3c1b-4579-869c-38a9c8307492
+1139,dieu,Điều 19,Tổ chức phúc khảo và giải quyết khiếu nại về điểm thi,19-Apr,4019,e2d60095-3c1b-4579-869c-38a9c8307492,e4691bdc-6681-48aa-9b10-9b9af5624c8d
+1139,khoan,Khoản 1,,4/19/2001,19001,e4691bdc-6681-48aa-9b10-9b9af5624c8d,5d3e82f2-b59c-4e2d-8ff9-3173c7fdcbf7
+1139,khoan,Khoản 2,,4/19/2002,19002,e4691bdc-6681-48aa-9b10-9b9af5624c8d,4cc211f6-aa60-46e9-a691-850e0565357c
+1139,khoan,Khoản 3,,4/19/2003,19003,e4691bdc-6681-48aa-9b10-9b9af5624c8d,0de599f2-1ea6-403f-86b8-3ccaf36f65dc
+1139,khoan,Khoản 4,,4/19/2004,19004,e4691bdc-6681-48aa-9b10-9b9af5624c8d,bb5c0931-2d7c-4522-91bb-d16d6e751183
+1139,khoan,Khoản 5,,4/19/2005,19005,e4691bdc-6681-48aa-9b10-9b9af5624c8d,f0ee062f-5fd3-4236-bb43-c8a8cca50a63
+1139,khoan,Khoản 6,,4/19/2006,19006,e4691bdc-6681-48aa-9b10-9b9af5624c8d,ea3b07d5-b55d-4db2-bd61-a6642f7f8d62
+1139,dieu,Điều 20,Quy trình phúc khảo,20-Apr,4020,e2d60095-3c1b-4579-869c-38a9c8307492,b1dbf3bc-263d-4313-a6b0-9b60e551c182
+1139,khoan,Khoản 1,,4/20/2001,20001,b1dbf3bc-263d-4313-a6b0-9b60e551c182,47845fbf-10c2-403d-8791-472f78ef090a
+1139,khoan,Khoản 1,,4/20/2001,20001,b1dbf3bc-263d-4313-a6b0-9b60e551c182,2a89752b-d946-4dc1-847e-96203e5a547d
+1139,khoan,Khoản 2,,4/20/2002,20002,b1dbf3bc-263d-4313-a6b0-9b60e551c182,42e29ed3-cd79-480e-a704-a104f093bb91
+1139,khoan,Khoản 2,,4/20/2002,20002,b1dbf3bc-263d-4313-a6b0-9b60e551c182,f537ac71-30d8-4f41-ba1b-d447009462ad
+1139,khoan,Khoản 3,,4/20/2003,20003,b1dbf3bc-263d-4313-a6b0-9b60e551c182,f170055c-afd4-4b52-a0a5-165d52c76ad5
+1139,khoan,Khoản 3,,4/20/2003,20003,b1dbf3bc-263d-4313-a6b0-9b60e551c182,dd86052d-5b9a-43e6-afd0-b4c25bf0a355
+1139,khoan,Khoản 4,,4/20/2004,20004,b1dbf3bc-263d-4313-a6b0-9b60e551c182,04ef3c9f-0231-4485-bb55-a468934897af
+1139,khoan,Khoản 5,,4/20/2005,20005,b1dbf3bc-263d-4313-a6b0-9b60e551c182,b0babb43-f36d-423b-bf8d-5da94866f630
+1139,chuong,Chương 5,,5,5,,82285ace-c5ca-4fe0-8e10-74cd6be8d7d9
+1139,dieu,Điều 21,Chế độ lưu trữ,21-May,5021,82285ace-c5ca-4fe0-8e10-74cd6be8d7d9,b7de06cd-8672-43f0-b30b-efa1694030e5
+1139,khoan,Khoản 1,,5/21/2001,21001,b7de06cd-8672-43f0-b30b-efa1694030e5,cc321a89-9a88-4abb-8036-73ae231395db
+1139,chuong,Chương 6,,6,6,,c8243f7d-60be-4817-8c19-49f104e1aa8d
+1139,dieu,Điều 22,Xử lý cán bộ vi phạm quy định,22-Jun,6022,c8243f7d-60be-4817-8c19-49f104e1aa8d,9960919a-dc81-485a-b4f6-00d56837bd6c
+1139,khoan,Khoản 1,,6/22/2001,22001,9960919a-dc81-485a-b4f6-00d56837bd6c,6de15516-4f1f-4725-965e-014574ec1303
+1139,khoan,Khoản 2,,6/22/2002,22002,9960919a-dc81-485a-b4f6-00d56837bd6c,91b1b3b2-5a44-430e-b772-1afcd7ea4506
+1139,diem,Điểm a),,6/22/2/a,22002.01,91b1b3b2-5a44-430e-b772-1afcd7ea4506,8bf0038d-ddcc-4b57-a2d1-518f8553a241
+1139,diem,Điểm b),,6/22/2/b,22002.02,91b1b3b2-5a44-430e-b772-1afcd7ea4506,644575eb-7783-4f21-b1fa-f9ea3ad68acd
+1139,diem,Điểm c),,6/22/2/c,22002.03,91b1b3b2-5a44-430e-b772-1afcd7ea4506,e1547db4-da92-42b2-8732-d82b58d617fc
+1139,diem,Điểm d),,6/22/2/d,22002.04,91b1b3b2-5a44-430e-b772-1afcd7ea4506,c0a6aa92-8d54-4f22-9376-4fce50d76170
+1139,khoan,Khoản 3,,6/22/2003,22003,9960919a-dc81-485a-b4f6-00d56837bd6c,9b0c1b7d-bb17-4d24-ac3c-2fdbc6f07250
+1139,diem,Điểm a),,6/22/3/a,22003.01,9b0c1b7d-bb17-4d24-ac3c-2fdbc6f07250,140e85cb-d415-47d8-8807-5e0cca27d4f4
+1139,diem,Điểm b),,6/22/3/b,22003.02,9b0c1b7d-bb17-4d24-ac3c-2fdbc6f07250,154bcaee-0199-4f64-9ded-49e4f7ee1ff4
+1139,khoan,Khoản 4,,6/22/2004,22004,9960919a-dc81-485a-b4f6-00d56837bd6c,7dccd7a4-91f5-4788-8d35-2155dc8715ae
+1139,diem,Điểm a),,6/22/4/a,22004.01,7dccd7a4-91f5-4788-8d35-2155dc8715ae,81010128-c2f2-46c5-bf8d-1a7a11e99bf9
+1139,diem,Điểm b),,6/22/4/b,22004.02,7dccd7a4-91f5-4788-8d35-2155dc8715ae,56a1a490-8360-4eb3-acf5-603321818a00
+1139,diem,Điểm c),,6/22/4/c,22004.03,7dccd7a4-91f5-4788-8d35-2155dc8715ae,00eb91de-18da-49a8-8e85-41c82c3d04b3
+1139,diem,Điểm d),,6/22/4/d,22004.04,7dccd7a4-91f5-4788-8d35-2155dc8715ae,cc3c5af0-4694-416d-83e3-ebed66122561
+1139,khoan,Khoản 5,,6/22/2005,22005,9960919a-dc81-485a-b4f6-00d56837bd6c,a17d8b60-30dc-4ade-bddb-768b2deef908
+1139,khoan,Khoản 6,,6/22/2006,22006,9960919a-dc81-485a-b4f6-00d56837bd6c,f74df864-a0ca-47dd-b886-425da76750d9
+1139,dieu,Điều 23,Xử lý sinh viên dự thi vi phạm quy định,23-Jun,6023,c8243f7d-60be-4817-8c19-49f104e1aa8d,a50e681e-6564-4bb9-8903-d88d3b681e3f
+1139,khoan,Khoản 1,,6/23/2001,23001,a50e681e-6564-4bb9-8903-d88d3b681e3f,88ea696f-5235-462e-bd0c-d5c4d2f53c43
+1139,chuong,Chương 7,,7,7,,3bc905b9-4475-4bc9-af55-c3a10fca8240
+1139,dieu,Điều 24,"Trách nhiệm của P.ĐTĐH, VPĐB",24-Jul,7024,3bc905b9-4475-4bc9-af55-c3a10fca8240,e013375a-0d4a-401d-a672-2f456869e331
+1139,khoan,Khoản 1,,7/24/2001,24001,e013375a-0d4a-401d-a672-2f456869e331,f7c05c8b-6729-42c8-8ce4-5b15f4ebb7c3
+1139,khoan,Khoản 2,,7/24/2002,24002,e013375a-0d4a-401d-a672-2f456869e331,90eb97ca-2cb3-40cf-8793-8a23e6ae98cb
+1139,khoan,Khoản 3,,7/24/2003,24003,e013375a-0d4a-401d-a672-2f456869e331,7a1ddf71-281a-4c28-acad-6c6adc4eab7f
+1139,khoan,Khoản 4,,7/24/2004,24004,e013375a-0d4a-401d-a672-2f456869e331,961d1bcb-af87-4cfd-9e06-a21c7eb62c6f
+1139,khoan,Khoản 5,,7/24/2005,24005,e013375a-0d4a-401d-a672-2f456869e331,d86cea47-df56-4492-a569-161e82be6369
+1139,khoan,Khoản 6,,7/24/2006,24006,e013375a-0d4a-401d-a672-2f456869e331,42b2fba4-ac47-4176-bfe5-87d3dd43b18c
+1139,dieu,Điều 25,Trách nhiệm của Đơn vị quản lý môn học,25-Jul,7025,3bc905b9-4475-4bc9-af55-c3a10fca8240,518b7eb7-6222-4f3a-a15f-d56469e59bc6
+1139,khoan,Khoản 1,,7/25/2001,25001,518b7eb7-6222-4f3a-a15f-d56469e59bc6,47eee177-f29a-4dc9-926c-c3e8d2c2c8aa
+1139,khoan,Khoản 2,,7/25/2002,25002,518b7eb7-6222-4f3a-a15f-d56469e59bc6,4b667f56-a768-4d33-9744-403a9b3bd47f
+1139,khoan,Khoản 3,,7/25/2003,25003,518b7eb7-6222-4f3a-a15f-d56469e59bc6,5c2ce6a0-4a3a-4846-8095-44495b0b12ac
+1139,dieu,Điều 26,Trách nhiệm của Thư viện,26-Jul,7026,3bc905b9-4475-4bc9-af55-c3a10fca8240,f7357004-8900-48d4-a82c-5ee52da7e5d2
+1139,khoan,Khoản 1,,7/26/2001,26001,f7357004-8900-48d4-a82c-5ee52da7e5d2,7ed7f58a-d5b3-4a52-89d9-e5dc96904402
+1139,dieu,Điều 27,Trách nhiệm của Phòng Thanh tra Pháp chế và Đảm bảo Chất lượng,27-Jul,7027,3bc905b9-4475-4bc9-af55-c3a10fca8240,8345e42f-47dd-4d1a-be56-05c9c1ae679c
+1139,khoan,Khoản 1,,7/27/2001,27001,8345e42f-47dd-4d1a-be56-05c9c1ae679c,ecb4d944-83e7-40d0-8a7f-bf3b4ebb9eff
+125/QD/DHCNTT/DTDH,chuong,Chương,,0,0,,00bd9e43-7621-4751-9a78-aa08fcc3f8f5
+125/QD/DHCNTT/DTDH,dieu,Điều 1,Ban hành kèm theo Quyết định này “Quy định tạm thời dạy và học tiếng Anh,0/1,1,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,a035765b-dbb1-4fc5-9509-6bfd2ae8126a
+125/QD/DHCNTT/DTDH,dieu,Điều 1,Phạm vi điều chỉnh và đối tƣợng áp dụng,0/1,1,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,c089fe1b-4723-402f-93cc-b80f223dc214
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/1/1,1001,a035765b-dbb1-4fc5-9509-6bfd2ae8126a,29b21fdf-a56d-40c1-8055-8ff7e51e3c6d
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/1/1,1001,c089fe1b-4723-402f-93cc-b80f223dc214,7df4fef0-02c8-4338-9a4c-db4f1b808457
+125/QD/DHCNTT/DTDH,khoan,Khoản 2,,0/1/2,1002,c089fe1b-4723-402f-93cc-b80f223dc214,6c797350-1f02-4608-99f8-6103c60b7b1c
+125/QD/DHCNTT/DTDH,dieu,Điều 10,Quyền lợi của sinh viên học TACM,0/10,10,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,9bd8a767-7513-4d0a-a5e0-015527d433fc
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/10/1,10001,9bd8a767-7513-4d0a-a5e0-015527d433fc,0c056c80-7eed-446a-b030-750d6e5f7e9a
+125/QD/DHCNTT/DTDH,dieu,Điều 11,Trách nhiệm của Phòng Đào tạo Đại học,0/11,11,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,190a12eb-93ee-4d28-8ac1-49f69d77df08
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/11/1,11001,190a12eb-93ee-4d28-8ac1-49f69d77df08,bad9ca4d-4f55-41fd-9605-b1a6df932693
+125/QD/DHCNTT/DTDH,khoan,Khoản 2,,0/11/2,11002,190a12eb-93ee-4d28-8ac1-49f69d77df08,161193ec-f949-410f-bd59-61e168cbe8ab
+125/QD/DHCNTT/DTDH,khoan,Khoản 3,,0/11/3,11003,190a12eb-93ee-4d28-8ac1-49f69d77df08,26882c43-af9b-4d74-be00-767ab9b6915d
+125/QD/DHCNTT/DTDH,dieu,Điều 12,Trách nhiệm của Bộ môn Anh văn,0/12,12,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,aa2034a7-5760-4c26-84d8-d5e41476edd4
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/12/1,12001,aa2034a7-5760-4c26-84d8-d5e41476edd4,0f31d631-f970-43eb-b7f4-20ab6a3defae
+125/QD/DHCNTT/DTDH,khoan,Khoản 2,,0/12/2,12002,aa2034a7-5760-4c26-84d8-d5e41476edd4,356e2001-5a0b-4bde-88e5-aa6fcc5e6af0
+125/QD/DHCNTT/DTDH,khoan,Khoản 3,,0/12/3,12003,aa2034a7-5760-4c26-84d8-d5e41476edd4,8db42186-4d57-460b-86d8-34a0c076dbb5
+125/QD/DHCNTT/DTDH,khoan,Khoản 4,,0/12/4,12004,aa2034a7-5760-4c26-84d8-d5e41476edd4,2814d859-3e75-47cf-96ec-9ed9f1cfc1da
+125/QD/DHCNTT/DTDH,dieu,Điều 13,Trách nhiệm của các Khoa/Bộ môn trực thuộc Trƣờng,0/13,13,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,55d19a4e-545c-4942-88ee-8ac03469b39e
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/13/1,13001,55d19a4e-545c-4942-88ee-8ac03469b39e,60202483-747f-490e-af21-a70fc6629198
+125/QD/DHCNTT/DTDH,dieu,Điều 2,Quyết định này áp dụng từ học kỳ I năm học 2015-2016.,0/2,2,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,cfce8c50-673d-4b1d-939b-f240a1065ca7
+125/QD/DHCNTT/DTDH,dieu,Điều 2,Mục đích của chƣơng trình giảng dạy tiếng Anh,0/2,2,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,ca88235e-3193-4152-83fd-06859ca35130
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/2/1,2001,cfce8c50-673d-4b1d-939b-f240a1065ca7,efd6f61d-c4b0-4c53-b194-73a42f817d22
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/2/1,2001,ca88235e-3193-4152-83fd-06859ca35130,f296c349-775b-4072-8a0c-c4dd20d3d527
+125/QD/DHCNTT/DTDH,khoan,Khoản 2,,0/2/2,2002,ca88235e-3193-4152-83fd-06859ca35130,4903e188-2e0e-4df7-8505-f2b8aa8e331b
+125/QD/DHCNTT/DTDH,dieu,Điều 3,"Các Ông/Bà Trưởng các Phòng, Ban, Khoa, Bộ môn, đơn vị có liên quan chịu",0/3,3,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,b90c772e-4b45-4179-80e5-ff9a866b89ce
+125/QD/DHCNTT/DTDH,dieu,Điều 3,Yêu cầu về ngoại ngữ tiếng Anh đối với sinh viên (chuẩn đầu ra),0/3,3,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,eaf4a9db-a8fb-49d9-924f-6443f3f02f7e
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/3/1,3001,b90c772e-4b45-4179-80e5-ff9a866b89ce,3d4df4d1-ed53-427d-86a9-9ec2e4dda86f
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/3/1,3001,eaf4a9db-a8fb-49d9-924f-6443f3f02f7e,e1dffb08-c510-4cd8-9c30-e850b1ae115b
+125/QD/DHCNTT/DTDH,khoan,Khoản 2,,0/3/2,3002,eaf4a9db-a8fb-49d9-924f-6443f3f02f7e,242e6b36-239b-44ad-af55-423ac9d10006
+125/QD/DHCNTT/DTDH,khoan,Khoản 59,,0/3/59,3059,eaf4a9db-a8fb-49d9-924f-6443f3f02f7e,3275dc8c-0c4c-458e-a7da-c8a23dca9d89
+125/QD/DHCNTT/DTDH,dieu,Điều 4,Chƣơng trình giảng dạy tiếng Anh của trƣờng,0/4,4,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,56d5cfb0-ccc5-4d5b-95e1-4a0f191e7416
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/4/1,4001,56d5cfb0-ccc5-4d5b-95e1-4a0f191e7416,74a5a6f8-b696-44ce-bb0b-7a34f1b93c10
+125/QD/DHCNTT/DTDH,khoan,Khoản 2,,0/4/2,4002,56d5cfb0-ccc5-4d5b-95e1-4a0f191e7416,42e8b410-e752-46ed-8d40-b6a3a6fe5115
+125/QD/DHCNTT/DTDH,khoan,Khoản 3,,0/4/3,4003,56d5cfb0-ccc5-4d5b-95e1-4a0f191e7416,1b6052f8-e907-4171-afba-cb06b436c09e
+125/QD/DHCNTT/DTDH,dieu,Điều 5,Kiểm tra xếp lớp đầu khóa,0/5,5,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,ba007591-de9e-4bde-aa69-8ff39b1e2572
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/5/1,5001,ba007591-de9e-4bde-aa69-8ff39b1e2572,31ad973a-233c-4a6b-baa8-be7a73a59b40
+125/QD/DHCNTT/DTDH,khoan,Khoản 2,,0/5/2,5002,ba007591-de9e-4bde-aa69-8ff39b1e2572,2acb0f8f-0186-4d63-82b8-cc24f1a0e671
+125/QD/DHCNTT/DTDH,khoan,Khoản 3,,0/5/3,5003,ba007591-de9e-4bde-aa69-8ff39b1e2572,0d58a46f-5596-4333-a9a0-ef3e019ea7f5
+125/QD/DHCNTT/DTDH,khoan,Khoản 4,,0/5/4,5004,ba007591-de9e-4bde-aa69-8ff39b1e2572,1754cd0e-0b37-428d-bb25-cac6f41491ec
+125/QD/DHCNTT/DTDH,dieu,Điều 6,Các chứng chỉ tiếng Anh đƣợc công nhận,0/6,6,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,80d14e0c-9b36-4efb-ab1a-f1ee850be9df
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/6/1,6001,80d14e0c-9b36-4efb-ab1a-f1ee850be9df,ef769263-cdcb-495d-b13f-d4ba19abfda4
+125/QD/DHCNTT/DTDH,khoan,Khoản 2,,0/6/2,6002,80d14e0c-9b36-4efb-ab1a-f1ee850be9df,8edfd5ce-7150-42f2-ae57-d7418890b519
+125/QD/DHCNTT/DTDH,khoan,Khoản 3,,0/6/3,6003,80d14e0c-9b36-4efb-ab1a-f1ee850be9df,addd583e-1abe-4b39-ac7b-855dbfa6a5e6
+125/QD/DHCNTT/DTDH,khoan,Khoản 4,,0/6/4,6004,80d14e0c-9b36-4efb-ab1a-f1ee850be9df,35cf4761-c1f9-4522-abbf-242691de2e5a
+125/QD/DHCNTT/DTDH,dieu,Điều 7,Tổ chức lớp học,0/7,7,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,ec352e0b-030d-42f9-9b7e-93091a0a0c21
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/7/1,7001,ec352e0b-030d-42f9-9b7e-93091a0a0c21,d34469b0-cbf7-442d-be32-4fa18c6e1cbf
+125/QD/DHCNTT/DTDH,khoan,Khoản 2,,0/7/2,7002,ec352e0b-030d-42f9-9b7e-93091a0a0c21,b633b1c4-c46e-48a9-bd18-79c0402ec9cc
+125/QD/DHCNTT/DTDH,dieu,Điều 8,Tổ chức giảng dạy,0/8,8,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,e5254bea-db27-4580-b967-52b8d09d13f3
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/8/1,8001,e5254bea-db27-4580-b967-52b8d09d13f3,00dec434-35ac-477e-8428-54cbb0de069f
+125/QD/DHCNTT/DTDH,khoan,Khoản 2,,0/8/2,8002,e5254bea-db27-4580-b967-52b8d09d13f3,c2edc683-3a85-4261-9541-725b8e8aef02
+125/QD/DHCNTT/DTDH,khoan,Khoản 3,,0/8/3,8003,e5254bea-db27-4580-b967-52b8d09d13f3,0b3292a5-ed7c-4246-a26b-f248a6b0389c
+125/QD/DHCNTT/DTDH,dieu,Điều 9,Yêu cầu về cán bộ giảng dạy,0/9,9,00bd9e43-7621-4751-9a78-aa08fcc3f8f5,a0847f7f-a101-4fb5-81f1-695c86d6618c
+125/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/9/1,9001,a0847f7f-a101-4fb5-81f1-695c86d6618c,d620fd72-7b7e-4989-9b84-94dbaf12c1ac
+128/QD/DHCNTT/DTDH,chuong,Chương,,0,0,,748adefa-8a2d-49d1-b7f9-9424aacca903
+128/QD/DHCNTT/DTDH,dieu,Điều 1,Ban hành kèm theo Quyết định này “Quy định dạy và học ngoại ngữ đối với hệ,0/1,1,748adefa-8a2d-49d1-b7f9-9424aacca903,5ad22b8c-03ff-4618-8c43-f03621d716b2
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/1/1,1001,5ad22b8c-03ff-4618-8c43-f03621d716b2,5fe9357b-0537-4a54-bbb9-458e8e9d8c65
+128/QD/DHCNTT/DTDH,dieu,Điều 2,Quyết định này có hiệu lực bắt đầu từ học kỳ I năm học 2016-2017. Quyết định,0/2,2,748adefa-8a2d-49d1-b7f9-9424aacca903,db6ae416-74bc-495a-997b-50757a8607fc
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/2/1,2001,db6ae416-74bc-495a-997b-50757a8607fc,faff04c6-418f-478b-9c73-7d938814ee45
+128/QD/DHCNTT/DTDH,dieu,Điều 3,"Các Ông/Bà Trưởng các Phòng, Ban, Khoa, Bộ môn có liên quan chịu trách",0/3,3,748adefa-8a2d-49d1-b7f9-9424aacca903,4ec1dd99-84bc-431e-a494-19d2f3eb9406
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/3/1,3001,4ec1dd99-84bc-431e-a494-19d2f3eb9406,3cdd9d10-a05c-426a-b2af-510527f2206f
+128/QD/DHCNTT/DTDH,chuong,Chương 1,,1,1,,781252ff-2b81-41c6-8fb4-b65e135e20a2
+128/QD/DHCNTT/DTDH,dieu,Điều 1,Phạm vi điều chỉnh và đối tượng áp dụng,1-Jan,1001,781252ff-2b81-41c6-8fb4-b65e135e20a2,57da5c57-2ff9-4773-831e-efb5a3a584c4
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,1/1/2001,1001,57da5c57-2ff9-4773-831e-efb5a3a584c4,a0235869-5c5b-4d53-a667-b133c8a66655
+128/QD/DHCNTT/DTDH,khoan,Khoản 2,,1/1/2002,1002,57da5c57-2ff9-4773-831e-efb5a3a584c4,1cf3c016-035c-4ebb-9006-08e304f9775d
+128/QD/DHCNTT/DTDH,dieu,Điều 2,Ngoại ngữ được đào tạo,2-Jan,1002,781252ff-2b81-41c6-8fb4-b65e135e20a2,05f8bc90-5648-484b-b0cc-1470fc1a6f03
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,1/2/2001,2001,05f8bc90-5648-484b-b0cc-1470fc1a6f03,58b2afb7-f204-4617-871d-95a8bcc82d16
+128/QD/DHCNTT/DTDH,khoan,Khoản 2,,1/2/2002,2002,05f8bc90-5648-484b-b0cc-1470fc1a6f03,ebbf188c-fec8-43cd-9cd2-e7089e56b429
+128/QD/DHCNTT/DTDH,dieu,Điều 3,Mục đích của chương trình giảng dạy tiếng Anh và ngoại ngữ khác,3-Jan,1003,781252ff-2b81-41c6-8fb4-b65e135e20a2,a7f1e136-1c85-4993-a1c8-48dba71d48e4
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,1/3/2001,3001,a7f1e136-1c85-4993-a1c8-48dba71d48e4,b3569080-088b-4d01-ae08-84ae5c6c8b36
+128/QD/DHCNTT/DTDH,chuong,Chương 2,,2,2,,cec6d1ba-c6f9-4942-8206-db6d3a86a4bf
+128/QD/DHCNTT/DTDH,dieu,Điều 4,Chương trình giảng dạy tiếng Anh,4-Feb,2004,cec6d1ba-c6f9-4942-8206-db6d3a86a4bf,d830b2a1-a00d-42f1-943f-def14d37bd82
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,2/4/2001,4001,d830b2a1-a00d-42f1-943f-def14d37bd82,9af1b6aa-415c-4c1a-bc27-8d1011df4aad
+128/QD/DHCNTT/DTDH,khoan,Khoản 2,,2/4/2002,4002,d830b2a1-a00d-42f1-943f-def14d37bd82,a47921a2-0fe8-4a67-a0e0-6afde51d1138
+128/QD/DHCNTT/DTDH,dieu,Điều 5,Kiểm tra xếp lớp đầu khóa,5-Feb,2005,cec6d1ba-c6f9-4942-8206-db6d3a86a4bf,68cf53ec-6596-4734-85f6-d61b203c828a
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,2/5/2001,5001,68cf53ec-6596-4734-85f6-d61b203c828a,36b7182d-3694-47c3-b02b-e25948bba16e
+128/QD/DHCNTT/DTDH,khoan,Khoản 2,,2/5/2002,5002,68cf53ec-6596-4734-85f6-d61b203c828a,036ff013-d160-4649-a876-529da815cce7
+128/QD/DHCNTT/DTDH,khoan,Khoản 3,,2/5/2003,5003,68cf53ec-6596-4734-85f6-d61b203c828a,0f58662a-8ee2-4152-b82e-5b4d8545d169
+128/QD/DHCNTT/DTDH,khoan,Khoản 4,,2/5/2004,5004,68cf53ec-6596-4734-85f6-d61b203c828a,2104d68e-e396-49fa-8608-42eb20d7b40c
+128/QD/DHCNTT/DTDH,dieu,Điều 6,Xét miễn học các môn học tiếng Anh trong chương trình đào tạo,6-Feb,2006,cec6d1ba-c6f9-4942-8206-db6d3a86a4bf,1ac50498-67fb-48a8-a02d-4ab5238f5154
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,2/6/2001,6001,1ac50498-67fb-48a8-a02d-4ab5238f5154,9e722ae5-d6e1-41f9-8e3b-df8d0a16c534
+128/QD/DHCNTT/DTDH,khoan,Khoản 2,,2/6/2002,6002,1ac50498-67fb-48a8-a02d-4ab5238f5154,89fdcf74-c7c8-4a9f-95cb-55d6cb5d1c0d
+128/QD/DHCNTT/DTDH,khoan,Khoản 3,,2/6/2003,6003,1ac50498-67fb-48a8-a02d-4ab5238f5154,e99df372-3678-4a15-a3ba-303799adb159
+128/QD/DHCNTT/DTDH,khoan,Khoản 4,,2/6/2004,6004,1ac50498-67fb-48a8-a02d-4ab5238f5154,c8e27837-21bf-45f4-8dc8-f7888fd5598d
+128/QD/DHCNTT/DTDH,dieu,Điều 7,Tổ chức lớp học,7-Feb,2007,cec6d1ba-c6f9-4942-8206-db6d3a86a4bf,ea0199bb-18eb-41b8-aa29-3d647c21d64c
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,2/7/2001,7001,ea0199bb-18eb-41b8-aa29-3d647c21d64c,fc6ad03b-9a4a-4fcc-b129-0add7feda693
+128/QD/DHCNTT/DTDH,khoan,Khoản 2,,2/7/2002,7002,ea0199bb-18eb-41b8-aa29-3d647c21d64c,138b9c09-2b81-442e-b58a-c64d47834bc8
+128/QD/DHCNTT/DTDH,chuong,Chương 3,,3,3,,0642a1aa-784f-41dc-9dd8-4ad1def279c9
+128/QD/DHCNTT/DTDH,dieu,Điều 10,Quyền lợi của sinh viên học TACM,10-Mar,3010,0642a1aa-784f-41dc-9dd8-4ad1def279c9,be45d0ae-8cb1-4e0f-933c-7780be256802
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,3/10/2001,10001,be45d0ae-8cb1-4e0f-933c-7780be256802,d84a748f-ee01-4fa4-93fe-22bb2c7fc246
+128/QD/DHCNTT/DTDH,dieu,Điều 8,Tổ chức giảng dạy,8-Mar,3008,0642a1aa-784f-41dc-9dd8-4ad1def279c9,85a76a2e-f945-4e48-95dd-c0ffcf21aae6
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,3/8/2001,8001,85a76a2e-f945-4e48-95dd-c0ffcf21aae6,178f43b2-6311-4ce7-8527-e00e8b07de78
+128/QD/DHCNTT/DTDH,khoan,Khoản 2,,3/8/2002,8002,85a76a2e-f945-4e48-95dd-c0ffcf21aae6,173eef69-56dc-4106-a0ce-633949e99abd
+128/QD/DHCNTT/DTDH,khoan,Khoản 3,,3/8/2003,8003,85a76a2e-f945-4e48-95dd-c0ffcf21aae6,1d01befb-1399-43b1-8af7-713f16a71319
+128/QD/DHCNTT/DTDH,dieu,Điều 9,Yêu cầu về cán bộ giảng dạy,9-Mar,3009,0642a1aa-784f-41dc-9dd8-4ad1def279c9,c2ec80d0-896d-470d-a95b-56f68a373ddf
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,3/9/2001,9001,c2ec80d0-896d-470d-a95b-56f68a373ddf,2037c4fb-a118-4df1-8c8a-5963ba1e2f29
+128/QD/DHCNTT/DTDH,chuong,Chương 4,,4,4,,0a979521-04e3-4a5d-9695-67690960ab3d
+128/QD/DHCNTT/DTDH,dieu,Điều 11,Chuẩn quá trình về ngoại ngữ,11-Apr,4011,0a979521-04e3-4a5d-9695-67690960ab3d,ee395c75-098a-46a9-86a3-1899e3e7948f
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,4/11/2001,11001,ee395c75-098a-46a9-86a3-1899e3e7948f,8434bee8-e609-420c-bf68-ef5975ca7824
+128/QD/DHCNTT/DTDH,dieu,Điều 12,Chuẩn đầu ra về ngoại ngữ,12-Apr,4012,0a979521-04e3-4a5d-9695-67690960ab3d,86c420bd-bc75-4708-b175-6a84f705555b
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,4/12/2001,12001,86c420bd-bc75-4708-b175-6a84f705555b,345cefa3-4c64-42fa-bf4f-4a11d70e35a3
+128/QD/DHCNTT/DTDH,khoan,Khoản 2,,4/12/2002,12002,86c420bd-bc75-4708-b175-6a84f705555b,6511bf87-514b-4af6-ab40-8378f5f3e9cd
+128/QD/DHCNTT/DTDH,khoan,Khoản 3,,4/12/2003,12003,86c420bd-bc75-4708-b175-6a84f705555b,db77998e-10f4-4eef-a0c9-515e7e4796b8
+128/QD/DHCNTT/DTDH,chuong,Chương 5,,5,5,,3da2c57b-e8c0-4891-838e-b63ab896d828
+128/QD/DHCNTT/DTDH,dieu,Điều 13,Trách nhiệm của Phòng Đào tạo Đại học,13-May,5013,3da2c57b-e8c0-4891-838e-b63ab896d828,a2d29b8e-0050-4e62-824f-471c3fcfba4e
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,5/13/2001,13001,a2d29b8e-0050-4e62-824f-471c3fcfba4e,96445e23-ee43-4cc6-8dcb-410d6e76d218
+128/QD/DHCNTT/DTDH,khoan,Khoản 2,,5/13/2002,13002,a2d29b8e-0050-4e62-824f-471c3fcfba4e,ab898d18-73c7-458e-8c49-0f9544d906ee
+128/QD/DHCNTT/DTDH,khoan,Khoản 3,,5/13/2003,13003,a2d29b8e-0050-4e62-824f-471c3fcfba4e,0c880e04-3e66-49fa-be10-e9e7fada2ba2
+128/QD/DHCNTT/DTDH,khoan,Khoản 4,,5/13/2004,13004,a2d29b8e-0050-4e62-824f-471c3fcfba4e,c1db07b3-0697-4aba-8ac9-767a211ce7a5
+128/QD/DHCNTT/DTDH,dieu,Điều 14,"Trách nhiệm của Bộ môn Anh văn, Trung tâm Ngoại ngữ",14-May,5014,3da2c57b-e8c0-4891-838e-b63ab896d828,b3c3c444-f1b3-45f0-b21c-d552817be5f7
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,5/14/2001,14001,b3c3c444-f1b3-45f0-b21c-d552817be5f7,917d2d06-cab8-4f5a-90a5-53087a6653e1
+128/QD/DHCNTT/DTDH,khoan,Khoản 2,,5/14/2002,14002,b3c3c444-f1b3-45f0-b21c-d552817be5f7,58ea6a82-6b87-4126-98f4-ddebcfdcabc3
+128/QD/DHCNTT/DTDH,khoan,Khoản 3,,5/14/2003,14003,b3c3c444-f1b3-45f0-b21c-d552817be5f7,70c0785b-c694-4f8b-8ada-f830ba4c1374
+128/QD/DHCNTT/DTDH,khoan,Khoản 4,,5/14/2004,14004,b3c3c444-f1b3-45f0-b21c-d552817be5f7,52c6d358-1688-433f-9d51-d2507049daf9
+128/QD/DHCNTT/DTDH,dieu,Điều 15,Trách nhiệm của các Khoa/Bộ môn trực thuộc Trường,15-May,5015,3da2c57b-e8c0-4891-838e-b63ab896d828,1332e930-277a-45e0-a8cb-4ba5c063bed0
+128/QD/DHCNTT/DTDH,khoan,Khoản 1,,5/15/2001,15001,1332e930-277a-45e0-a8cb-4ba5c063bed0,f6ff41de-fe8e-4e11-8c7f-65d261931ba5
+128/QD/DHCNTT/DTDH,chuong,Chương 6,,6,6,,4d6ba44c-3301-40af-8c5f-673e41a82ab2
+141/QD/DHCNTT16/3/2018QUY,chuong,Chương,,0,0,,d55c6a65-5b62-4871-9af7-eb430f36885f
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 1,Ban hành kèm theo Quyết định này “Quy định đào tạo ngoại ngữ đối với hệ,0/1,1,d55c6a65-5b62-4871-9af7-eb430f36885f,1e48de73-fe3e-4ea2-b56c-ecaf46f81e00
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,0/1/1,1001,1e48de73-fe3e-4ea2-b56c-ecaf46f81e00,72be11d3-7c7e-4a7d-8995-f820b0b76597
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 2,"Quyết định này thay thế Quyết định số 888/QĐ-ĐHCNTT, ngày 15/12/2017",0/2,2,d55c6a65-5b62-4871-9af7-eb430f36885f,b2c7c942-20ae-4d36-b04c-eabc6db098f9
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,0/2/1,2001,b2c7c942-20ae-4d36-b04c-eabc6db098f9,eeb785d9-6cc2-407c-bec9-a2a99a7d8bfc
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 3,"Các Ông/Bà Trưởng các Phòng, Ban, Khoa, Bộ môn có liên quan chịu trách",0/3,3,d55c6a65-5b62-4871-9af7-eb430f36885f,7f99ba4c-76a4-471a-8882-da837a2f61b6
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,0/3/1,3001,7f99ba4c-76a4-471a-8882-da837a2f61b6,97ff4a18-bd28-41d9-b827-9c61f1ac0d7f
+141/QD/DHCNTT16/3/2018QUY,chuong,Chương 1,,1,1,,4337e655-fe53-43d8-990a-0cad8fef21b5
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 1,Phạm vi điều chỉnh và đối tượng áp dụng,1-Jan,1001,4337e655-fe53-43d8-990a-0cad8fef21b5,df44ca28-329e-4602-b36a-c6b6d5c54437
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,1/1/2001,1001,df44ca28-329e-4602-b36a-c6b6d5c54437,5873979d-7a20-431a-9799-d8ceca257176
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,1/1/2002,1002,df44ca28-329e-4602-b36a-c6b6d5c54437,6aeca994-aff8-40bf-bc88-8caaf2c39943
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 2,Mục đích đào tạo ngoại ngữ,2-Jan,1002,4337e655-fe53-43d8-990a-0cad8fef21b5,b910f3a3-36b1-49ca-936f-36e5254fc5af
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,1/2/2001,2001,b910f3a3-36b1-49ca-936f-36e5254fc5af,49c09335-f1f4-4f1a-8dd3-f05e8b2d5bec
+141/QD/DHCNTT16/3/2018QUY,chuong,Chương 2,,2,2,,bb42bb14-f6fe-4412-beec-879963ae811c
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 3,Chương trình giảng dạy tiếng Anh,3-Feb,2003,bb42bb14-f6fe-4412-beec-879963ae811c,0b85699b-1a76-47cf-ba83-19e7a0b4cd64
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,2/3/2001,3001,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,c8f1c052-ec6b-4a03-b539-0c8117451bfd
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,2/3/2001,3001,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,c3911340-247b-49e5-8473-a8ece76591e8
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,2/3/2001,3001,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,a5c63f2a-3c23-489b-8dfa-d776d04572c0
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,2/3/2001,3001,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,7e395066-221b-44a0-8ebd-82b16cee1883
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,2/3/2002,3002,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,07a07248-8be3-41a2-937b-520b13738792
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,2/3/2002,3002,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,668b3743-4797-4da3-af6c-d6f64fa2ec63
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,2/3/2002,3002,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,1661cc3d-b4de-4939-abcc-cf060addc0a8
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,2/3/2002,3002,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,eed81c4a-7b37-4233-870d-e0703ea8bb49
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 3,,2/3/2003,3003,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,20309aae-587e-40ae-8d4b-db1521e523e5
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 3,,2/3/2003,3003,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,6cd9fd7f-8f73-40cc-82c0-ccfdff42005a
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 3,,2/3/2003,3003,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,f986f4d4-3927-4bee-b681-db1967d1d2fa
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 4,,2/3/2004,3004,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,3590ca01-a1f1-4905-b896-f6b196012bff
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 4,,2/3/2004,3004,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,1ae37f75-a139-4f35-9c73-51da806fc119
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 5,,2/3/2005,3005,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,f8b97fb5-d0ff-4ec2-92d2-9a2b72f90e27
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 5,,2/3/2005,3005,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,bd843fd6-c72c-4851-9ea4-9ee0dc7bb700
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 6,,2/3/2006,3006,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,f0ab74c5-d6a6-4681-9702-b73eef370bea
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 7,,2/3/2007,3007,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,408df85a-dbfa-484a-a98e-b35cb0047eff
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 8,,2/3/2008,3008,0b85699b-1a76-47cf-ba83-19e7a0b4cd64,7f3b4685-96a9-463a-9c95-a9bf1c6a3736
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 4,Kiểm tra xếp lớp đầu khóa,4-Feb,2004,bb42bb14-f6fe-4412-beec-879963ae811c,fd5821ae-081d-499a-9b2f-eacdd293d4d1
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,2/4/2001,4001,fd5821ae-081d-499a-9b2f-eacdd293d4d1,a836b799-0c8d-472a-bfc5-c983314eeba0
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,2/4/2002,4002,fd5821ae-081d-499a-9b2f-eacdd293d4d1,de6df1fd-5516-4cd8-a94c-2a513910429d
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 5,Xét miễn các môn học tiếng Anh,5-Feb,2005,bb42bb14-f6fe-4412-beec-879963ae811c,98a54035-061f-4737-92a9-8f079669b7b5
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,2/5/2001,5001,98a54035-061f-4737-92a9-8f079669b7b5,fb8e2e8d-ff7f-48e3-aa77-a30dbb5cc061
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,2/5/2002,5002,98a54035-061f-4737-92a9-8f079669b7b5,6dd378e1-a43d-4abc-a03b-64ab3c6ab943
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 6,Chuẩn quá trình về ngoại ngữ,6-Feb,2006,bb42bb14-f6fe-4412-beec-879963ae811c,45005128-f3be-453c-8979-884e7b5320ca
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,2/6/2001,6001,45005128-f3be-453c-8979-884e7b5320ca,68c3da0d-4e24-40f3-8f19-2525ba809088
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 7,Chuẩn ngoại ngữ xét tốt nghiệp,7-Feb,2007,bb42bb14-f6fe-4412-beec-879963ae811c,0ac7b1e1-02ec-4451-b0be-f920929f33da
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,2/7/2001,7001,0ac7b1e1-02ec-4451-b0be-f920929f33da,6a9ea570-8f37-4657-955d-a781ce0bdccf
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,2/7/2002,7002,0ac7b1e1-02ec-4451-b0be-f920929f33da,1dec1f9c-b100-4d40-8298-0ab04678fca4
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 3,,2/7/2003,7003,0ac7b1e1-02ec-4451-b0be-f920929f33da,c925fd80-e190-47c2-bf23-6d8bbf43bf52
+141/QD/DHCNTT16/3/2018QUY,chuong,Chương 3,,3,3,,cfa32984-9ce7-4779-849c-e54fb76325f9
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 10,Quyền lợi của sinh viên học TACM,10-Mar,3010,cfa32984-9ce7-4779-849c-e54fb76325f9,2ceaf124-6790-4eff-916a-4a9dc409c815
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,3/10/2001,10001,2ceaf124-6790-4eff-916a-4a9dc409c815,9a0c3415-a884-48ed-aec9-1ceabed4251c
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 8,Chương trình giảng dạy và tổ chức giảng dạy TACM,8-Mar,3008,cfa32984-9ce7-4779-849c-e54fb76325f9,e2185431-f230-425d-b783-71869ff16404
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,3/8/2001,8001,e2185431-f230-425d-b783-71869ff16404,9ac655d7-9889-4cc5-8c50-76ee6e4dfed7
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,3/8/2002,8002,e2185431-f230-425d-b783-71869ff16404,93c3970b-752e-44a2-8659-2a01000b4770
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 3,,3/8/2003,8003,e2185431-f230-425d-b783-71869ff16404,bdf19d45-4f33-4045-aaf6-fb1b473f182a
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 9,Yêu cầu về cán bộ giảng dạy TACM,9-Mar,3009,cfa32984-9ce7-4779-849c-e54fb76325f9,b5f1f7fb-def6-4094-9385-5ad4913670e3
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,3/9/2001,9001,b5f1f7fb-def6-4094-9385-5ad4913670e3,c28a1253-23d5-4467-b318-7135d0239e93
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,3/9/2002,9002,b5f1f7fb-def6-4094-9385-5ad4913670e3,b64aaf44-1357-4c44-b4aa-541753a1e8b9
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 3,,3/9/2003,9003,b5f1f7fb-def6-4094-9385-5ad4913670e3,16ffcdf0-3946-48d7-88d8-81f32a480be2
+141/QD/DHCNTT16/3/2018QUY,chuong,Chương 4,,4,4,,8d77c334-3c82-44f8-bc56-bf513e7355fc
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 11,Trách nhiệm của Đơn vị quản lý đào tạo,11-Apr,4011,8d77c334-3c82-44f8-bc56-bf513e7355fc,85767c8d-4f3c-479b-b880-b10d5bf82ae6
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,4/11/2001,11001,85767c8d-4f3c-479b-b880-b10d5bf82ae6,680f7910-9fa5-46eb-b773-9a3f46a39c47
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,4/11/2002,11002,85767c8d-4f3c-479b-b880-b10d5bf82ae6,7d3b1239-36da-468b-ae02-057f52327046
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 3,,4/11/2003,11003,85767c8d-4f3c-479b-b880-b10d5bf82ae6,7a21f13b-72e1-49d6-9dc7-5304711f7a97
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 12,Trách nhiệm của Đơn vị chuyên môn phụ trách các môn học ngoại ngữ,12-Apr,4012,8d77c334-3c82-44f8-bc56-bf513e7355fc,3d3dd7c9-561e-4f38-a2c2-d5d359392e6e
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,4/12/2001,12001,3d3dd7c9-561e-4f38-a2c2-d5d359392e6e,ad1da27e-c1d5-4e81-aef6-4b5a70ec0685
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,4/12/2002,12002,3d3dd7c9-561e-4f38-a2c2-d5d359392e6e,9f3dd844-6e6a-4a8c-b00c-edc847f8ff34
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 3,,4/12/2003,12003,3d3dd7c9-561e-4f38-a2c2-d5d359392e6e,821ae7bf-0699-4d47-8927-0bfa4549b398
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 4,,4/12/2004,12004,3d3dd7c9-561e-4f38-a2c2-d5d359392e6e,49e6003a-766c-4400-bfe0-cb3cf952b5ec
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 13,Trách nhiệm của các Khoa/Bộ môn phụ trách các ngành,13-Apr,4013,8d77c334-3c82-44f8-bc56-bf513e7355fc,587587f4-4f94-47ef-8732-cd7af6c9ea9e
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,4/13/2001,13001,587587f4-4f94-47ef-8732-cd7af6c9ea9e,ccea9ef5-0d54-4e95-a993-12b5ce543683
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 14,Phạm vi áp dụng,14-Apr,4014,8d77c334-3c82-44f8-bc56-bf513e7355fc,f60bf74a-a20e-40ee-827a-5d373a150136
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,4/14/2001,14001,f60bf74a-a20e-40ee-827a-5d373a150136,92a13b23-28bc-4646-ae5b-4b6c44503594
+141/QD/DHCNTT16/3/2018QUY,dieu,Điều 15,Điều khoản thi hành,15-Apr,4015,8d77c334-3c82-44f8-bc56-bf513e7355fc,88c0a83e-385e-447f-acfe-0cd306d69a1d
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 1,,4/15/2001,15001,88c0a83e-385e-447f-acfe-0cd306d69a1d,a84807b2-fa8d-48e1-b72a-96e3ad1f984d
+141/QD/DHCNTT16/3/2018QUY,khoan,Khoản 2,,4/15/2002,15002,88c0a83e-385e-447f-acfe-0cd306d69a1d,e1c3c1f9-f540-4f6c-bb53-d9306900ae2a
+147/QD/DHCNTT/DTDH,chuong,Chương,,0,0,,0ab990c6-f907-49fa-8d3d-c832f5ef4080
+147/QD/DHCNTT/DTDH,dieu,Điều 1,"Ban hành chuẩn đầu ra tiếng Anh, áp dụng cho sinh viên hệ đại học chính",0/1,1,0ab990c6-f907-49fa-8d3d-c832f5ef4080,40f6eaaa-8bb2-4a3a-b8c4-676ab3b534d3
+147/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/1/1,1001,40f6eaaa-8bb2-4a3a-b8c4-676ab3b534d3,90c08633-106e-46ec-acb4-6ea96ff1ee6d
+147/QD/DHCNTT/DTDH,dieu,Điều 2,"Quyết định có hiệu lực kể từ ngày ký. Các thông báo, quy định về chuẩn",0/2,2,0ab990c6-f907-49fa-8d3d-c832f5ef4080,8240fda5-2916-4f1f-8165-604e9bf233a5
+147/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/2/1,2001,8240fda5-2916-4f1f-8165-604e9bf233a5,a31e5db9-5461-45e7-8b78-acc271bbae4e
+147/QD/DHCNTT/DTDH,dieu,Điều 3,"Các Ông/Bà Trưởng phòng Đào tạo Đại học, Công tác sinh viên, Khoa, Bộ",0/3,3,0ab990c6-f907-49fa-8d3d-c832f5ef4080,696f72ef-e492-4665-8163-adfc82d5bd55
+147/QD/DHCNTT/DTDH,khoan,Khoản 1,,0/3/1,3001,696f72ef-e492-4665-8163-adfc82d5bd55,1dba212b-f40c-40fe-b69c-9c13c71774f1
+147/QD/DHCNTT/DTDH,khoan,Khoản 2,,0/3/2,3002,696f72ef-e492-4665-8163-adfc82d5bd55,e58b6d89-d8ff-4e12-909d-abd850824a72
+159/QD/DHCNTT,chuong,Chương 1,,1,1,,8e57e150-b988-4de7-906a-c39a42a8dcf6
+159/QD/DHCNTT,dieu,Điều 1,Phạm vi điều chỉnh và đối tượng áp dụng,1-Jan,1001,8e57e150-b988-4de7-906a-c39a42a8dcf6,a7d30cf4-ed80-4868-b14c-2d3756b6a3ad
+159/QD/DHCNTT,khoan,Khoản 1,,1/1/2001,1001,a7d30cf4-ed80-4868-b14c-2d3756b6a3ad,323c796e-eb24-4f73-8c2a-460f66078b52
+159/QD/DHCNTT,dieu,Điều 2,"Một số thuật ngữ, chữ viết tắt sử dụng trong quy định này",2-Jan,1002,8e57e150-b988-4de7-906a-c39a42a8dcf6,79220a20-c030-40f3-8751-50835184ea65
+159/QD/DHCNTT,khoan,Khoản 1,,1/2/2001,2001,79220a20-c030-40f3-8751-50835184ea65,b21fe8b7-ba3f-47bf-a5aa-6dec11c86958
+159/QD/DHCNTT,chuong,Chương 2,,2,2,,4e0fb1f7-f3f4-4628-a42a-3cfa7d2371e9
+159/QD/DHCNTT,dieu,Điều 3,Thời gian thực hiện KLTN,3-Feb,2003,4e0fb1f7-f3f4-4628-a42a-3cfa7d2371e9,8fc1401b-decc-4506-8472-1b9e00b987a5
+159/QD/DHCNTT,khoan,Khoản 1,,2/3/2001,3001,8fc1401b-decc-4506-8472-1b9e00b987a5,fc3bbba9-2c6f-4767-9218-31904adfe2ff
+159/QD/DHCNTT,khoan,Khoản 2,,2/3/2002,3002,8fc1401b-decc-4506-8472-1b9e00b987a5,5dfef308-e8ce-4ee8-86fe-5accb3ca29ed
+159/QD/DHCNTT,dieu,Điều 4,Điều kiện SV được làm KLTN,4-Feb,2004,4e0fb1f7-f3f4-4628-a42a-3cfa7d2371e9,bae4e22f-9b83-469b-a02b-2cb3c5c65b93
+159/QD/DHCNTT,khoan,Khoản 1,,2/4/2001,4001,bae4e22f-9b83-469b-a02b-2cb3c5c65b93,dddbca6c-aeee-41d9-bb84-e858ca290578
+159/QD/DHCNTT,dieu,Điều 5,Đăng ký và xét duyệt đề tài KLTN,5-Feb,2005,4e0fb1f7-f3f4-4628-a42a-3cfa7d2371e9,835fe604-49db-4427-a28a-1ade39288612
+159/QD/DHCNTT,khoan,Khoản 1,,2/5/2001,5001,835fe604-49db-4427-a28a-1ade39288612,04e6ee64-0eaa-46ee-8b13-6e1ccf179a05
+159/QD/DHCNTT,khoan,Khoản 2,,2/5/2002,5002,835fe604-49db-4427-a28a-1ade39288612,5459dcb0-777c-42ff-b154-3166accdfccd
+159/QD/DHCNTT,khoan,Khoản 3,,2/5/2003,5003,835fe604-49db-4427-a28a-1ade39288612,c6437605-e2e0-479f-8b0d-a3ddd3a68c74
+159/QD/DHCNTT,khoan,Khoản 4,,2/5/2004,5004,835fe604-49db-4427-a28a-1ade39288612,1940804a-6700-4bbb-8cb4-87bb0ea07185
+159/QD/DHCNTT,khoan,Khoản 5,,2/5/2005,5005,835fe604-49db-4427-a28a-1ade39288612,4e2bd10d-ff44-4bd4-bb1b-5b7a99797a15
+159/QD/DHCNTT,khoan,Khoản 6,,2/5/2006,5006,835fe604-49db-4427-a28a-1ade39288612,4da44fed-9f23-43ba-8f1c-1c938913ec90
+159/QD/DHCNTT,dieu,Điều 6,Quy định về CBHD,6-Feb,2006,4e0fb1f7-f3f4-4628-a42a-3cfa7d2371e9,d95e06ab-5c3d-4609-a4a5-5f34a234a2d3
+159/QD/DHCNTT,khoan,Khoản 1,,2/6/2001,6001,d95e06ab-5c3d-4609-a4a5-5f34a234a2d3,626705fa-9e81-49e2-9d31-b6739c846733
+159/QD/DHCNTT,khoan,Khoản 2,,2/6/2002,6002,d95e06ab-5c3d-4609-a4a5-5f34a234a2d3,79999dd8-1e3c-4b7c-ba9c-84f4d05fc10f
+159/QD/DHCNTT,khoan,Khoản 3,,2/6/2003,6003,d95e06ab-5c3d-4609-a4a5-5f34a234a2d3,5b9c4385-a608-4140-b291-5244b7d04fdb
+159/QD/DHCNTT,khoan,Khoản 4,,2/6/2004,6004,d95e06ab-5c3d-4609-a4a5-5f34a234a2d3,082043fa-a196-4db4-b692-5ffdd84672bc
+159/QD/DHCNTT,dieu,Điều 7,Báo cáo tiến độ thực hiện KLTN,7-Feb,2007,4e0fb1f7-f3f4-4628-a42a-3cfa7d2371e9,4ced11d6-dda2-4677-abd6-d1e36c004e61
+159/QD/DHCNTT,khoan,Khoản 1,,2/7/2001,7001,4ced11d6-dda2-4677-abd6-d1e36c004e61,9b0ab2b2-f7b8-433f-82e1-167b43b40753
+159/QD/DHCNTT,khoan,Khoản 2,,2/7/2002,7002,4ced11d6-dda2-4677-abd6-d1e36c004e61,ef041ddd-485e-46cb-ae4c-d7dc7f82f6e7
+159/QD/DHCNTT,chuong,Chương 3,,3,3,,38ac3d7d-2b7e-4507-a006-fb46e69e56a0
+159/QD/DHCNTT,dieu,Điều 10,Hoàn thành KLTN,10-Mar,3010,38ac3d7d-2b7e-4507-a006-fb46e69e56a0,a98349b7-57a6-40fa-b917-8321963fd22e
+159/QD/DHCNTT,khoan,Khoản 1,,3/10/2001,10001,a98349b7-57a6-40fa-b917-8321963fd22e,21dd04f6-b896-4b2d-9512-4b4524a67cfa
+159/QD/DHCNTT,khoan,Khoản 2,,3/10/2002,10002,a98349b7-57a6-40fa-b917-8321963fd22e,4920532f-629a-453b-9d57-74b746f6d1a2
+159/QD/DHCNTT,khoan,Khoản 3,,3/10/2003,10003,a98349b7-57a6-40fa-b917-8321963fd22e,8df3dead-8694-477d-987b-b3de2b400756
+159/QD/DHCNTT,khoan,Khoản 4,,3/10/2004,10004,a98349b7-57a6-40fa-b917-8321963fd22e,3e035733-a0d4-4600-acb8-ff26a7bff25d
+159/QD/DHCNTT,khoan,Khoản 5,,3/10/2005,10005,a98349b7-57a6-40fa-b917-8321963fd22e,bdda59ab-bcbe-4d3f-b28f-97d7f3652ca7
+159/QD/DHCNTT,dieu,Điều 11,Thành lập hội đồng bảo vệ KLTN,11-Mar,3011,38ac3d7d-2b7e-4507-a006-fb46e69e56a0,a12cf3b5-773d-4e6c-8079-3be016bc12c2
+159/QD/DHCNTT,khoan,Khoản 1,,3/11/2001,11001,a12cf3b5-773d-4e6c-8079-3be016bc12c2,ab7a6637-e5ad-40cd-a6b8-02cba76e9026
+159/QD/DHCNTT,khoan,Khoản 2,,3/11/2002,11002,a12cf3b5-773d-4e6c-8079-3be016bc12c2,c50bcb55-6f23-4f53-bd44-469d5546a215
+159/QD/DHCNTT,dieu,Điều 12,Tổ chức bảo vệ KLTN,12-Mar,3012,38ac3d7d-2b7e-4507-a006-fb46e69e56a0,a5d6120f-067b-4f56-b8b5-eddc4e86d716
+159/QD/DHCNTT,khoan,Khoản 1,,3/12/2001,12001,a5d6120f-067b-4f56-b8b5-eddc4e86d716,602047b2-71d8-49c5-95e9-1ccf5a7cf836
+159/QD/DHCNTT,khoan,Khoản 2,,3/12/2002,12002,a5d6120f-067b-4f56-b8b5-eddc4e86d716,8aa05ce6-f91f-4f4d-becf-e14caee86090
+159/QD/DHCNTT,khoan,Khoản 3,,3/12/2003,12003,a5d6120f-067b-4f56-b8b5-eddc4e86d716,581cf794-f835-4a32-91ae-a0a358d452ea
+159/QD/DHCNTT,khoan,Khoản 4,,3/12/2004,12004,a5d6120f-067b-4f56-b8b5-eddc4e86d716,4786cbbd-5681-454d-b62f-113900937fa7
+159/QD/DHCNTT,khoan,Khoản 5,,3/12/2005,12005,a5d6120f-067b-4f56-b8b5-eddc4e86d716,d9d55415-aae8-413f-8b88-6a838d0a29ab
+159/QD/DHCNTT,khoan,Khoản 6,,3/12/2006,12006,a5d6120f-067b-4f56-b8b5-eddc4e86d716,f43a3f9e-bf92-4320-b142-844f9c2ccb04
+159/QD/DHCNTT,dieu,Điều 13,Đánh giá kết quả KLTN,13-Mar,3013,38ac3d7d-2b7e-4507-a006-fb46e69e56a0,2a8e4d7f-55c8-498a-98c2-19756a174950
+159/QD/DHCNTT,khoan,Khoản 1,,3/13/2001,13001,2a8e4d7f-55c8-498a-98c2-19756a174950,bd7ff354-63fa-4278-988c-a26a0d0c9c28
+159/QD/DHCNTT,khoan,Khoản 2,,3/13/2002,13002,2a8e4d7f-55c8-498a-98c2-19756a174950,b9d7db32-a6d6-4551-8683-8f1d88466d7c
+159/QD/DHCNTT,dieu,Điều 14,Hội đồng chấm phúc tra KLTN,14-Mar,3014,38ac3d7d-2b7e-4507-a006-fb46e69e56a0,a75caa1b-efb5-411e-931e-0ca733c9487c
+159/QD/DHCNTT,khoan,Khoản 1,,3/14/2001,14001,a75caa1b-efb5-411e-931e-0ca733c9487c,96cd5fd2-c477-4799-acc7-efc9c0ce34c2
+159/QD/DHCNTT,dieu,Điều 15,Chế độ lưu trữ,15-Mar,3015,38ac3d7d-2b7e-4507-a006-fb46e69e56a0,81581442-6640-415f-ad62-7d3b5e413f46
+159/QD/DHCNTT,khoan,Khoản 1,,3/15/2001,15001,81581442-6640-415f-ad62-7d3b5e413f46,a9649b26-c13c-4261-b0e3-d44d1e648580
+159/QD/DHCNTT,khoan,Khoản 2,,3/15/2002,15002,81581442-6640-415f-ad62-7d3b5e413f46,3f3bd30d-14e5-4956-a361-1f87a5ab9cfd
+159/QD/DHCNTT,dieu,Điều 16,Thù lao hướng dẫn và các hội đồng,16-Mar,3016,38ac3d7d-2b7e-4507-a006-fb46e69e56a0,1ce09118-d48a-4452-8830-5e51c75b43fb
+159/QD/DHCNTT,khoan,Khoản 1,,3/16/2001,16001,1ce09118-d48a-4452-8830-5e51c75b43fb,71d1377b-7007-4710-b545-e0683eaa8945
+159/QD/DHCNTT,dieu,Điều 17,Tổ chức thực hiện,17-Mar,3017,38ac3d7d-2b7e-4507-a006-fb46e69e56a0,1edc3a02-3982-45d6-a6a0-82b76a04f96b
+159/QD/DHCNTT,khoan,Khoản 1,,3/17/2001,17001,1edc3a02-3982-45d6-a6a0-82b76a04f96b,948de071-e84d-4215-8079-bbced79415c6
+159/QD/DHCNTT,khoan,Khoản 2,,3/17/2002,17002,1edc3a02-3982-45d6-a6a0-82b76a04f96b,c1355d83-db8a-4784-b8dc-e0cccea0ded4
+159/QD/DHCNTT,khoan,Khoản 3,,3/17/2003,17003,1edc3a02-3982-45d6-a6a0-82b76a04f96b,cd1e1bfd-f6e1-4e9d-8401-f77379c6738d
+159/QD/DHCNTT,dieu,Điều 18,Điều khoản thi hành,18-Mar,3018,38ac3d7d-2b7e-4507-a006-fb46e69e56a0,c7c46963-dc48-4852-af82-7e583b1cb232
+159/QD/DHCNTT,khoan,Khoản 1,,3/18/2001,18001,c7c46963-dc48-4852-af82-7e583b1cb232,aa478165-43f9-44ca-8231-c3d536aefd52
+159/QD/DHCNTT,khoan,Khoản 1,,3/18/2001,18001,c7c46963-dc48-4852-af82-7e583b1cb232,48dcd20d-23d7-420e-817c-e33d2972f312
+159/QD/DHCNTT,khoan,Khoản 1,,3/18/2001,18001,c7c46963-dc48-4852-af82-7e583b1cb232,4cfe89a3-1848-4afc-988e-cba027490bf5
+159/QD/DHCNTT,khoan,Khoản 2,,3/18/2002,18002,c7c46963-dc48-4852-af82-7e583b1cb232,89427df4-5015-4000-a55c-fdd3d89d24b9
+159/QD/DHCNTT,khoan,Khoản 2,,3/18/2002,18002,c7c46963-dc48-4852-af82-7e583b1cb232,51432a48-a240-4e14-9a69-c404658cb97f
+159/QD/DHCNTT,khoan,Khoản 2,,3/18/2002,18002,c7c46963-dc48-4852-af82-7e583b1cb232,79c84390-7d14-4238-a5a8-a119b7a9e7c7
+159/QD/DHCNTT,khoan,Khoản 2024,,3/18/2024,20024,c7c46963-dc48-4852-af82-7e583b1cb232,b32bdca3-4d69-4462-9fed-7a02bfaf42a4
+159/QD/DHCNTT,khoan,Khoản 3,,3/18/2003,18003,c7c46963-dc48-4852-af82-7e583b1cb232,ab4ac706-16ca-4929-96d2-532c5e4346f9
+159/QD/DHCNTT,khoan,Khoản 3,,3/18/2003,18003,c7c46963-dc48-4852-af82-7e583b1cb232,bffda557-1c17-4468-90d9-634bc3620dd5
+159/QD/DHCNTT,khoan,Khoản 3,,3/18/2003,18003,c7c46963-dc48-4852-af82-7e583b1cb232,e80ba260-f5b9-4522-9175-44af7c2fb55e
+159/QD/DHCNTT,khoan,Khoản 4,,3/18/2004,18004,c7c46963-dc48-4852-af82-7e583b1cb232,db189396-749d-4116-a281-ec73b108cbfd
+159/QD/DHCNTT,khoan,Khoản 4,,3/18/2004,18004,c7c46963-dc48-4852-af82-7e583b1cb232,b24b94fb-2b06-4053-bbf3-05a7dea3793b
+159/QD/DHCNTT,dieu,Điều 8,Báo cáo KLTN cuối kỳ,8-Mar,3008,38ac3d7d-2b7e-4507-a006-fb46e69e56a0,8ef6fe40-f878-4c98-b864-b420b21ddc3e
+159/QD/DHCNTT,khoan,Khoản 1,,3/8/2001,8001,8ef6fe40-f878-4c98-b864-b420b21ddc3e,07e3b670-a973-44d0-8b32-0db47f8a6bc8
+159/QD/DHCNTT,khoan,Khoản 2,,3/8/2002,8002,8ef6fe40-f878-4c98-b864-b420b21ddc3e,bbebfbf9-d37f-4522-bda8-22e03fa9f707
+159/QD/DHCNTT,khoan,Khoản 3,,3/8/2003,8003,8ef6fe40-f878-4c98-b864-b420b21ddc3e,9b42e127-7f9a-402c-a785-b5519feb7b98
+159/QD/DHCNTT,dieu,Điều 9,Phản biện KLTN,9-Mar,3009,38ac3d7d-2b7e-4507-a006-fb46e69e56a0,cc959c42-c0ac-4665-962d-97720d0731ec
+159/QD/DHCNTT,khoan,Khoản 1,,3/9/2001,9001,cc959c42-c0ac-4665-962d-97720d0731ec,cd1f40d7-7949-401a-8ee0-77cf3a7a4543
+159/QD/DHCNTT,khoan,Khoản 2,,3/9/2002,9002,cc959c42-c0ac-4665-962d-97720d0731ec,450b02c3-9e58-4753-800e-1c91a3973ea9
+159/QD/DHCNTT,khoan,Khoản 3,,3/9/2003,9003,cc959c42-c0ac-4665-962d-97720d0731ec,06943aec-c04a-4c69-b506-899afdfa5804
+159/QD/DHCNTT,khoan,Khoản 4,,3/9/2004,9004,cc959c42-c0ac-4665-962d-97720d0731ec,ed16498a-8946-4672-b056-9b9d05d8e294
+172/QD/DHCNTT,chuong,Chương,,0,0,,c7759d6c-b75d-4100-81ef-430d900e0bbe
+172/QD/DHCNTT,dieu,Điều 1,"Ban hành kèm theo Quyết định này Quy chế văn bằng, chứng chỉ của",0/1,1,c7759d6c-b75d-4100-81ef-430d900e0bbe,2aed392b-6148-445e-937b-366629490938
+172/QD/DHCNTT,khoan,Khoản 1,,0/1/1,1001,2aed392b-6148-445e-937b-366629490938,5396de4d-25b8-4bc7-8838-bc6529b19162
+172/QD/DHCNTT,dieu,Điều 2,Quyết định có hiệu lực thi hành kể từ ngày ký.,0/2,2,c7759d6c-b75d-4100-81ef-430d900e0bbe,65098246-d67a-4c9a-a76a-e1a7ddb30ea1
+172/QD/DHCNTT,khoan,Khoản 1,,0/2/1,2001,65098246-d67a-4c9a-a76a-e1a7ddb30ea1,67c913ad-b6ee-42d0-b2ca-43fb6f90b262
+172/QD/DHCNTT,dieu,Điều 3,"Các Ông/Bà Trưởng các Phòng, Ban, Khoa có liên quan chịu trách nhiệm",0/3,3,c7759d6c-b75d-4100-81ef-430d900e0bbe,84698567-0457-4840-a7e2-3823537976f2
+172/QD/DHCNTT,khoan,Khoản 1,,0/3/1,3001,84698567-0457-4840-a7e2-3823537976f2,bc587438-b3eb-4308-ab3f-5010d2461c96
+172/QD/DHCNTT,chuong,Chương 1,,1,1,,bcc00b4b-7963-4cbb-abe5-0c8ec4f9fc61
+172/QD/DHCNTT,dieu,Điều 1,Phạm vi điều chỉnh và đối tượng áp dụng,1-Jan,1001,bcc00b4b-7963-4cbb-abe5-0c8ec4f9fc61,daf68806-6727-4f08-b45a-464d449f41f1
+172/QD/DHCNTT,khoan,Khoản 1,,1/1/2001,1001,daf68806-6727-4f08-b45a-464d449f41f1,62caff15-73f4-4777-b3bb-10260848ee3f
+172/QD/DHCNTT,khoan,Khoản 2,,1/1/2002,1002,daf68806-6727-4f08-b45a-464d449f41f1,b15b3707-0d78-4116-8067-7437f1604477
+172/QD/DHCNTT,dieu,Điều 2,"Nguyên tắc quản lý, cấp phát văn bằng, chứng chỉ",2-Jan,1002,bcc00b4b-7963-4cbb-abe5-0c8ec4f9fc61,e61d11c5-bafa-43e1-8ed0-d763fa2e9f69
+172/QD/DHCNTT,khoan,Khoản 1,,1/2/2001,2001,e61d11c5-bafa-43e1-8ed0-d763fa2e9f69,d026e031-ccc2-48b6-88fb-be0a0c3bea7b
+172/QD/DHCNTT,khoan,Khoản 2,,1/2/2002,2002,e61d11c5-bafa-43e1-8ed0-d763fa2e9f69,5ac91c1a-c845-43e7-a4e2-c5d97708d7ef
+172/QD/DHCNTT,khoan,Khoản 3,,1/2/2003,2003,e61d11c5-bafa-43e1-8ed0-d763fa2e9f69,685408c2-0bc7-4594-aeb1-5546e5d2f4f4
+172/QD/DHCNTT,khoan,Khoản 4,,1/2/2004,2004,e61d11c5-bafa-43e1-8ed0-d763fa2e9f69,23733138-ccce-45b3-a583-8e679ec65c45
+172/QD/DHCNTT,khoan,Khoản 5,,1/2/2005,2005,e61d11c5-bafa-43e1-8ed0-d763fa2e9f69,87825284-3c8b-4fb4-9a6a-b0ad03f6d82b
+172/QD/DHCNTT,dieu,Điều 3,"Trách nhiệm của các đơn vị, cá nhân trong việc quản lý văn bằng, chứng chỉ",3-Jan,1003,bcc00b4b-7963-4cbb-abe5-0c8ec4f9fc61,c5c001f1-9e7e-4bef-b7e7-b70f2bf91aa2
+172/QD/DHCNTT,khoan,Khoản 1,,1/3/2001,3001,c5c001f1-9e7e-4bef-b7e7-b70f2bf91aa2,3376f90c-870f-4a03-8b44-2bbda77d4082
+172/QD/DHCNTT,khoan,Khoản 2,,1/3/2002,3002,c5c001f1-9e7e-4bef-b7e7-b70f2bf91aa2,39c492be-4244-4a23-ac9f-d5212264252f
+172/QD/DHCNTT,khoan,Khoản 3,,1/3/2003,3003,c5c001f1-9e7e-4bef-b7e7-b70f2bf91aa2,fce47387-688e-48c1-830b-9f55b0e2552a
+172/QD/DHCNTT,khoan,Khoản 4,,1/3/2004,3004,c5c001f1-9e7e-4bef-b7e7-b70f2bf91aa2,4d8808b7-1e01-480d-b7d4-48ed0f3d93c3
+172/QD/DHCNTT,khoan,Khoản 5,,1/3/2005,3005,c5c001f1-9e7e-4bef-b7e7-b70f2bf91aa2,55777dc8-1ba2-455b-bd2c-aae40bd5eba8
+172/QD/DHCNTT,khoan,Khoản 6,,1/3/2006,3006,c5c001f1-9e7e-4bef-b7e7-b70f2bf91aa2,964beef9-165e-466c-8140-6c1bc5552892
+172/QD/DHCNTT,khoan,Khoản 7,,1/3/2007,3007,c5c001f1-9e7e-4bef-b7e7-b70f2bf91aa2,22248e39-e895-4144-97a4-793991c4c063
+172/QD/DHCNTT,diem,Điểm a),,1/3/7/a,3007.01,22248e39-e895-4144-97a4-793991c4c063,0c5259fd-b5ea-41db-a07c-d62355e7ed49
+172/QD/DHCNTT,diem,Điểm b),,1/3/7/b,3007.02,22248e39-e895-4144-97a4-793991c4c063,fbd28c8b-35bd-41b8-b77c-bc1a3c06be83
+172/QD/DHCNTT,diem,Điểm c),,1/3/7/c,3007.03,22248e39-e895-4144-97a4-793991c4c063,70854908-69f7-49a2-b343-dbcd8fa2de26
+172/QD/DHCNTT,diem,Điểm d),,1/3/7/d,3007.04,22248e39-e895-4144-97a4-793991c4c063,ea6b0dc8-abfa-4bf6-b17c-19f93d412365
+172/QD/DHCNTT,diem,Điểm e),,1/3/7/e,3007.05,22248e39-e895-4144-97a4-793991c4c063,c5356f03-a47b-4fb9-90a1-1b12d4cb9ff9
+172/QD/DHCNTT,diem,Điểm g),,1/3/7/g,3007.06,22248e39-e895-4144-97a4-793991c4c063,bf4e85c7-5523-4820-b182-820462bf25e8
+172/QD/DHCNTT,diem,Điểm h),,1/3/7/h,3007.07,22248e39-e895-4144-97a4-793991c4c063,2e09f354-f570-4f16-8131-baa31437c556
+172/QD/DHCNTT,diem,Điểm i),,1/3/7/i,3007.08,22248e39-e895-4144-97a4-793991c4c063,038f36df-29cf-47a9-ba8e-d322d899e65f
+172/QD/DHCNTT,diem,Điểm k),,1/3/7/k,3007.09,22248e39-e895-4144-97a4-793991c4c063,ca7e3491-9da2-43b2-8b70-cbdb4e21ef6a
+172/QD/DHCNTT,diem,Điểm l),,1/3/7/l,3007.1,22248e39-e895-4144-97a4-793991c4c063,15163be4-dd83-4299-9521-9564ea6bfc96
+172/QD/DHCNTT,diem,Điểm m),,1/3/7/m,3007.11,22248e39-e895-4144-97a4-793991c4c063,b78220a7-f27b-4030-a5ba-cd735391c51a
+172/QD/DHCNTT,diem,Điểm n),,1/3/7/n,3007.12,22248e39-e895-4144-97a4-793991c4c063,a3ff501a-0896-43fb-a96b-4a0c0f8c76c8
+172/QD/DHCNTT,dieu,Điều 4,"Quyền và nghĩa vụ của người được cấp văn bằng, chứng chỉ",4-Jan,1004,bcc00b4b-7963-4cbb-abe5-0c8ec4f9fc61,f3ed0d54-e065-450e-bf9b-55f238b4db37
+172/QD/DHCNTT,khoan,Khoản 1,,1/4/2001,4001,f3ed0d54-e065-450e-bf9b-55f238b4db37,6c236098-ca69-4266-99b9-78384627196d
+172/QD/DHCNTT,diem,Điểm a),,1/4/1/a,4001.01,6c236098-ca69-4266-99b9-78384627196d,8b02a9b9-f298-4e48-a5d1-fcdf1d8b1695
+172/QD/DHCNTT,diem,Điểm b),,1/4/1/b,4001.02,6c236098-ca69-4266-99b9-78384627196d,20b647b4-efb0-473a-b281-db4e54e86b6e
+172/QD/DHCNTT,diem,Điểm c),,1/4/1/c,4001.03,6c236098-ca69-4266-99b9-78384627196d,f0f7f44c-8f58-437e-8be0-e3e81eed054b
+172/QD/DHCNTT,khoan,Khoản 2,,1/4/2002,4002,f3ed0d54-e065-450e-bf9b-55f238b4db37,7e698975-06c9-4f19-bb26-0b1ba658d769
+172/QD/DHCNTT,diem,Điểm a),,1/4/2/a,4002.01,7e698975-06c9-4f19-bb26-0b1ba658d769,58c867b7-acba-4bd2-959d-34f42cbd2dcc
+172/QD/DHCNTT,diem,Điểm b),,1/4/2/b,4002.02,7e698975-06c9-4f19-bb26-0b1ba658d769,2288c91d-87f2-459e-b38f-a0ecc46284a3
+172/QD/DHCNTT,diem,Điểm c),,1/4/2/c,4002.03,7e698975-06c9-4f19-bb26-0b1ba658d769,3548da00-6b21-4f6e-a757-ff2845e4e7e0
+172/QD/DHCNTT,diem,Điểm d),,1/4/2/d,4002.04,7e698975-06c9-4f19-bb26-0b1ba658d769,887f1172-e180-44df-a7b2-4c4d81d3ddc9
+172/QD/DHCNTT,diem,Điểm e),,1/4/2/e,4002.05,7e698975-06c9-4f19-bb26-0b1ba658d769,042a44c1-f884-4220-8fb0-8b7e5639145f
+172/QD/DHCNTT,diem,Điểm g),,1/4/2/g,4002.06,7e698975-06c9-4f19-bb26-0b1ba658d769,877ad7db-bd6c-4091-acc3-49dc7f0bf5ad
+172/QD/DHCNTT,dieu,Điều 5,"Công bố thông tin về cấp văn bằng, chứng chỉ trên trang thông tin điện tử",5-Jan,1005,bcc00b4b-7963-4cbb-abe5-0c8ec4f9fc61,6ffdf72d-754f-4e64-8d78-0ec41b4258ca
+172/QD/DHCNTT,khoan,Khoản 1,,1/5/2001,5001,6ffdf72d-754f-4e64-8d78-0ec41b4258ca,e2fdbc7d-d26d-4e7d-b816-c6256cecb2fc
+172/QD/DHCNTT,khoan,Khoản 2,,1/5/2002,5002,6ffdf72d-754f-4e64-8d78-0ec41b4258ca,34e291ba-268b-4bf6-8f62-01e7832d4f17
+172/QD/DHCNTT,khoan,Khoản 3,,1/5/2003,5003,6ffdf72d-754f-4e64-8d78-0ec41b4258ca,2bafb25e-eec7-42f6-9923-c022fff7320d
+172/QD/DHCNTT,khoan,Khoản 4,,1/5/2004,5004,6ffdf72d-754f-4e64-8d78-0ec41b4258ca,2e4370f8-7e0d-4cb5-b455-e1daaa9fe71c
+172/QD/DHCNTT,chuong,Chương 2,,2,2,,4f8f628c-f8fe-4370-8129-9782f8f2117a
+172/QD/DHCNTT,dieu,Điều 6,"Quy định chung về nội dung văn bằng, chứng chỉ",6-Feb,2006,4f8f628c-f8fe-4370-8129-9782f8f2117a,1b202472-8ece-4ae8-b106-e47f4055b25b
+172/QD/DHCNTT,khoan,Khoản 1,,2/6/2001,6001,1b202472-8ece-4ae8-b106-e47f4055b25b,c847e0bb-bb55-4144-abcd-2f8322600806
+172/QD/DHCNTT,khoan,Khoản 10,,2/6/2010,6010,1b202472-8ece-4ae8-b106-e47f4055b25b,712c2b3e-39b7-447f-93e4-40199b29969d
+172/QD/DHCNTT,diem,Điểm a),,2/6/10/a,6010.01,712c2b3e-39b7-447f-93e4-40199b29969d,b3d7e7d6-9514-4157-ab7a-346bcbe50a00
+172/QD/DHCNTT,diem,Điểm b),,2/6/10/b,6010.02,712c2b3e-39b7-447f-93e4-40199b29969d,b2248963-4cfc-43b9-891f-dde210e3927e
+172/QD/DHCNTT,diem,Điểm c),,2/6/10/c,6010.03,712c2b3e-39b7-447f-93e4-40199b29969d,2c42f8af-15b0-48cf-b1ca-e046801e7c6f
+172/QD/DHCNTT,khoan,Khoản 2,,2/6/2002,6002,1b202472-8ece-4ae8-b106-e47f4055b25b,ac37cae9-6d53-4efa-a94e-7cede4cfd5b6
+172/QD/DHCNTT,khoan,Khoản 3,,2/6/2003,6003,1b202472-8ece-4ae8-b106-e47f4055b25b,94a482c3-efd7-46fc-982a-9d5a034aeff6
+172/QD/DHCNTT,diem,Điểm a),,2/6/3/a,6003.01,94a482c3-efd7-46fc-982a-9d5a034aeff6,84cf2a03-5ab7-4f6b-934a-9e50c8738dfc
+172/QD/DHCNTT,diem,Điểm b),,2/6/3/b,6003.02,94a482c3-efd7-46fc-982a-9d5a034aeff6,220dff99-d568-4fde-bfe4-9b78aa151377
+172/QD/DHCNTT,khoan,Khoản 4,,2/6/2004,6004,1b202472-8ece-4ae8-b106-e47f4055b25b,d055484d-87e7-4eb6-88a5-b175b6e8bcd2
+172/QD/DHCNTT,khoan,Khoản 5,,2/6/2005,6005,1b202472-8ece-4ae8-b106-e47f4055b25b,4a7af00f-06fa-4b43-b8d2-1012495ed115
+172/QD/DHCNTT,khoan,Khoản 6,,2/6/2006,6006,1b202472-8ece-4ae8-b106-e47f4055b25b,508cb68a-b553-4064-9741-fdf49ac0d207
+172/QD/DHCNTT,khoan,Khoản 7,,2/6/2007,6007,1b202472-8ece-4ae8-b106-e47f4055b25b,3c22dad1-c70e-4ad7-b260-af7a9451399b
+172/QD/DHCNTT,khoan,Khoản 8,,2/6/2008,6008,1b202472-8ece-4ae8-b106-e47f4055b25b,c7945316-0d19-462f-8143-94ffde7bdc8a
+172/QD/DHCNTT,khoan,Khoản 9,,2/6/2009,6009,1b202472-8ece-4ae8-b106-e47f4055b25b,2c61c451-2d02-42be-891a-4cc26fdd94f9
+172/QD/DHCNTT,dieu,Điều 7,Các nội dung khác ghi trên chứng chỉ,7-Feb,2007,4f8f628c-f8fe-4370-8129-9782f8f2117a,20aba479-5b20-4791-8bf4-fbafbdc6e37a
+172/QD/DHCNTT,khoan,Khoản 1,,2/7/2001,7001,20aba479-5b20-4791-8bf4-fbafbdc6e37a,6ef88436-b1e0-402f-ba02-6ee150c1e5a4
+172/QD/DHCNTT,dieu,Điều 8,"Ngôn ngữ ghi trên văn bằng, chứng chỉ",8-Feb,2008,4f8f628c-f8fe-4370-8129-9782f8f2117a,46034089-c537-48b5-805c-77217d32fc97
+172/QD/DHCNTT,khoan,Khoản 1,,2/8/2001,8001,46034089-c537-48b5-805c-77217d32fc97,13753c90-866a-4009-9064-27796c1205df
+172/QD/DHCNTT,dieu,Điều 9,"Mẫu văn bằng, chứng chỉ",9-Feb,2009,4f8f628c-f8fe-4370-8129-9782f8f2117a,ce870022-a232-4a2f-8e05-49a24f59a396
+172/QD/DHCNTT,khoan,Khoản 1,,2/9/2001,9001,ce870022-a232-4a2f-8e05-49a24f59a396,666d88a4-4602-40dc-91ee-785b6072dcda
+172/QD/DHCNTT,khoan,Khoản 2,,2/9/2002,9002,ce870022-a232-4a2f-8e05-49a24f59a396,10ebf0ee-b4d7-48fd-8583-70e0b2af5f0a
+172/QD/DHCNTT,chuong,Chương 3,,3,3,,15ad8387-c9db-4fea-8a10-83900cf2a10f
+172/QD/DHCNTT,dieu,Điều 10,"Trách nhiệm in, quản lý phôi văn bằng, chứng chỉ",10-Mar,3010,15ad8387-c9db-4fea-8a10-83900cf2a10f,2f5c9fdd-99b9-40c2-bb69-ec7095e5a098
+172/QD/DHCNTT,khoan,Khoản 1,,3/10/2001,10001,2f5c9fdd-99b9-40c2-bb69-ec7095e5a098,21b1eba8-72dd-482b-b55e-9ec2130355b4
+172/QD/DHCNTT,khoan,Khoản 2,,3/10/2002,10002,2f5c9fdd-99b9-40c2-bb69-ec7095e5a098,540bca27-49bc-4552-9da4-11197498825c
+172/QD/DHCNTT,khoan,Khoản 3,,3/10/2003,10003,2f5c9fdd-99b9-40c2-bb69-ec7095e5a098,eebf29b2-e1d4-47bb-ad71-99fced8058a2
+172/QD/DHCNTT,dieu,Điều 11,"Quy định lập số hiệu, số vào sổ cấp văn bằng, chứng chỉ",11-Mar,3011,15ad8387-c9db-4fea-8a10-83900cf2a10f,78a4fc54-b749-47ae-8fb4-728a91e68c96
+172/QD/DHCNTT,khoan,Khoản 1,,3/11/2001,11001,78a4fc54-b749-47ae-8fb4-728a91e68c96,a2e0a582-96df-4d77-8323-123153dc03b8
+172/QD/DHCNTT,khoan,Khoản 2,,3/11/2002,11002,78a4fc54-b749-47ae-8fb4-728a91e68c96,75ba1d44-88e1-4ea4-bdbc-5fd0ec3e2996
+172/QD/DHCNTT,chuong,Chương 4,,4,4,,afd72f04-8421-4434-9604-353050648274
+172/QD/DHCNTT,dieu,Điều 12,"Thẩm quyền cấp văn bằng, chứng chỉ",12-Apr,4012,afd72f04-8421-4434-9604-353050648274,aa1da1f0-734c-4f6c-b316-4816535d0170
+172/QD/DHCNTT,khoan,Khoản 1,,4/12/2001,12001,aa1da1f0-734c-4f6c-b316-4816535d0170,cfaf1510-0bbf-43e4-b8e7-7766079696cd
+172/QD/DHCNTT,khoan,Khoản 2,,4/12/2002,12002,aa1da1f0-734c-4f6c-b316-4816535d0170,6c44a661-26cb-4956-819d-022244f23e21
+172/QD/DHCNTT,dieu,Điều 13,"Điều kiện cấp văn bằng, chứng chỉ",13-Apr,4013,afd72f04-8421-4434-9604-353050648274,ad85c841-8823-400b-86c9-277864908ca4
+172/QD/DHCNTT,khoan,Khoản 1,,4/13/2001,13001,ad85c841-8823-400b-86c9-277864908ca4,03ac1c9b-e097-417a-9934-6fcb1babbec8
+172/QD/DHCNTT,khoan,Khoản 2,,4/13/2002,13002,ad85c841-8823-400b-86c9-277864908ca4,b7acd037-c829-4426-9abf-ffb36685a3ad
+172/QD/DHCNTT,diem,Điểm a),,4/13/2/a,13002.01,b7acd037-c829-4426-9abf-ffb36685a3ad,9310f1c4-4f6b-4389-a152-f60d8c52ae31
+172/QD/DHCNTT,diem,Điểm b),,4/13/2/b,13002.02,b7acd037-c829-4426-9abf-ffb36685a3ad,9c05438d-f7da-441c-a084-e6419088b51e
+172/QD/DHCNTT,khoan,Khoản 3,,4/13/2003,13003,ad85c841-8823-400b-86c9-277864908ca4,747f0066-b9cc-46ed-9510-6b1b9931f928
+172/QD/DHCNTT,dieu,Điều 14,"Thời hạn cấp văn bằng, chứng chỉ",14-Apr,4014,afd72f04-8421-4434-9604-353050648274,3e05f363-845b-440a-b607-8902734967c2
+172/QD/DHCNTT,khoan,Khoản 1,,4/14/2001,14001,3e05f363-845b-440a-b607-8902734967c2,d989bc2d-a906-4cec-adf9-de4a40c07bd4
+172/QD/DHCNTT,diem,Điểm a),,4/14/1/a,14001.01,d989bc2d-a906-4cec-adf9-de4a40c07bd4,cf47a26e-c278-45b6-a0e5-78d662024001
+172/QD/DHCNTT,diem,Điểm b),,4/14/1/b,14001.02,d989bc2d-a906-4cec-adf9-de4a40c07bd4,886a8fa3-4d87-4de5-9023-14c66bc77a5e
+172/QD/DHCNTT,diem,Điểm c),,4/14/1/c,14001.03,d989bc2d-a906-4cec-adf9-de4a40c07bd4,3c211915-5d3a-448a-b7ea-a5a4357bcb90
+172/QD/DHCNTT,khoan,Khoản 2,,4/14/2002,14002,3e05f363-845b-440a-b607-8902734967c2,0c7dd225-1e74-4f01-b15a-daddb82af465
+172/QD/DHCNTT,khoan,Khoản 3,,4/14/2003,14003,3e05f363-845b-440a-b607-8902734967c2,a59c5c42-f2c7-4cd1-a86a-4748869ffad4
+172/QD/DHCNTT,dieu,Điều 15,"Cấp lại văn bằng, chứng chỉ",15-Apr,4015,afd72f04-8421-4434-9604-353050648274,f576608a-13eb-4eab-b649-16a7b27df3b1
+172/QD/DHCNTT,khoan,Khoản 1,,4/15/2001,15001,f576608a-13eb-4eab-b649-16a7b27df3b1,51661f1b-8f2c-4129-82d8-7a22d2982a52
+172/QD/DHCNTT,khoan,Khoản 2,,4/15/2002,15002,f576608a-13eb-4eab-b649-16a7b27df3b1,3fd410ee-1168-4652-816e-ce1963629940
+172/QD/DHCNTT,khoan,Khoản 3,,4/15/2003,15003,f576608a-13eb-4eab-b649-16a7b27df3b1,bf6d9528-b461-4790-9657-7aabd504ca08
+172/QD/DHCNTT,diem,Điểm a),,4/15/3/a,15003.01,bf6d9528-b461-4790-9657-7aabd504ca08,3e963a1e-d55f-437c-9c43-0e5825681f56
+172/QD/DHCNTT,diem,Điểm b),,4/15/3/b,15003.02,bf6d9528-b461-4790-9657-7aabd504ca08,49da086a-b795-483b-bd3e-e0c1b4a9aa8a
+172/QD/DHCNTT,diem,Điểm c),,4/15/3/c,15003.03,bf6d9528-b461-4790-9657-7aabd504ca08,918b76e3-0c40-4fd1-bcfa-75c1d7656e27
+172/QD/DHCNTT,dieu,Điều 16,"Sổ gốc văn bằng, chứng chỉ",16-Apr,4016,afd72f04-8421-4434-9604-353050648274,f3a93d3e-826c-401a-b57e-a6ba9897eb8a
+172/QD/DHCNTT,khoan,Khoản 1,,4/16/2001,16001,f3a93d3e-826c-401a-b57e-a6ba9897eb8a,33a96142-1aa1-4c43-842f-48efecb1cf04
+172/QD/DHCNTT,khoan,Khoản 2,,4/16/2002,16002,f3a93d3e-826c-401a-b57e-a6ba9897eb8a,f6ef3b99-b785-497d-ba9f-249ae5f0988d
+172/QD/DHCNTT,khoan,Khoản 3,,4/16/2003,16003,f3a93d3e-826c-401a-b57e-a6ba9897eb8a,f39d57b6-3eff-4324-b8d5-25b86d92ef4e
+172/QD/DHCNTT,dieu,Điều 17,"Ký, đóng dấu văn bằng, chứng chỉ",17-Apr,4017,afd72f04-8421-4434-9604-353050648274,a404e188-1644-49bd-baad-07c742b50e86
+172/QD/DHCNTT,khoan,Khoản 1,,4/17/2001,17001,a404e188-1644-49bd-baad-07c742b50e86,2c5be7b1-75fd-4356-ae91-380fb3971572
+172/QD/DHCNTT,khoan,Khoản 2,,4/17/2002,17002,a404e188-1644-49bd-baad-07c742b50e86,d874f732-ccab-471a-a734-10f4be05638e
+172/QD/DHCNTT,khoan,Khoản 3,,4/17/2003,17003,a404e188-1644-49bd-baad-07c742b50e86,ca7160f2-f2e0-40cc-8553-c5922bf03972
+172/QD/DHCNTT,khoan,Khoản 4,,4/17/2004,17004,a404e188-1644-49bd-baad-07c742b50e86,2ad965d0-bf59-4483-8b7a-017265da358f
+172/QD/DHCNTT,dieu,Điều 18,"Thẩm quyền quyết định chỉnh sửa nội dung văn bằng, chứng chỉ",18-Apr,4018,afd72f04-8421-4434-9604-353050648274,716672fe-7b21-432e-b78c-563235552e95
+172/QD/DHCNTT,khoan,Khoản 1,,4/18/2001,18001,716672fe-7b21-432e-b78c-563235552e95,1572d67f-551d-4d18-a55c-c4921e67e07b
+172/QD/DHCNTT,dieu,Điều 19,"Các trường hợp chỉnh sửa nội dung văn bằng, chứng chỉ",19-Apr,4019,afd72f04-8421-4434-9604-353050648274,99709532-6ef1-4add-b1a7-dd1b0e385cd5
+172/QD/DHCNTT,khoan,Khoản 1,,4/19/2001,19001,99709532-6ef1-4add-b1a7-dd1b0e385cd5,e6cf6b33-20b7-44dd-91ca-b91bf9748434
+172/QD/DHCNTT,khoan,Khoản 2,,4/19/2002,19002,99709532-6ef1-4add-b1a7-dd1b0e385cd5,728b4b72-097a-4d2b-a19f-0f6d10000e35
+172/QD/DHCNTT,khoan,Khoản 3,,4/19/2003,19003,99709532-6ef1-4add-b1a7-dd1b0e385cd5,364a8fbb-d9fb-42f1-b4ee-e4b9b8d2812d
+172/QD/DHCNTT,khoan,Khoản 4,,4/19/2004,19004,99709532-6ef1-4add-b1a7-dd1b0e385cd5,b4f7b332-7c09-40cc-ad76-b8e7c8c317ea
+172/QD/DHCNTT,dieu,Điều 20,"Hồ sơ, trình tự, thủ tục chỉnh sửa nội dung văn bằng, chứng chỉ",20-Apr,4020,afd72f04-8421-4434-9604-353050648274,b0c54a2f-317d-4ea0-b21c-49491742f0b5
+172/QD/DHCNTT,khoan,Khoản 1,,4/20/2001,20001,b0c54a2f-317d-4ea0-b21c-49491742f0b5,f5c8033d-4ef1-4605-9045-dacd5ed4e89a
+172/QD/DHCNTT,diem,Điểm a),,4/20/1/a,20001.01,f5c8033d-4ef1-4605-9045-dacd5ed4e89a,d21c403d-43d5-4806-8476-2beda27bb8ba
+172/QD/DHCNTT,diem,Điểm b),,4/20/1/b,20001.02,f5c8033d-4ef1-4605-9045-dacd5ed4e89a,3855d0ed-1781-4168-9b26-188d302f0e4b
+172/QD/DHCNTT,diem,Điểm c),,4/20/1/c,20001.03,f5c8033d-4ef1-4605-9045-dacd5ed4e89a,5cf2460b-d2f1-406a-bf4e-6943036111fb
+172/QD/DHCNTT,diem,Điểm d),,4/20/1/d,20001.04,f5c8033d-4ef1-4605-9045-dacd5ed4e89a,995f3bb2-6e46-4e48-be2d-c537beaaec1d
+172/QD/DHCNTT,khoan,Khoản 2,,4/20/2002,20002,b0c54a2f-317d-4ea0-b21c-49491742f0b5,cdd0c92c-17ec-4902-a4bc-14c37fe95142
+172/QD/DHCNTT,diem,Điểm a),,4/20/2/a,20002.01,cdd0c92c-17ec-4902-a4bc-14c37fe95142,802d0309-1dcf-42de-a2d9-4250f10dd201
+172/QD/DHCNTT,diem,Điểm b),,4/20/2/b,20002.02,cdd0c92c-17ec-4902-a4bc-14c37fe95142,e0f5293b-9dad-4ada-8c39-a060623fe3d5
+172/QD/DHCNTT,diem,Điểm c),,4/20/2/c,20002.03,cdd0c92c-17ec-4902-a4bc-14c37fe95142,c9c05bef-a5e0-4e9a-90c1-3746b8c205e2
+172/QD/DHCNTT,diem,Điểm d),,4/20/2/d,20002.04,cdd0c92c-17ec-4902-a4bc-14c37fe95142,b2aad374-4132-4be2-9099-7fefdf2c4e9b
+172/QD/DHCNTT,dieu,Điều 21,"Nội dung chính của quyết định chỉnh sửa và áp dụng việc chỉnh sửa văn bằng,",21-Apr,4021,afd72f04-8421-4434-9604-353050648274,7d2adacb-d3b4-4343-96d7-2c1061bab441
+172/QD/DHCNTT,khoan,Khoản 1,,4/21/2001,21001,7d2adacb-d3b4-4343-96d7-2c1061bab441,595932ac-f69d-46ef-937b-2b25320874f9
+172/QD/DHCNTT,diem,Điểm a),,4/21/1/a,21001.01,595932ac-f69d-46ef-937b-2b25320874f9,05b56a20-e7ae-4f8f-8cbf-07e12f4bf5a5
+172/QD/DHCNTT,diem,Điểm b),,4/21/1/b,21001.02,595932ac-f69d-46ef-937b-2b25320874f9,6d10de9b-d8da-44cf-b1fb-64d286d32d75
+172/QD/DHCNTT,diem,Điểm c),,4/21/1/c,21001.03,595932ac-f69d-46ef-937b-2b25320874f9,07a91f8c-9d31-4033-9148-cb6974dfc735
+172/QD/DHCNTT,diem,Điểm d),,4/21/1/d,21001.04,595932ac-f69d-46ef-937b-2b25320874f9,e8bac92b-f172-43f8-a4ff-72da17cb4e27
+172/QD/DHCNTT,khoan,Khoản 2,,4/21/2002,21002,7d2adacb-d3b4-4343-96d7-2c1061bab441,107ae8e7-63d2-4a02-90c2-c0a3546345a5
+172/QD/DHCNTT,dieu,Điều 22,"Thu hồi, hủy bỏ văn bằng, chứng chỉ",22-Apr,4022,afd72f04-8421-4434-9604-353050648274,2616b823-dca9-474f-8cd1-b2315fc7482c
+172/QD/DHCNTT,khoan,Khoản 1,,4/22/2001,22001,2616b823-dca9-474f-8cd1-b2315fc7482c,079e2572-8201-4d10-9c7d-cf6c55e91365
+172/QD/DHCNTT,diem,Điểm a),,4/22/1/a,22001.01,079e2572-8201-4d10-9c7d-cf6c55e91365,f4683d75-e0e7-40eb-ae07-8545f14f2f65
+172/QD/DHCNTT,diem,Điểm b),,4/22/1/b,22001.02,079e2572-8201-4d10-9c7d-cf6c55e91365,ba9a2279-7ab6-4e4f-89b9-04741002140d
+172/QD/DHCNTT,diem,Điểm c),,4/22/1/c,22001.03,079e2572-8201-4d10-9c7d-cf6c55e91365,69310d8f-f4e5-4088-a377-50db72866cfa
+172/QD/DHCNTT,diem,Điểm d),,4/22/1/d,22001.04,079e2572-8201-4d10-9c7d-cf6c55e91365,eda1f6ed-6847-4daa-bea6-37ec3201b509
+172/QD/DHCNTT,diem,Điểm e),,4/22/1/e,22001.05,079e2572-8201-4d10-9c7d-cf6c55e91365,de76c850-482b-42d0-89c0-8883dd09acec
+172/QD/DHCNTT,khoan,Khoản 2,,4/22/2002,22002,2616b823-dca9-474f-8cd1-b2315fc7482c,0ab9e8d2-6089-4cc1-b485-9c4045a2635f
+172/QD/DHCNTT,khoan,Khoản 3,,4/22/2003,22003,2616b823-dca9-474f-8cd1-b2315fc7482c,38049134-384c-4f37-b4c4-640f4deadb16
+172/QD/DHCNTT,chuong,Chương 5,,5,5,,1bac135b-316a-46b2-8eeb-66f2636aabad
+172/QD/DHCNTT,dieu,Điều 23,"Cấp bản sao văn bằng, chứng chỉ từ sổ gốc",23-May,5023,1bac135b-316a-46b2-8eeb-66f2636aabad,dd2b7ab6-160b-4e0d-8e38-b6d64ea9785e
+172/QD/DHCNTT,khoan,Khoản 1,,5/23/2001,23001,dd2b7ab6-160b-4e0d-8e38-b6d64ea9785e,b701259f-ccf7-4b9d-af16-a728fdec5cdd
+172/QD/DHCNTT,khoan,Khoản 2,,5/23/2002,23002,dd2b7ab6-160b-4e0d-8e38-b6d64ea9785e,ba6f351d-fbe1-45e5-bdf9-c15095093cc0
+172/QD/DHCNTT,khoan,Khoản 3,,5/23/2003,23003,dd2b7ab6-160b-4e0d-8e38-b6d64ea9785e,65cd8bab-6a89-46de-92dc-82c8a9dfe69c
+172/QD/DHCNTT,dieu,Điều 24,"Giá trị pháp lý của bản sao văn bằng, chứng chỉ từ sổ gốc",24-May,5024,1bac135b-316a-46b2-8eeb-66f2636aabad,f182bf1a-fa7f-4563-8b8f-869d4a89f526
+172/QD/DHCNTT,khoan,Khoản 1,,5/24/2001,24001,f182bf1a-fa7f-4563-8b8f-869d4a89f526,3e3ad459-2508-4873-b974-bebcdcdcbe01
+172/QD/DHCNTT,khoan,Khoản 2,,5/24/2002,24002,f182bf1a-fa7f-4563-8b8f-869d4a89f526,fde8fb7b-9e37-42c9-a4e7-569efdcee1a3
+172/QD/DHCNTT,dieu,Điều 25,"Thẩm quyền và trách nhiệm cấp bản sao văn bằng, chứng chỉ từ sổ gốc",25-May,5025,1bac135b-316a-46b2-8eeb-66f2636aabad,c503f92f-3b63-462c-9eb9-8ac9eed49844
+172/QD/DHCNTT,khoan,Khoản 1,,5/25/2001,25001,c503f92f-3b63-462c-9eb9-8ac9eed49844,89504bc0-e08a-4a5c-9d27-33bf730784a2
+172/QD/DHCNTT,dieu,Điều 26,"Người có quyền yêu cầu cấp bản sao văn bằng, chứng chỉ từ sổ gốc",26-May,5026,1bac135b-316a-46b2-8eeb-66f2636aabad,9165998d-d283-4dca-94cf-1d3ccda74f95
+172/QD/DHCNTT,khoan,Khoản 1,,5/26/2001,26001,9165998d-d283-4dca-94cf-1d3ccda74f95,071d51aa-d76e-468a-ae88-613583f52694
+172/QD/DHCNTT,khoan,Khoản 2,,5/26/2002,26002,9165998d-d283-4dca-94cf-1d3ccda74f95,0f91ba3b-e579-475e-b3af-7e8b2fb03b47
+172/QD/DHCNTT,khoan,Khoản 3,,5/26/2003,26003,9165998d-d283-4dca-94cf-1d3ccda74f95,ec4d6925-d4fb-4983-8bdf-d8129749f73e
+172/QD/DHCNTT,dieu,Điều 27,"Thủ tục cấp bản sao văn bằng, chứng chỉ từ sổ gốc",27-May,5027,1bac135b-316a-46b2-8eeb-66f2636aabad,1ef4e4fd-275c-4995-937d-273d8da4b4c4
+172/QD/DHCNTT,khoan,Khoản 1,,5/27/2001,27001,1ef4e4fd-275c-4995-937d-273d8da4b4c4,30a25b1d-dd21-43f5-9d02-0724cf6450c4
+172/QD/DHCNTT,diem,Điểm a),,5/27/1/a,27001.01,30a25b1d-dd21-43f5-9d02-0724cf6450c4,369cae46-00cf-4aa9-9290-bc513d094a0d
+172/QD/DHCNTT,diem,Điểm b),,5/27/1/b,27001.02,30a25b1d-dd21-43f5-9d02-0724cf6450c4,307c8830-97fb-4726-ae27-574c05ea6c33
+172/QD/DHCNTT,diem,Điểm c),,5/27/1/c,27001.03,30a25b1d-dd21-43f5-9d02-0724cf6450c4,0a8465b1-d2ed-4a59-89ad-d9886cbc3871
+172/QD/DHCNTT,diem,Điểm d),,5/27/1/d,27001.04,30a25b1d-dd21-43f5-9d02-0724cf6450c4,4c11d8d6-714f-4081-a2b2-374de3f7d53e
+172/QD/DHCNTT,khoan,Khoản 2,,5/27/2002,27002,1ef4e4fd-275c-4995-937d-273d8da4b4c4,9a3818f1-f96a-4dda-9183-a887b0af2179
+172/QD/DHCNTT,diem,Điểm a),,5/27/2/a,27002.01,9a3818f1-f96a-4dda-9183-a887b0af2179,7637b381-0c29-4b72-b2fc-0a3159a9afaf
+172/QD/DHCNTT,diem,Điểm b),,5/27/2/b,27002.02,9a3818f1-f96a-4dda-9183-a887b0af2179,5f01a54b-95b6-48c5-91fd-f7b21ac0629b
+172/QD/DHCNTT,diem,Điểm c),,5/27/2/c,27002.03,9a3818f1-f96a-4dda-9183-a887b0af2179,15f618db-d783-43ff-bd76-b90c990a96c8
+172/QD/DHCNTT,khoan,Khoản 3,,5/27/2003,27003,1ef4e4fd-275c-4995-937d-273d8da4b4c4,e6c0389f-b6f1-4a0a-a3c4-f9ed89085cfc
+172/QD/DHCNTT,dieu,Điều 28,"Sổ cấp bản sao và quản lý việc cấp bản sao văn bằng, chứng chỉ từ sổ gốc",28-May,5028,1bac135b-316a-46b2-8eeb-66f2636aabad,d5fbb089-36b7-4d57-89bb-8e84925b597b
+172/QD/DHCNTT,khoan,Khoản 1,,5/28/2001,28001,d5fbb089-36b7-4d57-89bb-8e84925b597b,de2c3e1f-3db4-44a4-bec0-0c0aa155a9c3
+172/QD/DHCNTT,khoan,Khoản 2,,5/28/2002,28002,d5fbb089-36b7-4d57-89bb-8e84925b597b,07efd0c2-d403-4d7f-af99-7b88876c987c
+172/QD/DHCNTT,chuong,Chương 6,,6,6,,6ed3780c-7420-43ef-8ee2-f64e71f944e5
+172/QD/DHCNTT,dieu,Điều 29,"Kiểm tra, thanh tra",29-Jun,6029,6ed3780c-7420-43ef-8ee2-f64e71f944e5,89e9cd97-bdfa-4a47-8699-9f47806a2b29
+172/QD/DHCNTT,khoan,Khoản 1,,6/29/2001,29001,89e9cd97-bdfa-4a47-8699-9f47806a2b29,0fa0382b-e5ee-466b-b114-ae4281c6157c
+172/QD/DHCNTT,khoan,Khoản 2,,6/29/2002,29002,89e9cd97-bdfa-4a47-8699-9f47806a2b29,5e0ca2b3-678e-4c4e-99ca-13c0ca1d03d6
+172/QD/DHCNTT,dieu,Điều 30,Khen thưởng,30-Jun,6030,6ed3780c-7420-43ef-8ee2-f64e71f944e5,2b0f9b10-3a28-446f-88b9-ce6ebdf2e0c3
+172/QD/DHCNTT,khoan,Khoản 1,,6/30/2001,30001,2b0f9b10-3a28-446f-88b9-ce6ebdf2e0c3,d6e3572c-03c3-41c3-afc1-76164f65239c
+172/QD/DHCNTT,dieu,Điều 31,Xử lý vi phạm,Jun-31,6031,6ed3780c-7420-43ef-8ee2-f64e71f944e5,56d919c5-1a19-490f-b124-fe7c0e77d96b
+172/QD/DHCNTT,khoan,Khoản 1,,6/31/1,31001,56d919c5-1a19-490f-b124-fe7c0e77d96b,f6b664cb-3110-4a38-a73e-68a553ff1764
+172/QD/DHCNTT,khoan,Khoản 2,,6/31/2,31002,56d919c5-1a19-490f-b124-fe7c0e77d96b,2ecaeed2-7758-4e07-bbfa-043956c8f660
+172/QD/DHCNTT,dieu,Điều 32,Tổ chức thực hiện,Jun-32,6032,6ed3780c-7420-43ef-8ee2-f64e71f944e5,ec8eaff8-31be-4977-bffd-19ed19cae63f
+172/QD/DHCNTT,khoan,Khoản 1,,6/32/1,32001,ec8eaff8-31be-4977-bffd-19ed19cae63f,61f464ea-5f2a-4bd8-91a6-ec08c5e72512
+172/QD/DHCNTT,khoan,Khoản 1,,6/32/1,32001,ec8eaff8-31be-4977-bffd-19ed19cae63f,4abd610b-b8bb-4f58-a3e0-8875771c28ba
+172/QD/DHCNTT,khoan,Khoản 1,,6/32/1,32001,ec8eaff8-31be-4977-bffd-19ed19cae63f,d14d8d95-4567-4e7a-aca9-1be8a27f3dc5
+172/QD/DHCNTT,khoan,Khoản 1,,6/32/1,32001,ec8eaff8-31be-4977-bffd-19ed19cae63f,b536e436-862f-42d7-9856-6226c83a008a
+172/QD/DHCNTT,khoan,Khoản 1,,6/32/1,32001,ec8eaff8-31be-4977-bffd-19ed19cae63f,dcba0417-32ac-4fbf-a087-b99ffcb0a255
+172/QD/DHCNTT,khoan,Khoản 1,,6/32/1,32001,ec8eaff8-31be-4977-bffd-19ed19cae63f,a16cdcbf-7fb4-438c-9461-b1244885d263
+172/QD/DHCNTT,khoan,Khoản 1,,6/32/1,32001,ec8eaff8-31be-4977-bffd-19ed19cae63f,a080f914-9576-48fa-9115-65d96ad96d9c
+172/QD/DHCNTT,khoan,Khoản 1,,6/32/1,32001,ec8eaff8-31be-4977-bffd-19ed19cae63f,90a2dc44-3b94-4a85-882f-2a69420b2e9f
+172/QD/DHCNTT,khoan,Khoản 2,,6/32/2,32002,ec8eaff8-31be-4977-bffd-19ed19cae63f,2a1e5779-a291-46b7-b0c1-9d7275009a10
+172/QD/DHCNTT,khoan,Khoản 2,,6/32/2,32002,ec8eaff8-31be-4977-bffd-19ed19cae63f,d9665c64-5205-4d3d-80d7-db4cb721b79a
+172/QD/DHCNTT,khoan,Khoản 2,,6/32/2,32002,ec8eaff8-31be-4977-bffd-19ed19cae63f,2e02f4ed-e657-488b-9663-5a10147497b7
+172/QD/DHCNTT,khoan,Khoản 2,,6/32/2,32002,ec8eaff8-31be-4977-bffd-19ed19cae63f,54243065-2639-4eae-9a4e-cfc295b94c72
+172/QD/DHCNTT,khoan,Khoản 2,,6/32/2,32002,ec8eaff8-31be-4977-bffd-19ed19cae63f,1a3e44b0-6ba5-4c1d-b3d8-9a48009b56da
+172/QD/DHCNTT,khoan,Khoản 2,,6/32/2,32002,ec8eaff8-31be-4977-bffd-19ed19cae63f,65870910-0da4-47fe-9de4-13dc68d73d83
+172/QD/DHCNTT,khoan,Khoản 2,,6/32/2,32002,ec8eaff8-31be-4977-bffd-19ed19cae63f,9d9f3077-0411-43fb-a07f-e9935a0a6e67
+172/QD/DHCNTT,khoan,Khoản 2,,6/32/2,32002,ec8eaff8-31be-4977-bffd-19ed19cae63f,011ab6ee-f36b-49e6-841d-cd436fb7ac77
+172/QD/DHCNTT,khoan,Khoản 3,,6/32/3,32003,ec8eaff8-31be-4977-bffd-19ed19cae63f,acbc9d77-4880-487f-8af4-b81d00fe24cc
+172/QD/DHCNTT,khoan,Khoản 3,,6/32/3,32003,ec8eaff8-31be-4977-bffd-19ed19cae63f,fd8c3f6d-74de-4845-8350-8fac842f2999
+172/QD/DHCNTT,khoan,Khoản 3,,6/32/3,32003,ec8eaff8-31be-4977-bffd-19ed19cae63f,f02710fd-87d2-4222-ba4d-d9eb3da9d223
+172/QD/DHCNTT,khoan,Khoản 4,,6/32/4,32004,ec8eaff8-31be-4977-bffd-19ed19cae63f,a69df756-5c6d-4085-919e-2045ac93aadf
+172/QD/DHCNTT,khoan,Khoản 4,,6/32/4,32004,ec8eaff8-31be-4977-bffd-19ed19cae63f,e2b47ce0-2195-4300-9f84-cd56b235c8b3
+172/QD/DHCNTT,khoan,Khoản 4,,6/32/4,32004,ec8eaff8-31be-4977-bffd-19ed19cae63f,d8afa8e1-64f5-4ac7-be52-f065c00c3d12
+172/QD/DHCNTT,khoan,Khoản 4,,6/32/4,32004,ec8eaff8-31be-4977-bffd-19ed19cae63f,5f6ed389-10b3-43e0-bfe6-915384457e9d
+172/QD/DHCNTT,khoan,Khoản 5,,6/32/5,32005,ec8eaff8-31be-4977-bffd-19ed19cae63f,9819c170-86e0-4938-bc85-c1ba46cf6cfe
+172/QD/DHCNTT,khoan,Khoản 5,,6/32/5,32005,ec8eaff8-31be-4977-bffd-19ed19cae63f,03adafec-74fe-4ba7-9403-47d293922e71
+172/QD/DHCNTT,khoan,Khoản 5,,6/32/5,32005,ec8eaff8-31be-4977-bffd-19ed19cae63f,6690f729-ad23-427e-b705-b14da6589b8b
+172/QD/DHCNTT,diem,Điểm a),,6/32/5/a,32005.01,9819c170-86e0-4938-bc85-c1ba46cf6cfe,c1b5edc7-2beb-4b1f-9256-0057f44c2d64
+172/QD/DHCNTT,diem,Điểm a),,6/32/5/a,32005.02,03adafec-74fe-4ba7-9403-47d293922e71,4fa9d00d-f601-4e15-ad88-d4938edf81b8
+172/QD/DHCNTT,diem,Điểm b),,6/32/5/b,32005.02,9819c170-86e0-4938-bc85-c1ba46cf6cfe,86cb50ac-a2c7-4e0b-9eb1-ba5bdd5fcff8
+172/QD/DHCNTT,diem,Điểm b),,6/32/5/b,32005.03,03adafec-74fe-4ba7-9403-47d293922e71,c8e24ce4-4c7d-4f28-97cf-e112512a8835
+172/QD/DHCNTT,diem,Điểm c),,6/32/5/c,32005.01,03adafec-74fe-4ba7-9403-47d293922e71,0806070a-cec0-4551-b320-e664eb89eb03
+172/QD/DHCNTT,diem,Điểm c),,6/32/5/c,32005.04,03adafec-74fe-4ba7-9403-47d293922e71,230a5302-711c-43d3-8ec7-edb1f19c8808
+507/QD/DHCNTT/27/5/2024,chuong,Chương,,0,0,,2833c145-0757-4771-a09d-3c14c23e0041
+507/QD/DHCNTT/27/5/2024,dieu,Điều 1,Ban hành kèm theo quyết định này Quy chế đào tạo cho sinh viên hình thức,0/1,1,2833c145-0757-4771-a09d-3c14c23e0041,e9159ef0-2fb0-4cd7-9601-1207d5698a23
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,0/1/1,1001,e9159ef0-2fb0-4cd7-9601-1207d5698a23,7d16be6a-3ffe-417e-81ee-36e26159ee61
+507/QD/DHCNTT/27/5/2024,dieu,Điều 2,Quyết định này thay thế cho Quyết định số 1206/QĐ-ĐHCNTT ngày 28 tháng,0/2,2,2833c145-0757-4771-a09d-3c14c23e0041,2c035ea2-e42c-413f-a0c1-7bed5fefa9d2
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,0/2/1,2001,2c035ea2-e42c-413f-a0c1-7bed5fefa9d2,d6888444-be86-42ad-b6de-d63e544eff46
+507/QD/DHCNTT/27/5/2024,dieu,Điều 3,"Các Ông/Bà Trưởng các Phòng, Ban, Khoa, Giám đốc Trung tâm Phát triển",0/3,3,2833c145-0757-4771-a09d-3c14c23e0041,e3ee01ed-ca7b-4a0d-b83f-1b3f6a7ddaef
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,0/3/1,3001,e3ee01ed-ca7b-4a0d-b83f-1b3f6a7ddaef,f7295b12-e866-4c2e-8171-2ea91ad20cb7
+507/QD/DHCNTT/27/5/2024,chuong,Chương 1,QUY ĐỊNH CHUNG .................................................................................... 4,1,1,,a25d874a-e7a9-43b4-a499-09efb3a3496c
+507/QD/DHCNTT/27/5/2024,chuong,Chương 1,QUY ĐỊNH CHUNG,1,1,,1ca2d749-3995-4819-992a-744cb790af60
+507/QD/DHCNTT/27/5/2024,dieu,Điều 1,Phạm vi điều chỉnh và đối tượng áp dụng ....................................................................... 4,1-Jan,1001,a25d874a-e7a9-43b4-a499-09efb3a3496c,b1652e7a-0ab1-4fc9-b3cf-45197da39f59
+507/QD/DHCNTT/27/5/2024,dieu,Điều 1,Phạm vi điều chỉnh và đối tượng áp dụng,1-Jan,1001,1ca2d749-3995-4819-992a-744cb790af60,0bef0b7a-9bc0-4725-bc72-90950db218b5
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,1/1/2001,1001,b1652e7a-0ab1-4fc9-b3cf-45197da39f59,9a7abbe8-bb37-4c12-a71f-b61c51a8dc68
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,1/1/2001,1001,0bef0b7a-9bc0-4725-bc72-90950db218b5,6265694b-5812-46b1-9782-5331b92d45a3
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,1/1/2002,1002,0bef0b7a-9bc0-4725-bc72-90950db218b5,c553f56e-e178-4ba3-aedc-685cccd04f5c
+507/QD/DHCNTT/27/5/2024,dieu,Điều 2,Giải thích từ ngữ .............................................................................................................. 4,2-Jan,1002,a25d874a-e7a9-43b4-a499-09efb3a3496c,a63a069e-351c-4f1b-b0be-062c341563d4
+507/QD/DHCNTT/27/5/2024,dieu,Điều 2,Giải thích từ ngữ,2-Jan,1002,1ca2d749-3995-4819-992a-744cb790af60,fa81d574-3763-4795-bb36-fbc4480c6d7e
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,1/2/2001,2001,a63a069e-351c-4f1b-b0be-062c341563d4,dcccdba4-da15-4bfe-a645-ecb00a630551
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,1/2/2001,2001,fa81d574-3763-4795-bb36-fbc4480c6d7e,a863290e-95ef-4382-97a1-dcd5c99caf6b
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,1/2/2002,2002,fa81d574-3763-4795-bb36-fbc4480c6d7e,548cdd67-d964-4c57-891e-dd9f95497531
+507/QD/DHCNTT/27/5/2024,dieu,Điều 3,Chương trình đào tạo từ xa và thời gian học tập ............................................................. 4,3-Jan,1003,a25d874a-e7a9-43b4-a499-09efb3a3496c,6625cc6e-0fea-463b-b740-dd985ce6ba8f
+507/QD/DHCNTT/27/5/2024,dieu,Điều 3,Chương trình đào tạo từ xa và thời gian học tập,3-Jan,1003,1ca2d749-3995-4819-992a-744cb790af60,a8fc8f3e-6c21-4e5a-b10f-7f82c95a0861
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,1/3/2001,3001,6625cc6e-0fea-463b-b740-dd985ce6ba8f,378db57a-8c4e-4a9d-b3a5-75e7bc3e9f3d
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,1/3/2001,3001,a8fc8f3e-6c21-4e5a-b10f-7f82c95a0861,231b5bc1-82ce-48c7-9c32-585d90d483c1
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,1/3/2002,3002,a8fc8f3e-6c21-4e5a-b10f-7f82c95a0861,c48a2e1f-2fef-425a-97a7-fbb42ce55555
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 3,,1/3/2003,3003,a8fc8f3e-6c21-4e5a-b10f-7f82c95a0861,1bec8db9-7230-49ba-affb-98cf17974738
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 4,,1/3/2004,3004,a8fc8f3e-6c21-4e5a-b10f-7f82c95a0861,b23fdf09-61c1-422b-9abb-b2b465c627ec
+507/QD/DHCNTT/27/5/2024,dieu,Điều 4,Học liệu đào tạo từ xa ...................................................................................................... 5,4-Jan,1004,a25d874a-e7a9-43b4-a499-09efb3a3496c,34c2922a-1925-4b79-ab53-f3cb8c4e20a3
+507/QD/DHCNTT/27/5/2024,dieu,Điều 4,Học liệu đào tạo từ xa,4-Jan,1004,1ca2d749-3995-4819-992a-744cb790af60,a014ba42-40a0-4a83-8093-71fb31f58e31
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,1/4/2001,4001,34c2922a-1925-4b79-ab53-f3cb8c4e20a3,e53b82b7-acbb-491b-b223-526e9359e50d
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,1/4/2001,4001,a014ba42-40a0-4a83-8093-71fb31f58e31,d9646444-960a-47a4-be71-1e55bbb1f409
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,1/4/2002,4002,a014ba42-40a0-4a83-8093-71fb31f58e31,fb2ca296-ab02-4bb3-976a-e3f5d9a44837
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 3,,1/4/2003,4003,a014ba42-40a0-4a83-8093-71fb31f58e31,1b2165a8-2185-4c89-9ada-8195244a745c
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 4,,1/4/2004,4004,a014ba42-40a0-4a83-8093-71fb31f58e31,cd157869-d54d-4d63-801f-fb6fae181cf7
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 5,,1/4/2005,4005,a014ba42-40a0-4a83-8093-71fb31f58e31,4ef63c55-3ae5-4b1d-919e-2d743ef4350a
+507/QD/DHCNTT/27/5/2024,dieu,Điều 5,Hệ thống đào tạo từ xa ..................................................................................................... 5,5-Jan,1005,a25d874a-e7a9-43b4-a499-09efb3a3496c,3234b63a-ef76-44ae-8ef5-f30c3672b438
+507/QD/DHCNTT/27/5/2024,dieu,Điều 5,Hệ thống đào tạo từ xa,5-Jan,1005,1ca2d749-3995-4819-992a-744cb790af60,2b8d3f0c-31ee-43fc-81c6-a31f223a1108
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,1/5/2001,5001,3234b63a-ef76-44ae-8ef5-f30c3672b438,3a48e01c-d1c2-4b08-9ef1-aae2a6d7d8e0
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,1/5/2001,5001,2b8d3f0c-31ee-43fc-81c6-a31f223a1108,af9a1305-51b2-488c-90f1-1d859c89def6
+507/QD/DHCNTT/27/5/2024,dieu,Điều 6,Bộ máy tổ chức và quản lý đào tạo từ xa ........................................................................ 5,6-Jan,1006,a25d874a-e7a9-43b4-a499-09efb3a3496c,03b24eec-2135-4b04-b7f7-b94d0599efbf
+507/QD/DHCNTT/27/5/2024,dieu,Điều 6,Bộ máy tổ chức và quản lý đào tạo từ xa,6-Jan,1006,1ca2d749-3995-4819-992a-744cb790af60,40f4881e-5de0-4bdd-8491-ead7bc6b4a7d
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,1/6/2001,6001,03b24eec-2135-4b04-b7f7-b94d0599efbf,c7ab8022-6f5c-498e-b655-5e6f060aefb4
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,1/6/2001,6001,40f4881e-5de0-4bdd-8491-ead7bc6b4a7d,79d3250b-cb66-4524-a8cd-bbd7d5baa9ec
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,1/6/2002,6002,40f4881e-5de0-4bdd-8491-ead7bc6b4a7d,b64f87d6-8c32-45de-88fe-46e7bfd16ee0
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 3,,1/6/2003,6003,40f4881e-5de0-4bdd-8491-ead7bc6b4a7d,e91f2ba1-c028-414f-9075-8f349114c194
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 4,,1/6/2004,6004,40f4881e-5de0-4bdd-8491-ead7bc6b4a7d,95348904-2095-417a-92d3-5d127eec7f09
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 5,,1/6/2005,6005,40f4881e-5de0-4bdd-8491-ead7bc6b4a7d,1c2cb193-6290-46be-9379-6ab3ef45d29c
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 6,,1/6/2006,6006,40f4881e-5de0-4bdd-8491-ead7bc6b4a7d,6c883450-4ab5-45de-94e7-b635bb9bd67e
+507/QD/DHCNTT/27/5/2024,chuong,Chương 2,LẬP KẾ HOẠCH VÀ TỔ CHỨC ĐÀO TẠO ........................................... 7,2,2,,e70274db-4eb5-4969-9f30-1190a45b7451
+507/QD/DHCNTT/27/5/2024,chuong,Chương 2,LẬP KẾ HOẠCH VÀ TỔ CHỨC ĐÀO TẠO,2,2,,2add494f-1a00-401b-a2ce-facdb1a83e7f
+507/QD/DHCNTT/27/5/2024,dieu,Điều 10,Khóa học ........................................................................................................................ 8,10-Feb,2010,e70274db-4eb5-4969-9f30-1190a45b7451,73eb07df-3768-4471-b822-087eb34be2ca
+507/QD/DHCNTT/27/5/2024,dieu,Điều 10,Khóa học,10-Feb,2010,2add494f-1a00-401b-a2ce-facdb1a83e7f,0855998b-409b-46f7-bbab-44a15e810d5f
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/10/2001,10001,73eb07df-3768-4471-b822-087eb34be2ca,c66a9586-17b2-4b0c-a85c-8066bf0abe25
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/10/2001,10001,0855998b-409b-46f7-bbab-44a15e810d5f,153a8b66-4c01-4b8f-9efe-ec40ad254763
+507/QD/DHCNTT/27/5/2024,diem,Điểm a),,2/10/1/a,10001.01,153a8b66-4c01-4b8f-9efe-ec40ad254763,b5f692ce-fdc8-4fbe-bc80-82bd12be44e0
+507/QD/DHCNTT/27/5/2024,diem,Điểm b),,2/10/1/b,10001.02,153a8b66-4c01-4b8f-9efe-ec40ad254763,5b69aed0-1d8d-43a0-bfb4-21cee4675424
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,2/10/2002,10002,0855998b-409b-46f7-bbab-44a15e810d5f,c99345df-46db-4718-9549-d43ce9910189
+507/QD/DHCNTT/27/5/2024,dieu,Điều 11,Nguyên tắc xác định học phí ......................................................................................... 8,11-Feb,2011,e70274db-4eb5-4969-9f30-1190a45b7451,4b8216c8-710f-4e60-8c38-250a4e4a5af8
+507/QD/DHCNTT/27/5/2024,dieu,Điều 11,Nguyên tắc xác định học phí,11-Feb,2011,2add494f-1a00-401b-a2ce-facdb1a83e7f,e6f6a00f-b1ea-48d8-9a08-6b4db8fa68db
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/11/2001,11001,4b8216c8-710f-4e60-8c38-250a4e4a5af8,db551ee6-82ac-4519-b46f-cea17c377ba7
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/11/2001,11001,e6f6a00f-b1ea-48d8-9a08-6b4db8fa68db,f2141ff7-71c5-463f-a9f5-a5856d419a84
+507/QD/DHCNTT/27/5/2024,dieu,Điều 12,Phương thức giảng dạy môn học ................................................................................... 8,12-Feb,2012,e70274db-4eb5-4969-9f30-1190a45b7451,648d3dbe-bd61-4875-befe-2082b830d227
+507/QD/DHCNTT/27/5/2024,dieu,Điều 12,Phương thức giảng dạy môn học,12-Feb,2012,2add494f-1a00-401b-a2ce-facdb1a83e7f,9f58f82b-8179-4ae4-a678-2df1d6e98167
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/12/2001,12001,648d3dbe-bd61-4875-befe-2082b830d227,ef0b0aff-7baf-48f4-87ba-0f1bd2957261
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/12/2001,12001,9f58f82b-8179-4ae4-a678-2df1d6e98167,febda6b9-2c4c-4fc9-a8a9-3a56e16bf64e
+507/QD/DHCNTT/27/5/2024,dieu,Điều 13,Lớp học .......................................................................................................................... 9,13-Feb,2013,e70274db-4eb5-4969-9f30-1190a45b7451,46504cf7-077b-46b0-8baf-5365b23977a3
+507/QD/DHCNTT/27/5/2024,dieu,Điều 13,Lớp học,13-Feb,2013,2add494f-1a00-401b-a2ce-facdb1a83e7f,989d90cf-f6b1-4179-84c6-f70c68502922
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/13/2001,13001,46504cf7-077b-46b0-8baf-5365b23977a3,215ff250-4276-47ae-8580-650a46b55988
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/13/2001,13001,989d90cf-f6b1-4179-84c6-f70c68502922,c36896ea-2ab8-4696-9194-74114b514aa3
+507/QD/DHCNTT/27/5/2024,dieu,Điều 14,Bảo lưu kết quả trúng tuyển .......................................................................................... 9,14-Feb,2014,e70274db-4eb5-4969-9f30-1190a45b7451,f4387b47-a4b5-4fd3-a0bc-4a324f5fdd75
+507/QD/DHCNTT/27/5/2024,dieu,Điều 14,Bảo lưu kết quả trúng tuyển,14-Feb,2014,2add494f-1a00-401b-a2ce-facdb1a83e7f,72c9eddb-f993-4c6f-94f6-17885b0e0b8e
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/14/2001,14001,f4387b47-a4b5-4fd3-a0bc-4a324f5fdd75,11eb4cdc-1a9f-4a5c-a83c-b0e2e28cccc4
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/14/2001,14001,72c9eddb-f993-4c6f-94f6-17885b0e0b8e,06fa5c35-acd8-4dd6-82aa-192fc5ab9500
+507/QD/DHCNTT/27/5/2024,dieu,Điều 15,"Đăng ký học tập, học lại và học cải thiện ...................................................................... 9",15-Feb,2015,e70274db-4eb5-4969-9f30-1190a45b7451,f85c3f4e-9479-482b-961c-7b008dc4d51d
+507/QD/DHCNTT/27/5/2024,dieu,Điều 15,"Đăng ký học tập, học lại và học cải thiện",15-Feb,2015,2add494f-1a00-401b-a2ce-facdb1a83e7f,aabeabca-14e6-43e2-9d64-d080de1c1761
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/15/2001,15001,f85c3f4e-9479-482b-961c-7b008dc4d51d,840f8ea3-3e8f-4f2f-a8ba-66c14bef7228
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/15/2001,15001,aabeabca-14e6-43e2-9d64-d080de1c1761,60feb9ff-c199-4ce8-bb18-735302ea7e20
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,2/15/2002,15002,aabeabca-14e6-43e2-9d64-d080de1c1761,373fab10-5813-4caf-9869-3ae94d9f7bc3
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 3,,2/15/2003,15003,aabeabca-14e6-43e2-9d64-d080de1c1761,f981a5a0-b45b-42f5-969f-f1db4bca7315
+507/QD/DHCNTT/27/5/2024,dieu,Điều 16,Xử lý học vụ .................................................................................................................. 9,16-Feb,2016,e70274db-4eb5-4969-9f30-1190a45b7451,f16d1ba6-c27b-4999-a4d9-cf3b79a4a4fc
+507/QD/DHCNTT/27/5/2024,dieu,Điều 16,Xử lý học vụ,16-Feb,2016,2add494f-1a00-401b-a2ce-facdb1a83e7f,e532ac34-252a-4b2c-bd63-18cf78552dec
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/16/2001,16001,f16d1ba6-c27b-4999-a4d9-cf3b79a4a4fc,c48a5bc4-74d7-48a0-8e02-7d8bf055b912
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/16/2001,16001,e532ac34-252a-4b2c-bd63-18cf78552dec,f1dd9a69-5312-4505-b1ac-d95276a74d46
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,2/16/2002,16002,e532ac34-252a-4b2c-bd63-18cf78552dec,a502bc72-55a4-4de0-830f-35730eee6bd9
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 3,,2/16/2003,16003,e532ac34-252a-4b2c-bd63-18cf78552dec,11739b05-271d-43c6-b9e6-4382877d889b
+507/QD/DHCNTT/27/5/2024,dieu,Điều 17,"Thôi học, tạm dừng học tập ......................................................................................... 10",17-Feb,2017,e70274db-4eb5-4969-9f30-1190a45b7451,902ae350-c6f7-4a8d-8393-58116f7838b5
+507/QD/DHCNTT/27/5/2024,dieu,Điều 17,"Thôi học, tạm dừng học tập",17-Feb,2017,2add494f-1a00-401b-a2ce-facdb1a83e7f,a15ee869-ea1e-4799-8beb-aec2129ab39f
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/17/2001,17001,902ae350-c6f7-4a8d-8393-58116f7838b5,2c1f5031-d58a-4757-9496-e22dd772c192
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/17/2001,17001,a15ee869-ea1e-4799-8beb-aec2129ab39f,52c20bdf-a929-483a-b716-248fe1237686
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,2/17/2002,17002,a15ee869-ea1e-4799-8beb-aec2129ab39f,5d2f17c9-11f9-4061-8e67-234b1100c16a
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 3,,2/17/2003,17003,a15ee869-ea1e-4799-8beb-aec2129ab39f,fbfa60ba-3104-4bfc-b707-0a03d2e55343
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 4,,2/17/2004,17004,a15ee869-ea1e-4799-8beb-aec2129ab39f,a8b16c1d-6b22-496e-a582-f03fc1e74a65
+507/QD/DHCNTT/27/5/2024,dieu,Điều 18,"Chuyển ngành, chuyển hình thức đào tạo, chuyển trường. ......................................... 11",18-Feb,2018,e70274db-4eb5-4969-9f30-1190a45b7451,2548d080-75e4-4bb1-9552-009843099c9a
+507/QD/DHCNTT/27/5/2024,dieu,Điều 18,"Chuyển ngành, chuyển hình thức đào tạo, chuyển trường.",18-Feb,2018,2add494f-1a00-401b-a2ce-facdb1a83e7f,813fa910-2103-40da-aa62-36513f5e749a
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/18/2001,18001,2548d080-75e4-4bb1-9552-009843099c9a,bd6df5b4-d861-47c5-909c-4f7c5b450543
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/18/2001,18001,813fa910-2103-40da-aa62-36513f5e749a,d8a75663-399c-4e3c-a360-c244ca687400
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,2/18/2002,18002,813fa910-2103-40da-aa62-36513f5e749a,b7f1b5f2-9d02-4a43-a5d5-4ad8d5034b17
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 3,,2/18/2003,18003,813fa910-2103-40da-aa62-36513f5e749a,f2c163bb-e52a-4c47-a259-4752bf6502ef
+507/QD/DHCNTT/27/5/2024,dieu,Điều 7,Nguyên tắc tổ chức đào tạo ............................................................................................. 7,7-Feb,2007,e70274db-4eb5-4969-9f30-1190a45b7451,1960c8db-3eb3-4d30-94a1-0522ef507762
+507/QD/DHCNTT/27/5/2024,dieu,Điều 7,Nguyên tắc tổ chức đào tạo,7-Feb,2007,2add494f-1a00-401b-a2ce-facdb1a83e7f,3fa23466-7e47-4431-a2a5-11a005d17214
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/7/2001,7001,1960c8db-3eb3-4d30-94a1-0522ef507762,e1a8c94e-41b4-4a54-80dd-819d0775307d
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/7/2001,7001,3fa23466-7e47-4431-a2a5-11a005d17214,604a16b4-ce8d-43c7-b5f7-d0cd1d54c05d
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,2/7/2002,7002,3fa23466-7e47-4431-a2a5-11a005d17214,096ab9e9-ceb1-4e26-9b9d-ce53f522f8e5
+507/QD/DHCNTT/27/5/2024,dieu,Điều 8,"Kế hoạch giảng dạy và học tập, tổ chức đăng ký học tập ............................................... 7",8-Feb,2008,e70274db-4eb5-4969-9f30-1190a45b7451,e6344547-40d1-4fa9-8bcb-e226d6b981be
+507/QD/DHCNTT/27/5/2024,dieu,Điều 8,"Kế hoạch giảng dạy và học tập, tổ chức đăng ký học tập",8-Feb,2008,2add494f-1a00-401b-a2ce-facdb1a83e7f,5502e7fa-66a4-4906-b463-37f16f9e8792
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/8/2001,8001,e6344547-40d1-4fa9-8bcb-e226d6b981be,1dfe7e72-7735-43c0-ac73-a0b748ec76df
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/8/2001,8001,5502e7fa-66a4-4906-b463-37f16f9e8792,ede44296-f4ff-4e01-a942-7698a1912501
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,2/8/2002,8002,5502e7fa-66a4-4906-b463-37f16f9e8792,dd140440-5fe5-46ee-97b3-500675ca7b32
+507/QD/DHCNTT/27/5/2024,dieu,Điều 9,"Học kỳ, năm học .............................................................................................................. 7",9-Feb,2009,e70274db-4eb5-4969-9f30-1190a45b7451,415e5f2e-4a34-4cbe-950a-fd3ae0f07cb7
+507/QD/DHCNTT/27/5/2024,dieu,Điều 9,"Học kỳ, năm học",9-Feb,2009,2add494f-1a00-401b-a2ce-facdb1a83e7f,b8c9484a-8a8a-4b03-a8ae-0ae2491fd618
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/9/2001,9001,415e5f2e-4a34-4cbe-950a-fd3ae0f07cb7,a00439c9-0df8-458a-bc13-5ff9d465c71b
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,2/9/2001,9001,b8c9484a-8a8a-4b03-a8ae-0ae2491fd618,22d7735b-4889-4d7b-b18e-bd01430480e1
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,2/9/2002,9002,b8c9484a-8a8a-4b03-a8ae-0ae2491fd618,8a3b8e31-49fc-4216-9d21-008a6ee94ad5
+507/QD/DHCNTT/27/5/2024,chuong,Chương 3,ĐÁNH GIÁ KẾT QUẢ HỌC TẬP VÀ CẤP BẰNG ............................ 12,3,3,,3c021c32-7e66-4804-b071-5362528e250e
+507/QD/DHCNTT/27/5/2024,chuong,Chương 3,ĐÁNH GIÁ KẾT QUẢ HỌC TẬP VÀ CẤP BẰNG,3,3,,722d2211-4f2d-4f34-bec6-c5eca51a5738
+507/QD/DHCNTT/27/5/2024,dieu,Điều 19,"Đánh giá kết quả học tập của học phần, học kỳ, năm học, toàn khóa ......................... 12",19-Mar,3019,3c021c32-7e66-4804-b071-5362528e250e,acb2970f-835f-4b5d-9148-5ce30ea54577
+507/QD/DHCNTT/27/5/2024,dieu,Điều 19,"Đánh giá kết quả học tập của học phần, học kỳ, năm học, toàn khóa",19-Mar,3019,722d2211-4f2d-4f34-bec6-c5eca51a5738,2aa9df1c-4d9a-44a4-ac1a-16e3bdc0bf50
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,3/19/2001,19001,acb2970f-835f-4b5d-9148-5ce30ea54577,5f2a8397-6daf-4605-a8ce-1b3ae62166d3
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,3/19/2001,19001,2aa9df1c-4d9a-44a4-ac1a-16e3bdc0bf50,8ab69164-eb68-4b63-b509-7c9455561f34
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,3/19/2002,19002,2aa9df1c-4d9a-44a4-ac1a-16e3bdc0bf50,b099342c-7dd5-4242-b528-dc5b9b07c020
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 3,,3/19/2003,19003,2aa9df1c-4d9a-44a4-ac1a-16e3bdc0bf50,515b8480-2ccf-418d-9617-6dfda381b3e5
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 4,,3/19/2004,19004,2aa9df1c-4d9a-44a4-ac1a-16e3bdc0bf50,4f9ef068-1545-4cf5-ac83-46a33227cc10
+507/QD/DHCNTT/27/5/2024,dieu,Điều 20,Công nhận kết quả học tập .......................................................................................... 13,20-Mar,3020,3c021c32-7e66-4804-b071-5362528e250e,3f55014d-b61d-44ff-be92-a18624325e8e
+507/QD/DHCNTT/27/5/2024,dieu,Điều 20,Công nhận kết quả học tập,20-Mar,3020,722d2211-4f2d-4f34-bec6-c5eca51a5738,77f23d25-97e8-4c4b-b5c4-fe4a556b6be3
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,3/20/2001,20001,3f55014d-b61d-44ff-be92-a18624325e8e,8ec97739-ae07-4b30-9310-3b1eb97e011a
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,3/20/2001,20001,77f23d25-97e8-4c4b-b5c4-fe4a556b6be3,9bbfc5e2-705f-4010-8a77-c90525d6e430
+507/QD/DHCNTT/27/5/2024,dieu,Điều 21,Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ....................................................... 13,21-Mar,3021,3c021c32-7e66-4804-b071-5362528e250e,86848ca2-1c38-4f77-aae7-0de1b20c25ff
+507/QD/DHCNTT/27/5/2024,dieu,Điều 21,Điều kiện xét tốt nghiệp và công nhận tốt nghiệp,21-Mar,3021,722d2211-4f2d-4f34-bec6-c5eca51a5738,b21bfc2b-58ac-4f78-98de-d0f0a50b115c
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,3/21/2001,21001,86848ca2-1c38-4f77-aae7-0de1b20c25ff,5be4526f-0db1-4888-915b-64f17fa8e0bc
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,3/21/2001,21001,b21bfc2b-58ac-4f78-98de-d0f0a50b115c,d5bc3e0c-afe3-495c-a6dd-99d2c8bde718
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,3/21/2002,21002,b21bfc2b-58ac-4f78-98de-d0f0a50b115c,7c5e87a9-6e84-4265-8a5e-96a773c50306
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 3,,3/21/2003,21003,b21bfc2b-58ac-4f78-98de-d0f0a50b115c,62dbc8b5-154b-4160-af2d-94da1a66d6a1
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 4,,3/21/2004,21004,b21bfc2b-58ac-4f78-98de-d0f0a50b115c,b41fce90-01fa-4810-9d46-169d295a71e0
+507/QD/DHCNTT/27/5/2024,dieu,Điều 22,Cấp bằng tốt nghiệp ..................................................................................................... 13,22-Mar,3022,3c021c32-7e66-4804-b071-5362528e250e,29ba1eaa-2047-4eeb-9356-788f7a457c3a
+507/QD/DHCNTT/27/5/2024,dieu,Điều 22,Cấp bằng tốt nghiệp,22-Mar,3022,722d2211-4f2d-4f34-bec6-c5eca51a5738,0fbfd418-6497-4b24-a75f-8c790ab44a5e
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,3/22/2001,22001,29ba1eaa-2047-4eeb-9356-788f7a457c3a,ddd5de2d-9fce-4dcf-8fbe-a0fac1ad14ac
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,3/22/2001,22001,0fbfd418-6497-4b24-a75f-8c790ab44a5e,9fbe89a6-6682-444f-bdac-7cb39df9794b
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,3/22/2002,22002,0fbfd418-6497-4b24-a75f-8c790ab44a5e,9f92cb04-5613-4883-8eb9-afde426d7863
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 3,,3/22/2003,22003,0fbfd418-6497-4b24-a75f-8c790ab44a5e,0e4a8b12-7300-46bb-8774-ecab0f98af50
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 4,,3/22/2004,22004,0fbfd418-6497-4b24-a75f-8c790ab44a5e,c09aa4ea-7b50-4052-8b66-ec9d4f5ee36e
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 5,,3/22/2005,22005,0fbfd418-6497-4b24-a75f-8c790ab44a5e,bc057ab0-7f74-4127-b035-9acc2c0932bd
+507/QD/DHCNTT/27/5/2024,dieu,Điều 23,Cấp bảng điểm ............................................................................................................. 14,23-Mar,3023,3c021c32-7e66-4804-b071-5362528e250e,19f963d1-2dea-4ef1-8292-f765d8daf3fd
+507/QD/DHCNTT/27/5/2024,dieu,Điều 23,Cấp bảng điểm,23-Mar,3023,722d2211-4f2d-4f34-bec6-c5eca51a5738,50ef737f-e209-447e-b3bc-9e16a29b7f9d
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,3/23/2001,23001,19f963d1-2dea-4ef1-8292-f765d8daf3fd,f8a5bef8-87c9-49af-a9af-3392f0b87a4b
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,3/23/2001,23001,50ef737f-e209-447e-b3bc-9e16a29b7f9d,6b64cc44-75a7-498a-a7a3-198103275678
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,3/23/2002,23002,50ef737f-e209-447e-b3bc-9e16a29b7f9d,5e190ee2-3e75-4e20-b065-96e7ab297b87
+507/QD/DHCNTT/27/5/2024,chuong,Chương 4,TỔ CHỨC THỰC HIỆN ........................................................................ 14,4,4,,5eb65a8a-6679-4764-8f25-ad87e9efaa56
+507/QD/DHCNTT/27/5/2024,chuong,Chương 4,TỔ CHỨC THỰC HIỆN,4,4,,b191f841-7f34-452e-94bb-7a6739bddb6f
+507/QD/DHCNTT/27/5/2024,dieu,Điều 24,Bảo đảm chất lượng ĐTTX ......................................................................................... 14,24-Apr,4024,5eb65a8a-6679-4764-8f25-ad87e9efaa56,f8108a6d-bf0b-41fc-8b4e-60ab9968f788
+507/QD/DHCNTT/27/5/2024,dieu,Điều 24,Bảo đảm chất lượng ĐTTX,24-Apr,4024,b191f841-7f34-452e-94bb-7a6739bddb6f,e8b4db0f-ea43-4a10-9511-536de84ffdfd
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,4/24/2001,24001,f8108a6d-bf0b-41fc-8b4e-60ab9968f788,7e2f4646-08d3-4427-a193-36dbe566b321
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,4/24/2001,24001,e8b4db0f-ea43-4a10-9511-536de84ffdfd,0c070f65-3157-477f-bcaa-7198ae36582f
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,4/24/2002,24002,e8b4db0f-ea43-4a10-9511-536de84ffdfd,c8b27516-4c19-43b1-8f18-f6e22c62e2b5
+507/QD/DHCNTT/27/5/2024,dieu,Điều 25,"Chế độ báo cáo, lưu trữ và công khai thông tin ........................................................... 15",25-Apr,4025,5eb65a8a-6679-4764-8f25-ad87e9efaa56,a3d1bbd0-d827-4f9e-8c13-ae7c64e7680d
+507/QD/DHCNTT/27/5/2024,dieu,Điều 25,"Chế độ báo cáo, lưu trữ và công khai thông tin",25-Apr,4025,b191f841-7f34-452e-94bb-7a6739bddb6f,e4d2f1eb-c18e-4e1d-97a4-422b1544cc94
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,4/25/2001,25001,a3d1bbd0-d827-4f9e-8c13-ae7c64e7680d,f3f6c12d-8ffb-47be-870e-d45dbd703e6c
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,4/25/2001,25001,e4d2f1eb-c18e-4e1d-97a4-422b1544cc94,9865895c-75fb-4a6b-9407-fa1ecb444de8
+507/QD/DHCNTT/27/5/2024,dieu,Điều 26,Quản lý và lưu trữ hồ sơ .............................................................................................. 15,26-Apr,4026,5eb65a8a-6679-4764-8f25-ad87e9efaa56,b373fc55-f84d-4df2-aa11-d0be2f459485
+507/QD/DHCNTT/27/5/2024,dieu,Điều 26,Quản lý và lưu trữ hồ sơ,26-Apr,4026,b191f841-7f34-452e-94bb-7a6739bddb6f,fa7f4553-e6e7-441f-996a-5fee49dad101
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,4/26/2001,26001,b373fc55-f84d-4df2-aa11-d0be2f459485,bc886a23-b2ff-4de3-8866-fea509e13588
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,4/26/2001,26001,fa7f4553-e6e7-441f-996a-5fee49dad101,c52a1bcc-9fd4-405c-b5be-e808b7d46c98
+507/QD/DHCNTT/27/5/2024,diem,Điểm a),,4/26/1/a,26001.01,c52a1bcc-9fd4-405c-b5be-e808b7d46c98,a0f2e6a9-4144-445d-ad03-e63382efe9c0
+507/QD/DHCNTT/27/5/2024,diem,Điểm b),,4/26/1/b,26001.02,c52a1bcc-9fd4-405c-b5be-e808b7d46c98,8aed5513-0424-4de3-851e-ee3e1f405980
+507/QD/DHCNTT/27/5/2024,diem,Điểm c),,4/26/1/c,26001.03,c52a1bcc-9fd4-405c-b5be-e808b7d46c98,8432aaf3-9dbe-478f-8e9f-719dfb1b5dd1
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,4/26/2002,26002,fa7f4553-e6e7-441f-996a-5fee49dad101,a1f47d69-c44e-48c7-9f03-8dd608c75670
+507/QD/DHCNTT/27/5/2024,diem,Điểm a),,4/26/2/a,26002.01,a1f47d69-c44e-48c7-9f03-8dd608c75670,3cf0248d-fa12-4d76-aa16-6c765e6638cd
+507/QD/DHCNTT/27/5/2024,diem,Điểm b),,4/26/2/b,26002.02,a1f47d69-c44e-48c7-9f03-8dd608c75670,79306713-52a9-4bfe-a16d-890513ccccfe
+507/QD/DHCNTT/27/5/2024,diem,Điểm c),,4/26/2/c,26002.03,a1f47d69-c44e-48c7-9f03-8dd608c75670,f280b892-4fdf-4644-b443-9a45f8f65dca
+507/QD/DHCNTT/27/5/2024,diem,Điểm d),,4/26/2/d,26002.04,a1f47d69-c44e-48c7-9f03-8dd608c75670,fbf41cda-6276-404c-975c-0b36b34ad062
+507/QD/DHCNTT/27/5/2024,dieu,Điều 27,Công bố thông tin ........................................................................................................ 15,27-Apr,4027,5eb65a8a-6679-4764-8f25-ad87e9efaa56,1d7054c3-89a8-4421-8dfe-295285a9e346
+507/QD/DHCNTT/27/5/2024,dieu,Điều 27,Công bố thông tin,27-Apr,4027,b191f841-7f34-452e-94bb-7a6739bddb6f,87d7c9eb-242c-4fb4-8d5f-4144d8bcf67b
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,4/27/2001,27001,1d7054c3-89a8-4421-8dfe-295285a9e346,d8882405-85a4-49d4-aa6a-3c31e321d8bc
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,4/27/2001,27001,87d7c9eb-242c-4fb4-8d5f-4144d8bcf67b,019939bb-f31c-4501-8f3d-b03db2c6270d
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,4/27/2002,27002,87d7c9eb-242c-4fb4-8d5f-4144d8bcf67b,a0e39668-433d-4f0c-b3b6-7769d3397972
+507/QD/DHCNTT/27/5/2024,dieu,Điều 28,Điều khoản thi hành ..................................................................................................... 16,28-Apr,4028,5eb65a8a-6679-4764-8f25-ad87e9efaa56,4e161aab-72a5-4319-8f74-30148f805186
+507/QD/DHCNTT/27/5/2024,dieu,Điều 28,Điều khoản thi hành,28-Apr,4028,b191f841-7f34-452e-94bb-7a6739bddb6f,1bb2fb49-6dc2-4196-a648-8efe6acb15b6
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,4/28/2001,28001,4e161aab-72a5-4319-8f74-30148f805186,aea2b3c7-588a-4705-8336-5a46807759c7
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 1,,4/28/2001,28001,1bb2fb49-6dc2-4196-a648-8efe6acb15b6,40a084dc-0b24-48de-9b6f-c60909ea396b
+507/QD/DHCNTT/27/5/2024,khoan,Khoản 2,,4/28/2002,28002,1bb2fb49-6dc2-4196-a648-8efe6acb15b6,4ba35ff3-baa2-4a27-b49c-a3ec3b0e34a6
+547/QD/DHCNTT,chuong,Chương,,0,0,,14c34760-f6c0-474f-85a7-55b827264fcb
+547/QD/DHCNTT,dieu,Điều 1,Ban hành kèm theo Quyết định này “Quy định đào tạo ngoại ngữ đối với hệ,0/1,1,14c34760-f6c0-474f-85a7-55b827264fcb,2010a57c-9822-4293-a0e4-7a995d4aec9d
+547/QD/DHCNTT,khoan,Khoản 1,,0/1/1,1001,2010a57c-9822-4293-a0e4-7a995d4aec9d,163127e8-9a8d-4e2a-b793-f0f4d2328e41
+547/QD/DHCNTT,dieu,Điều 2,Quyết định có hiệu lực kể từ ngày ký.,0/2,2,14c34760-f6c0-474f-85a7-55b827264fcb,2d0c7d63-d0d4-4c1e-8e13-43223d55d091
+547/QD/DHCNTT,khoan,Khoản 1,,0/2/1,2001,2d0c7d63-d0d4-4c1e-8e13-43223d55d091,ed0581fd-25b3-4e6f-95ae-ad262440accc
+547/QD/DHCNTT,dieu,Điều 3,"Các Ông/Bà Trưởng các Phòng, Ban, Khoa, Bộ môn có liên quan chịu trách",0/3,3,14c34760-f6c0-474f-85a7-55b827264fcb,4ae5ada6-d941-485a-9007-589f9e7d114e
+547/QD/DHCNTT,khoan,Khoản 1,,0/3/1,3001,4ae5ada6-d941-485a-9007-589f9e7d114e,a37c9afb-defe-433f-ab92-c37819a43a73
+547/QD/DHCNTT,chuong,Chương 1,,1,1,,8ef0c379-57c4-4319-85f9-31af97a9ad08
+547/QD/DHCNTT,dieu,Điều 1,Phạm vi điều chỉnh và đối tượng áp dụng,1-Jan,1001,8ef0c379-57c4-4319-85f9-31af97a9ad08,84e30b7b-b094-4b99-811e-f3c95d5c17b3
+547/QD/DHCNTT,khoan,Khoản 1,,1/1/2001,1001,84e30b7b-b094-4b99-811e-f3c95d5c17b3,1dcdefb4-3044-4b68-93fc-08be1ea79c4c
+547/QD/DHCNTT,khoan,Khoản 2,,1/1/2002,1002,84e30b7b-b094-4b99-811e-f3c95d5c17b3,e05422ea-d9b7-448f-a3e4-17e79a7a404f
+547/QD/DHCNTT,dieu,Điều 2,Mục đích đào tạo ngoại ngữ,2-Jan,1002,8ef0c379-57c4-4319-85f9-31af97a9ad08,d4213448-1d25-4e61-80da-9b281bbdf2d7
+547/QD/DHCNTT,khoan,Khoản 1,,1/2/2001,2001,d4213448-1d25-4e61-80da-9b281bbdf2d7,27f10524-595c-4287-9c0b-03e4ce96912a
+547/QD/DHCNTT,dieu,Điều 8,của quy định này.,8-Jan,1008,8ef0c379-57c4-4319-85f9-31af97a9ad08,08c0fa07-3482-40aa-94fa-934517638340
+547/QD/DHCNTT,khoan,Khoản 1,,1/8/2001,8001,08c0fa07-3482-40aa-94fa-934517638340,4ac2a17f-a704-4159-8fd6-7537d9223559
+547/QD/DHCNTT,chuong,Chương 2,,2,2,,fea8addf-8192-4edc-872f-b6350d137297
+547/QD/DHCNTT,dieu,Điều 3,Chương trình giảng dạy tiếng Anh,3-Feb,2003,fea8addf-8192-4edc-872f-b6350d137297,f0d5c369-fdaf-4486-87db-4778c04aaf3a
+547/QD/DHCNTT,khoan,Khoản 1,,2/3/2001,3001,f0d5c369-fdaf-4486-87db-4778c04aaf3a,0b8469a5-7f68-4651-aba4-89074556f32d
+547/QD/DHCNTT,khoan,Khoản 1,,2/3/2001,3001,f0d5c369-fdaf-4486-87db-4778c04aaf3a,f7f8ef30-8a86-4ee8-96c6-d069681d8c7a
+547/QD/DHCNTT,khoan,Khoản 1,,2/3/2001,3001,f0d5c369-fdaf-4486-87db-4778c04aaf3a,f804d6e3-94ff-44ca-8c6a-db2f17e9de5d
+547/QD/DHCNTT,khoan,Khoản 1,,2/3/2001,3001,f0d5c369-fdaf-4486-87db-4778c04aaf3a,8cd67130-b512-4a20-8f16-a49d038a8bca
+547/QD/DHCNTT,khoan,Khoản 2,,2/3/2002,3002,f0d5c369-fdaf-4486-87db-4778c04aaf3a,207d31db-3356-4832-b317-faeb05d7ff7d
+547/QD/DHCNTT,khoan,Khoản 2,,2/3/2002,3002,f0d5c369-fdaf-4486-87db-4778c04aaf3a,6ffe3c1b-38f6-401b-b3b3-6c35d1fe4c04
+547/QD/DHCNTT,khoan,Khoản 2,,2/3/2002,3002,f0d5c369-fdaf-4486-87db-4778c04aaf3a,332817d5-eb00-4c66-ae58-b159854bae80
+547/QD/DHCNTT,khoan,Khoản 2,,2/3/2002,3002,f0d5c369-fdaf-4486-87db-4778c04aaf3a,ac542db3-bb0f-48b7-a13e-3feba6a105fd
+547/QD/DHCNTT,khoan,Khoản 3,,2/3/2003,3003,f0d5c369-fdaf-4486-87db-4778c04aaf3a,da252d13-6471-40ad-8332-a6ec2a59d4e0
+547/QD/DHCNTT,khoan,Khoản 3,,2/3/2003,3003,f0d5c369-fdaf-4486-87db-4778c04aaf3a,fad672ed-219c-4704-98f1-b03d25221b52
+547/QD/DHCNTT,khoan,Khoản 3,,2/3/2003,3003,f0d5c369-fdaf-4486-87db-4778c04aaf3a,c17ef581-0599-48c2-85d8-3eaf06ac9930
+547/QD/DHCNTT,khoan,Khoản 4,,2/3/2004,3004,f0d5c369-fdaf-4486-87db-4778c04aaf3a,474f2566-4fed-4b5c-a79f-0871028be5cd
+547/QD/DHCNTT,khoan,Khoản 4,,2/3/2004,3004,f0d5c369-fdaf-4486-87db-4778c04aaf3a,c32ed3a4-30f6-4b2c-b213-2014571545ea
+547/QD/DHCNTT,khoan,Khoản 5,,2/3/2005,3005,f0d5c369-fdaf-4486-87db-4778c04aaf3a,9f130aa0-82ce-4e65-aa91-f00a6d623af1
+547/QD/DHCNTT,khoan,Khoản 5,,2/3/2005,3005,f0d5c369-fdaf-4486-87db-4778c04aaf3a,99971799-4706-430f-a760-c26cd3a7555f
+547/QD/DHCNTT,khoan,Khoản 6,,2/3/2006,3006,f0d5c369-fdaf-4486-87db-4778c04aaf3a,714022ed-a982-40d2-934e-215e579dd0ab
+547/QD/DHCNTT,khoan,Khoản 7,,2/3/2007,3007,f0d5c369-fdaf-4486-87db-4778c04aaf3a,6980ecdb-e21c-4bc4-b7a2-72be4aa28c9e
+547/QD/DHCNTT,khoan,Khoản 8,,2/3/2008,3008,f0d5c369-fdaf-4486-87db-4778c04aaf3a,ff641f66-0511-4bc6-9687-0f33ecf5c30b
+547/QD/DHCNTT,dieu,Điều 4,Kiểm tra xếp lớp đầu khóa,4-Feb,2004,fea8addf-8192-4edc-872f-b6350d137297,bc8c75d0-a47b-4723-86b0-e53d9a79d036
+547/QD/DHCNTT,khoan,Khoản 1,,2/4/2001,4001,bc8c75d0-a47b-4723-86b0-e53d9a79d036,3d49e1c9-205f-4d67-8823-e8ee1796005e
+547/QD/DHCNTT,khoan,Khoản 2,,2/4/2002,4002,bc8c75d0-a47b-4723-86b0-e53d9a79d036,325c76c7-b41c-447a-85d9-fcade5943c6f
+547/QD/DHCNTT,dieu,Điều 5,Xét miễn các môn học tiếng Anh,5-Feb,2005,fea8addf-8192-4edc-872f-b6350d137297,53d36d0f-f9de-4aea-bf12-0e6ba88b2c3e
+547/QD/DHCNTT,khoan,Khoản 1,,2/5/2001,5001,53d36d0f-f9de-4aea-bf12-0e6ba88b2c3e,4346fb41-f41d-4dd9-b2cf-5f08c419e52c
+547/QD/DHCNTT,khoan,Khoản 2,,2/5/2002,5002,53d36d0f-f9de-4aea-bf12-0e6ba88b2c3e,d7d07097-5186-44c1-aca6-6592a4117756
+547/QD/DHCNTT,dieu,Điều 6,Xét miễn các môn học tiếng Nhật đối với sinh viên thuộc chương trình chất,6-Feb,2006,fea8addf-8192-4edc-872f-b6350d137297,42262896-485c-42c1-9df1-17745a596737
+547/QD/DHCNTT,dieu,Điều 6,"Quy định này, nộp bản sao chứng chỉ, chứng nhận còn hiệu lực cho Trường để được",6-Feb,2006,fea8addf-8192-4edc-872f-b6350d137297,8577b303-79c2-4ed0-a6d8-2cc14db0d3dc
+547/QD/DHCNTT,khoan,Khoản 1,,2/6/2001,6001,42262896-485c-42c1-9df1-17745a596737,ce186619-1bf2-4ba3-935b-b1d2c6947816
+547/QD/DHCNTT,khoan,Khoản 2,,2/6/2002,6002,8577b303-79c2-4ed0-a6d8-2cc14db0d3dc,621ad716-db30-4499-9691-e437a69748c3
+547/QD/DHCNTT,dieu,Điều 7,"Thời điểm xét, cách tính điểm miễn các môn học ngoại ngữ",7-Feb,2007,fea8addf-8192-4edc-872f-b6350d137297,3dc52208-2a81-4510-ab07-19388d626cf3
+547/QD/DHCNTT,khoan,Khoản 1,,2/7/2001,7001,3dc52208-2a81-4510-ab07-19388d626cf3,203c4ec0-0193-4523-96ea-ef28a388d316
+547/QD/DHCNTT,dieu,Điều 8,Chuẩn quá trình về ngoại ngữ,8-Feb,2008,fea8addf-8192-4edc-872f-b6350d137297,d83ce33f-d692-4e6f-af22-2dc638e3da1c
+547/QD/DHCNTT,khoan,Khoản 1,,2/8/2001,8001,d83ce33f-d692-4e6f-af22-2dc638e3da1c,879aabcd-f160-4c89-902c-e2c6b52ef140
+547/QD/DHCNTT,khoan,Khoản 2,,2/8/2002,8002,d83ce33f-d692-4e6f-af22-2dc638e3da1c,381c1c22-8347-4e0b-b675-2641182166f3
+547/QD/DHCNTT,khoan,Khoản 3,,2/8/2003,8003,d83ce33f-d692-4e6f-af22-2dc638e3da1c,964cbcba-4e42-4ed8-b8b7-0226ef40d5d0
+547/QD/DHCNTT,khoan,Khoản 4,,2/8/2004,8004,d83ce33f-d692-4e6f-af22-2dc638e3da1c,7f4d346d-1cb0-4431-bc66-d5e3477bfce3
+547/QD/DHCNTT,khoan,Khoản 5,,2/8/2005,8005,d83ce33f-d692-4e6f-af22-2dc638e3da1c,b35f74dd-5c55-4789-9df1-4c298afd8bbf
+547/QD/DHCNTT,dieu,Điều 9,Chuẩn ngoại ngữ xét tốt nghiệp,9-Feb,2009,fea8addf-8192-4edc-872f-b6350d137297,b5631d33-4665-469a-a810-6e5361ca5947
+547/QD/DHCNTT,khoan,Khoản 1,,2/9/2001,9001,b5631d33-4665-469a-a810-6e5361ca5947,e269b523-67ee-4586-9b09-56334dfe76f2
+547/QD/DHCNTT,khoan,Khoản 2,,2/9/2002,9002,b5631d33-4665-469a-a810-6e5361ca5947,7d83f29b-d35a-4bc7-8a78-06fa6a4e0f4e
+547/QD/DHCNTT,khoan,Khoản 3,,2/9/2003,9003,b5631d33-4665-469a-a810-6e5361ca5947,82365448-fbc4-4713-9c43-ba4f6a37eafe
+547/QD/DHCNTT,chuong,Chương 3,,3,3,,97e1d964-464f-49dd-8a85-da38f2f133cb
+547/QD/DHCNTT,dieu,Điều 10,Chương trình giảng dạy và tổ chức giảng dạy TACM,10-Mar,3010,97e1d964-464f-49dd-8a85-da38f2f133cb,f42c5636-7c29-46c1-8018-43d7cce8ce65
+547/QD/DHCNTT,khoan,Khoản 1,,3/10/2001,10001,f42c5636-7c29-46c1-8018-43d7cce8ce65,724f6a38-bafa-4b8e-b6cc-46acfa43931c
+547/QD/DHCNTT,khoan,Khoản 2,,3/10/2002,10002,f42c5636-7c29-46c1-8018-43d7cce8ce65,8295c3d6-dadf-4620-b03d-c522d4e310f8
+547/QD/DHCNTT,khoan,Khoản 3,,3/10/2003,10003,f42c5636-7c29-46c1-8018-43d7cce8ce65,e6077430-abf5-4666-bddb-6bb5210273a0
+547/QD/DHCNTT,dieu,Điều 11,Yêu cầu về cán bộ giảng dạy TACM,11-Mar,3011,97e1d964-464f-49dd-8a85-da38f2f133cb,8795282d-442a-4fa6-a23d-669c21066d08
+547/QD/DHCNTT,khoan,Khoản 1,,3/11/2001,11001,8795282d-442a-4fa6-a23d-669c21066d08,d0785fc3-22d7-40c7-8956-1165964025c8
+547/QD/DHCNTT,khoan,Khoản 2,,3/11/2002,11002,8795282d-442a-4fa6-a23d-669c21066d08,b3ce776c-0bb1-4f11-8b8b-86459d22f264
+547/QD/DHCNTT,khoan,Khoản 3,,3/11/2003,11003,8795282d-442a-4fa6-a23d-669c21066d08,bb86d5f8-fe71-41c6-b351-6819b0f6ce90
+547/QD/DHCNTT,dieu,Điều 12,Quyền lợi của sinh viên học TACM,12-Mar,3012,97e1d964-464f-49dd-8a85-da38f2f133cb,3d40375d-d270-4c18-bb79-85d9501a9d48
+547/QD/DHCNTT,khoan,Khoản 1,,3/12/2001,12001,3d40375d-d270-4c18-bb79-85d9501a9d48,7a26f879-0f90-45c5-83e7-04ec0407b5b6
+547/QD/DHCNTT,chuong,Chương 4,,4,4,,1e76eb31-3ff1-4f37-8e16-f600816d6d0e
+547/QD/DHCNTT,dieu,Điều 13,Trách nhiệm của đơn vị quản lý đào tạo,13-Apr,4013,1e76eb31-3ff1-4f37-8e16-f600816d6d0e,c0a63551-d7c6-44a6-80ed-5f0f8d552657
+547/QD/DHCNTT,khoan,Khoản 1,,4/13/2001,13001,c0a63551-d7c6-44a6-80ed-5f0f8d552657,a3aad62a-e63a-435e-a402-8428c4e90170
+547/QD/DHCNTT,khoan,Khoản 2,,4/13/2002,13002,c0a63551-d7c6-44a6-80ed-5f0f8d552657,04790516-fc27-40fb-9240-b69bc44d4469
+547/QD/DHCNTT,khoan,Khoản 3,,4/13/2003,13003,c0a63551-d7c6-44a6-80ed-5f0f8d552657,c33b8af7-ccdc-458a-ac47-8e6af25b2dba
+547/QD/DHCNTT,dieu,Điều 14,Trách nhiệm của đơn vị chuyên mônphụ trách các môn học ngoại ngữ,14-Apr,4014,1e76eb31-3ff1-4f37-8e16-f600816d6d0e,2ac81566-52e4-48f4-be78-1b990647e80f
+547/QD/DHCNTT,khoan,Khoản 1,,4/14/2001,14001,2ac81566-52e4-48f4-be78-1b990647e80f,fd0723f9-865f-4cc7-8625-acd8571deed4
+547/QD/DHCNTT,khoan,Khoản 2,,4/14/2002,14002,2ac81566-52e4-48f4-be78-1b990647e80f,483cf941-0a9c-472b-882d-b3c63bb6ff7e
+547/QD/DHCNTT,khoan,Khoản 3,,4/14/2003,14003,2ac81566-52e4-48f4-be78-1b990647e80f,c3fa5f63-6144-4951-be31-1863dae65547
+547/QD/DHCNTT,khoan,Khoản 4,,4/14/2004,14004,2ac81566-52e4-48f4-be78-1b990647e80f,38763066-c148-4b90-829d-f9586f5ce8f6
+547/QD/DHCNTT,dieu,Điều 15,Trách nhiệm của các Khoa/Bộ môn phụ trách các ngành,15-Apr,4015,1e76eb31-3ff1-4f37-8e16-f600816d6d0e,f9f5430c-fce7-4152-a2ee-0a78eef1a666
+547/QD/DHCNTT,khoan,Khoản 1,,4/15/2001,15001,f9f5430c-fce7-4152-a2ee-0a78eef1a666,c4d397c3-787b-4bf1-927f-21ce7c7ec3e1
+547/QD/DHCNTT,dieu,Điều 16,Phạm vi áp dụng,16-Apr,4016,1e76eb31-3ff1-4f37-8e16-f600816d6d0e,3b90f0b2-c591-42be-8548-9c91aa950a24
+547/QD/DHCNTT,khoan,Khoản 1,,4/16/2001,16001,3b90f0b2-c591-42be-8548-9c91aa950a24,252612e0-6a44-4d50-9d49-2299d187b4cd
+547/QD/DHCNTT,dieu,Điều 17,Điều khoản thi hành,17-Apr,4017,1e76eb31-3ff1-4f37-8e16-f600816d6d0e,092b2451-c610-4667-9e30-f308b9865989
+547/QD/DHCNTT,khoan,Khoản 1,,4/17/2001,17001,092b2451-c610-4667-9e30-f308b9865989,70c191bd-3e51-488c-b578-97a314efd9f0
+547/QĐ-ĐHCNTT,chuong,Chương,,0,1,,23400bd4-42da-4bed-9efa-db902d5a6596
+790/QĐ-ĐHCNTT,chuong,Chương 1,,1,1,,8da37c67-692a-42e0-8ee7-87c94f504f22
+790/QĐ-ĐHCNTT,chuong,Chương 1,QUY ĐỊNH CHUNG,1,1,,2579aae6-8bfe-4d96-b6c0-5305815eaaa1
+790/QĐ-ĐHCNTT,chuong,Chương 0,,1,1,,d285d5aa-a986-4d7b-abb3-fd301bfb9f60
+790/QĐ-ĐHCNTT,dieu,Điều 1,Phạm vi điều chỉnh và đối tượng áp dụng ................................ ................................ ............ 4,1-Jan,2,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,79410fe7-6f63-4186-b6c4-4f9c3a23fc5c
+790/QĐ-ĐHCNTT,dieu,Điều 1,Phạm vi điều chỉnh và đối tượng áp dụng ............................................................................ 4,1-Jan,1001,8da37c67-692a-42e0-8ee7-87c94f504f22,fa1e6898-570e-416a-9cef-23e9f416d155
+790/QĐ-ĐHCNTT,dieu,Điều 1,Phạm vi điều chỉnh và đối tượng áp dụng,1-Jan,1001,2579aae6-8bfe-4d96-b6c0-5305815eaaa1,bcb1b4ba-fc18-4577-9ee1-dfb5c632bc9f
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/1/2001,1001,fa1e6898-570e-416a-9cef-23e9f416d155,16ed23f7-f4e1-4a05-9580-b28768577791
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/1/2001,1001,bcb1b4ba-fc18-4577-9ee1-dfb5c632bc9f,3db5f7c6-4c32-45a9-af16-e786ba81e448
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/1/2002,1002,bcb1b4ba-fc18-4577-9ee1-dfb5c632bc9f,04eb86f4-38f0-4cc6-b520-24d4e0c92cd6
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/1/2003,1003,bcb1b4ba-fc18-4577-9ee1-dfb5c632bc9f,b70aa2c0-0806-4f60-95f5-8f28569ab34c
+790/QĐ-ĐHCNTT,dieu,Điều 10,Chế độ học tập của sinh viên ................................ ................................ ............................ 11,10-Jan,11,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,46f3591b-cc9c-4830-a0a2-16d65b983f43
+790/QĐ-ĐHCNTT,dieu,Điều 11,Bảo lưu kết quả trúng tuyển ................................ ................................ ............................. 11,11-Jan,12,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,fd69863c-e46f-485d-a322-22b9057978f1
+790/QĐ-ĐHCNTT,dieu,Điều 12,Tổ chức lớp ................................ ................................ ................................ ....................... 12,12-Jan,13,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,2a212f65-6c17-4320-a830-edc716fcb69d
+790/QĐ-ĐHCNTT,dieu,Điều 13,Thông báo kế hoạch đào tạo ................................ ................................ ............................. 12,13-Jan,14,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,39408bf1-a703-416a-a53b-eef3af13c985
+790/QĐ-ĐHCNTT,dieu,Điều 14,Đăng ký học tập ................................ ................................ ................................ ................ 12,14-Jan,15,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,b981ec61-90c8-4dfc-85a8-1c005ec53140
+790/QĐ-ĐHCNTT,dieu,Điều 15,Trách nhiệm của sinh viên và cố vấn học tập ................................ ................................ ... 14,15-Jan,16,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,7747c384-9dc5-496c-a571-572761b32bbd
+790/QĐ-ĐHCNTT,dieu,Điều 16,Xử lý học vụ ................................ ................................ ................................ ..................... 14,16-Jan,17,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,5f088f1a-b6ea-4f95-83d4-ad0b572c844f
+790/QĐ-ĐHCNTT,dieu,Điều 17,"T hôi học, tạm dừng học tập ................................ ................................ .............................. 15",17-Jan,18,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,fbb5dce6-3ff9-495f-be78-4123e110051d
+790/QĐ-ĐHCNTT,dieu,Điều 18,Học cùng lúc hai chương trình đào tạo ................................ ................................ ............. 16 ĐẠI HỌC QU ỐC GIA TP.HCM,18-Jan,19,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,b327fdb5-1f16-45f8-83fd-b6e14ec586a0
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/18/2001,18001,b327fdb5-1f16-45f8-83fd-b6e14ec586a0,852eadae-8a37-4eb9-a7d8-2dc1abac914d
+790/QĐ-ĐHCNTT,dieu,Điều 19,"Điều kiện để chuyển ngành, chuyển chương trình, chuyển trường ................................ .. 17",19-Jan,20,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,3b912db3-24b0-47e2-a301-23ff77d90133
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/19/2001,19001,3b912db3-24b0-47e2-a301-23ff77d90133,8b514eab-f4b1-4ca4-9996-f5de24e1d8b2
+790/QĐ-ĐHCNTT,dieu,Điều 2,Mục tiêu của chương trình giáo dục và phương thức đào tạo ................................ .............. 4,2-Jan,3,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,1c5f7b1a-404a-44af-a366-91387b45741e
+790/QĐ-ĐHCNTT,dieu,Điều 2,Mục tiêu của chương trình giáo dục và phương thức đào tạo .............................................. 4,2-Jan,1002,8da37c67-692a-42e0-8ee7-87c94f504f22,3890c40f-0980-4a05-816f-f9c90cc009dc
+790/QĐ-ĐHCNTT,dieu,Điều 2,Mục tiêu của chương trình giáo dục và phương thức đào tạo,2-Jan,1002,2579aae6-8bfe-4d96-b6c0-5305815eaaa1,1cee6854-a356-408e-9e72-815dde94d38d
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/2/2001,2001,3890c40f-0980-4a05-816f-f9c90cc009dc,3eb0cbba-6f5e-4aec-a1df-ed729cd83771
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/2/2001,2001,1cee6854-a356-408e-9e72-815dde94d38d,e25124ff-0ce4-4542-8982-21be7ef4b2f2
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/2/2002,2002,1cee6854-a356-408e-9e72-815dde94d38d,048bd87d-447f-475e-8fd5-c7161606dcbf
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/2/2003,2003,1cee6854-a356-408e-9e72-815dde94d38d,2be17a88-d53a-41d4-a483-cc4aa17fe940
+790/QĐ-ĐHCNTT,dieu,Điều 20,Tổ chức đánh giá môn học ................................ ................................ ............................... 18,20-Jan,21,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,4f42dc6a-b4a0-42e3-a812-ef4decf5509f
+790/QĐ-ĐHCNTT,dieu,Điều 21,"Đánh giá kết quả học tập của học phần, học kỳ, năm học, toàn khóa .............................. 18",21-Jan,22,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,1fac89d2-5bc1-448a-8eff-5846a9793551
+790/QĐ-ĐHCNTT,dieu,Điều 22,Không hoàn tất học phần ................................ ................................ ................................ .. 19,22-Jan,23,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,bac3a1db-7a81-4570-8e49-cd998727b073
+790/QĐ-ĐHCNTT,dieu,Điều 23,Điểm Miễn ................................ ................................ ................................ ........................ 19,23-Jan,24,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,f081feb6-0ea8-4d57-bf88-dca76fb01423
+790/QĐ-ĐHCNTT,dieu,Điều 24,Cách quản lý điểm ................................ ................................ ................................ ............ 20,24-Jan,25,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,625af00d-b8b3-42f7-9c24-1d25727d5c42
+790/QĐ-ĐHCNTT,dieu,Điều 25,Cách tính điểm trung bình ................................ ................................ ................................ 21,25-Jan,26,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,1936fadb-6dc6-4ae5-8a71-5ea45f6fe87c
+790/QĐ-ĐHCNTT,dieu,Điều 26,Công nhận và chuyển đổi tín chỉ ................................ ................................ ...................... 21,26-Jan,27,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,e9a66434-911f-412a-a46a-8f9471f341f1
+790/QĐ-ĐHCNTT,dieu,Điều 27,Cấp bảng điểm ................................ ................................ ................................ .................. 22,27-Jan,28,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,b08ec8ce-6f9e-4c45-885e-5a6439531735
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/27/2001,27001,b08ec8ce-6f9e-4c45-885e-5a6439531735,d44406e5-58c6-48a3-8d2e-baed1ada4229
+790/QĐ-ĐHCNTT,dieu,Điều 28,Ứng dụng công nghệ thông tin trong tổ chức đào tạo ................................ ...................... 23,28-Jan,29,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,42e8884d-5398-4281-9e71-10fb2530f31d
+790/QĐ-ĐHCNTT,dieu,Điều 29,Ứng dụng công nghệ thông tin trong quản lý cơ sở dữ liệu đào tạo ................................ 23,29-Jan,30,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,6b5b0a41-6503-4dd6-b8d1-65664c7e0338
+790/QĐ-ĐHCNTT,dieu,Điều 3,Môn học ................................ ................................ ................................ ................................ 4,3-Jan,4,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,a8fbaeea-3f2a-40c0-bca4-b09eb9706c10
+790/QĐ-ĐHCNTT,dieu,Điều 3,Môn học ................................................................................................................................ 4,3-Jan,1003,8da37c67-692a-42e0-8ee7-87c94f504f22,06ad0243-a874-4720-8536-eb095e34dd56
+790/QĐ-ĐHCNTT,dieu,Điều 3,Môn học,3-Jan,1003,2579aae6-8bfe-4d96-b6c0-5305815eaaa1,4fd02477-fa14-4919-a871-9dbca47ea298
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/3/2001,3001,06ad0243-a874-4720-8536-eb095e34dd56,0ab053e3-247a-4c66-8721-d0b37df133cf
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/3/2001,3001,4fd02477-fa14-4919-a871-9dbca47ea298,84705d7b-dc2b-4e33-b0ae-82f319de286e
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/3/2002,3002,4fd02477-fa14-4919-a871-9dbca47ea298,606da849-0cc1-4671-80da-b0eac2dfd0bf
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/3/2003,3003,4fd02477-fa14-4919-a871-9dbca47ea298,a4be891b-4f08-426b-8f74-e81364d5791c
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/3/2004,3004,4fd02477-fa14-4919-a871-9dbca47ea298,0b3d2d0f-1250-4fcc-a5df-73533152f28e
+790/QĐ-ĐHCNTT,dieu,Điều 30,Công bố thông tin ................................ ................................ ................................ ............. 23,30-Jan,31,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,f51aee4f-78a8-44c6-8644-530f3927302f
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/30/2001,30001,f51aee4f-78a8-44c6-8644-530f3927302f,bff4591e-5451-4b81-8cc9-7dc944c99abf
+790/QĐ-ĐHCNTT,dieu,Điều 31,"Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp ................................ .................. 24",31-Jan,32,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,e86964e4-8cc1-458a-9226-05bf56d43145
+790/QĐ-ĐHCNTT,dieu,Điều 32,"Chấm thực tập, khóa luận tốt nghiệp ................................ ................................ ................ 25",Jan-32,33,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,5bc36fb5-d1a7-4b52-8575-937bf4990974
+790/QĐ-ĐHCNTT,dieu,Điều 33,Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ................................ ............................ 25,Jan-33,34,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,fd6a7e9f-6b4b-437e-9c4d-5cd378cfcb99
+790/QĐ-ĐHCNTT,dieu,Điều 34,Cấp bằng tốt nghiệp ................................ ................................ ................................ .......... 26,Jan-34,35,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,e72f77a4-a784-4d2b-9477-a9dcf49fd5aa
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/34/1,34001,e72f77a4-a784-4d2b-9477-a9dcf49fd5aa,6cb09be1-d03d-45a6-acb9-b4d7bac58fdc
+790/QĐ-ĐHCNTT,dieu,Điều 1,Phạm vi điều chỉnh và đối tượng áp dụng,Jan-35,36,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,c0ed04bf-bb7f-4c43-84e0-8dd598c212af
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/35/1,1001,c0ed04bf-bb7f-4c43-84e0-8dd598c212af,344e8f62-80bc-4f42-bfe8-5050e46d5da4
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/35/2,1002,c0ed04bf-bb7f-4c43-84e0-8dd598c212af,99b323b7-12ba-416b-a774-8cec104b1a1b
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/35/3,1003,c0ed04bf-bb7f-4c43-84e0-8dd598c212af,3bc6872f-3e73-4dae-bb1c-249867c58303
+790/QĐ-ĐHCNTT,dieu,Điều 2,Mục tiêu của chương trình giáo dục và phương thức đào tạo,Jan-36,37,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,880d1fab-0ec0-40c4-8315-cff683e468f6
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/36/1,2001,880d1fab-0ec0-40c4-8315-cff683e468f6,04ff7dcf-99ba-4f7a-bc23-a9e81c2825b9
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/36/2,2002,880d1fab-0ec0-40c4-8315-cff683e468f6,c94502ec-fd99-4ff9-a6f6-68e206cdf57c
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/36/3,2003,880d1fab-0ec0-40c4-8315-cff683e468f6,c0253692-777b-4887-8bb4-c4232f9e2417
+790/QĐ-ĐHCNTT,dieu,Điều 3,Môn học,Jan-37,38,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,edc98c59-17ec-400f-9238-115f52678f6d
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/37/1,3001,edc98c59-17ec-400f-9238-115f52678f6d,c250dd4a-2243-41c1-95c8-8037d77014ea
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/37/2,3002,edc98c59-17ec-400f-9238-115f52678f6d,0d61816d-e7b9-490f-bdae-60c211dd7956
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/37/3,3003,edc98c59-17ec-400f-9238-115f52678f6d,91e39014-d406-400d-ad1e-d2a4c43c50db
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/37/4,3004,edc98c59-17ec-400f-9238-115f52678f6d,bdbb2e5e-0942-4b3a-9351-5a27051d853e
+790/QĐ-ĐHCNTT,dieu,Điều 4,Tín chỉ học tập – Tín chỉ học phí,Jan-38,39,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,810cb9f6-46b9-4636-be18-2223aa0da82f
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/38/1,4001,810cb9f6-46b9-4636-be18-2223aa0da82f,52258978-48d7-44c5-b893-dd82e3604468
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/38/2,4002,810cb9f6-46b9-4636-be18-2223aa0da82f,d6242ec3-d896-4981-99be-8669375e47be
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/38/3,4003,810cb9f6-46b9-4636-be18-2223aa0da82f,4cc1ae13-e135-47c1-945b-a208a160eccd
+790/QĐ-ĐHCNTT,dieu,Điều 5,"Học kỳ, năm học",Jan-39,40,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,ebbcf81c-0032-4cd0-9de9-124fcdbe4942
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/39/1,5001,ebbcf81c-0032-4cd0-9de9-124fcdbe4942,aa4bb13a-e3fd-4bee-b5d2-167861541831
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/39/2,5002,ebbcf81c-0032-4cd0-9de9-124fcdbe4942,9ea70996-2fe0-4011-8426-ca21f98075c8
+790/QĐ-ĐHCNTT,dieu,Điều 4,Tín chỉ học tập – Tín chỉ học phí ................................ ................................ .......................... 6,4-Jan,5,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,ebc6ec0f-5b99-4742-9c4d-2a6658bc4b40
+790/QĐ-ĐHCNTT,dieu,Điều 4,Tín chỉ học tập – Tín chỉ học phí .......................................................................................... 6,4-Jan,1004,8da37c67-692a-42e0-8ee7-87c94f504f22,e62ba87a-5f17-4491-955b-d4f77d0b0517
+790/QĐ-ĐHCNTT,dieu,Điều 4,Tín chỉ học tập – Tín chỉ học phí,4-Jan,1004,2579aae6-8bfe-4d96-b6c0-5305815eaaa1,36f5b3ce-0334-4bc8-ba63-8178366ac96f
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/4/2001,4001,e62ba87a-5f17-4491-955b-d4f77d0b0517,318dd6b5-6558-492a-96f9-7bad137c862c
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/4/2001,4001,36f5b3ce-0334-4bc8-ba63-8178366ac96f,d1feb6c7-06f8-4c71-807e-79a83ad3b44e
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/4/2002,4002,36f5b3ce-0334-4bc8-ba63-8178366ac96f,8918a681-bc7f-4969-b132-3ffd6b19e1d3
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/4/2003,4003,36f5b3ce-0334-4bc8-ba63-8178366ac96f,e72ab84d-fae8-4259-b295-c870d1e9b0cf
+790/QĐ-ĐHCNTT,dieu,Điều 6,Khoá học,Jan-40,41,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,514f342c-5155-4660-8a1f-194493f439a7
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/40/1,6001,514f342c-5155-4660-8a1f-194493f439a7,2a976865-e6c3-481d-a62e-964adc880c4b
+790/QĐ-ĐHCNTT,diem,Điểm a),,1/40/1/a,6001.01,2a976865-e6c3-481d-a62e-964adc880c4b,db257a42-88a9-4ba3-b365-01bbeb580a0b
+790/QĐ-ĐHCNTT,diem,Điểm b),,1/40/1/b,6001.02,2a976865-e6c3-481d-a62e-964adc880c4b,afd801e1-a86a-4f93-b696-60d157ea5cd6
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/40/2,6002,514f342c-5155-4660-8a1f-194493f439a7,5701d4a9-8871-48f3-9ab4-6cc063a62383
+790/QĐ-ĐHCNTT,dieu,Điều 7,C hương trình đào tạo,Jan-41,42,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,2a1685d3-1cc0-487e-ba90-3d9747519614
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/41/1,7001,2a1685d3-1cc0-487e-ba90-3d9747519614,330cab7d-daad-4c8d-8b38-7c567adbd96c
+790/QĐ-ĐHCNTT,diem,Điểm a),,1/41/1/a,7001.01,330cab7d-daad-4c8d-8b38-7c567adbd96c,28296738-e765-42ad-ae21-ee49d4a4f27f
+790/QĐ-ĐHCNTT,diem,Điểm b),,1/41/1/b,7001.02,330cab7d-daad-4c8d-8b38-7c567adbd96c,883a9ab0-7a43-4bb8-a1a0-615bb762b8f8
+790/QĐ-ĐHCNTT,diem,Điểm c),,1/41/1/c,7001.03,330cab7d-daad-4c8d-8b38-7c567adbd96c,c025969e-863a-41c8-819b-ec6b8abaf852
+790/QĐ-ĐHCNTT,diem,Điểm d),,1/41/1/d,7001.04,330cab7d-daad-4c8d-8b38-7c567adbd96c,bae304a1-7944-4945-b776-a123cbffa2f5
+790/QĐ-ĐHCNTT,diem,Điểm e),,1/41/1/e,7001.05,330cab7d-daad-4c8d-8b38-7c567adbd96c,eb571573-74a5-4b98-ab42-2437b2e5e2ed
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/41/2,7002,2a1685d3-1cc0-487e-ba90-3d9747519614,604b4940-33cb-4de0-b844-23843fdeca70
+790/QĐ-ĐHCNTT,diem,Điểm a),,1/41/2/a,7002.01,604b4940-33cb-4de0-b844-23843fdeca70,dffa3c7b-6a18-4164-bb34-187e4318a09b
+790/QĐ-ĐHCNTT,diem,Điểm b),,1/41/2/b,7002.02,604b4940-33cb-4de0-b844-23843fdeca70,9b7a35b0-834d-4b65-ab9e-c8ebb8d542e7
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/41/3,7003,2a1685d3-1cc0-487e-ba90-3d9747519614,f0611363-c692-4481-bd7a-e788dfa62321
+790/QĐ-ĐHCNTT,diem,Điểm a),,1/41/3/a,7003.01,f0611363-c692-4481-bd7a-e788dfa62321,96b35534-323c-4751-a58b-6dfb929bb2ca
+790/QĐ-ĐHCNTT,diem,Điểm b),,1/41/3/b,7003.02,f0611363-c692-4481-bd7a-e788dfa62321,202b1dc0-3e13-4ead-9093-130ceaeccfa3
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/41/4,7004,2a1685d3-1cc0-487e-ba90-3d9747519614,6631713e-6d7b-4c1b-a601-43b3e023b377
+790/QĐ-ĐHCNTT,dieu,Điều 8,C hương trình đào tạo gắn với một ngành,Jan-42,43,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,ba94d805-b056-4d69-b0a6-4eb59f124751
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/42/1,8001,ba94d805-b056-4d69-b0a6-4eb59f124751,43eb62ec-8147-4c45-8294-b573c34a3a95
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/42/2,8002,ba94d805-b056-4d69-b0a6-4eb59f124751,03093d6c-3926-49ae-8a70-e22843c27f3f
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/42/3,8003,ba94d805-b056-4d69-b0a6-4eb59f124751,650059b9-fca4-45e7-a5b1-1b80d7d76fd4
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/42/4,8004,ba94d805-b056-4d69-b0a6-4eb59f124751,7317b403-5be9-4d0e-969a-e19e236fbc4b
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,1/42/5,8005,ba94d805-b056-4d69-b0a6-4eb59f124751,01d051f0-d365-470f-bfd1-0a92680111cb
+790/QĐ-ĐHCNTT,khoan,Khoản 6,,1/42/6,8006,ba94d805-b056-4d69-b0a6-4eb59f124751,f67cbc6b-5485-4eef-925e-978406c9443f
+790/QĐ-ĐHCNTT,dieu,Điều 9,Chương trình đào tạo gắn với hơn một ngành,Jan-43,44,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,cc2317ec-0688-4616-93c4-261065bf0ca8
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/43/1,9001,cc2317ec-0688-4616-93c4-261065bf0ca8,57c4c1d5-7ec9-4173-abde-f201e2d5d188
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/43/2,9002,cc2317ec-0688-4616-93c4-261065bf0ca8,d8d6ed82-bf56-49f4-a1b4-33b77b7682c8
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/43/3,9003,cc2317ec-0688-4616-93c4-261065bf0ca8,27312e56-8f3e-452e-b557-163c735f111f
+790/QĐ-ĐHCNTT,dieu,Điều 10,Chế độ học tập của sinh viên,Jan-44,45,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,83ddd854-ed7f-46dd-86ef-ed876677d0a2
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/44/1,10001,83ddd854-ed7f-46dd-86ef-ed876677d0a2,0ea15765-98e6-42e3-9247-35bf960ea5eb
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/44/2,10002,83ddd854-ed7f-46dd-86ef-ed876677d0a2,ce0c4f18-153c-4d97-a5e7-f883c565de69
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/44/3,10003,83ddd854-ed7f-46dd-86ef-ed876677d0a2,a7330319-3839-4840-ab33-a69d0917c96e
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/44/4,10004,83ddd854-ed7f-46dd-86ef-ed876677d0a2,69662970-253e-4a3f-b556-a057fb3407d6
+790/QĐ-ĐHCNTT,dieu,Điều 11,Bảo lưu kết quả trúng tuyển,Jan-45,46,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,231b02e5-befd-455d-8837-6b8467b74313
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/45/1,11001,231b02e5-befd-455d-8837-6b8467b74313,e5640be4-9dac-418a-b5e8-88327200414e
+790/QĐ-ĐHCNTT,dieu,Điều 12,Tổ chức lớp,Jan-46,47,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,fbfff928-2b89-4cf0-a6c2-344956707618
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/46/1,12001,fbfff928-2b89-4cf0-a6c2-344956707618,2187928a-94d6-429c-a255-b43bccbdfcbb
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/46/2,12002,fbfff928-2b89-4cf0-a6c2-344956707618,2416f945-c610-44a9-a2d2-0c0e1fd26c4a
+790/QĐ-ĐHCNTT,dieu,Điều 13,Thông báo kế hoạch đào tạo,Jan-47,48,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,276e9c14-9b7c-450f-b480-d9ec79aebd6f
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/47/1,13001,276e9c14-9b7c-450f-b480-d9ec79aebd6f,e0aa6f07-54d4-48a9-af81-79eacd09aec1
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/47/2,13002,276e9c14-9b7c-450f-b480-d9ec79aebd6f,5a4c73ca-d6f0-4573-a23e-be7176b7c61c
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/47/3,13003,276e9c14-9b7c-450f-b480-d9ec79aebd6f,a735f64a-d619-4f99-8cc2-a0a536603fa4
+790/QĐ-ĐHCNTT,dieu,Điều 14,Đăng ký học tập,Jan-48,49,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,a154e908-2058-4895-9d03-f14e70cea6d4
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/48/1,14001,a154e908-2058-4895-9d03-f14e70cea6d4,d959111b-7c3d-4a01-9bdf-3f202981f065
+790/QĐ-ĐHCNTT,diem,Điểm a),,1/48/1/a,14001.01,d959111b-7c3d-4a01-9bdf-3f202981f065,21878c30-40e6-4889-aa37-c6a2d94f5a16
+790/QĐ-ĐHCNTT,diem,Điểm b),,1/48/1/b,14001.02,d959111b-7c3d-4a01-9bdf-3f202981f065,eb654cbf-3057-4325-8b73-ae9c9a126941
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/48/2,14002,a154e908-2058-4895-9d03-f14e70cea6d4,8d69e723-e2ce-4a14-8385-e74386d00de4
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/48/3,14003,a154e908-2058-4895-9d03-f14e70cea6d4,0631725a-340c-4a4d-974a-a606f25e0d36
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/48/4,14004,a154e908-2058-4895-9d03-f14e70cea6d4,4d8cf47c-4969-42a4-90d6-fe52a5b379fb
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,1/48/5,14005,a154e908-2058-4895-9d03-f14e70cea6d4,ed84d2a7-382a-4a9c-8aea-d041d36c27ef
+790/QĐ-ĐHCNTT,dieu,Điều 15,Trách nhiệm của sinh viên và cố vấn học tập,Jan-49,50,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,0972d164-0ddb-4474-9127-bdd375720367
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/49/1,15001,0972d164-0ddb-4474-9127-bdd375720367,152b69ae-71b3-4817-8cca-8be008a6af5b
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/49/2,15002,0972d164-0ddb-4474-9127-bdd375720367,7a2a1150-ab16-4d98-abce-601add462d8e
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/49/3,15003,0972d164-0ddb-4474-9127-bdd375720367,47deaaf2-d8d1-4bc0-b669-657156bb7ad2
+790/QĐ-ĐHCNTT,dieu,Điều 5,"Học kỳ, năm học ................................ ................................ ................................ ................... 8",5-Jan,6,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,cdef6648-1c7f-4b5c-ade7-a3e028b82c91
+790/QĐ-ĐHCNTT,dieu,Điều 5,"Học kỳ, năm học ................................................................................................................... 8",5-Jan,1005,8da37c67-692a-42e0-8ee7-87c94f504f22,e0294ee4-ef3c-4adf-999b-b189c48049ba
+790/QĐ-ĐHCNTT,dieu,Điều 5,"Học kỳ, năm học",5-Jan,1005,2579aae6-8bfe-4d96-b6c0-5305815eaaa1,3d2af977-553b-46c2-984c-7f5b505847c7
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/5/2001,5001,e0294ee4-ef3c-4adf-999b-b189c48049ba,a9bf5b39-bd97-4f30-8957-1bf9b4db71ea
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/5/2001,5001,3d2af977-553b-46c2-984c-7f5b505847c7,21c832e3-2779-4db4-95ac-5f84954db372
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/5/2002,5002,3d2af977-553b-46c2-984c-7f5b505847c7,593ea151-f64f-4a0e-9592-3dd048b256c1
+790/QĐ-ĐHCNTT,dieu,Điều 16,Xử lý học vụ,Jan-50,51,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,e73cf7ae-d839-43a3-a7a7-9687de9df33a
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/50/1,16001,e73cf7ae-d839-43a3-a7a7-9687de9df33a,54155f56-9cca-466d-892e-a5e245bcad17
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/50/2,16002,e73cf7ae-d839-43a3-a7a7-9687de9df33a,4868460a-7ef2-48a2-bd86-f2eb99033de0
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/50/3,16003,e73cf7ae-d839-43a3-a7a7-9687de9df33a,e710dc33-a5ac-4c06-bc73-552ec33e7efb
+790/QĐ-ĐHCNTT,dieu,Điều 17,"Thôi học, tạm dừng học tập",Jan-51,52,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,cdd3b6cc-4739-44ba-9dc6-8bcf98cf95d4
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/51/1,17001,cdd3b6cc-4739-44ba-9dc6-8bcf98cf95d4,c9bd8548-710c-49d1-9bf6-49a5b824779f
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/51/2,17002,cdd3b6cc-4739-44ba-9dc6-8bcf98cf95d4,1181256c-b545-4ee5-bc8b-e27398b56d1d
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/51/3,17003,cdd3b6cc-4739-44ba-9dc6-8bcf98cf95d4,4ffcce2d-f8f7-4081-aadf-e2658db15027
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/51/4,17004,cdd3b6cc-4739-44ba-9dc6-8bcf98cf95d4,2a59d61b-5f85-4d40-9187-ed6ca6e71101
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,1/51/5,17005,cdd3b6cc-4739-44ba-9dc6-8bcf98cf95d4,7ec1cebb-a6c6-4943-bf2d-bd9ef864a3df
+790/QĐ-ĐHCNTT,dieu,Điều 18,Học cùng lúc hai chương trình đào tạo,Jan-52,53,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,20aeffd4-0606-4966-a9a2-a73192e7a462
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/52/1,18001,20aeffd4-0606-4966-a9a2-a73192e7a462,32d4c52d-8faa-4ede-bcad-7194f20b058a
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/52/2,18002,20aeffd4-0606-4966-a9a2-a73192e7a462,91b092a2-bb9b-4db2-94c9-8a853b81c25e
+790/QĐ-ĐHCNTT,diem,Điểm a),,1/52/2/a,18002.01,91b092a2-bb9b-4db2-94c9-8a853b81c25e,29fa3cee-7d50-455d-8844-48c22a439a05
+790/QĐ-ĐHCNTT,diem,Điểm b),,1/52/2/b,18002.02,91b092a2-bb9b-4db2-94c9-8a853b81c25e,394a2713-9198-40bb-9465-aa8c74f67237
+790/QĐ-ĐHCNTT,diem,Điểm c),,1/52/2/c,18002.03,91b092a2-bb9b-4db2-94c9-8a853b81c25e,af9254ad-d029-4b73-95ad-d6d9042ffbfe
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/52/3,18003,20aeffd4-0606-4966-a9a2-a73192e7a462,c3e0f74a-5e12-438c-82f8-de4de2031291
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/52/4,18004,20aeffd4-0606-4966-a9a2-a73192e7a462,61f1bf56-f0bd-4bee-b6ca-9e6aeee2272a
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,1/52/5,18005,20aeffd4-0606-4966-a9a2-a73192e7a462,5c8b0c1f-1a8b-4ee1-8f93-01a02d0f228a
+790/QĐ-ĐHCNTT,khoan,Khoản 6,,1/52/6,18006,20aeffd4-0606-4966-a9a2-a73192e7a462,478450d6-8df5-4469-bf5e-90b64e0f2473
+790/QĐ-ĐHCNTT,dieu,Điều 19,"Điều kiện để chuyển ngành , chuyển chương trình , chuyển trường",Jan-53,54,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,4a8d9361-141b-4110-87ba-e5ddc37dc62a
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/53/1,19001,4a8d9361-141b-4110-87ba-e5ddc37dc62a,30baac2b-1ec5-47fb-9d83-fa3582d9f560
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/53/2,19002,4a8d9361-141b-4110-87ba-e5ddc37dc62a,6f1dff16-d7e2-4215-bd4b-11b4e056a8ce
+790/QĐ-ĐHCNTT,dieu,Điều 20,Tổ chức đánh giá môn học,Jan-54,55,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,5665b605-45b8-4998-8229-62cec9e19c68
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/54/1,20001,5665b605-45b8-4998-8229-62cec9e19c68,069cdc88-acf8-4d23-9b86-ce948f8b4245
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/54/2,20002,5665b605-45b8-4998-8229-62cec9e19c68,f0491377-3dbe-428a-990c-e2c0e2b2404c
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/54/3,20003,5665b605-45b8-4998-8229-62cec9e19c68,31bc34ed-90b8-4347-8a99-3b373188cbf8
+790/QĐ-ĐHCNTT,dieu,Điều 21,"Đ ánh giá kết quả học tập của học phần , học kỳ, năm học, toàn khóa",Jan-55,56,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,fc9e533b-1ca1-4c0f-a8cd-a47b835368fd
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/55/1,21001,fc9e533b-1ca1-4c0f-a8cd-a47b835368fd,56ec6d24-68df-44a2-873a-db581d507409
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/55/2,21002,fc9e533b-1ca1-4c0f-a8cd-a47b835368fd,23695559-79a1-47ea-a72f-efbadbb6ae3c
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/55/3,21003,fc9e533b-1ca1-4c0f-a8cd-a47b835368fd,02791c03-7502-4a4d-9fad-cd9755fd13f6
+790/QĐ-ĐHCNTT,dieu,Điều 22,K hông hoàn tất học phần,Jan-56,57,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,49fdab7a-823f-4b91-961a-64dafe49403d
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/56/1,22001,49fdab7a-823f-4b91-961a-64dafe49403d,61c96886-13a1-4ad0-8968-7bbad2329a74
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/56/2,22002,49fdab7a-823f-4b91-961a-64dafe49403d,d9201703-4b51-4de3-95f6-db2aaddfb93c
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/56/3,22003,49fdab7a-823f-4b91-961a-64dafe49403d,6013e994-c434-42e5-a164-0f1588f115c5
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/56/4,22004,49fdab7a-823f-4b91-961a-64dafe49403d,7f110121-5bc3-4996-b22c-4bba3a559d4f
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,1/56/5,22005,49fdab7a-823f-4b91-961a-64dafe49403d,14b17ef3-9cd4-44a0-99c0-13d3a386fa82
+790/QĐ-ĐHCNTT,dieu,Điều 23,Điểm M iễn,Jan-57,58,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,204e51dd-7988-4807-8f71-f23d063ea952
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/57/1,23001,204e51dd-7988-4807-8f71-f23d063ea952,c22f43f0-5e1e-47c3-a77e-782fd86a09ef
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/57/2,23002,204e51dd-7988-4807-8f71-f23d063ea952,2a2e513a-fa90-4cca-9297-7a5cc39b1886
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/57/3,23003,204e51dd-7988-4807-8f71-f23d063ea952,e80ee694-0b39-4d34-a1c4-b09ffab99cda
+790/QĐ-ĐHCNTT,dieu,Điều 24,Cách quản lý điểm,Jan-58,59,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,dd1bdf30-3f94-4983-bc4e-aadb7cf867f1
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/58/1,24001,dd1bdf30-3f94-4983-bc4e-aadb7cf867f1,a52fd3e8-ac96-414a-a84d-d05bbe591b9c
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/58/2,24002,dd1bdf30-3f94-4983-bc4e-aadb7cf867f1,4eaa5fd3-5ac1-4034-8767-51d239ad995d
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/58/3,24003,dd1bdf30-3f94-4983-bc4e-aadb7cf867f1,5de88056-76d4-4106-b1bd-eb0c6efc0ef7
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/58/4,24004,dd1bdf30-3f94-4983-bc4e-aadb7cf867f1,ddf94991-ef18-4a3b-b3f8-76474f4c8749
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,1/58/5,24005,dd1bdf30-3f94-4983-bc4e-aadb7cf867f1,c6fd7eeb-4e78-49f4-b580-712e1d112e7d
+790/QĐ-ĐHCNTT,khoan,Khoản 6,,1/58/6,24006,dd1bdf30-3f94-4983-bc4e-aadb7cf867f1,5a4b2384-3313-4be6-b01a-1e12f52f789a
+790/QĐ-ĐHCNTT,khoan,Khoản 7,,1/58/7,24007,dd1bdf30-3f94-4983-bc4e-aadb7cf867f1,907b4304-daa8-43e5-b2bd-8bb813442334
+790/QĐ-ĐHCNTT,khoan,Khoản 8,,1/58/8,24008,dd1bdf30-3f94-4983-bc4e-aadb7cf867f1,afea4d2c-9e2e-42f2-9b9c-a19d46593105
+790/QĐ-ĐHCNTT,dieu,Điều 25,Cách tính điểm trung bình,Jan-59,60,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,e3cb4ac7-a613-49f6-b0a1-e50b201652cb
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/59/1,25001,e3cb4ac7-a613-49f6-b0a1-e50b201652cb,e2679096-adfb-4e86-a7d3-d75e59974631
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/59/2,25002,e3cb4ac7-a613-49f6-b0a1-e50b201652cb,b38fd980-875a-4886-8267-ae45eb69c0e4
+790/QĐ-ĐHCNTT,dieu,Điều 6,Khoá học ................................ ................................ ................................ ............................... 8,6-Jan,7,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,d2379d37-e5a4-4426-9570-d694f0983806
+790/QĐ-ĐHCNTT,dieu,Điều 6,Khoá học ............................................................................................................................... 8,6-Jan,1006,8da37c67-692a-42e0-8ee7-87c94f504f22,d22d403a-3fd4-45a0-995e-df0d5d59e780
+790/QĐ-ĐHCNTT,dieu,Điều 6,Khoá học,6-Jan,1006,2579aae6-8bfe-4d96-b6c0-5305815eaaa1,804b6529-f239-4ac8-b6eb-2277efbc88cf
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/6/2001,6001,d22d403a-3fd4-45a0-995e-df0d5d59e780,6d6a9927-b3c2-4878-b292-b815bc5f2449
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/6/2001,6001,804b6529-f239-4ac8-b6eb-2277efbc88cf,e7a7f703-1633-4991-be72-ab4ee7988587
+790/QĐ-ĐHCNTT,diem,Điểm a),,1/6/1/a,6001.01,e7a7f703-1633-4991-be72-ab4ee7988587,06dd2fac-d7da-47a4-83b1-6562d2c748b2
+790/QĐ-ĐHCNTT,diem,Điểm b),,1/6/1/b,6001.02,e7a7f703-1633-4991-be72-ab4ee7988587,cec44ed7-7bb8-41a0-8769-0e6536de49de
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/6/2002,6002,804b6529-f239-4ac8-b6eb-2277efbc88cf,dd6548ff-3a8d-413e-ab37-213cb80314a1
+790/QĐ-ĐHCNTT,dieu,Điều 26,Công nhận và chuyển đổi tín chỉ,Jan-60,61,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,8c3102af-5850-4962-80a6-94743cdb515d
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/60/1,26001,8c3102af-5850-4962-80a6-94743cdb515d,583b42a3-87ed-4ff4-8777-fab8a5aa5f2d
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/60/2,26002,8c3102af-5850-4962-80a6-94743cdb515d,c9056171-9028-4298-8255-a252748ff5b1
+790/QĐ-ĐHCNTT,diem,Điểm a),,1/60/2/a,26002.01,c9056171-9028-4298-8255-a252748ff5b1,5d1dd664-d4d7-4497-b7cf-e108276e6003
+790/QĐ-ĐHCNTT,diem,Điểm b),,1/60/2/b,26002.02,c9056171-9028-4298-8255-a252748ff5b1,110679d3-db51-4029-b91e-34658b8db4f6
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/60/3,26003,8c3102af-5850-4962-80a6-94743cdb515d,029286bf-8a6c-4bd9-8bac-2d68defa459b
+790/QĐ-ĐHCNTT,diem,Điểm a),,1/60/3/a,26003.01,029286bf-8a6c-4bd9-8bac-2d68defa459b,88cfbd5b-5ca2-4455-b579-31112339baf0
+790/QĐ-ĐHCNTT,diem,Điểm b),,1/60/3/b,26003.02,029286bf-8a6c-4bd9-8bac-2d68defa459b,0e0a68b9-c07b-4270-9b8c-affd97b05d20
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/60/4,26004,8c3102af-5850-4962-80a6-94743cdb515d,0720e199-c0b7-4150-a9dd-b7e63448c32a
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,1/60/5,26005,8c3102af-5850-4962-80a6-94743cdb515d,975803d3-35b5-4b2f-8f78-caa1038302c7
+790/QĐ-ĐHCNTT,khoan,Khoản 6,,1/60/6,26006,8c3102af-5850-4962-80a6-94743cdb515d,624368d7-4660-47b7-afe2-cb51b91511f5
+790/QĐ-ĐHCNTT,dieu,Điều 27,C ấp bảng điểm,Jan-61,62,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,25673452-4e73-408e-b52d-1f839ae8e991
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/61/1,27001,25673452-4e73-408e-b52d-1f839ae8e991,003b52dd-1497-41e0-b6bf-e3b6da6371b3
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/61/2,27002,25673452-4e73-408e-b52d-1f839ae8e991,c7197f8b-afd5-4c66-b796-1f8d3508a44a
+790/QĐ-ĐHCNTT,dieu,Điều 28,Ứng dụng công nghệ thông tin trong tổ chức đào tạo,Jan-62,63,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,b4f9da56-a48e-4ca0-a8e1-bcdd0139b8a6
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/62/1,28001,b4f9da56-a48e-4ca0-a8e1-bcdd0139b8a6,81b7ef9b-0b03-404e-9d92-a1f5710d3296
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/62/2,28002,b4f9da56-a48e-4ca0-a8e1-bcdd0139b8a6,48149108-72f3-4e07-b2a7-828d6c480197
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/62/3,28003,b4f9da56-a48e-4ca0-a8e1-bcdd0139b8a6,b16395f0-1e6e-4111-8023-6c43a050e94c
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/62/4,28004,b4f9da56-a48e-4ca0-a8e1-bcdd0139b8a6,4e53a35c-5a90-4d8b-8ff1-5a9ff388630b
+790/QĐ-ĐHCNTT,dieu,Điều 29,Ứng dụng công nghệ thông tin trong quản lý cơ sở dữ liệu đào tạo,Jan-63,64,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,77223b08-5de6-458b-9225-762a985339ae
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/63/1,29001,77223b08-5de6-458b-9225-762a985339ae,860434d0-8f63-442b-b54a-edc557cf3d4f
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/63/2,29002,77223b08-5de6-458b-9225-762a985339ae,66729510-9723-467f-a1be-08c516685d35
+790/QĐ-ĐHCNTT,dieu,Điều 30,Công bố thông tin,Jan-64,65,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,22e6bb66-c6f7-4338-bf93-a0d9272f4c01
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/64/1,30001,22e6bb66-c6f7-4338-bf93-a0d9272f4c01,1be65aa9-92d5-4d08-bc03-5c8288e2904c
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/64/2,30002,22e6bb66-c6f7-4338-bf93-a0d9272f4c01,dfd5f1cb-1c44-46a6-a99f-cba05fe904f1
+790/QĐ-ĐHCNTT,dieu,Điều 31,"Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp",Jan-65,66,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,0e3b14ea-6bb6-4136-acfd-783b6dcbc007
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/65/1,31001,0e3b14ea-6bb6-4136-acfd-783b6dcbc007,8e04d88f-8756-4aca-954e-21421dee57d8
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/65/2,31002,0e3b14ea-6bb6-4136-acfd-783b6dcbc007,1762b788-a2ac-44c9-b306-0ffcd8d593c3
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/65/3,31003,0e3b14ea-6bb6-4136-acfd-783b6dcbc007,8743288a-ea21-4561-ac74-6e93aa0ebb9f
+790/QĐ-ĐHCNTT,dieu,Điều 32,"Chấm thực tập , khóa luận tốt nghiệp",Jan-66,67,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,66f72031-6f57-4150-9892-49b816a4597c
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/66/1,32001,66f72031-6f57-4150-9892-49b816a4597c,058698f7-f0f4-4bb1-9c3b-3064ac150a34
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/66/2,32002,66f72031-6f57-4150-9892-49b816a4597c,175ed47d-0bcb-48e9-b336-a6e92e4eabc6
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/66/3,32003,66f72031-6f57-4150-9892-49b816a4597c,3031b4f6-a808-44f3-972b-74a146436348
+790/QĐ-ĐHCNTT,dieu,Điều 33,Điều kiện xét tốt nghiệp và công nhận tốt nghiệp,Jan-67,68,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,b8a7e6b5-ed06-4904-84ca-cf6a32876fa1
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/67/1,33001,b8a7e6b5-ed06-4904-84ca-cf6a32876fa1,80600515-f59b-45a4-8fbe-dbd0e06fec05
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/67/2,33002,b8a7e6b5-ed06-4904-84ca-cf6a32876fa1,10d55dd8-0558-454c-9adf-873c97169513
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/67/3,33003,b8a7e6b5-ed06-4904-84ca-cf6a32876fa1,ee24e94c-a1fa-46c4-96ee-c2069c838910
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/67/4,33004,b8a7e6b5-ed06-4904-84ca-cf6a32876fa1,9a01c86a-e047-4832-8de7-c31501f98ea3
+790/QĐ-ĐHCNTT,dieu,Điều 34,Cấp bằng tốt nghiệp,Jan-68,69,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,75a5c282-6352-4a87-b2f1-6f5224ecb25e
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/68/1,34001,75a5c282-6352-4a87-b2f1-6f5224ecb25e,c4997cd9-5803-4fda-a0c1-c2449a87828b
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/68/1,34001,75a5c282-6352-4a87-b2f1-6f5224ecb25e,3d0a5eea-512c-4750-9e87-7c21dbdf2ccb
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/68/2,34002,75a5c282-6352-4a87-b2f1-6f5224ecb25e,729b796f-f7c2-480c-ac4c-03ac3232e5d4
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/68/2,34002,75a5c282-6352-4a87-b2f1-6f5224ecb25e,a224dde3-5b14-424a-968a-cede356da3a2
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/68/3,34003,75a5c282-6352-4a87-b2f1-6f5224ecb25e,0d07844d-7555-450a-a68a-89e93f81cd82
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/68/4,34004,75a5c282-6352-4a87-b2f1-6f5224ecb25e,b1a54435-a5d0-425e-a6ec-995adb47483d
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,1/68/5,34005,75a5c282-6352-4a87-b2f1-6f5224ecb25e,6050e119-5ab3-487a-a37c-9071d289bd46
+790/QĐ-ĐHCNTT,khoan,Khoản 6,,1/68/6,34006,75a5c282-6352-4a87-b2f1-6f5224ecb25e,97dbaa7d-6604-41f6-ab89-e8fcb702c6a6
+790/QĐ-ĐHCNTT,dieu,Điều 7,Chương trình đào tạo ................................ ................................ ................................ ............ 8,7-Jan,8,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,e9811e93-e421-40de-abaa-cdedd3d4f9ce
+790/QĐ-ĐHCNTT,dieu,Điều 7,Chương trình đào tạo ............................................................................................................ 8,7-Jan,1007,8da37c67-692a-42e0-8ee7-87c94f504f22,b9b5e479-d315-4219-a727-a764d09ed1e8
+790/QĐ-ĐHCNTT,dieu,Điều 7,Chương trình đào tạo,7-Jan,1007,2579aae6-8bfe-4d96-b6c0-5305815eaaa1,f46fcd50-a04d-4d15-ad29-7afe5e844051
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/7/2001,7001,b9b5e479-d315-4219-a727-a764d09ed1e8,4fed8be7-7905-41c8-a412-18b7b8e5c379
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/7/2001,7001,f46fcd50-a04d-4d15-ad29-7afe5e844051,811cd632-9166-4fa5-b178-fd0482565cc3
+790/QĐ-ĐHCNTT,diem,Điểm a),,1/7/1/a,7001.01,811cd632-9166-4fa5-b178-fd0482565cc3,a95a8233-858f-40e0-856e-147614df468c
+790/QĐ-ĐHCNTT,diem,Điểm b),,1/7/1/b,7001.02,811cd632-9166-4fa5-b178-fd0482565cc3,9b1c5e4b-a7fb-4dd4-8613-c558502f9727
+790/QĐ-ĐHCNTT,diem,Điểm c),,1/7/1/c,7001.03,811cd632-9166-4fa5-b178-fd0482565cc3,bff0cb38-464b-421c-a0e5-fce19c5532cd
+790/QĐ-ĐHCNTT,diem,Điểm d),,1/7/1/d,7001.04,811cd632-9166-4fa5-b178-fd0482565cc3,0c6ceccb-98d6-49a7-8524-6273c5e6c044
+790/QĐ-ĐHCNTT,diem,Điểm e),,1/7/1/e,7001.05,811cd632-9166-4fa5-b178-fd0482565cc3,e76c4a88-55ce-427e-b2ea-38093d8c80bb
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/7/2002,7002,f46fcd50-a04d-4d15-ad29-7afe5e844051,75820382-17ca-4dfe-9c01-965c77afa404
+790/QĐ-ĐHCNTT,diem,Điểm a),,1/7/2/a,7002.01,75820382-17ca-4dfe-9c01-965c77afa404,e54189b0-b58e-4a40-b5f4-ae9b4b33076c
+790/QĐ-ĐHCNTT,diem,Điểm b),,1/7/2/b,7002.02,75820382-17ca-4dfe-9c01-965c77afa404,6f79782d-1919-44be-a49e-765d597f9936
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/7/2003,7003,f46fcd50-a04d-4d15-ad29-7afe5e844051,afda130f-f828-456c-8064-112b54a70205
+790/QĐ-ĐHCNTT,diem,Điểm a),,1/7/3/a,7003.01,afda130f-f828-456c-8064-112b54a70205,ab66d713-7866-4bd9-8a6f-b9c4eadd709b
+790/QĐ-ĐHCNTT,diem,Điểm b),,1/7/3/b,7003.02,afda130f-f828-456c-8064-112b54a70205,1f78641c-723a-43d9-9edd-fd00d4777900
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/7/2004,7004,f46fcd50-a04d-4d15-ad29-7afe5e844051,cf3109ab-0def-429e-93f6-ce96d5ecccfc
+790/QĐ-ĐHCNTT,dieu,Điều 8,Chương trình đào tạo gắn với một ngành ................................ ................................ ........... 10,8-Jan,9,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,9e5de724-07fb-4bfe-8a8c-6884891fb0d6
+790/QĐ-ĐHCNTT,dieu,Điều 8,Chương trình đào tạo gắn với một ngành ........................................................................... 10,8-Jan,1008,8da37c67-692a-42e0-8ee7-87c94f504f22,625b20d3-648a-4539-94a1-296c751766de
+790/QĐ-ĐHCNTT,dieu,Điều 8,Chương trình đào tạo gắn với một ngành,8-Jan,1008,2579aae6-8bfe-4d96-b6c0-5305815eaaa1,5d233765-4640-4c43-b109-8252a12c286c
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/8/2001,8001,625b20d3-648a-4539-94a1-296c751766de,5a6941ba-c47c-4f51-a270-78ec285f52e3
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/8/2001,8001,5d233765-4640-4c43-b109-8252a12c286c,fab3ddf2-8b09-41f5-ba2d-c26e5768840c
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/8/2002,8002,5d233765-4640-4c43-b109-8252a12c286c,a79e0d30-bb10-4054-bca0-e4bf99439abb
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/8/2003,8003,5d233765-4640-4c43-b109-8252a12c286c,eb394f82-5f39-4a7d-b27d-2cecadc062f4
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,1/8/2004,8004,5d233765-4640-4c43-b109-8252a12c286c,3b0dd05c-c905-4702-a10a-04200ee81ec1
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,1/8/2005,8005,5d233765-4640-4c43-b109-8252a12c286c,0ece84ec-147a-4dbb-b077-454063c9a550
+790/QĐ-ĐHCNTT,khoan,Khoản 6,,1/8/2006,8006,5d233765-4640-4c43-b109-8252a12c286c,48871d10-fb76-485a-a555-b650ec0187e0
+790/QĐ-ĐHCNTT,dieu,Điều 9,Chương trình đào tạo gắn với hơn một ngành ................................ ................................ .... 10,9-Jan,10,d285d5aa-a986-4d7b-abb3-fd301bfb9f60,2e9052ba-91c5-40f9-a1a3-29c580b6e4e5
+790/QĐ-ĐHCNTT,dieu,Điều 9,Chương trình đào tạo gắn với hơn một ngành .................................................................... 10,9-Jan,1009,8da37c67-692a-42e0-8ee7-87c94f504f22,35de7e47-121b-47d5-9c59-f2cd88329a8f
+790/QĐ-ĐHCNTT,dieu,Điều 9,Chương trình đào tạo gắn với hơn một ngành,9-Jan,1009,2579aae6-8bfe-4d96-b6c0-5305815eaaa1,ea2aca8e-058e-4d67-9789-07597c2d1870
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/9/2001,9001,35de7e47-121b-47d5-9c59-f2cd88329a8f,281936ba-0592-4e70-af2e-9f55afd98723
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/9/2001,9001,ea2aca8e-058e-4d67-9789-07597c2d1870,24316c2c-448a-46e4-9a19-c8e36f4a7323
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,1/9/2001,9001,2e9052ba-91c5-40f9-a1a3-29c580b6e4e5,7f75cd30-b5fb-4335-8b20-fa9192098cc1
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,1/9/2002,9002,ea2aca8e-058e-4d67-9789-07597c2d1870,3fec98a3-fed1-49c7-bc44-e4d50161e81a
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,1/9/2003,9003,ea2aca8e-058e-4d67-9789-07597c2d1870,54a154be-62c9-413f-afc8-19c4cc0c6dbe
+790/QĐ-ĐHCNTT,chuong,Chương 2,,2,2,,c67e21bc-b605-4725-bb0c-8954ba6ddbec
+790/QĐ-ĐHCNTT,chuong,Chương 2,TỔ CHỨC ĐÀO TẠO,2,2,,34cc8de2-661b-4db1-97ec-a9b955192af9
+790/QĐ-ĐHCNTT,dieu,Điều 10,Chế độ học tập của sinh viên ............................................................................................ 11,10-Feb,2010,c67e21bc-b605-4725-bb0c-8954ba6ddbec,a4d0ce4d-3a8d-4764-9f32-ceda9564fbc8
+790/QĐ-ĐHCNTT,dieu,Điều 10,Chế độ học tập của sinh viên,10-Feb,2010,34cc8de2-661b-4db1-97ec-a9b955192af9,28c0b3c3-66e6-467e-8df9-3caec6b6d8bc
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/10/2001,10001,a4d0ce4d-3a8d-4764-9f32-ceda9564fbc8,dc482d01-e8ea-4ea2-be0d-5ffc196665da
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/10/2001,10001,28c0b3c3-66e6-467e-8df9-3caec6b6d8bc,266d504b-a5ac-4b5d-8ab7-dc30bab2f7ad
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,2/10/2002,10002,28c0b3c3-66e6-467e-8df9-3caec6b6d8bc,655a5620-bd99-4db8-8e13-1d879db2831b
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,2/10/2003,10003,28c0b3c3-66e6-467e-8df9-3caec6b6d8bc,439f1814-5c9b-446e-b7cb-22c72ed13dac
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,2/10/2004,10004,28c0b3c3-66e6-467e-8df9-3caec6b6d8bc,a53d34ae-15a1-4970-880b-320ea2cc1d88
+790/QĐ-ĐHCNTT,dieu,Điều 11,Bảo lưu kết quả trúng tuyển ............................................................................................. 11,11-Feb,2011,c67e21bc-b605-4725-bb0c-8954ba6ddbec,4498998b-8d25-45e1-aa85-944c1fbb2434
+790/QĐ-ĐHCNTT,dieu,Điều 11,Bảo lưu kết quả trúng tuyển,11-Feb,2011,34cc8de2-661b-4db1-97ec-a9b955192af9,423fb7aa-47aa-44f2-8b04-697e538e37c1
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/11/2001,11001,4498998b-8d25-45e1-aa85-944c1fbb2434,3088eb47-2e4e-4515-b029-6cee15755aed
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/11/2001,11001,423fb7aa-47aa-44f2-8b04-697e538e37c1,4ab248c9-3d00-47ff-97eb-cf5ef27d252b
+790/QĐ-ĐHCNTT,dieu,Điều 12,Tổ chức lớp ....................................................................................................................... 12,12-Feb,2012,c67e21bc-b605-4725-bb0c-8954ba6ddbec,801cb8b7-79f5-472a-aa9d-202f5c27ead0
+790/QĐ-ĐHCNTT,dieu,Điều 12,Tổ chức lớp,12-Feb,2012,34cc8de2-661b-4db1-97ec-a9b955192af9,4f669905-3e9b-4d60-b76f-8a07ca312751
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/12/2001,12001,801cb8b7-79f5-472a-aa9d-202f5c27ead0,278a2a72-4210-4ad8-abae-1962a8c8ced0
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/12/2001,12001,4f669905-3e9b-4d60-b76f-8a07ca312751,785d4451-7a81-4bbd-8180-1b20c8627b26
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,2/12/2002,12002,4f669905-3e9b-4d60-b76f-8a07ca312751,3d6bc3a9-9460-4a5c-91ba-499f7b61521b
+790/QĐ-ĐHCNTT,dieu,Điều 13,Thông báo kế hoạch đào tạo ............................................................................................. 12,13-Feb,2013,c67e21bc-b605-4725-bb0c-8954ba6ddbec,5d73ecd2-3ce0-4f8c-997f-ecb22772af2a
+790/QĐ-ĐHCNTT,dieu,Điều 13,Thông báo kế hoạch đào tạo,13-Feb,2013,34cc8de2-661b-4db1-97ec-a9b955192af9,1b59a948-7a3e-41bb-ad1d-5db04f885e79
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/13/2001,13001,5d73ecd2-3ce0-4f8c-997f-ecb22772af2a,9533b7d9-8fd2-4bfc-a9dd-de3434925b07
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/13/2001,13001,1b59a948-7a3e-41bb-ad1d-5db04f885e79,56e142b6-fad1-4a9f-a09a-b71d1cd19dd0
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,2/13/2002,13002,1b59a948-7a3e-41bb-ad1d-5db04f885e79,7d734250-c123-4960-b521-6547b82a1381
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,2/13/2003,13003,1b59a948-7a3e-41bb-ad1d-5db04f885e79,6aaff650-1d26-49e9-a67a-6635c3d9379a
+790/QĐ-ĐHCNTT,dieu,Điều 14,Đăng ký học tập ................................................................................................................ 12,14-Feb,2014,c67e21bc-b605-4725-bb0c-8954ba6ddbec,12736828-7c82-4399-b97a-7097a9013290
+790/QĐ-ĐHCNTT,dieu,Điều 14,Đăng ký học tập,14-Feb,2014,34cc8de2-661b-4db1-97ec-a9b955192af9,730e0f62-1eb0-43f7-9905-c1a411f6f68c
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/14/2001,14001,12736828-7c82-4399-b97a-7097a9013290,3bd3c693-09c8-4963-a7bd-4aee453229c5
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/14/2001,14001,730e0f62-1eb0-43f7-9905-c1a411f6f68c,5ef9d280-420a-4acf-8a32-dcb337950c6c
+790/QĐ-ĐHCNTT,diem,Điểm a),,2/14/1/a,14001.01,5ef9d280-420a-4acf-8a32-dcb337950c6c,9da48725-5e02-48fc-9169-0a853e4ce1b6
+790/QĐ-ĐHCNTT,diem,Điểm b),,2/14/1/b,14001.02,5ef9d280-420a-4acf-8a32-dcb337950c6c,fee6c974-41e1-4bf2-8df1-408e302dd0fe
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,2/14/2002,14002,730e0f62-1eb0-43f7-9905-c1a411f6f68c,8cc5b353-28d0-4212-9503-4cab79bc2504
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,2/14/2003,14003,730e0f62-1eb0-43f7-9905-c1a411f6f68c,40a5dc31-f286-4e83-82c0-f7c64070a13e
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,2/14/2004,14004,730e0f62-1eb0-43f7-9905-c1a411f6f68c,72e6fc6b-79c1-4aac-b6e6-8816fbc2562d
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,2/14/2005,14005,730e0f62-1eb0-43f7-9905-c1a411f6f68c,9d0a5c1b-af59-44e1-8c3e-7d085fa0070a
+790/QĐ-ĐHCNTT,dieu,Điều 15,Trách nhiệm của sinh viên và cố vấn học tập ................................................................... 14,15-Feb,2015,c67e21bc-b605-4725-bb0c-8954ba6ddbec,3cb6b450-6ad0-43cf-b897-061b65d1087a
+790/QĐ-ĐHCNTT,dieu,Điều 15,Trách nhiệm của sinh viên và cố vấn học tập,15-Feb,2015,34cc8de2-661b-4db1-97ec-a9b955192af9,a482ac29-dc22-4449-a4dd-7504f677a716
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/15/2001,15001,3cb6b450-6ad0-43cf-b897-061b65d1087a,d33d510a-0452-4f06-a054-d2e6110a9f90
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/15/2001,15001,a482ac29-dc22-4449-a4dd-7504f677a716,b52ac949-2c3c-495c-9ecb-92bec07cdfcf
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,2/15/2002,15002,a482ac29-dc22-4449-a4dd-7504f677a716,ff59b28d-3689-4ddc-a0ce-919bcf770f81
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,2/15/2003,15003,a482ac29-dc22-4449-a4dd-7504f677a716,5e26e244-bee1-4a9a-ac93-2b769b2ed2b8
+790/QĐ-ĐHCNTT,dieu,Điều 16,Xử lý học vụ ..................................................................................................................... 14,16-Feb,2016,c67e21bc-b605-4725-bb0c-8954ba6ddbec,8f0143d4-4ff9-494e-83eb-a5278d6dfc9f
+790/QĐ-ĐHCNTT,dieu,Điều 16,Xử lý học vụ,16-Feb,2016,34cc8de2-661b-4db1-97ec-a9b955192af9,4f673509-ed22-4525-a021-a878fdb9bd04
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/16/2001,16001,8f0143d4-4ff9-494e-83eb-a5278d6dfc9f,b9331d17-721c-407a-a3af-3879b19c03d0
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/16/2001,16001,4f673509-ed22-4525-a021-a878fdb9bd04,e3fca9eb-daca-43f1-803b-92df787c8261
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,2/16/2002,16002,4f673509-ed22-4525-a021-a878fdb9bd04,797789a4-6821-4285-8f74-c1c3c6c126b4
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,2/16/2003,16003,4f673509-ed22-4525-a021-a878fdb9bd04,dffed013-6a19-4d52-8ab5-375ee553dfc0
+790/QĐ-ĐHCNTT,dieu,Điều 17,"Thôi học, tạm dừng học tập .............................................................................................. 15",17-Feb,2017,c67e21bc-b605-4725-bb0c-8954ba6ddbec,c4a38113-5548-4abc-bfed-86625b00639e
+790/QĐ-ĐHCNTT,dieu,Điều 17,"Thôi học, tạm dừng học tập",17-Feb,2017,34cc8de2-661b-4db1-97ec-a9b955192af9,f07f372e-a760-45df-9c1d-f0e7f166c36b
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/17/2001,17001,c4a38113-5548-4abc-bfed-86625b00639e,d0ddb565-2b94-46d4-8c0a-2a589126686c
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/17/2001,17001,f07f372e-a760-45df-9c1d-f0e7f166c36b,5a6f3151-5bb9-4499-8c8a-2d7aaee39917
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,2/17/2002,17002,f07f372e-a760-45df-9c1d-f0e7f166c36b,15dd7847-ac27-459b-a687-aa3d6ae0a2a4
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,2/17/2003,17003,f07f372e-a760-45df-9c1d-f0e7f166c36b,675e1354-dd0d-4689-a2d4-d906f4993e57
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,2/17/2004,17004,f07f372e-a760-45df-9c1d-f0e7f166c36b,b61aff7f-4b3d-40d9-9bc3-52c8c26d92e3
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,2/17/2005,17005,f07f372e-a760-45df-9c1d-f0e7f166c36b,bbcc2fef-a4af-43e8-b4f8-841a5dbdf669
+790/QĐ-ĐHCNTT,dieu,Điều 18,Học cùng lúc hai chương trình đào tạo ............................................................................. 16,18-Feb,2018,c67e21bc-b605-4725-bb0c-8954ba6ddbec,f4695028-0efa-4d51-a1be-ee035a5fe354
+790/QĐ-ĐHCNTT,dieu,Điều 18,Học cùng lúc hai chương trình đào tạo,18-Feb,2018,34cc8de2-661b-4db1-97ec-a9b955192af9,747258cf-4eef-4e8d-9074-4ecfa514656d
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/18/2001,18001,f4695028-0efa-4d51-a1be-ee035a5fe354,c02901fd-e827-4d88-b48c-715a8b95662f
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/18/2001,18001,747258cf-4eef-4e8d-9074-4ecfa514656d,55b93dc2-caea-4391-a553-100b68b1c473
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,2/18/2002,18002,747258cf-4eef-4e8d-9074-4ecfa514656d,8e4eee60-c839-44b3-8c48-3b9647c05b57
+790/QĐ-ĐHCNTT,diem,Điểm a),,2/18/2/a,18002.01,8e4eee60-c839-44b3-8c48-3b9647c05b57,89d0f4ee-5eaa-4c8c-a735-c15e4867b357
+790/QĐ-ĐHCNTT,diem,Điểm b),,2/18/2/b,18002.02,8e4eee60-c839-44b3-8c48-3b9647c05b57,776a5ac9-ecc1-4d98-87f2-7aa602fddcea
+790/QĐ-ĐHCNTT,diem,Điểm c),,2/18/2/c,18002.03,8e4eee60-c839-44b3-8c48-3b9647c05b57,a7880e56-fce2-4e63-bd09-dab1a29c09a4
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,2/18/2003,18003,747258cf-4eef-4e8d-9074-4ecfa514656d,bce62b1c-3f41-4c6d-95db-37373c985f5f
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,2/18/2004,18004,747258cf-4eef-4e8d-9074-4ecfa514656d,f14d24ca-cf75-4d7a-9103-273d33064ed1
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,2/18/2005,18005,747258cf-4eef-4e8d-9074-4ecfa514656d,1d376ff5-6288-4700-b7b1-942caa14b927
+790/QĐ-ĐHCNTT,khoan,Khoản 6,,2/18/2006,18006,747258cf-4eef-4e8d-9074-4ecfa514656d,9acf0d61-7a43-4545-bb4e-35dd3afcce75
+790/QĐ-ĐHCNTT,dieu,Điều 19,"Điều kiện để chuyển ngành, chuyển chương trình, chuyển trường .................................. 17",19-Feb,2019,c67e21bc-b605-4725-bb0c-8954ba6ddbec,4d283905-f1de-4fab-a20e-c1d6bf75e460
+790/QĐ-ĐHCNTT,dieu,Điều 19,"Điều kiện để chuyển ngành, chuyển chương trình, chuyển trường",19-Feb,2019,34cc8de2-661b-4db1-97ec-a9b955192af9,96cca472-631f-4abf-b113-d35f58fd8ac8
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/19/2001,19001,4d283905-f1de-4fab-a20e-c1d6bf75e460,244a1eba-8146-4df9-8da8-739ac33ce8d3
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,2/19/2001,19001,96cca472-631f-4abf-b113-d35f58fd8ac8,25ebbd03-7e36-4b0c-997b-9e4678760254
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,2/19/2002,19002,96cca472-631f-4abf-b113-d35f58fd8ac8,fe10d8f7-e1af-4e82-a761-09b13fe8e858
+790/QĐ-ĐHCNTT,chuong,Chương 3,,3,3,,f43d287a-8e18-4748-8b0a-14d49827632b
+790/QĐ-ĐHCNTT,chuong,Chương 3,KIỂM TRA VÀ THI HỌC PHẦN,3,3,,225a6488-af81-47bd-9542-10b13f5db7a7
+790/QĐ-ĐHCNTT,dieu,Điều 20,Tổ chức đánh giá môn học ............................................................................................... 18,20-Mar,3020,f43d287a-8e18-4748-8b0a-14d49827632b,05f812a0-82e9-4dde-8e16-0d565aafb497
+790/QĐ-ĐHCNTT,dieu,Điều 20,Tổ chức đánh giá môn học,20-Mar,3020,225a6488-af81-47bd-9542-10b13f5db7a7,727e13c4-f983-4dc3-ad69-a28defc0a5db
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/20/2001,20001,05f812a0-82e9-4dde-8e16-0d565aafb497,7702a91b-67b9-4384-915a-7a6e7c3728b6
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/20/2001,20001,727e13c4-f983-4dc3-ad69-a28defc0a5db,662fbf2a-4299-4308-9598-2a02d0a30312
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,3/20/2002,20002,727e13c4-f983-4dc3-ad69-a28defc0a5db,ecb8f1d2-f4d9-4fb2-8ae1-661a5275981c
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,3/20/2003,20003,727e13c4-f983-4dc3-ad69-a28defc0a5db,c2e81271-9e22-4aac-8e0b-dd95f6e07f17
+790/QĐ-ĐHCNTT,dieu,Điều 21,"Đánh giá kết quả học tập của học phần, học kỳ, năm học, toàn khóa .............................. 18",21-Mar,3021,f43d287a-8e18-4748-8b0a-14d49827632b,07f378ce-751a-4991-a9e8-be93c9e66991
+790/QĐ-ĐHCNTT,dieu,Điều 21,"Đánh giá kết quả học tập của học phần, học kỳ, năm học, toàn khóa",21-Mar,3021,225a6488-af81-47bd-9542-10b13f5db7a7,125883d9-3a0c-4dd8-bb6d-4fa3e2c0d3cc
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/21/2001,21001,07f378ce-751a-4991-a9e8-be93c9e66991,77645f3b-71e1-4015-bca9-107280dca5a0
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/21/2001,21001,125883d9-3a0c-4dd8-bb6d-4fa3e2c0d3cc,d0c94ab2-438c-47cb-963a-f3cfc4e21acd
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,3/21/2002,21002,125883d9-3a0c-4dd8-bb6d-4fa3e2c0d3cc,93204cf3-90ec-43da-ab94-ed2e7c2a66bf
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,3/21/2003,21003,125883d9-3a0c-4dd8-bb6d-4fa3e2c0d3cc,504b4e7d-6342-42e0-a737-cc8609e6eb07
+790/QĐ-ĐHCNTT,dieu,Điều 22,Không hoàn tất học phần .................................................................................................. 19,22-Mar,3022,f43d287a-8e18-4748-8b0a-14d49827632b,e323cda4-e438-4076-a725-844c6a953b1c
+790/QĐ-ĐHCNTT,dieu,Điều 22,Không hoàn tất học phần,22-Mar,3022,225a6488-af81-47bd-9542-10b13f5db7a7,225373dc-fa3c-41d9-99d0-7cc5c268932f
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/22/2001,22001,e323cda4-e438-4076-a725-844c6a953b1c,b359064a-55bd-43b2-bb40-6dda3dad8e04
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/22/2001,22001,225373dc-fa3c-41d9-99d0-7cc5c268932f,b49e0d29-3468-4307-a8ce-f1dfd1e19419
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,3/22/2002,22002,225373dc-fa3c-41d9-99d0-7cc5c268932f,844ab587-04d2-4e64-a8f7-987f7ecd32c6
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,3/22/2003,22003,225373dc-fa3c-41d9-99d0-7cc5c268932f,e1c02976-09dd-40a7-81be-69c7b19e6d54
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,3/22/2004,22004,225373dc-fa3c-41d9-99d0-7cc5c268932f,79bc8218-828b-4ef4-a1e3-a4d1d84e9868
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,3/22/2005,22005,225373dc-fa3c-41d9-99d0-7cc5c268932f,e71435aa-eac8-46ed-8633-67e71836ec50
+790/QĐ-ĐHCNTT,dieu,Điều 23,Điểm Miễn ........................................................................................................................ 19,23-Mar,3023,f43d287a-8e18-4748-8b0a-14d49827632b,e28daa23-476e-45b2-b7d1-fd5850ad00ed
+790/QĐ-ĐHCNTT,dieu,Điều 23,Điểm Miễn,23-Mar,3023,225a6488-af81-47bd-9542-10b13f5db7a7,16f25f14-d2e0-41bd-9238-636acc39835e
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/23/2001,23001,e28daa23-476e-45b2-b7d1-fd5850ad00ed,f341400f-6924-44d7-b1b1-bdb38e4654c6
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/23/2001,23001,16f25f14-d2e0-41bd-9238-636acc39835e,8a177ab7-09b9-418f-8493-6011b003a458
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,3/23/2002,23002,16f25f14-d2e0-41bd-9238-636acc39835e,e754e1e3-bea3-4880-8330-170851b280c6
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,3/23/2003,23003,16f25f14-d2e0-41bd-9238-636acc39835e,5fda0c5e-e5ed-493b-a45c-4a71e27b2ef1
+790/QĐ-ĐHCNTT,dieu,Điều 24,Cách quản lý điểm ............................................................................................................ 20,24-Mar,3024,f43d287a-8e18-4748-8b0a-14d49827632b,dfbea073-7ef2-4308-bd98-cde8c2e499a3
+790/QĐ-ĐHCNTT,dieu,Điều 24,Cách quản lý điểm,24-Mar,3024,225a6488-af81-47bd-9542-10b13f5db7a7,8b688d0b-c2b6-4aba-b775-593997cdd308
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/24/2001,24001,dfbea073-7ef2-4308-bd98-cde8c2e499a3,ace9ca76-973a-4302-9216-7df4ea66b540
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/24/2001,24001,8b688d0b-c2b6-4aba-b775-593997cdd308,0dd62e72-56ae-4950-868b-32cb962b2939
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,3/24/2002,24002,8b688d0b-c2b6-4aba-b775-593997cdd308,ec83fd47-558e-415a-a9c1-a27607610260
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,3/24/2003,24003,8b688d0b-c2b6-4aba-b775-593997cdd308,9366a431-5aef-4460-9e61-24d2a1efb67d
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,3/24/2004,24004,8b688d0b-c2b6-4aba-b775-593997cdd308,c6dd2783-8992-41c8-a2b9-303d2cb114d3
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,3/24/2005,24005,8b688d0b-c2b6-4aba-b775-593997cdd308,e604da0d-02c8-4788-bfc0-217c38d16e91
+790/QĐ-ĐHCNTT,khoan,Khoản 6,,3/24/2006,24006,8b688d0b-c2b6-4aba-b775-593997cdd308,061e1f07-d3ac-43ea-9d89-b5317f4c1947
+790/QĐ-ĐHCNTT,khoan,Khoản 7,,3/24/2007,24007,8b688d0b-c2b6-4aba-b775-593997cdd308,df0178ac-3000-4dcb-bc5c-06d10ab29327
+790/QĐ-ĐHCNTT,khoan,Khoản 8,,3/24/2008,24008,8b688d0b-c2b6-4aba-b775-593997cdd308,0c7b7f9d-3b8f-4be0-8c57-d98288fccf89
+790/QĐ-ĐHCNTT,dieu,Điều 25,Cách tính điểm trung bình ................................................................................................ 21,25-Mar,3025,f43d287a-8e18-4748-8b0a-14d49827632b,40999944-9075-4ca4-bb3f-b4bf4eda1ece
+790/QĐ-ĐHCNTT,dieu,Điều 25,Cách tính điểm trung bình,25-Mar,3025,225a6488-af81-47bd-9542-10b13f5db7a7,6827ba24-f983-4cdf-82f9-729594885b0f
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/25/2001,25001,40999944-9075-4ca4-bb3f-b4bf4eda1ece,0d9e1630-4d15-4482-98e9-c8b7fa6f6c80
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/25/2001,25001,6827ba24-f983-4cdf-82f9-729594885b0f,6c378d6d-c4d1-44cd-95fa-339b8634a06a
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,3/25/2002,25002,6827ba24-f983-4cdf-82f9-729594885b0f,2766ee32-21c6-4027-9ed2-d34dbeedc3a9
+790/QĐ-ĐHCNTT,dieu,Điều 26,Công nhận và chuyển đổi tín chỉ ...................................................................................... 21,26-Mar,3026,f43d287a-8e18-4748-8b0a-14d49827632b,d94f0114-3c4e-4de3-9e70-e4bf24e518ee
+790/QĐ-ĐHCNTT,dieu,Điều 26,Công nhận và chuyển đổi tín chỉ,26-Mar,3026,225a6488-af81-47bd-9542-10b13f5db7a7,54f87a4a-91d1-4753-b9d0-b52323d89114
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/26/2001,26001,d94f0114-3c4e-4de3-9e70-e4bf24e518ee,9e2157db-cb2d-4a32-9f5d-ae68d77884f1
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/26/2001,26001,54f87a4a-91d1-4753-b9d0-b52323d89114,74812745-5ebe-41d6-9764-dd2baaf621e4
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,3/26/2002,26002,54f87a4a-91d1-4753-b9d0-b52323d89114,8d0b5f2a-d2f0-4a8e-b7fd-b2817eddeddd
+790/QĐ-ĐHCNTT,diem,Điểm a),,3/26/2/a,26002.01,8d0b5f2a-d2f0-4a8e-b7fd-b2817eddeddd,95c6e35e-7fb9-45b8-afdc-cc01ebb48697
+790/QĐ-ĐHCNTT,diem,Điểm b),,3/26/2/b,26002.02,8d0b5f2a-d2f0-4a8e-b7fd-b2817eddeddd,0ac432ad-5ba7-485f-876b-53be3b05e6b6
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,3/26/2003,26003,54f87a4a-91d1-4753-b9d0-b52323d89114,eca9fafc-0e1f-467f-a636-945474a377f8
+790/QĐ-ĐHCNTT,diem,Điểm a),,3/26/3/a,26003.01,eca9fafc-0e1f-467f-a636-945474a377f8,de4acc09-d6dc-4dbb-95b2-ee0b687d5fa4
+790/QĐ-ĐHCNTT,diem,Điểm b),,3/26/3/b,26003.02,eca9fafc-0e1f-467f-a636-945474a377f8,7703b971-cd38-4bfc-bd56-0419991491bc
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,3/26/2004,26004,54f87a4a-91d1-4753-b9d0-b52323d89114,5b60021a-af57-498c-b169-24494aee68f8
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,3/26/2005,26005,54f87a4a-91d1-4753-b9d0-b52323d89114,904eac7a-f9cc-4520-ba66-b5db3340c7a9
+790/QĐ-ĐHCNTT,khoan,Khoản 6,,3/26/2006,26006,54f87a4a-91d1-4753-b9d0-b52323d89114,3c303061-9951-4775-8479-283c1c49715e
+790/QĐ-ĐHCNTT,dieu,Điều 27,Cấp bảng điểm .................................................................................................................. 22,27-Mar,3027,f43d287a-8e18-4748-8b0a-14d49827632b,ef9696f1-d009-4abe-96ae-2c1d5d633928
+790/QĐ-ĐHCNTT,dieu,Điều 27,Cấp bảng điểm,27-Mar,3027,225a6488-af81-47bd-9542-10b13f5db7a7,5670d6f6-49f4-42fb-b563-3c2214452195
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/27/2001,27001,ef9696f1-d009-4abe-96ae-2c1d5d633928,981c076d-4eca-4441-92a9-afc3052e7aa5
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,3/27/2001,27001,5670d6f6-49f4-42fb-b563-3c2214452195,57b0f957-3b36-4b06-8c02-37f16218da74
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,3/27/2002,27002,5670d6f6-49f4-42fb-b563-3c2214452195,df3115d8-04fa-499d-b745-f4cce32fe7ed
+790/QĐ-ĐHCNTT,chuong,Chương 4,,4,4,,18af60f7-9140-4f20-ba52-7a73a94a5246
+790/QĐ-ĐHCNTT,chuong,Chương 4,ỨNG DỤNG CÔNG NGHỆ THÔNG TIN TRONG,4,4,,35b27498-9f66-4995-a76c-41e436f8c605
+790/QĐ-ĐHCNTT,dieu,Điều 28,Ứng dụng công nghệ thông tin trong tổ chức đào tạo ...................................................... 23,28-Apr,4028,18af60f7-9140-4f20-ba52-7a73a94a5246,9dcc26e7-e85a-4945-9815-e860d1576f51
+790/QĐ-ĐHCNTT,dieu,Điều 28,Ứng dụng công nghệ thông tin trong tổ chức đào tạo,28-Apr,4028,35b27498-9f66-4995-a76c-41e436f8c605,b54b7d4b-e110-4024-80c3-33b3d016425f
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,4/28/2001,28001,9dcc26e7-e85a-4945-9815-e860d1576f51,8ab7779e-ca7c-4cd5-b8e0-c260a932fd76
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,4/28/2001,28001,b54b7d4b-e110-4024-80c3-33b3d016425f,afef2094-f147-484e-aecc-899cb2919c53
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,4/28/2002,28002,b54b7d4b-e110-4024-80c3-33b3d016425f,1dc7d682-5886-47af-91cb-026722fb0635
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,4/28/2003,28003,b54b7d4b-e110-4024-80c3-33b3d016425f,bc15f34d-2c37-4fdd-917e-2a5dcdad8e65
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,4/28/2004,28004,b54b7d4b-e110-4024-80c3-33b3d016425f,d45dd1a8-a5e7-4429-9005-a0b746ead3d4
+790/QĐ-ĐHCNTT,dieu,Điều 29,Ứng dụng công nghệ thông tin trong quản lý cơ sở dữ liệu đào tạo ................................ 23,29-Apr,4029,18af60f7-9140-4f20-ba52-7a73a94a5246,1d2a094b-4e0e-48e5-915f-33deef280f9b
+790/QĐ-ĐHCNTT,dieu,Điều 29,Ứng dụng công nghệ thông tin trong quản lý cơ sở dữ liệu đào tạo,29-Apr,4029,35b27498-9f66-4995-a76c-41e436f8c605,9d0ef9fd-1001-40e8-98a5-a839294af05c
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,4/29/2001,29001,1d2a094b-4e0e-48e5-915f-33deef280f9b,5e5becf9-99be-4cf3-b31c-d6a2b31e2131
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,4/29/2001,29001,9d0ef9fd-1001-40e8-98a5-a839294af05c,3de898d1-20eb-4c6c-9713-3120f71fc5b7
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,4/29/2002,29002,9d0ef9fd-1001-40e8-98a5-a839294af05c,4283ef82-39c0-40e3-a2c4-b81318325c94
+790/QĐ-ĐHCNTT,dieu,Điều 30,Công bố thông tin ............................................................................................................. 23,30-Apr,4030,18af60f7-9140-4f20-ba52-7a73a94a5246,c5d5f35f-6796-4a75-bc53-509c7be38862
+790/QĐ-ĐHCNTT,dieu,Điều 30,Công bố thông tin,30-Apr,4030,35b27498-9f66-4995-a76c-41e436f8c605,1aca88de-774d-425d-9d0c-a4894ddcc97e
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,4/30/2001,30001,c5d5f35f-6796-4a75-bc53-509c7be38862,0f40befc-0347-4ba1-9529-e30a2d8efd09
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,4/30/2001,30001,1aca88de-774d-425d-9d0c-a4894ddcc97e,d5592d9b-e544-449f-88c0-f3c7f53a4658
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,4/30/2002,30002,1aca88de-774d-425d-9d0c-a4894ddcc97e,953870cf-9e23-449a-b2b6-940043eb2868
+790/QĐ-ĐHCNTT,chuong,Chương 5,,5,5,,0465892a-8376-4f1b-bea7-0e59e7240e23
+790/QĐ-ĐHCNTT,chuong,Chương 5,"THỰC TẬP, KHÓA LUẬN TỐT NGHIỆP VÀ CÔNG",5,5,,abef4358-e9be-40ea-a423-586455f2d98a
+790/QĐ-ĐHCNTT,dieu,Điều 31,"Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp .................................................. 24",31-May,5031,0465892a-8376-4f1b-bea7-0e59e7240e23,b1da951b-3edd-49a9-a575-683dc3c38ad0
+790/QĐ-ĐHCNTT,dieu,Điều 31,"Thực tập, khóa luận tốt nghiệp và chuyên đề tốt nghiệp",31-May,5031,abef4358-e9be-40ea-a423-586455f2d98a,42423195-54e2-461f-aac9-0a9e6fbcbb18
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,5/31/2001,31001,b1da951b-3edd-49a9-a575-683dc3c38ad0,199bf1fd-03f6-4496-bef9-63dd95aa74f3
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,5/31/2001,31001,42423195-54e2-461f-aac9-0a9e6fbcbb18,5be18317-6694-4397-b9e8-4e037b717f91
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,5/31/2002,31002,42423195-54e2-461f-aac9-0a9e6fbcbb18,43f50d82-e81f-4276-aafd-0dff8a0aee18
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,5/31/2003,31003,42423195-54e2-461f-aac9-0a9e6fbcbb18,f13d5314-2bd5-4c1c-9932-3ce301bfd77f
+790/QĐ-ĐHCNTT,dieu,Điều 32,"Chấm thực tập, khóa luận tốt nghiệp ................................................................................ 25",May-32,5032,0465892a-8376-4f1b-bea7-0e59e7240e23,ca3181ed-2898-484f-a10c-b1e6b754e927
+790/QĐ-ĐHCNTT,dieu,Điều 32,"Chấm thực tập, khóa luận tốt nghiệp",May-32,5032,abef4358-e9be-40ea-a423-586455f2d98a,e16f79ac-4607-43a5-bbef-c2b5fe2c3f60
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,5/32/1,32001,ca3181ed-2898-484f-a10c-b1e6b754e927,5fa981d5-7c06-404d-89a1-7e4ea8be95e6
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,5/32/1,32001,e16f79ac-4607-43a5-bbef-c2b5fe2c3f60,821824df-6b37-4654-8f07-e0695e2a997c
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,5/32/2,32002,e16f79ac-4607-43a5-bbef-c2b5fe2c3f60,8cd6ffe7-fe89-47d0-9ab6-aa8377827dba
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,5/32/3,32003,e16f79ac-4607-43a5-bbef-c2b5fe2c3f60,dd7714ff-587c-4158-bd6d-11f7b761fa94
+790/QĐ-ĐHCNTT,dieu,Điều 33,Điều kiện xét tốt nghiệp và công nhận tốt nghiệp ............................................................ 25,May-33,5033,0465892a-8376-4f1b-bea7-0e59e7240e23,4a5b8f97-4f56-433b-b8ea-df40de2f879b
+790/QĐ-ĐHCNTT,dieu,Điều 33,Điều kiện xét tốt nghiệp và công nhận tốt nghiệp,May-33,5033,abef4358-e9be-40ea-a423-586455f2d98a,67372b29-d10c-4def-8824-dbb5019b9c39
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,5/33/1,33001,4a5b8f97-4f56-433b-b8ea-df40de2f879b,d4e6a776-4b18-4473-a742-29c18923516e
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,5/33/1,33001,67372b29-d10c-4def-8824-dbb5019b9c39,9ca69994-d66e-4a87-b1af-b82da98b83c8
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,5/33/2,33002,67372b29-d10c-4def-8824-dbb5019b9c39,2c1b6260-40be-4d11-a1dc-b2f7adbbc2f9
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,5/33/3,33003,67372b29-d10c-4def-8824-dbb5019b9c39,31d0bde4-a24b-41d1-bd2e-e22ab5fb7ce6
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,5/33/4,33004,67372b29-d10c-4def-8824-dbb5019b9c39,25fe9470-ee4c-4bb8-89b6-c9377d18242c
+790/QĐ-ĐHCNTT,dieu,Điều 34,Cấp bằng tốt nghiệp .......................................................................................................... 26,May-34,5034,0465892a-8376-4f1b-bea7-0e59e7240e23,eb98fd4d-b990-46a3-925b-10ccf009cf38
+790/QĐ-ĐHCNTT,dieu,Điều 34,Cấp bằng tốt nghiệp,May-34,5034,abef4358-e9be-40ea-a423-586455f2d98a,db641dec-aafe-4e2b-9b7d-3cb69a4b54e9
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,5/34/1,34001,eb98fd4d-b990-46a3-925b-10ccf009cf38,e3987101-ef53-4228-9c31-0dbdc4f75738
+790/QĐ-ĐHCNTT,khoan,Khoản 1,,5/34/1,34001,db641dec-aafe-4e2b-9b7d-3cb69a4b54e9,8a8392ff-03a1-44ce-b548-c55b78240ea5
+790/QĐ-ĐHCNTT,khoan,Khoản 2,,5/34/2,34002,db641dec-aafe-4e2b-9b7d-3cb69a4b54e9,f5718e15-5218-4ae5-b7cb-ffbe7680b13e
+790/QĐ-ĐHCNTT,khoan,Khoản 3,,5/34/3,34003,db641dec-aafe-4e2b-9b7d-3cb69a4b54e9,8120307c-a47b-46ff-8f7b-77bc568b8a32
+790/QĐ-ĐHCNTT,khoan,Khoản 4,,5/34/4,34004,db641dec-aafe-4e2b-9b7d-3cb69a4b54e9,b785a4ff-2edc-470b-8ab0-09c904340815
+790/QĐ-ĐHCNTT,khoan,Khoản 5,,5/34/5,34005,db641dec-aafe-4e2b-9b7d-3cb69a4b54e9,9031f519-a56c-426c-a540-91fbe767ffd5
+790/QĐ-ĐHCNTT,khoan,Khoản 6,,5/34/6,34006,db641dec-aafe-4e2b-9b7d-3cb69a4b54e9,68652ef3-c18b-46c3-b837-6c6565f9ee9e
+790/QĐ-ĐHCNTT,chuong,Chương 6,,6,6,,ef0d34fd-8d9a-4750-8c72-3575ac1c0374
+790/QĐ-ĐHCNTT,chuong,Chương 6,ĐIỀU KHOẢN THI HÀNH,6,6,,c02a4031-66f4-49b8-9091-9d6e99226fe9
