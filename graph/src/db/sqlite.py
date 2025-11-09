@@ -54,14 +54,14 @@ def extract_random_diem_from_sqlite(cursor, include_parent=True):
 
     return results[::-1]
 
-def extract_random_from_sqlite(cursor):
-    cursor.execute("SELECT * FROM laws ORDER BY RANDOM() LIMIT 1")
-    row = cursor.fetchone()
-    if not row:
-        return None
+def extract_all_laws_from_sqlite(cursor):
+    cursor.execute("SELECT * FROM laws")
+    rows = cursor.fetchall()
 
     columns = [col[0] for col in cursor.description]
-    return dict(zip(columns, row))
+    results = [dict(zip(columns, row)) for row in rows]
+
+    return results
 
 def extract_all_from_sqlite(cursor, table_name):
     cursor.execute(f"SELECT * FROM {table_name}")
