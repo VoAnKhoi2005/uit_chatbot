@@ -1,0 +1,17 @@
+{
+    "abbreviations": {
+        "ko": "không",
+        "k": "không",
+        "dc": "được",
+        "sp": "sản phẩm",
+        "ad": "admin",
+        "shop": "cửa hàng",
+        "ntn": "như thế nào",
+        "bt": "bình thường"
+    },
+    "punctuation": {
+        "?": " [DẤU_HỎI] ",
+        "!": " [DẤU_CHẤM_THAN] ",
+        ".": " [DẤU_CHẤM] "
+    }
+}
