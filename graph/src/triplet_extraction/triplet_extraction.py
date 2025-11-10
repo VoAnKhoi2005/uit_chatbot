@@ -16,7 +16,7 @@ def process_sentence(df):
     verb_deprel_tag = ['root', 'vmod', 'nmod', 'x', 'conj', 'prd', 'tpc', 'dep']
     remove_POS_tag = ["R", "CH", "E", "L", "M"]
     coord_POS_tag = ["C"]
-    coord_words = {"và", "hoặc", ",", ";"}
+    coord_words = {"và", "hoặc", ",", ";", "-"}
 
     # Tiền xử lý
     token_ids = sorted(list(data_dict.keys()))

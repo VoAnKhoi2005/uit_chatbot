@@ -1,4 +1,6 @@
 import os
+
+import pymongo
 from bson import ObjectId
 from dotenv import load_dotenv
 from pymongo import MongoClient
@@ -51,19 +53,26 @@ class Relation:
 
 
 class Triplet:
-    def __init__(self, subject_id, relation_id, object_id, _id=None):
+    def __init__(self, subject_id, relation_id, object_id, subject_name=None, relation_name=None, object_name=None, _id=None):
         self.id = _id or ObjectId()
         self.subject_id = subject_id
         self.relation_id = relation_id
         self.object_id = object_id
+        self.subject_name = subject_name
+        self.relation_name = relation_name
+        self.object_name = object_name
 
     def to_dict(self):
         return {
             "_id": self.id,
             "subject_id": self.subject_id,
             "relation_id": self.relation_id,
-            "object_id": self.object_id
+            "object_id": self.object_id,
+            "subject_name": self.subject_name,
+            "relation_name": self.relation_name,
+            "object_name": self.object_name
         }
+
 
 
 def init_mongo():
@@ -161,7 +170,7 @@ def get_or_create_relation(relations_collection, name, document_id, document_num
 
 
 def insert_triplet_batch_mongo(db, triplets_list, metadata, synonym_dict=None):
-    """Insert batch of triplets into MongoDB"""
+    """Insert batch of triplets into MongoDB with concept/relation names"""
     concepts_collection = db["concepts"]
     relations_collection = db["relations"]
     triplets_collection = db["triplets"]
@@ -179,23 +188,25 @@ def insert_triplet_batch_mongo(db, triplets_list, metadata, synonym_dict=None):
         if not c1_name or not r_name or not c2_name:
             continue
 
-        # Get or create concept and relation IDs with synonym support
+        # Get or create concept and relation IDs
         subject_id = get_or_create_concept(concepts_collection, c1_name, document_id, document_number, synonym_dict)
         relation_id = get_or_create_relation(relations_collection, r_name, document_id, document_number, synonym_dict)
         object_id = get_or_create_concept(concepts_collection, c2_name, document_id, document_number, synonym_dict)
 
-        # Create triplet
+        # Create triplet with names
         triplet_doc = {
             "_id": ObjectId(),
             "subject_id": subject_id,
             "relation_id": relation_id,
             "object_id": object_id,
+            "subject_name": c1_name,
+            "relation_name": r_name,
+            "object_name": c2_name,
             "document_id": document_id,
             "document_number": document_number
         }
         triplets_to_insert.append(triplet_doc)
 
-    # Insert all triplets at once
     if triplets_to_insert:
         triplets_collection.insert_many(triplets_to_insert)
 
@@ -215,3 +226,41 @@ def create_indexes(db):
     db["concepts"].create_index("synonym")
     db["relations"].create_index("name")
     db["relations"].create_index("synonym")
+
+def update_existing_triplets_with_names(db):
+    concepts_collection = db["concepts"]
+    relations_collection = db["relations"]
+    triplets_collection = db["triplets"]
+
+    triplets = triplets_collection.find({})
+
+    bulk_updates = []
+
+    for triplet in triplets:
+        subject_id = triplet.get("subject_id")
+        object_id = triplet.get("object_id")
+        relation_id = triplet.get("relation_id")
+
+        # Fetch names from concepts/relations
+        subject_doc = concepts_collection.find_one({"_id": subject_id})
+        object_doc = concepts_collection.find_one({"_id": object_id})
+        relation_doc = relations_collection.find_one({"_id": relation_id})
+
+        update_fields = {}
+        if subject_doc:
+            update_fields["subject_name"] = subject_doc["name"]
+        if object_doc:
+            update_fields["object_name"] = object_doc["name"]
+        if relation_doc:
+            update_fields["relation_name"] = relation_doc["name"]
+
+        if update_fields:
+            bulk_updates.append(
+                pymongo.UpdateOne({"_id": triplet["_id"]}, {"$set": update_fields})
+            )
+
+    if bulk_updates:
+        result = triplets_collection.bulk_write(bulk_updates)
+        print(f"Updated {result.modified_count} triplets with names.")
+    else:
+        print("No triplets needed updating.")
