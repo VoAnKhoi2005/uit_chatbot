@@ -1,129 +1,268 @@
-from itertools import product
-from graph.src.triplet_extraction import load_stopwords, is_valid_term
+import pandas as pd
 
-def process_sentence(df):
-    data_dict = df.set_index('id').to_dict(orient='index')
 
-    if data_dict[1]['deprel'] == 'root':
+def parse_dataframe_to_tokens(df):
+    """
+    Convert DataFrame to list of token tuples.
+
+    Args:
+        df: DataFrame with columns [id, word, pos, head, deprel]
+
+    Returns:
+        List of tuples: [(id, word, pos, head, deprel), ...]
+    """
+    tokens = []
+    for _, row in df.iterrows():
+        token_id = int(row['id'])
+        word = str(row['word'])
+        pos = str(row['pos'])
+        head = int(row['head'])
+        deprel = str(row['deprel'])
+        tokens.append((token_id, word, pos, head, deprel))
+
+    return tokens
+
+
+def split_sentence_np_vp(tokens):
+    """
+    Split Vietnamese sentence into NP (Noun Phrase) and VP (Verb Phrase) using head and deprel.
+
+    Args:
+        tokens: List of tuples [(id, word, pos, head, deprel), ...]
+
+    Returns:
+        tuple: (np_tokens, vp_tokens) where each is a list of (id, word, pos, head, deprel)
+    """
+    if not tokens:
+        return [], []
+
+    # Find the root verb (head = 0 and deprel = 'root')
+    root_index = -1
+    root_id = None
+
+    for i, (token_id, word, pos, head, deprel) in enumerate(tokens):
+        if deprel == 'root' and head == 0:
+            root_index = i
+            root_id = token_id
+            break
+
+    if root_index == -1:
+        # Fallback: find first verb
+        for i, (token_id, word, pos, head, deprel) in enumerate(tokens):
+            if pos == 'V':
+                root_index = i
+                root_id = token_id
+                break
+
+    if root_index != -1 and root_id is not None:
+        np_tokens = []
+        vp_tokens = []
+
+        # Build dependency tree to find all children
+        def get_all_descendants(node_id, tokens):
+            """Get all tokens that depend on node_id (recursively)"""
+            descendants = []
+            for token in tokens:
+                if token[3] == node_id:  # head == node_id
+                    descendants.append(token)
+                    descendants.extend(get_all_descendants(token[0], tokens))
+            return descendants
+
+        for i, token in enumerate(tokens):
+            token_id, word, pos, head, deprel = token
+
+            # NP: tokens before root that don't depend on root
+            # Typically subject and its modifiers
+            if i < root_index:
+                # Check if this token or its head eventually leads to root
+                current_head = head
+                leads_to_root = False
+                visited = set()
+
+                while current_head != 0 and current_head not in visited:
+                    visited.add(current_head)
+                    if current_head == root_id:
+                        leads_to_root = True
+                        break
+                    # Find the head's head
+                    for t in tokens:
+                        if t[0] == current_head:
+                            current_head = t[3]
+                            break
+                    else:
+                        break
+
+                # If it doesn't directly depend on root verb, it's likely part of NP
+                if not leads_to_root or deprel in ['sub', 'nsubj']:
+                    np_tokens.append(token)
+                else:
+                    vp_tokens.append(token)
+            else:
+                # VP: root and everything at or after root
+                vp_tokens.append(token)
+
+        return np_tokens, vp_tokens
+
+    # Fallback: split at midpoint
+    mid = len(tokens) // 2
+    return tokens[:mid], tokens[mid:]
+
+
+def extract_main_subject(np_tokens):
+    """
+    Extract main subject from Vietnamese Noun Phrase using POS and deprel tags.
+
+    Args:
+        np_tokens: List of tuples [(id, word, pos, head, deprel), ...]
+
+    Returns:
+        str: Main subject of the sentence (or None if not found)
+    """
+    if not np_tokens:
         return None
 
-    # Khởi tạo
-    triplets = []
-    concept1_groups = [[]]
-    concept2_groups = [[]]
-    relation_groups = [[]]
+    # Priority 1: Find token with deprel 'sub' or 'nsubj' (subject)
+    for token_id, word, pos, head, deprel in np_tokens:
+        if deprel in ['sub', 'nsubj', 'nsubj:pass']:
+            return word
 
-    verb_deprel_tag = ['root', 'vmod', 'nmod', 'x', 'conj', 'prd', 'tpc', 'dep']
-    remove_POS_tag = ["R", "CH", "E", "L", "M"]
-    coord_POS_tag = ["C"]
-    coord_words = {"và", "hoặc", ",", ";", "-"}
+    # Priority 2: Find the head noun (noun that other nouns modify)
+    noun_heads = set()
+    for token_id, word, pos, head, deprel in np_tokens:
+        if pos == 'N' and deprel in ['nmod', 'compound']:
+            noun_heads.add(head)
 
-    # Tiền xử lý
-    token_ids = sorted(list(data_dict.keys()))
-    filtered_token_ids = []
-    for token_id in token_ids:
-        info = data_dict[token_id]
+    for token_id, word, pos, head, deprel in np_tokens:
+        if token_id in noun_heads and pos == 'N':
+            return word
 
-        # Skip token if POS matches remove_POS_tag and not root
-        if any(info['pos'].startswith(prefix) for prefix in remove_POS_tag) and info['deprel'] != 'root':
-            continue
+    # Priority 3: Find the first noun
+    for token_id, word, pos, head, deprel in np_tokens:
+        if pos == 'N':
+            return word
 
-        filtered_token_ids.append(token_id)
+    # Priority 4: Look for pronouns
+    for token_id, word, pos, head, deprel in np_tokens:
+        if pos == 'P':
+            return word
 
-    token_set = set(filtered_token_ids)
-    subjects_of_verbs = {}
-    for token_id in filtered_token_ids:
-        info = data_dict[token_id]
-        if info['deprel'] == 'sub':
-            head_id = info['head']
-            if head_id in token_set:
-                subjects_of_verbs.setdefault(head_id, []).append(token_id)
+    # Fallback: return first token
+    return np_tokens[0][1] if np_tokens else None
 
-    def ids_to_string(id_list):
-        id_list = sorted(set(id_list))
-        return " ".join(data_dict[tid]['word'] for tid in id_list if tid in data_dict)
 
-    def is_coord_word(info):
-        return info["deprel"] != "root" and (info["word"].lower() in coord_words or any(info['pos'].startswith(prefix) for prefix in coord_POS_tag))
+def extract_main_verb(vp_tokens):
+    """
+    Extract main verb from Vietnamese Verb Phrase using POS and deprel tags.
 
-    last_was_coord = False
-    for token_id in filtered_token_ids:
-        info = data_dict[token_id]
+    Args:
+        vp_tokens: List of tuples [(id, word, pos, head, deprel), ...]
 
-        # Logic từ nối
-        if is_coord_word(info):
-            last_was_coord = True
-            continue
+    Returns:
+        str: Main verb of the sentence (or None if not found)
+    """
+    if not vp_tokens:
+        return None
 
-        is_relation = False
+    # Priority 1: Find the root verb (head = 0, deprel = 'root')
+    for token_id, word, pos, head, deprel in vp_tokens:
+        if deprel == 'root' and head == 0 and pos == 'V':
+            return word
 
-        # 'vmod' (bắt buộc phải là 'V')
-        is_vmod_continuation = (
-            info['pos'].startswith("V")
-            and info['deprel'] == "vmod"
-            and any(g for g in relation_groups if g)
-        )
+    # Priority 2: Find any root
+    for token_id, word, pos, head, deprel in vp_tokens:
+        if deprel == 'root' and head == 0:
+            return word
 
-        # 'relation' khác (bắt buộc phải là 'V')
-        prev_is_n = (token_id - 1 in token_set and data_dict[token_id - 1]['pos'].startswith("N"))
-        next_is_n = (token_id + 1 in token_set and data_dict[token_id + 1]['pos'].startswith("N"))
+    # Priority 3: Find the first verb that is not a modifier
+    for token_id, word, pos, head, deprel in vp_tokens:
+        if pos == 'V' and deprel not in ['vmod', 'aux']:
+            return word
 
-        is_valid_relation_type = (
-            info['pos'].startswith("V")
-            and info['deprel'] in verb_deprel_tag
-            and info['deprel'] not in ("vmod", "root")
-            and (info['deprel'] != "nmod" or (prev_is_n and next_is_n))
-        )
+    # Priority 4: Find any verb
+    for token_id, word, pos, head, deprel in vp_tokens:
+        if pos == 'V':
+            return word
 
-        # 'root' (Có thể là 'V' hoặc 'R')
-        is_valid_root = False
-        if info['deprel'] == "root":
-            is_valid_root = True
+    # Fallback: return first token
+    return vp_tokens[0][1] if vp_tokens else None
 
-        if is_vmod_continuation or is_valid_relation_type or is_valid_root:
-            is_relation = True
-        target_groups = None
 
-        if is_relation:
-            if any(g for g in concept2_groups if g):
-                # Hoàn thành triplet cũ
-                for c1g, rg, c2g in product(concept1_groups, relation_groups, concept2_groups):
-                    triplet = (ids_to_string(c1g), ids_to_string(rg), ids_to_string(c2g))
-                    if triplet not in triplets and c1g and rg and c2g:
-                        triplets.append(triplet)
+def extract_object(vp_tokens):
+    """
+    Extract object from Vietnamese Verb Phrase using POS and deprel tags.
 
-                concept1_groups = concept2_groups[:]
-                concept2_groups = [[]]
-                relation_groups = [[]]
+    Args:
+        vp_tokens: List of tuples [(id, word, pos, head, deprel), ...]
 
-            target_groups = relation_groups
-        else:
-            # Nó là một Concept
-            if any(g for g in relation_groups if g):
-                target_groups = concept2_groups
-            else:
-                target_groups = concept1_groups
+    Returns:
+        str: Object of the sentence (or None if not found)
+    """
+    if not vp_tokens:
+        return None
 
-        if last_was_coord:
-            # Tạo nhóm mới
-            if target_groups is not None:
-                target_groups.append([token_id])
-            last_was_coord = False
-        else:
-            # Thêm vào nhóm cuối
-            if target_groups is not None:
-                if not target_groups or not target_groups[-1]:
-                     target_groups.append([token_id])
-                else:
-                     target_groups[-1].append(token_id)
+    # Find the root verb first
+    root_id = None
+    for token_id, word, pos, head, deprel in vp_tokens:
+        if deprel == 'root' and head == 0:
+            root_id = token_id
+            break
 
-    for c1g, rg, c2g in product(concept1_groups, relation_groups, concept2_groups):
-        if c1g and rg and c2g:
-            triplet = (
-                ids_to_string(c1g),
-                ids_to_string(rg),
-                ids_to_string(c2g)
-            )
-            if triplet not in triplets:
-                triplets.append(triplet)
-    return triplets
+    if root_id is None and vp_tokens:
+        root_id = vp_tokens[0][0]
+
+    # Priority 1: Find direct object (dobj, obj) that depends on root
+    for token_id, word, pos, head, deprel in vp_tokens:
+        if head == root_id and deprel in ['dobj', 'obj']:
+            return word
+
+    # Priority 2: Find noun in prepositional phrase (pob - prepositional object)
+    # that is close to the root
+    for token_id, word, pos, head, deprel in vp_tokens:
+        if deprel == 'pob' and pos == 'N':
+            # Check if this pob's head is close to root
+            for t_id, t_word, t_pos, t_head, t_deprel in vp_tokens:
+                if t_id == head and t_head == root_id:
+                    return word
+
+    # Priority 3: Find verb modifier (vmod) that is a noun directly under root
+    for token_id, word, pos, head, deprel in vp_tokens:
+        if head == root_id and deprel == 'vmod' and pos == 'N':
+            return word
+
+    # Priority 4: Find any noun that directly depends on the root verb
+    for token_id, word, pos, head, deprel in vp_tokens:
+        if head == root_id and pos == 'N':
+            return word
+
+    # Priority 5: Find any prepositional object (pob) that is a noun
+    for token_id, word, pos, head, deprel in vp_tokens:
+        if deprel == 'pob' and pos == 'N':
+            return word
+
+    # Priority 6: Find any noun in VP
+    for token_id, word, pos, head, deprel in vp_tokens:
+        if pos == 'N':
+            return word
+
+    return None
+
+
+def process_sentence(df):
+    # Convert DataFrame to token list
+    tokens = parse_dataframe_to_tokens(df)
+
+    # Split into NP and VP
+    np_tokens, vp_tokens = split_sentence_np_vp(tokens)
+
+    # Extract components
+    subject = extract_main_subject(np_tokens)
+    verb = extract_main_verb(vp_tokens)
+    obj = extract_object(vp_tokens)
+
+    result = {
+        'subject': subject,
+        'verb': verb,
+        'object': obj
+    }
+
+    return result

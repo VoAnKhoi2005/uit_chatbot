@@ -7,6 +7,7 @@ def clean_text(text: str) -> str:
     text = re.sub(r"\s+", " ", text)                     # loại bỏ khoảng trắng thừa
     text = re.sub(r"[!?]+", "", text)                    # loại bỏ dấu !, ?
     text = text.replace('"', '')                         # loại bỏ tất cả dấu nháy kép
+    text = re.sub(r"[^0-9a-zA-ZÀ-Ỹà-ỹđĐ\s\.\,\:\;\-\/]", " ", text)
     return text.strip().lower()
 
 
