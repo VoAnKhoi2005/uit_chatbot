@@ -1,0 +1,554 @@
+quy_chế -> áp_dụng -> đơn_vị cá_nhân liên_quan
+đơn_vị cá_nhân liên_quan -> đào_tạo -> hệ đại_học
+chương_trình -> dựa -> chương_trình trường đại_học thế_giới
+chương_trình trường đại_học thế_giới -> giảng_dạy -> ngôn_ngữ chương_trình
+chương_trình đào_tạo ngành đào_tạo trường -> xây_dựng phù_hợp -> quy_định hiện_hành bộ giáo_dục
+đầu học_kỳ trường -> có -> trách_nhiệm thông_báo sinh_viên thời_khoá_biểu giảng_dạy
+trách_nhiệm thông_báo sinh_viên thời_khoá_biểu giảng_dạy -> học_tập -> học_kỳ
+trường -> có -> trách_nhiệm
+trách_nhiệm -> thông_báo -> sinh_viên danh_mục học_phần số_lượng tín_chỉ
+trách_nhiệm -> thông_báo -> điều_kiện đăng_ký
+sinh_viên danh_mục học_phần số_lượng tín_chỉ -> học -> học_phần dự_kiến học_kỳ
+điều_kiện đăng_ký -> học -> học_phần dự_kiến học_kỳ
+trường -> có -> trách_nhiệm
+trách_nhiệm -> thông_báo -> sinh_viên lớp_học dự_kiến
+sinh_viên lớp_học dự_kiến -> tổ_chức -> học_phần
+sinh_viên lớp_học dự_kiến -> tổ_chức -> thời_khoá_biểu lớp_học
+chương_trình ngành ngành -> gồm -> nội_dung chương_trình
+nội_dung chương_trình -> đào_tạo -> ngành
+nội_dung chương_trình -> đào_tạo -> môn_học bổ_sung khối_lượng tín_chỉ
+môn_học bổ_sung -> thể_hiện -> bảng điểm
+bảng điểm -> cấp -> bằng tốt_nghiệp
+việc tổ_chức -> quản_lý đào_tạo thực_hiện liên_thông -> giữa khoa bộ_môn trường
+việc tổ_chức -> quản_lý đào_tạo thực_hiện liên_thông -> giữa cơ_sở đào_tạo đhqg-hcm
+sinh_viên năm thứ k -> xác_định dựa -> tín_chỉ tích_luỹ
+khoá học -> là -> thời_gian thiết_kế sinh_viên
+thời_gian thiết_kế sinh_viên -> hoàn_thành -> chương_trình giáo_dục đại_học ngành chuyên_môn
+thời_gian -> đào_tạo -> văn_bằng liên_thông
+thời_gian -> đào_tạo -> văn_bằng
+văn_bằng liên_thông -> xác_định -> cơ_sở học_phần
+văn_bằng liên_thông -> xác_định -> khối_lượng tích_luỹ quy_định chương_trình
+văn_bằng -> xác_định -> cơ_sở học_phần
+văn_bằng -> xác_định -> khối_lượng tích_luỹ quy_định chương_trình
+sinh_viên -> phải làm -> đơn đăng_ký
+đơn đăng_ký -> thi -> học_phần thời_gian
+đơn đăng_ký -> thi -> học_kỳ tiếp_theo có điểm
+sinh_viên đăng_ký thi học_kỳ tiếp_theo điểm i -> điều_chỉnh thành -> điểm
+chương_trình -> liên_kết -> giữa trường cơ_sở liên_kết
+giữa trường cơ_sở liên_kết -> đào_tạo -> ngoài nước
+ngoài nước -> xây_dựng -> cơ_sở quy_định chương_trình đào_tạo đhqg-hcm
+ngoài nước -> xây_dựng -> nội_dung thoả_thuận
+sinh_viên -> chuyển -> chương_trình
+chương_trình -> sang -> chương_trình đào_tạo
+chương_trình đào_tạo -> công_nhận chuyển_đổi -> tín_chỉ nguyên_tắc khoản điều
+khối kiến_thức -> có -> nhóm học_phần
+nhóm học_phần chọn -> gồm -> học_phần
+học_phần -> chứa_đựng -> nội_dung kiến_thức
+học_phần -> chứa_đựng -> sinh_viên
+nội_dung kiến_thức -> chọn -> hướng chuyên_môn
+sinh_viên -> chọn -> hướng chuyên_môn
+hoạt_động -> ứng_dụng -> công_nghệ_thông_tin
+công_nghệ_thông_tin -> quản_lý bao_gồm quản_lý -> công_văn giảng_viên phòng học cơ_sở vật_chất
+công_nghệ_thông_tin -> quản_lý bao_gồm quản_lý -> hồ_sơ sinh_viên
+sinh_viên -> đề_nghị -> trường
+trường -> cấp -> bảng điểm
+sinh_viên -> thực_hiện -> hướng_dẫn phòng
+hướng_dẫn phòng -> đào_tạo -> đại_học
+học_phần tích_luỹ -> là -> học_phần sinh_viên
+học_phần sinh_viên -> có -> kết_quả tổng_kết điểm trở
+học_phần bắt_buộc -> là -> học_phần sinh_viên phải
+học_phần sinh_viên phải -> học -> ngành
+học_phần sinh_viên phải -> học -> chuyên_ngành chọn
+học_phần sinh_viên phải -> tích_luỹ -> ngành
+học_phần sinh_viên phải -> tích_luỹ -> chuyên_ngành chọn
+học_phần chọn -> là -> học_phần sinh_viên đăng_ký
+học_phần sinh_viên đăng_ký -> học tuỳ -> nguyện_vọng
+học_phần -> là -> học_phần giảng_dạy ngành quy_định bộ giáo_dục
+học_phần -> là -> học_phần
+học_phần -> bắt_buộc -> sinh_viên phải
+sinh_viên phải -> học học -> học_phần liên_quan
+học_phần -> là -> học_phần sinh_viên phải
+học_phần sinh_viên phải -> đăng_ký -> lúc
+học_phần thay_thế -> là -> học_phần
+học_phần -> có -> thời_lượng học_phần tổ_chức
+học_phần học -> là -> học_phần sinh_viên phải
+học_phần sinh_viên phải -> đăng_ký đạt -> điểm yêu_cầu
+học_phần học cải_thiện -> là -> học_phần sinh_viên đạt điểm
+học_phần sinh_viên đạt điểm -> muốn đăng_ký học nâng -> kết_quả
+học_phần điều_kiện -> là -> học_phần sinh_viên phải
+học_phần sinh_viên phải -> học -> điểm
+học_phần sinh_viên phải -> tính -> điểm
+học_phần tài_năng -> là -> học_phần tăng_cường
+học_phần tăng_cường -> tương_tác -> khả_năng sáng_tạo sinh_viên
+học_phần tăng_cường -> phát_triển -> khả_năng sáng_tạo sinh_viên
+tín_chỉ -> tính bao_gồm -> tín_chỉ đăng_ký trường
+tín_chỉ -> tính bao_gồm -> cơ_sở đào_tạo
+sinh_viên đăng_ký học học_kỳ -> phải đảm_bảo -> tín_chỉ
+sinh_viên -> có -> điểm
+điểm -> trở -> phép
+phép -> đăng_ký -> tín_chỉ
+sinh_viên -> phải học -> tín_chỉ chương_trình đào_tạo
+tín_chỉ chương_trình đào_tạo -> phải tuân -> quy_định tín_chỉ
+sinh_viên -> đăng_ký -> học_phần
+học_phần -> huỷ đăng_ký -> học_phần tín_chỉ học học_kỳ
+sinh_viên -> là -> thí_sinh
+thí_sinh -> trúng_tuyển -> hệ
+hệ -> hoàn_tất -> thủ_tục nhập_học quy_định của_trường
+trường -> tổ_chức đào_tạo -> phương_thức tập_trung toàn thời_gian sinh_viên hệ
+hoạt_động giảng_dạy -> thực_hiện -> trường
+hoạt_động giảng_dạy -> thực_hiện -> cơ_sở trường
+trường -> ký -> hợp_đồng liên_kết
+cơ_sở trường -> ký -> hợp_đồng liên_kết
+sinh_viên hệ -> có -> mã_số quy_định của_trường
+sinh_viên -> phải chấp_hành -> quy_chế hiện_hành công_tác sinh_viên trường
+quy_chế hiện_hành công_tác sinh_viên trường -> hưởng -> chính_sách dành sinh_viên hệ
+bằng -> cấp -> sinh_viên
+sinh_viên -> ghi -> nội_dung trên bằng
+sinh_viên -> buộc thôi học -> quy_định
+quy_định -> học_tập -> thời_gian học
+điểm i điểm m điểm bl -> tính -> điểm học_kỳ điểm trung_bình_cộng
+điểm i điểm m điểm bl -> tính -> điểm trung_bình_cộng tích_luỹ
+thời_gian dừng học_tập -> tính -> thời_gian hoàn_thành khoá học
+trường -> có -> trách_nhiệm
+trách_nhiệm -> cấp -> giấy
+giấy -> chứng_nhận -> kết_quả môn_học sinh_viên sinh_viên
+kết_quả môn_học sinh_viên sinh_viên -> hoàn_tất -> quá_trình học_tập
+sinh_viên -> chuyển -> trường
+trường -> có -> điều_kiện
+thời_gian phép học sinh_viên -> chuyển -> trường
+trường -> là -> thời_gian
+thời_gian -> hoàn_thành -> khoá học quy_định
+việc -> quản_lý -> hồ_sơ sinh_viên
+học_phí sinh_viên -> xác_định -> thời_gian học
+học_phí sinh_viên -> xác_định -> chương_trình đào_tạo
+học_phí sinh_viên -> xác_định -> sinh_viên
+thời_gian học -> phải đóng -> học_phí quy_định chương_trình
+chương_trình đào_tạo -> phải đóng -> học_phí quy_định chương_trình
+sinh_viên -> phải đóng -> học_phí quy_định chương_trình
+sinh_viên -> phải làm -> đơn xác_nhận
+đơn xác_nhận -> xem_xét -> điểm học_phần xác_định
+đơn xác_nhận -> xem_xét -> chương_trình
+điểm học_phần xác_định -> đào_tạo -> đại_học
+chương_trình -> đào_tạo -> đại_học
+đại_học -> ghi_điểm -> học_phần ký_hiệu m
+điểm tích_luỹ -> là -> điểm học_phần sinh_viên đăng_ký
+môn_học đào_tạo mạng -> tổ_chức -> phương_thức mạng
+môn_học đào_tạo mạng -> tổ_chức -> phương_thức kết_hợp
+phương_thức mạng -> đào_tạo -> mạng
+phương_thức kết_hợp -> đào_tạo -> mạng
+đơn_vị -> quản_lý -> chuyên_môn
+chuyên_môn -> có -> trách_nhiệm
+trách_nhiệm -> đảm_bảo -> chất_lượng giảng_dạy
+chất_lượng giảng_dạy -> đánh_giá -> môn_học chất_lượng lớp_học
+phương_thức đào_tạo trường -> học_chế -> tín_chỉ
+tín_chỉ -> giúp -> sinh_viên
+sinh_viên -> tích_luỹ -> kiến_thức thời_điểm
+tín_chỉ -> nhận -> điểm i tính
+điểm i tính -> xét -> học_bổng khuyến_khích
+chương_trình đào_tạo ngành đào_tạo trường -> xây_dựng phù_hợp -> quy_định hiện_hành bộ gd đt
+chương_trình đào_tạo ngành đào_tạo trường -> xây_dựng phù_hợp -> đhqg-hcm
+quy_định hiện_hành bộ gd đt -> bổ_sung -> nội_dung
+đhqg-hcm -> bổ_sung -> nội_dung
+nội_dung -> xây_dựng -> kế_hoạch
+kế_hoạch -> thực_hiện -> điều_kiện
+điều_kiện -> đảm_bảo -> chất_lượng giáo_dục
+lớp_học phần -> là -> nhóm sinh_viên học học_phần giảng_viên
+nhóm sinh_viên học học_phần giảng_viên -> mở có -> số_lượng sinh_viên đăng_ký
+số_lượng sinh_viên đăng_ký -> quy_định -> của_trường
+lớp sinh_viên -> có -> cố_vấn học_tập
+hiệu_trưởng -> quyết_định bổ_nhiệm -> cố_vấn học_tập
+sinh_viên -> phải đăng_ký học -> học_phần
+sinh_viên -> dự thi -> học_phần
+kết_quả thi học_phần giáo_dục quốc phòng-an ninh -> tính -> điểm học_kỳ điểm
+kết_quả thi học_phần giáo_dục quốc phòng-an ninh -> tính -> điểm tích_luỹ toàn khoá
+giáo_dục thể_chất -> tính -> điểm học_kỳ điểm
+giáo_dục thể_chất -> tính -> điểm tích_luỹ toàn khoá
+việc -> đánh_giá -> kết_quả
+việc -> đánh_giá -> điều_kiện
+kết_quả -> cấp -> chứng_chỉ học_phần
+điều_kiện -> cấp -> chứng_chỉ học_phần
+chứng_chỉ học_phần -> quy_định -> bộ giáo_dục
+sinh_viên -> phải nộp -> đơn trình_bày lý_do hoàn_tất học_phần giấy_tờ minh_chứng cán_bộ
+đơn trình_bày lý_do hoàn_tất học_phần giấy_tờ minh_chứng cán_bộ -> giảng_dạy -> học_phần
+đơn trình_bày lý_do hoàn_tất học_phần giấy_tờ minh_chứng cán_bộ -> giảng_dạy -> phòng đào_tạo kết_thúc học_kỳ
+lý_do sinh_viên -> phải nộp -> đơn vòng ngày kể ngày thi
+đơn vòng ngày kể ngày thi -> kết_thúc -> học_phần
+việc công_nhận -> chuyển_đổi -> tín_chỉ trường
+tín_chỉ trường -> đảm_bảo thông_qua -> ý_kiến đơn_vị
+ý_kiến đơn_vị -> phụ_trách -> chuyên_môn học_phần liên_quan
+lớp sinh_viên -> phải áp_dụng -> quy_chế công_tác sinh_viên
+sinh_viên -> phải thực_hiện -> khoá_luận tốt_nghiệp
+khoá_luận tốt_nghiệp -> học -> môn chuyên_đề tốt_nghiệp
+chương_trình đào_tạo ngành đào_tạo trường -> xây_dựng phải phù_hợp -> quy_định hiện_hành
+quy_định hiện_hành -> đáp_ứng -> yêu_cầu mục_tiêu chuẩn đầu_ra
+quy_định hiện_hành -> đáp_ứng -> nhu_cầu xã_hội
+hiệu_trưởng -> ký -> quyết_định công_nhận
+quyết_định công_nhận -> tốt_nghiệp -> sinh_viên điều_kiện
+quy_chế -> quy_định -> điều
+điều -> đào_tạo -> đại_học hình_thức trường đại_học công_nghệ_thông_tin
+đại_học hình_thức trường đại_học công_nghệ_thông_tin -> thuộc -> đhqg-hcm
+trường -> có -> trách_nhiệm thông_báo sinh_viên kế_hoạch giảng_dạy học_tập
+trách_nhiệm thông_báo sinh_viên kế_hoạch giảng_dạy học_tập -> cập_nhật -> chương_trình đào_tạo
+sinh_viên -> thi đạt -> yêu_cầu học_phần cơ_sở đào_tạo thời_gian năm
+yêu_cầu học_phần cơ_sở đào_tạo thời_gian năm -> xin miễn -> học_phần
+sinh_viên -> nộp -> đơn
+đơn -> xác_nhận -> tiết học tín_chỉ
+đơn -> xác_nhận -> điểm
+tiết học tín_chỉ -> gửi -> phòng
+điểm -> gửi -> phòng
+phòng -> đào_tạo -> đại_học trường vòng tháng
+đại_học trường vòng tháng -> bắt_đầu -> học_kỳ
+trường -> yêu_cầu -> sinh_viên cung_cấp đề_cương học_phần
+sinh_viên cung_cấp đề_cương học_phần -> có -> xác_nhận sinh_viên học
+học_phần -> cho -> điểm sinh_viên đạt
+học_phần -> cho -> chữ bảo_lưu bl
+trưởng khoa -> tổ_chức -> hội_đồng
+hội_đồng -> chấm -> kết_quả
+kết_quả -> thực_tập -> doanh_nghiệp
+hội_đồng chấm thực_tập doanh_nghiệp -> có -> thành_viên
+thành_viên hội_đồng -> cho -> điểm
+điểm -> thực_tập -> doanh_nghiệp thang điểm
+điểm tổng_kết thực_tập doanh_nghiệp -> là -> trung_bình_cộng thành_viên hội_đồng
+chương_trình -> xây_dựng -> quy_định
+quy_định -> hiện_hành -> mục_tiêu chuẩn đầu_ra bậc trình_độ tương_ứng
+quy_định -> đáp_ứng -> mục_tiêu chuẩn đầu_ra bậc trình_độ tương_ứng
+học_kỳ -> là -> thời_gian sinh_viên
+thời_gian sinh_viên -> hoàn_thành -> học_phần chương_trình đào_tạo
+học_kỳ -> có -> tuần thực_học
+học_kỳ -> có -> tuần dành
+tuần thực_học -> đánh_giá -> hoạt_động đào_tạo
+tuần dành -> đánh_giá -> hoạt_động đào_tạo
+học_kỳ hè -> có -> tuần thực_học
+học_kỳ hè -> có -> tuần thi
+kế_hoạch giảng_dạy học_kỳ -> điều_chỉnh -> quyết_định hiệu_trưởng
+chương_trình tài_năng -> xây_dựng dựa -> chương_trình
+chương_trình -> tuyển_chọn -> sinh_viên
+chương_trình -> phát_triển -> sinh_viên
+trường -> có -> trách_nhiệm thông_báo sinh_viên chương_trình đào_tạo quy_chế học_tập
+trường -> có -> quyền_lợi nghĩa_vụ sinh_viên
+sinh_viên thời_hạn học -> thôi học đề_nghị -> trường
+trường -> cấp -> giấy
+giấy -> chứng_nhận -> kết_quả học_tập
+sinh_viên -> có -> trách_nhiệm thực_hiện
+sinh_viên -> có -> yêu_cầu cán_bộ giảng_dạy việc lên_lớp
+trách_nhiệm thực_hiện -> làm -> bài_tập
+yêu_cầu cán_bộ giảng_dạy việc lên_lớp -> làm -> bài_tập
+bài_tập -> thực_hành -> thí_nghiệm tham_gia
+thí_nghiệm tham_gia -> thảo_luận -> giữa học_phần
+thí_nghiệm tham_gia -> dự kiểm_tra -> giữa học_phần
+giữa học_phần -> kết_thúc -> học_phần
+sinh_viên -> có -> lý_do
+lý_do -> tham_dự thi -> giữa kỳ
+giữa kỳ -> phải làm -> đơn trình_bày minh_chứng
+đơn trình_bày minh_chứng -> xem_xét -> điểm cuối kỳ
+đơn trình_bày minh_chứng -> dùng -> điểm cuối kỳ
+điểm cuối kỳ -> thay -> điểm giữa kỳ
+khoá học -> là -> thời_gian thiết_kế sinh_viên
+thời_gian thiết_kế sinh_viên -> hoàn_thành -> chương_trình giáo_dục ngành chuyên_môn trình_độ đại_học
+điểm học_kỳ -> là -> điểm học_phần sinh_viên đăng_ký
+điểm học_phần sinh_viên đăng_ký -> học -> học_kỳ trọng_số
+học_kỳ trọng_số -> là -> tín_chỉ học_phần
+điểm học_kỳ -> dùng xét -> học_bổng
+học_bổng -> khen_thưởng -> học_kỳ
+học_bổng -> xử_lý học -> học_kỳ
+sinh_viên -> hoàn_thiện -> điều_kiện
+sinh_viên -> công_nhận -> tín_chỉ môn_học tích_luỹ
+sinh_viên -> chuyển_đổi -> tín_chỉ môn_học tích_luỹ
+tín_chỉ môn_học tích_luỹ -> có trở -> nội_dung
+sinh_viên trình_độ đại_học văn_bằng học trường -> đăng_ký học -> thêm học_kỳ
+thêm học_kỳ -> hoàn_thành -> năm_học chương_trình
+năm_học chương_trình -> đào_tạo -> thứ
+sinh_viên -> phải đáp_ứng -> điều_kiện học_lực quy_định
+chương_trình đào_tạo ngành trường -> xây_dựng phù_hợp -> quy_định hiện_hành
+chương_trình đào_tạo ngành trường -> xây_dựng phù_hợp -> hiệu_trưởng
+học_phần chương_trình đào_tạo -> sắp_xếp -> trình_tự học_kỳ khoá đào_tạo
+trường -> khuyến_cáo -> sinh_viên tuân_thủ trình_tự
+sinh_viên -> phải đăng_ký học -> học_phần bắt_buộc có điểm học_kỳ
+sinh_viên -> phép đăng_ký học -> học_phần chọn
+sinh_viên -> phép đăng_ký học -> điểm
+học_phần chọn -> chọn -> học_phần chọn thay_thế
+điểm -> chọn -> học_phần chọn thay_thế
+tốt_nghiệp sinh_viên -> có -> kết_quả học_tập
+kết_quả học_tập -> giảm -> bậc
+kết_quả học_tập -> giảm -> thời_gian học_tập
+bậc -> vượt -> học_kỳ
+thời_gian học_tập -> vượt -> học_kỳ
+học_kỳ -> so -> thời_gian thiết_kế
+chương_trình nâng -> xây_dựng dựa -> chương_trình
+chương_trình -> đáp_ứng -> mục_tiêu chuẩn đầu_ra tiêu_chí
+mục_tiêu chuẩn đầu_ra tiêu_chí -> đảm_bảo -> chất_lượng quy_định
+chương_trình song ngành -> cho_phép -> sinh_viên điều_kiện
+sinh_viên điều_kiện -> học -> lúc chương_trình đào_tạo
+lúc chương_trình đào_tạo -> tốt_nghiệp cấp -> văn_bằng
+thang điểm đánh_giá -> xếp -> điểm học_phần
+điểm học_phần -> đánh_giá -> thang điểm
+thang điểm -> mang -> tính tham_khảo
+kết_quả học_tập học_kỳ hè -> tính -> học_kỳ kề
+có -> tính -> học_kỳ kề
+quy_chế -> có -> hiệu_lực kể từ_học kỳ năm_học
+sinh_viên -> xem_xét chuyển -> ngành
+sinh_viên -> xem_xét chuyển -> chương_trình đào_tạo
+sinh_viên -> xem_xét chuyển -> điều_kiện
+sinh_viên dự_thính -> là -> sinh_viên cơ_sở đào_tạo thuộc đại_học quốc_gia thành_phố hồ_chí_minh
+điểm -> là -> điểm học_phần sinh_viên đăng_ký
+điểm học_phần sinh_viên đăng_ký -> học tính -> trọng_số tín_chỉ học_phần
+điểm -> dùng xét -> tín_chỉ đăng_ký học_kỳ học
+tín_chỉ đăng_ký học_kỳ học -> vượt -> chuyển ngành
+chuyển ngành -> làm -> khoá_luận tốt_nghiệp
+hộp_thư điện_tử email trường cung_cấp sinh_viên thời_điểm nhập_học -> là -> kênh giao_tiếp trường sinh_viên
+học_phần -> thực_tập -> doanh_nghiệp
+doanh_nghiệp -> là -> học_phần chương_trình đào_tạo
+sinh_viên -> thực_tập -> doanh_nghiệp sự hướng_dẫn giảng_viên khoa
+doanh_nghiệp sự hướng_dẫn giảng_viên khoa -> quản_lý -> ngành đào_tạo
+khoa -> quản_lý -> ngành đào_tạo
+ngành đào_tạo -> tổ_chức báo_cáo -> kết_quả
+kết_quả -> thực_tập -> doanh_nghiệp cuối học_kỳ
+sinh_viên -> phải báo_cáo -> kết_quả thực_tập học_kỳ đăng_ký
+kết_quả thực_tập học_kỳ đăng_ký -> đạt -> học_phần
+khoá_luận tốt_nghiệp -> là -> học_phần có khối_lượng tín_chỉ
+sinh_viên -> cảnh_báo học -> nghĩa_vụ học_phí quy_định
+sinh_viên -> hoàn_thành -> nghĩa_vụ học_phí quy_định
+nghĩa_vụ học_phí quy_định -> có -> điểm học_kỳ
+thời_hạn cảnh_báo học -> kéo_dài -> học_kỳ tiếp_theo
+sinh_viên -> tự_động xoá -> cảnh_báo học kết_thúc thời_hạn
+hiệu_trưởng -> quyết_định -> nội_dung chương_trình
+nội_dung chương_trình -> tổ_chức đào_tạo -> chương_trình song ngành chương_trình ngành ngành
+sinh_viên điều_kiện -> cấp -> bằng tốt_nghiệp
+sinh_viên điều_kiện -> cấp -> thời_gian học
+bằng tốt_nghiệp -> bảo_lưu -> học_phần
+thời_gian học -> bảo_lưu -> học_phần
+học_phần -> có -> kết_quả đạt
+sinh_viên -> đăng_ký học -> học_phần đạt
+học_phần đạt -> học -> thời_gian phép
+chương_trình đào_tạo -> bao_gồm -> khối kiến_thức
+khối kiến_thức giáo_dục -> cung_cấp -> người học kiến_thức
+khối kiến_thức giáo_dục -> cung_cấp -> kỹ_năng nghề_nghiệp
+khối kiến_thức giáo_dục -> quy_định -> chương_trình đào_tạo
+môn_học cơ_sở nhóm ngành -> là -> môn_học cơ_sở ngành
+tín_chỉ học_phí -> là -> đơn_vị dùng
+đơn_vị dùng -> lượng_hoá -> chi_phí hoạt_động giảng_dạy tính học_phần
+sinh_viên -> có -> trách_nhiệm thực_hiện yêu_cầu môn_học
+tổng_số tín_chỉ chương_trình -> đào_tạo -> ngoài trường công_nhận
+ngoài trường công_nhận -> chuyển_đổi vượt -> tổng_số tín_chỉ chương_trình đào_tạo
+đại_học quốc_gia thành_phố hồ_chí_minh -> công_nhận -> tín_chỉ quy_định
+đại_học quốc_gia thành_phố hồ_chí_minh -> chuyển_đổi -> tín_chỉ quy_định
+tín_chỉ quy_định -> ký_kết -> giữa đhqg-hcm
+tín_chỉ quy_định -> ký_kết -> đơn_vị đối_tác
+việc -> đăng_ký -> học_phần
+học_phần -> cải_thiện thực_hiện -> quy_trình
+quy_trình -> đăng_ký -> học_phần
+điểm học_phần đánh_giá -> dựa -> kết_quả học_tập sinh_viên học_kỳ
+cán_bộ giảng_dạy -> có -> trách_nhiệm
+trách_nhiệm -> thông_báo -> cách
+cách -> đánh_giá -> môn_học sinh_viên
+việc -> chấm -> kết_quả khoá_luận tốt_nghiệp
+kết_quả khoá_luận tốt_nghiệp -> thực_hiện -> hội_đồng
+hội_đồng -> chấm -> khoá_luận tốt_nghiệp gồm thành_viên khoa
+khoá_luận tốt_nghiệp gồm thành_viên khoa -> đề_nghị -> hiệu_trưởng
+hiệu_trưởng -> thành_lập -> điểm
+điểm -> chấm -> thang điểm
+điểm -> chấm -> điểm tổng_kết
+thang điểm -> là -> trung_bình_cộng
+điểm tổng_kết -> là -> trung_bình_cộng
+trung_bình_cộng -> có -> hệ_số
+trường -> tổ_chức -> đợt thi_tập học_kỳ gồm kỳ
+đợt thi_tập học_kỳ gồm kỳ -> kiểm_tra -> giữa kỳ
+đợt thi_tập học_kỳ gồm kỳ -> kiểm_tra -> kỳ thi kết_thúc học_kỳ
+đợt thi -> tổ_chức tập_trung -> kế_hoạch giảng_dạy
+khoa bộ_môn -> tổ_chức thi -> đợt thi thông_báo
+giảng_viên -> tổ_chức thi -> đợt thi thông_báo
+hiệu_trưởng -> quy_định -> thời_gian học
+thời_gian học -> ôn thi -> học_kỳ
+thời_gian học -> thi -> học_kỳ
+sinh_viên -> muốn cải_thiện -> điểm học_phần
+điểm học_phần -> phải đăng_ký học -> học_phần
+chương_trình -> đào_tạo -> hình_thức
+hình_thức -> có -> tổng khối_lượng thực_hiện phương_thức
+tổng khối_lượng thực_hiện phương_thức -> qua -> mạng
+trường -> thực_hiện -> hướng_dẫn bộ giáo_dục
+hướng_dẫn bộ giáo_dục -> đào_tạo -> đhqg-hcm bất_khả_kháng
+cán_bộ giảng_dạy -> xem_xét quyết_định -> phương_án xử_lý
+phương_án xử_lý -> gửi -> bảng điểm bổ_sung phòng
+bảng điểm bổ_sung phòng -> đào_tạo -> đại_học
+chương_trình song ngành -> gồm -> phần khối_lượng kiến_thức quy_định điều ngành thứ
+chương_trình song ngành -> gồm -> tín_chỉ trở ngành thứ nội_dung giữa chương_trình
+phần khối_lượng kiến_thức quy_định điều ngành thứ -> tính -> lần
+tín_chỉ trở ngành thứ nội_dung giữa chương_trình -> tính -> lần
+việc tổ_chức -> quản_lý đào_tạo thực_hiện liên_thông -> giữa khoa bộ_môn trường
+việc tổ_chức -> quản_lý đào_tạo thực_hiện liên_thông -> giữa cơ_sở đào_tạo đhqg-hcm
+sinh_viên -> đình_chỉ học_tập -> học_kỳ
+sinh_viên -> đình_chỉ học_tập -> lần đầu việc đi
+học_kỳ -> thi hộ -> người thi
+học_kỳ -> nhờ -> người thi
+lần đầu việc đi -> thi hộ -> người thi
+lần đầu việc đi -> nhờ -> người thi
+sinh_viên pháp_luật -> cho hưởng -> án_treo
+xử_phạt tù -> cho hưởng -> án_treo
+hội_đồng xét tốt_nghiệp hiệu_trưởng -> làm -> chủ_tịch
+hội_đồng xét tốt_nghiệp hiệu_trưởng -> làm -> trưởng phòng
+hội_đồng xét tốt_nghiệp hiệu_trưởng -> làm -> phó trưởng phòng
+phó hiệu_trưởng -> làm -> chủ_tịch
+phó hiệu_trưởng -> làm -> trưởng phòng
+phó hiệu_trưởng -> làm -> phó trưởng phòng
+chủ_tịch -> đào_tạo -> đại_học
+trưởng phòng -> đào_tạo -> đại_học
+phó trưởng phòng -> đào_tạo -> đại_học
+đại_học -> làm -> thư_ký
+sinh_viên -> kéo_dài -> thời_gian học học_kỳ
+lớp_học ngoại_ngữ chương_trình đào_tạo sinh_viên -> mở -> thời_khoá_biểu nhu_cầu sinh_viên
+sinh_viên -> đăng_ký học -> lớp ngoại_ngữ điều_kiện môn
+lớp ngoại_ngữ điều_kiện môn -> trùng -> giờ học môn
+học_kỳ hè sinh_viên -> đăng_ký học học -> môn ngoại_ngữ
+học_kỳ hè sinh_viên -> học cải_thiện -> môn ngoại_ngữ
+học_phí môn ngoại_ngữ chương_trình đào_tạo -> tính quy_định học -> lần đầu
+lần đầu -> tính -> học_phí học_kỳ
+trường -> tính -> điểm sinh_viên
+điểm sinh_viên -> dựa -> thời_điểm thi
+thời_điểm thi -> kết_thúc -> môn_học học_kỳ tương_ứng
+chương_trình liên_thông -> xây_dựng dựa -> chương_trình
+văn_bằng -> xây_dựng dựa -> chương_trình
+chương_trình -> đáp_ứng -> mục_tiêu chuẩn đầu_ra bậc trình_độ tương_ứng
+chương_trình đào_tạo -> công_nhận -> kết_quả học_tập môn_học tích_luỹ
+kết_quả học_tập môn_học tích_luỹ -> xét miễn -> nội_dung chương_trình đào_tạo
+sinh_viên điều_kiện -> tốt_nghiệp -> hiệu_trưởng
+hiệu_trưởng -> công_nhận tốt_nghiệp -> bằng tốt_nghiệp vòng tháng
+hiệu_trưởng -> cấp -> bằng tốt_nghiệp vòng tháng
+chương_trình đào_tạo ngành trường -> xây_dựng phù_hợp -> quy_định hiện_hành
+quy_định hiện_hành -> bổ_sung cập_nhật đáp_ứng -> chuẩn chương_trình
+quy_định hiện_hành -> bổ_sung cập_nhật đáp_ứng -> nhu_cầu thị_trường lao_động
+chương_trình đào_tạo -> yêu_cầu -> khối_lượng thực_tập
+chương_trình đào_tạo -> yêu_cầu -> tín_chỉ
+khối kiến_thức -> có -> nhóm học_phần
+nhóm học_phần bắt_buộc -> chứa_đựng -> nội_dung kiến_thức ngành đào_tạo
+nội_dung kiến_thức ngành đào_tạo -> bắt_buộc -> sinh_viên phải
+trường -> xây_dựng -> trang thông_tin điện_tử
+trang thông_tin điện_tử -> công_bố công_khai -> chuẩn đầu_ra
+trang thông_tin điện_tử -> công_bố công_khai -> nội_dung
+cán_bộ giảng_dạy -> phụ_trách -> học_phần khoa
+cán_bộ giảng_dạy -> phụ_trách -> bộ_môn
+học_phần khoa -> quản_lý -> chương_trình đào_tạo
+học_phần khoa -> quản_lý -> phòng đào_tạo
+bộ_môn -> quản_lý -> chương_trình đào_tạo
+bộ_môn -> quản_lý -> phòng đào_tạo
+chương_trình đào_tạo -> quyết_định -> sinh_viên
+phòng đào_tạo -> quyết_định -> sinh_viên
+sinh_viên -> có nhận -> điểm i
+sinh_viên bỏ thi -> nhận -> điểm học_phần
+sinh_viên trình_độ đại_học văn_bằng -> học -> trường
+trường -> đăng_ký học -> thêm ngành
+thêm ngành -> đào_tạo -> ngành đào_tạo chương_trình
+ngành đào_tạo chương_trình -> đào_tạo -> thứ
+sinh_viên -> có -> trách_nhiệm
+trách_nhiệm -> theo_dõi -> kết_quả
+kết_quả -> đăng_ký -> học_phần cổng thông_tin đào_tạo
+tổng_số tín_chỉ đăng_ký -> bao_gồm -> tín_chỉ trường
+tổng_số tín_chỉ đăng_ký -> bao_gồm -> cơ_sở đào_tạo
+học_kỳ hè tổng_số tín_chỉ đăng_ký -> vượt -> tín_chỉ
+sinh_viên -> đăng_ký học cải_thiện -> điểm môn ngoại_ngữ
+sinh_viên -> đăng_ký học cải_thiện -> học_phần
+điểm môn ngoại_ngữ -> thực_tập -> doanh_nghiệp học_kỳ hè
+học_phần -> thực_tập -> doanh_nghiệp học_kỳ hè
+việc đăng_ký học_phần học_kỳ hè -> dành -> sinh_viên
+sinh_viên -> có -> điểm trung_bình_cộng trở
+sinh_viên -> phải -> sự đồng_ý hiệu_trưởng
+sự đồng_ý hiệu_trưởng -> muốn đăng_ký vượt -> tín_chỉ
+cách -> tính -> đtbhk đtbc
+cách -> tính -> đtbctl
+đtbhk đtbc -> quy_định -> điều quy_chế
+đtbctl -> quy_định -> điều quy_chế
+hiệu_trưởng -> quyết_định -> việc
+việc -> công_nhận -> kết_quả học_tập
+việc -> công_nhận -> môn_học phải
+sinh_viên -> xin thôi học -> lý_do cá_nhân
+sinh_viên có quyết_định thôi học -> muốn quay -> trở_lại
+trở_lại -> học phải dự_tuyển -> đầu_vào thí_sinh
+chương_trình đào_tạo -> bao_gồm -> khối kiến_thức giáo_dục đại_cương tổ_chức
+khối kiến_thức giáo_dục đại_cương tổ_chức -> đào_tạo -> học_kỳ đầu
+việc công_nhận -> chuyển_đổi -> tín_chỉ trường
+tín_chỉ trường -> đảm_bảo -> nguyên_tắc
+quy_chế -> sửa_đổi bổ_sung phù_hợp -> yêu_cầu thực_tế
+yêu_cầu thực_tế -> quy_định -> nhà_nước
+nhà_nước -> quy_định -> đhqg-hcm
+học_phần -> là -> khối_lượng kiến_thức bố_trí
+khối_lượng kiến_thức bố_trí -> giảng_dạy -> học_kỳ
+học_kỳ -> có -> khối_lượng tín_chỉ trường_quy
+sinh_viên -> gửi -> đơn xin
+đơn xin -> thôi học -> trường
+kết_quả học_tập sinh_viên -> phải ghi -> bảng điểm học_phần
+bảng điểm -> ghi -> chuyên_ngành
+bảng điểm -> ghi -> điểm
+chuyên_ngành -> rèn_luyện -> toàn khoá học
+điểm -> rèn_luyện -> toàn khoá học
+chương_trình đào_tạo ngành đào_tạo trường -> xây_dựng phù_hợp -> quy_định hiện_hành
+sinh_viên -> phải hoàn_tất -> thủ_tục nhập_học quy_định trường
+thủ_tục nhập_học quy_định trường -> muốn trở_lại -> học
+sinh_viên -> xét tốt_nghiệp -> chương_trình thứ
+sinh_viên -> xét tốt_nghiệp -> điều_kiện tốt_nghiệp
+thời_gian phép học sinh_viên -> học -> lúc chương_trình
+lúc chương_trình -> là -> thời_gian quy_định chương_trình thứ
+sinh_viên -> công_nhận -> kết_quả học_phần chương_trình thứ
+mục_tiêu chương_trình giáo_dục đại_học -> ghi -> bản mô_tả
+sinh_viên điều_kiện -> đăng_ký làm -> khoá_luận
+khoá_luận -> tốt_nghiệp -> đầu học_kỳ
+sinh_viên chương_trình -> phải làm -> khoá_luận tốt_nghiệp
+chương_trình tài_năng -> phải làm -> khoá_luận tốt_nghiệp
+sinh_viên chương_trình -> làm -> khoá_luận tốt_nghiệp
+khoá_luận tốt_nghiệp -> đáp_ứng -> yêu_cầu khoa
+khoa -> quản_lý -> ngành đào_tạo
+bộ_môn -> quản_lý -> ngành đào_tạo
+ngành đào_tạo -> giao -> đề_tài khoá_luận tốt_nghiệp sinh_viên điều_kiện
+hiệu_trưởng -> quyết_định giao -> nhiệm_vụ
+nhiệm_vụ -> hướng_dẫn -> khoá_luận tốt_nghiệp
+khoá_luận tốt_nghiệp -> dựa -> đề_nghị trưởng khoa
+khoá_luận tốt_nghiệp -> dựa -> trưởng phòng đào_tạo
+sinh_viên -> thực_hiện -> khoá_luận tốt_nghiệp thời_gian học_kỳ
+sinh_viên -> bảo_vệ -> khoá_luận
+khoá_luận -> hoàn_thành -> khoá_luận
+khoá_luận -> hoàn_thành -> cán_bộ hướng_dẫn
+khoá_luận -> đồng_ý -> văn_bản
+cán_bộ hướng_dẫn -> đồng_ý -> văn_bản
+trường -> tổ_chức -> đợt
+đợt -> bảo_vệ -> khoá_luận tốt_nghiệp năm kế_hoạch đào_tạo
+sinh_viên bảo_vệ khoá_luận đợt -> đồng_ý -> sinh_viên
+sinh_viên -> đạt -> học_phần
+sinh_viên -> đạt -> điểm
+năm_học -> có -> học_kỳ
+trường -> tổ_chức thêm -> học_kỳ hè
+việc -> đăng_ký -> học_phần học_kỳ hè
+học_phần học_kỳ hè -> quy_định -> quy_chế
+kế_hoạch học_tập học_kỳ -> bao_gồm -> thời_gian_biểu
+năm_học -> bao_gồm -> thời_gian_biểu
+thời_gian_biểu -> công_bố -> trang thông_tin điện_tử
+trường -> tổ_chức xét tốt_nghiệp -> bằng
+trường -> cấp -> bằng
+bằng -> tốt_nghiệp -> đại_học năm đợt
+sinh_viên -> phải nộp -> hồ_sơ
+hồ_sơ -> đáp_ứng -> điều_kiện
+điều_kiện -> xét cấp -> bằng tốt_nghiệp
+kết_quả chấm thực_tập -> phải công_bố -> vòng tuần ngày báo_cáo
+khoá_luận tốt_nghiệp -> phải công_bố -> vòng tuần ngày báo_cáo
+sinh_viên -> phải dừng học -> chương_trình thứ học_kỳ tiếp_theo
+sinh_viên -> khỏi -> danh_sách đăng_ký
+danh_sách đăng_ký -> học -> chương_trình thứ
+sinh_viên -> có -> nguyện_vọng chuyển
+nguyện_vọng chuyển -> qua -> hình_thức đào_tạo
+trường -> xem_xét công_nhận -> tín_chỉ học_phần sinh_viên tích_luỹ
+trường -> chuyển_đổi -> tín_chỉ học_phần sinh_viên tích_luỹ
+tín_chỉ học_tập -> là -> đơn_vị dùng
+đơn_vị dùng -> xác_định -> thời_gian
+đơn_vị dùng -> xác_định -> khối_lượng học_tập sinh_viên khối_lượng giảng_dạy giảng_viên
+thời_gian -> dùng đánh_giá -> kết_quả học_tập sinh_viên
+khối_lượng học_tập sinh_viên khối_lượng giảng_dạy giảng_viên -> dùng đánh_giá -> kết_quả học_tập sinh_viên
+tín_chỉ học_tập -> gọi tắt -> tín_chỉ
+học_phần -> có -> kết_quả điểm trở
+kết_quả điểm trở -> bảo_lưu -> sinh_viên học
+sinh_viên học -> thêm -> ngành
+ngành -> học -> trong_trường
+mục_tiêu chương_trình giáo_dục đại_học trường -> là đào_tạo -> nhân_lực
+nhân_lực -> nâng -> dân_trí
+dân_trí -> nghiên_cứu -> khoa_học phục_vụ
+khoa_học phục_vụ -> phát_triển -> kinh_tế xã_hội
+kinh_tế xã_hội -> đảm_bảo -> quốc_phòng an_ninh người học
+quốc_phòng an_ninh người học -> hoàn_thành -> chương_trình đào_tạo
+chương_trình đào_tạo -> đáp_ứng -> yêu_cầu chuẩn đầu_ra bậc khung trình_độ quốc_gia việt_nam
+chương_trình đào_tạo -> đáp_ứng -> năng_lực

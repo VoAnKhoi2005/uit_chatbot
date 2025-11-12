@@ -1,0 +1,841 @@
+A36
+B4
+C115
+C184
+C212
+C225
+C281
+C304
+C310
+D101
+D60
+D83
+D96
+E100
+F140
+F263
+F280
+F66
+G111
+G115
+G117
+G143
+G154
+G190
+G207
+G25
+G289
+G30
+G32
+G4
+G60
+G63
+G72
+H17
+H184
+H245
+H25
+H26
+I103
+I12
+I26
+I3
+I42
+I43
+I7
+I81
+J130
+J136
+J137
+J144
+J153
+J211
+J215
+J217
+J227
+J236
+J33
+J36
+J40
+J47
+J60
+J88
+K144
+K59
+K79
+L174
+L226
+L273
+L37
+M1
+M105
+M223
+M26
+M4
+M50
+M51
+M52
+M53
+M54
+M57
+M64
+M7
+M72
+M8
+M9
+N1
+N10
+N107
+N123
+N126
+N130
+N131
+N134
+N135
+N138
+N139
+N150
+N151
+N154
+N157
+N158
+N160
+N163
+N165
+N167
+N193
+N194
+N210
+N211
+N214
+N215
+N223
+N226
+N256
+N257
+N258
+N268
+N290
+N293
+N294
+N302
+N304
+N306
+N310
+N311
+N322
+N325
+N326
+N329
+N33
+N330
+N333
+N336
+N338
+N350
+N351
+N353
+N354
+N356
+N357
+N358
+N360
+N363
+N364
+N365
+N366
+N367
+N45
+N5
+N63
+N64
+N65
+N66
+N8
+N92
+N94
+N96
+N97
+NEW01
+ban hành kèm theo
+bao gồm báo cáo
+bao gồm bảo dưỡng
+bao gồm bảo hành
+bao gồm bảo đảm
+bao gồm bố trí
+bao gồm bổ sung
+bao gồm chuyển
+bao gồm chuyển giao
+bao gồm chỉ định
+bao gồm chứng nhận
+bao gồm cung cấp
+bao gồm công nhận
+bao gồm di chuyển
+bao gồm duyệt
+bao gồm dựng
+bao gồm ghi nhận
+bao gồm giám sát
+bao gồm giám sát thu
+bao gồm giám định
+bao gồm giải quyết
+bao gồm huy động
+bao gồm hỗ trợ
+bao gồm kiểm soát
+bao gồm kiểm soát thông qua
+bao gồm kiểm tra
+bao gồm kiểm tra quan trắc kiểm định
+bao gồm kiểm định
+bao gồm ký kết
+bao gồm lập
+bao gồm mua sắm
+bao gồm ngăn chặn vi phạm
+bao gồm nâng
+bao gồm phát hiện
+bao gồm phát hiện vi phạm
+bao gồm quan trắc
+bao gồm quản lý
+bao gồm quản lý vận hành
+bao gồm sử dụng
+bao gồm sửa chữa
+bao gồm sửa chữa kiểm định
+bao gồm tham gia cứu
+bao gồm tham gia phòng chống
+bao gồm thay thế
+bao gồm thiết kế
+bao gồm thí nghiệm
+bao gồm thông báo
+bao gồm thử nghiệm
+bao gồm thực hiện
+bao gồm trao đổi
+bao gồm triệu hồi
+bao gồm truy tìm
+bao gồm tổ chức
+bao gồm vận hành
+bao gồm xem xét
+bao gồm xây dựng
+bao gồm xử lý
+bao gồm xử lý vi phạm
+bao gồm đánh giá
+bao gồm đóng góp
+bao gồm đấu tranh phòng chống
+bao gồm ứng dụng
+bàn giao
+báo hiệu chuẩn bị vượt
+bảo dưỡng phải thực hiện
+bảo trì theo
+bảo trì vận hành
+bảo trì vận hành khai thác
+bắt buộc phải có
+bắt buộc phải được thực hiện
+bắt buộc phải được thực hiện theo
+bị hư hỏng
+bị làm
+bị ngắt
+bị thu hồi
+bị truy cứu
+bị tước
+bị xử lý vi phạm
+bốc dỡ
+bồi dưỡng
+bổ sung hoàn thiện
+bổ sung được xem xét bổ sung theo
+che khuất
+chi trả
+chi đáp ứng
+chia sẻ
+cho phép vào
+chuyên dùng
+chuyển hướng
+chuyển đổi
+chuẩn bị đầu tư
+cháy chữa cháy
+chăn thả
+chằng buộc
+chống
+chống bỏ quên
+chống vi phạm
+chụp
+chủ trì lập
+chứng nhận thu hồi
+cung ứng
+còn
+có gắn
+có hiển thị
+có phù hợp
+có quy định
+có vi phạm
+có xảy xâm phạm
+căn cứ quy định
+cải tạo thành
+cấm sử dụng
+cấp còn
+cấp phải mang
+cấp phải phù hợp
+cấp phải đính kèm theo
+cấp theo quy định
+cấp thuộc
+cấp được đổi
+cần huy động
+cần thiết phải bố trí
+cần thực hiện quy đổi
+cần thực hiện quy đổi tính toán
+cần thực hiện điều chỉnh
+cần xác định
+cần điều chỉnh bổ sung
+cập nhật
+cứu chữa đưa
+cứu hộ có
+cứu hộ khắc phục
+cứu hộ phòng chống
+cứu hộ phòng chống cháy
+cứu hộ phải có
+dàn
+dừng bảo đảm
+dừng khai thác sử dụng
+dừng thu
+dự kiến sử dụng
+gia cường
+giao quản lý
+giao quản lý khai thác
+giao theo quy định
+giám sát kiểm tra
+giám sát nghiệm thu
+giám định
+giơ
+giải quyết khắc phục ùn tắc
+giải quyết được thực hiện theo quy định
+giảm thiểu
+giảm tốc
+gây cản trở
+gồm báo cáo
+gồm bảo dưỡng
+gồm bảo vệ
+gồm chuẩn bị nhận
+gồm giám sát sửa chữa thay thế
+gồm gửi
+gồm khảo sát
+gồm kiểm tra
+gồm kiểm định
+gồm lập
+gồm quan trắc
+gồm sửa chữa
+gồm thẩm tra
+gồm thực hiện
+gồm trích nộp
+gồm tổ chức
+gồm vận hành
+gồm xây dựng
+gồm xử lý
+gồm điều chỉnh
+gồm đánh giá
+gửi kèm
+gửi nhận
+hao phí
+hiển thị
+hiệu
+huy động phù hợp
+huy động tham gia phối hợp
+hành nghề
+hư hỏng dẫn sập đổ
+hướng dẫn lập
+hướng dẫn quản lý
+hướng dẫn sử dụng
+hướng dẫn xác định
+hướng dẫn điều khiển
+khai
+khai thác bảo trì
+khai thác sử dụng
+khai thác được
+khiếu nại
+khám
+khám nghiệm
+khôi phục
+khấu hao
+khắc phục ùn tắc
+khởi hành phải kiểm tra
+khởi kiện
+kinh doanh phải bao gồm
+kinh doanh thuộc
+kiến nghị
+kiểm
+kiểm giao dịch thu
+kiểm tra xác định
+kiểm tra xử lý
+kiểm định
+kiểm định quan trắc đánh giá
+kiểm định sửa chữa bổ sung thay thế
+kèm
+kèm theo
+kéo phải bảo đảm
+kéo đẩy
+ký kết
+kết nối
+liên quan bảo quản
+liên quan thao tác sử dụng
+là báo cáo
+là bảo dưỡng
+là bảo trì
+là bảo vệ
+là bảo đảm
+là bảo đảm công khai
+là chỉ huy
+là chỉ đạo tổ chức thực hiện kiểm tra
+là chịu
+là cung cấp
+là dừng
+là giúp đỡ
+là hướng dẫn
+là hỗ trợ
+là khai thác
+là kiểm tra
+là nhận
+là phục vụ khai thác
+là quan sát nắm
+là quyết định
+là quản lý
+là quản lý vận hành khai thác
+là sử dụng
+là thông báo
+là thực hiện
+là thực hiện kiểm tra
+là thực hiện quy định
+là tuyên truyền
+là tổ chức bảo trì
+là tổ chức khai thác
+là tổ chức quản lý
+là tổ chức thực hiện
+là vận động
+là xử lý
+là điều khiển
+là điều tra
+lưu hành chở
+lưu hành phòng chống khắc phục
+lạm dụng xâm phạm
+lợi dụng xâm phạm
+mang vác
+miễn
+miễn nộp
+mãn
+nghiệm thu
+ngừng khai thác sử dụng
+nhấp nháy
+nhập tái xuất có
+nhằm đảm bảo
+nâng cấp
+nêu
+nộp thông qua
+phá xử lý tiêu huỷ
+phát hiện vi phạm
+phát sinh
+phát triển có
+phân cấp
+phân cấp uỷ quyền
+phân cấp uỷ quyền quản lý
+phân cấp uỷ quyền thực hiện
+phân luồng
+phân luồng phân
+phân định
+phép nhập khẩu có
+phê duyệt
+phê duyệt phù hợp quy định
+phòng chống
+phòng chống khắc phục
+phòng chống vi phạm
+phòng vệ
+phải bao gồm
+phải bàn giao
+phải báo cáo
+phải bảo dưỡng sửa chữa bảo đảm duy trì
+phải bảo đảm
+phải bảo đảm bao quát
+phải bảo đảm bảo vệ
+phải bảo đảm gây
+phải bảo đảm hoạt động
+phải bảo đảm kết nối
+phải bảo đảm yêu cầu
+phải bật
+phải bồi thường quy định
+phải che đậy
+phải cho
+phải chấp hành
+phải chủ trì
+phải cung cấp
+phải còn
+phải có
+phải có quy định
+phải cảnh báo
+phải cập nhật
+phải dừng
+phải dừng bảo đảm
+phải giảm
+phải gây
+phải gửi
+phải khảo sát
+phải kiến nghị
+phải kiểm tra
+phải kiểm tra xác định
+phải kèm
+phải là
+phải làm ảnh hưởng
+phải lập
+phải lựa chọn
+phải mang
+phải mang theo
+phải nhường
+phải niêm yết
+phải nối
+phải nộp
+phải phê duyệt
+phải phù hợp
+phải quan sát
+phải quan sát bảo đảm
+phải quan sát giảm
+phải sử dụng
+phải theo
+phải theo quy định
+phải thông báo
+phải thẩm định
+phải thể hiện
+phải thực hiện
+phải thực hiện báo cáo
+phải thực hiện chuyển sang
+phải thực hiện quan trắc
+phải thực hiện theo
+phải thực hiện theo quy định
+phải tiến hành
+phải tuân thủ
+phải tuân thủ quy định vi phạm quy định
+phải tắt
+phải tổ chức hướng dẫn
+phải tổ chức kiểm tra khảo sát đánh giá
+phải tổ chức kiểm tra đánh giá
+phải tổ chức kiểm tra đánh giá kiểm định
+phải tổ chức lập
+phải tổ chức phê duyệt
+phải tổ chức quản lý
+phải tổ chức thẩm định
+phải tổ chức đánh giá
+phải vào
+phải xem xét chấp thuận theo quy định
+phải đi
+phải đi sát
+phải đi theo
+phải đáp ứng
+phải được chằng buộc
+phải được cấp
+phải được giải quyết
+phải được gắn
+phải được quy định
+phải được quản lý
+phải được so sánh đánh giá
+phải được sắp xếp
+phải được thực hiện
+phải được xác định
+phải được điều tra
+phải đảm bảo
+phải đến trình báo
+phải để
+phải ưu tiên
+phải ưu tiên hỗ trợ
+phải ưu tiên khắc phục
+phải ưu tiên sửa chữa
+phải ưu tiên thực hiện
+phải ở
+quan trắc
+quan trắc kiểm định
+quy định
+quy định báo cáo
+quy định thực hiện
+quy định thực hiện báo cáo
+quy định thực hiện cung cấp
+quy định xử lý
+quyết định dừng thu
+quyết định phê duyệt
+quyết định đưa hoạt động
+quản lý bảo trì
+quản lý bảo trì kiểm định đánh giá
+quản lý bảo trì vận hành
+quản lý bảo trì vận hành khai thác
+quản lý bảo vệ khai thác sử dụng
+quản lý hoạt động
+quản lý khai thác
+quản lý khai thác sử dụng
+quản lý sử dụng
+quản lý theo
+quản lý tập trung
+quản lý vận hành
+quản lý vận hành khai thác
+quệt xuống đường
+rà soát tổng hợp
+rơi vãi xuống đường
+so
+soát
+sát hạch
+sản xuất hoạt động
+sản xuất lắp ráp
+sản xuất lắp ráp thuộc
+sản xuất trưng bày giới thiệu
+sập đổ
+sử dụng nghiên cứu
+sử dụng phục vụ
+sử dụng theo quy định
+sử dụng xử lý
+sử dụng xử lý vi phạm
+sử dụng được thực hiện
+sử dụng được xác định
+sửa chữa bảo trì sử dụng
+sửa chữa khắc phục
+sửa chữa ngăn ngừa
+sửa đổi bổ sung
+tham gia đấu giá
+thay đổi so
+theo hướng dẫn
+theo quy định
+thi công xây dựng
+thiết kế lập
+thiết kế thẩm tra thẩm định phê duyệt thi công giám sát
+thu chi
+thu gom
+thu hồi theo quy định
+thu thập lưu giữ khai thác
+thu được điều chỉnh
+thông
+thông báo đạt
+thấy bảo đảm
+thấy bị đe doạ
+thẩm định
+thực hiện báo cáo
+thực hiện bảo hành
+thực hiện bảo trì
+thực hiện bảo trì dẫn
+thực hiện bảo trì theo quy định
+thực hiện cấp
+thực hiện cấp theo quy định
+thực hiện kiểm
+thực hiện kiểm tra
+thực hiện quy định
+thực hiện sửa đổi bổ sung thay đổi
+thực hiện theo
+thực hiện theo quy định
+thực hiện theo quy định trừ
+thực hiện thông qua quan trắc thí nghiệm kết hợp
+thực hiện thẩm định
+thực hiện tổ chức
+thực hiện vận hành
+thực hiện đảm bảo
+thực hiện đối soát
+thực hiện đổi
+thực hiện đổi cấp
+thực hiện đổi cấp theo quy định
+thực hiện đổi theo
+tiêu hao
+tiến hành kiểm tra
+tiến hành quản lý
+tiếp nhận
+tiếp tục chịu
+tiếp tục có
+tiếp tục điều khiển
+trao đổi tặng cho thừa kế
+trao đổi tặng cho để thừa kế
+truyền dẫn
+trình
+trình bày theo
+trích
+trở xác định
+trực
+trực chốt
+trực hệ thống
+trực phân
+trực sửa chữa
+trực thu
+trực thuộc
+trực đảm bảo
+tuyên truyền giảm
+tuyên truyền giảm thiểu
+tuần kiểm
+tuần tra kiểm soát
+tuần tra kiểm soát phải tuân thủ
+tuỳ theo
+tác nghiệp
+tái xuất
+tìm kiếm cứu
+tạm trú
+tổ chức bàn giao
+tổ chức bốc dỡ
+tổ chức cân
+tổ chức kiểm tra
+tổ chức kiểm định
+tổ chức lập
+tổ chức lập phê duyệt
+tổ chức nghiệm thu
+tổ chức phê duyệt
+tổ chức quản lý vận hành khai thác
+tổ chức thu
+tổ chức thẩm định
+tổ chức thực hiện
+tổ chức thực hiện bảo trì
+tổ chức thực hiện kiểm tra
+tổ chức thực hiện sử dụng
+tổ chức thực hiện sửa chữa
+tổ chức trình
+tổ chức trình duyệt
+tổ chức tuần tra kiểm tra
+tổ chức tập huấn
+tổ chức đảm bảo
+tổ chức đấu thầu
+tổ chức đặt hàng
+uỷ quyền
+vi phạm ảnh hưởng
+vận hành khai thác
+vận hành khai thác bảo trì
+vận hành quản lý thu
+vận hành được quy định
+xem xét quyết định
+xem xét thoả thuận bổ sung
+xuất
+xác nhận có
+xác định quy định
+xác định theo
+xác định theo quy định
+xây dựng cải tạo nâng cấp mở rộng sửa chữa
+xây dựng phục vụ khai thác
+xây dựng thực hiện
+xây dựng thực hiện theo quy định
+xây dựng xác định
+xảy
+xếp hàng hoá
+xử lý
+xử lý khắc phục
+xử lý vi phạm
+xử lý vi phạm giải toả tháo dỡ
+xử lý ùn tắc
+yêu cầu báo cáo
+áp dụng theo
+áp dụng theo quy định
+áp giải
+ùn tắc
+đi làm
+đi tránh
+điều chỉnh bổ sung
+điều khiển báo hiệu
+điều tiết phân
+điều tra giải quyết
+đo đạc
+đu bám
+đón
+đôn đốc
+đăng kiểm
+đăng ký cấp
+được ban hành kèm theo
+được buông
+được bãi bỏ
+được bảo trì
+được bịt mắt điều khiển
+được bố trí
+được bổ sung
+được chi
+được chi hỗ trợ
+được chia sẻ
+được cho
+được chở
+được cấp quy định
+được cấp sang
+được cấp thành
+được duyệt vượt quá
+được dẫn dắt
+được giữ
+được gọi
+được gửi
+được hoàn trả
+được hình thành
+được khắc phục
+được kéo
+được kéo theo
+được kết cấu thực hiện
+được kết nối
+được lưu trữ
+được lập
+được lập căn cứ
+được lắp đặt
+được miễn nộp
+được ngồi
+được nhận
+được nêu
+được nối
+được nộp
+được phân cấp uỷ quyền quản lý
+được phân cấp uỷ quyền thực hiện
+được phân cấp uỷ quyền tổ chức thực hiện
+được phân loại
+được phân loại gồm
+được phân loại thành
+được phép lưu hành
+được phép lưu hành thực hiện
+được phê duyệt
+được phê duyệt phù hợp
+được qua
+được quy định
+được quản lý
+được rẽ
+được sản xuất chế tạo
+được sản xuất hoạt động
+được sửa chữa
+được sửa đổi bổ sung
+được thiết kế
+được thiết kế hoạt động
+được thiết kế sản xuất hoạt động
+được thành lập
+được thể hiện
+được thực hiện theo
+được thực hiện theo quy định
+được thực hiện thông qua
+được thực hiện thông qua quan trắc thí nghiệm kết hợp
+được tiếp tục sử dụng điều khiển
+được tiếp tục điều khiển
+được trả
+được trả thêm
+được tính
+được vượt
+được vượt quy định
+được xem xét thay đổi
+được xác định
+được xác định căn cứ
+được xác định quy định
+được xác định theo quy định
+được xác định xác định
+được xây dựng lắp đặt
+được xây dựng theo quy định
+được yêu cầu
+được áp dụng
+được áp dụng theo
+được đi
+được điều chỉnh
+được điều chỉnh bổ sung
+được điều khiển
+được đấu giá
+được đổi
+được đổi cấp sang
+được đổi sang
+được đứng
+được ưu tiên
+được ở
+đạt
+đấu giá
+đấu giá bị thu hồi
+đấu giá gắn
+đấu giá phải thực hiện
+đấu giá được thực hiện
+đấu giá được đấu giá
+đấu thầu cung cấp
+đầu tư có
+đầu tư xây dựng
+đặt hàng đấu thầu cung cấp
+đếm thực hiện theo
+đề nghị xem xét thoả thuận bổ sung
+để rơi vãi
+để xảy
+định hình
+đối soát giao dịch
+đối soát giao dịch dừng
+đổ ách tắc
+ưu tiên
