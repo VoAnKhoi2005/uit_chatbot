@@ -1,0 +1,31 @@
+Nhãn,Ý nghĩa
+root,"Gốc của câu, thường là động từ chính"
+sub,Chủ ngữ của động từ
+dob,Tân ngữ trực tiếp
+iob,Từ đánh dấu tân ngữ gián tiếp
+pob,Tân ngữ của giới từ
+prd,Vị ngữ
+nmod,Bổ ngữ danh từ
+amod,Bổ ngữ tính từ
+vmod,Bổ ngữ động từ (chung chung)
+adv,Bổ ngữ trạng từ
+det,Từ hạn định
+loc,Bổ ngữ nơi chốn
+dir,Bổ ngữ phương hướng
+tmp,Bổ ngữ thời gian
+mnr,Bổ ngữ thể cách
+prp,Bổ ngữ mục đích
+ext,Bổ ngữ mức độ
+cnd,Bổ ngữ điều kiện
+cnc,Bổ ngữ nhượng bộ
+coord,Quan hệ kết hợp
+conj,Thành phần được nối
+pmod,Bổ ngữ sở hữu
+punct,Dấu câu
+dep,Quan hệ phụ thuộc không xác định
+tpc,Chủ đề hóa (thành phần được nhấn mạnh)
+x,Bổ ngữ mệnh đề mở
+xadv,Mệnh đề trạng ngữ
+xloc,Mệnh đề nơi chốn
+xtmp,Mệnh đề thời gian
+xmdp,Mệnh đề mục đích
