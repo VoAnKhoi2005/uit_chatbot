@@ -95,7 +95,7 @@ def main():
                 text=sentence,
                 vncorenlp_client=vncorenlp_client,
                 phoNLP_model=phoNLP_model,
-                stopwords=set(),
+                stopwords=stopwords,
                 logger=logger,
             )
 

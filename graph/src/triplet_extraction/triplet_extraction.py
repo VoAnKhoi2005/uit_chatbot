@@ -381,13 +381,8 @@ def triplet_extraction(text, vncorenlp_client, phoNLP_model, stopwords, logger, 
     sentence = clean_text(text)
     segmented_text = vncorenlp_client.word_segment(sentence)
 
-    # Stopword filtering
-    parts = segmented_text[0].split(" ")
-    filtered_parts = [part for part in parts if is_valid_term(part, stopwords)]
-    filtered_text = " ".join(filtered_parts)
-
-    # Annotate filtered text
-    annotation = phoNLP_model.annotate(text=filtered_text)
+    # Annotate text
+    annotation = phoNLP_model.annotate(text=segmented_text[0])
     df = parsing_result(annotation)
 
     triplets = process_sentence(df, logger)
@@ -423,4 +418,28 @@ def triplet_extraction(text, vncorenlp_client, phoNLP_model, stopwords, logger, 
         # Also add any new triplets extracted from object
         all_triplets.extend(refined_obj_triplets)
 
-    return all_triplets
+    filtered_triplets = []
+
+    for triplet in all_triplets:
+        subj, verb, obj = triplet
+
+        # Remove stopwords
+        subj_filtered = ' '.join([w for w in subj.split() if w.lower() not in stopwords]).strip()
+        verb_filtered = ' '.join([w for w in verb.split() if w.lower() not in stopwords]).strip()
+        obj_filtered = ' '.join([w for w in obj.split() if w.lower() not in stopwords]).strip()
+
+        # Skip triplet if any element becomes empty
+        if not subj_filtered:
+            subj_filtered = subj
+        if not verb_filtered:
+            verb_filtered = verb
+        if not obj_filtered:
+            obj_filtered = obj
+
+        # Replace '_' with ' ' and strip spaces
+        subj_filtered = subj_filtered.replace('_', ' ').strip().lower()
+        verb_filtered = verb_filtered.replace('_', ' ').strip().lower()
+        obj_filtered = obj_filtered.replace('_', ' ').strip().lower()
+        filtered_triplets.append((subj_filtered, verb_filtered, obj_filtered))
+
+    return filtered_triplets
