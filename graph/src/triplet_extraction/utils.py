@@ -1,3 +1,4 @@
+import logging
 import re
 import csv
 
@@ -77,3 +78,52 @@ def is_valid_term(term, stopwords):
     if not term or not term.strip():
         return False
     return term.lower() not in stopwords
+
+
+import logging
+import os
+
+
+import logging
+import os
+
+def setup_logger(
+    name="triplet_extraction",
+    level=logging.INFO,
+    log_to_file=False,
+    file_path=None
+):
+    """
+    Sets up a logger for .py files or notebooks with optional file and console output.
+
+    Returns a tuple: (logger, console_handler, file_handler)
+    """
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
+
+    # Prevent duplicate handlers
+    if logger.hasHandlers():
+        logger.handlers.clear()
+
+    # --- Console handler ---
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(logging.Formatter("[%(levelname)s] %(message)s"))
+    logger.addHandler(console_handler)
+
+    # --- File handler (optional) ---
+    file_handler = None
+    if log_to_file:
+        if not file_path:
+            file_path = os.path.join(os.getcwd(), f"{name}.log")
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+        file_handler = logging.FileHandler(file_path, encoding="utf-8")
+        file_handler.setFormatter(
+            logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
+        )
+        logger.addHandler(file_handler)
+
+        logger.info(f"Logging to file: {file_path}")
+
+    return logger, console_handler, file_handler
+

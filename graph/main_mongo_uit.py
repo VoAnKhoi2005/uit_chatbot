@@ -24,10 +24,22 @@ def main():
     synonym_dict = load_synonym_dict(r"E:\Github\uit_chatbot\graph\listSameKey.txt")
     stopwords = load_stopwords(r"E:\Github\uit_chatbot\graph\stopwords.csv")
 
-    no_triplet_csv_path = r"E:\Github\uit_chatbot\graph\no_triplets_uit_log_1.csv"
+    no_triplet_csv_path = r"E:\Github\uit_chatbot\graph\no_triplets_uit_log_2.csv"
     no_triplet_file = open(no_triplet_csv_path, "w", newline="", encoding="utf-8")
     csv_writer = csv.writer(no_triplet_file)
     csv_writer.writerow(["document_id", "document_number", "sentence"])
+
+    logger, console_handler, file_handler = setup_logger(
+        name="triplet_extraction",
+        level=logging.DEBUG,
+        log_to_file=True,
+        file_path="logs/triplet_extraction.txt"
+    )
+
+    logger.removeHandler(console_handler)
+
+    logger.info("Starting triplet extraction...")
+    logger.debug("Debug mode enabled")
 
     try:
         reprocess_no_triplet = False
@@ -58,20 +70,13 @@ def main():
             if not sentence or not sentence.strip():
                 continue
 
-            # Clean and process text
-            sentence = clean_text(sentence)
-            segmented_text = vncorenlp_client.word_segment(sentence)
-            # Stopword filtering
-            parts = segmented_text[0].split(" ")
-            filtered_parts = [part for part in parts if is_valid_term(part, stopwords)]
-            filtered_text = " ".join(filtered_parts)
-            # Annotate the filtered text
-            annotation = phoNLP_model.annotate(text=filtered_text)
-            df = parsing_result(annotation)
-            result = process_sentence(df)
-            if result is None:
-                result = []
-
+            triplets = triplet_extraction(
+                text=sentence,
+                vncorenlp_client=vncorenlp_client,
+                phoNLP_model=phoNLP_model,
+                stopwords=set(),
+                logger=logger,
+            )
 
             triplets_list = [
                 {
@@ -79,7 +84,7 @@ def main():
                     "r": r,
                     "c2": c2
                 }
-                for (c1, r, c2) in result
+                for (c1, r, c2) in triplets
                 if c1 and r and c2
             ]
 
