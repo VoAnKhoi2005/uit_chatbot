@@ -259,3 +259,5 @@ http-client.private.env.json
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+retrieval/phonlp/phonlp.pt
