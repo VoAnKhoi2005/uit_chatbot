@@ -2,9 +2,7 @@ from graph.src.triplet_extraction.utils import is_valid_term, clean_text
 from graph.src.triplet_extraction import parsing_result
 
 def parse_dataframe_to_tokens(df):
-    """
-    Convert DataFrame to a list of token dicts.
-    """
+    """Convert DataFrame to a list of token dicts"""
     tokens = []
     for _, row in df.iterrows():
         token = {
@@ -25,7 +23,7 @@ def split_sentence_np_vp(tokens):
     root_index = -1
     root_id = None
 
-    # Step 1: find the main verb (root or first valid verb)
+    # Find the main verb (root or first valid verb)
     for i, token in enumerate(tokens):
         if token['pos'] == 'V':
             if token['deprel'] == 'root' and token['head'] == 0:
@@ -42,7 +40,7 @@ def split_sentence_np_vp(tokens):
                 root_index = i
                 root_id = token['id']
 
-    # Step 2: fallback – pick next verb if root not found
+    # Fallback – pick next verb if root not found
     if root_index == -1:
         for i, token in enumerate(tokens):
             if token['pos'] == 'V' and i > 0:  # skip first position
@@ -50,7 +48,7 @@ def split_sentence_np_vp(tokens):
                 root_id = token['id']
                 break
 
-    # Step 3: final split
+    # Final split
     if root_index != -1 and root_id is not None:
         np_tokens = tokens[:root_index]
         vp_tokens = tokens[root_index:]
@@ -79,7 +77,7 @@ def collect_direct_dependents(tokens, head_id):
 
 
 def rebuild_phrase(tokens):
-    # Sort tokens by their original position in the sentence and join them together
+    """Sort tokens by their original position in the sentence and join them together"""
     tokens_sorted = sorted(tokens, key=lambda x: x['id'])
     phrase = " ".join(t['word'] for t in tokens_sorted)
     return phrase
@@ -147,6 +145,10 @@ def extract_main_subjects(np_tokens):
         combined_phrases = []
         for phrase in phrases:
             combined_phrases.append(main_subject_phrase + " " + phrase)
+
+        if not combined_phrases:
+            return [main_subject_phrase]
+
         return combined_phrases
     else:
         return [rebuild_phrase(np_tokens)]
@@ -162,19 +164,20 @@ def extract_verbs(vp_tokens):
             root_verb = t
             break
 
+    # Fallback to the first verb that not nmod or aux
     if not root_verb:
         for t in vp_tokens:
             if t['pos'] == 'V' and t['deprel'] not in ['nmod', 'aux']:
                 root_verb = t
                 break
 
+    # Fallback to any first verb in vp_tokens
     if not root_verb:
         for t in vp_tokens:
             if t['pos'] == 'V':
                 root_verb = t
                 break
 
-    # Fallback: first token
     if not root_verb:
         return [vp_tokens[0]['word']], [vp_tokens[0]]
 
@@ -192,14 +195,16 @@ def extract_verbs(vp_tokens):
 
         verb_phrases = []
         all_tokens = []
-
+        coordinated_verbs_id = [v['id'] for v in coordinated_verbs]
         for verb in coordinated_verbs:
             phrase_tokens = [verb]
             dependents = collect_direct_dependents(vp_tokens, verb['id'])
 
             # Keep only dependents that are not other coordinated verbs or coordination markers
-            dependents = [d for d in dependents if d['id'] not in [v['id'] for v in coordinated_verbs]
-                          and d['pos'] not in ['CH', 'Cc'] and d['deprel'] == 'vmod']
+            dependents = [d for d in dependents if
+                          d['id'] not in coordinated_verbs_id
+                          and d['pos'] not in ['CH', 'Cc']
+                          and d['deprel'] == 'vmod']
 
             phrase_tokens.extend(dependents)
             all_tokens.extend(phrase_tokens)
@@ -243,14 +248,19 @@ def extract_objects(vp_tokens, verb_token):
     if not vp_tokens:
         return []
 
-    # Find object tokens (dob, iob, pob)
-    obj_tokens = [t for t in vp_tokens if t['deprel'] in ['dob', 'iob', 'pob']]
-    if not obj_tokens:
+    # Find the first object token (dob, iob, pob)
+    obj_token = next((t for t in vp_tokens if t['deprel'] in ['dob', 'iob', 'pob']), None)
+
+    # Fallback to the first noun in vp_tokens
+    if obj_token is None:
+        obj_token = next((t for t in vp_tokens if t['pos'] == 'N'), None)
+
+    if obj_token is None:
         return []
 
     # Collect main object and its dependents
-    main_objects = [obj_tokens[0]]
-    main_objects.extend(collect_direct_dependents(vp_tokens, obj_tokens[0]['id']))
+    main_objects = [obj_token]
+    main_objects.extend(collect_direct_dependents(vp_tokens, obj_token['id']))
 
     if len(main_objects) == len(vp_tokens):
         return [{
@@ -318,17 +328,15 @@ def extract_objects(vp_tokens, verb_token):
 def process_sentence(df, logger):
     tokens = parse_dataframe_to_tokens(df)
     np_tokens, vp_tokens = split_sentence_np_vp(tokens)
-
-    # Debug log
     logger.debug("-----------------NP-----------------")
     logger.debug(np_tokens)
     logger.debug("-----------------VP-----------------")
     logger.debug(vp_tokens)
 
-    # Step 3: extract subjects, verbs, objects
-    subjects = extract_main_subjects(np_tokens)                 # list of phrases
-    verbs, verbs_token = extract_verbs(vp_tokens)               # list of verbs
-    objects = extract_objects(vp_tokens, verbs_token)           # list of object phrases
+    # Extract subjects, verbs, objects
+    subjects = extract_main_subjects(np_tokens)
+    verbs, verbs_token = extract_verbs(vp_tokens)
+    objects = extract_objects(vp_tokens, verbs_token)
 
     logger.debug("-----------------subjects----------------")
     logger.debug(subjects)
@@ -339,19 +347,16 @@ def process_sentence(df, logger):
     for obj in objects:
         logger.debug(obj['text'])
 
-    # Step 4: combine them into triplets
     verbs_position = {}
     for verb in verbs:
         verb_last_id = verb['tokens'][0]['id']
         verbs_position[verb['text']] = verb_last_id
 
-    triplets = []
-
-    # Sort verbs and objects by token positions
     verbs_sorted = sorted(verbs, key=lambda v: v['tokens'][0]['id'])
     objects_sorted = sorted(objects, key=lambda o: o['tokens'][0]['id'])
 
-    # Iterate over all subjects
+    # Start combine them into triplets
+    triplets = []
     for subj in subjects:
         for i, verb in enumerate(verbs_sorted):
             verb_last_id = verb['tokens'][-1]['id']
@@ -372,9 +377,7 @@ def process_sentence(df, logger):
     return triplets
 
 def triplet_extraction(text, vncorenlp_client, phoNLP_model, stopwords, logger, max_depth=2, depth=0):
-    """
-    Recursively extract triplets from text, including nested subjects/objects.
-    """
+    """Recursively extract triplets from text, including nested subjects/objects"""
     if depth > max_depth or not text.strip():
         return []
 
@@ -389,7 +392,7 @@ def triplet_extraction(text, vncorenlp_client, phoNLP_model, stopwords, logger, 
     all_triplets = []
 
     for subj, verb, obj in triplets:
-        # --- Refine subject ---
+        # Refine subject
         subj_annotation = phoNLP_model.annotate(text=subj)
         df_subj = parsing_result(subj_annotation)
         refined_subj_triplets = process_sentence(df_subj, logger)
@@ -399,7 +402,7 @@ def triplet_extraction(text, vncorenlp_client, phoNLP_model, stopwords, logger, 
         else:
             subj_refined = subj
 
-        # --- Refine object ---
+        # Refine object
         obj_annotation = phoNLP_model.annotate(text=obj)
         df_obj = parsing_result(obj_annotation)
         refined_obj_triplets = process_sentence(df_obj, logger)
@@ -409,13 +412,8 @@ def triplet_extraction(text, vncorenlp_client, phoNLP_model, stopwords, logger, 
         else:
             obj_refined = obj
 
-        # Add the main triplet with refined elements
         all_triplets.append((subj_refined, verb, obj_refined))
-
-        # Also add any new triplets extracted from subject
         all_triplets.extend(refined_subj_triplets)
-
-        # Also add any new triplets extracted from object
         all_triplets.extend(refined_obj_triplets)
 
     filtered_triplets = []
@@ -428,7 +426,7 @@ def triplet_extraction(text, vncorenlp_client, phoNLP_model, stopwords, logger, 
         verb_filtered = ' '.join([w for w in verb.split() if w.lower() not in stopwords]).strip()
         obj_filtered = ' '.join([w for w in obj.split() if w.lower() not in stopwords]).strip()
 
-        # Skip triplet if any element becomes empty
+        # Skip remove stopwords if any element becomes empty
         if not subj_filtered:
             subj_filtered = subj
         if not verb_filtered:
@@ -436,7 +434,6 @@ def triplet_extraction(text, vncorenlp_client, phoNLP_model, stopwords, logger, 
         if not obj_filtered:
             obj_filtered = obj
 
-        # Replace '_' with ' ' and strip spaces
         subj_filtered = subj_filtered.replace('_', ' ').strip().lower()
         verb_filtered = verb_filtered.replace('_', ' ').strip().lower()
         obj_filtered = obj_filtered.replace('_', ' ').strip().lower()

@@ -14,7 +14,7 @@ def main():
         password="1234567890",
     )
     vncorenlp_client = init_vncorenlp(r"E:\Github\LawAssistant\triplet_extraction\VnCoreNLP-1.2")
-    phoNLP_model = phonlp.load(save_dir=r"E:\Github\uit_chatbot\graph\phonlp")
+    phoNLP_model = phonlp.load(save_dir=r"/graph/nlp_models/phonlp")
     synonym_dict = load_synonym_dict(r"E:\Github\uit_chatbot\graph\listSameKey.txt")
     stopword = r"E:\Github\uit_chatbot\graph\jupyter\stopwords.csv"
 
