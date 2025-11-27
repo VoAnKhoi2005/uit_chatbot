@@ -19,7 +19,7 @@ def main():
 
     # Initialize NLP models
     vncorenlp_client = init_vncorenlp(r"D:\uit_chatbot\graph\VnCoreNLP-1.2")
-    phoNLP_model = phonlp.load(save_dir=r"D:\uit_chatbot\retrieval\phonlp")
+    phoNLP_model = phonlp.load(save_dir=r"/graph/phonlp")
 
     synonym_dict = load_synonym_dict(r"D:\uit_chatbot\graph\listSameKey.txt")
     stopwords = load_stopwords(r"D:\uit_chatbot\graph\stopwords.csv")
