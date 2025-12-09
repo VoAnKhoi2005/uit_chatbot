@@ -1,15 +1,17 @@
 from __future__ import annotations
 
+import asyncio
 import os
 from typing import Any, Dict
 
-from openai import AsyncOpenAI
 from pydantic import BaseSettings
+
+from groq_client import call_groq_llm
 
 
 class Settings(BaseSettings):
-    openai_api_key: str | None = None
-    openai_model: str = "gpt-4o-mini"
+    groq_api_key: str | None = None
+    groq_model: str = "llama3-8b-8192"
 
     class Config:
         env_prefix = ""
@@ -17,23 +19,22 @@ class Settings(BaseSettings):
 
 
 class LLMClient:
-    """Minimal async wrapper over OpenAI-compatible chat models."""
+    """Async wrapper over Groq via shared groq_client helper."""
 
     def __init__(self, settings: Settings | None = None) -> None:
         self.settings = settings or Settings()
-        api_key = self.settings.openai_api_key or os.getenv("OPENAI_API_KEY")
+        api_key = self.settings.groq_api_key or os.getenv("GROQ_API_KEY") or os.getenv("GROK_API_KEY")
         if not api_key:
-            raise EnvironmentError("OPENAI_API_KEY is required")
-        self.model = os.getenv("OPENAI_MODEL", self.settings.openai_model)
-        self.client = AsyncOpenAI(api_key=api_key)
+            raise EnvironmentError("GROQ_API_KEY is required")
+        # groq_client reads env directly; we still keep model for clarity
+        self.model = os.getenv("GROQ_MODEL", self.settings.groq_model)
 
     async def generate(self, system_prompt: str, user_prompt: str, context: str = "") -> str:
-        messages = [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": f"{user_prompt}\n\nContext:\n{context}".strip()},
-        ]
-        resp = await self.client.chat.completions.create(model=self.model, messages=messages)
-        return resp.choices[0].message.content or ""
+        prompt = f"{system_prompt}\n\n{user_prompt}"
+        if context:
+            prompt = f"{prompt}\n\nContext:\n{context}"
+        loop = asyncio.get_event_loop()
+        return await loop.run_in_executor(None, call_groq_llm, prompt)
 
     async def generate_json(self, system_prompt: str, user_prompt: str) -> Dict[str, Any]:
         raw = await self.generate(system_prompt, user_prompt)

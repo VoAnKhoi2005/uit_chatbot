@@ -19,3 +19,7 @@ Environment variables:
 - `OPENAI_MODEL` (default: gpt-4o-mini)
 - `UIT_TTL_PATH` (default: ontology/uit_regulations.ttl)
 - `UIT_VECTOR_DB` (default: retrieval/text_rag/vector_store.db)
+
+LLM backend (chatbot) uses Groq:
+- `GROQ_API_KEY` (or `GROK_API_KEY`) required
+- `GROQ_MODEL` (default: llama3-8b-8192)
