@@ -260,4 +260,8 @@ http-client.private.env.json
 .cursorignore
 .cursorindexingignore
 
-graph/phonlp/phonlp.pt
+graph/phonlp/phonlp.pt\
+
+# Node
+node_modules/
+web/node_modules/

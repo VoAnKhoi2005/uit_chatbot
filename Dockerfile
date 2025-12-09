@@ -1,0 +1,36 @@
+# Dockerfile for UIT Chatbot Backend
+#
+# Prerequisites:
+# 1. Generate ontology TTL: python -m ontology.from_jsonl
+# 2. Build vector index: python -m retrieval.text_rag.build_index
+#
+# These commands should be run on the host before building the image,
+# as the resulting files (ontology/uit_regulations.ttl and 
+# retrieval/text_rag/vector_store.db) will be copied into the image.
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Copy dependency file
+COPY requirements.txt .
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy backend code
+COPY backend/ ./backend/
+COPY ontology/ ./ontology/
+COPY retrieval/ ./retrieval/
+COPY groq_client.py .
+
+# Expose port 8000
+EXPOSE 8000
+
+# Use .env file passed at runtime (via --env-file)
+# Do not bake secrets into the image
+ENV PYTHONUNBUFFERED=1
+
+# Run the FastAPI app
+CMD ["uvicorn", "backend.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+

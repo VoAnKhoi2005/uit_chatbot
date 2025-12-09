@@ -1,0 +1,49 @@
+version: "3.9"
+
+# UIT Chatbot - Docker Compose Configuration
+#
+# Prerequisites (run on host before building):
+#   1. Generate ontology TTL: python -m ontology.from_jsonl
+#   2. Build vector index: python -m retrieval.text_rag.build_index
+#
+# Usage:
+#   docker compose build    # Build both images
+#   docker compose up       # Start both services
+#   docker compose up -d    # Start in detached mode
+#   docker compose down     # Stop and remove containers
+#
+# Services:
+#   - Backend API: http://localhost:8000
+#   - Frontend UI: http://localhost:4173
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: uitchatbot-backend
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    # Backend runs uvicorn backend.api.main:app on port 8000
+    # Environment variables (GROQ_API_KEY, GROQ_MODEL, etc.) loaded from .env
+
+  frontend:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: uitchatbot-frontend
+    depends_on:
+      - backend
+    environment:
+      # Point to backend service within Docker network
+      VITE_API_BASE_URL: "http://backend:8000"
+    ports:
+      - "4173:4173"
+    # Frontend serves built React app with 'serve' on port 4173
+    # Note: VITE_API_BASE_URL is set at build time in Vite, but we also set it
+    # at runtime for the serve process (though Vite apps typically need it at build time).
+    # For production, you may want to rebuild the frontend image with the correct
+    # VITE_API_BASE_URL, or use a reverse proxy that rewrites API calls.
+
