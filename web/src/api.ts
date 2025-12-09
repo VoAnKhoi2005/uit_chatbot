@@ -1,5 +1,5 @@
 export const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:10000";
 
 export async function chat(question: string) {
   const res = await fetch(`${API_BASE_URL}/chat`, {

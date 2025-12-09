@@ -24,13 +24,13 @@ COPY ontology/ ./ontology/
 COPY retrieval/ ./retrieval/
 COPY groq_client.py .
 
-# Expose port 8000
-EXPOSE 8000
+# Expose port 10000
+EXPOSE 10000
 
 # Use .env file passed at runtime (via --env-file)
 # Do not bake secrets into the image
 ENV PYTHONUNBUFFERED=1
 
 # Run the FastAPI app
-CMD ["uvicorn", "backend.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "backend.api.main:app", "--host", "0.0.0.0", "--port", "10000"]
 

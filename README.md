@@ -11,7 +11,7 @@ python -m retrieval.text_rag.build_index
 ```
 3) Start FastAPI server:
 ```
-uvicorn backend.api.main:app --host 0.0.0.0 --port 8000
+uvicorn backend.api.main:app --host 0.0.0.0 --port 10000
 ```
 
 Environment variables:
@@ -45,10 +45,10 @@ Build and run the backend container:
 docker build -t uit-chatbot-backend .
 
 # Run the container (use --env-file to load .env)
-docker run -p 8000:8000 --env-file .env uit-chatbot-backend
+docker run -p 10000:10000 --env-file .env uit-chatbot-backend
 ```
 
-The backend will be available at `http://localhost:8000`.
+The backend will be available at `http://localhost:10000`.
 
 ### Frontend (Optional)
 
@@ -59,13 +59,13 @@ Build and run the frontend container:
 docker build -t uit-chatbot-frontend ./web
 
 # Run the frontend container
-# Set VITE_API_BASE_URL to point to your backend (default: http://localhost:8000)
-docker run -p 4173:4173 -e VITE_API_BASE_URL="http://localhost:8000" uit-chatbot-frontend
+# Set VITE_API_BASE_URL to point to your backend (default: http://localhost:10000)
+docker run -p 4173:4173 -e VITE_API_BASE_URL="http://localhost:10000" uit-chatbot-frontend
 ```
 
 The frontend will be available at `http://localhost:4173`.
 
-**Note:** If the backend is running in a different container or host, adjust `VITE_API_BASE_URL` accordingly (e.g., `http://backend:8000` for Docker Compose, or your actual backend URL).
+**Note:** If the backend is running in a different container or host, adjust `VITE_API_BASE_URL` accordingly (e.g., `http://backend:10000` for Docker Compose, or your actual backend URL).
 
 ### Docker Compose (Recommended)
 
@@ -88,7 +88,7 @@ docker compose down
 ```
 
 This will start:
-- **Backend API** at `http://localhost:8000`
+- **Backend API** at `http://localhost:10000`
 - **Frontend UI** at `http://localhost:4173`
 
 The frontend is automatically configured to connect to the backend service within the Docker network.

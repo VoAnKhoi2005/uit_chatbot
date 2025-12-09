@@ -13,7 +13,7 @@ version: "3.9"
 #   docker compose down     # Stop and remove containers
 #
 # Services:
-#   - Backend API: http://localhost:8000
+#   - Backend API: http://localhost:10000
 #   - Frontend UI: http://localhost:4173
 
 services:
@@ -25,8 +25,8 @@ services:
     env_file:
       - .env
     ports:
-      - "8000:8000"
-    # Backend runs uvicorn backend.api.main:app on port 8000
+      - "10000:10000"
+    # Backend runs uvicorn backend.api.main:app on port 10000
     # Environment variables (GROQ_API_KEY, GROQ_MODEL, etc.) loaded from .env
 
   frontend:
@@ -38,7 +38,7 @@ services:
       - backend
     environment:
       # Point to backend service within Docker network
-      VITE_API_BASE_URL: "http://backend:8000"
+      VITE_API_BASE_URL: "http://backend:10000"
     ports:
       - "4173:4173"
     # Frontend serves built React app with 'serve' on port 4173
