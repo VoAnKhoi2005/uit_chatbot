@@ -32,11 +32,16 @@ class LLMClient:
         self.model = os.getenv("GROQ_MODEL", self.settings.groq_model)
 
     async def generate(self, system_prompt: str, user_prompt: str, context: str = "") -> str:
-        prompt = f"{system_prompt}\n\n{user_prompt}"
+        # Build user prompt with context if provided
+        full_user_prompt = user_prompt
         if context:
-            prompt = f"{prompt}\n\nContext:\n{context}"
+            full_user_prompt = f"{user_prompt}\n\nContext:\n{context}"
+        
+        # Pass system and user prompts separately to Groq API
         loop = asyncio.get_event_loop()
-        return await loop.run_in_executor(None, call_groq_llm, prompt)
+        return await loop.run_in_executor(
+            None, call_groq_llm, system_prompt, full_user_prompt
+        )
 
     async def generate_json(self, system_prompt: str, user_prompt: str) -> Dict[str, Any]:
         raw = await self.generate(system_prompt, user_prompt)
