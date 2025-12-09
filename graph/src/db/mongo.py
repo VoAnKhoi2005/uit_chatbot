@@ -75,10 +75,8 @@ class Triplet:
 
 
 
-def init_mongo():
+def init_mongo(uri=None):
     """Initialize MongoDB connection"""
-    # load_dotenv()
-    uri = os.getenv("KG_MONGO_URI")
     client = MongoClient(uri, server_api=ServerApi('1'))
     try:
         client.admin.command('ping')

@@ -94,14 +94,13 @@ def extract_main_subjects(np_tokens):
 
     main_subjects = [sub_tokens[0]]
     main_subjects.extend(collect_direct_dependents(np_tokens, sub_tokens[0]['id']))
-    for sub in main_subjects:
-        if sub['pos'] == 'N' and sub['deprel'] == 'nmod':
-            main_subjects.remove(sub)
+    if main_subjects and main_subjects[-1]['pos'] in ['Cc', 'CH']:
+        main_subjects.pop()
     if len(main_subjects) == len(np_tokens):
         return [rebuild_phrase(np_tokens)]
 
     # Find Coordination Word (Cc, CH)
-    coord_tokens = [t for t in np_tokens if t['pos'] in ['Cc', 'CH']]
+    coord_tokens = [t for t in np_tokens if (t['pos'] in ['Cc', 'CH'] and t not in main_subjects)]
     non_main_tokens = set()
     if len(coord_tokens) > 0:
         phrases = []
