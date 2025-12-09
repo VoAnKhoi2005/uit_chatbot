@@ -24,6 +24,9 @@ LLM backend (chatbot) uses Groq:
 - `GROQ_API_KEY` (or `GROK_API_KEY`) required
 - `GROQ_MODEL` (default: llama3-8b-8192)
 
+RAG retrieval:
+- `UIT_DISABLE_LOCAL_EMBEDDER` (default: `false`) - Set to `true` to disable heavy embedding model for lightweight deployment (e.g., Render free tier). Uses text-only search instead of vector similarity.
+
 ## Docker
 
 ### Backend

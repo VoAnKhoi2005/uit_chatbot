@@ -17,8 +17,10 @@ def main() -> None:
     db_path = Path(os.getenv("UIT_VECTOR_DB", "retrieval/text_rag/vector_store.db"))
     max_chars = int(os.getenv("UIT_CHUNK_MAX_CHARS", "800"))
 
+    # build_index always uses full embedding (offline indexing)
     embedder = TextEmbedder()
-    store = ChunkVectorStore(db_path)
+    # Explicitly disable lightweight mode for indexing
+    store = ChunkVectorStore(db_path, disable_local_embedder=False)
 
     batch = []
     seen_docs: set[tuple[str, str | None]] = set()
