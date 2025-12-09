@@ -25,7 +25,7 @@ def main():
     process_conn, process_cursor = init_sqlite(sqlite_path)
 
     # === Initialize MongoDB ===
-    mongo_client = init_mongo("mongodb+srv://voankhoi_db_user:Khoi55004115%40@kbcluster.yjfhsqp.mongodb.net/")
+    mongo_client = init_mongo("")
     if not mongo_client:
         print("Failed to connect to MongoDB. Exiting.")
         return
