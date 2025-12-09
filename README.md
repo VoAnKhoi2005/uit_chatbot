@@ -66,3 +66,29 @@ docker run -p 4173:4173 -e VITE_API_BASE_URL="http://localhost:8000" uit-chatbot
 The frontend will be available at `http://localhost:4173`.
 
 **Note:** If the backend is running in a different container or host, adjust `VITE_API_BASE_URL` accordingly (e.g., `http://backend:8000` for Docker Compose, or your actual backend URL).
+
+### Docker Compose (Recommended)
+
+Run both backend and frontend together with a single command:
+
+```bash
+# Generate data files first (if not already done)
+python -m ontology.from_jsonl
+python -m retrieval.text_rag.build_index
+
+# Build and start both services
+docker compose build
+docker compose up
+
+# Or run in detached mode
+docker compose up -d
+
+# Stop services
+docker compose down
+```
+
+This will start:
+- **Backend API** at `http://localhost:8000`
+- **Frontend UI** at `http://localhost:4173`
+
+The frontend is automatically configured to connect to the backend service within the Docker network.
