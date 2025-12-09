@@ -4,7 +4,8 @@ import asyncio
 import os
 from typing import Any, Dict
 
-from pydantic import BaseSettings
+# Note: With Pydantic v2, BaseSettings lives in the separate pydantic-settings package.
+from pydantic_settings import BaseSettings
 
 from groq_client import call_groq_llm
 
@@ -16,6 +17,7 @@ class Settings(BaseSettings):
     class Config:
         env_prefix = ""
         env_file = ".env"
+        extra = "ignore"
 
 
 class LLMClient:
