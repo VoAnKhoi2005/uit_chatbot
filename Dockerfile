@@ -24,7 +24,7 @@ COPY ontology/ ./ontology/
 COPY retrieval/ ./retrieval/
 COPY groq_client.py .
 
-# Expose port 8000
+# Expose port 10000
 EXPOSE 10000
 
 # Use .env file passed at runtime (via --env-file)

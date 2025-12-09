@@ -13,7 +13,7 @@ version: "3.9"
 #   docker compose down     # Stop and remove containers
 #
 # Services:
-#   - Backend API: http://localhost:8000
+#   - Backend API: http://localhost:10000
 #   - Frontend UI: http://localhost:4173
 
 services:

@@ -20,6 +20,6 @@ npm run build
 ```
 
 ## Config
-- `VITE_API_BASE_URL` (default: `http://localhost:8000`)
+- `VITE_API_BASE_URL` (default: `http://localhost:10000`)
   - Example: `VITE_API_BASE_URL=https://your-backend-url` npm run dev
 
