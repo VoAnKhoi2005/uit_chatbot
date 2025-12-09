@@ -5,5 +5,6 @@ __all__ = [
     "chunker",
     "embeddings",
     "vector_store",
+    "config",
 ]
 
