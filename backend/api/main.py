@@ -1,32 +1,21 @@
 from __future__ import annotations
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from backend.llm.orchestrator import ChatPipeline
 from .schemas import ChatRequest, ChatResponse, Source
 
-
-from fastapi.middleware.cors import CORSMiddleware
-# ... các import khác
-
-
 app = FastAPI(title="UIT Chatbot API")
 
-
-# ===== CORS cho FE Vercel + local dev =====
-origins = [
-    "https://uitchatbotfe.vercel.app",  # FE trên Vercel
-    "http://localhost:5173",            # FE local (Vite)
-]
-
+# CORS middleware: allow all origins for demo mode
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],  # allow all origins for demo
     allow_credentials=True,
-    allow_methods=["*"],   # cho phép tất cả method: GET, POST, OPTIONS, ...
-    allow_headers=["*"],   # cho phép tất cả headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
-# ===== hết phần CORS =====git 
 
 # Initialize shared pipeline
 pipeline = ChatPipeline()
