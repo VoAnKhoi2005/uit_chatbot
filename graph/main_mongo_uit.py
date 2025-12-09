@@ -1,6 +1,3 @@
-import os
-import csv
-import logging
 from tqdm import tqdm
 import phonlp
 

@@ -1,6 +1,3 @@
-import os
-import csv
-import logging
 from tqdm import tqdm
 import phonlp
 
@@ -16,23 +13,23 @@ def main():
     print(f"Base directory set to: {base_dir}\n")
 
     # === Define file paths relative to base directory ===
-    sqlite_path = os.path.join(base_dir, "graph", "jupyter", "GTVT_law.db")
+    sqlite_path = os.path.join(base_dir, "graph", "data", "uit_law_points.db")
     vncorenlp_dir = os.path.join(base_dir, "graph", "nlp_models", "VnCoreNLP-1.2")
     phonlp_dir = os.path.join(base_dir, "graph", "nlp_models", "phonlp")
     synonym_file = os.path.join(base_dir, "graph", "listSameKey.txt")
     stopwords_file = os.path.join(base_dir, "graph", "stopwords.csv")
-    no_triplet_csv_path = os.path.join(base_dir, "graph", "logs", "no_triplets_uit_log_2.csv")
-    log_file_path = os.path.join(base_dir, "graph", "logs", "triplet_extraction.txt")
+    no_triplet_csv_path = os.path.join(base_dir, "graph", "logs", "no_triplets_uit_diem_log_1.csv")
+    log_file_path = os.path.join(base_dir, "graph", "logs", "triplet_extraction_uit_diem.txt")
 
     # === Initialize SQLite connections ===
     process_conn, process_cursor = init_sqlite(sqlite_path)
 
     # === Initialize MongoDB ===
-    mongo_client = init_mongo()
+    mongo_client = init_mongo("mongodb+srv://voankhoi_db_user:Khoi55004115%40@kbcluster.yjfhsqp.mongodb.net/")
     if not mongo_client:
         print("Failed to connect to MongoDB. Exiting.")
         return
-    db = mongo_client["KB_LAW"]
+    db = mongo_client["KB_UIT"]
 
     # === Initialize NLP models ===
     vncorenlp_client = init_vncorenlp(vncorenlp_dir)
@@ -97,6 +94,7 @@ def main():
                 phoNLP_model=phoNLP_model,
                 stopwords=stopwords,
                 logger=logger,
+                max_depth=4
             )
 
             triplets_list = [

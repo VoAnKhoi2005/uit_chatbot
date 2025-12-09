@@ -4,7 +4,7 @@ from tqdm import tqdm
 from graph.src.db import *
 from graph.src.triplet_extraction import *
 
-
+################### Old version, need updating ##############################
 def main():
     process_conn, process_cursor = init_sqlite(r"E:\Github\uit_chatbot\graph\process_law.db")
     law_conn, law_cursor = init_sqlite(r"E:\Github\uit_chatbot\graph\GTVT_law.db")
