@@ -74,6 +74,12 @@ class ChatPipeline:
         self._ensure_vector_store_loaded()
 
         self.top_k = int(os.getenv("UIT_RAG_TOP_K", "5"))
+        # Larger candidate pool for EXACT_RULE questions (before reranking)
+        self.exact_rule_candidate_k = int(
+            os.getenv("UIT_RAG_EXACT_RULE_CANDIDATES", str(self.top_k * 6))
+        )
+        # Lazy-loaded cache of raw KB items for lexical fallback
+        self._kb_items_cache: Optional[List[Dict[str, Any]]] = None
 
 
     async def answer_question(
@@ -101,14 +107,32 @@ class ChatPipeline:
         # Build retrieval query: handle multi-turn and query rewriting (async)
         retrieval_query = await self._build_retrieval_query_async(question, q_type, conversation_history)
         
+        # Decide candidate pool size based on question type
+        if q_type == QuestionType.EXACT_RULE:
+            candidate_k = self.exact_rule_candidate_k
+        else:
+            candidate_k = None
+
         # Perform hybrid retrieval (vector + lexical)
         if self.logger:
             self.logger.debug(
-                "[RAG-DEBUG] question=%r q_type=%s retrieval_query=%r", question, q_type, retrieval_query
+                "[RAG-DEBUG] question=%r q_type=%s retrieval_query=%r candidate_k=%r",
+                question, q_type, retrieval_query, candidate_k,
             )
-        chunks = self._hybrid_retrieve(retrieval_query, top_k=self.top_k)
+        chunks = self._hybrid_retrieve(retrieval_query, top_k=self.top_k, candidate_k=candidate_k)
         if self.logger:
             self._log_chunks("[RAG-DEBUG] retrieved", chunks, limit=5)
+
+        # Fallback: EXACT_RULE but no keyword hit in retrieved chunks
+        if q_type == QuestionType.EXACT_RULE and not self._has_keyword_hit(question, chunks):
+            if self.logger:
+                self.logger.debug("[RAG-DEBUG] no keyword hit in vector results, using lexical KB fallback")
+            fallback_chunks = self._lexical_retrieve_from_kb(question, top_k=self.top_k)
+            if fallback_chunks:
+                chunks = fallback_chunks
+                if self.logger:
+                    self._log_chunks("[RAG-DEBUG] fallback_lexical", chunks, limit=5)
+
         ontology_facts = self._fetch_ontology_facts(chunks)
 
         # For EXACT_RULE: re-rank chunks using keyword-aware scoring before selecting best rule
@@ -505,13 +529,21 @@ class ChatPipeline:
                     score += 1.0
         return score
     
-    def _hybrid_retrieve(self, query: str, top_k: int = 5) -> List[Dict[str, Any]]:
+    def _hybrid_retrieve(
+        self,
+        query: str,
+        top_k: int = 5,
+        candidate_k: Optional[int] = None,
+    ) -> List[Dict[str, Any]]:
         """
         Hybrid retrieval: vector search + lexical ranking.
         Generic implementation that works for any question.
         """
         # Step 1: Vector search (or text search if embedding disabled)
-        chunks = self.vector_store.search(query, self.embedder, top_k=top_k * 2)  # Get more candidates
+        if candidate_k is None:
+            candidate_k = top_k * 2
+
+        chunks = self.vector_store.search(query, self.embedder, top_k=candidate_k)  # Get more candidates
         
         if not chunks:
             return []
@@ -550,6 +582,121 @@ class ChatPipeline:
             scored_chunks.sort(key=lambda x: x["score"], reverse=True)
         
         return scored_chunks[:top_k]
+
+    def _load_kb_items(self) -> List[Dict[str, Any]]:
+        """
+        Load all KB items from UIT_CONTENT_JSON (JSON or JSONL) and cache them.
+        Each item is expected to have at least: _id, title/heading, content.
+        """
+        if self._kb_items_cache is not None:
+            return self._kb_items_cache
+
+        content_path = Path(os.getenv("UIT_CONTENT_JSON", "graph/mongo_export_uit/KB_UIT.items.json"))
+
+        items: List[Dict[str, Any]] = []
+        if not content_path.exists():
+            if self.logger:
+                self.logger.warning("[RAG-DEBUG] KB items file not found for lexical fallback: %s", content_path)
+            self._kb_items_cache = []
+            return self._kb_items_cache
+
+        try:
+            if content_path.suffix.lower() in {".jsonl", ".jsonl.txt"}:
+                import json
+
+                with content_path.open("r", encoding="utf-8") as f:
+                    for line in f:
+                        line = line.strip()
+                        if not line:
+                            continue
+                        try:
+                            obj = json.loads(line)
+                            items.append(obj)
+                        except Exception:
+                            continue
+            else:
+                import json
+
+                with content_path.open("r", encoding="utf-8") as f:
+                    data = json.load(f)
+                if isinstance(data, list):
+                    items = data
+                elif isinstance(data, dict):
+                    maybe_items = data.get("items") or data.get("data")
+                    if isinstance(maybe_items, list):
+                        items = maybe_items
+                    else:
+                        items = [data]
+        except Exception as exc:
+            if self.logger:
+                self.logger.warning("[RAG-DEBUG] failed to load KB items for lexical fallback: %s", exc)
+            items = []
+
+        self._kb_items_cache = items
+        if self.logger:
+            self.logger.info("[RAG-DEBUG] loaded %d KB items for lexical fallback", len(items))
+        return self._kb_items_cache
+
+    def _has_keyword_hit(self, question: str, chunks: List[Dict[str, Any]]) -> bool:
+        """
+        Check if any retrieved chunk contains at least one keyword/number from the question.
+        Used to decide whether we need lexical fallback.
+        """
+        if not chunks:
+            return False
+        keywords, numbers = self._extract_keywords(question)
+        if not keywords and not numbers:
+            return False
+
+        for ch in chunks:
+            text = ch.get("text", "") or ch.get("content", "")
+            if not text:
+                continue
+            score = self._compute_lexical_score(text, keywords, numbers)
+            if score > 0:
+                return True
+        return False
+
+    def _lexical_retrieve_from_kb(self, question: str, top_k: int) -> List[Dict[str, Any]]:
+        """
+        Pure lexical retrieval over raw KB items (JSON/JSONL).
+        Used as a fallback for EXACT_RULE when vector retrieval does not
+        contain any keyword-matching chunk.
+        """
+        items = self._load_kb_items()
+        if not items:
+            return []
+
+        keywords, numbers = self._extract_keywords(question)
+        if not keywords and not numbers:
+            return []
+
+        scored: List[Dict[str, Any]] = []
+        for it in items:
+            title = it.get("title") or ""
+            heading = it.get("heading") or ""
+            content = it.get("content") or ""
+            combined_text = f"{title}\n{heading}\n{content}"
+
+            lex_score = self._compute_lexical_score(combined_text, keywords, numbers)
+            if lex_score <= 0:
+                continue
+
+            scored.append(
+                {
+                    "article_id": it.get("_id"),
+                    "clause_id": None,
+                    "text": content,
+                    "metadata": {"title": title, "heading": heading},
+                    "score": lex_score,  # use lexical score as base
+                }
+            )
+
+        if not scored:
+            return []
+
+        scored.sort(key=lambda x: x["score"], reverse=True)
+        return scored[:top_k]
     
     async def _rewrite_query_for_regulations(self, user_question: str) -> str:
         """
