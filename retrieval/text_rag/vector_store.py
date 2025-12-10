@@ -26,6 +26,12 @@ class ChunkVectorStore:
         )
         self._setup()
 
+    def count_chunks(self) -> int:
+        """Return number of indexed chunks (rows) currently stored."""
+        cursor = self.conn.execute("SELECT COUNT(*) FROM chunk_vectors")
+        row = cursor.fetchone()
+        return int(row[0]) if row and row[0] is not None else 0
+
     def _setup(self) -> None:
         self.conn.execute(
             """
