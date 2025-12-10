@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import re
 from typing import Any, Dict, List, Optional
 
 from ontology.loader import get_article_by_id, load_ontology
@@ -75,8 +76,9 @@ class ChatPipeline:
         chunks = self.vector_store.search(normalized_question, self.embedder, top_k=self.top_k)
         ontology_facts = self._fetch_ontology_facts(chunks)
 
-        # For EXACT_RULE: bypass LLM and answer directly from retrieved rules
+        # For EXACT_RULE: re-rank chunks using keyword-aware scoring before selecting best rule
         if q_type == QuestionType.EXACT_RULE:
+            chunks = self._rerank_chunks_by_keywords(question, chunks)
             answer_text = self._answer_exact_rule(question, chunks)
         else:
             # For NEAR_RULE and others: use LLM with context
@@ -182,6 +184,92 @@ class ChatPipeline:
 
         return answer
 
+    def _extract_keywords(self, question: str) -> tuple[List[str], List[str]]:
+        """
+        Extract domain keywords and numbers from question for keyword-aware ranking.
+        Returns: (domain_keywords, numbers)
+        """
+        question_lower = question.lower()
+        
+        # Domain keywords by category
+        credit_keywords = ["tín chỉ", "học kỳ", "học kỳ chính", "đăng ký", "tối đa", "tối thiểu"]
+        warning_keywords = ["cảnh báo", "học vụ", "rớt môn", "học lại", "thi lại", "gpa", "điểm trung bình", "đtbhk", "đtbc"]
+        graduation_keywords = ["điểm rèn luyện", "tốt nghiệp", "xét tốt nghiệp", "điều kiện tốt nghiệp"]
+        conduct_keywords = ["kỷ luật", "vi phạm", "hành vi", "đạo đức"]
+        
+        all_keywords = credit_keywords + warning_keywords + graduation_keywords + conduct_keywords
+        
+        # Find matching keywords
+        found_keywords = [kw for kw in all_keywords if kw in question_lower]
+        
+        # Extract numbers (including decimals like 3.0, 8.0)
+        numbers = re.findall(r'\d+\.?\d*', question)
+        
+        return found_keywords, numbers
+    
+    def _compute_lexical_score(self, chunk_text: str, keywords: List[str], numbers: List[str]) -> float:
+        """
+        Compute lexical overlap score for a chunk based on keywords and numbers.
+        Returns a score where higher = better match.
+        """
+        chunk_lower = chunk_text.lower()
+        score = 0.0
+        
+        # Score for keyword matches
+        for keyword in keywords:
+            if keyword in chunk_lower:
+                score += 1.0
+                # Bonus for exact phrase match
+                if f" {keyword} " in chunk_lower or chunk_lower.startswith(keyword) or chunk_lower.endswith(keyword):
+                    score += 0.5
+        
+        # Score for number matches (important for exact rules)
+        for num in numbers:
+            if num in chunk_text:  # Case-sensitive for numbers
+                score += 2.0  # Numbers are very important for exact rules
+        
+        return score
+    
+    def _rerank_chunks_by_keywords(
+        self, question: str, chunks: List[Dict[str, Any]]
+    ) -> List[Dict[str, Any]]:
+        """
+        Re-rank chunks for EXACT_RULE questions using keyword-aware scoring.
+        Combines lexical score with original similarity score.
+        """
+        if not chunks:
+            return chunks
+        
+        keywords, numbers = self._extract_keywords(question)
+        
+        # If no keywords found, return original order
+        if not keywords and not numbers:
+            return chunks
+        
+        # Compute lexical scores for all chunks
+        scored_chunks = []
+        for chunk in chunks:
+            chunk_text = chunk.get("text", "")
+            lexical_score = self._compute_lexical_score(chunk_text, keywords, numbers)
+            
+            # Get original similarity score (default to 0.5 if missing)
+            original_score = chunk.get("score", 0.5)
+            
+            # Combine scores: lexical_score is weighted more heavily for EXACT_RULE
+            # alpha = 1.0 means lexical score has equal weight to similarity
+            combined_score = original_score + 1.0 * lexical_score
+            
+            scored_chunks.append({
+                **chunk,
+                "lexical_score": lexical_score,
+                "combined_score": combined_score,
+            })
+        
+        # Sort by combined_score descending, then by lexical_score descending
+        scored_chunks.sort(key=lambda x: (x["combined_score"], x["lexical_score"]), reverse=True)
+        
+        return scored_chunks
+    
     def _build_context(self, chunks: List[Dict[str, Any]], ontology_facts: List[Dict[str, Any]]) -> str:
         lines: List[str] = []
         if chunks:
