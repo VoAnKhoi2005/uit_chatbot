@@ -48,8 +48,25 @@ class ChatPipeline:
         )
         self.top_k = int(os.getenv("UIT_RAG_TOP_K", "5"))
 
-    async def answer_question(self, question: str) -> Dict[str, Any]:
-        q_type = await classify_question(question, self.llm_client)
+    async def answer_question(
+        self, question: str, conversation_history: List[Dict[str, str]] | None = None
+    ) -> Dict[str, Any]:
+        """
+        Answer a question, optionally with conversation history for multi-turn context.
+        
+        Args:
+            question: The current question
+            conversation_history: List of previous messages in format [{"role": "user|bot", "content": "..."}]
+        """
+        # Build full context for classification (include recent history if available)
+        classification_input = question
+        if conversation_history:
+            # Include last 2-3 turns for context
+            recent_history = conversation_history[-3:] if len(conversation_history) > 3 else conversation_history
+            history_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in recent_history])
+            classification_input = f"{history_text}\n\nCurrent question: {question}"
+        
+        q_type = await classify_question(classification_input, self.llm_client)
         if q_type == QuestionType.OUT_OF_SCOPE:
             return await self._handle_out_of_scope(question)
 
@@ -64,6 +81,12 @@ class ChatPipeline:
         else:
             # For NEAR_RULE and others: use LLM with context
             context = self._build_context(chunks, ontology_facts)
+            # Include conversation history in context for multi-turn
+            if conversation_history:
+                history_context = "\n\nLịch sử hội thoại trước đó:\n"
+                history_context += "\n".join([f"{msg['role']}: {msg['content']}" for msg in conversation_history[-3:]])
+                context = f"{context}\n{history_context}"
+            
             answer_text = await self.llm_client.generate(
                 ANSWER_SYSTEM_PROMPT, user_prompt=normalized_question, context=context
             )
@@ -113,6 +136,7 @@ class ChatPipeline:
         """
         Generate a direct answer for EXACT_RULE questions using retrieved rules only.
         Do NOT call the LLM here. Returns a fallback message if no rules found.
+        Format: "Theo {title}{optional_path_info}: {full_rule_content}"
         """
         if not chunks:
             return "Không tìm thấy quy định phù hợp trong dữ liệu hiện có."
@@ -123,19 +147,28 @@ class ChatPipeline:
         clause_id = best_chunk.get("clause_id")
         text = best_chunk.get("text", "").strip()
         metadata = best_chunk.get("metadata", {})
-        title = metadata.get("title") if isinstance(metadata, dict) else None
+        title = None
+        if isinstance(metadata, dict):
+            title = metadata.get("title")
+            # Also check if title is in article_id format
+            if not title and article_id:
+                # Try to construct title from article_id if it looks like "Điều X"
+                if "Điều" in str(article_id) or article_id.startswith("Điều"):
+                    title = str(article_id)
+                else:
+                    # Use article_id as fallback
+                    title = f"Điều {article_id}" if article_id else None
 
-        # Build reference string
+        # Build reference string: prefer title from metadata, fallback to article_id/clause_id
         ref_parts = []
         if title:
             ref_parts.append(title)
         elif article_id:
-            # Try to extract "Điều X" from article_id if it's a readable format
-            # Otherwise use article_id as-is
             if "Điều" in str(article_id) or article_id.startswith("Điều"):
                 ref_parts.append(str(article_id))
             else:
                 ref_parts.append(f"Điều {article_id}")
+        
         if clause_id:
             if "Khoản" in str(clause_id) or clause_id.startswith("Khoản"):
                 ref_parts.append(str(clause_id))
@@ -144,16 +177,8 @@ class ChatPipeline:
 
         ref_str = ", ".join(ref_parts) if ref_parts else "quy định"
 
-        # Build answer: use the rule text directly, optionally truncated if too long
-        if len(text) > 500:
-            # Truncate to first 500 chars and add ellipsis
-            truncated = text[:500].rsplit(".", 1)[0] + "."
-            answer = f"Theo {ref_str}: {truncated}"
-        else:
-            answer = f"Theo {ref_str}: {text}"
-
-        # Add note about consulting full regulation
-        answer += "\n\nBạn nên tham khảo đầy đủ điều khoản này trong quy chế chính thức để nắm rõ hơn."
+        # Build answer: use the FULL rule text directly (no truncation, no extra commentary)
+        answer = f"Theo {ref_str}: {text}"
 
         return answer
 
