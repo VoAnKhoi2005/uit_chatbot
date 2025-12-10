@@ -57,11 +57,16 @@ class ChatPipeline:
         # Pass embedder only if it exists (when local embedding is enabled)
         chunks = self.vector_store.search(normalized_question, self.embedder, top_k=self.top_k)
         ontology_facts = self._fetch_ontology_facts(chunks)
-        context = self._build_context(chunks, ontology_facts)
 
-        answer_text = await self.llm_client.generate(
-            ANSWER_SYSTEM_PROMPT, user_prompt=normalized_question, context=context
-        )
+        # For EXACT_RULE: bypass LLM and answer directly from retrieved rules
+        if q_type == QuestionType.EXACT_RULE:
+            answer_text = self._answer_exact_rule(question, chunks)
+        else:
+            # For NEAR_RULE and others: use LLM with context
+            context = self._build_context(chunks, ontology_facts)
+            answer_text = await self.llm_client.generate(
+                ANSWER_SYSTEM_PROMPT, user_prompt=normalized_question, context=context
+            )
 
         return {
             "answer": answer_text,
@@ -103,6 +108,54 @@ class ChatPipeline:
             for r in rows:
                 facts.append({"article_id": art, "title": r.get("title"), "text": r.get("text")})
         return facts
+
+    def _answer_exact_rule(self, question: str, chunks: List[Dict[str, Any]]) -> str:
+        """
+        Generate a direct answer for EXACT_RULE questions using retrieved rules only.
+        Do NOT call the LLM here. Returns a fallback message if no rules found.
+        """
+        if not chunks:
+            return "Không tìm thấy quy định phù hợp trong dữ liệu hiện có."
+
+        # Take the best rule (first chunk, usually highest score)
+        best_chunk = chunks[0]
+        article_id = best_chunk.get("article_id") or ""
+        clause_id = best_chunk.get("clause_id")
+        text = best_chunk.get("text", "").strip()
+        metadata = best_chunk.get("metadata", {})
+        title = metadata.get("title") if isinstance(metadata, dict) else None
+
+        # Build reference string
+        ref_parts = []
+        if title:
+            ref_parts.append(title)
+        elif article_id:
+            # Try to extract "Điều X" from article_id if it's a readable format
+            # Otherwise use article_id as-is
+            if "Điều" in str(article_id) or article_id.startswith("Điều"):
+                ref_parts.append(str(article_id))
+            else:
+                ref_parts.append(f"Điều {article_id}")
+        if clause_id:
+            if "Khoản" in str(clause_id) or clause_id.startswith("Khoản"):
+                ref_parts.append(str(clause_id))
+            else:
+                ref_parts.append(f"Khoản {clause_id}")
+
+        ref_str = ", ".join(ref_parts) if ref_parts else "quy định"
+
+        # Build answer: use the rule text directly, optionally truncated if too long
+        if len(text) > 500:
+            # Truncate to first 500 chars and add ellipsis
+            truncated = text[:500].rsplit(".", 1)[0] + "."
+            answer = f"Theo {ref_str}: {truncated}"
+        else:
+            answer = f"Theo {ref_str}: {text}"
+
+        # Add note about consulting full regulation
+        answer += "\n\nBạn nên tham khảo đầy đủ điều khoản này trong quy chế chính thức để nắm rõ hơn."
+
+        return answer
 
     def _build_context(self, chunks: List[Dict[str, Any]], ontology_facts: List[Dict[str, Any]]) -> str:
         lines: List[str] = []
