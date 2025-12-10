@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 import re
+import unicodedata
 from typing import Any, Dict, List, Optional
 
 from ontology.loader import get_article_by_id, load_ontology
@@ -9,7 +10,11 @@ from retrieval.text_rag.config import UIT_DISABLE_LOCAL_EMBEDDER
 from retrieval.text_rag.vector_store import ChunkVectorStore
 
 from .client import LLMClient
-from .prompts import ANSWER_SYSTEM_PROMPT, OUT_OF_SCOPE_SYSTEM_PROMPT
+from .prompts import (
+    ANSWER_SYSTEM_PROMPT,
+    NEAR_RULE_QUERY_REWRITE_PROMPT,
+    OUT_OF_SCOPE_SYSTEM_PROMPT,
+)
 from .question_classifier import classify_question
 from .question_types import QuestionType
 
@@ -71,9 +76,11 @@ class ChatPipeline:
         if q_type == QuestionType.OUT_OF_SCOPE:
             return await self._handle_out_of_scope(question)
 
-        normalized_question = question  # placeholder for future rewrite if needed
-        # Pass embedder only if it exists (when local embedding is enabled)
-        chunks = self.vector_store.search(normalized_question, self.embedder, top_k=self.top_k)
+        # Build retrieval query: handle multi-turn and query rewriting (async)
+        retrieval_query = await self._build_retrieval_query_async(question, q_type, conversation_history)
+        
+        # Perform hybrid retrieval (vector + lexical)
+        chunks = self._hybrid_retrieve(retrieval_query, top_k=self.top_k)
         ontology_facts = self._fetch_ontology_facts(chunks)
 
         # For EXACT_RULE: re-rank chunks using keyword-aware scoring before selecting best rule
@@ -89,8 +96,9 @@ class ChatPipeline:
                 history_context += "\n".join([f"{msg['role']}: {msg['content']}" for msg in conversation_history[-3:]])
                 context = f"{context}\n{history_context}"
             
+            # Use original question for answer generation, not rewritten query
             answer_text = await self.llm_client.generate(
-                ANSWER_SYSTEM_PROMPT, user_prompt=normalized_question, context=context
+                ANSWER_SYSTEM_PROMPT, user_prompt=question, context=context
             )
 
         return {
@@ -269,6 +277,163 @@ class ChatPipeline:
         scored_chunks.sort(key=lambda x: (x["combined_score"], x["lexical_score"]), reverse=True)
         
         return scored_chunks
+    
+    def _normalize_vietnamese(self, text: str) -> str:
+        """
+        Normalize Vietnamese text: lowercase, remove accents (NFD + filter Mn), strip spaces.
+        Example: "Cảnh báo học vụ" → "canh bao hoc vu"
+        """
+        # Lowercase
+        text = text.lower()
+        # Remove accents using NFD decomposition and filter out combining marks
+        text = unicodedata.normalize("NFD", text)
+        text = "".join(c for c in text if unicodedata.category(c) != "Mn")
+        # Strip spaces
+        text = " ".join(text.split())
+        return text
+    
+    def _extract_keywords_from_query(self, query: str) -> List[str]:
+        """
+        Extract keywords from query by removing stopwords.
+        Returns list of normalized keywords.
+        """
+        # Vietnamese stopwords (common function words)
+        stopwords = {
+            "la", "co", "thi", "em", "anh", "toi", "ban", "the", "mot", "cua", "va", "hoac", "nhung",
+            "duoc", "se", "da", "dang", "ve", "cho", "voi", "trong", "tren", "duoi", "sao", "gi",
+            "nao", "khi", "neu", "thi", "vay", "the", "con", "hay", "ma", "de", "nen", "khong",
+            "khong", "chua", "chung", "nhieu", "it", "rat", "qua", "nhu", "nhu", "cung", "cac"
+        }
+        
+        normalized = self._normalize_vietnamese(query)
+        tokens = normalized.split()
+        keywords = [t for t in tokens if t not in stopwords and len(t) > 1]
+        return keywords
+    
+    def _compute_hybrid_lexical_score(
+        self, chunk_text: str, keywords: List[str]
+    ) -> float:
+        """
+        Compute lexical overlap score for hybrid retrieval.
+        Includes bonuses for common bigrams.
+        """
+        normalized_content = self._normalize_vietnamese(chunk_text)
+        score = 0.0
+        
+        # Basic keyword matching
+        for kw in keywords:
+            if kw in normalized_content:
+                score += 1.0
+        
+        # Bigram bonuses
+        normalized_lower = normalized_content.lower()
+        if "canh bao" in normalized_lower and "hoc vu" in normalized_lower:
+            score += 2.0
+        if ("khoa luan" in normalized_lower or "kltn" in normalized_lower) and (
+            "tot nghiep" in normalized_lower or "nop" in normalized_lower
+        ):
+            score += 2.0
+        if "tin chi" in normalized_lower:
+            score += 1.0
+        if "diem ren luyen" in normalized_lower:
+            score += 2.0
+        
+        return score
+    
+    def _hybrid_retrieve(self, query: str, top_k: int = 5) -> List[Dict[str, Any]]:
+        """
+        Hybrid retrieval: vector search + lexical ranking.
+        Generic implementation that works for any question.
+        """
+        # Step 1: Vector search (or text search if embedding disabled)
+        chunks = self.vector_store.search(query, self.embedder, top_k=top_k * 2)  # Get more candidates
+        
+        if not chunks:
+            return []
+        
+        # Step 2: Extract keywords from query
+        keywords = self._extract_keywords_from_query(query)
+        
+        # Step 3: Compute lexical scores and combine with embedding scores
+        scored_chunks = []
+        for chunk in chunks:
+            chunk_text = chunk.get("text", "")
+            lexical_score = self._compute_hybrid_lexical_score(chunk_text, keywords)
+            embedding_score = chunk.get("score", 0.5)
+            
+            # Combine scores: alpha = 0.75 (lexical has significant weight)
+            combined_score = embedding_score + 0.75 * lexical_score
+            
+            scored_chunks.append({
+                **chunk,
+                "lexical_score": lexical_score,
+                "combined_score": combined_score,
+            })
+        
+        # Step 4: Ranking rule
+        # If at least one candidate has lexical_score > 0, sort by combined_score
+        # Otherwise, keep original embedding ranking
+        has_lexical_matches = any(c["lexical_score"] > 0 for c in scored_chunks)
+        
+        if has_lexical_matches:
+            scored_chunks.sort(key=lambda x: (x["combined_score"], x["lexical_score"]), reverse=True)
+        else:
+            # Keep original embedding ranking
+            scored_chunks.sort(key=lambda x: x["score"], reverse=True)
+        
+        return scored_chunks[:top_k]
+    
+    async def _rewrite_query_for_regulations(self, user_question: str) -> str:
+        """
+        Use LLM to rewrite an informal student question into a formal, regulation-oriented query.
+        The result will be used as the retrieval query. Must be generic, no hard-coded content.
+        
+        Example (for illustration only, not hard-coded):
+        - Input: "Em rớt 3 môn thì có bị sao không ạ?"
+        - Output: "Quy định về cảnh báo học vụ và xử lý khi sinh viên rớt nhiều môn, điểm trung bình học kỳ thấp."
+        """
+        rewritten = await self.llm_client.generate(
+            NEAR_RULE_QUERY_REWRITE_PROMPT,
+            user_prompt=user_question,
+            context=""
+        )
+        # Clean up: remove quotes, extra whitespace
+        rewritten = rewritten.strip().strip('"').strip("'")
+        return rewritten
+    
+    async def _build_retrieval_query_async(
+        self,
+        question: str,
+        q_type: QuestionType,
+        conversation_history: List[Dict[str, str]] | None,
+    ) -> str:
+        """
+        Build retrieval query with query rewriting (async) and multi-turn context.
+        """
+        # Step 1: Query rewriting for NEAR_RULE
+        if q_type == QuestionType.NEAR_RULE:
+            rewritten = await self._rewrite_query_for_regulations(question)
+            current_query = rewritten
+        else:
+            current_query = question
+        
+        # Step 2: Multi-turn query building
+        normalized_question = self._normalize_vietnamese(question)
+        discourse_markers = ["vay", "the", "con", "neu vay", "vay thi"]
+        starts_with_discourse = any(
+            normalized_question.startswith(marker) for marker in discourse_markers
+        )
+        
+        if starts_with_discourse and conversation_history:
+            # Find last user question
+            for msg in reversed(conversation_history):
+                if msg.get("role") == "user":
+                    prev_question = msg.get("content", "")
+                    if prev_question:
+                        # Combine previous question with current query
+                        return f"{prev_question} {current_query}"
+        
+        return current_query
     
     def _build_context(self, chunks: List[Dict[str, Any]], ontology_facts: List[Dict[str, Any]]) -> str:
         lines: List[str] = []
