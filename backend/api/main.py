@@ -28,7 +28,12 @@ async def health():
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat(req: ChatRequest):
-    result = await pipeline.answer_question(req.question)
+    # Convert ChatMessage to dict format expected by pipeline
+    history = None
+    if req.conversation_history:
+        history = [{"role": msg.role, "content": msg.content} for msg in req.conversation_history]
+    
+    result = await pipeline.answer_question(req.question, conversation_history=history)
     sources = [
         Source(article_id=s.get("article_id"), clause_id=s.get("clause_id"), text=s.get("text", ""))
         for s in result.get("sources", [])
