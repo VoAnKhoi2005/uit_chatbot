@@ -1,0 +1,51 @@
+version: "3.9"
+
+# UIT Chatbot - Docker Compose Configuration (GPT Version)
+#
+# Prerequisites (run on host before building):
+#   1. Generate ontology TTL: python -m ontology.from_jsonl
+#   2. Build vector index: python -m retrieval.text_rag.build_index
+#
+# Usage:
+#   docker compose -f docker-compose.gpt.yml build    # Build both images
+#   docker compose -f docker-compose.gpt.yml up       # Start both services
+#   docker compose -f docker-compose.gpt.yml up -d    # Start in detached mode
+#   docker compose -f docker-compose.gpt.yml down     # Stop and remove containers
+#
+# Services:
+#   - Backend API (GPT): http://localhost:10000
+#   - Frontend UI: http://localhost:4173
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.gpt
+    container_name: uitchatbot-backend-gpt
+    env_file:
+      - .env
+    environment:
+      # GPT-specific environment variables
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
+      UIT_TTL_PATH: ${UIT_TTL_PATH:-ontology/uit_regulations.ttl}
+      UIT_VECTOR_DB: ${UIT_VECTOR_DB:-retrieval/text_rag/vector_store.db}
+      UIT_DISABLE_LOCAL_EMBEDDER: ${UIT_DISABLE_LOCAL_EMBEDDER:-false}
+    ports:
+      - "10000:10000"
+    # Backend runs uvicorn backend.api.main_gpt:app on port 10000
+    # Environment variables (OPENAI_API_KEY, OPENAI_MODEL, etc.) loaded from .env
+
+  frontend:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: uitchatbot-frontend-gpt
+    depends_on:
+      - backend
+    environment:
+      # Point to backend service within Docker network
+      VITE_API_BASE_URL: "http://backend:10000"
+    ports:
+      - "4173:4173"
+    # Frontend serves built React app with 'serve' on port 4173

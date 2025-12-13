@@ -18,6 +18,7 @@ from .client import LLMClient
 
 from .prompts import (
     ANSWER_SYSTEM_PROMPT,
+    EXACT_RULE_ANSWER_SYSTEM_PROMPT,
     NEAR_RULE_QUERY_REWRITE_PROMPT,
     OUT_OF_SCOPE_SYSTEM_PROMPT,
 )
@@ -135,12 +136,16 @@ class ChatPipeline:
 
         ontology_facts = self._fetch_ontology_facts(chunks)
 
-        # For EXACT_RULE: re-rank chunks using keyword-aware scoring before selecting best rule
+        # For EXACT_RULE: re-rank chunks using keyword-aware scoring, then use LLM
         if q_type == QuestionType.EXACT_RULE:
             chunks = self._rerank_chunks_by_keywords(question, chunks)
             if self.logger:
                 self._log_chunks("[RAG-DEBUG] after_rerank_exact_rule", chunks, limit=5)
-            answer_text = self._answer_exact_rule(question, chunks)
+            # Use LLM with all chunks for better formatting and comprehensive answer
+            context = self._build_context(chunks, ontology_facts)
+            answer_text = await self.llm_client.generate(
+                EXACT_RULE_ANSWER_SYSTEM_PROMPT, user_prompt=question, context=context
+            )
         else:
             # For NEAR_RULE and others: use LLM with context
             context = self._build_context(chunks, ontology_facts)

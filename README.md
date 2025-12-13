@@ -1,5 +1,8 @@
 # uit_chatbot
 
+## 🚀 GPT Version Available!
+Want to use OpenAI GPT instead of Groq? See **[README_GPT.md](README_GPT.md)** for setup instructions with Docker support.
+
 ## Quick start (API)
 1) Generate ontology (if not already):
 ```
