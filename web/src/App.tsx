@@ -2,6 +2,7 @@ import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { chat, openPdfInNewTab } from "./api";
+import About from "./About";
 
 type Message = {
   role: "user" | "bot";
@@ -11,6 +12,8 @@ type Message = {
   questionType?: string;
 };
 
+type Page = "chat" | "about";
+
 export default function App() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -18,6 +21,7 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const [apiStatus, setApiStatus] = useState<"connected" | "error">("connected");
   const [expandedSources, setExpandedSources] = useState<Set<number>>(new Set());
+  const [currentPage, setCurrentPage] = useState<Page>("chat");
   const chatRef = useRef<HTMLDivElement | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
@@ -122,11 +126,10 @@ export default function App() {
         </div>
         <nav className="sidebar-nav">
           <div className="nav-item active">Chat</div>
-          <div className="nav-item">Docs</div>
           <div className="nav-item">About</div>
         </nav>
         <div className="sidebar-footer">
-          <p>Powered by GPT + UIT Regulations</p>
+          <p>Powered by GPT + Ontology</p>
         </div>
       </aside>
 
@@ -134,22 +137,30 @@ export default function App() {
       <div className="main-content">
         {/* Top Bar */}
         <header className="topbar">
-          <h2 className="topbar-title">UIT Regulations Chat</h2>
-          <div className={`status-pill ${apiStatus}`}>
-            {apiStatus === "connected" ? "Connected to API" : "Error"}
-          </div>
+          <h2 className="topbar-title">
+            {currentPage === "chat" ? "UIT Regulations Chat" : "About UIT Chatbot"}
+          </h2>
+          {currentPage === "chat" && (
+            <div className={`status-pill ${apiStatus}`}>
+              {apiStatus === "connected" ? "Connected to API" : "Error"}
+            </div>
+          )}
         </header>
 
         {/* Error Banner */}
-        {error && (
+        {error && currentPage === "chat" && (
           <div className="error-banner">
             <span>{error}</span>
             <button onClick={() => setError(null)} className="error-dismiss">×</button>
           </div>
         )}
 
-        {/* Main Panel: Chat + Sources */}
-        <div className="main-panel">
+        {/* Page Content */}
+        {currentPage === "about" ? (
+          <About />
+        ) : (
+          /* Main Panel: Chat + Sources */
+          <div className="main-panel">
           {/* Chat Area */}
           <div className="chat-area">
             <div className="chat-messages" ref={chatRef}>
@@ -284,6 +295,7 @@ export default function App() {
             )}
           </aside>
         </div>
+        )}
       </div>
     </div>
   );

@@ -1,4 +1,34 @@
-# uit_chatbot
+# UIT Chatbot - Regulations Assistant
+
+An AI-powered chatbot for UIT (University of Information Technology) regulations and academic policies.
+
+## 📋 Project Overview
+
+This chatbot helps students and staff quickly find information about UIT's training regulations, academic policies, and administrative procedures. It uses RAG (Retrieval-Augmented Generation) with ontology-based knowledge graphs and vector search to provide accurate, cited answers.
+
+## 👥 Project Team
+
+| Name | Class | Student ID |
+|------|-------|------------|
+| Võ An Khôi | KTPM2023.2 | 23520790 |
+| Võ Hồng Lương | KTPM2023.2 | 23520905 |
+| Phạm Thị Kiều Diễm | KTPM2023.1 | 23520286 |
+
+## ⚖️ Disclaimer
+
+This project is developed for **educational purposes only** as part of an academic assignment at the University of Information Technology (UIT).
+
+**Important Notes:**
+- The information provided by this chatbot is based on available UIT regulation documents and may not always be up-to-date or complete
+- Users should always verify critical information with official UIT sources and academic advisors
+- This is a prototype system and should not be used as the sole source for making important academic decisions
+- The developers are not responsible for any decisions made based on the chatbot's responses
+- All regulation documents and data belong to their respective copyright holders
+
+For official and authoritative information, please refer to:
+- [UIT Official Website](https://www.uit.edu.vn/)
+- UIT Student Affairs Office
+- Your academic advisor
 
 ## 🚀 GPT Version Available!
 Want to use OpenAI GPT instead of Groq? See **[README_GPT.md](README_GPT.md)** for setup instructions with Docker support.
@@ -98,3 +128,24 @@ This will start:
 - **Frontend UI** at `http://localhost:4173`
 
 The frontend is automatically configured to connect to the backend service within the Docker network.
+
+## 🎓 Academic Context
+
+This project was developed as part of the coursework at the University of Information Technology, VNU-HCM. It demonstrates the application of:
+- Natural Language Processing (NLP)
+- Retrieval-Augmented Generation (RAG)
+- Knowledge Graphs and Ontologies
+- Modern web development practices
+- Docker containerization
+
+## 📝 License
+
+This project is for educational purposes. All UIT regulation documents and related content are property of the University of Information Technology.
+
+## 📞 Contact
+
+For questions or issues related to this project, please contact the development team through the university's official channels.
+
+---
+
+**Developed by KTPM2023 students at University of Information Technology (UIT), VNU-HCM**
