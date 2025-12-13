@@ -125,8 +125,18 @@ export default function App() {
           <p className="sidebar-subtitle">Regulations assistant</p>
         </div>
         <nav className="sidebar-nav">
-          <div className="nav-item active">Chat</div>
-          <div className="nav-item">About</div>
+          <div 
+            className={`nav-item ${currentPage === "chat" ? "active" : ""}`}
+            onClick={() => setCurrentPage("chat")}
+          >
+            Chat
+          </div>
+          <div 
+            className={`nav-item ${currentPage === "about" ? "active" : ""}`}
+            onClick={() => setCurrentPage("about")}
+          >
+            About
+          </div>
         </nav>
         <div className="sidebar-footer">
           <p>Powered by GPT + Ontology</p>

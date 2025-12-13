@@ -142,10 +142,6 @@ This project was developed as part of the coursework at the University of Inform
 
 This project is for educational purposes. All UIT regulation documents and related content are property of the University of Information Technology.
 
-## 📞 Contact
-
-For questions or issues related to this project, please contact the development team through the university's official channels.
-
 ---
 
 **Developed by KTPM2023 students at University of Information Technology (UIT), VNU-HCM**
