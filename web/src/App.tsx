@@ -1,13 +1,13 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { chat } from "./api";
+import { chat, openPdfInNewTab } from "./api";
 
 type Message = {
   role: "user" | "bot";
   text: string;
   timestamp: string;
-  sources?: { article_id?: string; clause_id?: string; text: string }[];
+  sources?: { article_id?: string; clause_id?: string; text: string; doc_id?: string; title?: string; doc_title?: string; so_hieu?: string }[];
   questionType?: string;
 };
 
@@ -17,6 +17,7 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [apiStatus, setApiStatus] = useState<"connected" | "error">("connected");
+  const [expandedSources, setExpandedSources] = useState<Set<number>>(new Set());
   const chatRef = useRef<HTMLDivElement | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
@@ -97,9 +98,18 @@ export default function App() {
     [loading, input]
   );
 
-  const truncateText = (text: string, maxLength: number = 180) => {
-    if (text.length <= maxLength) return text;
-    return text.slice(0, maxLength) + "...";
+  const MAX_SOURCE_LENGTH = 200;
+
+  const toggleSourceExpand = (index: number) => {
+    setExpandedSources((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
   };
 
   return (
@@ -203,19 +213,59 @@ export default function App() {
             <div className="sources-content">
               {lastBotMessage?.sources && lastBotMessage.sources.length > 0 ? (
                 <div className="sources-list">
-                  {lastBotMessage.sources.map((s, i) => (
-                    <div key={i} className="source-card">
-                      <div className="source-header">
-                        {s.article_id && (
-                          <span className="source-id">
-                            Điều {s.article_id}
-                            {s.clause_id && ` – Khoản ${s.clause_id}`}
-                          </span>
+                  {lastBotMessage.sources.map((s, i) => {
+                    const sourceText = s.text || "";
+                    const isLong = sourceText.length > MAX_SOURCE_LENGTH;
+                    const isExpanded = expandedSources.has(i);
+                    const displayText = isLong && !isExpanded 
+                      ? sourceText.slice(0, MAX_SOURCE_LENGTH) + "..."
+                      : sourceText;
+                    const hasDocId = s.doc_id && s.doc_id.trim().length > 0;
+
+                    return (
+                      <div key={i} className="source-card">
+                        <div 
+                          className={`source-header ${hasDocId ? 'clickable' : ''}`}
+                          onClick={() => hasDocId && openPdfInNewTab(s.doc_id!)}
+                          title={hasDocId ? 'Click to view PDF' : ''}
+                        >
+                          {s.article_id && (
+                            <span className="source-id">
+                              {[
+                                s.title,
+                                s.doc_title,
+                                s.so_hieu && `Số hiệu: ${s.so_hieu}`
+                              ].filter(Boolean).join(" – ")}
+                            </span>
+                          )}
+                          {hasDocId && (
+                            <svg 
+                              className="pdf-icon" 
+                              viewBox="0 0 24 24" 
+                              fill="none" 
+                              stroke="currentColor" 
+                              strokeWidth="2"
+                            >
+                              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                              <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                          )}
+                        </div>
+                        <p className="source-text">{displayText}</p>
+                        {isLong && (
+                          <button 
+                            className="expand-button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              toggleSourceExpand(i);
+                            }}
+                          >
+                            {isExpanded ? "Show less" : "Show more"}
+                          </button>
                         )}
                       </div>
-                      <p className="source-text">{truncateText(s.text || "")}</p>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               ) : (
                 <div className="sources-empty">

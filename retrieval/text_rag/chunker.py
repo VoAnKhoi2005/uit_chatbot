@@ -34,6 +34,9 @@ def chunk_document(doc: RawRegulationDoc, max_chars: int = 800) -> List[TextChun
                 "metadata": {
                     "title": doc.get("title"),
                     "section": doc.get("section"),
+                    "doc_id": doc.get("doc_id"),
+                    "doc_title": doc.get("doc_title"),
+                    "so_hieu": doc.get("so_hieu"),
                 },
             }
         ]
@@ -59,6 +62,9 @@ def chunk_document(doc: RawRegulationDoc, max_chars: int = 800) -> List[TextChun
                 "metadata": {
                     "title": doc.get("title"),
                     "section": doc.get("section"),
+                    "doc_id": doc.get("doc_id"),
+                    "doc_title": doc.get("doc_title"),
+                    "so_hieu": doc.get("so_hieu"),
                 },
             }
         )
@@ -75,6 +81,9 @@ def chunk_document(doc: RawRegulationDoc, max_chars: int = 800) -> List[TextChun
                 "metadata": {
                     "title": doc.get("title"),
                     "section": doc.get("section"),
+                    "doc_id": doc.get("doc_id"),
+                    "doc_title": doc.get("doc_title"),
+                    "so_hieu": doc.get("so_hieu"),
                 },
             }
         )

@@ -13,6 +13,9 @@ class RawRegulationDoc(TypedDict):
     title: str | None
     section: str | None
     text: str
+    doc_id: str
+    doc_title: str | None
+    so_hieu: str
 
 
 def _find_article_id(item_id: str, index: dict[str, dict]) -> str | None:
@@ -62,5 +65,8 @@ def iter_raw_docs(path: str | Path) -> Iterator[RawRegulationDoc]:
             "title": item.get("title"),
             "section": item.get("heading"),
             "text": text,
+            "doc_id": item.get("doc_id"),
+            "doc_title": item.get("doc_title"),
+            "so_hieu": item.get("so_hieu"),
         }
 

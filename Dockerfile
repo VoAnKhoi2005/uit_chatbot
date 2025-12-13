@@ -24,6 +24,10 @@ COPY ontology/ ./ontology/
 COPY retrieval/ ./retrieval/
 COPY groq_client.py .
 
+# Copy PDF files and CSV mapping
+COPY normailizer/data/quy_dinh_dao_tao_dh_uit/ ./pdfs/
+COPY jupyter/doc_sources.csv ./data/doc_sources.csv
+
 # Expose port 10000
 EXPOSE 10000
 
