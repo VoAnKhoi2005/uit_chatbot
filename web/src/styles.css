@@ -477,8 +477,8 @@ body {
   font-family: inherit;
   font-size: 14px;
   resize: none;
-  max-height: 72px;
-  overflow-y: auto;
+  max-height: 144px;
+  overflow-y: hidden;
   line-height: 1.5;
 }
 
