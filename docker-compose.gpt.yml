@@ -45,7 +45,7 @@ services:
       - backend
     environment:
       # Point to backend service within Docker network
-      VITE_API_BASE_URL: "http://backend:10000"
+      VITE_API_BASE_URL: ${VITE_API_BASE_URL:-https://api.uitchatbot.io.vn}
     ports:
       - "4173:4173"
     # Frontend serves built React app with 'serve' on port 4173

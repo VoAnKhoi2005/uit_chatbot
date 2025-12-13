@@ -58,11 +58,8 @@ export default function App() {
     setLoading(true);
     setApiStatus("connected");
     try {
-      // Build conversation history from messages (last 5 turns for efficiency)
-      const conversationHistory = messages.slice(-10).map(msg => ({
-        role: msg.role,
-        content: msg.text
-      }));
+      // Conversation history disabled - sending empty array
+      const conversationHistory: any[] = [];
       
       const res = await chat(question, conversationHistory);
       const botTimestamp = new Date().toLocaleTimeString();
