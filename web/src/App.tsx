@@ -58,7 +58,13 @@ export default function App() {
     setLoading(true);
     setApiStatus("connected");
     try {
-      const res = await chat(question);
+      // Build conversation history from messages (last 5 turns for efficiency)
+      const conversationHistory = messages.slice(-10).map(msg => ({
+        role: msg.role,
+        content: msg.text
+      }));
+      
+      const res = await chat(question, conversationHistory);
       const botTimestamp = new Date().toLocaleTimeString();
       setMessages((prev) => [
         ...prev,
