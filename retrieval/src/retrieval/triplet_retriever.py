@@ -26,11 +26,12 @@ class TripletRetriever():
         if not search_results:
             return []
         r = search_results[0]
-
         item = collection.find_one({"_id": to_object_id(r["parent_id"])})
 
         if not item or "documents" not in item:
+            print ("No documents found for id: ", r["parent_id"])
             return []
+
 
         ids = [doc["document_id"] for doc in item["documents"]]
         return ids
@@ -42,11 +43,9 @@ class TripletRetriever():
         return self._search_document_ids(text, self.relations_collection, is_concept=False)
 
     def search_triplet(self, triplet: Dict[str, str]) -> List[Dict[str, Any]]:
-
         c1 = triplet["c1"]
         c2 = triplet["c2"]
         r = triplet["r"]
-
         ds1 = self.search_concepts_document_ids(c1)
         ds2 = self.search_concepts_document_ids(c2)
         ds3 = self.search_relations_document_ids(r)
@@ -91,7 +90,6 @@ class TripletRetriever():
         # 1. Thực hiện tìm kiếm và tích lũy điểm cho từng triplet
         for triplet in triplets:
             triplet_results = self.search_triplet(triplet)
-
             for result in triplet_results:
                 score = result["score"]
                 ids = result["ids"]

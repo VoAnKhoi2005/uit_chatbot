@@ -260,4 +260,4 @@ http-client.private.env.json
 .cursorignore
 .cursorindexingignore
 
-graph/phonlp/phonlp.pt
+graph/nlp_models/phonlp/phonlp.pt
