@@ -142,6 +142,7 @@ def _item_class(level: str) -> URIRef:
     return SC.Entity
 
 
+# python
 def _add_items(graph: Graph, path: Path) -> None:
     logger.info("Loading items from %s", path)
     with path.open("r", encoding="utf-8") as handle:
@@ -158,10 +159,16 @@ def _add_items(graph: Graph, path: Path) -> None:
         graph.add((uri, RDF.type, _item_class(level)))
 
         doc_id = item.get("doc_id")
+        doc_title = item.get("doc_title")
+        so_hieu = item.get("so_hieu")
         if doc_id:
             doc_uri = _ensure_doc_node(graph, doc_id)
             graph.add((uri, SC.inDocument, doc_uri))
             graph.add((uri, SC.docId, Literal(doc_id)))
+            if doc_title:
+                graph.add((uri, SC.docTitle, Literal(doc_title)))
+            if so_hieu:
+                graph.add((uri, SC.soHieu, Literal(so_hieu)))
 
         if level.lower() == "dieu":
             graph.add((uri, SC.articleId, Literal(item_id)))

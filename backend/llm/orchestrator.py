@@ -166,8 +166,12 @@ class ChatPipeline:
             "sources": [
                 {
                     "article_id": c.get("article_id"),
+                    "title": c.get("title"),
                     "clause_id": c.get("clause_id"),
                     "text": c.get("text"),
+                    "doc_id": c.get("metadata", {}).get("doc_id") or "",
+                    "doc_title": c.get("metadata", {}).get("doc_title") if isinstance(c.get("metadata"), dict) else None,
+                    "so_hieu": c.get("metadata", {}).get("so_hieu") if isinstance(c.get("metadata"), dict) else None,
                 }
                 for c in chunks
             ],
@@ -681,6 +685,9 @@ class ChatPipeline:
             title = it.get("title") or ""
             heading = it.get("heading") or ""
             content = it.get("content") or ""
+            doc_id = it.get("doc_id") or ""
+            doc_title = it.get("doc_title") or ""
+            so_hieu = it.get("so_hieu") or ""
             combined_text = f"{title}\n{heading}\n{content}"
 
             lex_score = self._compute_lexical_score(combined_text, keywords, numbers)
@@ -692,7 +699,13 @@ class ChatPipeline:
                     "article_id": it.get("_id"),
                     "clause_id": None,
                     "text": content,
-                    "metadata": {"title": title, "heading": heading},
+                    "metadata": {
+                        "title": title,
+                        "heading": heading,
+                        "doc_id": doc_id,
+                        "doc_title": doc_title,
+                        "so_hieu": so_hieu,
+                    },
                     "score": lex_score,  # use lexical score as base
                 }
             )
