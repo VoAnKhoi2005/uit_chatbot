@@ -18,11 +18,15 @@ COPY requirements.txt .
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Pre-download and cache the Vietnamese SBERT model
+RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('keepitreal/vietnamese-sbert')"
+
 # Copy backend code
 COPY backend/ ./backend/
 COPY ontology/ ./ontology/
 COPY retrieval/ ./retrieval/
 COPY groq_client.py .
+COPY normailizer/ ./normailizer/
 
 # Expose port 10000
 EXPOSE 10000
@@ -33,3 +37,4 @@ ENV PYTHONUNBUFFERED=1
 
 # Run the FastAPI app with GPT client
 CMD ["uvicorn", "backend.api.main_gpt:app", "--host", "0.0.0.0", "--port", "10000"]
+
