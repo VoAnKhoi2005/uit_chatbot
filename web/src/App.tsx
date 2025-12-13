@@ -1,4 +1,6 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { chat } from "./api";
 
 type Message = {
@@ -56,7 +58,13 @@ export default function App() {
     setLoading(true);
     setApiStatus("connected");
     try {
-      const res = await chat(question);
+      // Build conversation history from messages (last 5 turns for efficiency)
+      const conversationHistory = messages.slice(-10).map(msg => ({
+        role: msg.role,
+        content: msg.text
+      }));
+      
+      const res = await chat(question, conversationHistory);
       const botTimestamp = new Date().toLocaleTimeString();
       setMessages((prev) => [
         ...prev,
@@ -111,7 +119,7 @@ export default function App() {
           <div className="nav-item">About</div>
         </nav>
         <div className="sidebar-footer">
-          <p>Powered by Groq + UIT Regulations</p>
+          <p>Powered by GPT + UIT Regulations</p>
         </div>
       </aside>
 
@@ -147,7 +155,15 @@ export default function App() {
               {messages.map((m, idx) => (
                 <div key={idx} className={`message ${m.role}`}>
                   <div className="message-bubble">
-                    <div className="message-text">{m.text}</div>
+                    <div className="message-text">
+                      {m.role === "bot" ? (
+                        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                          {m.text}
+                        </ReactMarkdown>
+                      ) : (
+                        m.text
+                      )}
+                    </div>
                     <div className="message-timestamp">{m.timestamp}</div>
                   </div>
                 </div>

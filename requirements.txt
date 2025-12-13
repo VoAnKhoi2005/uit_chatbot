@@ -16,6 +16,9 @@ numpy>=1.24.0
 # HTTP client for Groq API
 requests>=2.31.0
 
+# OpenAI API client
+openai>=1.0.0
+
 # Environment variables
 python-dotenv>=1.0.0
 

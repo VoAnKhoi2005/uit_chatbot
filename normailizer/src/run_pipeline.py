@@ -6,8 +6,16 @@ from parse_structure import parse_chapters_and_articles
 
 def infer_meta_from_filename(path: Path):
     base = path.stem
-    token = base.split("_")[0]
-    so_hieu = token.replace("-", "/").upper()
+    # Improved regex to extract full so_hieu pattern (e.g., 828-ĐHQG-ĐHCNTT)
+    # Captures everything before first underscore that contains hyphens/slashes
+    match = re.match(r'^([\d]+[-/][^_]+?)(?:_|$)', base)
+    if match:
+        so_hieu = match.group(1).replace("-", "/").upper()
+    else:
+        # Fallback: just take first part before underscore
+        token = base.split("_")[0]
+        so_hieu = token.replace("-", "/").upper()
+    
     title = base.replace("_", " ").strip().title()
     return so_hieu, title
 
