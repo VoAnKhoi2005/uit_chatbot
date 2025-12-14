@@ -36,7 +36,14 @@ COPY --from=builder /app/dist ./dist
 # Expose port 4173 (default for serve)
 EXPOSE 4173
 
-# Serve the built app
-# Note: VITE_API_BASE_URL should be set at runtime if different from default
-CMD ["serve", "-s", "dist", "-l", "4173"]
+# Create entrypoint script to inject runtime config
+RUN echo '#!/bin/sh' > /entrypoint.sh && \
+    echo 'if [ -n "$API_BASE_URL" ]; then' >> /entrypoint.sh && \
+    echo '  sed -i "s|__API_BASE_URL__|$API_BASE_URL|g" /app/dist/config.js' >> /entrypoint.sh && \
+    echo 'fi' >> /entrypoint.sh && \
+    echo 'exec serve -s dist -l 4173' >> /entrypoint.sh && \
+    chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+
 

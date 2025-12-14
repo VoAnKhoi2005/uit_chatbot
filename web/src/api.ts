@@ -1,5 +1,5 @@
 export const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "https://api.uitchatbot.io.vn";
+  import.meta.env.API_BASE_URL || "https://localhost:10000";
 
 export async function chat(question: string, conversationHistory?: Array<{role: string; content: string}>) {
   const res = await fetch(`${API_BASE_URL}/chat`, {

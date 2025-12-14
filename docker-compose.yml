@@ -32,16 +32,15 @@ services:
       context: ./web
       dockerfile: Dockerfile
     container_name: uitchatbot-frontend
+    env_file:
+      - .env
     depends_on:
       - backend
     environment:
       # Point to backend service within Docker network
-      VITE_API_BASE_URL: "http://backend:10000"
+      API_BASE_URL: ${API_BASE_URL:-http://localhost:10000}
     ports:
       - "4173:4173"
     # Frontend serves built React app with 'serve' on port 4173
-    # Note: VITE_API_BASE_URL is set at build time in Vite, but we also set it
-    # at runtime for the serve process (though Vite apps typically need it at build time).
-    # For production, you may want to rebuild the frontend image with the correct
-    # VITE_API_BASE_URL, or use a reverse proxy that rewrites API calls.
+    # API_BASE_URL is injected at runtime via entrypoint script
 

@@ -40,11 +40,13 @@ services:
       context: ./web
       dockerfile: Dockerfile
     container_name: uitchatbot-frontend-gpt
+    env_file:
+      - .env
     depends_on:
       - backend
     environment:
       # Point to backend service within Docker network
-      VITE_API_BASE_URL: ${VITE_API_BASE_URL:-https://api.uitchatbot.io.vn}
+      API_BASE_URL: ${API_BASE_URL:-http://localhost:10000}
     ports:
       - "4173:4173"
     restart: on-failure
