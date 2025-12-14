@@ -1,18 +1,20 @@
-# UIT Chatbot - Regulations Assistant
+![UIT](https://img.shields.io/badge/from-UIT%20VNUHCM-blue?style=for-the-badge&link=https%3A%2F%2Fwww.uit.edu.vn%2F)
+
+**UIT Chatbot - Regulations Assistant**
 
 An AI-powered chatbot for UIT (University of Information Technology) regulations and academic policies.
 
-## 📋 Project Overview
+**Contributors**:
+- Member: Vo Hong Luong - 23520905 - [Github](https://github.com/luong-vh)
+- Member: Vo An Khoi - 23520790 - [Github](https://github.com/VoAnKhoi2005)
+- Member: Pham Thi Kieu Diem - 23520286 - [Github](https://github.com/korobe0906)
 
-This chatbot helps students and staff quickly find information about UIT's training regulations, academic policies, and administrative procedures. It uses RAG (Retrieval-Augmented Generation) with ontology-based knowledge graphs and vector search to provide accurate, cited answers.
+**Supervisors**:
+- Dr. Do Trong Hop
+  
+**Description:** This chatbot helps students and staff quickly find information about UIT's training regulations, academic policies, and administrative procedures. It uses RAG (Retrieval-Augmented Generation) with ontology-based knowledge graphs and vector search to provide accurate, cited answers.
 
-## 👥 Project Team
-
-| Name | Class | Student ID |
-|------|-------|------------|
-| Võ An Khôi | KTPM2023.2 | 23520790 |
-| Võ Hồng Lương | KTPM2023.2 | 23520905 |
-| Phạm Thị Kiều Diễm | KTPM2023.1 | 23520286 |
+---
 
 ## ⚖️ Disclaimer
 
@@ -141,7 +143,3 @@ This project was developed as part of the coursework at the University of Inform
 ## 📝 License
 
 This project is for educational purposes. All UIT regulation documents and related content are property of the University of Information Technology.
-
----
-
-**Developed by KTPM2023 students at University of Information Technology (UIT), VNU-HCM**
