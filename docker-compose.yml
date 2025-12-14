@@ -1,5 +1,3 @@
-version: "3.9"
-
 # UIT Chatbot - Docker Compose Configuration
 #
 # Prerequisites (run on host before building):

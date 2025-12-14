@@ -21,7 +21,7 @@ export async function chat(question: string, conversationHistory?: Array<{role: 
 }
 
 export function getPdfUrl(docId: string): string {
-  return `${API_BASE_URL}/pdf/${docId}`;
+  return `${API_BASE_URL}/document/${docId}`;
 }
 
 export function openPdfInNewTab(docId: string) {

@@ -1,8 +1,9 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { chat, openPdfInNewTab } from "./api";
+import { chat, getPdfUrl } from "./api";
 import About from "./About";
+import PdfViewer from "./PdfViewer";
 
 type Message = {
   role: "user" | "bot";
@@ -14,6 +15,8 @@ type Message = {
 
 type Page = "chat" | "about";
 
+type Theme = "light" | "dark" | "system";
+
 export default function App() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -22,8 +25,48 @@ export default function App() {
   const [apiStatus, setApiStatus] = useState<"connected" | "error">("connected");
   const [expandedSources, setExpandedSources] = useState<Set<number>>(new Set());
   const [currentPage, setCurrentPage] = useState<Page>("chat");
+  const [pdfViewerUrl, setPdfViewerUrl] = useState<string | null>(null);
+  const [theme, setTheme] = useState<Theme>(() => {
+    const saved = localStorage.getItem("theme") as Theme;
+    return saved || "system";
+  });
   const chatRef = useRef<HTMLDivElement | null>(null);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
+
+  // Apply theme to document
+  useEffect(() => {
+    const root = document.documentElement;
+    
+    if (theme === "system") {
+      const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      root.setAttribute("data-theme", isDark ? "dark" : "light");
+    } else {
+      root.setAttribute("data-theme", theme);
+    }
+    
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  // Listen for system theme changes
+  useEffect(() => {
+    if (theme !== "system") return;
+
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleChange = (e: MediaQueryListEvent) => {
+      document.documentElement.setAttribute("data-theme", e.matches ? "dark" : "light");
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, [theme]);
+
+  const cycleTheme = () => {
+    setTheme((current) => {
+      if (current === "system") return "light";
+      if (current === "light") return "dark";
+      return "system";
+    });
+  };
 
   // Get last bot message sources and question type for side panel
   const lastBotMessage = useMemo(() => {
@@ -139,6 +182,35 @@ export default function App() {
           </div>
         </nav>
         <div className="sidebar-footer">
+          <button className="theme-toggle" onClick={cycleTheme} title="Toggle theme">
+            {theme === "system" && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="9" x2="15" y2="15"></line>
+              </svg>
+            )}
+            {theme === "light" && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            )}
+            {theme === "dark" && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            )}
+            <span className="theme-label">
+              {theme === "system" ? "Auto" : theme === "light" ? "Light" : "Dark"}
+            </span>
+          </button>
           <p>Powered by GPT + Ontology</p>
         </div>
       </aside>
@@ -247,7 +319,7 @@ export default function App() {
                       <div key={i} className="source-card">
                         <div 
                           className={`source-header ${hasDocId ? 'clickable' : ''}`}
-                          onClick={() => hasDocId && openPdfInNewTab(s.doc_id!)}
+                          onClick={() => hasDocId && setPdfViewerUrl(getPdfUrl(s.doc_id!))}
                           title={hasDocId ? 'Click to view PDF' : ''}
                         >
                           {s.article_id && (
@@ -307,6 +379,11 @@ export default function App() {
         </div>
         )}
       </div>
+
+      {/* PDF Viewer Modal */}
+      {pdfViewerUrl && (
+        <PdfViewer pdfUrl={pdfViewerUrl} onClose={() => setPdfViewerUrl(null)} />
+      )}
     </div>
   );
 }

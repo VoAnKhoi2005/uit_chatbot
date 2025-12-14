@@ -15,6 +15,10 @@ RUN npm install
 # Copy source files
 COPY . .
 
+# Copy PDF.js worker to public directory (use react-pdf's bundled version to match API version)
+RUN cp node_modules/react-pdf/node_modules/pdfjs-dist/build/pdf.worker.min.mjs public/pdf.worker.min.mjs || \
+    cp node_modules/pdfjs-dist/build/pdf.worker.min.mjs public/pdf.worker.min.mjs
+
 # Build the app
 RUN npm run build
 

@@ -114,8 +114,6 @@ Theo quy định, sinh viên được đăng ký **tối đa 24 tín chỉ** tro
 - Học kỳ chính: **14-24 tín chỉ** 
 - Học kỳ phụ: **tối đa 14 tín chỉ**
 - Trường hợp đặc biệt: Sinh viên có ĐTBHK ≥ 3.6 có thể đăng ký **tối đa 30 tín chỉ**
-
-**Lưu ý:** Cần được sự chấp thuận của cố vấn học tập khi đăng ký trên 24 tín chỉ.
 ```
 
 QUAN TRỌNG:

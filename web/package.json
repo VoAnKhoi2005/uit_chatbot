@@ -8,9 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "pdfjs-dist": "^5.4.449",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-markdown": "^9.0.1",
+    "react-pdf": "^10.2.0",
     "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
@@ -21,4 +23,3 @@
     "vite": "^5.2.0"
   }
 }
-
