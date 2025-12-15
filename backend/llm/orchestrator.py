@@ -1,53 +1,66 @@
 from __future__ import annotations
 
-import logging
-import os
-import re
-import unicodedata
-from pathlib import Path
-from typing import Any, Dict, List, Optional
-
-from ontology.loader import get_article_by_id, load_ontology
-from retrieval.text_rag.config import UIT_DISABLE_LOCAL_EMBEDDER
-from retrieval.text_rag.chunker import iter_all_chunks
-from retrieval.text_rag.vector_store import ChunkVectorStore
-from retrieval.src.retrieval.hybrid_orchestrator import HybridOrchestrator
-from retrieval.src.retrieval.triplet_retriever import TripletRetriever
-
-
-from .client import LLMClient
-from .state import ConversationStateStore
-from .citations import build_citations
-from retrieval.src.registry.metadata_registry import MetadataRegistry
-
-
-from .prompts import (
-    ANSWER_SYSTEM_PROMPT,
-    EXACT_RULE_ANSWER_SYSTEM_PROMPT,
-    NEAR_RULE_QUERY_REWRITE_PROMPT,
-    OUT_OF_SCOPE_SYSTEM_PROMPT,
-)
-from .question_classifier import classify_question
-from .question_types import QuestionType
-
-
-logging.basicConfig(
-    level=logging.DEBUG,
-    format="%(asctime)s [%(levelname)s] %(name)s - %(message)s",
-)
-
-
-# Only import TextEmbedder when local embedding is enabled
-if not UIT_DISABLE_LOCAL_EMBEDDER:
-    from retrieval.text_rag.embeddings import TextEmbedder
-
 
 class ChatPipeline:
     # Shared state store (in-memory, per-process)
     state_store = ConversationStateStore()
     registry = MetadataRegistry()
-    def __init(
-        self,
+    def __init__(self, ontology_path: str | None = None, vector_db_path: str | None = None, llm_client: Any = None, embedder=None, vector_store: Any = None, ontology_graph=None, **kwargs):
+        self.logger = logging.getLogger("uit_chatbot.chat_pipeline")
+        self.logger.setLevel(logging.DEBUG)
+
+        self.llm_client = llm_client or LLMClient()
+        self.ontology_graph = ontology_graph or load_ontology(
+            ontology_path or os.getenv("UIT_TTL_PATH", "ontology/uit_regulations.ttl")
+        )
+
+        # Only create embedder if local embedding is enabled
+        if UIT_DISABLE_LOCAL_EMBEDDER:
+            self.embedder = None
+        else:
+            if embedder is None:
+                try:
+                    from retrieval.text_rag.embeddings import TextEmbedder
+                    embedder = TextEmbedder()
+                except Exception:
+                    embedder = None
+            self.embedder = embedder
+
+        try:
+            self.vector_store = vector_store or ChunkVectorStore(
+                vector_db_path or os.getenv("UIT_VECTOR_DB", "retrieval/text_rag/vector_store.db"),
+                disable_local_embedder=UIT_DISABLE_LOCAL_EMBEDDER,
+            )
+        except Exception:
+            self.vector_store = None
+
+        try:
+            self.triplet_retriever = TripletRetriever()
+        except Exception:
+            self.triplet_retriever = None
+
+        try:
+            if self.vector_store and self.triplet_retriever:
+                self.hybrid = HybridOrchestrator(self.vector_store, self.triplet_retriever)
+            else:
+                self.hybrid = None
+        except Exception:
+            self.hybrid = None
+
+        # Ensure the vector store is populated with the proper KB (JSONL items)
+        try:
+            if self.vector_store:
+                self._ensure_vector_store_loaded()
+        except Exception:
+            pass
+
+        self.top_k = int(os.getenv("UIT_RAG_TOP_K", "5"))
+        # Larger candidate pool for EXACT_RULE questions (before reranking)
+        self.exact_rule_candidate_k = int(
+            os.getenv("UIT_RAG_EXACT_RULE_CANDIDATES", str(self.top_k * 6))
+        )
+        # Lazy-loaded cache of raw KB items for lexical fallback
+        self._kb_items_cache: list[dict] | None = None
         ontology_path: str | None = None,
         vector_db_path: str | None = None,
         llm_client: Optional[LLMClient] = None,

@@ -1,25 +1,24 @@
-from bson import ObjectId
-from sentence_transformers import SentenceTransformer, util
-import sqlite3
-import numpy as np
-from typing import List, Dict, Any, Optional, Union
+from __future__ import annotations
+
+import os
 import json
+import sqlite3
+from pathlib import Path
+from typing import Any
+
+import numpy as np
+from sentence_transformers import SentenceTransformer, util
+
+DEFAULT_DB_PATH = Path(__file__).resolve().parent / "vector.db"
+db_path: str = os.getenv("VECTOR_DB_PATH", str(DEFAULT_DB_PATH))
 
 
-db_path: str = r'D:\uit_chatbot\retrieval\src\db\vector.db'
+def to_object_id(value) -> str:
+    return "" if value is None else str(value)
 
-def to_object_id(value: Union[str, ObjectId]) -> ObjectId:
-    """Convert string hoặc ObjectId sang ObjectId"""
-    if isinstance(value, ObjectId):
-        return value
-    try:
-        return ObjectId(value)
-    except:
-        raise ValueError(f"Invalid ObjectId: {value}")
 
-def to_string_id(value: Union[str, ObjectId]) -> str:
-    """Convert ObjectId hoặc string sang string"""
-    return str(value)
+def to_string_id(value) -> str:
+    return "" if value is None else str(value)
 
 class ConceptRelationDB:
     def __init__(self, db_path=db_path, model_name='keepitreal/vietnamese-sbert'):
@@ -27,6 +26,32 @@ class ConceptRelationDB:
         self.cursor = self.conn.cursor()
         self.model = SentenceTransformer(model_name)
         self.setup()
+        self._setup_doc_tables()
+
+    def _setup_doc_tables(self):
+        # Table for mapping concepts to doc_ids
+        self.cursor.execute('''
+            CREATE TABLE IF NOT EXISTS concept_docs (
+                concept_id TEXT,
+                doc_id TEXT
+            )
+        ''')
+        # Table for mapping relations to doc_ids
+        self.cursor.execute('''
+            CREATE TABLE IF NOT EXISTS relation_docs (
+                relation_id TEXT,
+                doc_id TEXT
+            )
+        ''')
+        self.conn.commit()
+
+    def get_doc_ids_for_concept(self, parent_id: str) -> list:
+        self.cursor.execute('SELECT doc_id FROM concept_docs WHERE concept_id = ?', (parent_id,))
+        return [row[0] for row in self.cursor.fetchall()]
+
+    def get_doc_ids_for_relation(self, parent_id: str) -> list:
+        self.cursor.execute('SELECT doc_id FROM relation_docs WHERE relation_id = ?', (parent_id,))
+        return [row[0] for row in self.cursor.fetchall()]
 
     def setup(self):
         """Tạo hai bảng: concepts và relations"""
@@ -94,7 +119,7 @@ class ConceptRelationDB:
 
     # ==================== CONCEPTS ====================
 
-    def add_concept(self, name: str, parent_id: str) -> int:
+    def add_concept(self, name: str, parent_id: str) -> int | None:
         """Thêm concept mới"""
         try:
             vector = self.model.encode(name)
@@ -113,9 +138,8 @@ class ConceptRelationDB:
 
         except sqlite3.IntegrityError:
             print(f"❌ Concept '{name}' đã tồn tại!")
-            return None
 
-    def get_concept(self, concept_id: int) -> Optional[Dict]:
+    def get_concept(self, concept_id: int) -> dict | None:
         """Lấy concept theo ID"""
         self.cursor.execute('''
                             SELECT id, name, parent_id, vector
@@ -133,7 +157,7 @@ class ConceptRelationDB:
             }
         return None
 
-    def get_all_concepts(self) -> List[Dict]:
+    def get_all_concepts(self) -> list[dict]:
         """Lấy tất cả concepts"""
         self.cursor.execute('SELECT id, name, parent_id, vector FROM concepts')
         rows = self.cursor.fetchall()
@@ -148,7 +172,7 @@ class ConceptRelationDB:
             })
         return results
 
-    def get_concepts_by_parent(self, parent_id: str) -> List[Dict]:
+    def get_concepts_by_parent(self, parent_id: str) -> list[dict]:
         """Lấy concepts theo parent_id"""
         self.cursor.execute('''
                             SELECT id, name, parent_id, vector
@@ -206,7 +230,7 @@ class ConceptRelationDB:
             print(f"❌ Lỗi: {e}")
             return False
 
-    def search_concepts(self, query: str, top_k: int = 5, threshold: float = 0.0) -> List[Dict]:
+    def search_concepts(self, query: str, top_k: int = 5, threshold: float = 0.0) -> list[dict]:
         """Tìm kiếm concepts theo ngữ nghĩa"""
         all_concepts = self.get_all_concepts()
 
@@ -228,8 +252,8 @@ class ConceptRelationDB:
                     'score': round(score_val, 4)
                 })
 
-        results.sort(key=lambda x: x['score'], reverse=True)
-        return results[:top_k]
+        results.sort(key=lambda x: x['score'], reverse=True) 
+        return results[:top_k] 
 
     def count_concepts(self) -> int:
         """Đếm số concepts"""
@@ -238,7 +262,7 @@ class ConceptRelationDB:
 
     # ==================== RELATIONS ====================
 
-    def add_relation(self, name: str, parent_id: str) -> int:
+    def add_relation(self, name: str, parent_id: str) -> int | None:
         """Thêm relation mới"""
         try:
             vector = self.model.encode(name)
@@ -256,9 +280,9 @@ class ConceptRelationDB:
 
         except sqlite3.IntegrityError:
             print(f"❌ Relation '{name}' đã tồn tại!")
-            return None
+            
 
-    def get_relation(self, relation_id: int) -> Optional[Dict]:
+    def get_relation(self, relation_id: int) -> dict | None:
         """Lấy relation theo ID"""
         self.cursor.execute('''
                             SELECT id, name, parent_id, vector
@@ -276,7 +300,7 @@ class ConceptRelationDB:
             }
         return None
 
-    def get_all_relations(self) -> List[Dict]:
+    def get_all_relations(self) -> list[dict]:
         """Lấy tất cả relations"""
         self.cursor.execute('SELECT id, name, parent_id, vector FROM relations')
         rows = self.cursor.fetchall()
@@ -291,7 +315,7 @@ class ConceptRelationDB:
             })
         return results
 
-    def get_relations_by_parent(self, parent_id: str) -> List[Dict]:
+    def get_relations_by_parent(self, parent_id: str) -> list[dict]:
         """Lấy relations theo parent_id"""
         self.cursor.execute('''
                             SELECT id, name, parent_id, vector
@@ -349,7 +373,7 @@ class ConceptRelationDB:
             print(f"❌ Lỗi: {e}")
             return False
 
-    def search_relations(self, query: str, top_k: int = 5, threshold: float = 0.0) -> List[Dict]:
+    def search_relations(self, query: str, top_k: int = 5, threshold: float = 0.0) -> list[dict]:
         """Tìm kiếm relations theo ngữ nghĩa"""
         all_relations = self.get_all_relations()
 
@@ -381,7 +405,7 @@ class ConceptRelationDB:
 
     # ==================== COMBINED SEARCH ====================
 
-    def search_all(self, query: str, top_k: int = 5) -> Dict:
+    def search_all(self, query: str, top_k: int = 5) -> dict:
         """Tìm kiếm cả concepts và relations"""
         return {
             'concepts': self.search_concepts(query, top_k=top_k),
@@ -390,7 +414,7 @@ class ConceptRelationDB:
 
     # ==================== UTILITY ====================
 
-    def get_stats(self) -> Dict:
+    def get_stats(self) -> dict:
         """Lấy thống kê database"""
         return {
             'concepts_count': self.count_concepts(),
