@@ -18,7 +18,7 @@ services:
   backend:
     build:
       context: .
-      dockerfile: Dockerfile.gpt
+      dockerfile: gpt.Dockerfile
     container_name: uitchatbot-backend-gpt
     env_file:
       - .env
