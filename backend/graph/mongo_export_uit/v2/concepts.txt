@@ -1,0 +1,437 @@
+quy_chế
+đơn_vị cá_nhân liên_quan
+hệ đại_học
+chương_trình
+chương_trình trường đại_học thế_giới
+ngôn_ngữ chương_trình
+chương_trình đào_tạo ngành đào_tạo trường
+quy_định hiện_hành bộ giáo_dục
+đầu học_kỳ trường
+trách_nhiệm thông_báo sinh_viên thời_khoá_biểu giảng_dạy
+học_kỳ
+trường
+trách_nhiệm
+sinh_viên danh_mục học_phần số_lượng tín_chỉ
+điều_kiện đăng_ký
+học_phần dự_kiến học_kỳ
+sinh_viên lớp_học dự_kiến
+học_phần
+thời_khoá_biểu lớp_học
+chương_trình ngành ngành
+nội_dung chương_trình
+ngành
+môn_học bổ_sung khối_lượng tín_chỉ
+môn_học bổ_sung
+bảng điểm
+bằng tốt_nghiệp
+việc tổ_chức
+giữa khoa bộ_môn trường
+giữa cơ_sở đào_tạo đhqg-hcm
+sinh_viên năm thứ k
+tín_chỉ tích_luỹ
+khoá học
+thời_gian thiết_kế sinh_viên
+chương_trình giáo_dục đại_học ngành chuyên_môn
+thời_gian
+văn_bằng liên_thông
+văn_bằng
+cơ_sở học_phần
+khối_lượng tích_luỹ quy_định chương_trình
+sinh_viên
+đơn đăng_ký
+học_phần thời_gian
+học_kỳ tiếp_theo có điểm
+sinh_viên đăng_ký thi học_kỳ tiếp_theo điểm i
+điểm
+giữa trường cơ_sở liên_kết
+ngoài nước
+cơ_sở quy_định chương_trình đào_tạo đhqg-hcm
+nội_dung thoả_thuận
+chương_trình đào_tạo
+tín_chỉ nguyên_tắc khoản điều
+khối kiến_thức
+nhóm học_phần
+nhóm học_phần chọn
+nội_dung kiến_thức
+hướng chuyên_môn
+hoạt_động
+công_nghệ_thông_tin
+công_văn giảng_viên phòng học cơ_sở vật_chất
+hồ_sơ sinh_viên
+hướng_dẫn phòng
+đại_học
+học_phần tích_luỹ
+học_phần sinh_viên
+kết_quả tổng_kết điểm trở
+học_phần bắt_buộc
+học_phần sinh_viên phải
+chuyên_ngành chọn
+học_phần chọn
+học_phần sinh_viên đăng_ký
+nguyện_vọng
+học_phần giảng_dạy ngành quy_định bộ giáo_dục
+sinh_viên phải
+học_phần liên_quan
+lúc
+học_phần thay_thế
+thời_lượng học_phần tổ_chức
+học_phần học
+điểm yêu_cầu
+học_phần học cải_thiện
+học_phần sinh_viên đạt điểm
+kết_quả
+học_phần điều_kiện
+học_phần tài_năng
+học_phần tăng_cường
+khả_năng sáng_tạo sinh_viên
+tín_chỉ
+tín_chỉ đăng_ký trường
+cơ_sở đào_tạo
+sinh_viên đăng_ký học học_kỳ
+phép
+tín_chỉ chương_trình đào_tạo
+quy_định tín_chỉ
+học_phần tín_chỉ học học_kỳ
+thí_sinh
+hệ
+thủ_tục nhập_học quy_định của_trường
+phương_thức tập_trung toàn thời_gian sinh_viên hệ
+hoạt_động giảng_dạy
+cơ_sở trường
+hợp_đồng liên_kết
+sinh_viên hệ
+mã_số quy_định của_trường
+quy_chế hiện_hành công_tác sinh_viên trường
+chính_sách dành sinh_viên hệ
+bằng
+nội_dung trên bằng
+quy_định
+thời_gian học
+điểm i điểm m điểm bl
+điểm học_kỳ điểm trung_bình_cộng
+điểm trung_bình_cộng tích_luỹ
+thời_gian dừng học_tập
+thời_gian hoàn_thành khoá học
+giấy
+kết_quả môn_học sinh_viên sinh_viên
+quá_trình học_tập
+điều_kiện
+thời_gian phép học sinh_viên
+khoá học quy_định
+việc
+học_phí sinh_viên
+học_phí quy_định chương_trình
+đơn xác_nhận
+điểm học_phần xác_định
+học_phần ký_hiệu m
+điểm tích_luỹ
+điểm học_phần sinh_viên đăng_ký
+môn_học đào_tạo mạng
+phương_thức mạng
+phương_thức kết_hợp
+mạng
+đơn_vị
+chuyên_môn
+chất_lượng giảng_dạy
+môn_học chất_lượng lớp_học
+phương_thức đào_tạo trường
+kiến_thức thời_điểm
+điểm i tính
+học_bổng khuyến_khích
+quy_định hiện_hành bộ gd đt
+đhqg-hcm
+nội_dung
+kế_hoạch
+chất_lượng giáo_dục
+lớp_học phần
+nhóm sinh_viên học học_phần giảng_viên
+số_lượng sinh_viên đăng_ký
+của_trường
+lớp sinh_viên
+cố_vấn học_tập
+hiệu_trưởng
+kết_quả thi học_phần giáo_dục quốc phòng-an ninh
+điểm học_kỳ điểm
+điểm tích_luỹ toàn khoá
+giáo_dục thể_chất
+chứng_chỉ học_phần
+bộ giáo_dục
+đơn trình_bày lý_do hoàn_tất học_phần giấy_tờ minh_chứng cán_bộ
+phòng đào_tạo kết_thúc học_kỳ
+lý_do sinh_viên
+đơn vòng ngày kể ngày thi
+việc công_nhận
+tín_chỉ trường
+ý_kiến đơn_vị
+chuyên_môn học_phần liên_quan
+quy_chế công_tác sinh_viên
+khoá_luận tốt_nghiệp
+môn chuyên_đề tốt_nghiệp
+quy_định hiện_hành
+yêu_cầu mục_tiêu chuẩn đầu_ra
+nhu_cầu xã_hội
+quyết_định công_nhận
+sinh_viên điều_kiện
+điều
+đại_học hình_thức trường đại_học công_nghệ_thông_tin
+trách_nhiệm thông_báo sinh_viên kế_hoạch giảng_dạy học_tập
+yêu_cầu học_phần cơ_sở đào_tạo thời_gian năm
+đơn
+tiết học tín_chỉ
+phòng
+đại_học trường vòng tháng
+sinh_viên cung_cấp đề_cương học_phần
+xác_nhận sinh_viên học
+điểm sinh_viên đạt
+chữ bảo_lưu bl
+trưởng khoa
+hội_đồng
+doanh_nghiệp
+hội_đồng chấm thực_tập doanh_nghiệp
+thành_viên
+thành_viên hội_đồng
+doanh_nghiệp thang điểm
+điểm tổng_kết thực_tập doanh_nghiệp
+trung_bình_cộng thành_viên hội_đồng
+mục_tiêu chuẩn đầu_ra bậc trình_độ tương_ứng
+thời_gian sinh_viên
+học_phần chương_trình đào_tạo
+tuần thực_học
+tuần dành
+hoạt_động đào_tạo
+học_kỳ hè
+tuần thi
+kế_hoạch giảng_dạy học_kỳ
+quyết_định hiệu_trưởng
+chương_trình tài_năng
+trách_nhiệm thông_báo sinh_viên chương_trình đào_tạo quy_chế học_tập
+quyền_lợi nghĩa_vụ sinh_viên
+sinh_viên thời_hạn học
+kết_quả học_tập
+trách_nhiệm thực_hiện
+yêu_cầu cán_bộ giảng_dạy việc lên_lớp
+bài_tập
+thí_nghiệm tham_gia
+giữa học_phần
+lý_do
+giữa kỳ
+đơn trình_bày minh_chứng
+điểm cuối kỳ
+điểm giữa kỳ
+chương_trình giáo_dục ngành chuyên_môn trình_độ đại_học
+điểm học_kỳ
+học_kỳ trọng_số
+tín_chỉ học_phần
+học_bổng
+tín_chỉ môn_học tích_luỹ
+sinh_viên trình_độ đại_học văn_bằng học trường
+thêm học_kỳ
+năm_học chương_trình
+thứ
+điều_kiện học_lực quy_định
+chương_trình đào_tạo ngành trường
+trình_tự học_kỳ khoá đào_tạo
+sinh_viên tuân_thủ trình_tự
+học_phần bắt_buộc có điểm học_kỳ
+học_phần chọn thay_thế
+tốt_nghiệp sinh_viên
+bậc
+thời_gian học_tập
+thời_gian thiết_kế
+chương_trình nâng
+mục_tiêu chuẩn đầu_ra tiêu_chí
+chất_lượng quy_định
+chương_trình song ngành
+lúc chương_trình đào_tạo
+thang điểm đánh_giá
+điểm học_phần
+thang điểm
+tính tham_khảo
+kết_quả học_tập học_kỳ hè
+học_kỳ kề
+có
+hiệu_lực kể từ_học kỳ năm_học
+sinh_viên dự_thính
+sinh_viên cơ_sở đào_tạo thuộc đại_học quốc_gia thành_phố hồ_chí_minh
+trọng_số tín_chỉ học_phần
+tín_chỉ đăng_ký học_kỳ học
+chuyển ngành
+hộp_thư điện_tử email trường cung_cấp sinh_viên thời_điểm nhập_học
+kênh giao_tiếp trường sinh_viên
+doanh_nghiệp sự hướng_dẫn giảng_viên khoa
+ngành đào_tạo
+khoa
+doanh_nghiệp cuối học_kỳ
+kết_quả thực_tập học_kỳ đăng_ký
+học_phần có khối_lượng tín_chỉ
+nghĩa_vụ học_phí quy_định
+thời_hạn cảnh_báo học
+học_kỳ tiếp_theo
+cảnh_báo học kết_thúc thời_hạn
+chương_trình song ngành chương_trình ngành ngành
+kết_quả đạt
+học_phần đạt
+thời_gian phép
+khối kiến_thức giáo_dục
+người học kiến_thức
+kỹ_năng nghề_nghiệp
+môn_học cơ_sở nhóm ngành
+môn_học cơ_sở ngành
+tín_chỉ học_phí
+đơn_vị dùng
+chi_phí hoạt_động giảng_dạy tính học_phần
+trách_nhiệm thực_hiện yêu_cầu môn_học
+tổng_số tín_chỉ chương_trình
+ngoài trường công_nhận
+tổng_số tín_chỉ chương_trình đào_tạo
+đại_học quốc_gia thành_phố hồ_chí_minh
+tín_chỉ quy_định
+giữa đhqg-hcm
+đơn_vị đối_tác
+quy_trình
+điểm học_phần đánh_giá
+kết_quả học_tập sinh_viên học_kỳ
+cán_bộ giảng_dạy
+cách
+môn_học sinh_viên
+kết_quả khoá_luận tốt_nghiệp
+khoá_luận tốt_nghiệp gồm thành_viên khoa
+điểm tổng_kết
+trung_bình_cộng
+hệ_số
+đợt thi_tập học_kỳ gồm kỳ
+kỳ thi kết_thúc học_kỳ
+đợt thi
+kế_hoạch giảng_dạy
+khoa bộ_môn
+đợt thi thông_báo
+giảng_viên
+hình_thức
+tổng khối_lượng thực_hiện phương_thức
+hướng_dẫn bộ giáo_dục
+đhqg-hcm bất_khả_kháng
+phương_án xử_lý
+bảng điểm bổ_sung phòng
+phần khối_lượng kiến_thức quy_định điều ngành thứ
+tín_chỉ trở ngành thứ nội_dung giữa chương_trình
+lần
+lần đầu việc đi
+người thi
+sinh_viên pháp_luật
+án_treo
+xử_phạt tù
+hội_đồng xét tốt_nghiệp hiệu_trưởng
+chủ_tịch
+trưởng phòng
+phó trưởng phòng
+phó hiệu_trưởng
+thư_ký
+thời_gian học học_kỳ
+lớp_học ngoại_ngữ chương_trình đào_tạo sinh_viên
+thời_khoá_biểu nhu_cầu sinh_viên
+lớp ngoại_ngữ điều_kiện môn
+giờ học môn
+học_kỳ hè sinh_viên
+môn ngoại_ngữ
+học_phí môn ngoại_ngữ chương_trình đào_tạo
+lần đầu
+học_phí học_kỳ
+điểm sinh_viên
+thời_điểm thi
+môn_học học_kỳ tương_ứng
+chương_trình liên_thông
+kết_quả học_tập môn_học tích_luỹ
+nội_dung chương_trình đào_tạo
+bằng tốt_nghiệp vòng tháng
+chuẩn chương_trình
+nhu_cầu thị_trường lao_động
+khối_lượng thực_tập
+nhóm học_phần bắt_buộc
+nội_dung kiến_thức ngành đào_tạo
+trang thông_tin điện_tử
+chuẩn đầu_ra
+học_phần khoa
+bộ_môn
+phòng đào_tạo
+điểm i
+sinh_viên bỏ thi
+sinh_viên trình_độ đại_học văn_bằng
+thêm ngành
+ngành đào_tạo chương_trình
+học_phần cổng thông_tin đào_tạo
+tổng_số tín_chỉ đăng_ký
+học_kỳ hè tổng_số tín_chỉ đăng_ký
+điểm môn ngoại_ngữ
+doanh_nghiệp học_kỳ hè
+việc đăng_ký học_phần học_kỳ hè
+điểm trung_bình_cộng trở
+sự đồng_ý hiệu_trưởng
+đtbhk đtbc
+đtbctl
+điều quy_chế
+môn_học phải
+lý_do cá_nhân
+sinh_viên có quyết_định thôi học
+trở_lại
+đầu_vào thí_sinh
+khối kiến_thức giáo_dục đại_cương tổ_chức
+học_kỳ đầu
+nguyên_tắc
+yêu_cầu thực_tế
+nhà_nước
+khối_lượng kiến_thức bố_trí
+khối_lượng tín_chỉ trường_quy
+đơn xin
+kết_quả học_tập sinh_viên
+bảng điểm học_phần
+chuyên_ngành
+toàn khoá học
+thủ_tục nhập_học quy_định trường
+học
+chương_trình thứ
+điều_kiện tốt_nghiệp
+lúc chương_trình
+thời_gian quy_định chương_trình thứ
+kết_quả học_phần chương_trình thứ
+mục_tiêu chương_trình giáo_dục đại_học
+bản mô_tả
+khoá_luận
+đầu học_kỳ
+sinh_viên chương_trình
+yêu_cầu khoa
+đề_tài khoá_luận tốt_nghiệp sinh_viên điều_kiện
+nhiệm_vụ
+đề_nghị trưởng khoa
+trưởng phòng đào_tạo
+khoá_luận tốt_nghiệp thời_gian học_kỳ
+cán_bộ hướng_dẫn
+văn_bản
+đợt
+khoá_luận tốt_nghiệp năm kế_hoạch đào_tạo
+sinh_viên bảo_vệ khoá_luận đợt
+năm_học
+học_phần học_kỳ hè
+kế_hoạch học_tập học_kỳ
+thời_gian_biểu
+đại_học năm đợt
+hồ_sơ
+kết_quả chấm thực_tập
+vòng tuần ngày báo_cáo
+chương_trình thứ học_kỳ tiếp_theo
+danh_sách đăng_ký
+nguyện_vọng chuyển
+hình_thức đào_tạo
+tín_chỉ học_phần sinh_viên tích_luỹ
+tín_chỉ học_tập
+khối_lượng học_tập sinh_viên khối_lượng giảng_dạy giảng_viên
+kết_quả điểm trở
+sinh_viên học
+trong_trường
+mục_tiêu chương_trình giáo_dục đại_học trường
+nhân_lực
+dân_trí
+khoa_học phục_vụ
+kinh_tế xã_hội
+quốc_phòng an_ninh người học
+yêu_cầu chuẩn đầu_ra bậc khung trình_độ quốc_gia việt_nam
+năng_lực

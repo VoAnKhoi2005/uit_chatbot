@@ -128,10 +128,3 @@ class HybridOrchestrator:
             # Only return context and grounding in normal mode
             return {"context": context, "grounding": grounding}
         return result
-
-# Patch TripletRetriever to add search_triplets_from_question if missing
-def _search_triplets_from_question(self, question, top_k=8):
-    # For demo: just call search_triplets with question as input
-    return self.search_triplets([{"question": question}])[:top_k]
-if not hasattr(TripletRetriever, "search_triplets_from_question"):
-    TripletRetriever.search_triplets_from_question = _search_triplets_from_question

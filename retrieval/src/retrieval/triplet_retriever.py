@@ -1,7 +1,8 @@
+from __future__ import annotations
 
+from collections import defaultdict
 from typing import List, Dict, Any
 from retrieval.src.db.vector_db import ConceptRelationDB
-from __future__ import annotations
 
 class TripletRetriever:
     def __init__(self):

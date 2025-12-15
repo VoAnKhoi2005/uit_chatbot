@@ -1,5 +1,7 @@
 from typing import List, Dict, Any
-from retrieval.src.registry.metadata_registry import MetadataRegistry
+
+from backend.retrieval.src.registry.metadata_registry import MetadataRegistry
+
 
 def build_citations(evidence_used: List[dict], registry: MetadataRegistry) -> List[dict]:
     """

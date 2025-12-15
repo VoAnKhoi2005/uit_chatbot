@@ -1,0 +1,666 @@
+quy chế -> áp dụng đối với -> đơn vị
+quy chế -> áp dụng đối với -> cá nhân liên quan
+cá nhân liên quan -> đào tạo -> hệ đại học chính quy
+chương trình tiên tiến -> dựa trên -> chương trình trường đại học tiên tiến trên thế giới
+chương trình tiên tiến -> dựa trên -> chương trình
+chương trình -> giảng dạy -> bằng ngôn ngữ chương trình
+chương trình đào tạo mỗi ngành đào tạo do trường xây dựng -> phù hợp -> quy định hiện hành bộ giáo dục
+chương trình đào tạo mỗi ngành đào tạo do trường xây dựng -> phù hợp -> quy định hiện hành đào tạo
+đầu mỗi học kỳ -> có -> trách nhiệm
+trách nhiệm -> thông báo -> sinh viên thời khoá biểu giảng dạy
+đầu mỗi học kỳ -> có -> trách nhiệm thông báo
+trách nhiệm thông báo -> học tập -> học kỳ
+trường -> có -> trách nhiệm
+trách nhiệm -> thông báo -> sinh viên thời khoá biểu giảng dạy
+trường -> có -> trách nhiệm thông báo
+trách nhiệm thông báo -> học tập -> học kỳ
+trường -> có -> trách nhiệm
+trách nhiệm -> thông báo -> sinh viên danh mục học phần
+trường -> có -> trách nhiệm số lượng tín chỉ
+trường -> có -> trách nhiệm điều kiện đăng ký
+trách nhiệm điều kiện đăng ký -> học -> học phần dự kiến học kỳ
+trường -> có -> trách nhiệm thông báo sinh viên số lớp học dự kiến
+trách nhiệm thông báo sinh viên số lớp học dự kiến -> tổ chức -> mỗi học phần
+trường -> có -> trách nhiệm thời khoá biểu lớp học
+chương trình ngành chính -> gồm -> nội dung chương trình đào tạo ngành chính
+chương trình ngành chính -> gồm -> môn học
+môn học -> bổ sung -> khối lượng từ 15 đến 29 tín chỉ
+chương trình ngành phụ -> gồm -> nội dung chương trình đào tạo ngành chính
+chương trình ngành phụ -> gồm -> môn học
+môn học -> bổ sung -> khối lượng từ 15 đến 29 tín chỉ
+môn học bổ sung -> thể hiện -> bảng điểm cấp
+bảng điểm cấp -> kèm -> bằng tốt nghiệp
+việc tổ chức quản lý đào tạo -> liên thông -> giữa khoa
+việc tổ chức quản lý đào tạo -> liên thông -> bộ môn trường
+việc tổ chức quản lý đào tạo -> liên thông -> giữa cơ sở đào tạo đhqg-hcm
+sinh viên năm thứ k -> xác định -> dựa trên số tín chỉ tích luỹ n
+khoá học -> là -> thời gian thiết kế để sinh viên
+thời gian thiết kế để sinh viên -> hoàn thành -> chương trình giáo dục đại học một ngành chuyên môn
+thời gian đào tạo văn bằng 1 -> xác định -> cơ sở học phần khối lượng
+cơ sở học phần khối lượng -> tích luỹ -> quy định chương trình
+thời gian đào tạo liên thông -> xác định -> cơ sở học phần khối lượng
+cơ sở học phần khối lượng -> tích luỹ -> quy định chương trình
+thời gian đào tạo văn bằng 2 -> xác định -> cơ sở học phần khối lượng
+cơ sở học phần khối lượng -> tích luỹ -> quy định chương trình
+ứng dụng công nghệ thông tin -> tổ chức đào tạo -> mạng
+mạng -> là -> việc sử dụng trang thiết bị điện tử
+ứng dụng công nghệ thông tin -> tổ chức đào tạo -> mạng phần mềm
+ứng dụng công nghệ thông tin -> tổ chức đào tạo -> mạng học liệu điện tử
+ứng dụng công nghệ thông tin -> tổ chức đào tạo -> mạng mạng viễn thông
+mạng mạng viễn thông -> đổi mới -> phương pháp dạy học
+ứng dụng công nghệ thông tin -> tổ chức đào tạo -> mạng
+mạng -> nâng cao -> hiệu quả công tác đào tạo
+sinh viên -> làm -> đơn
+đơn -> đăng ký thi -> lại học phần thời gian tối đa là 2 học kỳ chính tiếp theo điểm
+i thi -> điều chỉnh -> thành điểm sinh viên đạt
+i điểm i -> điều chỉnh -> thành điểm sinh viên đạt
+sinh viên không -> điều chỉnh -> thành điểm không 0
+sinh viên không -> đăng ký thi -> lại hai học kỳ chính tiếp theo
+sinh viên điểm i -> điều chỉnh -> thành điểm không 0
+sinh viên -> được -> quyền xin tạm dừng học tập
+sinh viên -> được -> quyền xin
+quyền xin -> bảo lưu -> kết quả học tập
+chương trình liên kết giữa trường cơ sở liên kết đào tạo -> xây dựng -> cơ sở
+cơ sở -> quy định -> chương trình đào tạo đhqg-hcm
+chương trình liên kết giữa trường cơ sở liên kết đào tạo -> xây dựng -> cơ sở quy định nội dung thoả thuận
+cơ sở quy định nội dung thoả thuận -> hợp tác -> ký kết giữa
+chương trình -> xây dựng -> cơ sở
+chương trình -> liên kết -> ngoài nước
+cơ sở -> quy định -> chương trình đào tạo đhqg-hcm
+chương trình -> xây dựng -> cơ sở quy định nội dung thoả thuận
+chương trình -> liên kết -> ngoài nước
+cơ sở quy định nội dung thoả thuận -> hợp tác -> ký kết giữa
+sinh viên -> công nhận -> chuyển đổi tối đa số tín chỉ
+sinh viên -> chuyển từ -> chương trình chính quy chương trình đào tạo từ xa
+chuyển đổi tối đa số tín chỉ -> theo -> nguyên tắc khoản 3 điều
+mỗi khối kiến thức -> có -> 2 nhóm học phần
+nhóm học phần tự chọn -> gồm -> những học phần
+những học phần -> chứa đựng -> nội dung kiến thức cần thiết
+nhóm học phần tự chọn -> gồm -> những học phần chứa đựng sinh viên
+những học phần chứa đựng sinh viên -> chọn -> tự hướng chuyên môn
+ứng dụng công nghệ thông tin -> quản lý -> công nghệ thông tin
+công nghệ thông tin -> nâng cao -> chất lượng
+ứng dụng công nghệ thông tin -> quản lý -> công nghệ thông tin hiệu quả hoạt động quản lý
+hoạt động ứng dụng công nghệ thông tin quản lý -> quản lý -> công văn
+hoạt động ứng dụng công nghệ thông tin quản lý -> quản lý -> giảng viên
+hoạt động ứng dụng công nghệ thông tin quản lý -> quản lý -> phòng học
+hoạt động ứng dụng công nghệ thông tin quản lý -> quản lý -> cơ sở vật chất
+hoạt động ứng dụng công nghệ thông tin quản lý -> quản lý -> hồ sơ sinh viên
+sinh viên có thể -> cấp -> trường bảng điểm
+sinh viên -> thực hiện theo -> hướng dẫn phòng đào tạo đại học
+học phần tích luỹ -> là -> học phần sinh viên
+học phần sinh viên -> có -> kết quả tổng kết từ 5 điểm trở lên
+học phần bắt buộc -> là -> học phần học
+học phần bắt buộc -> là -> học phần
+học phần -> tích luỹ -> ngành
+học phần bắt buộc -> là -> học phần chuyên ngành chọn
+học phần tự chọn -> là -> học phần sinh viên có thể
+học phần sinh viên có thể -> đăng ký học -> tuỳ nguyện vọng
+học phần chung -> là -> học phần
+học phần -> giảng dạy -> chung ngành quy định bộ giáo dục
+học phần chung -> là -> học phần đào tạo
+học phần tiên quyết -> là -> học phần
+học phần -> bắt buộc -> sinh viên học học học phần liên quan
+học phần song hành -> là -> hai học phần sinh viên đăng ký lúc
+học phần thay thế -> là -> học phần
+học phần -> có -> thời lượng tương đương học phần không tổ chức giảng dạy
+học phần học lại -> là -> học phần sinh viên
+học phần sinh viên -> đăng ký -> lại chưa đạt điểm yêu cầu
+học phần học cải thiện -> là -> học phần sinh viên
+học phần sinh viên -> đạt -> điểm muốn đăng ký học lại để nâng cao kết quả
+học phần điều kiện -> là -> học phần sinh viên
+học phần sinh viên -> học -> không tính vào điểm trung bình chung
+học phần tài năng -> là -> học phần tăng cường tương tác
+học phần tài năng -> là -> học phần
+học phần -> phát triển -> khả năng sáng tạo sinh viên
+số tối thiểu tối đa -> tính -> số tín chỉ
+số tín chỉ -> đăng ký -> trường
+số tối thiểu tối đa -> tính -> số tín chỉ
+số tín chỉ -> đăng ký -> cơ sở đào tạo
+sinh viên -> phải đảm bảo -> số tín chỉ từ 14 đến 24
+sinh viên -> đăng ký học -> mỗi học kỳ chính
+sinh viên -> được -> phép
+sinh viên -> có -> điểm trung bình cộng từ 8,0 trở lên
+phép -> đăng ký tối đa -> 30 tín chỉ
+sinh viên -> học -> ít 14 tín chỉ chương trình đào tạo không tuân quy định số tín chỉ tối thiểu
+sinh viên không -> đăng ký -> học phần
+học phần -> huỷ -> đăng ký học phần số tín chỉ học học kỳ bằng 0
+sinh viên chính quy -> là -> thí sinh
+thí sinh -> trúng tuyển vào -> hệ chính quy
+sinh viên chính quy -> là -> thí sinh trúng tuyển
+thí sinh trúng tuyển -> hoàn tất -> thủ tục nhập học quy định của trường
+trường -> tổ chức đào tạo -> phương thức chính quy
+phương thức chính quy -> tập trung -> toàn thời gian sinh viên hệ chính quy
+hoạt động giảng dạy -> thực hiện tại -> trường cơ sở do trường
+trường cơ sở do trường -> ký -> hợp đồng liên kết
+mỗi sinh viên hệ chính quy -> có -> một mã số riêng quy định của trường
+sinh viên -> chấp hành -> quy chế
+quy chế -> hiện hành -> trường
+sinh viên -> chấp hành -> quy chế hiện hành
+quy chế hiện hành -> hưởng -> chính sách dành sinh viên hệ chính quy
+bằng tốt nghiệp -> cấp -> ngành đào tạo
+bằng chỉ -> cấp -> sinh viên ghi đầy đủ
+bằng chỉ -> cấp -> sinh viên chính xác nội dung trên bằng
+sinh viên -> buộc -> quy định học tập
+sinh viên -> buộc -> quy định thời gian học
+điểm i , , điểm m -> tính -> điểm trung bình học kỳ
+điểm i , , điểm m -> tính -> điểm trung bình cộng
+điểm i , , điểm m -> tính -> điểm trung bình cộng tích luỹ
+điểm i , , điểm bl không -> tính -> điểm trung bình học kỳ
+điểm i , , điểm bl không -> tính -> điểm trung bình cộng
+điểm i , , điểm bl không -> tính -> điểm trung bình cộng tích luỹ
+thời gian tạm dừng học tập -> tính vào -> thời gian tối đa
+thời gian tối đa -> hoàn thành -> khoá học
+trường -> có -> trách nhiệm
+trách nhiệm -> cấp -> giấy chứng nhận kết quả môn học sinh viên sinh viên hoàn tất quá trình học tập
+sinh viên -> chuyển -> trường nếu
+trường nếu -> đủ -> điều kiện
+sinh viên -> phải có -> hồ sơ xin
+sinh viên -> xin chuyển -> trường
+hồ sơ xin -> chuyển -> trường mẫu quy định
+thời gian tối đa phép -> là -> thời gian hoàn thành khoá học quy định
+thời gian tối đa phép -> học -> đối với sinh viên chuyển trường
+học phí sinh viên -> xác định -> thời gian học
+học phí sinh viên -> xác định -> chương trình đào tạo
+học phí sinh viên -> xác định -> sinh viên
+sinh viên -> đóng -> học phí quy định chương trình
+sinh viên -> làm -> đơn kèm để xem xét điểm học phần không xác định cụ thể
+sinh viên -> làm -> đơn kèm để chương trình đào tạo đại học
+đơn kèm để chương trình đào tạo đại học -> ghi điểm -> học phần bằng ký hiệu m
+điểm trung bình chung tích luỹ -> là -> điểm trung bình học phần sinh viên đăng ký học
+đtbctl -> tính -> điều kiện tốt nghiệp
+điều kiện tốt nghiệp -> dùng để -> phân loại kết quả học tập
+đtbctl -> tính -> điều kiện tốt nghiệp xếp hạng tốt nghiệp
+môn học -> đào tạo qua -> mạng có thể
+môn học -> tổ chức -> phương thức kết hợp
+môn học -> đào tạo qua -> mạng có thể
+phương thức kết hợp -> đào tạo qua -> mạng
+đơn vị -> có -> trách nhiệm
+đơn vị -> quản lý -> chuyên môn
+trách nhiệm -> đảm bảo -> chất lượng giảng dạy
+đơn vị -> có -> trách nhiệm
+đơn vị -> quản lý -> chuyên môn
+trách nhiệm -> đánh giá -> môn học không thấp chất lượng lớp học trực tiếp
+phương thức đào tạo trường -> giúp tích luỹ -> sinh viên có thể kiến thức mọi thời điểm
+phương thức đào tạo trường -> theo -> học chế tín chỉ
+số tín chỉ -> tính để -> xét học bổng khuyến khích học tập
+số tín chỉ -> nhận -> điểm i không
+chương trình đào tạo mỗi ngành đào tạo do trường xây dựng -> phù hợp -> quy định hiện hành bộ gd đt
+chương trình đào tạo mỗi ngành đào tạo do trường xây dựng -> phù hợp -> quy định hiện hành đhqg-hcm
+chương trình đào tạo mỗi ngành đào tạo do trường xây dựng -> bổ sung -> quy định hiện hành nội dung xây dựng kế hoạch
+chương trình đào tạo mỗi ngành đào tạo do trường xây dựng -> bổ sung -> quy định hiện hành điều kiện chất lượng giáo dục
+tốt nghiệp -> cấp -> một bảng điểm kèm
+một bảng điểm kèm -> theo -> bằng tốt nghiệp
+sinh viên -> cấp -> một bảng điểm kèm
+một bảng điểm kèm -> theo -> bằng tốt nghiệp
+lớp học phần -> là -> nhóm sinh viên
+nhóm sinh viên -> học -> một học phần một giảng viên
+lớp học phần -> là -> nhóm sinh viên
+nhóm sinh viên -> mở -> đủ số lượng sinh viên đăng ký quy định của trường
+mỗi lớp sinh viên -> có -> một cố vấn học tập
+hiệu trưởng -> ra -> quyết định
+quyết định -> bổ nhiệm -> cố vấn học tập
+sinh viên -> đăng ký -> học phần học
+sinh viên -> đăng ký -> học phần dự thi học phần
+kết quả -> tính vào -> điểm trung bình học kỳ
+kết quả -> thi -> học phần giáo dục quốc phòng-an ninh
+kết quả -> tính vào -> điểm trung bình chung
+kết quả -> thi -> học phần giáo dục quốc phòng-an ninh
+kết quả -> tính vào -> điểm trung bình tích luỹ toàn khoá
+kết quả -> thi -> học phần giáo dục quốc phòng-an ninh
+kết quả thi giáo dục thể chất không -> tính vào -> điểm trung bình học kỳ
+kết quả thi giáo dục thể chất không -> tính vào -> điểm trung bình chung
+kết quả thi giáo dục thể chất không -> tính vào -> điểm trung bình tích luỹ toàn khoá
+việc -> quy định -> riêng bởi bộ giáo dục
+việc -> đánh giá -> kết quả
+việc -> quy định -> đào tạo
+việc -> đánh giá -> kết quả
+việc -> quy định -> riêng bởi bộ giáo dục
+việc -> đánh giá -> điều kiện cấp chứng chỉ đối với học phần
+việc -> quy định -> đào tạo
+việc -> đánh giá -> điều kiện cấp chứng chỉ đối với học phần
+sinh viên -> nộp -> đơn
+đơn -> trình bày rõ -> lý do không thể hoàn tất học phần giấy tờ minh chứng cần thiết cán bộ giảng dạy học phần
+sinh viên -> nộp -> đơn
+đơn -> trình bày -> phòng đào tạo kết thúc học kỳ
+đột xuất -> nộp -> đơn vòng 3 ngày kể từ ngày thi
+đơn vòng 3 ngày kể từ ngày thi -> kết thúc -> học phần để xem xét
+đơn vòng 3 ngày kể từ ngày thi -> kết thúc -> học phần để xem xét
+sinh viên -> nộp -> đơn vòng 3 ngày kể từ ngày thi
+đơn vòng 3 ngày kể từ ngày thi -> kết thúc -> học phần để xem xét
+việc công nhận -> thông qua -> ý kiến đơn vị
+việc công nhận -> chuyển đổi -> tín chỉ trường
+ý kiến đơn vị -> phụ trách -> chuyên môn học phần liên quan
+lớp sinh viên -> áp dụng -> quy chế công tác sinh viên của trường
+sinh viên -> phải thực hiện -> khoá luận tốt nghiệp
+khoá luận tốt nghiệp -> học -> môn chuyên đề tốt nghiệp
+quy định môn chuyên đề tốt nghiệp -> ghi rõ -> chương trình đào tạo
+chương trình đào tạo mỗi ngành đào tạo do trường xây dựng -> phù hợp -> quy định hiện hành
+quy định hiện hành -> đáp ứng -> yêu cầu mục tiêu
+chương trình đào tạo mỗi ngành đào tạo do trường xây dựng -> phù hợp -> quy định hiện hành chuẩn đầu ra
+chương trình đào tạo mỗi ngành đào tạo do trường xây dựng -> phù hợp -> quy định hiện hành nhu cầu xã hội
+hiệu trưởng -> ký -> quyết định
+quyết định -> công nhận tốt nghiệp -> những sinh viên đủ điều kiện
+quy chế -> quy định -> những điều chung nhất
+những điều chung nhất -> đào tạo -> đại học hình thức chính quy trường đại học công nghệ thông tin thuộc đhqg-hcm
+trường -> có -> trách nhiệm
+trách nhiệm -> thông báo -> sinh viên kế hoạch giảng dạy
+trường -> có -> trách nhiệm thông báo học tập
+trường -> có -> trách nhiệm thông báo
+trách nhiệm thông báo -> cập nhật -> chương trình đào tạo
+sinh viên -> thi đạt xin -> yêu cầu một học phần một cơ sở đào tạo thời gian không 5 năm có thể
+yêu cầu một học phần một cơ sở đào tạo thời gian không 5 năm có thể -> miễn -> học phần
+sinh viên -> nộp -> đơn
+đơn -> kèm xác nhận -> số tiết học
+sinh viên -> nộp -> đơn
+đơn -> kèm -> số tín chỉ
+sinh viên -> nộp -> đơn kèm điểm
+đơn kèm điểm -> gửi -> phòng đào tạo đại học trường vòng 1 tháng bắt đầu học kỳ
+trường có thể -> yêu cầu cung cấp -> sinh viên đề cương chi tiết học phần
+sinh viên đề cương chi tiết học phần -> xác nhận -> sinh viên học
+nếu chấp thuận -> được cho -> điểm
+điểm -> đạt -> kèm chữ bảo lưu bl
+học phần -> được cho -> điểm
+điểm -> đạt -> kèm chữ bảo lưu bl
+trưởng khoa -> tổ chức -> hội đồng
+hội đồng -> chấm -> kết quả thực tập doanh nghiệp
+hội đồng chấm -> có -> 3 thành viên
+hội đồng chấm -> thực tập -> doanh nghiệp
+mỗi thành viên hội đồng -> cho -> điểm thực tập doanh nghiệp
+điểm thực tập doanh nghiệp -> theo -> thang điểm 10
+điểm -> là -> trung bình cộng thành viên hội đồng
+điểm -> tổng kết -> thực tập doanh nghiệp
+quy định -> đào tạo -> đại học
+đại học -> theo -> hình thức đào tạo từ xa
+quy định -> đào tạo -> đại học đào tạo chương trình đặc biệt trường xây dựng
+quy định -> đào tạo -> đại học
+đại học -> điều chỉnh phù hợp -> đặc thù hệ đào tạo
+quy định -> đào tạo -> đại học chương trình
+đại học chương trình -> dựa trên -> cơ sở quy chế
+chương trình chuẩn -> xây dựng -> quy định hiện hành
+quy định hiện hành -> đáp ứng -> mục tiêu
+chương trình chuẩn -> xây dựng -> quy định hiện hành chuẩn đầu ra bậc trình độ tương ứng
+học kỳ -> là -> thời gian để sinh viên
+thời gian để sinh viên -> hoàn thành -> một số học phần chương trình đào tạo
+học kỳ chính -> có -> 15 tuần thực học
+học kỳ chính -> có -> vài tuần dành
+vài tuần dành -> đánh giá -> hoạt động đào tạo
+kế hoạch -> điều chỉnh -> quyết định hiệu trưởng
+kế hoạch -> giảng dạy -> học kỳ có thể
+đtbhk , đtbc và đtbctl -> làm tròn -> đến 0,01
+chương trình tài năng -> xây dựng -> chương trình chuẩn để tuyển chọn
+chương trình tài năng -> xây dựng -> chương trình chuẩn
+chương trình chuẩn -> phát triển -> sinh viên xuất sắc
+trường -> có -> trách nhiệm
+trách nhiệm -> thông báo -> sinh viên chương trình đào tạo
+trường -> có -> trách nhiệm
+trách nhiệm -> thông báo -> quy chế học tập
+trường -> có -> trách nhiệm
+trách nhiệm -> thông báo -> quyền lợi
+trường -> có -> trách nhiệm
+trách nhiệm -> thông báo -> nghĩa vụ sinh viên
+những sinh viên -> cấp -> trường giấy chứng nhận kết quả học tập
+những sinh viên -> hết -> thời hạn học
+những sinh viên thôi học -> cấp -> trường giấy chứng nhận kết quả học tập
+sinh viên -> có -> trách nhiệm đầy đủ
+sinh viên -> có -> trách nhiệm
+trách nhiệm -> nghiêm túc -> mọi yêu cầu cán bộ giảng dạy việc lên lớp
+sinh viên -> có -> trách nhiệm
+trách nhiệm -> làm -> bài tập
+sinh viên -> có -> trách nhiệm thực hành
+sinh viên -> có -> trách nhiệm
+trách nhiệm -> thực hiện -> thí nghiệm
+sinh viên -> có -> trách nhiệm tham gia thảo luận
+sinh viên -> có -> trách nhiệm dự kiểm tra giữa học phần
+sinh viên -> có -> trách nhiệm
+trách nhiệm -> kết thúc -> học phần
+sinh viên -> làm -> đơn trình bày minh chứng để xem xét
+sinh viên -> có -> lý do chính đáng không thể tham dự thi giữa kỳ
+sinh viên -> làm -> đơn trình bày có thể
+sinh viên -> có -> lý do chính đáng không thể tham dự thi giữa kỳ
+đơn trình bày có thể -> dùng -> điểm cuối kỳ thay điểm giữa kỳ nếu phê duyệt
+khoá học -> là -> thời gian thiết kế để sinh viên
+thời gian thiết kế để sinh viên -> hoàn thành -> chương trình giáo dục một ngành chuyên môn trình độ đại học
+đào tạo trình độ đại học -> đối với -> thời gian từ 3 đến 5 năm văn bằng 1
+đào tạo trình độ đại học -> đối với -> thời gian từ 2 đến 3 năm văn bằng 2
+đào tạo trình độ đại học -> thực hiện trong -> thời gian từ 1,5 đến 2,5 năm đối với liên thông
+điểm trung bình học kỳ -> là -> điểm trung bình học phần sinh viên đăng ký
+điểm trung bình học phần sinh viên đăng ký -> học -> học kỳ trọng số là số tín chỉ mỗi học phần
+điểm trung bình học kỳ -> dùng để -> học bổng khen thưởng
+điểm trung bình học kỳ -> dùng để -> học bổng xử lý
+học bổng xử lý -> học -> vụ mỗi học kỳ
+sinh viên -> hoàn thiện -> điều kiện thiếu xét công nhận tốt nghiệp
+sinh viên -> công nhận -> tín chỉ chuyển đổi tín chỉ đối với những môn học tích luỹ từ 80
+tín chỉ chuyển đổi tín chỉ đối với những môn học tích luỹ từ 80 -> trở lên -> nội dung tương đương
+sinh viên trình độ đại học văn bằng 1 đang -> đăng ký -> học
+sinh viên trình độ đại học văn bằng 1 đang -> học -> trường
+học -> thêm -> một học kỳ hoàn thành năm học đầu tiên chương trình đào tạo thứ nhất
+sinh viên -> đáp ứng -> điều kiện học lực quy định để đăng ký học thêm
+chương trình đào tạo mỗi ngành do trường xây dựng -> phù hợp -> quy định hiện hành hiệu trưởng phê duyệt
+học phần chương trình đào tạo -> sắp xếp -> trình tự nhất định vào học kỳ khoá đào tạo
+trường -> khuyến cáo tuân thủ -> sinh viên trình tự
+sinh viên -> đăng ký -> học lại học phần
+học lại học phần -> bắt buộc -> điểm 5,0 học kỳ
+sinh viên -> đăng ký học -> học phần tự
+học phần tự -> chọn nếu -> điểm 5,0
+sinh viên -> đăng ký học -> học phần tự chọn chọn học phần tự chọn thay thế
+nộp hồ sơ xét tốt nghiệp -> làm -> đơn xin
+đơn xin -> huỷ -> học phần tự chọn học
+sinh viên có thể -> làm -> đơn xin
+đơn xin -> huỷ -> học phần tự chọn học
+xếp loại tốt nghiệp -> xác định dựa -> trên điểm trung bình chung tích luỹ quy định
+loại -> giảm -> một bậc nếu thời gian học tập
+loại -> tốt nghiệp -> sinh viên kết quả học tập xuất sắc sẽ
+một bậc nếu thời gian học tập -> vượt -> hai học kỳ so thời gian thiết kế
+chương trình nâng cao -> dựa trên -> chương trình chuẩn
+chương trình chuẩn -> đáp ứng -> mục tiêu
+chương trình nâng cao -> dựa trên -> chương trình chuẩn chuẩn đầu ra cao tiêu chí chất lượng quy định hiện hành
+chương trình song ngành -> cho phép -> sinh viên đủ điều kiện
+sinh viên đủ điều kiện -> học -> lúc hai chương trình đào tạo để tốt nghiệp cấp hai văn bằng
+kết quả học tập học kỳ hè nếu -> tính chung vào -> học kỳ liền
+học kỳ liền -> kề -> trước đó
+quy chế -> có -> hiệu lực kể từ học kỳ 1 năm học 2022-2023
+sinh viên -> xem xét -> chương trình
+chương trình -> đào tạo -> nếu đủ điều kiện
+sinh viên dự thính -> là -> sinh viên cơ sở đào tạo thuộc đại học quốc gia thành phố hồ chí minh
+điểm trung bình chung -> là -> điểm trung bình
+điểm trung bình -> tính -> trọng số số tín chỉ mỗi học phần
+điểm trung bình chung -> dùng để -> học vượt
+hộp thư điện tử email -> là -> kênh
+hộp thư điện tử email -> cung cấp -> trường sinh viên vào thời điểm nhập học
+kênh -> giao tiếp giữa -> chính thức trường sinh viên
+học phần thực tập doanh nghiệp -> là -> học phần đặc biệt một số chương trình đào tạo của trường
+sinh viên -> thực tập -> doanh nghiệp sự hướng dẫn giảng viên do khoa quản lý ngành đào tạo phân công
+khoa -> tổ chức báo cáo -> kết quả
+khoa -> quản lý -> ngành đào tạo
+kết quả -> thực tập -> doanh nghiệp vào cuối mỗi học kỳ
+sinh viên -> báo cáo -> kết quả thực tập đúng học kỳ đăng ký nếu không sẽ không đạt học phần
+sinh viên -> báo cáo -> kết quả thực tập đăng ký học lại
+khoá luận tốt nghiệp -> là -> học phần đặc biệt
+học phần đặc biệt -> có -> khối lượng tương đương 10 tín chỉ
+sinh viên -> cảnh báo -> nghĩa vụ học phí đúng quy định
+sinh viên -> cảnh báo -> nghĩa vụ học phí đúng
+nghĩa vụ học phí đúng -> có -> điểm trung bình 4,0 hai học kỳ liên tiếp
+thời hạn cảnh báo học vụ -> kéo dài -> một học kỳ chính tiếp theo
+sinh viên -> tự động xoá -> cảnh báo
+cảnh báo -> học -> vụ kết thúc thời hạn
+hiệu trưởng -> quyết định -> nội dung chương trình tổ chức
+nội dung chương trình tổ chức -> đào tạo -> chương trình song ngành
+hiệu trưởng -> quyết định -> nội dung chương trình chương trình ngành chính
+hiệu trưởng -> quyết định -> nội dung chương trình ngành phụ
+những sinh viên không đủ điều kiện cấp bằng tốt nghiệp -> bảo lưu -> học phần
+những sinh viên không đủ điều kiện cấp bằng tốt nghiệp -> còn -> thời gian học
+học phần -> có -> kết quả đạt
+sinh viên -> đăng ký -> những học phần đạt chưa học thời gian tối đa phép học
+chương trình đào tạo -> bao gồm -> hai khối kiến thức
+khối kiến thức giáo dục chuyên nghiệp -> cung cấp -> người
+người -> học -> những kiến thức
+khối kiến thức giáo dục chuyên nghiệp -> cung cấp -> người
+người -> học -> kỹ năng nghề nghiệp cần thiết
+khối kiến thức giáo dục chuyên nghiệp -> quy định -> cụ thể chương trình đào tạo
+môn học cơ sở nhóm ngành -> là -> những môn học cơ sở chung nhiều ngành
+tín chỉ học phí -> là -> đơn vị
+đơn vị -> dùng để -> lượng hoá chi phí hoạt động giảng dạy tính học phần
+sinh viên -> có -> trách nhiệm
+trách nhiệm -> đầy đủ -> yêu cầu môn học
+tổng số tín chỉ chương trình đào tạo ngoài trường công nhận -> vượt -> 50 tổng số tín chỉ chương trình đào tạo của trường
+tổng số chuyển đổi không -> vượt -> 50 tổng số tín chỉ chương trình đào tạo của trường
+đại học quốc gia thành phố hồ chí minh -> theo -> tín chỉ
+tín chỉ -> chuyển đổi -> tín chỉ quy định
+đại học quốc gia thành phố hồ chí minh -> theo -> tín chỉ quy định
+đại học quốc gia thành phố hồ chí minh -> theo -> tín chỉ ký kết giữa đhqg-hcm
+đại học quốc gia thành phố hồ chí minh -> theo -> tín chỉ đơn vị đối tác
+việc đăng ký học phần cải thiện -> được thực hiện -> quy trình
+quy trình -> đăng ký -> học phần của trường
+điểm học phần -> đánh giá -> dựa trên kết quả
+dựa trên kết quả -> học tập -> toàn diện sinh viên suốt học kỳ
+cán bộ giảng dạy -> có -> trách nhiệm
+trách nhiệm -> thông báo -> cách đánh giá môn học sinh viên
+việc -> bởi -> hội đồng chấm
+việc -> chấm -> kết quả khoá luận tốt nghiệp
+hội đồng chấm -> gồm -> 3 thành viên do khoa
+việc -> bởi -> hội đồng chấm
+việc -> chấm -> kết quả khoá luận tốt nghiệp
+hội đồng chấm -> gồm -> hiệu trưởng thành lập
+việc -> bởi -> hội đồng chấm
+việc -> chấm -> kết quả khoá luận tốt nghiệp
+hội đồng chấm -> gồm -> điểm chấm thang điểm 10
+việc -> bởi -> hội đồng chấm
+việc -> chấm -> kết quả khoá luận tốt nghiệp
+hội đồng chấm -> gồm là -> điểm tổng kết trung bình cộng hệ số
+trường -> tổ chức -> đợt thi tập học kỳ
+đợt thi tập học kỳ -> gồm -> một kỳ kiểm tra giữa kỳ
+trường -> tổ chức -> đợt thi tập học kỳ
+đợt thi tập học kỳ -> gồm -> một kỳ thi kết thúc học kỳ
+hai đợt thi -> tổ chức -> kế hoạch giảng dạy của trường học tập của trường
+khoa , và bộ môn -> tổ chức thi -> ngoài đợt thi thông báo
+khoa , và giảng viên không -> tổ chức thi -> ngoài đợt thi thông báo
+hiệu trưởng -> quy định -> thời gian học ôn thi
+hiệu trưởng -> quy định -> thời gian học
+thời gian học -> thi -> học kỳ
+sinh viên -> muốn cải thiện -> điểm học phần đăng ký
+điểm học phần đăng ký -> học lại -> học phần
+chương trình -> tối đa -> 30 tổng khối lượng
+chương trình -> đào tạo -> hình thức chính quy
+30 tổng khối lượng -> được thực hiện -> bằng phương thức qua mạng
+trường -> thực hiện theo trong -> hướng dẫn đhqg-hcm bất khả kháng
+cán bộ giảng dạy -> quyết định -> phương án
+phương án -> xử lý -> gửi bảng điểm bổ sung phòng đào tạo đại học
+chương trình song ngành -> gồm -> hai phần khối lượng kiến thức tối thiểu
+hai phần khối lượng kiến thức tối thiểu -> quy định -> điều 7 ngành thứ nhất
+chương trình song ngành -> gồm -> hai phần từ 30 tín chỉ
+hai phần từ 30 tín chỉ -> trở lên -> ngành thứ hai
+chương trình song ngành -> gồm -> hai phần những nội dung giống giữa hai chương trình chỉ
+hai phần những nội dung giống giữa hai chương trình chỉ -> tính -> một lần
+việc tổ chức quản lý đào tạo -> liên thông -> giữa khoa
+việc tổ chức quản lý đào tạo -> liên thông -> bộ môn trường
+việc tổ chức quản lý đào tạo -> liên thông -> giữa cơ sở đào tạo đhqg-hcm
+đtbhk , và đtbc -> tính -> công thức
+đtbhk , và đtbctl -> tính -> công thức
+sinh viên -> đình chỉ -> việc đi thi hộ
+sinh viên -> đình chỉ -> việc đi
+việc đi -> nhờ -> người thi hộ
+đình chỉ -> học tập -> thời hạn áp dụng đối với sinh viên kỷ luật thời gian cảnh báo
+đình chỉ -> học tập -> thời hạn nghiêm trọng quy định
+sinh viên -> đình chỉ -> pháp luật xử phạt tù hưởng án treo cũng học tập
+tổ chức -> giảng dạy -> phương thức trực tuyến học phương thức trực tuyến
+phương thức trực tuyến học phương thức trực tuyến -> phải thực hiện -> quy định giảng dạy trực tuyến của trường
+hội đồng -> làm -> chủ tịch trưởng phòng
+hội đồng -> xét -> do hiệu trưởng
+hội đồng -> làm -> chủ tịch phó trưởng phòng đào tạo đại học
+hội đồng -> xét -> do hiệu trưởng
+chủ tịch phó trưởng phòng đào tạo đại học -> làm -> thư ký
+hội đồng -> làm -> chủ tịch trưởng phòng
+hội đồng -> xét -> do phó hiệu trưởng
+hội đồng -> làm -> chủ tịch phó trưởng phòng đào tạo đại học
+hội đồng -> xét -> do phó hiệu trưởng
+chủ tịch phó trưởng phòng đào tạo đại học -> làm -> thư ký
+sinh viên -> kéo dài -> thời gian học tối đa 04 học kỳ chính
+lớp học ngoại ngữ chương trình -> mở -> thời khoá biểu linh động
+lớp học ngoại ngữ chương trình -> đào tạo -> sinh viên chính quy
+thời khoá biểu linh động -> theo -> nhu cầu sinh viên
+sinh viên -> đăng ký học -> lớp ngoại ngữ
+lớp ngoại ngữ -> theo -> điều kiện môn tiên quyết
+sinh viên -> đăng ký học -> lớp ngoại ngữ không
+lớp ngoại ngữ không -> trùng -> giờ học môn chính khoá
+học kỳ hè -> đăng ký học -> môn ngoại ngữ
+học kỳ hè -> đăng ký học -> môn ngoại ngữ học lại
+học kỳ hè -> đăng ký học -> môn ngoại ngữ
+môn ngoại ngữ -> học cải thiện -> môn ngoại ngữ
+sinh viên có thể -> đăng ký học -> môn ngoại ngữ
+sinh viên có thể -> đăng ký học -> môn ngoại ngữ học lại
+sinh viên có thể -> đăng ký học -> môn ngoại ngữ
+môn ngoại ngữ -> học cải thiện -> môn ngoại ngữ
+học phí môn ngoại ngữ chương trình đào tạo -> tính -> học phí học kỳ quy định
+học phí môn ngoại ngữ chương trình đào tạo -> tính -> học phí học kỳ học lần đầu
+học phí học kỳ học lần đầu -> tính trọn gói -> học phí học kỳ
+trường -> tính -> điểm sinh viên
+điểm sinh viên -> dựa trên -> thời điểm thi kết thúc môn học học kỳ tương ứng
+chương trình liên thông và văn bằng 2 -> xây dựng -> chương trình chuẩn
+chương trình chuẩn -> đáp ứng -> mục tiêu
+chương trình liên thông và văn bằng 2 -> xây dựng -> chương trình chuẩn chuẩn đầu ra bậc trình độ tương ứng
+đào tạo chương trình đào tạo -> công nhận -> kết quả học tập đối với những môn học tích luỹ để
+kết quả học tập đối với những môn học tích luỹ để -> xét miễn -> nội dung tương đương chương trình đào tạo
+sinh viên đủ điều kiện tốt nghiệp -> được -> bằng tốt nghiệp hiệu trưởng
+sinh viên đủ điều kiện tốt nghiệp -> công nhận tốt nghiệp -> bằng tốt nghiệp
+bằng tốt nghiệp -> cấp -> bằng tốt nghiệp vòng 03 tháng
+chương trình đào tạo mỗi ngành do trường xây dựng -> phù hợp -> quy định hiện hành
+quy định hiện hành -> bổ sung -> cập nhật định kỳ để đáp ứng chuẩn chương trình
+chương trình đào tạo mỗi ngành do trường xây dựng -> phù hợp -> quy định
+quy định -> hiện hành -> nhu cầu thị trường lao động
+chương trình đào tạo chuyên sâu đặc thù -> yêu cầu -> khối lượng thực tập tối thiểu
+khối lượng thực tập tối thiểu -> là -> 8 tín chỉ
+mỗi khối kiến thức -> có -> 2 nhóm học phần
+nhóm học phần bắt buộc -> chứa đựng -> những nội dung kiến thức ngành đào tạo
+nhóm học phần bắt buộc -> chứa đựng -> những nội dung kiến thức
+những nội dung kiến thức -> bắt buộc -> sinh viên đăng ký học
+nhóm học phần bắt buộc -> chứa đựng -> những nội dung kiến thức tích luỹ
+trường -> xây dựng -> trang thông tin điện tử để
+trang thông tin điện tử để -> công bố công khai -> chuẩn đầu ra
+trường -> xây dựng -> trang thông tin điện tử nội dung
+cán bộ giảng dạy -> phụ trách -> học phần
+cán bộ giảng dạy -> phụ trách -> khoa
+cán bộ giảng dạy -> quản lý -> bộ môn chương trình đào tạo
+cán bộ giảng dạy -> quản lý -> phòng đào tạo quyết định sinh viên nhận điểm i hay không
+sinh viên tự ý bỏ thi sẽ -> nhận -> điểm không 0 học phần nếu không chấp thuận
+sinh viên trình độ đại học văn bằng 1 đang -> đăng ký -> học
+sinh viên trình độ đại học văn bằng 1 đang -> học -> trường
+học -> thêm -> một ngành đào tạo ngành đào tạo chương trình đào tạo thứ nhất
+sinh viên -> có -> trách nhiệm
+trách nhiệm -> theo dõi -> kết quả đăng ký học phần trên cổng thông tin đào tạo của trường
+tổng số tín chỉ đăng ký -> bao gồm -> số tín chỉ trường
+tổng số tín chỉ đăng ký -> bao gồm -> số tín chỉ cơ sở đào tạo
+học kỳ hè -> vượt -> 12 tín chỉ
+tổng số tín chỉ đăng ký không -> vượt -> 12 tín chỉ
+sinh viên chỉ -> đăng ký -> điểm học lại
+sinh viên chỉ -> đăng ký -> điểm
+điểm -> cải thiện -> điểm
+sinh viên chỉ -> đăng ký -> điểm môn ngoại ngữ
+sinh viên chỉ -> đăng ký -> điểm học phần
+điểm học phần -> thực tập -> doanh nghiệp học kỳ hè
+việc -> dành -> sinh viên
+việc -> đăng ký -> học phần học kỳ hè
+sinh viên -> có -> điểm trung bình cộng từ 7,0 trở lên
+sinh viên -> phải được -> sự đồng ý hiệu trưởng muốn
+sự đồng ý hiệu trưởng muốn -> đăng ký vượt -> số tín chỉ tối đa
+sinh viên -> phải được -> sự đồng ý ít số tín chỉ tối thiểu
+cách tính đtbhk đtbc -> quy định -> điều 26 quy chế
+cách tính đtbhk đtbctl -> quy định -> điều 26 quy chế
+hiệu trưởng -> quyết định -> việc
+việc -> công nhận -> kết quả học tập
+hiệu trưởng -> quyết định -> việc công nhận môn học bổ sung
+sinh viên -> xin -> lý do cá nhân trừ buộc thôi học
+sinh viên -> xin -> lý do cá nhân kỷ luật
+những sinh viên -> muốn quay -> trở lại
+những sinh viên -> có -> quyết định thôi học
+trở lại -> học dự tuyển -> đầu vào những thí sinh
+chương trình đào tạo -> bao gồm -> khối kiến thức giáo dục đại cương
+khối kiến thức giáo dục đại cương -> tổ chức -> đào tạo chủ yếu bốn học kỳ đầu
+việc công nhận -> đảm bảo -> nguyên tắc
+việc công nhận -> chuyển đổi -> tín chỉ trường
+quy chế có thể -> sửa đổi -> yêu cầu thực tế
+yêu cầu thực tế -> bổ sung -> phù hợp yêu cầu thực tế
+quy chế có thể -> sửa đổi -> yêu cầu thực tế
+yêu cầu thực tế -> quy định -> nhà nước
+quy chế có thể -> sửa đổi -> yêu cầu thực tế
+yêu cầu thực tế -> quy định -> đhqg-hcm
+học phần -> là -> khối lượng kiến thức
+khối lượng kiến thức -> bố trí -> giảng dạy một học kỳ
+sinh viên -> gửi -> đơn xin thôi học
+sinh viên -> gửi -> đơn xin trường
+đơn xin trường -> ra -> quyết định cho phép thôi học
+kết quả -> phải được -> ghi vào bảng điểm học phần
+kết quả -> học tập -> sinh viên
+bảng điểm -> ghi rõ -> chuyên ngành
+bảng điểm -> ghi rõ -> điểm rèn luyện toàn khoá học
+chương trình đào tạo mỗi ngành đào tạo do trường xây dựng -> phù hợp -> quy định hiện hành
+sinh viên -> hoàn tất -> thủ tục nhập học
+thủ tục nhập học -> quy định -> trường muốn trở lại học tiếp
+sinh viên chỉ -> xét nếu -> tốt nghiệp chương trình thứ hai
+tốt nghiệp chương trình thứ hai -> đủ -> điều kiện tốt nghiệp
+thời gian tối đa -> là -> thời gian tối đa
+thời gian tối đa -> phép -> học đối với sinh viên học lúc hai chương trình
+thời gian tối đa -> quy định -> chương trình thứ nhất
+sinh viên -> công nhận -> kết quả những học phần tương đương chương trình thứ hai
+mục tiêu cụ thể chương trình giáo dục đại học -> ghi -> bản mô tả
+sinh viên đủ điều kiện có thể -> đăng ký làm -> khoá luận
+khoá luận -> tốt nghiệp -> vào đầu mỗi học kỳ chính
+sinh viên chương trình tiên tiến -> làm -> khoá luận tốt nghiệp
+sinh viên chương trình tài năng -> làm -> khoá luận tốt nghiệp
+sinh viên chương trình chuẩn -> làm -> khoá luận
+khoá luận -> tốt nghiệp -> đáp ứng yêu cầu khoa
+khoa hoặc bộ môn -> giao -> đề tài khoá luận
+khoa hoặc bộ môn -> quản lý -> ngành đào tạo
+đề tài khoá luận -> tốt nghiệp -> sinh viên đủ điều kiện
+hiệu trưởng -> ra -> quyết định
+quyết định -> giao -> nhiệm vụ hướng dẫn khoá luận tốt nghiệp dựa trên trưởng khoa
+hiệu trưởng -> ra -> quyết định
+quyết định -> giao -> trưởng phòng đào tạo
+sinh viên -> thực hiện -> khoá luận
+khoá luận -> tốt nghiệp -> thời gian một học kỳ chính
+sinh viên chỉ -> bảo vệ -> khoá luận
+khoá luận -> hoàn thành -> khoá luận
+sinh viên chỉ -> bảo vệ -> khoá luận
+khoá luận -> đồng ý -> cán bộ hướng dẫn bằng văn bản
+trường -> tổ chức -> hai đợt
+hai đợt -> bảo vệ -> khoá luận tốt nghiệp mỗi năm kế hoạch đào tạo
+sinh viên không -> đạt -> học phần
+sinh viên không -> bảo vệ -> khoá luận đúng đợt
+học phần -> bị -> điểm 0
+sinh viên không đồng ý -> đạt -> học phần
+học phần -> bị -> điểm 0
+sinh viên sinh viên sẽ không -> đạt -> học phần
+học phần -> bị -> điểm 0
+một năm học -> có -> hai học kỳ chính
+trường có thể -> tổ chức thêm -> học kỳ hè
+việc -> quy định -> quy chế
+việc -> đăng ký -> học phần học kỳ hè
+kế hoạch -> bao gồm -> thời gian biểu
+kế hoạch -> học tập -> mỗi học kỳ
+thời gian biểu -> công bố -> trên trang thông tin điện tử của trường
+kế hoạch -> bao gồm -> thời gian biểu
+kế hoạch -> học tập -> năm học
+thời gian biểu -> công bố -> trên trang thông tin điện tử của trường
+trường -> xét tốt nghiệp -> bằng tốt nghiệp
+bằng tốt nghiệp -> cấp -> bằng tốt nghiệp đại học mỗi năm bốn đợt
+sinh viên -> nộp -> hồ sơ
+hồ sơ -> đáp ứng đủ -> điều kiện để xét cấp bằng tốt nghiệp
+kết quả chấm thực tập -> phải được -> vòng một tuần ngày báo cáo
+kết quả chấm thực tập -> phải được -> vòng bảo vệ
+kết quả -> phải được -> vòng một tuần ngày báo cáo
+kết quả -> chấm -> khoá luận tốt nghiệp
+kết quả -> phải được -> vòng bảo vệ
+kết quả -> chấm -> khoá luận tốt nghiệp
+tổ chức -> thực hiện theo -> đề cương chi tiết phê duyệt
+tổ chức -> đánh giá -> môn học
+tổ chức -> đánh giá -> môn học
+sinh viên -> dừng -> học chương trình thứ hai học kỳ tiếp theo
+sinh viên -> loại -> khỏi danh sách đăng ký
+khỏi danh sách đăng ký -> học -> chương trình thứ hai
+sinh viên chính quy -> có -> nguyện vọng chuyển qua hình thức đào tạo không chính quy sẽ xem xét chuyển đổi
+trường -> xem xét công nhận -> tín chỉ
+tín chỉ -> chuyển đổi -> tín chỉ học phần sinh viên tích luỹ
+tín chỉ học tập là đơn vị dùng để -> xác định -> thời gian
+tín chỉ học tập là đơn vị dùng để -> xác định -> khối lượng
+khối lượng -> học tập -> sinh viên
+tín chỉ học tập là đơn vị dùng để -> xác định -> khối lượng
+khối lượng -> giảng dạy -> giảng viên
+tín chỉ học tập là đơn vị dùng để -> xác định -> đồng thời dùng để đánh giá kết quả học tập sinh viên
+tín chỉ học tập -> gọi tắt là -> tín chỉ
+học phần -> bảo lưu -> sinh viên học
+học phần -> có -> kết quả từ 5,0 điểm trở lên
+sinh viên học -> thêm -> một ngành học trong trường
+điểm bảo lưu -> tính vào -> điểm trung bình cộng
+điểm bảo lưu -> tính vào -> điểm trung bình cộng tích luỹ
+mục tiêu chung chương trình giáo dục đại học trường -> là đào tạo -> nhân lực
+nhân lực -> nâng cao -> dân trí
+mục tiêu chung chương trình giáo dục đại học trường -> là đào tạo -> nhân lực nghiên cứu khoa học
+nhân lực nghiên cứu khoa học -> phục vụ phát triển -> kinh tế
+mục tiêu chung chương trình giáo dục đại học trường -> là đào tạo -> nhân lực xã hội
+mục tiêu chung chương trình giáo dục đại học trường -> là đào tạo -> nhân lực
+nhân lực -> đảm bảo -> quốc phòng
+mục tiêu chung chương trình giáo dục đại học trường -> là đào tạo -> nhân lực an ninh
+người học -> hoàn thành -> chương trình đào tạo
+chương trình đào tạo -> đáp ứng -> yêu cầu chuẩn đầu ra bậc 6 khung trình độ quốc gia việt nam
+người học -> hoàn thành -> chương trình
+chương trình -> đào tạo -> năng lực cốt lõi

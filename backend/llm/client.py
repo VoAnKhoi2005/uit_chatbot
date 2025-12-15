@@ -7,7 +7,7 @@ from typing import Any, Dict
 # Note: With Pydantic v2, BaseSettings lives in the separate pydantic-settings package.
 from pydantic_settings import BaseSettings
 
-from groq_client import call_groq_llm
+from backend.groq_client import call_groq_llm
 
 
 class Settings(BaseSettings):

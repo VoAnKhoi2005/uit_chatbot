@@ -40,7 +40,7 @@ pipeline = ChatPipeline(llm_client=gpt_client)
 
 DOC_MAPPING: dict[str, str] = {}
 
-csv_path = Path(__file__).parent.parent.parent / "data" / "doc_sources.csv"
+csv_path = Path(__file__).parent.parent / "data" / "doc_sources.csv"
 logger.info("Loading document mapping from %s", csv_path)
 
 if csv_path.exists():
@@ -76,7 +76,7 @@ async def get_document(doc_id: str):
     filename = DOC_MAPPING[doc_id]
     logger.info("[PDF API] Mapped doc_id=%s → filename=%s", doc_id, filename)
 
-    pdf_path = Path(__file__).parent.parent.parent / "pdfs"
+    pdf_path = Path(__file__).parent.parent / "pdfs"
     logger.debug("[PDF API] Searching PDFs in path: %s", pdf_path)
 
     for pdf_file in pdf_path.rglob("*.pdf"):
@@ -126,6 +126,9 @@ async def chat(req: ChatRequest):
         for s in result.get("sources", [])
     ]
 
+    # Handle different response types (answer vs reply for clarification)
+    answer_text = result.get("answer") or result.get("reply", "")
+
     logger.info(
         "Chat response generated (question_type=%s, sources=%d)",
         result.get("question_type"),
@@ -133,7 +136,7 @@ async def chat(req: ChatRequest):
     )
 
     return ChatResponse(
-        answer=result["answer"],
+        answer=answer_text,
         question_type=result["question_type"],
         sources=sources,
     )

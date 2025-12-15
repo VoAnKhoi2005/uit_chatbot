@@ -1,17 +1,54 @@
 from __future__ import annotations
 
+import logging
+import os
+import re
+import unicodedata
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+from backend.llm.client import LLMClient
+from backend.llm.question_classifier import classify_question
+from backend.llm.question_types import QuestionType
+from backend.llm.prompts import (
+    ANSWER_SYSTEM_PROMPT,
+    OUT_OF_SCOPE_SYSTEM_PROMPT,
+    NEAR_RULE_QUERY_REWRITE_PROMPT,
+)
+from backend.llm.citations import build_citations
+from backend.llm.state import ConversationStateStore
+from backend.ontology.loader import load_ontology, get_article_by_id
+from backend.retrieval.src.registry.metadata_registry import MetadataRegistry
+from backend.retrieval.src.retrieval.hybrid_orchestrator import HybridOrchestrator
+from backend.retrieval.src.retrieval.triplet_retriever import TripletRetriever
+from backend.retrieval.text_rag.chunker import iter_all_chunks
+from backend.retrieval.text_rag.vector_store import ChunkVectorStore
+
+# Check if local embedder is disabled
+UIT_DISABLE_LOCAL_EMBEDDER = os.getenv("UIT_DISABLE_LOCAL_EMBEDDER", "false").lower() == "true"
+
 
 class ChatPipeline:
     # Shared state store (in-memory, per-process)
     state_store = ConversationStateStore()
     registry = MetadataRegistry()
-    def __init__(self, ontology_path: str | None = None, vector_db_path: str | None = None, llm_client: Any = None, embedder=None, vector_store: Any = None, ontology_graph=None, **kwargs):
+    
+    def __init__(
+        self,
+        ontology_path: str | None = None,
+        vector_db_path: str | None = None,
+        llm_client: Any = None,
+        embedder=None,
+        vector_store: Any = None,
+        ontology_graph=None,
+        **kwargs
+    ):
         self.logger = logging.getLogger("uit_chatbot.chat_pipeline")
         self.logger.setLevel(logging.DEBUG)
 
         self.llm_client = llm_client or LLMClient()
         self.ontology_graph = ontology_graph or load_ontology(
-            ontology_path or os.getenv("UIT_TTL_PATH", "ontology/uit_regulations.ttl")
+            ontology_path or os.getenv("UIT_TTL_PATH", "backend/ontology/uit_regulations.ttl")
         )
 
         # Only create embedder if local embedding is enabled
@@ -28,23 +65,33 @@ class ChatPipeline:
 
         try:
             self.vector_store = vector_store or ChunkVectorStore(
-                vector_db_path or os.getenv("UIT_VECTOR_DB", "retrieval/text_rag/vector_store.db"),
+                vector_db_path or os.getenv("UIT_VECTOR_DB", "backend/retrieval/text_rag/vector_store.db"),
                 disable_local_embedder=UIT_DISABLE_LOCAL_EMBEDDER,
             )
-        except Exception:
+            self.logger.info("VectorStore initialized successfully")
+        except Exception as e:
+            self.logger.error("Failed to initialize VectorStore: %s", e, exc_info=True)
             self.vector_store = None
 
         try:
             self.triplet_retriever = TripletRetriever()
-        except Exception:
+            self.logger.info("TripletRetriever initialized successfully")
+        except Exception as e:
+            self.logger.error("Failed to initialize TripletRetriever: %s", e, exc_info=True)
             self.triplet_retriever = None
 
         try:
             if self.vector_store and self.triplet_retriever:
                 self.hybrid = HybridOrchestrator(self.vector_store, self.triplet_retriever)
+                self.logger.info("HybridOrchestrator initialized successfully")
             else:
                 self.hybrid = None
-        except Exception:
+                if not self.vector_store:
+                    self.logger.warning("HybridOrchestrator NOT initialized: VectorStore is None")
+                if not self.triplet_retriever:
+                    self.logger.warning("HybridOrchestrator NOT initialized: TripletRetriever is None")
+        except Exception as e:
+            self.logger.error("Failed to initialize HybridOrchestrator: %s", e, exc_info=True)
             self.hybrid = None
 
         # Ensure the vector store is populated with the proper KB (JSONL items)
@@ -61,48 +108,6 @@ class ChatPipeline:
         )
         # Lazy-loaded cache of raw KB items for lexical fallback
         self._kb_items_cache: list[dict] | None = None
-        ontology_path: str | None = None,
-        vector_db_path: str | None = None,
-        llm_client: Optional[LLMClient] = None,
-        embedder=None,
-        vector_store: Optional[ChunkVectorStore] = None,
-        ontology_graph=None,
-    ) -> None:
-        # 👉 Khởi tạo logger TRƯỚC
-        self.logger = logging.getLogger("uit_chatbot.chat_pipeline")
-        self.logger.setLevel(logging.DEBUG)
-
-        self.llm_client = llm_client or LLMClient()
-        self.ontology_graph = ontology_graph or load_ontology(
-            ontology_path or os.getenv("UIT_TTL_PATH", "ontology/uit_regulations.ttl")
-        )
-
-        # Only create embedder if local embedding is enabled
-        if UIT_DISABLE_LOCAL_EMBEDDER:
-            self.embedder = None
-        else:
-            if embedder is None:
-                from retrieval.text_rag.embeddings import TextEmbedder
-                embedder = TextEmbedder()
-            self.embedder = embedder
-
-        self.vector_store = vector_store or ChunkVectorStore(
-            vector_db_path or os.getenv("UIT_VECTOR_DB", "retrieval/text_rag/vector_store.db"),
-            disable_local_embedder=UIT_DISABLE_LOCAL_EMBEDDER,
-        )
-        self.triplet_retriever = TripletRetriever()
-        self.hybrid = HybridOrchestrator(self.vector_store, self.triplet_retriever)
-
-        # Ensure the vector store is populated with the proper KB (JSONL items)
-        self._ensure_vector_store_loaded()
-
-        self.top_k = int(os.getenv("UIT_RAG_TOP_K", "5"))
-        # Larger candidate pool for EXACT_RULE questions (before reranking)
-        self.exact_rule_candidate_k = int(
-            os.getenv("UIT_RAG_EXACT_RULE_CANDIDATES", str(self.top_k * 6))
-        )
-        # Lazy-loaded cache of raw KB items for lexical fallback
-        self._kb_items_cache: Optional[List[Dict[str, Any]]] = None
 
 
     async def answer_question(
@@ -115,6 +120,7 @@ class ChatPipeline:
             question: The current question
             conversation_history: List of previous messages in format [{"role": "user|bot", "content": "..."}]
         """
+        self.logger.info("[PIPELINE] Starting answer_question for user=%s, question=%r", user_id, question)
 
         # --- Conversation state: coref/clarify ---
         # 1. Build full context for classification (include recent history if available)
@@ -127,6 +133,7 @@ class ChatPipeline:
             classification_input = f"{history_text}\n\nCurrent question: {question}"
             # Try to get last selected article from state
             last_selected_article_id = self.state_store.get_last_grounding(user_id)
+            self.logger.debug("[PIPELINE] Conversation history: %d messages, last_article=%s", len(conversation_history), last_selected_article_id)
         # Coref: if question is short and contains coref words, prepend last question
         coref_words = ["điều đó", "trường hợp trên", "như vậy", "còn cái này"]
         if any(w in question.lower() for w in coref_words):
@@ -134,14 +141,31 @@ class ChatPipeline:
             if last_q:
                 question = f"{last_q} {question}"
                 classification_input = f"{classification_input}\n\n(Refers to: {last_q})"
+                self.logger.debug("[PIPELINE] Coref detected, combined question: %r", question)
 
+        self.logger.info("[PIPELINE] Classifying question type...")
         q_type = await classify_question(classification_input, self.llm_client)
+        self.logger.info("[PIPELINE] Question classified as: %s", q_type.value)
+        
         if q_type == QuestionType.OUT_OF_SCOPE:
+            self.logger.info("[PIPELINE] Handling out-of-scope question")
             return await self._handle_out_of_scope(question)
 
         # 2. Build retrieval query: handle multi-turn and query rewriting (async)
+        self.logger.info("[PIPELINE] Building retrieval query...")
         retrieval_query = await self._build_retrieval_query_async(question, q_type, conversation_history)
+        self.logger.info("[PIPELINE] Retrieval query: %r", retrieval_query)
+        
         # --- HYBRID RETRIEVAL ---
+        if not self.hybrid:
+            self.logger.error("[PIPELINE] HybridOrchestrator is None, cannot proceed")
+            raise RuntimeError(
+                "HybridOrchestrator not initialized. This likely means TripletRetriever or VectorStore failed to initialize. "
+                "Check that: (1) vector_store.db exists, (2) graph NLP models are available, "
+                "(3) UIT_DISABLE_TRIPLET_RAG environment variable is not set if you need triplet retrieval."
+            )
+        
+        self.logger.info("[PIPELINE] Running hybrid retrieval (text_top_k=%d, graph_top_k=%d)...", self.top_k, self.top_k)
         hybrid_result = self.hybrid.run(retrieval_query, text_top_k=self.top_k, graph_top_k=self.top_k, debug=debug)
         context = hybrid_result["context"]
         grounding = hybrid_result["grounding"]
@@ -149,6 +173,10 @@ class ChatPipeline:
         dominance = grounding.get("dominance", 0)
         candidates = grounding.get("candidates", [])
         top_evidence = hybrid_result.get("top_evidence_for_debug", [])
+        
+        self.logger.info("[PIPELINE] Retrieval complete: article_id=%s, dominance=%.3f, num_evidence=%d", 
+                        selected_article_id, dominance, len(top_evidence))
+        self.logger.debug("[PIPELINE] Context length: %d chars", len(context))
 
         # 3. Ambiguity/clarify logic
         clarify = False
@@ -157,6 +185,7 @@ class ChatPipeline:
         response_type = None
         # If no article_id and weak evidence, treat as out of scope
         if not selected_article_id and (not top_evidence or max([ev.get("score",0) for ev in top_evidence] or [0]) < 0.25):
+            self.logger.info("[PIPELINE] No evidence found, treating as out-of-scope")
             return await self._handle_out_of_scope(question)
         # If dominance < 0.55 or >=2 candidates close (ratio <1.2), trigger clarify
         elif (dominance < 0.55 and len(candidates) >= 2):
@@ -171,6 +200,7 @@ class ChatPipeline:
             clarify_reason = "Độ tự tin thấp, cần làm rõ."
 
         if clarify:
+            self.logger.info("[PIPELINE] Ambiguous result, returning clarification request: %s", clarify_reason)
             # Build clarify options from candidates (top 3)
             for cand in candidates[:3]:
                 meta = self.registry.get_citation_by_article(cand["article_id"])
@@ -197,25 +227,34 @@ class ChatPipeline:
             return result
 
         # --- Normal answer flow ---
+        self.logger.info("[PIPELINE] Generating answer for article_id=%s", selected_article_id)
+        
         # Enrich ontology facts chỉ theo grounding
         ontology_facts = []
         if selected_article_id:
             try:
                 ontology_facts = get_article_by_id(self.ontology_graph, selected_article_id)
-            except Exception:
+                self.logger.debug("[PIPELINE] Loaded %d ontology facts for article_id=%s", len(ontology_facts), selected_article_id)
+            except Exception as e:
+                self.logger.warning("[PIPELINE] Failed to load ontology facts: %s", e)
                 ontology_facts = []
         # Compose context: context (from hybrid) + ontology facts
         if ontology_facts:
             context = f"{context}\n\nONTOLOGY FACTS:\n" + "\n".join([f.get("text", "") for f in ontology_facts])
+            self.logger.debug("[PIPELINE] Added ontology facts to context")
 
         # --- F9: Citation builder ---
         # Only use evidence that was actually used in context (top_evidence)
         citations = build_citations(top_evidence, self.registry)
         citation_text = "; ".join([c["display"] for c in citations]) if citations else None
+        self.logger.debug("[PIPELINE] Built %d citations", len(citations) if citations else 0)
 
+        self.logger.info("[PIPELINE] Calling LLM to generate answer...")
         answer_text = await self.llm_client.generate(
             ANSWER_SYSTEM_PROMPT, user_prompt=question, context=context
         )
+        self.logger.info("[PIPELINE] LLM response received, length=%d chars", len(answer_text))
+        
         result = {
             "answer": answer_text,
             "question_type": q_type.value,
@@ -229,6 +268,7 @@ class ChatPipeline:
             result["graph_hits"] = hybrid_result.get("graph_hits", [])
         # Update state
         self.state_store.update(user_id, question, selected_article_id)
+        self.logger.info("[PIPELINE] Answer generation complete")
         return result
 
     async def _handle_out_of_scope(self, question: str) -> Dict[str, Any]:
