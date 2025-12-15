@@ -9,7 +9,7 @@ pydantic-settings>=2.2.1
 # RDF/Ontology
 rdflib>=6.3.0
 
-# Vector embeddings and ML
+# Vector embeddings and ML (CPU)
 numpy>=1.24.0
 sentence-transformers>=2.2.0
 
@@ -21,4 +21,3 @@ openai>=1.0.0
 
 # Environment variables
 python-dotenv>=1.0.0
-

@@ -1,0 +1,10 @@
+{"id": "q1", "question": "Sinh viên phải nộp học phí khi nào?", "expected_in_scope": true, "expected_article_ids": ["20"], "expected_keywords": ["nộp học phí"]}
+{"id": "q2", "question": "Điều kiện dự thi cuối kỳ là gì?", "expected_in_scope": true, "expected_article_ids": ["21"], "expected_keywords": ["dự thi", "80%"]}
+{"id": "q3", "question": "Sinh viên có được miễn học phí không?", "expected_in_scope": true, "expected_article_ids": ["22"], "expected_keywords": ["miễn học phí"]}
+{"id": "q4", "question": "Thế nào là cảnh báo học vụ?", "expected_in_scope": true, "expected_article_ids": ["23"], "expected_keywords": ["cảnh báo học vụ"]}
+{"id": "q5", "question": "Trường có cấp học bổng không?", "expected_in_scope": true, "expected_article_ids": ["24"], "expected_keywords": ["học bổng"]}
+{"id": "q6", "question": "Điều kiện chuyển ngành?", "expected_in_scope": true, "expected_article_ids": ["25"], "expected_keywords": ["chuyển ngành"]}
+{"id": "q7", "question": "Làm sao để được tốt nghiệp?", "expected_in_scope": true, "expected_article_ids": ["26"], "expected_keywords": ["tốt nghiệp"]}
+{"id": "q8", "question": "Trường có dạy tiếng Nhật không?", "expected_in_scope": false}
+{"id": "q9", "question": "Tôi muốn xin nghỉ học 1 năm", "expected_in_scope": true, "expected_keywords": ["nghỉ học"]}
+{"id": "q10", "question": "Điều kiện học lại môn?", "expected_in_scope": true, "expected_keywords": ["học lại"]}

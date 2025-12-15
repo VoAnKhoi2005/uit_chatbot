@@ -22,15 +22,23 @@ services:
     container_name: uitchatbot-backend-gpt
     env_file:
       - .env
+    working_dir: /app
     environment:
-      # GPT-specific environment variables
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
-      UIT_TTL_PATH: ${UIT_TTL_PATH:-ontology/uit_regulations.ttl}
-      UIT_VECTOR_DB: ${UIT_VECTOR_DB:-retrieval/text_rag/vector_store.db}
-      UIT_DISABLE_LOCAL_EMBEDDER: ${UIT_DISABLE_LOCAL_EMBEDDER:-false}
+      UIT_TTL_PATH: /app/ontology/uit_regulations.ttl
+      UIT_VECTOR_DB: /app/data/vector_store.db
+      UIT_DISABLE_LOCAL_EMBEDDER: ${UIT_DISABLE_LOCAL_EMBEDDER:-1}
+      UIT_DISABLE_TRIPLET_RAG: ${UIT_DISABLE_TRIPLET_RAG:-1}
+      PYTHONUNBUFFERED: 1
     ports:
       - "10000:10000"
+    volumes:
+      - ./data/docs:/app/data/docs
+      - ./ontology:/app/ontology
+      - ./data:/app/data
+      - ./reports:/app/reports
+      - ./retrieval:/app/retrieval
     restart: on-failure
     # Backend runs uvicorn backend.api.main_gpt:app on port 10000
     # Environment variables (OPENAI_API_KEY, OPENAI_MODEL, etc.) loaded from .env
@@ -45,8 +53,7 @@ services:
     depends_on:
       - backend
     environment:
-      # Point to backend service within Docker network
-      API_BASE_URL: ${API_BASE_URL:-http://localhost:10000}
+      API_BASE_URL: http://backend:10000
     ports:
       - "4173:4173"
     restart: on-failure

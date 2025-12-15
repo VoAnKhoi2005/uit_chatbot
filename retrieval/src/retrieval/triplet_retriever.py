@@ -1,48 +1,33 @@
-from graph.src.db import *
-import sys
-from retrieval.src.db.vector_db import *
-from collections import defaultdict
 
+from typing import List, Dict, Any
+from retrieval.src.db.vector_db import ConceptRelationDB
+from __future__ import annotations
 
-class TripletRetriever():
-    def __init__(self, db_name: str = "KB_UIT", concepts_col_name: str = "concepts",
-                 relations_col_name: str = "relations"):
-        self.mongo_client = init_mongo()
-        if not self.mongo_client:
-            print("Failed to connect to MongoDB. Exiting.")
-            sys.exit(1)
-
-        self.mongo_db = self.mongo_client[db_name]
-        self.concepts_collection = self.mongo_db[concepts_col_name]
-        self.relations_collection = self.mongo_db[relations_col_name]
+class TripletRetriever:
+    def __init__(self):
         self.vector_db = ConceptRelationDB()
 
-    def _search_document_ids(self, text: str, collection, is_concept: bool = True) -> List[str]:
+    def _search_document_ids(self, text: str, is_concept: bool = True) -> List[str]:
         if is_concept:
             search_results = self.vector_db.search_concepts(text, top_k=1)
+            if not search_results:
+                return []
+            parent_id = str(search_results[0]["parent_id"])
+            return self.vector_db.get_doc_ids_for_concept(parent_id)
         else:
             search_results = self.vector_db.search_relations(text, top_k=1)
-
-        if not search_results:
-            return []
-        r = search_results[0]
-
-        item = collection.find_one({"_id": to_object_id(r["parent_id"])})
-
-        if not item or "documents" not in item:
-            return []
-
-        ids = [doc["document_id"] for doc in item["documents"]]
-        return ids
+            if not search_results:
+                return []
+            parent_id = str(search_results[0]["parent_id"])
+            return self.vector_db.get_doc_ids_for_relation(parent_id)
 
     def search_concepts_document_ids(self, text: str) -> List[str]:
-        return self._search_document_ids(text, self.concepts_collection, is_concept=True)
+        return self._search_document_ids(text, is_concept=True)
 
     def search_relations_document_ids(self, text: str) -> List[str]:
-        return self._search_document_ids(text, self.relations_collection, is_concept=False)
+        return self._search_document_ids(text, is_concept=False)
 
     def search_triplet(self, triplet: Dict[str, str]) -> List[Dict[str, Any]]:
-
         c1 = triplet["c1"]
         c2 = triplet["c2"]
         r = triplet["r"]
