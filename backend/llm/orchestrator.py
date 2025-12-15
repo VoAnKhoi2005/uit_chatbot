@@ -11,9 +11,14 @@ from ontology.loader import get_article_by_id, load_ontology
 from retrieval.text_rag.config import UIT_DISABLE_LOCAL_EMBEDDER
 from retrieval.text_rag.chunker import iter_all_chunks
 from retrieval.text_rag.vector_store import ChunkVectorStore
+from retrieval.src.retrieval.hybrid_orchestrator import HybridOrchestrator
+from retrieval.src.retrieval.triplet_retriever import TripletRetriever
 
 
 from .client import LLMClient
+from .state import ConversationStateStore
+from .citations import build_citations
+from retrieval.src.registry.metadata_registry import MetadataRegistry
 
 
 from .prompts import (
@@ -38,7 +43,10 @@ if not UIT_DISABLE_LOCAL_EMBEDDER:
 
 
 class ChatPipeline:
-    def __init__(
+    # Shared state store (in-memory, per-process)
+    state_store = ConversationStateStore()
+    registry = MetadataRegistry()
+    def __init(
         self,
         ontology_path: str | None = None,
         vector_db_path: str | None = None,
@@ -50,7 +58,6 @@ class ChatPipeline:
         # 👉 Khởi tạo logger TRƯỚC
         self.logger = logging.getLogger("uit_chatbot.chat_pipeline")
         self.logger.setLevel(logging.DEBUG)
-
 
         self.llm_client = llm_client or LLMClient()
         self.ontology_graph = ontology_graph or load_ontology(
@@ -70,6 +77,8 @@ class ChatPipeline:
             vector_db_path or os.getenv("UIT_VECTOR_DB", "retrieval/text_rag/vector_store.db"),
             disable_local_embedder=UIT_DISABLE_LOCAL_EMBEDDER,
         )
+        self.triplet_retriever = TripletRetriever()
+        self.hybrid = HybridOrchestrator(self.vector_store, self.triplet_retriever)
 
         # Ensure the vector store is populated with the proper KB (JSONL items)
         self._ensure_vector_store_loaded()
@@ -84,7 +93,7 @@ class ChatPipeline:
 
 
     async def answer_question(
-        self, question: str, conversation_history: List[Dict[str, str]] | None = None
+        self, question: str, conversation_history: List[Dict[str, str]] | None = None, debug: bool = False, user_id: str = "default"
     ) -> Dict[str, Any]:
         """
         Answer a question, optionally with conversation history for multi-turn context.
@@ -93,90 +102,121 @@ class ChatPipeline:
             question: The current question
             conversation_history: List of previous messages in format [{"role": "user|bot", "content": "..."}]
         """
-        # Build full context for classification (include recent history if available)
+
+        # --- Conversation state: coref/clarify ---
+        # 1. Build full context for classification (include recent history if available)
         classification_input = question
+        last_selected_article_id = None
         if conversation_history:
             # Include last 2-3 turns for context
             recent_history = conversation_history[-3:] if len(conversation_history) > 3 else conversation_history
             history_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in recent_history])
             classification_input = f"{history_text}\n\nCurrent question: {question}"
-        
+            # Try to get last selected article from state
+            last_selected_article_id = self.state_store.get_last_grounding(user_id)
+        # Coref: if question is short and contains coref words, prepend last question
+        coref_words = ["điều đó", "trường hợp trên", "như vậy", "còn cái này"]
+        if any(w in question.lower() for w in coref_words):
+            last_q = self.state_store.get_last_question(user_id)
+            if last_q:
+                question = f"{last_q} {question}"
+                classification_input = f"{classification_input}\n\n(Refers to: {last_q})"
+
         q_type = await classify_question(classification_input, self.llm_client)
         if q_type == QuestionType.OUT_OF_SCOPE:
             return await self._handle_out_of_scope(question)
 
-        # Build retrieval query: handle multi-turn and query rewriting (async)
+        # 2. Build retrieval query: handle multi-turn and query rewriting (async)
         retrieval_query = await self._build_retrieval_query_async(question, q_type, conversation_history)
-        
-        # Decide candidate pool size based on question type
-        if q_type == QuestionType.EXACT_RULE:
-            candidate_k = self.exact_rule_candidate_k
-        else:
-            candidate_k = None
+        # --- HYBRID RETRIEVAL ---
+        hybrid_result = self.hybrid.run(retrieval_query, text_top_k=self.top_k, graph_top_k=self.top_k, debug=debug)
+        context = hybrid_result["context"]
+        grounding = hybrid_result["grounding"]
+        selected_article_id = grounding.get("article_id")
+        dominance = grounding.get("dominance", 0)
+        candidates = grounding.get("candidates", [])
+        top_evidence = hybrid_result.get("top_evidence_for_debug", [])
 
-        # Perform hybrid retrieval (vector + lexical)
-        if self.logger:
-            self.logger.debug(
-                "[RAG-DEBUG] question=%r q_type=%s retrieval_query=%r candidate_k=%r",
-                question, q_type, retrieval_query, candidate_k,
-            )
-        chunks = self._hybrid_retrieve(retrieval_query, top_k=self.top_k, candidate_k=candidate_k)
-        if self.logger:
-            self._log_chunks("[RAG-DEBUG] retrieved", chunks, limit=5)
+        # 3. Ambiguity/clarify logic
+        clarify = False
+        clarify_reason = ""
+        clarify_options = []
+        response_type = None
+        # If no article_id and weak evidence, treat as out of scope
+        if not selected_article_id and (not top_evidence or max([ev.get("score",0) for ev in top_evidence] or [0]) < 0.25):
+            return await self._handle_out_of_scope(question)
+        # If dominance < 0.55 or >=2 candidates close (ratio <1.2), trigger clarify
+        elif (dominance < 0.55 and len(candidates) >= 2):
+            top_score = candidates[0]["score"] if candidates else 0
+            second_score = candidates[1]["score"] if len(candidates) > 1 else 0
+            ratio = (top_score / (second_score + 1e-6)) if second_score else 99
+            if ratio < 1.2:
+                clarify = True
+                clarify_reason = "Nhiều điều khoản cạnh tranh, cần làm rõ."
+        elif dominance < 0.35:
+            clarify = True
+            clarify_reason = "Độ tự tin thấp, cần làm rõ."
 
-        # Fallback: EXACT_RULE but no keyword hit in retrieved chunks
-        if q_type == QuestionType.EXACT_RULE and not self._has_keyword_hit(question, chunks):
-            if self.logger:
-                self.logger.debug("[RAG-DEBUG] no keyword hit in vector results, using lexical KB fallback")
-            fallback_chunks = self._lexical_retrieve_from_kb(question, top_k=self.top_k)
-            if fallback_chunks:
-                chunks = fallback_chunks
-                if self.logger:
-                    self._log_chunks("[RAG-DEBUG] fallback_lexical", chunks, limit=5)
+        if clarify:
+            # Build clarify options from candidates (top 3)
+            for cand in candidates[:3]:
+                meta = self.registry.get_citation_by_article(cand["article_id"])
+                clarify_options.append({
+                    "article_id": cand["article_id"],
+                    "label": meta.get("doc_title") if meta else f"Điều {cand['article_id']}",
+                    "doc_title": meta.get("doc_title") if meta else None,
+                    "so_hieu": meta.get("so_hieu") if meta else None,
+                })
+            reply = "Câu hỏi của bạn có thể liên quan đến nhiều điều khoản. Bạn muốn hỏi về điều nào?"
+            result = {
+                "reply": reply,
+                "response_type": "clarify",
+                "clarify_options": clarify_options,
+                "question_type": q_type.value,
+                "sources": top_evidence,
+                "grounding": grounding,
+            }
+            if debug:
+                result["text_hits"] = hybrid_result.get("text_hits", [])
+                result["graph_hits"] = hybrid_result.get("graph_hits", [])
+            # Update state
+            self.state_store.update(user_id, question, None)
+            return result
 
-        ontology_facts = self._fetch_ontology_facts(chunks)
+        # --- Normal answer flow ---
+        # Enrich ontology facts chỉ theo grounding
+        ontology_facts = []
+        if selected_article_id:
+            try:
+                ontology_facts = get_article_by_id(self.ontology_graph, selected_article_id)
+            except Exception:
+                ontology_facts = []
+        # Compose context: context (from hybrid) + ontology facts
+        if ontology_facts:
+            context = f"{context}\n\nONTOLOGY FACTS:\n" + "\n".join([f.get("text", "") for f in ontology_facts])
 
-        # For EXACT_RULE: re-rank chunks using keyword-aware scoring, then use LLM
-        if q_type == QuestionType.EXACT_RULE:
-            chunks = self._rerank_chunks_by_keywords(question, chunks)
-            if self.logger:
-                self._log_chunks("[RAG-DEBUG] after_rerank_exact_rule", chunks, limit=5)
-            # Use LLM with all chunks for better formatting and comprehensive answer
-            context = self._build_context(chunks, ontology_facts)
-            answer_text = await self.llm_client.generate(
-                EXACT_RULE_ANSWER_SYSTEM_PROMPT, user_prompt=question, context=context
-            )
-        else:
-            # For NEAR_RULE and others: use LLM with context
-            context = self._build_context(chunks, ontology_facts)
-            # Include conversation history in context for multi-turn
-            if conversation_history:
-                history_context = "\n\nLịch sử hội thoại trước đó:\n"
-                history_context += "\n".join([f"{msg['role']}: {msg['content']}" for msg in conversation_history[-3:]])
-                context = f"{context}\n{history_context}"
-            
-            # Use original question for answer generation, not rewritten query
-            answer_text = await self.llm_client.generate(
-                ANSWER_SYSTEM_PROMPT, user_prompt=question, context=context
-            )
+        # --- F9: Citation builder ---
+        # Only use evidence that was actually used in context (top_evidence)
+        citations = build_citations(top_evidence, self.registry)
+        citation_text = "; ".join([c["display"] for c in citations]) if citations else None
 
-        return {
+        answer_text = await self.llm_client.generate(
+            ANSWER_SYSTEM_PROMPT, user_prompt=question, context=context
+        )
+        result = {
             "answer": answer_text,
             "question_type": q_type.value,
-            "sources": [
-                {
-                    "article_id": c.get("article_id"),
-                    "title": c.get("title"),
-                    "clause_id": c.get("clause_id"),
-                    "text": c.get("text"),
-                    "doc_id": c.get("metadata", {}).get("doc_id") or "",
-                    "doc_title": c.get("metadata", {}).get("doc_title") if isinstance(c.get("metadata"), dict) else None,
-                    "so_hieu": c.get("metadata", {}).get("so_hieu") if isinstance(c.get("metadata"), dict) else None,
-                }
-                for c in chunks
-            ],
-            "ontology_facts": ontology_facts,
+            "sources": top_evidence,
+            "grounding": grounding,
+            "citations": citations,
+            "citation_text": citation_text,
         }
+        if debug:
+            result["text_hits"] = hybrid_result.get("text_hits", [])
+            result["graph_hits"] = hybrid_result.get("graph_hits", [])
+        # Update state
+        self.state_store.update(user_id, question, selected_article_id)
+        return result
 
     async def _handle_out_of_scope(self, question: str) -> Dict[str, Any]:
         answer_text = await self.llm_client.generate(
