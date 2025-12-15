@@ -4,13 +4,18 @@ import csv
 import os
 from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
+import logging
 
 from backend.llm.orchestrator import ChatPipeline
 from .schemas import ChatRequest, ChatResponse, Source
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 app = FastAPI(title="UIT Chatbot API")
 
@@ -23,6 +28,14 @@ app.add_middleware(
     allow_headers=["*"],
     expose_headers=["Content-Disposition", "Content-Type"],
 )
+
+# Request logging middleware
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    logger.info(f"Request: {request.method} {request.url.path}")
+    response = await call_next(request)
+    logger.info(f"Response: {response.status_code}")
+    return response
 
 # Initialize shared pipeline
 pipeline = ChatPipeline()
@@ -80,22 +93,31 @@ async def get_pdf(doc_id: str):
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat(req: ChatRequest):
-    # Convert ChatMessage to dict format expected by pipeline
-    history = None
-    if req.conversation_history:
-        history = [{"role": msg.role, "content": msg.content} for msg in req.conversation_history]
-    
-    result = await pipeline.answer_question(req.question, conversation_history=history)
-    sources = [
-        Source(
-            article_id=s.get("article_id"),
-            clause_id=s.get("clause_id"),
-            text=s.get("text", ""),
-            doc_id=s.get("doc_id"),
-            doc_title=s.get("doc_title"),
-            so_hieu=s.get("so_hieu")
-        )
-        for s in result.get("sources", [])
-    ]
-    return ChatResponse(answer=result["answer"], question_type=result["question_type"], sources=sources)
+    try:
+        logger.info(f"Chat request - Question: {req.question[:50]}...")
+        logger.info(f"Chat request - History length: {len(req.conversation_history) if req.conversation_history else 0}")
+        
+        # Convert ChatMessage to dict format expected by pipeline
+        history = None
+        if req.conversation_history:
+            history = [{"role": msg.role, "content": msg.content} for msg in req.conversation_history]
+        
+        result = await pipeline.answer_question(req.question, conversation_history=history)
+        sources = [
+            Source(
+                article_id=s.get("article_id"),
+                clause_id=s.get("clause_id"),
+                text=s.get("text", ""),
+                doc_id=s.get("doc_id"),
+                doc_title=s.get("doc_title"),
+                so_hieu=s.get("so_hieu")
+            )
+            for s in result.get("sources", [])
+        ]
+        
+        logger.info(f"Chat response - Type: {result['question_type']}, Sources: {len(sources)}")
+        return ChatResponse(answer=result["answer"], question_type=result["question_type"], sources=sources)
+    except Exception as e:
+        logger.error(f"Chat error: {str(e)}", exc_info=True)
+        raise
 
