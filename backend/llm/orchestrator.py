@@ -7,22 +7,22 @@ import unicodedata
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from backend.llm.client import LLMClient
-from backend.llm.question_classifier import classify_question
-from backend.llm.question_types import QuestionType
-from backend.llm.prompts import (
+from llm.client import LLMClient
+from llm.question_classifier import classify_question
+from llm.question_types import QuestionType
+from llm.prompts import (
     ANSWER_SYSTEM_PROMPT,
     OUT_OF_SCOPE_SYSTEM_PROMPT,
     NEAR_RULE_QUERY_REWRITE_PROMPT, EXACT_RULE_ANSWER_SYSTEM_PROMPT,
 )
-from backend.llm.citations import build_citations
-from backend.llm.state import ConversationStateStore
-from backend.ontology.loader import load_ontology, get_article_by_id
-from backend.retrieval.src.registry.metadata_registry import MetadataRegistry
-from backend.retrieval.src.retrieval.hybrid_orchestrator import HybridOrchestrator
-from backend.retrieval.src.retrieval.triplet_retriever import TripletRetriever
-from backend.retrieval.text_rag.chunker import iter_all_chunks
-from backend.retrieval.text_rag.vector_store import ChunkVectorStore
+from llm.citations import build_citations
+from llm.state import ConversationStateStore
+from ontology.loader import load_ontology, get_article_by_id
+from retrieval.src.registry.metadata_registry import MetadataRegistry
+from retrieval.src.retrieval.hybrid_orchestrator import HybridOrchestrator
+from retrieval.src.retrieval.triplet_retriever import TripletRetriever
+from retrieval.text_rag.chunker import iter_all_chunks
+from retrieval.text_rag.vector_store import ChunkVectorStore
 
 # Check if local embedder is disabled
 UIT_DISABLE_LOCAL_EMBEDDER = os.getenv("UIT_DISABLE_LOCAL_EMBEDDER", "false").lower() == "true"
@@ -65,8 +65,10 @@ class ChatPipeline:
             self.embedder = embedder
 
         try:
+            # Resolve vector DB path relative to backend directory
+            default_vector_db = Path(__file__).parent.parent / "retrieval" / "text_rag" / "vector_store.db"
             self.vector_store = vector_store or ChunkVectorStore(
-                vector_db_path or os.getenv("UIT_VECTOR_DB", "backend/retrieval/text_rag/vector_store.db"),
+                vector_db_path or os.getenv("UIT_VECTOR_DB", str(default_vector_db)),
                 disable_local_embedder=UIT_DISABLE_LOCAL_EMBEDDER,
             )
             self.logger.info("VectorStore initialized successfully")

@@ -3,7 +3,7 @@ import json
 from retrieval.src.eval.datasets import load_eval_set
 from retrieval.src.eval.metrics import hit_at_k, refusal_accuracy, faithfulness_proxy, citation_precision_proxy
 from retrieval.src.registry.metadata_registry import MetadataRegistry
-from backend.llm.orchestrator import ChatPipeline
+from llm.orchestrator import ChatPipeline
 from pathlib import Path
 import logging
 

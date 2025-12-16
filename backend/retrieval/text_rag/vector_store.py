@@ -19,6 +19,7 @@ if not UIT_DISABLE_LOCAL_EMBEDDER:
 class ChunkVectorStore:
     def __init__(self, db_path: str | Path, disable_local_embedder: bool | None = None) -> None:
         self.db_path = Path(db_path)
+        print(self.db_path)
         self.conn = sqlite3.connect(self.db_path)
         # Allow override of global config via constructor parameter
         self.disable_local_embedder = (

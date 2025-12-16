@@ -6,10 +6,10 @@ from pathlib import Path
 from typing import List, Dict, Any
 
 import phonlp
-from backend.graph.src.triplet_extraction.pos_taging import init_vncorenlp
-from backend.graph.src.triplet_extraction.triplet_extraction import triplet_extraction
-from backend.retrieval.src.db.vector_db import ConceptRelationDB
-from backend.retrieval.src.extract_triplet import load_stopwords
+from graph.src.triplet_extraction.pos_taging import init_vncorenlp
+from graph.src.triplet_extraction.triplet_extraction import triplet_extraction
+from retrieval.src.db.vector_db import ConceptRelationDB
+from retrieval.src.extract_triplet import load_stopwords
 
 class TripletRetriever:
     def __init__(self):
@@ -45,10 +45,15 @@ class TripletRetriever:
     def search_relations_document_ids(self, text: str) -> List[str]:
         return self._search_document_ids(text, is_concept=False)
 
-    def search_triplet(self, triplet: Dict[str, str]) -> List[Dict[str, Any]]:
-        c1 = triplet["c1"]
-        c2 = triplet["c2"]
-        r = triplet["r"]
+    def search_triplet(self, triplet) -> List[Dict[str, Any]]:
+        # Handle both dict and tuple formats
+        if isinstance(triplet, dict):
+            c1 = triplet["c1"]
+            c2 = triplet["c2"]
+            r = triplet["r"]
+        else:
+            # Assume tuple format (c1, r, c2)
+            c1, r, c2 = triplet
 
         ds1 = self.search_concepts_document_ids(c1)
         ds2 = self.search_concepts_document_ids(c2)

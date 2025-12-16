@@ -238,11 +238,13 @@ class ConceptRelationDB:
             return []
 
         query_vector = self.model.encode(query)
+        # Convert list of vectors to numpy array to avoid warning
+        concept_vectors = np.array([concept['vector'] for concept in all_concepts])
+        scores = util.cos_sim(query_vector, concept_vectors)[0]
+        
         results = []
-
-        for concept in all_concepts:
-            score = util.cos_sim(query_vector, [concept['vector']])[0][0]
-            score_val = float(score)
+        for i, concept in enumerate(all_concepts):
+            score_val = float(scores[i])
 
             if score_val >= threshold:
                 results.append({
@@ -253,7 +255,7 @@ class ConceptRelationDB:
                 })
 
         results.sort(key=lambda x: x['score'], reverse=True) 
-        return results[:top_k] 
+        return results[:top_k]
 
     def count_concepts(self) -> int:
         """Đếm số concepts"""
@@ -381,11 +383,13 @@ class ConceptRelationDB:
             return []
 
         query_vector = self.model.encode(query)
+        # Convert list of vectors to numpy array to avoid warning
+        relation_vectors = np.array([relation['vector'] for relation in all_relations])
+        scores = util.cos_sim(query_vector, relation_vectors)[0]
+        
         results = []
-
-        for relation in all_relations:
-            score = util.cos_sim(query_vector, [relation['vector']])[0][0]
-            score_val = float(score)
+        for i, relation in enumerate(all_relations):
+            score_val = float(scores[i])
 
             if score_val >= threshold:
                 results.append({

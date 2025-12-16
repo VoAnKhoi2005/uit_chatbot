@@ -1,4 +1,4 @@
-from backend.graph.src.triplet_extraction import clean_text, parsing_result
+from graph.src.triplet_extraction import clean_text, parsing_result
 
 
 def parse_dataframe_to_tokens(df):

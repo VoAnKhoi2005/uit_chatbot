@@ -3,8 +3,8 @@ import math
 from dataclasses import dataclass
 from typing import List, Dict, Optional, Tuple, Any
 
-from backend.retrieval.src.retrieval.triplet_retriever import TripletRetriever
-from backend.retrieval.text_rag.vector_store import ChunkVectorStore
+from retrieval.src.retrieval.triplet_retriever import TripletRetriever
+from retrieval.text_rag.vector_store import ChunkVectorStore
 
 
 @dataclass
