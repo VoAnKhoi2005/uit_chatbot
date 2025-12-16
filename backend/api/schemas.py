@@ -20,7 +20,7 @@ class Source(BaseModel):
     title: Optional[str] = None
     clause_id: Optional[str] = None
     text: str
-    doc_id: str = ""
+    doc_id: str
     doc_title: Optional[str] = None
     so_hieu: Optional[str] = None
 

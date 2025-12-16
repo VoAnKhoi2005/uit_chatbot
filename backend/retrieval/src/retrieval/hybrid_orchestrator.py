@@ -48,7 +48,12 @@ class HybridOrchestrator:
                 source="text",
                 score=normalize_score("text", hit.get("score", 0)),
                 article_id=hit.get("article_id"),
-                payload=hit,
+                payload={
+                    **hit,
+                    "doc_id": hit.get("doc_id"),
+                    "doc_title": hit.get("doc_title"),
+                    "so_hieu": hit.get("so_hieu"),
+                },
                 text=hit.get("text", "")
             ))
         for hit in graph_hits:
@@ -118,14 +123,29 @@ class HybridOrchestrator:
         evidence = self.rerank_evidence(evidence, question)
         grounding = self.select_grounding(evidence)
         context = self.build_context(evidence, grounding["article_id"])
+        
+        # Convert evidence to dict with flattened payload fields
+        def evidence_to_dict(ev: Evidence) -> dict:
+            result = {
+                "source": ev.source,
+                "score": ev.score,
+                "article_id": ev.article_id,
+                "text": ev.text,
+                "clause_id": ev.payload.get("clause_id"),
+                "title": ev.payload.get("title") or ev.payload.get("metadata", {}).get("title"),
+                "doc_id": ev.payload.get("doc_id"),
+                "doc_title": ev.payload.get("doc_title"),
+                "so_hieu": ev.payload.get("so_hieu"),
+            }
+            return result
+        
         result = {
             "context": context,
             "grounding": grounding,
-            "text_hits": text_hits[:5],
-            "graph_hits": graph_hits[:5],
-            "top_evidence_for_debug": [ev.__dict__ for ev in evidence[:10]]
+            "top_evidence_for_debug": [evidence_to_dict(ev) for ev in evidence[:10]]
         }
-        if not debug:
-            # Only return context and grounding in normal mode
-            return {"context": context, "grounding": grounding}
+        if debug:
+            # Include additional debug info
+            result["text_hits"] = text_hits[:5]
+            result["graph_hits"] = graph_hits[:5]
         return result

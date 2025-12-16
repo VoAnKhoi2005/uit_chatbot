@@ -10,8 +10,8 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 import logging
 
-fromllm.orchestrator import ChatPipeline
-fromapi.schemas import ChatRequest, ChatResponse, Source
+from llm.orchestrator import ChatPipeline
+from api.schemas import ChatRequest, ChatResponse, Source
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

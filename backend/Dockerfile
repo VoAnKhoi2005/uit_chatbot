@@ -36,8 +36,8 @@ EXPOSE 10000
 # Use .env file passed at runtime (via --env-file)
 # Do not bake secrets into the image
 ENV PYTHONUNBUFFERED=1 \
-    PYTHONPATH=/app
+    PYTHONPATH=/app/backend
 
 # Run the FastAPI app
-CMD ["uvicorn", "backend.api.main:app", "--host", "0.0.0.0", "--port", "10000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "10000"]
 

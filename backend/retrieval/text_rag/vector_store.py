@@ -144,15 +144,19 @@ class ChunkVectorStore:
             text_lower = text.lower()
             match_count = sum(1 for term in query_terms if term in text_lower)
             score = match_count / max(len(query_terms), 1)
-
+            
+            metadata = json.loads(metadata_json) if metadata_json else {}
             results.append(
                 {
                     "chunk_id": chunk_id,
                     "article_id": article_id,
                     "clause_id": clause_id,
                     "text": text,
-                    "metadata": json.loads(metadata_json) if metadata_json else {},
+                    "metadata": metadata,
                     "score": score,
+                    "doc_id": metadata.get("doc_id"),
+                    "doc_title": metadata.get("doc_title"),
+                    "so_hieu": metadata.get("so_hieu"),
                 }
             )
 
@@ -176,14 +180,18 @@ class ChunkVectorStore:
             score = float(
                 np.dot(query_vec, emb) / (np.linalg.norm(query_vec) * np.linalg.norm(emb) + 1e-8)
             )
+            metadata = json.loads(metadata_json) if metadata_json else {}
             candidates.append(
                 {
                     "chunk_id": chunk_id,
                     "article_id": article_id,
                     "clause_id": clause_id,
                     "text": text,
-                    "metadata": json.loads(metadata_json) if metadata_json else {},
+                    "metadata": metadata,
                     "score": score,
+                    "doc_id": metadata.get("doc_id"),
+                    "doc_title": metadata.get("doc_title"),
+                    "so_hieu": metadata.get("so_hieu"),
                 }
             )
         candidates.sort(key=lambda x: x["score"], reverse=True)

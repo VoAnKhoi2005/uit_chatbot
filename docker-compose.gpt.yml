@@ -17,12 +17,11 @@
 services:
   backend:
     build:
-      context: ./backend
+      context: backend
       dockerfile: gpt.Dockerfile
     container_name: uitchatbot-backend-gpt
     env_file:
       - .env
-    working_dir: /app
     environment:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}

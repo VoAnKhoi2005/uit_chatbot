@@ -29,8 +29,8 @@ EXPOSE 10000
 
 # Set Docker-safe envs
 ENV PYTHONUNBUFFERED=1 \
-    PYTHONPATH=/app \
+    PYTHONPATH=/app/backend \
     HF_HOME=/app/.cache/huggingface
 
 # Run the FastAPI app with GPT client
-CMD ["uvicorn", "backend.api.main_gpt:app", "--host", "0.0.0.0", "--port", "10000"]
+CMD ["uvicorn", "main_gpt:app", "--host", "0.0.0.0", "--port", "10000"]
