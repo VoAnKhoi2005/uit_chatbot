@@ -29,7 +29,6 @@ services:
       UIT_TTL_PATH: /app/ontology/uit_regulations.ttl
       UIT_VECTOR_DB: /app/data/vector_store.db
       UIT_DISABLE_LOCAL_EMBEDDER: ${UIT_DISABLE_LOCAL_EMBEDDER:-1}
-      UIT_DISABLE_TRIPLET_RAG: ${UIT_DISABLE_TRIPLET_RAG:-1}
       PYTHONUNBUFFERED: 1
     ports:
       - "10000:10000"

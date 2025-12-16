@@ -13,7 +13,7 @@ from backend.llm.question_types import QuestionType
 from backend.llm.prompts import (
     ANSWER_SYSTEM_PROMPT,
     OUT_OF_SCOPE_SYSTEM_PROMPT,
-    NEAR_RULE_QUERY_REWRITE_PROMPT,
+    NEAR_RULE_QUERY_REWRITE_PROMPT, EXACT_RULE_ANSWER_SYSTEM_PROMPT,
 )
 from backend.llm.citations import build_citations
 from backend.llm.state import ConversationStateStore
@@ -26,6 +26,7 @@ from backend.retrieval.text_rag.vector_store import ChunkVectorStore
 
 # Check if local embedder is disabled
 UIT_DISABLE_LOCAL_EMBEDDER = os.getenv("UIT_DISABLE_LOCAL_EMBEDDER", "false").lower() == "true"
+UIT_DISABLE_TRIPLET_RAG = os.getenv("UIT_DISABLE_TRIPLET_RAG", "false").lower() in ("true", "1")
 
 
 class ChatPipeline:
@@ -77,7 +78,10 @@ class ChatPipeline:
             self.triplet_retriever = TripletRetriever()
             self.logger.info("TripletRetriever initialized successfully")
         except Exception as e:
-            self.logger.error("Failed to initialize TripletRetriever: %s", e, exc_info=True)
+            if not UIT_DISABLE_TRIPLET_RAG:
+                self.logger.error("Failed to initialize TripletRetriever: %s", e, exc_info=True)
+            else:
+                self.logger.info("TripletRetriever disabled via UIT_DISABLE_TRIPLET_RAG")
             self.triplet_retriever = None
 
         try:
@@ -89,7 +93,10 @@ class ChatPipeline:
                 if not self.vector_store:
                     self.logger.warning("HybridOrchestrator NOT initialized: VectorStore is None")
                 if not self.triplet_retriever:
-                    self.logger.warning("HybridOrchestrator NOT initialized: TripletRetriever is None")
+                    if UIT_DISABLE_TRIPLET_RAG:
+                        self.logger.info("HybridOrchestrator NOT initialized: TripletRetriever disabled, will use vector-only mode")
+                    else:
+                        self.logger.warning("HybridOrchestrator NOT initialized: TripletRetriever is None")
         except Exception as e:
             self.logger.error("Failed to initialize HybridOrchestrator: %s", e, exc_info=True)
             self.hybrid = None
@@ -122,39 +129,39 @@ class ChatPipeline:
         """
         self.logger.info("[PIPELINE] Starting answer_question for user=%s, question=%r", user_id, question)
 
-        # --- Conversation state: coref/clarify ---
-        # 1. Build full context for classification (include recent history if available)
-        classification_input = question
-        last_selected_article_id = None
-        if conversation_history:
-            # Include last 2-3 turns for context
-            recent_history = conversation_history[-3:] if len(conversation_history) > 3 else conversation_history
-            history_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in recent_history])
-            classification_input = f"{history_text}\n\nCurrent question: {question}"
-            # Try to get last selected article from state
-            last_selected_article_id = self.state_store.get_last_grounding(user_id)
-            self.logger.debug("[PIPELINE] Conversation history: %d messages, last_article=%s", len(conversation_history), last_selected_article_id)
-        # Coref: if question is short and contains coref words, prepend last question
-        coref_words = ["điều đó", "trường hợp trên", "như vậy", "còn cái này"]
-        if any(w in question.lower() for w in coref_words):
-            last_q = self.state_store.get_last_question(user_id)
-            if last_q:
-                question = f"{last_q} {question}"
-                classification_input = f"{classification_input}\n\n(Refers to: {last_q})"
-                self.logger.debug("[PIPELINE] Coref detected, combined question: %r", question)
-
-        self.logger.info("[PIPELINE] Classifying question type...")
-        q_type = await classify_question(classification_input, self.llm_client)
-        self.logger.info("[PIPELINE] Question classified as: %s", q_type.value)
-        
-        if q_type == QuestionType.OUT_OF_SCOPE:
-            self.logger.info("[PIPELINE] Handling out-of-scope question")
-            return await self._handle_out_of_scope(question)
-
-        # 2. Build retrieval query: handle multi-turn and query rewriting (async)
-        self.logger.info("[PIPELINE] Building retrieval query...")
-        retrieval_query = await self._build_retrieval_query_async(question, q_type, conversation_history)
-        self.logger.info("[PIPELINE] Retrieval query: %r", retrieval_query)
+        # # --- Conversation state: coref/clarify ---
+        # # 1. Build full context for classification (include recent history if available)
+        # classification_input = question
+        # last_selected_article_id = None
+        # if conversation_history:
+        #     # Include last 2-3 turns for context
+        #     recent_history = conversation_history[-3:] if len(conversation_history) > 3 else conversation_history
+        #     history_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in recent_history])
+        #     classification_input = f"{history_text}\n\nCurrent question: {question}"
+        #     # Try to get last selected article from state
+        #     last_selected_article_id = self.state_store.get_last_grounding(user_id)
+        #     self.logger.debug("[PIPELINE] Conversation history: %d messages, last_article=%s", len(conversation_history), last_selected_article_id)
+        # # Coref: if question is short and contains coref words, prepend last question
+        # coref_words = ["điều đó", "trường hợp trên", "như vậy", "còn cái này"]
+        # if any(w in question.lower() for w in coref_words):
+        #     last_q = self.state_store.get_last_question(user_id)
+        #     if last_q:
+        #         question = f"{last_q} {question}"
+        #         classification_input = f"{classification_input}\n\n(Refers to: {last_q})"
+        #         self.logger.debug("[PIPELINE] Coref detected, combined question: %r", question)
+        #
+        # self.logger.info("[PIPELINE] Classifying question type...")
+        # q_type = await classify_question(classification_input, self.llm_client)
+        # self.logger.info("[PIPELINE] Question classified as: %s", q_type.value)
+        #
+        # if q_type == QuestionType.OUT_OF_SCOPE:
+        #     self.logger.info("[PIPELINE] Handling out-of-scope question")
+        #     return await self._handle_out_of_scope(question)
+        #
+        # # 2. Build retrieval query: handle multi-turn and query rewriting (async)
+        # self.logger.info("[PIPELINE] Building retrieval query...")
+        # retrieval_query = await self._build_retrieval_query_async(question, q_type, conversation_history)
+        # self.logger.info("[PIPELINE] Retrieval query: %r", retrieval_query)
         
         # --- HYBRID RETRIEVAL ---
         if not self.hybrid:
@@ -166,7 +173,7 @@ class ChatPipeline:
             )
         
         self.logger.info("[PIPELINE] Running hybrid retrieval (text_top_k=%d, graph_top_k=%d)...", self.top_k, self.top_k)
-        hybrid_result = self.hybrid.run(retrieval_query, text_top_k=self.top_k, graph_top_k=self.top_k, debug=debug)
+        hybrid_result = self.hybrid.run(question, text_top_k=self.top_k, graph_top_k=self.top_k, debug=debug)
         context = hybrid_result["context"]
         grounding = hybrid_result["grounding"]
         selected_article_id = grounding.get("article_id")
@@ -188,14 +195,14 @@ class ChatPipeline:
             self.logger.info("[PIPELINE] No evidence found, treating as out-of-scope")
             return await self._handle_out_of_scope(question)
         # If dominance < 0.55 or >=2 candidates close (ratio <1.2), trigger clarify
-        elif (dominance < 0.55 and len(candidates) >= 2):
+        elif dominance < 0.4 and len(candidates) >= 2:
             top_score = candidates[0]["score"] if candidates else 0
             second_score = candidates[1]["score"] if len(candidates) > 1 else 0
             ratio = (top_score / (second_score + 1e-6)) if second_score else 99
             if ratio < 1.2:
                 clarify = True
                 clarify_reason = "Nhiều điều khoản cạnh tranh, cần làm rõ."
-        elif dominance < 0.35:
+        elif dominance < 0.3:
             clarify = True
             clarify_reason = "Độ tự tin thấp, cần làm rõ."
 
@@ -215,7 +222,7 @@ class ChatPipeline:
                 "reply": reply,
                 "response_type": "clarify",
                 "clarify_options": clarify_options,
-                "question_type": q_type.value,
+                "question_type": "EXACT_RULE",
                 "sources": top_evidence,
                 "grounding": grounding,
             }
@@ -251,13 +258,13 @@ class ChatPipeline:
 
         self.logger.info("[PIPELINE] Calling LLM to generate answer...")
         answer_text = await self.llm_client.generate(
-            ANSWER_SYSTEM_PROMPT, user_prompt=question, context=context
+            EXACT_RULE_ANSWER_SYSTEM_PROMPT, user_prompt=question, context=context
         )
         self.logger.info("[PIPELINE] LLM response received, length=%d chars", len(answer_text))
         
         result = {
             "answer": answer_text,
-            "question_type": q_type.value,
+            "question_type": "EXACT_RULE",
             "sources": top_evidence,
             "grounding": grounding,
             "citations": citations,
