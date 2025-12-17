@@ -94,7 +94,7 @@ Build and run the frontend container:
 
 ```bash
 # Build the frontend image
-docker build -t uit-chatbot-frontend ./web
+docker build -t uit-chatbot-frontend ./frontend
 
 # Run the frontend container
 # Set VITE_API_BASE_URL to point to your backend (default: http://localhost:10000)

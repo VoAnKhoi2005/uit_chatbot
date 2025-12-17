@@ -89,7 +89,7 @@ Backend will run at `http://localhost:10000`
 
 1. **Navigate to web directory**:
 ```bash
-cd web
+cd frontend
 ```
 
 2. **Install dependencies**:
