@@ -1,17 +1,124 @@
 from __future__ import annotations
 
+import logging
+import os
+import re
+import unicodedata
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+from llm.client import LLMClient
+from llm.question_classifier import classify_question
+from llm.question_types import QuestionType
+from llm.prompts import (
+    ANSWER_SYSTEM_PROMPT,
+    OUT_OF_SCOPE_SYSTEM_PROMPT,
+    NEAR_RULE_QUERY_REWRITE_PROMPT, EXACT_RULE_ANSWER_SYSTEM_PROMPT,
+)
+from llm.citations import build_citations
+from llm.state import ConversationStateStore
+from ontology.loader import load_ontology, get_article_by_id
+from retrieval.src.registry.metadata_registry import MetadataRegistry
+from retrieval.src.retrieval.hybrid_orchestrator import HybridOrchestrator
+from retrieval.src.retrieval.triplet_retriever import TripletRetriever
+from retrieval.text_rag.chunker import iter_all_chunks
+from retrieval.text_rag.vector_store import ChunkVectorStore
+
+# Check if local embedder is disabled
+UIT_DISABLE_LOCAL_EMBEDDER = os.getenv("UIT_DISABLE_LOCAL_EMBEDDER", "false").lower() == "true"
+UIT_DISABLE_TRIPLET_RAG = os.getenv("UIT_DISABLE_TRIPLET_RAG", "false").lower() in ("true", "1")
+
 
 class ChatPipeline:
     # Shared state store (in-memory, per-process)
     state_store = ConversationStateStore()
     registry = MetadataRegistry()
-    def __init__(self, ontology_path: str | None = None, vector_db_path: str | None = None, llm_client: Any = None, embedder=None, vector_store: Any = None, ontology_graph=None, **kwargs):
+    
+    # Routing thresholds (can be overridden via env for tuning)
+    OUT_SCORE_DEFAULT = 0.18
+    EXACT_SCORE_DEFAULT = 0.33
+    EXACT_DOM_DEFAULT = 0.45
+    # New thresholds for diagram-aligned routing
+    EXACT_GOOD_SCORE = 0.55
+    NEAR_MIN_GOOD_SCORE = 0.25
+
+    # Generous domain keywords for study/training questions (accent-insensitive)
+    STUDY_KEYWORDS = [
+        "hoc",
+        "mon",
+        "hoc phan",
+        "tin chi",
+        "dang ky",
+        "rut",
+        "huy",
+        "bao luu",
+        "tam dung",
+        "thoi hoc",
+        "nghi hoc",
+        "thi",
+        "diem",
+        "diem ren luyen",
+        "ket qua",
+        "hoc phi",
+        "mien",
+        "hoan",
+        "canh cao",
+        "dinh chi",
+        "tot nghiep",
+        "chuan dau ra",
+        "dao tao",
+        "quy che",
+        "quy dinh",
+        "phong dao tao",
+        "phuc khao",
+        "hoc lai",
+        "cai thien",
+        "thuc tap",
+        "khoa luan",
+        "do an",
+        "lich hoc",
+        "thoi khoa bieu",
+        # Institution / context hints
+        "uit",
+        "dhcntt",
+        "truong",
+        "p.dtdh",
+    ]
+
+    # Obvious non-study / smalltalk keywords (accent-insensitive)
+    NON_STUDY_KEYWORDS = [
+        "mua",
+        "nang",
+        "thoi tiet",
+        "du bao",
+        "bao nhieu do",
+        "nhiet do",
+        "bao",
+        "troi",
+        "canteen",
+        "can tin",
+        "phim",
+        "nhac",
+        "tinh yeu",
+        "bong da",
+    ]
+    
+    def __init__(
+        self,
+        ontology_path: str | None = None,
+        vector_db_path: str | None = None,
+        llm_client: Any = None,
+        embedder=None,
+        vector_store: Any = None,
+        ontology_graph=None,
+        **kwargs
+    ):
         self.logger = logging.getLogger("uit_chatbot.chat_pipeline")
         self.logger.setLevel(logging.DEBUG)
 
         self.llm_client = llm_client or LLMClient()
         self.ontology_graph = ontology_graph or load_ontology(
-            ontology_path or os.getenv("UIT_TTL_PATH", "ontology/uit_regulations.ttl")
+            ontology_path or os.getenv("UIT_TTL_PATH", "backend/ontology/uit_regulations.ttl")
         )
 
         # Only create embedder if local embedding is enabled
@@ -27,24 +134,42 @@ class ChatPipeline:
             self.embedder = embedder
 
         try:
+            # Resolve vector DB path relative to backend directory
+            default_vector_db = Path(__file__).parent.parent / "retrieval" / "text_rag" / "vector_store.db"
             self.vector_store = vector_store or ChunkVectorStore(
-                vector_db_path or os.getenv("UIT_VECTOR_DB", "retrieval/text_rag/vector_store.db"),
+                vector_db_path or os.getenv("UIT_VECTOR_DB", str(default_vector_db)),
                 disable_local_embedder=UIT_DISABLE_LOCAL_EMBEDDER,
             )
-        except Exception:
+            self.logger.info("VectorStore initialized successfully")
+        except Exception as e:
+            self.logger.error("Failed to initialize VectorStore: %s", e, exc_info=True)
             self.vector_store = None
 
         try:
             self.triplet_retriever = TripletRetriever()
-        except Exception:
+            self.logger.info("TripletRetriever initialized successfully")
+        except Exception as e:
+            if not UIT_DISABLE_TRIPLET_RAG:
+                self.logger.error("Failed to initialize TripletRetriever: %s", e, exc_info=True)
+            else:
+                self.logger.info("TripletRetriever disabled via UIT_DISABLE_TRIPLET_RAG")
             self.triplet_retriever = None
 
         try:
             if self.vector_store and self.triplet_retriever:
                 self.hybrid = HybridOrchestrator(self.vector_store, self.triplet_retriever)
+                self.logger.info("HybridOrchestrator initialized successfully")
             else:
                 self.hybrid = None
-        except Exception:
+                if not self.vector_store:
+                    self.logger.warning("HybridOrchestrator NOT initialized: VectorStore is None")
+                if not self.triplet_retriever:
+                    if UIT_DISABLE_TRIPLET_RAG:
+                        self.logger.info("HybridOrchestrator NOT initialized: TripletRetriever disabled, will use vector-only mode")
+                    else:
+                        self.logger.warning("HybridOrchestrator NOT initialized: TripletRetriever is None")
+        except Exception as e:
+            self.logger.error("Failed to initialize HybridOrchestrator: %s", e, exc_info=True)
             self.hybrid = None
 
         # Ensure the vector store is populated with the proper KB (JSONL items)
@@ -61,52 +186,15 @@ class ChatPipeline:
         )
         # Lazy-loaded cache of raw KB items for lexical fallback
         self._kb_items_cache: list[dict] | None = None
-        ontology_path: str | None = None,
-        vector_db_path: str | None = None,
-        llm_client: Optional[LLMClient] = None,
-        embedder=None,
-        vector_store: Optional[ChunkVectorStore] = None,
-        ontology_graph=None,
-    ) -> None:
-        # 👉 Khởi tạo logger TRƯỚC
-        self.logger = logging.getLogger("uit_chatbot.chat_pipeline")
-        self.logger.setLevel(logging.DEBUG)
-
-        self.llm_client = llm_client or LLMClient()
-        self.ontology_graph = ontology_graph or load_ontology(
-            ontology_path or os.getenv("UIT_TTL_PATH", "ontology/uit_regulations.ttl")
-        )
-
-        # Only create embedder if local embedding is enabled
-        if UIT_DISABLE_LOCAL_EMBEDDER:
-            self.embedder = None
-        else:
-            if embedder is None:
-                from retrieval.text_rag.embeddings import TextEmbedder
-                embedder = TextEmbedder()
-            self.embedder = embedder
-
-        self.vector_store = vector_store or ChunkVectorStore(
-            vector_db_path or os.getenv("UIT_VECTOR_DB", "retrieval/text_rag/vector_store.db"),
-            disable_local_embedder=UIT_DISABLE_LOCAL_EMBEDDER,
-        )
-        self.triplet_retriever = TripletRetriever()
-        self.hybrid = HybridOrchestrator(self.vector_store, self.triplet_retriever)
-
-        # Ensure the vector store is populated with the proper KB (JSONL items)
-        self._ensure_vector_store_loaded()
-
-        self.top_k = int(os.getenv("UIT_RAG_TOP_K", "5"))
-        # Larger candidate pool for EXACT_RULE questions (before reranking)
-        self.exact_rule_candidate_k = int(
-            os.getenv("UIT_RAG_EXACT_RULE_CANDIDATES", str(self.top_k * 6))
-        )
-        # Lazy-loaded cache of raw KB items for lexical fallback
-        self._kb_items_cache: Optional[List[Dict[str, Any]]] = None
 
 
     async def answer_question(
-        self, question: str, conversation_history: List[Dict[str, str]] | None = None, debug: bool = False, user_id: str = "default"
+        self,
+        question: str,
+        conversation_history: List[Dict[str, str]] | None = None,
+        debug: bool = False,
+        user_id: str = "default",
+        force_intent: Optional[str] = None,
     ) -> Dict[str, Any]:
         """
         Answer a question, optionally with conversation history for multi-turn context.
@@ -115,131 +203,333 @@ class ChatPipeline:
             question: The current question
             conversation_history: List of previous messages in format [{"role": "user|bot", "content": "..."}]
         """
+        self.logger.info("[PIPELINE] Starting answer_question for user=%s, question=%r", user_id, question)
 
-        # --- Conversation state: coref/clarify ---
-        # 1. Build full context for classification (include recent history if available)
+        # --- Hard OUT for obviously non-study/smalltalk questions ---
+        if self.is_obviously_non_study(question):
+            self.logger.info("[PIPELINE] Hard OUT_OF_SCOPE for obvious non-study question")
+            debug_info: Dict[str, Any] = {
+                "is_obviously_non_study": True,
+                "final_intent": QuestionType.OUT_OF_SCOPE.value,
+                "model_intent_suggestion": None,
+                "demo_override": False,
+                "intent_forced": False,
+                "answer_style": "helpful_out_of_scope",
+                "intent_decision_reason": "Hard OUT for obvious non-study/smalltalk question.",
+            }
+            base = await self._handle_out_of_scope(question)
+            # Ensure no KB bullets / sources
+            base["sources"] = []
+            base["question_type"] = QuestionType.OUT_OF_SCOPE.value
+            base["debug"] = debug_info
+            return base
+
+        # --- Intent classification (model label only, routing adjusted by thresholds) ---
         classification_input = question
-        last_selected_article_id = None
         if conversation_history:
-            # Include last 2-3 turns for context
-            recent_history = conversation_history[-3:] if len(conversation_history) > 3 else conversation_history
+            recent_history = (
+                conversation_history[-3:] if len(conversation_history) > 3 else conversation_history
+            )
             history_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in recent_history])
             classification_input = f"{history_text}\n\nCurrent question: {question}"
-            # Try to get last selected article from state
-            last_selected_article_id = self.state_store.get_last_grounding(user_id)
-        # Coref: if question is short and contains coref words, prepend last question
-        coref_words = ["điều đó", "trường hợp trên", "như vậy", "còn cái này"]
-        if any(w in question.lower() for w in coref_words):
-            last_q = self.state_store.get_last_question(user_id)
-            if last_q:
-                question = f"{last_q} {question}"
-                classification_input = f"{classification_input}\n\n(Refers to: {last_q})"
 
+        self.logger.info("[PIPELINE] Classifying question type via LLM...")
         q_type = await classify_question(classification_input, self.llm_client)
-        if q_type == QuestionType.OUT_OF_SCOPE:
-            return await self._handle_out_of_scope(question)
+        self.logger.info("[PIPELINE] Question classified as: %s", q_type.value)
 
-        # 2. Build retrieval query: handle multi-turn and query rewriting (async)
-        retrieval_query = await self._build_retrieval_query_async(question, q_type, conversation_history)
+        # --- Build retrieval query (rewrite for NEAR_RULE) ---
+        self.logger.info("[PIPELINE] Building retrieval query...")
+        retrieval_query = await self._build_retrieval_query_async(question, q_type, conversation_history or [])
+        self.logger.info("[PIPELINE] Retrieval query: %r", retrieval_query)
+        
         # --- HYBRID RETRIEVAL ---
-        hybrid_result = self.hybrid.run(retrieval_query, text_top_k=self.top_k, graph_top_k=self.top_k, debug=debug)
+        if not self.hybrid:
+            self.logger.error("[PIPELINE] HybridOrchestrator is None, cannot proceed")
+            raise RuntimeError(
+                "HybridOrchestrator not initialized. This likely means TripletRetriever or VectorStore failed to initialize. "
+                "Check that: (1) vector_store.db exists, (2) graph NLP models are available, "
+                "(3) UIT_DISABLE_TRIPLET_RAG environment variable is not set if you need triplet retrieval."
+            )
+        
+        self.logger.info(
+            "[PIPELINE] Running hybrid retrieval (text_top_k=%d, graph_top_k=%d)...",
+            self.top_k,
+            self.top_k,
+        )
+        # Always request debug info so we can compute routing metrics
+        hybrid_result = self.hybrid.run(
+            retrieval_query,
+            text_top_k=self.top_k,
+            graph_top_k=self.top_k,
+            debug=True,
+        )
         context = hybrid_result["context"]
         grounding = hybrid_result["grounding"]
         selected_article_id = grounding.get("article_id")
-        dominance = grounding.get("dominance", 0)
+        dominance = grounding.get("dominance", 0.0)
         candidates = grounding.get("candidates", [])
-        top_evidence = hybrid_result.get("top_evidence_for_debug", [])
+        top_evidence = hybrid_result.get("top_evidence_for_debug", []) or []
+        text_hits = hybrid_result.get("text_hits", []) or []
+        graph_hits = hybrid_result.get("graph_hits", []) or []
 
-        # 3. Ambiguity/clarify logic
-        clarify = False
-        clarify_reason = ""
-        clarify_options = []
-        response_type = None
-        # If no article_id and weak evidence, treat as out of scope
-        if not selected_article_id and (not top_evidence or max([ev.get("score",0) for ev in top_evidence] or [0]) < 0.25):
-            return await self._handle_out_of_scope(question)
-        # If dominance < 0.55 or >=2 candidates close (ratio <1.2), trigger clarify
-        elif (dominance < 0.55 and len(candidates) >= 2):
-            top_score = candidates[0]["score"] if candidates else 0
-            second_score = candidates[1]["score"] if len(candidates) > 1 else 0
-            ratio = (top_score / (second_score + 1e-6)) if second_score else 99
-            if ratio < 1.2:
-                clarify = True
-                clarify_reason = "Nhiều điều khoản cạnh tranh, cần làm rõ."
-        elif dominance < 0.35:
-            clarify = True
-            clarify_reason = "Độ tự tin thấp, cần làm rõ."
+        num_evidence = len(top_evidence)
+        max_score = max((ev.get("score", 0.0) for ev in top_evidence), default=0.0)
+        anchor_count = len(candidates)
 
-        if clarify:
-            # Build clarify options from candidates (top 3)
-            for cand in candidates[:3]:
-                meta = self.registry.get_citation_by_article(cand["article_id"])
-                clarify_options.append({
-                    "article_id": cand["article_id"],
-                    "label": meta.get("doc_title") if meta else f"Điều {cand['article_id']}",
-                    "doc_title": meta.get("doc_title") if meta else None,
-                    "so_hieu": meta.get("so_hieu") if meta else None,
-                })
-            reply = "Câu hỏi của bạn có thể liên quan đến nhiều điều khoản. Bạn muốn hỏi về điều nào?"
-            result = {
-                "reply": reply,
-                "response_type": "clarify",
-                "clarify_options": clarify_options,
-                "question_type": q_type.value,
-                "sources": top_evidence,
-                "grounding": grounding,
+        # --- C) Calibration & Confidence: evidence-quality filter ---
+        # C2: Compute good_hits (filter out TOC/heading noise)
+        good_hits = [h for h in text_hits if not self.is_toc_like(h.get("text", ""))]
+        good_count = len(good_hits)
+        toc_hits_count = len(text_hits) - good_count
+        good_max_score = max((h.get("score", 0.0) for h in good_hits), default=0.0) if good_hits else 0.0
+
+        # Domain detection (D0: Domain Gate)
+        # Use enhanced domain detection with LLM fallback if needed
+        is_study_domain, domain_reason = await self.is_study_domain_enhanced(
+            question, retrieval_query, []
+        )
+
+        # Thresholds (allow override via env)
+        out_score = float(os.getenv("UIT_ROUTING_OUT_SCORE", str(self.OUT_SCORE_DEFAULT)))
+        exact_score = float(os.getenv("UIT_ROUTING_EXACT_SCORE", str(self.EXACT_SCORE_DEFAULT)))
+        exact_dom = float(os.getenv("UIT_ROUTING_EXACT_DOM", str(self.EXACT_DOM_DEFAULT)))
+        exact_good_score = float(os.getenv("UIT_ROUTING_EXACT_GOOD_SCORE", str(self.EXACT_GOOD_SCORE)))
+        near_min_good_score = float(os.getenv("UIT_ROUTING_NEAR_MIN_GOOD_SCORE", str(self.NEAR_MIN_GOOD_SCORE)))
+
+        # --- Intent decision ---
+        intent_forced = False
+        final_intent = q_type.value
+        intent_reason = ""
+
+        # Normalize force_intent
+        force_intent_normalized = None
+        if force_intent:
+            fi = force_intent.strip().upper()
+            if fi in {QuestionType.EXACT_RULE.value, QuestionType.NEAR_RULE.value, QuestionType.OUT_OF_SCOPE.value}:
+                force_intent_normalized = fi
+
+        if force_intent_normalized:
+            intent_forced = True
+            final_intent = force_intent_normalized
+            intent_reason = f"Forced via API parameter force_intent={force_intent_normalized}"
+        else:
+            # --- D) Intent Decision (diagram-aligned) ---
+            # D1: Intent policy using good_hits and new thresholds
+            if not is_study_domain:
+                # Non-study domain: always OUT_OF_SCOPE
+                final_intent = QuestionType.OUT_OF_SCOPE.value
+                intent_reason = "OUT_OF_SCOPE because question is not in study domain."
+            else:
+                # Study domain: use good_hits for routing
+                if good_count == 0 or good_max_score < near_min_good_score:
+                    # No good evidence or very weak evidence
+                    final_intent = QuestionType.NEAR_RULE.value
+                    intent_reason = (
+                        "NEAR_RULE (in_domain_no_evidence) because good_count=0 or good_max_score < NEAR_MIN_GOOD_SCORE."
+                    )
+                elif good_max_score >= exact_good_score and (dominance >= exact_dom or max_score >= exact_score):
+                    # Strong evidence and high confidence
+                    final_intent = QuestionType.EXACT_RULE.value
+                    intent_reason = (
+                        "EXACT_RULE because good_max_score >= EXACT_GOOD_SCORE and dominance/max_score thresholds passed."
+                    )
+                else:
+                    # Moderate evidence
+                    final_intent = QuestionType.NEAR_RULE.value
+                    intent_reason = (
+                        "NEAR_RULE (grounded_with_clarification) because study-domain question has moderate evidence."
+                    )
+
+        # Log intent decision (D spec)
+        self.logger.info(
+            "[INTENT] study=%s, good_count=%d, good_max_score=%.3f, dominance=%.3f, final=%s",
+            is_study_domain,
+            good_count,
+            good_max_score,
+            dominance,
+            final_intent,
+        )
+
+        debug_info: Dict[str, Any] = {
+            "max_score": max_score,
+            "dominance": dominance,
+            "num_evidence": num_evidence,
+            "anchor_count": anchor_count,
+            "has_domain_signal": is_study_domain,
+            "is_study_domain": is_study_domain,
+            "domain_reason": domain_reason,
+            "good_count": good_count,
+            "good_max_score": good_max_score,
+            "toc_hits_count": toc_hits_count,
+            # For backward compatibility, keep classifier_label and chosen_intent,
+            # but also expose clearer names.
+            "classifier_label": q_type.value,
+            "model_intent_suggestion": q_type.value,
+            "chosen_intent": final_intent,
+            "final_intent": final_intent,
+            "intent_forced": intent_forced,
+            "forced_intent": force_intent_normalized,
+            "intent_decision_reason": intent_reason,
             }
-            if debug:
-                result["text_hits"] = hybrid_result.get("text_hits", [])
-                result["graph_hits"] = hybrid_result.get("graph_hits", [])
-            # Update state
-            self.state_store.update(user_id, question, None)
-            return result
+        if debug:
+            debug_info["text_hits"] = text_hits
+            debug_info["graph_hits"] = graph_hits
 
-        # --- Normal answer flow ---
+        # --- OUT_OF_SCOPE branch ---
+        if final_intent == QuestionType.OUT_OF_SCOPE.value:
+            self.logger.info("[PIPELINE] Handling OUT_OF_SCOPE intent")
+            debug_info["answer_style"] = "helpful_out_of_scope"
+            base = await self._handle_out_of_scope(question)
+            base["debug"] = debug_info
+            # Ensure question_type in response matches final intent
+            base["question_type"] = final_intent
+            return base
+
+        # --- Normal answer flow (EXACT_RULE / NEAR_RULE) ---
+        self.logger.info(
+            "[PIPELINE] Generating answer for article_id=%s with intent=%s",
+            selected_article_id,
+            final_intent,
+        )
+        
+        # --- E) Compose Context + Citations (diagram box) ---
+        # Use good_hits only for context composition
+        evidence_for_context = good_hits if good_hits else []
+        
+        # Determine answer style for NEAR
+        answer_style = "grounded_with_clarification"
+        if final_intent == QuestionType.NEAR_RULE.value:
+            if good_count == 0 or good_max_score < near_min_good_score:
+                answer_style = "in_domain_no_evidence"
+                # For in_domain_no_evidence: do not compose KB context
+                evidence_for_context = []
+            else:
+                answer_style = "grounded_with_clarification"
+                # For grounded_with_clarification: use top 3 good_hits to keep concise
+                evidence_for_context = good_hits[:3]
+        
+        # EXACT: compose context using good_hits only (not TOC hits)
+        if final_intent == QuestionType.EXACT_RULE.value:
+            evidence_for_context = good_hits
+        
+        # Build context from evidence_for_context
+        if evidence_for_context:
+            context_lines = ["Các đoạn trích liên quan:"]
+            for ev in evidence_for_context:
+                text = ev.get("text", "").strip()
+                article_id_ev = ev.get("article_id") or ""
+                clause_id_ev = ev.get("clause_id") or ""
+                if text:
+                    context_lines.append(f"- Article: {article_id_ev}, Clause: {clause_id_ev}, Text: {text}")
+            context = "\n".join(context_lines)
+        else:
+            context = ""
+        
         # Enrich ontology facts chỉ theo grounding
         ontology_facts = []
         if selected_article_id:
             try:
                 ontology_facts = get_article_by_id(self.ontology_graph, selected_article_id)
-            except Exception:
+                self.logger.debug("[PIPELINE] Loaded %d ontology facts for article_id=%s", len(ontology_facts), selected_article_id)
+            except Exception as e:
+                self.logger.warning("[PIPELINE] Failed to load ontology facts: %s", e)
                 ontology_facts = []
-        # Compose context: context (from hybrid) + ontology facts
+        # Add ontology facts to context
         if ontology_facts:
             context = f"{context}\n\nONTOLOGY FACTS:\n" + "\n".join([f.get("text", "") for f in ontology_facts])
+            self.logger.debug("[PIPELINE] Added ontology facts to context")
 
         # --- F9: Citation builder ---
-        # Only use evidence that was actually used in context (top_evidence)
-        citations = build_citations(top_evidence, self.registry)
+        # Use evidence_for_context for citations (good_hits only)
+        citations = build_citations(evidence_for_context, self.registry)
         citation_text = "; ".join([c["display"] for c in citations]) if citations else None
+        self.logger.debug("[PIPELINE] Built %d citations", len(citations) if citations else 0)
 
-        answer_text = await self.llm_client.generate(
-            ANSWER_SYSTEM_PROMPT, user_prompt=question, context=context
+        # --- F) LLM Generate Answer (diagram box) ---
+        self.logger.info("[PIPELINE] Calling LLM to generate answer...")
+        if final_intent == QuestionType.EXACT_RULE.value:
+            system_prompt = EXACT_RULE_ANSWER_SYSTEM_PROMPT
+            # Add rule about numeric thresholds (F spec)
+            system_prompt += "\n\nQUAN TRỌNG: Không được xuất ra các ngưỡng số (ví dụ: điểm, tín chỉ, thời gian) trừ khi chúng xuất hiện nguyên văn trong bằng chứng được cung cấp."
+        else:
+            # NEAR_RULE or any other in-domain fallback
+            system_prompt = ANSWER_SYSTEM_PROMPT
+
+        llm_answer = await self.llm_client.generate(
+            system_prompt,
+            user_prompt=question,
+            context=context,
         )
+        self.logger.info("[PIPELINE] LLM response received, length=%d chars", len(llm_answer))
+
+        # --- G) Postprocess / Response shaping (diagram box) ---
+        if final_intent == QuestionType.EXACT_RULE.value:
+            debug_info["answer_style"] = "grounded"
+            answer_text = self.render_exact_answer(
+                question=question,
+                evidence=evidence_for_context,
+                ontology_facts=ontology_facts,
+                citations=citations,
+                llm_answer=llm_answer,
+            )
+        elif final_intent == QuestionType.NEAR_RULE.value:
+            debug_info["answer_style"] = answer_style
+            if answer_style == "in_domain_no_evidence":
+                # G2(b): in_domain_no_evidence rendering
+                answer_text = await self.render_near_no_evidence_answer(
+                    question=question,
+                    llm_answer=llm_answer,
+                )
+            else:
+                # G2(a): grounded_with_clarification rendering
+                clar_q = await self.choose_clarifying_question_llm(question, evidence_for_context)
+                debug_info["clarifying_question"] = clar_q
+                answer_text = self.render_near_answer(
+                    question=question,
+                    evidence=evidence_for_context,
+                    ontology_facts=ontology_facts,
+                    citations=citations,
+                    llm_answer=llm_answer,
+                    clarifying_question=clar_q,
+                )
+        else:
+            # Should not reach here, but fallback
+            answer_text = llm_answer
+        
         result = {
             "answer": answer_text,
-            "question_type": q_type.value,
-            "sources": top_evidence,
+            "question_type": final_intent,
+            "sources": evidence_for_context,  # Use good_hits only
             "grounding": grounding,
             "citations": citations,
             "citation_text": citation_text,
+            "debug": debug_info,
         }
-        if debug:
-            result["text_hits"] = hybrid_result.get("text_hits", [])
-            result["graph_hits"] = hybrid_result.get("graph_hits", [])
         # Update state
         self.state_store.update(user_id, question, selected_article_id)
+        self.logger.info("[PIPELINE] Answer generation complete")
         return result
 
     async def _handle_out_of_scope(self, question: str) -> Dict[str, Any]:
-        answer_text = await self.llm_client.generate(
-            OUT_OF_SCOPE_SYSTEM_PROMPT, user_prompt=question, context=""
+        llm_answer = await self.llm_client.generate(
+            OUT_OF_SCOPE_SYSTEM_PROMPT,
+            user_prompt=question,
+            context="",
+        )
+        answer_text = self.render_out_answer(
+            question=question,
+            evidence=[],
+            citations=[],
+            llm_answer=llm_answer,
         )
         return {
             "answer": answer_text,
             "question_type": QuestionType.OUT_OF_SCOPE.value,
             "sources": [],
             "ontology_facts": [],
+            "debug": {
+                "answer_style": "helpful_out_of_scope",
+            },
         }
 
     def _fetch_ontology_facts(self, chunks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -644,6 +934,389 @@ class ChatPipeline:
             scored_chunks.sort(key=lambda x: x["score"], reverse=True)
         
         return scored_chunks[:top_k]
+
+    def is_study_domain(self, question: str) -> bool:
+        """
+        Heuristic check for whether the question is in the UIT study/training domain.
+        Uses accent-insensitive matching on a generous keyword set.
+        """
+        normalized = self._normalize_vietnamese(question)
+        return any(kw in normalized for kw in self.STUDY_KEYWORDS)
+
+    async def is_study_domain_enhanced(
+        self, question: str, rewritten_query: str = "", keywords: List[str] = None
+    ) -> tuple[bool, str]:
+        """
+        Domain gate with LLM fallback (D0 spec).
+        Layer A: heuristic keyword list (score-based).
+        Layer B: if uncertain, call LLM classifier to output strict JSON.
+        Returns: (is_study_domain: bool, reason: str)
+        """
+        # Layer A: heuristic keyword check
+        normalized = self._normalize_vietnamese(question)
+        heuristic_score = sum(1 for kw in self.STUDY_KEYWORDS if kw in normalized)
+        
+        # If strong signal (multiple keywords), return True
+        if heuristic_score >= 2:
+            return True, f"Heuristic: found {heuristic_score} study keywords"
+        
+        # If at least one keyword, likely study domain
+        if heuristic_score >= 1:
+            return True, f"Heuristic: found study keyword"
+        
+        # If no keywords but question is very short or ambiguous, use LLM fallback
+        # For now, we'll use heuristic only (LLM fallback can be added if needed)
+        # For uncertain cases with no keywords, default to False
+        if heuristic_score == 0:
+            return False, "Heuristic: no study keywords found"
+        
+        return False, "Heuristic: uncertain"
+
+    def is_obviously_non_study(self, question: str) -> bool:
+        """Detect clearly non-study topics like weather, canteen, movies, sports, love advice."""
+        normalized = self._normalize_vietnamese(question)
+        return any(kw in normalized for kw in self.NON_STUDY_KEYWORDS)
+
+    def is_toc_like(self, text: str) -> bool:
+        """
+        Detect table-of-contents like lines (short, mostly punctuation, lots of dots).
+        These often correspond to headings or index lines and should not drive EXACT routing.
+        
+        C1 spec:
+        - very short (< 80 chars) AND matches trailing page-number pattern with many dots: r"\.{5,}\s*\d+\s*$"
+        - OR contains common noise keywords: "Mục lục", "Sơ đồ tóm tắt"
+        - OR dominated by dots/whitespace and contains no verbs/conditions (simple heuristic allowed)
+        """
+        t = (text or "").strip()
+        if not t:
+            return True
+
+        # Check for common noise keywords
+        if "Mục lục" in t or "Sơ đồ tóm tắt" in t:
+            return True
+
+        # Spec: very short (< 80 chars) AND matches trailing page-number pattern with many dots
+        if len(t) < 80:
+            # Pattern: 5+ dots followed by optional whitespace and digits at end
+            if re.search(r"\.{5,}\s*\d+\s*$", t):
+                return True
+            # Also check for many dots in general
+            if "..." in t or "….." in t or t.count(".") > 10:
+                return True
+
+        # Spec: many dots plus trailing page number (general case)
+        if t.count(".") > 10 and any(ch.isdigit() for ch in t[-5:]):
+            return True
+
+        # Heuristic: dominated by dots/whitespace and contains no verbs/conditions
+        # Simple check: very short lines with few letters are likely headings or noise
+        if len(t) < 25:
+            letters = sum(c.isalpha() for c in t)
+            if letters < 5:
+                return True
+
+        # High ratio of punctuation to characters also suggests TOC
+        non_alnum = sum(not c.isalnum() and not c.isspace() for c in t)
+        if non_alnum / max(len(t), 1) > 0.5:
+            return True
+
+        return False
+
+    # --- Answer rendering helpers ---
+
+    def render_exact_answer(
+        self,
+        question: str,
+        evidence: List[Dict[str, Any]],
+        ontology_facts: List[Dict[str, Any]],
+        citations: List[Dict[str, Any]],
+        llm_answer: str,
+    ) -> str:
+        """
+        Render the final answer for EXACT_RULE.
+        Currently we trust the LLM answer, which is already prompted to be grounded
+        and citation-friendly, and return it directly.
+        """
+        return self._clean_contradictory_disclaimers(
+            llm_answer,
+            has_relevant_evidence=self._has_any_relevant_hit(question, evidence),
+            has_only_toc_evidence=self._has_only_toc_relevant_hits(question, evidence),
+        )
+
+    def _build_near_evidence_bullets(self, evidence: List[Dict[str, Any]]) -> List[str]:
+        """Create 1–2 grounded bullets summarizing what evidence actually says."""
+        bullets: List[str] = []
+        for ev in evidence[:2]:
+            text = (ev.get("text") or "").strip()
+            meta = ev.get("metadata") or {}
+            article_id = ev.get("article_id") or meta.get("article_id")
+            title = meta.get("title") or meta.get("heading")
+
+            if not text:
+                continue
+
+            if self.is_toc_like(text):
+                # Do not invent details; only mention that a section exists.
+                label_parts = []
+                if title:
+                    label_parts.append(f"mục \"{title}\"")
+                if article_id:
+                    label_parts.append(f"Điều {article_id}")
+                label = ", ".join(label_parts) if label_parts else "một mục trong quy chế"
+                bullets.append(
+                    f"- Mình thấy trong quy chế có {label}, nhưng đoạn trích hiện tại giống mục lục nên chưa có nội dung khoản chi tiết."
+                )
+            else:
+                # Use a truncated snippet of the actual text as grounded summary.
+                snippet = text
+                if len(snippet) > 220:
+                    snippet = snippet[:220].rstrip() + "..."
+                bullets.append(f"- {snippet}")
+
+        if not bullets:
+            bullets.append(
+                "- Hiện tại mình chưa tìm thấy đoạn trích cụ thể nào mô tả chi tiết tình huống này trong quy chế."
+            )
+        return bullets
+
+    def choose_clarifying_question(self, question: str) -> str:
+        """Choose exactly one clarifying question based on keywords in the question."""
+        normalized = self._normalize_vietnamese(question)
+
+        # nghỉ học / bảo lưu
+        if any(kw in normalized for kw in ["nghi hoc", "thoi hoc", "tam dung", "bao luu"]):
+            return "Bạn muốn thôi học hẳn hay tạm dừng/bảo lưu (tạm nghỉ rồi quay lại)?"
+
+        # hủy / rút môn
+        if "huy" in normalized or "rut" in normalized:
+            if any(kw in normalized for kw in ["hoc phan", "mon"]):
+                return "Bạn muốn hủy đăng ký trước hạn hay bỏ thi/không dự thi?"
+
+        # tốt nghiệp
+        if "tot nghiep" in normalized:
+            return "Bạn đang thuộc hệ nào (đại trà/CLC/song ngành) và đã tích lũy khoảng bao nhiêu tín chỉ?"
+
+        # Generic in-domain clarification
+        return "Bạn đang hỏi theo học kỳ nào và tình huống cụ thể của bạn là gì (VD: đã đăng ký môn/chưa, đã thi/chưa)?"
+
+    async def choose_clarifying_question_llm(
+        self, question: str, evidence: List[Dict[str, Any]]
+    ) -> str:
+        """
+        G2 spec: Use LLM to generate exactly ONE clarifying question.
+        Input: original question + (optional) top evidence snippets (only if grounded_with_clarification).
+        Output JSON: {"near_answer": "...", "clarifying_question": "...?"}
+        """
+        # Build evidence snippets for context
+        evidence_text = ""
+        if evidence:
+            snippets = []
+            for ev in evidence[:2]:  # Top 2 evidence snippets
+                text = ev.get("text", "").strip()
+                if text and not self.is_toc_like(text):
+                    snippets.append(text[:200])  # Truncate to 200 chars
+            if snippets:
+                evidence_text = "\n\nBằng chứng tìm thấy:\n" + "\n".join(f"- {s}" for s in snippets)
+
+        prompt = f"""Bạn nhận một câu hỏi của sinh viên về quy chế UIT và (có thể) một số đoạn trích bằng chứng.
+
+Câu hỏi: {question}
+{evidence_text}
+
+Nhiệm vụ: Tạo một câu hỏi làm rõ (clarifying question) để giúp trả lời chính xác hơn.
+
+Yêu cầu:
+- Chỉ trả về JSON: {{"clarifying_question": "..."}}
+- Câu hỏi phải có đúng một dấu chấm hỏi (?)
+- Phải liên quan đến chủ đề
+- KHÔNG được đề cập đến "Điều <uuid>" hoặc trích dẫn TOC text
+- Tập trung vào thông tin còn thiếu (ví dụ: hệ đào tạo, học kỳ, tình huống cụ thể)
+
+Ví dụ:
+- "Bạn đang thuộc hệ nào (đại trà/CLC/song ngành) và đã tích lũy khoảng bao nhiêu tín chỉ?"
+- "Bạn muốn thôi học hẳn hay tạm dừng/bảo lưu (tạm nghỉ rồi quay lại)?"
+- "Bạn đang hỏi theo học kỳ nào và tình huống cụ thể của bạn là gì (VD: đã đăng ký môn/chưa, đã thi/chưa)?"
+
+Chỉ trả về JSON, không có text khác."""
+
+        try:
+            result = await self.llm_client.generate_json(
+                system_prompt="Bạn là trợ lý tạo câu hỏi làm rõ cho chatbot UIT.",
+                user_prompt=prompt,
+            )
+            clar_q = result.get("clarifying_question", "")
+            # Ensure it has exactly one question mark
+            if "?" not in clar_q:
+                clar_q = clar_q.rstrip(".") + "?"
+            # Fallback to keyword-based if LLM fails
+            if not clar_q or len(clar_q) < 10:
+                return self.choose_clarifying_question(question)
+            return clar_q
+        except Exception as e:
+            self.logger.warning("[PIPELINE] LLM clarifying question generation failed: %s", e)
+            return self.choose_clarifying_question(question)
+
+    def render_near_answer(
+        self,
+        question: str,
+        evidence: List[Dict[str, Any]],
+        ontology_facts: List[Dict[str, Any]],
+        citations: List[Dict[str, Any]],
+        llm_answer: str,
+        clarifying_question: str,
+    ) -> str:
+        """
+        G2(a): Render NEAR_RULE answer with grounded_with_clarification style.
+        - Provide up to 2 conditional bullets that address the user's main intent using evidence.
+        - Ask exactly ONE clarifying question, tailored to missing slot.
+        """
+        bullets = self._build_near_evidence_bullets(evidence)
+
+        parts: List[str] = []
+        parts.append("**Mình tìm thấy trong quy chế/KB:**")
+        parts.extend(bullets)
+        parts.append("")
+        parts.append("**Để trả lời chính xác hơn, bạn cho mình biết:**")
+        parts.append(f"- {clarifying_question}")
+
+        raw = "\n".join(parts)
+        return self._clean_contradictory_disclaimers(
+            raw,
+            has_relevant_evidence=self._has_any_relevant_hit(question, evidence),
+            has_only_toc_evidence=self._has_only_toc_relevant_hits(question, evidence),
+        )
+
+    async def render_near_no_evidence_answer(
+        self,
+        question: str,
+        llm_answer: str,
+    ) -> str:
+        """
+        G2(b): Render NEAR_RULE answer with in_domain_no_evidence style.
+        - Start with: "Mình chưa tìm thấy điều khoản trực tiếp trong trích dẫn hiện có."
+        - Provide safe general guidance WITHOUT numeric claims.
+        - Ask exactly ONE clarifying question that helps retrieval.
+        """
+        # Generate clarifying question using LLM
+        clar_q = await self.choose_clarifying_question_llm(question, [])
+
+        parts: List[str] = []
+        parts.append("Mình chưa tìm thấy điều khoản trực tiếp trong trích dẫn hiện có.")
+        parts.append("")
+        
+        # Use LLM answer as safe general guidance (if available)
+        if llm_answer and llm_answer.strip():
+            # Clean up LLM answer to remove numeric claims if not in evidence
+            guidance = llm_answer.strip()
+            parts.append(guidance)
+            parts.append("")
+        
+        parts.append("**Để tìm thông tin chính xác hơn, bạn cho mình biết:**")
+        parts.append(f"- {clar_q}")
+
+        return "\n".join(parts)
+
+    def render_out_answer(
+        self,
+        question: str,
+        evidence: List[Dict[str, Any]],
+        citations: List[Dict[str, Any]],
+        llm_answer: str,
+    ) -> str:
+        """
+        Render OUT_OF_SCOPE answer:
+        - Helpful, best-effort response.
+        - Clear disclaimer that it's outside the regulations KB.
+        - Short redirection to in-domain topics.
+        """
+        # Use the LLM's best-effort guidance, but wrap with disclaimer + redirect.
+        main_part = llm_answer.strip() if llm_answer else ""
+
+        disclaimer = (
+            "Lưu ý: câu hỏi này nằm ngoài phạm vi quy chế/KB đào tạo nên mình không có điều khoản để trích dẫn."
+        )
+        redirect = (
+            "Nếu bạn muốn hỏi về học tập/quy chế (đăng ký học phần, điều kiện dự thi/tốt nghiệp, cảnh cáo học vụ…), mình hỗ trợ rất tốt."
+        )
+
+        parts: List[str] = []
+        if main_part:
+            parts.append(main_part)
+            parts.append("")
+        parts.append(disclaimer)
+        parts.append(redirect)
+        # OUT answers are allowed to mention lack of info, so no cleaning needed here.
+        return "\n".join(parts)
+
+    # --- Evidence / disclaimer helpers ---
+
+    def _normalize_for_overlap(self, text: str) -> List[str]:
+        """Normalize text for simple lexical overlap (Vietnamese accent-insensitive)."""
+        norm = self._normalize_vietnamese(text)
+        tokens = [t for t in norm.split() if len(t) > 1]
+        return tokens
+
+    def is_relevant_hit(self, question: str, hit_text: str) -> bool:
+        """
+        Simple heuristic: hit is relevant if it shares at least one non-trivial token
+        with the question OR has high score (handled upstream).
+        """
+        if not hit_text:
+            return False
+        q_tokens = set(self._normalize_for_overlap(question))
+        h_tokens = set(self._normalize_for_overlap(hit_text))
+        if not q_tokens or not h_tokens:
+            return False
+        overlap = q_tokens & h_tokens
+        return len(overlap) > 0
+
+    def _relevant_hits(self, question: str, evidence: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        relevant: List[Dict[str, Any]] = []
+        for ev in evidence:
+            text = ev.get("text") or ""
+            if self.is_relevant_hit(question, text):
+                relevant.append(ev)
+        return relevant
+
+    def _has_any_relevant_hit(self, question: str, evidence: List[Dict[str, Any]]) -> bool:
+        return len(self._relevant_hits(question, evidence)) > 0
+
+    def _has_only_toc_relevant_hits(self, question: str, evidence: List[Dict[str, Any]]) -> bool:
+        relevant = self._relevant_hits(question, evidence)
+        if not relevant:
+            return False
+        return all(self.is_toc_like(ev.get("text") or "") for ev in relevant)
+
+    def _clean_contradictory_disclaimers(
+        self,
+        answer: str,
+        has_relevant_evidence: bool,
+        has_only_toc_evidence: bool,
+    ) -> str:
+        """
+        If we have relevant non-TOC evidence, remove strong 'no info' disclaimers
+        like 'không có thông tin trực tiếp' / 'không liên quan' / 'không có căn cứ'.
+        """
+        if not answer:
+            return answer
+
+        if not has_relevant_evidence or has_only_toc_evidence:
+            # In these cases it's still acceptable to mention lack of detailed info.
+            return answer
+
+        lowered = answer.lower()
+        bad_phrases = [
+            "không có thông tin trực tiếp",
+            "không có thông tin chi tiết",
+            "không liên quan",
+            "không có căn cứ",
+        ]
+        cleaned = answer
+        for phrase in bad_phrases:
+            if phrase in lowered:
+                # Simple removal: replace phrase with empty string.
+                cleaned = cleaned.replace(phrase, "")
+        return cleaned
 
     def _load_kb_items(self) -> List[Dict[str, Any]]:
         """

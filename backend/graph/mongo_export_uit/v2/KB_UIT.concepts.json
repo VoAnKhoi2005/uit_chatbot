@@ -1,0 +1,7222 @@
+[{
+  "_id": {
+    "$oid": "691189b8c319f794459ae682"
+  },
+  "name": "quy_chế",
+  "documents": [
+    {
+      "document_id": "fcd0071c966d3c3481709ed772930b1d5f59ff45af0873f9de3af95fed92286c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "206a69147716a42aa4d7f122c2db340e4c02cf89bfee7d37b0db1cfc61eccd45",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2bc98fb9f9baac1f9d4dd190441dff9a0f9a8daac2bf40f5d177b60a36cb6430",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "f8aeb09af5621b428d14cddbdf53ea408b23446e9120ab808d529da6766c8ecb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0fd1a8914801b98ab84b729da67b03be3ec6624551dcf3607ffe170184102699",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b8c319f794459ae684"
+  },
+  "name": "đơn_vị cá_nhân liên_quan",
+  "documents": [
+    {
+      "document_id": "fcd0071c966d3c3481709ed772930b1d5f59ff45af0873f9de3af95fed92286c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b8c319f794459ae687"
+  },
+  "name": "hệ đại_học",
+  "documents": [
+    {
+      "document_id": "fcd0071c966d3c3481709ed772930b1d5f59ff45af0873f9de3af95fed92286c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b8c319f794459ae689"
+  },
+  "name": "chương_trình",
+  "documents": [
+    {
+      "document_id": "4c1b284ff188794266e567f146e00cba1cc2384310a0416b6e6a419081087f73",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0c38a291a09ac1506bb7c10b2435594151c49078f5d5f8c73dae6a324a46d998",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "e74c2ff6e8def855d7f9dc7fca0bc37b9d1c2d53577c3406943ea2da79c4f7bb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "7ef9e2910a7ebe98af988918a605582fd8ce3119183dfff7adaa11d66f433175",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "09995926bb34b60bc65d5a571507a4e452285a539329cebdb488020ed39c6ee6",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "dddcc9a1bce499517e9f523552da0ff4b3414bdec3284ce184507ba283535f91",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "30eff3e0806298b426445af06f62f1c9c9147d0a1f157de1ca9622abd26a5e3f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1beaac1a6723f7e68ed5caa560331a9c3d8559877363e49ddf52b55c2946262d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "27ab402badd9db5d6f6d2df39a669efa3b14a1dd887fdb1eacf3356689c6442a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b8c319f794459ae68b"
+  },
+  "name": "chương_trình trường đại_học thế_giới",
+  "documents": [
+    {
+      "document_id": "4c1b284ff188794266e567f146e00cba1cc2384310a0416b6e6a419081087f73",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b8c319f794459ae68e"
+  },
+  "name": "ngôn_ngữ chương_trình",
+  "documents": [
+    {
+      "document_id": "4c1b284ff188794266e567f146e00cba1cc2384310a0416b6e6a419081087f73",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b8c319f794459ae690"
+  },
+  "name": "chương_trình đào_tạo ngành đào_tạo trường",
+  "documents": [
+    {
+      "document_id": "ef323b5d805265b70bf29dbd21a1bac6c68850f2d084aa570f451131a9a897b1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "3b20300ff16c9e3b29dfc8d57408835f182fb4012ec222b57a6f433a686cf5a0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "6d0e7ec29cbb6c2b492c3a7596d083634f9053ceed814b4d637bed9dfe874738",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1d681612293b2ca618e0bafbc80639835d6db7cf5f2dc08b2294deae6148d8df",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b8c319f794459ae692"
+  },
+  "name": "quy_định hiện_hành bộ giáo_dục",
+  "documents": [
+    {
+      "document_id": "ef323b5d805265b70bf29dbd21a1bac6c68850f2d084aa570f451131a9a897b1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b8c319f794459ae694"
+  },
+  "name": "đầu học_kỳ trường",
+  "documents": [
+    {
+      "document_id": "82e77e4918dbbbc0148b23a75e31c352f91459249b1f4cb04e596b03c4e12426",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b8c319f794459ae696"
+  },
+  "name": "trách_nhiệm thông_báo sinh_viên thời_khoá_biểu giảng_dạy",
+  "documents": [
+    {
+      "document_id": "82e77e4918dbbbc0148b23a75e31c352f91459249b1f4cb04e596b03c4e12426",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b8c319f794459ae699"
+  },
+  "name": "học_kỳ",
+  "documents": [
+    {
+      "document_id": "82e77e4918dbbbc0148b23a75e31c352f91459249b1f4cb04e596b03c4e12426",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "7238ab8f1e91e5500e3effd433c5becb872fbc57a1aa5fcab420fb704483d09d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "619bd72f8e37470b7bd08618228d6e3d3fb9712b7622e1bc4655dc31aaf06114",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "5edcbf981db23bbad6f8406d3935905cbb6f2b9304afad22a2770c8e67a1c5cd",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "5fd4bde4f84353ab275a0df81b149ac467adce71294f3387760ea68e19a26e99",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "9fc4ca12fa6a4f3deec9aa112eb4f8892b02b3a0c04af7845a4e791a446766f0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "14cb1d2fd11e88ca57b6908b7bb6f9a4b16e944aba599898d897bc3ab8ddeacb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0fd1a8914801b98ab84b729da67b03be3ec6624551dcf3607ffe170184102699",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae69b"
+  },
+  "name": "trường",
+  "documents": [
+    {
+      "document_id": "82e77e4918dbbbc0148b23a75e31c352f91459249b1f4cb04e596b03c4e12426",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d71396247286c30ad3590213067ca63700db9c8b3cc19dc86bdd1feacdd8109b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d45b895381d26be81f269d79825ef499d3657682ac9bced7bdde2f9094b7f2b1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "40e244aa82d9416c9a8905d0e14bb38769f4845ec5d412fbe208391545497929",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d145243f46a9ce6e2258d805e912bf5ac77e243bfaf77dea48f1469749cd0f1d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1667462047059253b87d47a75f158e748e449a6df0758fd93b827df00cfd326e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "9301172f45c24036e4bdfcaacb92d5137ceb7421a92ded5a7fbaeb82ca5d3228",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2a16b3a95e9e6ab7f4898af2390925160c60a6caed528d5e58dcb25661452bad",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "5fd4bde4f84353ab275a0df81b149ac467adce71294f3387760ea68e19a26e99",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1beaac1a6723f7e68ed5caa560331a9c3d8559877363e49ddf52b55c2946262d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "00353ff7385c51fa6b2d9f509f26c9f8153830b53cb0499bc06abfabbfc872eb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "3de1327e9abb443d1abd4c1f22a1cf86c92ff58768889175202f1cfa522c46e2",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "a3e608a161578098e1d6512ce16ed6f0cf644e699520230314d047061c03d914",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0fd1a8914801b98ab84b729da67b03be3ec6624551dcf3607ffe170184102699",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "aa0d9bbd9c3d6e99e8d502a7e5fb7cd0958bfb3e61be65072eb9744f0dcc54ef",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "05d252f3b5a6387b849956f7540d1b6fb7145113ab2365cee1addf1ffc0e29d1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [
+    "trường học",
+    "học đường",
+    "nhà trường",
+    "trường công",
+    "trường trung học công lập",
+    "trường dân lập",
+    "trường tư thục",
+    "trường dự bị",
+    "trường trung học cơ sở",
+    "trường tiểu học",
+    "trường cao trung",
+    "trường trung học",
+    "học viện",
+    "trường trung học kiểu mới",
+    "trường nữ",
+    "trường nam",
+    "học hiệu"
+  ],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae69c"
+  },
+  "name": "trách_nhiệm",
+  "documents": [
+    {
+      "document_id": "82e77e4918dbbbc0148b23a75e31c352f91459249b1f4cb04e596b03c4e12426",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d45b895381d26be81f269d79825ef499d3657682ac9bced7bdde2f9094b7f2b1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c29536bb87057891703edba893c214f1adb2dfadb57138d814e8c4cf15982efa",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "68fc49963f40781e3f9ef65c340093c595b168a487f5ef6f1e27347f5853731f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "6913fd18456060ffd4b645d3465bf747bf03ed9ecc29ce255a0eb1dd374d55f6",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae69f"
+  },
+  "name": "sinh_viên danh_mục học_phần số_lượng tín_chỉ",
+  "documents": [
+    {
+      "document_id": "82e77e4918dbbbc0148b23a75e31c352f91459249b1f4cb04e596b03c4e12426",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6a1"
+  },
+  "name": "điều_kiện đăng_ký",
+  "documents": [
+    {
+      "document_id": "82e77e4918dbbbc0148b23a75e31c352f91459249b1f4cb04e596b03c4e12426",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6a4"
+  },
+  "name": "học_phần dự_kiến học_kỳ",
+  "documents": [
+    {
+      "document_id": "82e77e4918dbbbc0148b23a75e31c352f91459249b1f4cb04e596b03c4e12426",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6a8"
+  },
+  "name": "sinh_viên lớp_học dự_kiến",
+  "documents": [
+    {
+      "document_id": "82e77e4918dbbbc0148b23a75e31c352f91459249b1f4cb04e596b03c4e12426",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6ab"
+  },
+  "name": "học_phần",
+  "documents": [
+    {
+      "document_id": "82e77e4918dbbbc0148b23a75e31c352f91459249b1f4cb04e596b03c4e12426",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "dab933e0b7ba7f108c75b0c2e8e3ccc9ff114385ca25dd9390a97b77e84e2c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "b73a9fce7622c7a1a4677ed8872d725734eb40b0ac7d7e1310e4b96e7a1cd164",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "b45d7285a8d27711e8521d47aae72115c6136d86721eb5dc1aa48f68dd72e59f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2c13d6895521ceac85d0e31b7d9fa3c7535eb39bb9167ee91f0409d560b62a5a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "72741b2f095a1f3f26eee5939b93b17870800f60beb309ee3758f5120e467c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "92fb7113d25fabf3f343b0d3c2016aa0426621cf06d20b48bb708073a18b00a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "810869eec35663e6162346373848d412ba0c1cd690ccf3d6fdb285fbf98e3416",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "bbd6a3c8286a2954777cfea0beb8d13210835bd50febc723425df953eaf8c58f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c9e68d736ceed4e3137492300e9940751d7ce02023dd908af675affa7a27de04",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d112d53966b95f0680daa520c21d173ff7923f909e09ff4af875f73a653cb78b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "14cb1d2fd11e88ca57b6908b7bb6f9a4b16e944aba599898d897bc3ab8ddeacb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "75bd929333ceabe72decd3447b4b2b97c53d3709fe4d14076caaa69bc21c2abb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6ad"
+  },
+  "name": "thời_khoá_biểu lớp_học",
+  "documents": [
+    {
+      "document_id": "82e77e4918dbbbc0148b23a75e31c352f91459249b1f4cb04e596b03c4e12426",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6af"
+  },
+  "name": "chương_trình ngành ngành",
+  "documents": [
+    {
+      "document_id": "41986ee60a90fbfefd3e0ca6a22d772757b3d43694c5bb19a4a4b0c71e6e7ad3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6b1"
+  },
+  "name": "nội_dung chương_trình",
+  "documents": [
+    {
+      "document_id": "41986ee60a90fbfefd3e0ca6a22d772757b3d43694c5bb19a4a4b0c71e6e7ad3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1b761d824d0eb4fb519787b9cf795c24ca41963b781adfb58c630d380061777f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6b3"
+  },
+  "name": "ngành",
+  "documents": [
+    {
+      "document_id": "41986ee60a90fbfefd3e0ca6a22d772757b3d43694c5bb19a4a4b0c71e6e7ad3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2ad6d54834892eb94a3ebc5f5c03a9d97f4337e345bc633e890a8880427a47dc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "75bd929333ceabe72decd3447b4b2b97c53d3709fe4d14076caaa69bc21c2abb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6b5"
+  },
+  "name": "môn_học bổ_sung khối_lượng tín_chỉ",
+  "documents": [
+    {
+      "document_id": "41986ee60a90fbfefd3e0ca6a22d772757b3d43694c5bb19a4a4b0c71e6e7ad3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6b7"
+  },
+  "name": "môn_học bổ_sung",
+  "documents": [
+    {
+      "document_id": "41986ee60a90fbfefd3e0ca6a22d772757b3d43694c5bb19a4a4b0c71e6e7ad3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6b9"
+  },
+  "name": "bảng điểm",
+  "documents": [
+    {
+      "document_id": "41986ee60a90fbfefd3e0ca6a22d772757b3d43694c5bb19a4a4b0c71e6e7ad3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d71396247286c30ad3590213067ca63700db9c8b3cc19dc86bdd1feacdd8109b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "ad2d0631e9455ca2b12dc8d5d1b674a6d3e1b76cfe8859262e07a00acf91a1d8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6bc"
+  },
+  "name": "bằng tốt_nghiệp",
+  "documents": [
+    {
+      "document_id": "41986ee60a90fbfefd3e0ca6a22d772757b3d43694c5bb19a4a4b0c71e6e7ad3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "810869eec35663e6162346373848d412ba0c1cd690ccf3d6fdb285fbf98e3416",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "aa0d9bbd9c3d6e99e8d502a7e5fb7cd0958bfb3e61be65072eb9744f0dcc54ef",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6be"
+  },
+  "name": "việc tổ_chức",
+  "documents": [
+    {
+      "document_id": "41986ee60a90fbfefd3e0ca6a22d772757b3d43694c5bb19a4a4b0c71e6e7ad3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1d6735a65b7105637567aaa37a3edf247d664397d138f3c73c7789fe907ea7a3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6c0"
+  },
+  "name": "giữa khoa bộ_môn trường",
+  "documents": [
+    {
+      "document_id": "41986ee60a90fbfefd3e0ca6a22d772757b3d43694c5bb19a4a4b0c71e6e7ad3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1d6735a65b7105637567aaa37a3edf247d664397d138f3c73c7789fe907ea7a3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6c2"
+  },
+  "name": "giữa cơ_sở đào_tạo đhqg-hcm",
+  "documents": [
+    {
+      "document_id": "41986ee60a90fbfefd3e0ca6a22d772757b3d43694c5bb19a4a4b0c71e6e7ad3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1d6735a65b7105637567aaa37a3edf247d664397d138f3c73c7789fe907ea7a3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6c4"
+  },
+  "name": "sinh_viên năm thứ k",
+  "documents": [
+    {
+      "document_id": "7fe237508945b3c07922155ab1bbd2d8744c79d4472cadc77647f4d84dc55b00",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6c6"
+  },
+  "name": "tín_chỉ tích_luỹ",
+  "documents": [
+    {
+      "document_id": "7fe237508945b3c07922155ab1bbd2d8744c79d4472cadc77647f4d84dc55b00",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6c8"
+  },
+  "name": "khoá học",
+  "documents": [
+    {
+      "document_id": "877317dea03f372cf94aa9a85c73c66cb1b55a4af642fc11c2f36e476b7ac64b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d2bb6a6d7d459ebee932c8afbc6777a2c4b42bfce7bbfe29ec9724aaeb112cd2",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6ca"
+  },
+  "name": "thời_gian thiết_kế sinh_viên",
+  "documents": [
+    {
+      "document_id": "877317dea03f372cf94aa9a85c73c66cb1b55a4af642fc11c2f36e476b7ac64b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d2bb6a6d7d459ebee932c8afbc6777a2c4b42bfce7bbfe29ec9724aaeb112cd2",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6cd"
+  },
+  "name": "chương_trình giáo_dục đại_học ngành chuyên_môn",
+  "documents": [
+    {
+      "document_id": "877317dea03f372cf94aa9a85c73c66cb1b55a4af642fc11c2f36e476b7ac64b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6cf"
+  },
+  "name": "thời_gian",
+  "documents": [
+    {
+      "document_id": "877317dea03f372cf94aa9a85c73c66cb1b55a4af642fc11c2f36e476b7ac64b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "40e244aa82d9416c9a8905d0e14bb38769f4845ec5d412fbe208391545497929",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "869f24abff9bc0bb0369adf64babb83488a6313c20e80037f389859c9b1bb218",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6d0"
+  },
+  "name": "văn_bằng liên_thông",
+  "documents": [
+    {
+      "document_id": "877317dea03f372cf94aa9a85c73c66cb1b55a4af642fc11c2f36e476b7ac64b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6d2"
+  },
+  "name": "văn_bằng",
+  "documents": [
+    {
+      "document_id": "877317dea03f372cf94aa9a85c73c66cb1b55a4af642fc11c2f36e476b7ac64b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2623aaa4a7b53754fce3f60a00eee380f89375b59f597710d2e2fb4dfbed3268",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "27ab402badd9db5d6f6d2df39a669efa3b14a1dd887fdb1eacf3356689c6442a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6d5"
+  },
+  "name": "cơ_sở học_phần",
+  "documents": [
+    {
+      "document_id": "877317dea03f372cf94aa9a85c73c66cb1b55a4af642fc11c2f36e476b7ac64b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6d7"
+  },
+  "name": "khối_lượng tích_luỹ quy_định chương_trình",
+  "documents": [
+    {
+      "document_id": "877317dea03f372cf94aa9a85c73c66cb1b55a4af642fc11c2f36e476b7ac64b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6db"
+  },
+  "name": "sinh_viên",
+  "documents": [
+    {
+      "document_id": "5ea13715215af8d2c09ebe986bc261764f4272c94443292a48517ebebc83aaf9",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "e74c2ff6e8def855d7f9dc7fca0bc37b9d1c2d53577c3406943ea2da79c4f7bb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "dab933e0b7ba7f108c75b0c2e8e3ccc9ff114385ca25dd9390a97b77e84e2c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d71396247286c30ad3590213067ca63700db9c8b3cc19dc86bdd1feacdd8109b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "b73a9fce7622c7a1a4677ed8872d725734eb40b0ac7d7e1310e4b96e7a1cd164",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "9a612f13aa84a49697d7535605437a759a0bd5ab6804e56f6fac234760fbc6e9",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "9d30e540813b603f6b712cedb3970e2faedc5d5c8459347b4472026155de7c1a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "40e244aa82d9416c9a8905d0e14bb38769f4845ec5d412fbe208391545497929",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "e0cc9ff952253b92783886635c9331aa140c8b7a7079f189572cdacc6d946550",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "7ef9e2910a7ebe98af988918a605582fd8ce3119183dfff7adaa11d66f433175",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "9970be2478f405140907f516b5c424e2d221e40534c5a1023acb186a5a98a9a6",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "b45d7285a8d27711e8521d47aae72115c6136d86721eb5dc1aa48f68dd72e59f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2c13d6895521ceac85d0e31b7d9fa3c7535eb39bb9167ee91f0409d560b62a5a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "7ec21b3e7c4a200d556eafb4e96632318dbd53a259fa8298d8d8451acf56cc35",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "dddcc9a1bce499517e9f523552da0ff4b3414bdec3284ce184507ba283535f91",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "72741b2f095a1f3f26eee5939b93b17870800f60beb309ee3758f5120e467c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "3f7b06f6656dec8d85c597f16450e1097f8534398cd1615636150e7e3975db58",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d16d9b8ed6a9475d83f364f77c518dde6f64ff5a215e30ebcdbe831af3c40661",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "f83a1f68359448422c07bfa714bd9775d43d8117e5ea626fc2e87ab0f34d1034",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "ba257506dc1bd0ac2c7b78fd451b156dd3def460b4580e7636ed956b802429da",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2ad6d54834892eb94a3ebc5f5c03a9d97f4337e345bc633e890a8880427a47dc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "92fb7113d25fabf3f343b0d3c2016aa0426621cf06d20b48bb708073a18b00a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "343dad44854363f867a471e7bb8ffc7ce136b621c8195e492c97b683e62212fb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "810869eec35663e6162346373848d412ba0c1cd690ccf3d6fdb285fbf98e3416",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "3dcb1a87a7d0dc90ff312ad17bb96652943da0994b29bcec6745331926b1a060",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c9e68d736ceed4e3137492300e9940751d7ce02023dd908af675affa7a27de04",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "9fc4ca12fa6a4f3deec9aa112eb4f8892b02b3a0c04af7845a4e791a446766f0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "42e439fa10ebee7adc96b43c00139802ea853606be6d61bfe5bc09602f108c54",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "f90a7384df4453d5487d689bd4e07dc87d961b71f53989578fa7a49d09a6e92e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "6913fd18456060ffd4b645d3465bf747bf03ed9ecc29ce255a0eb1dd374d55f6",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d112d53966b95f0680daa520c21d173ff7923f909e09ff4af875f73a653cb78b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "4d8ae7b9c4613327e4252973f662d37a634669b2460e4b9150676cc8073f17a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "a3e608a161578098e1d6512ce16ed6f0cf644e699520230314d047061c03d914",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "28604a6850fa1ad24cf90eb4b08dcf099c42f1393c8064994bafbf1d63d519b3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c2922f4b3b841da60a2b26b816b7cc5809625d9027860093cf96e6c3a07b3310",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0ebc364eced4f8ae6ce0f625fbbf78a666c00d58485c25894d03a1b6f312966c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "aa0d9bbd9c3d6e99e8d502a7e5fb7cd0958bfb3e61be65072eb9744f0dcc54ef",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "02a286cfdcd8e210e4e4748eea41f015a07537724a47a5bc1cf8d8c4977684c7",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "05d252f3b5a6387b849956f7540d1b6fb7145113ab2365cee1addf1ffc0e29d1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6dd"
+  },
+  "name": "đơn đăng_ký",
+  "documents": [
+    {
+      "document_id": "5ea13715215af8d2c09ebe986bc261764f4272c94443292a48517ebebc83aaf9",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6e0"
+  },
+  "name": "học_phần thời_gian",
+  "documents": [
+    {
+      "document_id": "5ea13715215af8d2c09ebe986bc261764f4272c94443292a48517ebebc83aaf9",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189b9c319f794459ae6e2"
+  },
+  "name": "học_kỳ tiếp_theo có điểm",
+  "documents": [
+    {
+      "document_id": "5ea13715215af8d2c09ebe986bc261764f4272c94443292a48517ebebc83aaf9",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae6e4"
+  },
+  "name": "sinh_viên đăng_ký thi học_kỳ tiếp_theo điểm i",
+  "documents": [
+    {
+      "document_id": "5ea13715215af8d2c09ebe986bc261764f4272c94443292a48517ebebc83aaf9",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae6e6"
+  },
+  "name": "điểm",
+  "documents": [
+    {
+      "document_id": "5ea13715215af8d2c09ebe986bc261764f4272c94443292a48517ebebc83aaf9",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "b73a9fce7622c7a1a4677ed8872d725734eb40b0ac7d7e1310e4b96e7a1cd164",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2fa1d5c861a4767edc03599241e51f40acc47f6808ca87263a3fe13a2578dd53",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "ba257506dc1bd0ac2c7b78fd451b156dd3def460b4580e7636ed956b802429da",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "216d4865ca38f8a52b3a7d82082e04bf223ca2eb5b2f46078a3d7b86fae88e60",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "514883acd7b823e52c2d5fc33d348ae9b06414b08c21dc5fd5518a5ddb2aa09b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "ad2d0631e9455ca2b12dc8d5d1b674a6d3e1b76cfe8859262e07a00acf91a1d8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [
+    "điểm ghi được",
+    "bàn thắng",
+    "cầu môn",
+    "khung thành",
+    "số điểm",
+    "số bàn thắng",
+    "tỷ số"
+  ],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae6e9"
+  },
+  "name": "giữa trường cơ_sở liên_kết",
+  "documents": [
+    {
+      "document_id": "0c38a291a09ac1506bb7c10b2435594151c49078f5d5f8c73dae6a324a46d998",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae6eb"
+  },
+  "name": "ngoài nước",
+  "documents": [
+    {
+      "document_id": "0c38a291a09ac1506bb7c10b2435594151c49078f5d5f8c73dae6a324a46d998",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae6ee"
+  },
+  "name": "cơ_sở quy_định chương_trình đào_tạo đhqg-hcm",
+  "documents": [
+    {
+      "document_id": "0c38a291a09ac1506bb7c10b2435594151c49078f5d5f8c73dae6a324a46d998",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae6f0"
+  },
+  "name": "nội_dung thoả_thuận",
+  "documents": [
+    {
+      "document_id": "0c38a291a09ac1506bb7c10b2435594151c49078f5d5f8c73dae6a324a46d998",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae6f5"
+  },
+  "name": "chương_trình đào_tạo",
+  "documents": [
+    {
+      "document_id": "e74c2ff6e8def855d7f9dc7fca0bc37b9d1c2d53577c3406943ea2da79c4f7bb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "e0cc9ff952253b92783886635c9331aa140c8b7a7079f189572cdacc6d946550",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d145243f46a9ce6e2258d805e912bf5ac77e243bfaf77dea48f1469749cd0f1d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2ad6d54834892eb94a3ebc5f5c03a9d97f4337e345bc633e890a8880427a47dc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "54e344e71e11422b53f9875cca7d7740c1e31562c9f8e6645b3f30000e08c6dc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "27ab402badd9db5d6f6d2df39a669efa3b14a1dd887fdb1eacf3356689c6442a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2f1c7653e5f83d7a530e897475f2150f72e43fb97024609e57a8d9c720fdcb2e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "f90a7384df4453d5487d689bd4e07dc87d961b71f53989578fa7a49d09a6e92e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d59435dcb050aa94568e7bf280ee7644ff851e036354191d09bebea296fcb4a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "39fe1f7ac9d500271e996e1b693a8379a2ded042f1e036504b9dd2a1cdecd33d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae6f8"
+  },
+  "name": "tín_chỉ nguyên_tắc khoản điều",
+  "documents": [
+    {
+      "document_id": "e74c2ff6e8def855d7f9dc7fca0bc37b9d1c2d53577c3406943ea2da79c4f7bb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae6fa"
+  },
+  "name": "khối kiến_thức",
+  "documents": [
+    {
+      "document_id": "dab933e0b7ba7f108c75b0c2e8e3ccc9ff114385ca25dd9390a97b77e84e2c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "54e344e71e11422b53f9875cca7d7740c1e31562c9f8e6645b3f30000e08c6dc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "edd17db77906d95831f31491f42c9df81fcf8624c4d4826c9f456a9b0684e84d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae6fb"
+  },
+  "name": "nhóm học_phần",
+  "documents": [
+    {
+      "document_id": "dab933e0b7ba7f108c75b0c2e8e3ccc9ff114385ca25dd9390a97b77e84e2c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "edd17db77906d95831f31491f42c9df81fcf8624c4d4826c9f456a9b0684e84d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae6fd"
+  },
+  "name": "nhóm học_phần chọn",
+  "documents": [
+    {
+      "document_id": "dab933e0b7ba7f108c75b0c2e8e3ccc9ff114385ca25dd9390a97b77e84e2c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae700"
+  },
+  "name": "nội_dung kiến_thức",
+  "documents": [
+    {
+      "document_id": "dab933e0b7ba7f108c75b0c2e8e3ccc9ff114385ca25dd9390a97b77e84e2c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae704"
+  },
+  "name": "hướng chuyên_môn",
+  "documents": [
+    {
+      "document_id": "dab933e0b7ba7f108c75b0c2e8e3ccc9ff114385ca25dd9390a97b77e84e2c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae707"
+  },
+  "name": "hoạt_động",
+  "documents": [
+    {
+      "document_id": "06a161af833136c086e91fd339703eb76d38cd2487f968017489aae58a7a8c7c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae709"
+  },
+  "name": "công_nghệ_thông_tin",
+  "documents": [
+    {
+      "document_id": "06a161af833136c086e91fd339703eb76d38cd2487f968017489aae58a7a8c7c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae70c"
+  },
+  "name": "công_văn giảng_viên phòng học cơ_sở vật_chất",
+  "documents": [
+    {
+      "document_id": "06a161af833136c086e91fd339703eb76d38cd2487f968017489aae58a7a8c7c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae70e"
+  },
+  "name": "hồ_sơ sinh_viên",
+  "documents": [
+    {
+      "document_id": "06a161af833136c086e91fd339703eb76d38cd2487f968017489aae58a7a8c7c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "ee134b4b148baa621dfe8cf7c38c5d7c0f8380e352b63126bb5eb7348fecfe67",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae714"
+  },
+  "name": "hướng_dẫn phòng",
+  "documents": [
+    {
+      "document_id": "d71396247286c30ad3590213067ca63700db9c8b3cc19dc86bdd1feacdd8109b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae716"
+  },
+  "name": "đại_học",
+  "documents": [
+    {
+      "document_id": "d71396247286c30ad3590213067ca63700db9c8b3cc19dc86bdd1feacdd8109b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "7ef9e2910a7ebe98af988918a605582fd8ce3119183dfff7adaa11d66f433175",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "f4c051b58773b4ff9ef454421f559f5d319127f3b494a1ea12278d6210724be4",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0abce55e72f7885a7d35d557086e6548aef6646703234a3775cd0dfed4ebe84c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae718"
+  },
+  "name": "học_phần tích_luỹ",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae719"
+  },
+  "name": "học_phần sinh_viên",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae71b"
+  },
+  "name": "kết_quả tổng_kết điểm trở",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae71d"
+  },
+  "name": "học_phần bắt_buộc",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae71e"
+  },
+  "name": "học_phần sinh_viên phải",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae721"
+  },
+  "name": "chuyên_ngành chọn",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae726"
+  },
+  "name": "học_phần chọn",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "ba257506dc1bd0ac2c7b78fd451b156dd3def460b4580e7636ed956b802429da",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae727"
+  },
+  "name": "học_phần sinh_viên đăng_ký",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bac319f794459ae72a"
+  },
+  "name": "nguyện_vọng",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae72c"
+  },
+  "name": "học_phần giảng_dạy ngành quy_định bộ giáo_dục",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae730"
+  },
+  "name": "sinh_viên phải",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "edd17db77906d95831f31491f42c9df81fcf8624c4d4826c9f456a9b0684e84d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae733"
+  },
+  "name": "học_phần liên_quan",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae737"
+  },
+  "name": "lúc",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae739"
+  },
+  "name": "học_phần thay_thế",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae73b"
+  },
+  "name": "thời_lượng học_phần tổ_chức",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae73d"
+  },
+  "name": "học_phần học",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae740"
+  },
+  "name": "điểm yêu_cầu",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae742"
+  },
+  "name": "học_phần học cải_thiện",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae743"
+  },
+  "name": "học_phần sinh_viên đạt điểm",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae746"
+  },
+  "name": "kết_quả",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1bb54c535f802f54e2f27dc5bbdb12ff6160f1ce0403b9ec30bc53de69adf8f8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2fa1d5c861a4767edc03599241e51f40acc47f6808ca87263a3fe13a2578dd53",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "92fb7113d25fabf3f343b0d3c2016aa0426621cf06d20b48bb708073a18b00a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "6913fd18456060ffd4b645d3465bf747bf03ed9ecc29ce255a0eb1dd374d55f6",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae748"
+  },
+  "name": "học_phần điều_kiện",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae74d"
+  },
+  "name": "học_phần tài_năng",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae74e"
+  },
+  "name": "học_phần tăng_cường",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae751"
+  },
+  "name": "khả_năng sáng_tạo sinh_viên",
+  "documents": [
+    {
+      "document_id": "ca4188433a01cf5c020445dc1dd36b733f294a360ab1eee59be993c9b42cd71c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae755"
+  },
+  "name": "tín_chỉ",
+  "documents": [
+    {
+      "document_id": "b73a9fce7622c7a1a4677ed8872d725734eb40b0ac7d7e1310e4b96e7a1cd164",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "9970be2478f405140907f516b5c424e2d221e40534c5a1023acb186a5a98a9a6",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "08c0f930db34a3eb1b3021fa2dbb349d6eb18b8f6b6e0a8d91df9a712ffa4c97",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2f1c7653e5f83d7a530e897475f2150f72e43fb97024609e57a8d9c720fdcb2e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d112d53966b95f0680daa520c21d173ff7923f909e09ff4af875f73a653cb78b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "869f24abff9bc0bb0369adf64babb83488a6313c20e80037f389859c9b1bb218",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae757"
+  },
+  "name": "tín_chỉ đăng_ký trường",
+  "documents": [
+    {
+      "document_id": "b73a9fce7622c7a1a4677ed8872d725734eb40b0ac7d7e1310e4b96e7a1cd164",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae759"
+  },
+  "name": "cơ_sở đào_tạo",
+  "documents": [
+    {
+      "document_id": "b73a9fce7622c7a1a4677ed8872d725734eb40b0ac7d7e1310e4b96e7a1cd164",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d112d53966b95f0680daa520c21d173ff7923f909e09ff4af875f73a653cb78b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae75b"
+  },
+  "name": "sinh_viên đăng_ký học học_kỳ",
+  "documents": [
+    {
+      "document_id": "b73a9fce7622c7a1a4677ed8872d725734eb40b0ac7d7e1310e4b96e7a1cd164",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae760"
+  },
+  "name": "phép",
+  "documents": [
+    {
+      "document_id": "b73a9fce7622c7a1a4677ed8872d725734eb40b0ac7d7e1310e4b96e7a1cd164",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae764"
+  },
+  "name": "tín_chỉ chương_trình đào_tạo",
+  "documents": [
+    {
+      "document_id": "b73a9fce7622c7a1a4677ed8872d725734eb40b0ac7d7e1310e4b96e7a1cd164",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae767"
+  },
+  "name": "quy_định tín_chỉ",
+  "documents": [
+    {
+      "document_id": "b73a9fce7622c7a1a4677ed8872d725734eb40b0ac7d7e1310e4b96e7a1cd164",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bbc319f794459ae76b"
+  },
+  "name": "học_phần tín_chỉ học học_kỳ",
+  "documents": [
+    {
+      "document_id": "b73a9fce7622c7a1a4677ed8872d725734eb40b0ac7d7e1310e4b96e7a1cd164",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae76d"
+  },
+  "name": "thí_sinh",
+  "documents": [
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae770"
+  },
+  "name": "hệ",
+  "documents": [
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae773"
+  },
+  "name": "thủ_tục nhập_học quy_định của_trường",
+  "documents": [
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae776"
+  },
+  "name": "phương_thức tập_trung toàn thời_gian sinh_viên hệ",
+  "documents": [
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae778"
+  },
+  "name": "hoạt_động giảng_dạy",
+  "documents": [
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae77a"
+  },
+  "name": "cơ_sở trường",
+  "documents": [
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae77d"
+  },
+  "name": "hợp_đồng liên_kết",
+  "documents": [
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae780"
+  },
+  "name": "sinh_viên hệ",
+  "documents": [
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae781"
+  },
+  "name": "mã_số quy_định của_trường",
+  "documents": [
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae784"
+  },
+  "name": "quy_chế hiện_hành công_tác sinh_viên trường",
+  "documents": [
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae787"
+  },
+  "name": "chính_sách dành sinh_viên hệ",
+  "documents": [
+    {
+      "document_id": "0888c1089d3dff0e06c23890bcdf71f589ec79413e7fc56cbce888f23e213bbc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae789"
+  },
+  "name": "bằng",
+  "documents": [
+    {
+      "document_id": "9a612f13aa84a49697d7535605437a759a0bd5ab6804e56f6fac234760fbc6e9",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "aa0d9bbd9c3d6e99e8d502a7e5fb7cd0958bfb3e61be65072eb9744f0dcc54ef",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae78c"
+  },
+  "name": "nội_dung trên bằng",
+  "documents": [
+    {
+      "document_id": "9a612f13aa84a49697d7535605437a759a0bd5ab6804e56f6fac234760fbc6e9",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae78f"
+  },
+  "name": "quy_định",
+  "documents": [
+    {
+      "document_id": "9d30e540813b603f6b712cedb3970e2faedc5d5c8459347b4472026155de7c1a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "09995926bb34b60bc65d5a571507a4e452285a539329cebdb488020ed39c6ee6",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae791"
+  },
+  "name": "thời_gian học",
+  "documents": [
+    {
+      "document_id": "9d30e540813b603f6b712cedb3970e2faedc5d5c8459347b4472026155de7c1a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "e0cc9ff952253b92783886635c9331aa140c8b7a7079f189572cdacc6d946550",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "810869eec35663e6162346373848d412ba0c1cd690ccf3d6fdb285fbf98e3416",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "5fd4bde4f84353ab275a0df81b149ac467adce71294f3387760ea68e19a26e99",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae793"
+  },
+  "name": "điểm i điểm m điểm bl",
+  "documents": [
+    {
+      "document_id": "6550ff47da008771c868395f08eef70d9c081d1b8e454ee838ec2128827f319e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae794"
+  },
+  "name": "điểm học_kỳ điểm trung_bình_cộng",
+  "documents": [
+    {
+      "document_id": "6550ff47da008771c868395f08eef70d9c081d1b8e454ee838ec2128827f319e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae796"
+  },
+  "name": "điểm trung_bình_cộng tích_luỹ",
+  "documents": [
+    {
+      "document_id": "6550ff47da008771c868395f08eef70d9c081d1b8e454ee838ec2128827f319e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae798"
+  },
+  "name": "thời_gian dừng học_tập",
+  "documents": [
+    {
+      "document_id": "041ce07fd488d6d94262c7272f43feebb6bab088a7a75a3a66d0d5b3d03e4381",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae799"
+  },
+  "name": "thời_gian hoàn_thành khoá học",
+  "documents": [
+    {
+      "document_id": "041ce07fd488d6d94262c7272f43feebb6bab088a7a75a3a66d0d5b3d03e4381",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae79c"
+  },
+  "name": "giấy",
+  "documents": [
+    {
+      "document_id": "d45b895381d26be81f269d79825ef499d3657682ac9bced7bdde2f9094b7f2b1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "9301172f45c24036e4bdfcaacb92d5137ceb7421a92ded5a7fbaeb82ca5d3228",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [
+    "tiếp",
+    "thẻ",
+    "bìa",
+    "giấy cứng",
+    "giấy bồi",
+    "giấy các tông"
+  ],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae79f"
+  },
+  "name": "kết_quả môn_học sinh_viên sinh_viên",
+  "documents": [
+    {
+      "document_id": "d45b895381d26be81f269d79825ef499d3657682ac9bced7bdde2f9094b7f2b1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae7a1"
+  },
+  "name": "quá_trình học_tập",
+  "documents": [
+    {
+      "document_id": "d45b895381d26be81f269d79825ef499d3657682ac9bced7bdde2f9094b7f2b1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bcc319f794459ae7a4"
+  },
+  "name": "điều_kiện",
+  "documents": [
+    {
+      "document_id": "40e244aa82d9416c9a8905d0e14bb38769f4845ec5d412fbe208391545497929",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "3b20300ff16c9e3b29dfc8d57408835f182fb4012ec222b57a6f433a686cf5a0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1bb54c535f802f54e2f27dc5bbdb12ff6160f1ce0403b9ec30bc53de69adf8f8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "3f7b06f6656dec8d85c597f16450e1097f8534398cd1615636150e7e3975db58",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2ad6d54834892eb94a3ebc5f5c03a9d97f4337e345bc633e890a8880427a47dc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "aa0d9bbd9c3d6e99e8d502a7e5fb7cd0958bfb3e61be65072eb9744f0dcc54ef",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7a6"
+  },
+  "name": "thời_gian phép học sinh_viên",
+  "documents": [
+    {
+      "document_id": "40e244aa82d9416c9a8905d0e14bb38769f4845ec5d412fbe208391545497929",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0ebc364eced4f8ae6ce0f625fbbf78a666c00d58485c25894d03a1b6f312966c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7a9"
+  },
+  "name": "khoá học quy_định",
+  "documents": [
+    {
+      "document_id": "40e244aa82d9416c9a8905d0e14bb38769f4845ec5d412fbe208391545497929",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7ab"
+  },
+  "name": "việc",
+  "documents": [
+    {
+      "document_id": "ee134b4b148baa621dfe8cf7c38c5d7c0f8380e352b63126bb5eb7348fecfe67",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1bb54c535f802f54e2f27dc5bbdb12ff6160f1ce0403b9ec30bc53de69adf8f8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "bbd6a3c8286a2954777cfea0beb8d13210835bd50febc723425df953eaf8c58f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "514883acd7b823e52c2d5fc33d348ae9b06414b08c21dc5fd5518a5ddb2aa09b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0c6889e93a66032c208043a64ef30a000ed24e13dd7b98daa1acc3bf8abe834a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0fd1a8914801b98ab84b729da67b03be3ec6624551dcf3607ffe170184102699",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7ae"
+  },
+  "name": "học_phí sinh_viên",
+  "documents": [
+    {
+      "document_id": "e0cc9ff952253b92783886635c9331aa140c8b7a7079f189572cdacc6d946550",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7b3"
+  },
+  "name": "học_phí quy_định chương_trình",
+  "documents": [
+    {
+      "document_id": "e0cc9ff952253b92783886635c9331aa140c8b7a7079f189572cdacc6d946550",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7b7"
+  },
+  "name": "đơn xác_nhận",
+  "documents": [
+    {
+      "document_id": "7ef9e2910a7ebe98af988918a605582fd8ce3119183dfff7adaa11d66f433175",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7ba"
+  },
+  "name": "điểm học_phần xác_định",
+  "documents": [
+    {
+      "document_id": "7ef9e2910a7ebe98af988918a605582fd8ce3119183dfff7adaa11d66f433175",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7c0"
+  },
+  "name": "học_phần ký_hiệu m",
+  "documents": [
+    {
+      "document_id": "7ef9e2910a7ebe98af988918a605582fd8ce3119183dfff7adaa11d66f433175",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7c2"
+  },
+  "name": "điểm tích_luỹ",
+  "documents": [
+    {
+      "document_id": "6f23dbbd6c9c7f693799753c654b50dfa375642f400df3e54332d092871ed2f4",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7c3"
+  },
+  "name": "điểm học_phần sinh_viên đăng_ký",
+  "documents": [
+    {
+      "document_id": "6f23dbbd6c9c7f693799753c654b50dfa375642f400df3e54332d092871ed2f4",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "619bd72f8e37470b7bd08618228d6e3d3fb9712b7622e1bc4655dc31aaf06114",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "216d4865ca38f8a52b3a7d82082e04bf223ca2eb5b2f46078a3d7b86fae88e60",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7c5"
+  },
+  "name": "môn_học đào_tạo mạng",
+  "documents": [
+    {
+      "document_id": "c29536bb87057891703edba893c214f1adb2dfadb57138d814e8c4cf15982efa",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7c6"
+  },
+  "name": "phương_thức mạng",
+  "documents": [
+    {
+      "document_id": "c29536bb87057891703edba893c214f1adb2dfadb57138d814e8c4cf15982efa",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7c8"
+  },
+  "name": "phương_thức kết_hợp",
+  "documents": [
+    {
+      "document_id": "c29536bb87057891703edba893c214f1adb2dfadb57138d814e8c4cf15982efa",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7ca"
+  },
+  "name": "mạng",
+  "documents": [
+    {
+      "document_id": "c29536bb87057891703edba893c214f1adb2dfadb57138d814e8c4cf15982efa",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1beaac1a6723f7e68ed5caa560331a9c3d8559877363e49ddf52b55c2946262d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7cd"
+  },
+  "name": "đơn_vị",
+  "documents": [
+    {
+      "document_id": "c29536bb87057891703edba893c214f1adb2dfadb57138d814e8c4cf15982efa",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7ce"
+  },
+  "name": "chuyên_môn",
+  "documents": [
+    {
+      "document_id": "c29536bb87057891703edba893c214f1adb2dfadb57138d814e8c4cf15982efa",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7d2"
+  },
+  "name": "chất_lượng giảng_dạy",
+  "documents": [
+    {
+      "document_id": "c29536bb87057891703edba893c214f1adb2dfadb57138d814e8c4cf15982efa",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7d5"
+  },
+  "name": "môn_học chất_lượng lớp_học",
+  "documents": [
+    {
+      "document_id": "c29536bb87057891703edba893c214f1adb2dfadb57138d814e8c4cf15982efa",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7d7"
+  },
+  "name": "phương_thức đào_tạo trường",
+  "documents": [
+    {
+      "document_id": "9970be2478f405140907f516b5c424e2d221e40534c5a1023acb186a5a98a9a6",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7dc"
+  },
+  "name": "kiến_thức thời_điểm",
+  "documents": [
+    {
+      "document_id": "9970be2478f405140907f516b5c424e2d221e40534c5a1023acb186a5a98a9a6",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7df"
+  },
+  "name": "điểm i tính",
+  "documents": [
+    {
+      "document_id": "08c0f930db34a3eb1b3021fa2dbb349d6eb18b8f6b6e0a8d91df9a712ffa4c97",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7e2"
+  },
+  "name": "học_bổng khuyến_khích",
+  "documents": [
+    {
+      "document_id": "08c0f930db34a3eb1b3021fa2dbb349d6eb18b8f6b6e0a8d91df9a712ffa4c97",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bdc319f794459ae7e4"
+  },
+  "name": "quy_định hiện_hành bộ gd đt",
+  "documents": [
+    {
+      "document_id": "3b20300ff16c9e3b29dfc8d57408835f182fb4012ec222b57a6f433a686cf5a0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae7e6"
+  },
+  "name": "đhqg-hcm",
+  "documents": [
+    {
+      "document_id": "3b20300ff16c9e3b29dfc8d57408835f182fb4012ec222b57a6f433a686cf5a0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "206a69147716a42aa4d7f122c2db340e4c02cf89bfee7d37b0db1cfc61eccd45",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "f8aeb09af5621b428d14cddbdf53ea408b23446e9120ab808d529da6766c8ecb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae7e9"
+  },
+  "name": "nội_dung",
+  "documents": [
+    {
+      "document_id": "3b20300ff16c9e3b29dfc8d57408835f182fb4012ec222b57a6f433a686cf5a0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d16d9b8ed6a9475d83f364f77c518dde6f64ff5a215e30ebcdbe831af3c40661",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "00353ff7385c51fa6b2d9f509f26c9f8153830b53cb0499bc06abfabbfc872eb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae7ec"
+  },
+  "name": "kế_hoạch",
+  "documents": [
+    {
+      "document_id": "3b20300ff16c9e3b29dfc8d57408835f182fb4012ec222b57a6f433a686cf5a0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae7ef"
+  },
+  "name": "chất_lượng giáo_dục",
+  "documents": [
+    {
+      "document_id": "3b20300ff16c9e3b29dfc8d57408835f182fb4012ec222b57a6f433a686cf5a0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae7f1"
+  },
+  "name": "lớp_học phần",
+  "documents": [
+    {
+      "document_id": "346f90d95922fff5cf9970b16d268e27144eb8379605a2ba9e611c9f1392896d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae7f2"
+  },
+  "name": "nhóm sinh_viên học học_phần giảng_viên",
+  "documents": [
+    {
+      "document_id": "346f90d95922fff5cf9970b16d268e27144eb8379605a2ba9e611c9f1392896d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae7f5"
+  },
+  "name": "số_lượng sinh_viên đăng_ký",
+  "documents": [
+    {
+      "document_id": "346f90d95922fff5cf9970b16d268e27144eb8379605a2ba9e611c9f1392896d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae7f8"
+  },
+  "name": "của_trường",
+  "documents": [
+    {
+      "document_id": "346f90d95922fff5cf9970b16d268e27144eb8379605a2ba9e611c9f1392896d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae7fa"
+  },
+  "name": "lớp sinh_viên",
+  "documents": [
+    {
+      "document_id": "33538215fa393e13e2cf3e85247e2349304325222cd58434c2f77d044619d366",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "e45f232c967e5c38b036f3bad944ca0c15c2b101423e91ed6139b8f3286f7a2b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae7fb"
+  },
+  "name": "cố_vấn học_tập",
+  "documents": [
+    {
+      "document_id": "33538215fa393e13e2cf3e85247e2349304325222cd58434c2f77d044619d366",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae7fd"
+  },
+  "name": "hiệu_trưởng",
+  "documents": [
+    {
+      "document_id": "33538215fa393e13e2cf3e85247e2349304325222cd58434c2f77d044619d366",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "5e81c5b21eade613bae24aa47ac58554e02944b83477dabc221ce87e83572d68",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "82b165c16f4ef1c549a0508f507af2731c055c69df0a531b4d2bdb0c0f836375",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1b761d824d0eb4fb519787b9cf795c24ca41963b781adfb58c630d380061777f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "514883acd7b823e52c2d5fc33d348ae9b06414b08c21dc5fd5518a5ddb2aa09b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "5fd4bde4f84353ab275a0df81b149ac467adce71294f3387760ea68e19a26e99",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "3c870ad5b03f7b556777122ce15e01f592b5840e82b5b8a649f43a8b9bf8a9af",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0c6889e93a66032c208043a64ef30a000ed24e13dd7b98daa1acc3bf8abe834a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae804"
+  },
+  "name": "kết_quả thi học_phần giáo_dục quốc phòng-an ninh",
+  "documents": [
+    {
+      "document_id": "1bb54c535f802f54e2f27dc5bbdb12ff6160f1ce0403b9ec30bc53de69adf8f8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae805"
+  },
+  "name": "điểm học_kỳ điểm",
+  "documents": [
+    {
+      "document_id": "1bb54c535f802f54e2f27dc5bbdb12ff6160f1ce0403b9ec30bc53de69adf8f8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae807"
+  },
+  "name": "điểm tích_luỹ toàn khoá",
+  "documents": [
+    {
+      "document_id": "1bb54c535f802f54e2f27dc5bbdb12ff6160f1ce0403b9ec30bc53de69adf8f8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae809"
+  },
+  "name": "giáo_dục thể_chất",
+  "documents": [
+    {
+      "document_id": "1bb54c535f802f54e2f27dc5bbdb12ff6160f1ce0403b9ec30bc53de69adf8f8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae80e"
+  },
+  "name": "chứng_chỉ học_phần",
+  "documents": [
+    {
+      "document_id": "1bb54c535f802f54e2f27dc5bbdb12ff6160f1ce0403b9ec30bc53de69adf8f8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae811"
+  },
+  "name": "bộ giáo_dục",
+  "documents": [
+    {
+      "document_id": "1bb54c535f802f54e2f27dc5bbdb12ff6160f1ce0403b9ec30bc53de69adf8f8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae814"
+  },
+  "name": "đơn trình_bày lý_do hoàn_tất học_phần giấy_tờ minh_chứng cán_bộ",
+  "documents": [
+    {
+      "document_id": "2c13d6895521ceac85d0e31b7d9fa3c7535eb39bb9167ee91f0409d560b62a5a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bec319f794459ae817"
+  },
+  "name": "phòng đào_tạo kết_thúc học_kỳ",
+  "documents": [
+    {
+      "document_id": "2c13d6895521ceac85d0e31b7d9fa3c7535eb39bb9167ee91f0409d560b62a5a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae819"
+  },
+  "name": "lý_do sinh_viên",
+  "documents": [
+    {
+      "document_id": "2c13d6895521ceac85d0e31b7d9fa3c7535eb39bb9167ee91f0409d560b62a5a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae81a"
+  },
+  "name": "đơn vòng ngày kể ngày thi",
+  "documents": [
+    {
+      "document_id": "2c13d6895521ceac85d0e31b7d9fa3c7535eb39bb9167ee91f0409d560b62a5a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae81e"
+  },
+  "name": "việc công_nhận",
+  "documents": [
+    {
+      "document_id": "bf8ef48b7de902cb797673e23d971ded353a4af9c2027a73e3db8253608e5176",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "f9d85a62ee93f79b0622db2d8a1a60df0f8d48aedb6a0bca56bf6d1327e199a7",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae820"
+  },
+  "name": "tín_chỉ trường",
+  "documents": [
+    {
+      "document_id": "bf8ef48b7de902cb797673e23d971ded353a4af9c2027a73e3db8253608e5176",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d112d53966b95f0680daa520c21d173ff7923f909e09ff4af875f73a653cb78b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "f9d85a62ee93f79b0622db2d8a1a60df0f8d48aedb6a0bca56bf6d1327e199a7",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae823"
+  },
+  "name": "ý_kiến đơn_vị",
+  "documents": [
+    {
+      "document_id": "bf8ef48b7de902cb797673e23d971ded353a4af9c2027a73e3db8253608e5176",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae826"
+  },
+  "name": "chuyên_môn học_phần liên_quan",
+  "documents": [
+    {
+      "document_id": "bf8ef48b7de902cb797673e23d971ded353a4af9c2027a73e3db8253608e5176",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae829"
+  },
+  "name": "quy_chế công_tác sinh_viên",
+  "documents": [
+    {
+      "document_id": "e45f232c967e5c38b036f3bad944ca0c15c2b101423e91ed6139b8f3286f7a2b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae82c"
+  },
+  "name": "khoá_luận tốt_nghiệp",
+  "documents": [
+    {
+      "document_id": "7ec21b3e7c4a200d556eafb4e96632318dbd53a259fa8298d8d8451acf56cc35",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "216d4865ca38f8a52b3a7d82082e04bf223ca2eb5b2f46078a3d7b86fae88e60",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "48227564bee2a69805fa4f06485b147ba2b4095a41fe09b61aef7145eee6b7f4",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "d6001a5260d95dd3a1fb632e3ecbd85f2340634166508c55916e79e9bed2f604",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae82e"
+  },
+  "name": "môn chuyên_đề tốt_nghiệp",
+  "documents": [
+    {
+      "document_id": "7ec21b3e7c4a200d556eafb4e96632318dbd53a259fa8298d8d8451acf56cc35",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae831"
+  },
+  "name": "quy_định hiện_hành",
+  "documents": [
+    {
+      "document_id": "6d0e7ec29cbb6c2b492c3a7596d083634f9053ceed814b4d637bed9dfe874738",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "82b165c16f4ef1c549a0508f507af2731c055c69df0a531b4d2bdb0c0f836375",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "ddde8e67e1c99c86e1c82d27dab33740eb22e90f74053501f1caa7f38f892438",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1d681612293b2ca618e0bafbc80639835d6db7cf5f2dc08b2294deae6148d8df",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae834"
+  },
+  "name": "yêu_cầu mục_tiêu chuẩn đầu_ra",
+  "documents": [
+    {
+      "document_id": "6d0e7ec29cbb6c2b492c3a7596d083634f9053ceed814b4d637bed9dfe874738",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae836"
+  },
+  "name": "nhu_cầu xã_hội",
+  "documents": [
+    {
+      "document_id": "6d0e7ec29cbb6c2b492c3a7596d083634f9053ceed814b4d637bed9dfe874738",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae838"
+  },
+  "name": "quyết_định công_nhận",
+  "documents": [
+    {
+      "document_id": "5e81c5b21eade613bae24aa47ac58554e02944b83477dabc221ce87e83572d68",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae83b"
+  },
+  "name": "sinh_viên điều_kiện",
+  "documents": [
+    {
+      "document_id": "5e81c5b21eade613bae24aa47ac58554e02944b83477dabc221ce87e83572d68",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2623aaa4a7b53754fce3f60a00eee380f89375b59f597710d2e2fb4dfbed3268",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "810869eec35663e6162346373848d412ba0c1cd690ccf3d6fdb285fbf98e3416",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "3c870ad5b03f7b556777122ce15e01f592b5840e82b5b8a649f43a8b9bf8a9af",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae83d"
+  },
+  "name": "điều",
+  "documents": [
+    {
+      "document_id": "206a69147716a42aa4d7f122c2db340e4c02cf89bfee7d37b0db1cfc61eccd45",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae83f"
+  },
+  "name": "đại_học hình_thức trường đại_học công_nghệ_thông_tin",
+  "documents": [
+    {
+      "document_id": "206a69147716a42aa4d7f122c2db340e4c02cf89bfee7d37b0db1cfc61eccd45",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae842"
+  },
+  "name": "trách_nhiệm thông_báo sinh_viên kế_hoạch giảng_dạy học_tập",
+  "documents": [
+    {
+      "document_id": "d145243f46a9ce6e2258d805e912bf5ac77e243bfaf77dea48f1469749cd0f1d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae847"
+  },
+  "name": "yêu_cầu học_phần cơ_sở đào_tạo thời_gian năm",
+  "documents": [
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae84c"
+  },
+  "name": "đơn",
+  "documents": [
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [
+    "chỉ một",
+    "duy nhất",
+    "một mình",
+    "độc nhất",
+    "đôi",
+    "hai",
+    "kép",
+    "ba lần",
+    "gấp ba",
+    "gấp bốn",
+    "gấp năm",
+    "gấp n-lần",
+    "bội số",
+    "đơn độc",
+    "đơn thương độc mã",
+    "một và chỉ một",
+    "ba"
+  ],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae84f"
+  },
+  "name": "tiết học tín_chỉ",
+  "documents": [
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae853"
+  },
+  "name": "phòng",
+  "documents": [
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [
+    "buồng",
+    "phòng lớn",
+    "khu",
+    "phòng giam",
+    "buồng ngủ"
+  ],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189bfc319f794459ae856"
+  },
+  "name": "đại_học trường vòng tháng",
+  "documents": [
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae85b"
+  },
+  "name": "sinh_viên cung_cấp đề_cương học_phần",
+  "documents": [
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae85d"
+  },
+  "name": "xác_nhận sinh_viên học",
+  "documents": [
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae860"
+  },
+  "name": "điểm sinh_viên đạt",
+  "documents": [
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae862"
+  },
+  "name": "chữ bảo_lưu bl",
+  "documents": [
+    {
+      "document_id": "78c086a2176617cb5e1a6d841cfab5fbef0a15d797d661f496783947a1ebc00a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae864"
+  },
+  "name": "trưởng khoa",
+  "documents": [
+    {
+      "document_id": "2fa1d5c861a4767edc03599241e51f40acc47f6808ca87263a3fe13a2578dd53",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae865"
+  },
+  "name": "hội_đồng",
+  "documents": [
+    {
+      "document_id": "2fa1d5c861a4767edc03599241e51f40acc47f6808ca87263a3fe13a2578dd53",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "514883acd7b823e52c2d5fc33d348ae9b06414b08c21dc5fd5518a5ddb2aa09b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae86a"
+  },
+  "name": "doanh_nghiệp",
+  "documents": [
+    {
+      "document_id": "2fa1d5c861a4767edc03599241e51f40acc47f6808ca87263a3fe13a2578dd53",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "92fb7113d25fabf3f343b0d3c2016aa0426621cf06d20b48bb708073a18b00a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae86c"
+  },
+  "name": "hội_đồng chấm thực_tập doanh_nghiệp",
+  "documents": [
+    {
+      "document_id": "2fa1d5c861a4767edc03599241e51f40acc47f6808ca87263a3fe13a2578dd53",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae86d"
+  },
+  "name": "thành_viên",
+  "documents": [
+    {
+      "document_id": "2fa1d5c861a4767edc03599241e51f40acc47f6808ca87263a3fe13a2578dd53",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae86f"
+  },
+  "name": "thành_viên hội_đồng",
+  "documents": [
+    {
+      "document_id": "2fa1d5c861a4767edc03599241e51f40acc47f6808ca87263a3fe13a2578dd53",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae871"
+  },
+  "name": "doanh_nghiệp thang điểm",
+  "documents": [
+    {
+      "document_id": "2fa1d5c861a4767edc03599241e51f40acc47f6808ca87263a3fe13a2578dd53",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae873"
+  },
+  "name": "điểm tổng_kết thực_tập doanh_nghiệp",
+  "documents": [
+    {
+      "document_id": "2fa1d5c861a4767edc03599241e51f40acc47f6808ca87263a3fe13a2578dd53",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae874"
+  },
+  "name": "trung_bình_cộng thành_viên hội_đồng",
+  "documents": [
+    {
+      "document_id": "2fa1d5c861a4767edc03599241e51f40acc47f6808ca87263a3fe13a2578dd53",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae878"
+  },
+  "name": "mục_tiêu chuẩn đầu_ra bậc trình_độ tương_ứng",
+  "documents": [
+    {
+      "document_id": "09995926bb34b60bc65d5a571507a4e452285a539329cebdb488020ed39c6ee6",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "27ab402badd9db5d6f6d2df39a669efa3b14a1dd887fdb1eacf3356689c6442a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae87b"
+  },
+  "name": "thời_gian sinh_viên",
+  "documents": [
+    {
+      "document_id": "7238ab8f1e91e5500e3effd433c5becb872fbc57a1aa5fcab420fb704483d09d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae87d"
+  },
+  "name": "học_phần chương_trình đào_tạo",
+  "documents": [
+    {
+      "document_id": "7238ab8f1e91e5500e3effd433c5becb872fbc57a1aa5fcab420fb704483d09d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "2a16b3a95e9e6ab7f4898af2390925160c60a6caed528d5e58dcb25661452bad",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "92fb7113d25fabf3f343b0d3c2016aa0426621cf06d20b48bb708073a18b00a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae87f"
+  },
+  "name": "tuần thực_học",
+  "documents": [
+    {
+      "document_id": "7238ab8f1e91e5500e3effd433c5becb872fbc57a1aa5fcab420fb704483d09d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae881"
+  },
+  "name": "tuần dành",
+  "documents": [
+    {
+      "document_id": "7238ab8f1e91e5500e3effd433c5becb872fbc57a1aa5fcab420fb704483d09d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae883"
+  },
+  "name": "hoạt_động đào_tạo",
+  "documents": [
+    {
+      "document_id": "7238ab8f1e91e5500e3effd433c5becb872fbc57a1aa5fcab420fb704483d09d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae886"
+  },
+  "name": "học_kỳ hè",
+  "documents": [
+    {
+      "document_id": "7238ab8f1e91e5500e3effd433c5becb872fbc57a1aa5fcab420fb704483d09d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0fd1a8914801b98ab84b729da67b03be3ec6624551dcf3607ffe170184102699",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae888"
+  },
+  "name": "tuần thi",
+  "documents": [
+    {
+      "document_id": "7238ab8f1e91e5500e3effd433c5becb872fbc57a1aa5fcab420fb704483d09d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae88a"
+  },
+  "name": "kế_hoạch giảng_dạy học_kỳ",
+  "documents": [
+    {
+      "document_id": "7238ab8f1e91e5500e3effd433c5becb872fbc57a1aa5fcab420fb704483d09d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c0c319f794459ae88c"
+  },
+  "name": "quyết_định hiệu_trưởng",
+  "documents": [
+    {
+      "document_id": "7238ab8f1e91e5500e3effd433c5becb872fbc57a1aa5fcab420fb704483d09d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae88e"
+  },
+  "name": "chương_trình tài_năng",
+  "documents": [
+    {
+      "document_id": "dddcc9a1bce499517e9f523552da0ff4b3414bdec3284ce184507ba283535f91",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae894"
+  },
+  "name": "trách_nhiệm thông_báo sinh_viên chương_trình đào_tạo quy_chế học_tập",
+  "documents": [
+    {
+      "document_id": "1667462047059253b87d47a75f158e748e449a6df0758fd93b827df00cfd326e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae896"
+  },
+  "name": "quyền_lợi nghĩa_vụ sinh_viên",
+  "documents": [
+    {
+      "document_id": "1667462047059253b87d47a75f158e748e449a6df0758fd93b827df00cfd326e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae898"
+  },
+  "name": "sinh_viên thời_hạn học",
+  "documents": [
+    {
+      "document_id": "9301172f45c24036e4bdfcaacb92d5137ceb7421a92ded5a7fbaeb82ca5d3228",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae89c"
+  },
+  "name": "kết_quả học_tập",
+  "documents": [
+    {
+      "document_id": "9301172f45c24036e4bdfcaacb92d5137ceb7421a92ded5a7fbaeb82ca5d3228",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "5edcbf981db23bbad6f8406d3935905cbb6f2b9304afad22a2770c8e67a1c5cd",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0c6889e93a66032c208043a64ef30a000ed24e13dd7b98daa1acc3bf8abe834a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae89e"
+  },
+  "name": "trách_nhiệm thực_hiện",
+  "documents": [
+    {
+      "document_id": "72741b2f095a1f3f26eee5939b93b17870800f60beb309ee3758f5120e467c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8a0"
+  },
+  "name": "yêu_cầu cán_bộ giảng_dạy việc lên_lớp",
+  "documents": [
+    {
+      "document_id": "72741b2f095a1f3f26eee5939b93b17870800f60beb309ee3758f5120e467c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8a3"
+  },
+  "name": "bài_tập",
+  "documents": [
+    {
+      "document_id": "72741b2f095a1f3f26eee5939b93b17870800f60beb309ee3758f5120e467c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8a7"
+  },
+  "name": "thí_nghiệm tham_gia",
+  "documents": [
+    {
+      "document_id": "72741b2f095a1f3f26eee5939b93b17870800f60beb309ee3758f5120e467c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8aa"
+  },
+  "name": "giữa học_phần",
+  "documents": [
+    {
+      "document_id": "72741b2f095a1f3f26eee5939b93b17870800f60beb309ee3758f5120e467c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8af"
+  },
+  "name": "lý_do",
+  "documents": [
+    {
+      "document_id": "72741b2f095a1f3f26eee5939b93b17870800f60beb309ee3758f5120e467c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8b2"
+  },
+  "name": "giữa kỳ",
+  "documents": [
+    {
+      "document_id": "72741b2f095a1f3f26eee5939b93b17870800f60beb309ee3758f5120e467c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "5fd4bde4f84353ab275a0df81b149ac467adce71294f3387760ea68e19a26e99",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8b4"
+  },
+  "name": "đơn trình_bày minh_chứng",
+  "documents": [
+    {
+      "document_id": "72741b2f095a1f3f26eee5939b93b17870800f60beb309ee3758f5120e467c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8b6"
+  },
+  "name": "điểm cuối kỳ",
+  "documents": [
+    {
+      "document_id": "72741b2f095a1f3f26eee5939b93b17870800f60beb309ee3758f5120e467c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8bb"
+  },
+  "name": "điểm giữa kỳ",
+  "documents": [
+    {
+      "document_id": "72741b2f095a1f3f26eee5939b93b17870800f60beb309ee3758f5120e467c21",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8be"
+  },
+  "name": "chương_trình giáo_dục ngành chuyên_môn trình_độ đại_học",
+  "documents": [
+    {
+      "document_id": "d2bb6a6d7d459ebee932c8afbc6777a2c4b42bfce7bbfe29ec9724aaeb112cd2",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8c0"
+  },
+  "name": "điểm học_kỳ",
+  "documents": [
+    {
+      "document_id": "619bd72f8e37470b7bd08618228d6e3d3fb9712b7622e1bc4655dc31aaf06114",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "343dad44854363f867a471e7bb8ffc7ce136b621c8195e492c97b683e62212fb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8c2"
+  },
+  "name": "học_kỳ trọng_số",
+  "documents": [
+    {
+      "document_id": "619bd72f8e37470b7bd08618228d6e3d3fb9712b7622e1bc4655dc31aaf06114",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8c4"
+  },
+  "name": "tín_chỉ học_phần",
+  "documents": [
+    {
+      "document_id": "619bd72f8e37470b7bd08618228d6e3d3fb9712b7622e1bc4655dc31aaf06114",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c1c319f794459ae8c7"
+  },
+  "name": "học_bổng",
+  "documents": [
+    {
+      "document_id": "619bd72f8e37470b7bd08618228d6e3d3fb9712b7622e1bc4655dc31aaf06114",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8d0"
+  },
+  "name": "tín_chỉ môn_học tích_luỹ",
+  "documents": [
+    {
+      "document_id": "d16d9b8ed6a9475d83f364f77c518dde6f64ff5a215e30ebcdbe831af3c40661",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8d5"
+  },
+  "name": "sinh_viên trình_độ đại_học văn_bằng học trường",
+  "documents": [
+    {
+      "document_id": "f83a1f68359448422c07bfa714bd9775d43d8117e5ea626fc2e87ab0f34d1034",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8d7"
+  },
+  "name": "thêm học_kỳ",
+  "documents": [
+    {
+      "document_id": "f83a1f68359448422c07bfa714bd9775d43d8117e5ea626fc2e87ab0f34d1034",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8d9"
+  },
+  "name": "năm_học chương_trình",
+  "documents": [
+    {
+      "document_id": "f83a1f68359448422c07bfa714bd9775d43d8117e5ea626fc2e87ab0f34d1034",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8db"
+  },
+  "name": "thứ",
+  "documents": [
+    {
+      "document_id": "f83a1f68359448422c07bfa714bd9775d43d8117e5ea626fc2e87ab0f34d1034",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "3de1327e9abb443d1abd4c1f22a1cf86c92ff58768889175202f1cfa522c46e2",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [
+    "loại",
+    "hạng",
+    "giống",
+    "kiểu",
+    "kiểu mẫu",
+    "lớp",
+    "dạng",
+    "loại hình",
+    "giới",
+    "hình thức",
+    "sự phân nhỏ của loài",
+    "thể loại",
+    "tầng lớp",
+    "mẫu",
+    "dáng",
+    "lớp học"
+  ],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8de"
+  },
+  "name": "điều_kiện học_lực quy_định",
+  "documents": [
+    {
+      "document_id": "f83a1f68359448422c07bfa714bd9775d43d8117e5ea626fc2e87ab0f34d1034",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8e0"
+  },
+  "name": "chương_trình đào_tạo ngành trường",
+  "documents": [
+    {
+      "document_id": "82b165c16f4ef1c549a0508f507af2731c055c69df0a531b4d2bdb0c0f836375",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "ddde8e67e1c99c86e1c82d27dab33740eb22e90f74053501f1caa7f38f892438",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8e4"
+  },
+  "name": "trình_tự học_kỳ khoá đào_tạo",
+  "documents": [
+    {
+      "document_id": "2a16b3a95e9e6ab7f4898af2390925160c60a6caed528d5e58dcb25661452bad",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8e7"
+  },
+  "name": "sinh_viên tuân_thủ trình_tự",
+  "documents": [
+    {
+      "document_id": "2a16b3a95e9e6ab7f4898af2390925160c60a6caed528d5e58dcb25661452bad",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8e9"
+  },
+  "name": "học_phần bắt_buộc có điểm học_kỳ",
+  "documents": [
+    {
+      "document_id": "ba257506dc1bd0ac2c7b78fd451b156dd3def460b4580e7636ed956b802429da",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8ee"
+  },
+  "name": "học_phần chọn thay_thế",
+  "documents": [
+    {
+      "document_id": "ba257506dc1bd0ac2c7b78fd451b156dd3def460b4580e7636ed956b802429da",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8f1"
+  },
+  "name": "tốt_nghiệp sinh_viên",
+  "documents": [
+    {
+      "document_id": "5edcbf981db23bbad6f8406d3935905cbb6f2b9304afad22a2770c8e67a1c5cd",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8f4"
+  },
+  "name": "bậc",
+  "documents": [
+    {
+      "document_id": "5edcbf981db23bbad6f8406d3935905cbb6f2b9304afad22a2770c8e67a1c5cd",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8f6"
+  },
+  "name": "thời_gian học_tập",
+  "documents": [
+    {
+      "document_id": "5edcbf981db23bbad6f8406d3935905cbb6f2b9304afad22a2770c8e67a1c5cd",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8fc"
+  },
+  "name": "thời_gian thiết_kế",
+  "documents": [
+    {
+      "document_id": "5edcbf981db23bbad6f8406d3935905cbb6f2b9304afad22a2770c8e67a1c5cd",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae8fe"
+  },
+  "name": "chương_trình nâng",
+  "documents": [
+    {
+      "document_id": "30eff3e0806298b426445af06f62f1c9c9147d0a1f157de1ca9622abd26a5e3f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae900"
+  },
+  "name": "mục_tiêu chuẩn đầu_ra tiêu_chí",
+  "documents": [
+    {
+      "document_id": "30eff3e0806298b426445af06f62f1c9c9147d0a1f157de1ca9622abd26a5e3f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c2c319f794459ae902"
+  },
+  "name": "chất_lượng quy_định",
+  "documents": [
+    {
+      "document_id": "30eff3e0806298b426445af06f62f1c9c9147d0a1f157de1ca9622abd26a5e3f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae904"
+  },
+  "name": "chương_trình song ngành",
+  "documents": [
+    {
+      "document_id": "2623aaa4a7b53754fce3f60a00eee380f89375b59f597710d2e2fb4dfbed3268",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "1d6735a65b7105637567aaa37a3edf247d664397d138f3c73c7789fe907ea7a3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae907"
+  },
+  "name": "lúc chương_trình đào_tạo",
+  "documents": [
+    {
+      "document_id": "2623aaa4a7b53754fce3f60a00eee380f89375b59f597710d2e2fb4dfbed3268",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae90b"
+  },
+  "name": "thang điểm đánh_giá",
+  "documents": [
+    {
+      "document_id": "83be226430211887f9ed7b4b9ae873e47cd50439df1c6e860d849c4898723a5d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae90d"
+  },
+  "name": "điểm học_phần",
+  "documents": [
+    {
+      "document_id": "83be226430211887f9ed7b4b9ae873e47cd50439df1c6e860d849c4898723a5d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c9e68d736ceed4e3137492300e9940751d7ce02023dd908af675affa7a27de04",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "f90a7384df4453d5487d689bd4e07dc87d961b71f53989578fa7a49d09a6e92e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae90f"
+  },
+  "name": "thang điểm",
+  "documents": [
+    {
+      "document_id": "83be226430211887f9ed7b4b9ae873e47cd50439df1c6e860d849c4898723a5d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "514883acd7b823e52c2d5fc33d348ae9b06414b08c21dc5fd5518a5ddb2aa09b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae912"
+  },
+  "name": "tính tham_khảo",
+  "documents": [
+    {
+      "document_id": "83be226430211887f9ed7b4b9ae873e47cd50439df1c6e860d849c4898723a5d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae914"
+  },
+  "name": "kết_quả học_tập học_kỳ hè",
+  "documents": [
+    {
+      "document_id": "9738733351883ea0f14457ab1229071f34fd433367c17ccff7ba160c6894a67f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae915"
+  },
+  "name": "học_kỳ kề",
+  "documents": [
+    {
+      "document_id": "9738733351883ea0f14457ab1229071f34fd433367c17ccff7ba160c6894a67f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae917"
+  },
+  "name": "có",
+  "documents": [
+    {
+      "document_id": "9738733351883ea0f14457ab1229071f34fd433367c17ccff7ba160c6894a67f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [
+    "bật"
+  ],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae919"
+  },
+  "name": "hiệu_lực kể từ_học kỳ năm_học",
+  "documents": [
+    {
+      "document_id": "2bc98fb9f9baac1f9d4dd190441dff9a0f9a8daac2bf40f5d177b60a36cb6430",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae91f"
+  },
+  "name": "sinh_viên dự_thính",
+  "documents": [
+    {
+      "document_id": "f0fcd94493d1e6a45c134e96cb1b8f85787a8dd697acfb476de73784e8d68228",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae920"
+  },
+  "name": "sinh_viên cơ_sở đào_tạo thuộc đại_học quốc_gia thành_phố hồ_chí_minh",
+  "documents": [
+    {
+      "document_id": "f0fcd94493d1e6a45c134e96cb1b8f85787a8dd697acfb476de73784e8d68228",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae924"
+  },
+  "name": "trọng_số tín_chỉ học_phần",
+  "documents": [
+    {
+      "document_id": "216d4865ca38f8a52b3a7d82082e04bf223ca2eb5b2f46078a3d7b86fae88e60",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae926"
+  },
+  "name": "tín_chỉ đăng_ký học_kỳ học",
+  "documents": [
+    {
+      "document_id": "216d4865ca38f8a52b3a7d82082e04bf223ca2eb5b2f46078a3d7b86fae88e60",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae928"
+  },
+  "name": "chuyển ngành",
+  "documents": [
+    {
+      "document_id": "216d4865ca38f8a52b3a7d82082e04bf223ca2eb5b2f46078a3d7b86fae88e60",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae92b"
+  },
+  "name": "hộp_thư điện_tử email trường cung_cấp sinh_viên thời_điểm nhập_học",
+  "documents": [
+    {
+      "document_id": "1b11348d641cf879360fa16bb2db0e0b7b27184649022b3b773d8d55b94e8635",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae92c"
+  },
+  "name": "kênh giao_tiếp trường sinh_viên",
+  "documents": [
+    {
+      "document_id": "1b11348d641cf879360fa16bb2db0e0b7b27184649022b3b773d8d55b94e8635",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae930"
+  },
+  "name": "doanh_nghiệp sự hướng_dẫn giảng_viên khoa",
+  "documents": [
+    {
+      "document_id": "92fb7113d25fabf3f343b0d3c2016aa0426621cf06d20b48bb708073a18b00a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae932"
+  },
+  "name": "ngành đào_tạo",
+  "documents": [
+    {
+      "document_id": "92fb7113d25fabf3f343b0d3c2016aa0426621cf06d20b48bb708073a18b00a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae934"
+  },
+  "name": "khoa",
+  "documents": [
+    {
+      "document_id": "92fb7113d25fabf3f343b0d3c2016aa0426621cf06d20b48bb708073a18b00a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae938"
+  },
+  "name": "doanh_nghiệp cuối học_kỳ",
+  "documents": [
+    {
+      "document_id": "92fb7113d25fabf3f343b0d3c2016aa0426621cf06d20b48bb708073a18b00a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c3c319f794459ae93b"
+  },
+  "name": "kết_quả thực_tập học_kỳ đăng_ký",
+  "documents": [
+    {
+      "document_id": "92fb7113d25fabf3f343b0d3c2016aa0426621cf06d20b48bb708073a18b00a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae93f"
+  },
+  "name": "học_phần có khối_lượng tín_chỉ",
+  "documents": [
+    {
+      "document_id": "48227564bee2a69805fa4f06485b147ba2b4095a41fe09b61aef7145eee6b7f4",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae942"
+  },
+  "name": "nghĩa_vụ học_phí quy_định",
+  "documents": [
+    {
+      "document_id": "343dad44854363f867a471e7bb8ffc7ce136b621c8195e492c97b683e62212fb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae946"
+  },
+  "name": "thời_hạn cảnh_báo học",
+  "documents": [
+    {
+      "document_id": "343dad44854363f867a471e7bb8ffc7ce136b621c8195e492c97b683e62212fb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae948"
+  },
+  "name": "học_kỳ tiếp_theo",
+  "documents": [
+    {
+      "document_id": "343dad44854363f867a471e7bb8ffc7ce136b621c8195e492c97b683e62212fb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae94b"
+  },
+  "name": "cảnh_báo học kết_thúc thời_hạn",
+  "documents": [
+    {
+      "document_id": "343dad44854363f867a471e7bb8ffc7ce136b621c8195e492c97b683e62212fb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae94f"
+  },
+  "name": "chương_trình song ngành chương_trình ngành ngành",
+  "documents": [
+    {
+      "document_id": "1b761d824d0eb4fb519787b9cf795c24ca41963b781adfb58c630d380061777f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae956"
+  },
+  "name": "kết_quả đạt",
+  "documents": [
+    {
+      "document_id": "810869eec35663e6162346373848d412ba0c1cd690ccf3d6fdb285fbf98e3416",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae958"
+  },
+  "name": "học_phần đạt",
+  "documents": [
+    {
+      "document_id": "810869eec35663e6162346373848d412ba0c1cd690ccf3d6fdb285fbf98e3416",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae95a"
+  },
+  "name": "thời_gian phép",
+  "documents": [
+    {
+      "document_id": "810869eec35663e6162346373848d412ba0c1cd690ccf3d6fdb285fbf98e3416",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae95e"
+  },
+  "name": "khối kiến_thức giáo_dục",
+  "documents": [
+    {
+      "document_id": "54e344e71e11422b53f9875cca7d7740c1e31562c9f8e6645b3f30000e08c6dc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae960"
+  },
+  "name": "người học kiến_thức",
+  "documents": [
+    {
+      "document_id": "54e344e71e11422b53f9875cca7d7740c1e31562c9f8e6645b3f30000e08c6dc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae962"
+  },
+  "name": "kỹ_năng nghề_nghiệp",
+  "documents": [
+    {
+      "document_id": "54e344e71e11422b53f9875cca7d7740c1e31562c9f8e6645b3f30000e08c6dc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae965"
+  },
+  "name": "môn_học cơ_sở nhóm ngành",
+  "documents": [
+    {
+      "document_id": "54e344e71e11422b53f9875cca7d7740c1e31562c9f8e6645b3f30000e08c6dc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae966"
+  },
+  "name": "môn_học cơ_sở ngành",
+  "documents": [
+    {
+      "document_id": "54e344e71e11422b53f9875cca7d7740c1e31562c9f8e6645b3f30000e08c6dc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae968"
+  },
+  "name": "tín_chỉ học_phí",
+  "documents": [
+    {
+      "document_id": "9f3f7d2490d201bd5ff39577bf55281c2b183d8dd7b178a09e05679f5dd5a6bc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae969"
+  },
+  "name": "đơn_vị dùng",
+  "documents": [
+    {
+      "document_id": "9f3f7d2490d201bd5ff39577bf55281c2b183d8dd7b178a09e05679f5dd5a6bc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "869f24abff9bc0bb0369adf64babb83488a6313c20e80037f389859c9b1bb218",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae96c"
+  },
+  "name": "chi_phí hoạt_động giảng_dạy tính học_phần",
+  "documents": [
+    {
+      "document_id": "9f3f7d2490d201bd5ff39577bf55281c2b183d8dd7b178a09e05679f5dd5a6bc",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c4c319f794459ae96e"
+  },
+  "name": "trách_nhiệm thực_hiện yêu_cầu môn_học",
+  "documents": [
+    {
+      "document_id": "3dcb1a87a7d0dc90ff312ad17bb96652943da0994b29bcec6745331926b1a060",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae970"
+  },
+  "name": "tổng_số tín_chỉ chương_trình",
+  "documents": [
+    {
+      "document_id": "a3bcf2501e5746189d06a8d9b9a939bb725a1d0dbb8c53930a7883dd23cd69f5",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae971"
+  },
+  "name": "ngoài trường công_nhận",
+  "documents": [
+    {
+      "document_id": "a3bcf2501e5746189d06a8d9b9a939bb725a1d0dbb8c53930a7883dd23cd69f5",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae974"
+  },
+  "name": "tổng_số tín_chỉ chương_trình đào_tạo",
+  "documents": [
+    {
+      "document_id": "a3bcf2501e5746189d06a8d9b9a939bb725a1d0dbb8c53930a7883dd23cd69f5",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae976"
+  },
+  "name": "đại_học quốc_gia thành_phố hồ_chí_minh",
+  "documents": [
+    {
+      "document_id": "0f7ba4c586f82ff886708ee91e6cd6bfc46dc03a0223f2cd71a9665d91bc4aaf",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae977"
+  },
+  "name": "tín_chỉ quy_định",
+  "documents": [
+    {
+      "document_id": "0f7ba4c586f82ff886708ee91e6cd6bfc46dc03a0223f2cd71a9665d91bc4aaf",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae97b"
+  },
+  "name": "giữa đhqg-hcm",
+  "documents": [
+    {
+      "document_id": "0f7ba4c586f82ff886708ee91e6cd6bfc46dc03a0223f2cd71a9665d91bc4aaf",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae97d"
+  },
+  "name": "đơn_vị đối_tác",
+  "documents": [
+    {
+      "document_id": "0f7ba4c586f82ff886708ee91e6cd6bfc46dc03a0223f2cd71a9665d91bc4aaf",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae981"
+  },
+  "name": "quy_trình",
+  "documents": [
+    {
+      "document_id": "bbd6a3c8286a2954777cfea0beb8d13210835bd50febc723425df953eaf8c58f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae984"
+  },
+  "name": "điểm học_phần đánh_giá",
+  "documents": [
+    {
+      "document_id": "68fc49963f40781e3f9ef65c340093c595b168a487f5ef6f1e27347f5853731f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae985"
+  },
+  "name": "kết_quả học_tập sinh_viên học_kỳ",
+  "documents": [
+    {
+      "document_id": "68fc49963f40781e3f9ef65c340093c595b168a487f5ef6f1e27347f5853731f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae987"
+  },
+  "name": "cán_bộ giảng_dạy",
+  "documents": [
+    {
+      "document_id": "68fc49963f40781e3f9ef65c340093c595b168a487f5ef6f1e27347f5853731f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "f4c051b58773b4ff9ef454421f559f5d319127f3b494a1ea12278d6210724be4",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "f90a7384df4453d5487d689bd4e07dc87d961b71f53989578fa7a49d09a6e92e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae989"
+  },
+  "name": "cách",
+  "documents": [
+    {
+      "document_id": "68fc49963f40781e3f9ef65c340093c595b168a487f5ef6f1e27347f5853731f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0e28b24bb0770fa819639acbd307c5fb307fd6b1862cf62be7f1615fb05afe47",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae98b"
+  },
+  "name": "môn_học sinh_viên",
+  "documents": [
+    {
+      "document_id": "68fc49963f40781e3f9ef65c340093c595b168a487f5ef6f1e27347f5853731f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae98d"
+  },
+  "name": "kết_quả khoá_luận tốt_nghiệp",
+  "documents": [
+    {
+      "document_id": "514883acd7b823e52c2d5fc33d348ae9b06414b08c21dc5fd5518a5ddb2aa09b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae990"
+  },
+  "name": "khoá_luận tốt_nghiệp gồm thành_viên khoa",
+  "documents": [
+    {
+      "document_id": "514883acd7b823e52c2d5fc33d348ae9b06414b08c21dc5fd5518a5ddb2aa09b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae996"
+  },
+  "name": "điểm tổng_kết",
+  "documents": [
+    {
+      "document_id": "514883acd7b823e52c2d5fc33d348ae9b06414b08c21dc5fd5518a5ddb2aa09b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae998"
+  },
+  "name": "trung_bình_cộng",
+  "documents": [
+    {
+      "document_id": "514883acd7b823e52c2d5fc33d348ae9b06414b08c21dc5fd5518a5ddb2aa09b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae99b"
+  },
+  "name": "hệ_số",
+  "documents": [
+    {
+      "document_id": "514883acd7b823e52c2d5fc33d348ae9b06414b08c21dc5fd5518a5ddb2aa09b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae99d"
+  },
+  "name": "đợt thi_tập học_kỳ gồm kỳ",
+  "documents": [
+    {
+      "document_id": "5fd4bde4f84353ab275a0df81b149ac467adce71294f3387760ea68e19a26e99",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae9a1"
+  },
+  "name": "kỳ thi kết_thúc học_kỳ",
+  "documents": [
+    {
+      "document_id": "5fd4bde4f84353ab275a0df81b149ac467adce71294f3387760ea68e19a26e99",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae9a3"
+  },
+  "name": "đợt thi",
+  "documents": [
+    {
+      "document_id": "5fd4bde4f84353ab275a0df81b149ac467adce71294f3387760ea68e19a26e99",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae9a5"
+  },
+  "name": "kế_hoạch giảng_dạy",
+  "documents": [
+    {
+      "document_id": "5fd4bde4f84353ab275a0df81b149ac467adce71294f3387760ea68e19a26e99",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae9a7"
+  },
+  "name": "khoa bộ_môn",
+  "documents": [
+    {
+      "document_id": "5fd4bde4f84353ab275a0df81b149ac467adce71294f3387760ea68e19a26e99",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae9a9"
+  },
+  "name": "đợt thi thông_báo",
+  "documents": [
+    {
+      "document_id": "5fd4bde4f84353ab275a0df81b149ac467adce71294f3387760ea68e19a26e99",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae9ab"
+  },
+  "name": "giảng_viên",
+  "documents": [
+    {
+      "document_id": "5fd4bde4f84353ab275a0df81b149ac467adce71294f3387760ea68e19a26e99",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae9b4"
+  },
+  "name": "hình_thức",
+  "documents": [
+    {
+      "document_id": "1beaac1a6723f7e68ed5caa560331a9c3d8559877363e49ddf52b55c2946262d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c5c319f794459ae9b6"
+  },
+  "name": "tổng khối_lượng thực_hiện phương_thức",
+  "documents": [
+    {
+      "document_id": "1beaac1a6723f7e68ed5caa560331a9c3d8559877363e49ddf52b55c2946262d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9ba"
+  },
+  "name": "hướng_dẫn bộ giáo_dục",
+  "documents": [
+    {
+      "document_id": "1beaac1a6723f7e68ed5caa560331a9c3d8559877363e49ddf52b55c2946262d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9bc"
+  },
+  "name": "đhqg-hcm bất_khả_kháng",
+  "documents": [
+    {
+      "document_id": "1beaac1a6723f7e68ed5caa560331a9c3d8559877363e49ddf52b55c2946262d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9bf"
+  },
+  "name": "phương_án xử_lý",
+  "documents": [
+    {
+      "document_id": "f4c051b58773b4ff9ef454421f559f5d319127f3b494a1ea12278d6210724be4",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9c1"
+  },
+  "name": "bảng điểm bổ_sung phòng",
+  "documents": [
+    {
+      "document_id": "f4c051b58773b4ff9ef454421f559f5d319127f3b494a1ea12278d6210724be4",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9c4"
+  },
+  "name": "phần khối_lượng kiến_thức quy_định điều ngành thứ",
+  "documents": [
+    {
+      "document_id": "1d6735a65b7105637567aaa37a3edf247d664397d138f3c73c7789fe907ea7a3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9c6"
+  },
+  "name": "tín_chỉ trở ngành thứ nội_dung giữa chương_trình",
+  "documents": [
+    {
+      "document_id": "1d6735a65b7105637567aaa37a3edf247d664397d138f3c73c7789fe907ea7a3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9c8"
+  },
+  "name": "lần",
+  "documents": [
+    {
+      "document_id": "1d6735a65b7105637567aaa37a3edf247d664397d138f3c73c7789fe907ea7a3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9cf"
+  },
+  "name": "lần đầu việc đi",
+  "documents": [
+    {
+      "document_id": "9fc4ca12fa6a4f3deec9aa112eb4f8892b02b3a0c04af7845a4e791a446766f0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9d2"
+  },
+  "name": "người thi",
+  "documents": [
+    {
+      "document_id": "9fc4ca12fa6a4f3deec9aa112eb4f8892b02b3a0c04af7845a4e791a446766f0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9d8"
+  },
+  "name": "sinh_viên pháp_luật",
+  "documents": [
+    {
+      "document_id": "9fc4ca12fa6a4f3deec9aa112eb4f8892b02b3a0c04af7845a4e791a446766f0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9da"
+  },
+  "name": "án_treo",
+  "documents": [
+    {
+      "document_id": "9fc4ca12fa6a4f3deec9aa112eb4f8892b02b3a0c04af7845a4e791a446766f0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9dc"
+  },
+  "name": "xử_phạt tù",
+  "documents": [
+    {
+      "document_id": "9fc4ca12fa6a4f3deec9aa112eb4f8892b02b3a0c04af7845a4e791a446766f0",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9de"
+  },
+  "name": "hội_đồng xét tốt_nghiệp hiệu_trưởng",
+  "documents": [
+    {
+      "document_id": "0abce55e72f7885a7d35d557086e6548aef6646703234a3775cd0dfed4ebe84c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9df"
+  },
+  "name": "chủ_tịch",
+  "documents": [
+    {
+      "document_id": "0abce55e72f7885a7d35d557086e6548aef6646703234a3775cd0dfed4ebe84c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9e1"
+  },
+  "name": "trưởng phòng",
+  "documents": [
+    {
+      "document_id": "0abce55e72f7885a7d35d557086e6548aef6646703234a3775cd0dfed4ebe84c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9e3"
+  },
+  "name": "phó trưởng phòng",
+  "documents": [
+    {
+      "document_id": "0abce55e72f7885a7d35d557086e6548aef6646703234a3775cd0dfed4ebe84c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9e5"
+  },
+  "name": "phó hiệu_trưởng",
+  "documents": [
+    {
+      "document_id": "0abce55e72f7885a7d35d557086e6548aef6646703234a3775cd0dfed4ebe84c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9ec"
+  },
+  "name": "thư_ký",
+  "documents": [
+    {
+      "document_id": "0abce55e72f7885a7d35d557086e6548aef6646703234a3775cd0dfed4ebe84c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9ee"
+  },
+  "name": "thời_gian học học_kỳ",
+  "documents": [
+    {
+      "document_id": "42e439fa10ebee7adc96b43c00139802ea853606be6d61bfe5bc09602f108c54",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9f0"
+  },
+  "name": "lớp_học ngoại_ngữ chương_trình đào_tạo sinh_viên",
+  "documents": [
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c6c319f794459ae9f2"
+  },
+  "name": "thời_khoá_biểu nhu_cầu sinh_viên",
+  "documents": [
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459ae9f4"
+  },
+  "name": "lớp ngoại_ngữ điều_kiện môn",
+  "documents": [
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459ae9f7"
+  },
+  "name": "giờ học môn",
+  "documents": [
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459ae9f9"
+  },
+  "name": "học_kỳ hè sinh_viên",
+  "documents": [
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459ae9fb"
+  },
+  "name": "môn ngoại_ngữ",
+  "documents": [
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459ae9ff"
+  },
+  "name": "học_phí môn ngoại_ngữ chương_trình đào_tạo",
+  "documents": [
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea01"
+  },
+  "name": "lần đầu",
+  "documents": [
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea03"
+  },
+  "name": "học_phí học_kỳ",
+  "documents": [
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea05"
+  },
+  "name": "điểm sinh_viên",
+  "documents": [
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea07"
+  },
+  "name": "thời_điểm thi",
+  "documents": [
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea09"
+  },
+  "name": "môn_học học_kỳ tương_ứng",
+  "documents": [
+    {
+      "document_id": "778eb3b89cbad809d2f10909528edc15ab4d130b165f11b4b90d478b9272067c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea0b"
+  },
+  "name": "chương_trình liên_thông",
+  "documents": [
+    {
+      "document_id": "27ab402badd9db5d6f6d2df39a669efa3b14a1dd887fdb1eacf3356689c6442a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea0f"
+  },
+  "name": "kết_quả học_tập môn_học tích_luỹ",
+  "documents": [
+    {
+      "document_id": "27ab402badd9db5d6f6d2df39a669efa3b14a1dd887fdb1eacf3356689c6442a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea12"
+  },
+  "name": "nội_dung chương_trình đào_tạo",
+  "documents": [
+    {
+      "document_id": "27ab402badd9db5d6f6d2df39a669efa3b14a1dd887fdb1eacf3356689c6442a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea16"
+  },
+  "name": "bằng tốt_nghiệp vòng tháng",
+  "documents": [
+    {
+      "document_id": "3c870ad5b03f7b556777122ce15e01f592b5840e82b5b8a649f43a8b9bf8a9af",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea1b"
+  },
+  "name": "chuẩn chương_trình",
+  "documents": [
+    {
+      "document_id": "ddde8e67e1c99c86e1c82d27dab33740eb22e90f74053501f1caa7f38f892438",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea1d"
+  },
+  "name": "nhu_cầu thị_trường lao_động",
+  "documents": [
+    {
+      "document_id": "ddde8e67e1c99c86e1c82d27dab33740eb22e90f74053501f1caa7f38f892438",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea1f"
+  },
+  "name": "khối_lượng thực_tập",
+  "documents": [
+    {
+      "document_id": "2f1c7653e5f83d7a530e897475f2150f72e43fb97024609e57a8d9c720fdcb2e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea23"
+  },
+  "name": "nhóm học_phần bắt_buộc",
+  "documents": [
+    {
+      "document_id": "edd17db77906d95831f31491f42c9df81fcf8624c4d4826c9f456a9b0684e84d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea24"
+  },
+  "name": "nội_dung kiến_thức ngành đào_tạo",
+  "documents": [
+    {
+      "document_id": "edd17db77906d95831f31491f42c9df81fcf8624c4d4826c9f456a9b0684e84d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea27"
+  },
+  "name": "trang thông_tin điện_tử",
+  "documents": [
+    {
+      "document_id": "00353ff7385c51fa6b2d9f509f26c9f8153830b53cb0499bc06abfabbfc872eb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "0fd1a8914801b98ab84b729da67b03be3ec6624551dcf3607ffe170184102699",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c7c319f794459aea2a"
+  },
+  "name": "chuẩn đầu_ra",
+  "documents": [
+    {
+      "document_id": "00353ff7385c51fa6b2d9f509f26c9f8153830b53cb0499bc06abfabbfc872eb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea2d"
+  },
+  "name": "học_phần khoa",
+  "documents": [
+    {
+      "document_id": "f90a7384df4453d5487d689bd4e07dc87d961b71f53989578fa7a49d09a6e92e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea2f"
+  },
+  "name": "bộ_môn",
+  "documents": [
+    {
+      "document_id": "f90a7384df4453d5487d689bd4e07dc87d961b71f53989578fa7a49d09a6e92e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea32"
+  },
+  "name": "phòng đào_tạo",
+  "documents": [
+    {
+      "document_id": "f90a7384df4453d5487d689bd4e07dc87d961b71f53989578fa7a49d09a6e92e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea39"
+  },
+  "name": "điểm i",
+  "documents": [
+    {
+      "document_id": "f90a7384df4453d5487d689bd4e07dc87d961b71f53989578fa7a49d09a6e92e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea3b"
+  },
+  "name": "sinh_viên bỏ thi",
+  "documents": [
+    {
+      "document_id": "f90a7384df4453d5487d689bd4e07dc87d961b71f53989578fa7a49d09a6e92e",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea3d"
+  },
+  "name": "sinh_viên trình_độ đại_học văn_bằng",
+  "documents": [
+    {
+      "document_id": "3de1327e9abb443d1abd4c1f22a1cf86c92ff58768889175202f1cfa522c46e2",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea3f"
+  },
+  "name": "thêm ngành",
+  "documents": [
+    {
+      "document_id": "3de1327e9abb443d1abd4c1f22a1cf86c92ff58768889175202f1cfa522c46e2",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea41"
+  },
+  "name": "ngành đào_tạo chương_trình",
+  "documents": [
+    {
+      "document_id": "3de1327e9abb443d1abd4c1f22a1cf86c92ff58768889175202f1cfa522c46e2",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea47"
+  },
+  "name": "học_phần cổng thông_tin đào_tạo",
+  "documents": [
+    {
+      "document_id": "6913fd18456060ffd4b645d3465bf747bf03ed9ecc29ce255a0eb1dd374d55f6",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea49"
+  },
+  "name": "tổng_số tín_chỉ đăng_ký",
+  "documents": [
+    {
+      "document_id": "d112d53966b95f0680daa520c21d173ff7923f909e09ff4af875f73a653cb78b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea4c"
+  },
+  "name": "học_kỳ hè tổng_số tín_chỉ đăng_ký",
+  "documents": [
+    {
+      "document_id": "d112d53966b95f0680daa520c21d173ff7923f909e09ff4af875f73a653cb78b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea4f"
+  },
+  "name": "điểm môn ngoại_ngữ",
+  "documents": [
+    {
+      "document_id": "d112d53966b95f0680daa520c21d173ff7923f909e09ff4af875f73a653cb78b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea52"
+  },
+  "name": "doanh_nghiệp học_kỳ hè",
+  "documents": [
+    {
+      "document_id": "d112d53966b95f0680daa520c21d173ff7923f909e09ff4af875f73a653cb78b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea55"
+  },
+  "name": "việc đăng_ký học_phần học_kỳ hè",
+  "documents": [
+    {
+      "document_id": "d112d53966b95f0680daa520c21d173ff7923f909e09ff4af875f73a653cb78b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea58"
+  },
+  "name": "điểm trung_bình_cộng trở",
+  "documents": [
+    {
+      "document_id": "d112d53966b95f0680daa520c21d173ff7923f909e09ff4af875f73a653cb78b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea5b"
+  },
+  "name": "sự đồng_ý hiệu_trưởng",
+  "documents": [
+    {
+      "document_id": "d112d53966b95f0680daa520c21d173ff7923f909e09ff4af875f73a653cb78b",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea5f"
+  },
+  "name": "đtbhk đtbc",
+  "documents": [
+    {
+      "document_id": "0e28b24bb0770fa819639acbd307c5fb307fd6b1862cf62be7f1615fb05afe47",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea61"
+  },
+  "name": "đtbctl",
+  "documents": [
+    {
+      "document_id": "0e28b24bb0770fa819639acbd307c5fb307fd6b1862cf62be7f1615fb05afe47",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea63"
+  },
+  "name": "điều quy_chế",
+  "documents": [
+    {
+      "document_id": "0e28b24bb0770fa819639acbd307c5fb307fd6b1862cf62be7f1615fb05afe47",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea68"
+  },
+  "name": "môn_học phải",
+  "documents": [
+    {
+      "document_id": "0c6889e93a66032c208043a64ef30a000ed24e13dd7b98daa1acc3bf8abe834a",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea6b"
+  },
+  "name": "lý_do cá_nhân",
+  "documents": [
+    {
+      "document_id": "4d8ae7b9c4613327e4252973f662d37a634669b2460e4b9150676cc8073f17a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea6d"
+  },
+  "name": "sinh_viên có quyết_định thôi học",
+  "documents": [
+    {
+      "document_id": "4d8ae7b9c4613327e4252973f662d37a634669b2460e4b9150676cc8073f17a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea6f"
+  },
+  "name": "trở_lại",
+  "documents": [
+    {
+      "document_id": "4d8ae7b9c4613327e4252973f662d37a634669b2460e4b9150676cc8073f17a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c8c319f794459aea72"
+  },
+  "name": "đầu_vào thí_sinh",
+  "documents": [
+    {
+      "document_id": "4d8ae7b9c4613327e4252973f662d37a634669b2460e4b9150676cc8073f17a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea74"
+  },
+  "name": "khối kiến_thức giáo_dục đại_cương tổ_chức",
+  "documents": [
+    {
+      "document_id": "d59435dcb050aa94568e7bf280ee7644ff851e036354191d09bebea296fcb4a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea76"
+  },
+  "name": "học_kỳ đầu",
+  "documents": [
+    {
+      "document_id": "d59435dcb050aa94568e7bf280ee7644ff851e036354191d09bebea296fcb4a1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea79"
+  },
+  "name": "nguyên_tắc",
+  "documents": [
+    {
+      "document_id": "f9d85a62ee93f79b0622db2d8a1a60df0f8d48aedb6a0bca56bf6d1327e199a7",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea7c"
+  },
+  "name": "yêu_cầu thực_tế",
+  "documents": [
+    {
+      "document_id": "f8aeb09af5621b428d14cddbdf53ea408b23446e9120ab808d529da6766c8ecb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea7e"
+  },
+  "name": "nhà_nước",
+  "documents": [
+    {
+      "document_id": "f8aeb09af5621b428d14cddbdf53ea408b23446e9120ab808d529da6766c8ecb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea81"
+  },
+  "name": "khối_lượng kiến_thức bố_trí",
+  "documents": [
+    {
+      "document_id": "14cb1d2fd11e88ca57b6908b7bb6f9a4b16e944aba599898d897bc3ab8ddeacb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea84"
+  },
+  "name": "khối_lượng tín_chỉ trường_quy",
+  "documents": [
+    {
+      "document_id": "14cb1d2fd11e88ca57b6908b7bb6f9a4b16e944aba599898d897bc3ab8ddeacb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea86"
+  },
+  "name": "đơn xin",
+  "documents": [
+    {
+      "document_id": "a3e608a161578098e1d6512ce16ed6f0cf644e699520230314d047061c03d914",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea8a"
+  },
+  "name": "kết_quả học_tập sinh_viên",
+  "documents": [
+    {
+      "document_id": "ad2d0631e9455ca2b12dc8d5d1b674a6d3e1b76cfe8859262e07a00acf91a1d8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "869f24abff9bc0bb0369adf64babb83488a6313c20e80037f389859c9b1bb218",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea8c"
+  },
+  "name": "bảng điểm học_phần",
+  "documents": [
+    {
+      "document_id": "ad2d0631e9455ca2b12dc8d5d1b674a6d3e1b76cfe8859262e07a00acf91a1d8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea8e"
+  },
+  "name": "chuyên_ngành",
+  "documents": [
+    {
+      "document_id": "ad2d0631e9455ca2b12dc8d5d1b674a6d3e1b76cfe8859262e07a00acf91a1d8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea92"
+  },
+  "name": "toàn khoá học",
+  "documents": [
+    {
+      "document_id": "ad2d0631e9455ca2b12dc8d5d1b674a6d3e1b76cfe8859262e07a00acf91a1d8",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea97"
+  },
+  "name": "thủ_tục nhập_học quy_định trường",
+  "documents": [
+    {
+      "document_id": "28604a6850fa1ad24cf90eb4b08dcf099c42f1393c8064994bafbf1d63d519b3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea9a"
+  },
+  "name": "học",
+  "documents": [
+    {
+      "document_id": "28604a6850fa1ad24cf90eb4b08dcf099c42f1393c8064994bafbf1d63d519b3",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [
+    "học tập",
+    "thu thập được kiến thức",
+    "thuộc",
+    "học thuộc",
+    "được tin",
+    "được biết",
+    "đạt được",
+    "học được",
+    "thu được",
+    "thu hoạch được",
+    "giành được",
+    "thu nhận được",
+    "nhặt được",
+    "ghi nhớ",
+    "thuộc lòng",
+    "cố nhớ",
+    "nghiên cứu",
+    "cuộc ngiên cứu",
+    "nhớ",
+    "mang trong tâm trí",
+    "nhập tâm",
+    "đến được",
+    "tới",
+    "với tới được",
+    "lấy được",
+    "đến gần được",
+    "kiếm được",
+    "tìm ra",
+    "khám phá ra",
+    "hiểu được",
+    "nắm được ý",
+    "mua chuộc",
+    "hối lộ",
+    "đút lót",
+    "chế nhạo",
+    "giễu cợt",
+    "công kích",
+    "tấn công",
+    "lùi",
+    "lùi lại",
+    "trở lại",
+    "trở về",
+    "lấy lại",
+    "tìm lại được",
+    "gỡ lại",
+    "tránh",
+    "lẩn tránh",
+    "cáo lỗi",
+    "xin miễn cho",
+    "thoát khỏi",
+    "dần dần bỏ",
+    "nghe phong phanh",
+    "nghe thấy nói",
+    "đi đằng sau",
+    "xét lại",
+    "nhận định lại",
+    "tìm hiểu",
+    "kiểm lại",
+    "soát lại",
+    "theo dõi",
+    "học thuộc lòng",
+    "nhìn vào bên trong",
+    "xem xét kỹ",
+    "nhìn ra",
+    "quay về",
+    "hướng về",
+    "cuốc",
+    "vỡ",
+    "nhặt lên",
+    "cầm lấy",
+    "tăng lên",
+    "khá lên",
+    "vớt",
+    "cho quá giang",
+    "nhờ đưa đi",
+    "tình cờ làm quen với",
+    "tăng tốc độ",
+    "để lên",
+    "đặt lên",
+    "giơ lên",
+    "kéo lên",
+    "giương lên",
+    "treo lên",
+    "xây dựng",
+    "lắp đặt",
+    "đem trình diễn",
+    "đưa lên sân khấu",
+    "cho trọ lại",
+    "đưa ra bán",
+    "đưa kiến nghị",
+    "công bố",
+    "dán lên",
+    "làm trọn",
+    "xúi giục",
+    "khích động",
+    "đề cử",
+    "tiến cử",
+    "ra ứng cử",
+    "điều tra",
+    "xem xét kỹ lưỡng",
+    "hiểu rõ được",
+    "thấy rõ được",
+    "khắc sâu vào tâm trí smb."
+  ],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea9d"
+  },
+  "name": "chương_trình thứ",
+  "documents": [
+    {
+      "document_id": "c2922f4b3b841da60a2b26b816b7cc5809625d9027860093cf96e6c3a07b3310",
+      "document_number": "790/QĐ-ĐHCNTT"
+    },
+    {
+      "document_id": "02a286cfdcd8e210e4e4748eea41f015a07537724a47a5bc1cf8d8c4977684c7",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aea9f"
+  },
+  "name": "điều_kiện tốt_nghiệp",
+  "documents": [
+    {
+      "document_id": "c2922f4b3b841da60a2b26b816b7cc5809625d9027860093cf96e6c3a07b3310",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aeaa1"
+  },
+  "name": "lúc chương_trình",
+  "documents": [
+    {
+      "document_id": "0ebc364eced4f8ae6ce0f625fbbf78a666c00d58485c25894d03a1b6f312966c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aeaa3"
+  },
+  "name": "thời_gian quy_định chương_trình thứ",
+  "documents": [
+    {
+      "document_id": "0ebc364eced4f8ae6ce0f625fbbf78a666c00d58485c25894d03a1b6f312966c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189c9c319f794459aeaa5"
+  },
+  "name": "kết_quả học_phần chương_trình thứ",
+  "documents": [
+    {
+      "document_id": "0ebc364eced4f8ae6ce0f625fbbf78a666c00d58485c25894d03a1b6f312966c",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeaa7"
+  },
+  "name": "mục_tiêu chương_trình giáo_dục đại_học",
+  "documents": [
+    {
+      "document_id": "e4148a9b883af140cf9ec70b00ce6ae3c49ccbb975d1d56f0b577505df9427df",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeaa8"
+  },
+  "name": "bản mô_tả",
+  "documents": [
+    {
+      "document_id": "e4148a9b883af140cf9ec70b00ce6ae3c49ccbb975d1d56f0b577505df9427df",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeaab"
+  },
+  "name": "khoá_luận",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeaad"
+  },
+  "name": "đầu học_kỳ",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeaaf"
+  },
+  "name": "sinh_viên chương_trình",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeab3"
+  },
+  "name": "yêu_cầu khoa",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeab7"
+  },
+  "name": "đề_tài khoá_luận tốt_nghiệp sinh_viên điều_kiện",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeaba"
+  },
+  "name": "nhiệm_vụ",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeabe"
+  },
+  "name": "đề_nghị trưởng khoa",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeac0"
+  },
+  "name": "trưởng phòng đào_tạo",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeac2"
+  },
+  "name": "khoá_luận tốt_nghiệp thời_gian học_kỳ",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeac7"
+  },
+  "name": "cán_bộ hướng_dẫn",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeaca"
+  },
+  "name": "văn_bản",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeacd"
+  },
+  "name": "đợt",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeacf"
+  },
+  "name": "khoá_luận tốt_nghiệp năm kế_hoạch đào_tạo",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aead1"
+  },
+  "name": "sinh_viên bảo_vệ khoá_luận đợt",
+  "documents": [
+    {
+      "document_id": "c8d11bf589bbfb1f37b4eaccfa5507966149f4fffcfc6d52483fcfc25f9c838f",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aead5"
+  },
+  "name": "năm_học",
+  "documents": [
+    {
+      "document_id": "0fd1a8914801b98ab84b729da67b03be3ec6624551dcf3607ffe170184102699",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aead9"
+  },
+  "name": "học_phần học_kỳ hè",
+  "documents": [
+    {
+      "document_id": "0fd1a8914801b98ab84b729da67b03be3ec6624551dcf3607ffe170184102699",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeadc"
+  },
+  "name": "kế_hoạch học_tập học_kỳ",
+  "documents": [
+    {
+      "document_id": "0fd1a8914801b98ab84b729da67b03be3ec6624551dcf3607ffe170184102699",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cac319f794459aeadd"
+  },
+  "name": "thời_gian_biểu",
+  "documents": [
+    {
+      "document_id": "0fd1a8914801b98ab84b729da67b03be3ec6624551dcf3607ffe170184102699",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeae5"
+  },
+  "name": "đại_học năm đợt",
+  "documents": [
+    {
+      "document_id": "aa0d9bbd9c3d6e99e8d502a7e5fb7cd0958bfb3e61be65072eb9744f0dcc54ef",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeae7"
+  },
+  "name": "hồ_sơ",
+  "documents": [
+    {
+      "document_id": "aa0d9bbd9c3d6e99e8d502a7e5fb7cd0958bfb3e61be65072eb9744f0dcc54ef",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeaec"
+  },
+  "name": "kết_quả chấm thực_tập",
+  "documents": [
+    {
+      "document_id": "d6001a5260d95dd3a1fb632e3ecbd85f2340634166508c55916e79e9bed2f604",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeaee"
+  },
+  "name": "vòng tuần ngày báo_cáo",
+  "documents": [
+    {
+      "document_id": "d6001a5260d95dd3a1fb632e3ecbd85f2340634166508c55916e79e9bed2f604",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeaf2"
+  },
+  "name": "chương_trình thứ học_kỳ tiếp_theo",
+  "documents": [
+    {
+      "document_id": "02a286cfdcd8e210e4e4748eea41f015a07537724a47a5bc1cf8d8c4977684c7",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeaf5"
+  },
+  "name": "danh_sách đăng_ký",
+  "documents": [
+    {
+      "document_id": "02a286cfdcd8e210e4e4748eea41f015a07537724a47a5bc1cf8d8c4977684c7",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeaf8"
+  },
+  "name": "nguyện_vọng chuyển",
+  "documents": [
+    {
+      "document_id": "05d252f3b5a6387b849956f7540d1b6fb7145113ab2365cee1addf1ffc0e29d1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeafa"
+  },
+  "name": "hình_thức đào_tạo",
+  "documents": [
+    {
+      "document_id": "05d252f3b5a6387b849956f7540d1b6fb7145113ab2365cee1addf1ffc0e29d1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeafd"
+  },
+  "name": "tín_chỉ học_phần sinh_viên tích_luỹ",
+  "documents": [
+    {
+      "document_id": "05d252f3b5a6387b849956f7540d1b6fb7145113ab2365cee1addf1ffc0e29d1",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeb00"
+  },
+  "name": "tín_chỉ học_tập",
+  "documents": [
+    {
+      "document_id": "869f24abff9bc0bb0369adf64babb83488a6313c20e80037f389859c9b1bb218",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeb03"
+  },
+  "name": "khối_lượng học_tập sinh_viên khối_lượng giảng_dạy giảng_viên",
+  "documents": [
+    {
+      "document_id": "869f24abff9bc0bb0369adf64babb83488a6313c20e80037f389859c9b1bb218",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeb0a"
+  },
+  "name": "kết_quả điểm trở",
+  "documents": [
+    {
+      "document_id": "75bd929333ceabe72decd3447b4b2b97c53d3709fe4d14076caaa69bc21c2abb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeb0c"
+  },
+  "name": "sinh_viên học",
+  "documents": [
+    {
+      "document_id": "75bd929333ceabe72decd3447b4b2b97c53d3709fe4d14076caaa69bc21c2abb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189cbc319f794459aeb10"
+  },
+  "name": "trong_trường",
+  "documents": [
+    {
+      "document_id": "75bd929333ceabe72decd3447b4b2b97c53d3709fe4d14076caaa69bc21c2abb",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189ccc319f794459aeb12"
+  },
+  "name": "mục_tiêu chương_trình giáo_dục đại_học trường",
+  "documents": [
+    {
+      "document_id": "39fe1f7ac9d500271e996e1b693a8379a2ded042f1e036504b9dd2a1cdecd33d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189ccc319f794459aeb14"
+  },
+  "name": "nhân_lực",
+  "documents": [
+    {
+      "document_id": "39fe1f7ac9d500271e996e1b693a8379a2ded042f1e036504b9dd2a1cdecd33d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189ccc319f794459aeb17"
+  },
+  "name": "dân_trí",
+  "documents": [
+    {
+      "document_id": "39fe1f7ac9d500271e996e1b693a8379a2ded042f1e036504b9dd2a1cdecd33d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189ccc319f794459aeb1a"
+  },
+  "name": "khoa_học phục_vụ",
+  "documents": [
+    {
+      "document_id": "39fe1f7ac9d500271e996e1b693a8379a2ded042f1e036504b9dd2a1cdecd33d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189ccc319f794459aeb1c"
+  },
+  "name": "kinh_tế xã_hội",
+  "documents": [
+    {
+      "document_id": "39fe1f7ac9d500271e996e1b693a8379a2ded042f1e036504b9dd2a1cdecd33d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189ccc319f794459aeb1e"
+  },
+  "name": "quốc_phòng an_ninh người học",
+  "documents": [
+    {
+      "document_id": "39fe1f7ac9d500271e996e1b693a8379a2ded042f1e036504b9dd2a1cdecd33d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189ccc319f794459aeb21"
+  },
+  "name": "yêu_cầu chuẩn đầu_ra bậc khung trình_độ quốc_gia việt_nam",
+  "documents": [
+    {
+      "document_id": "39fe1f7ac9d500271e996e1b693a8379a2ded042f1e036504b9dd2a1cdecd33d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+},
+{
+  "_id": {
+    "$oid": "691189ccc319f794459aeb23"
+  },
+  "name": "năng_lực",
+  "documents": [
+    {
+      "document_id": "39fe1f7ac9d500271e996e1b693a8379a2ded042f1e036504b9dd2a1cdecd33d",
+      "document_number": "790/QĐ-ĐHCNTT"
+    }
+  ],
+  "synonym": [],
+  "description": null
+}]
