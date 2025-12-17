@@ -29,4 +29,6 @@ class ChatResponse(BaseModel):
     answer: str
     question_type: str
     sources: List[Source]
+    # Optional debug information for tracing routing and retrieval decisions.
+    debug: Optional[dict] = None
 

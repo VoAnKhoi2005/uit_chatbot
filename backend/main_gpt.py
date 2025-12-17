@@ -5,7 +5,9 @@ import logging
 import sys
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException
+from typing import Optional
+
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -35,6 +37,7 @@ app.add_middleware(
 )
 
 logger.info("Initializing GPT client and chat pipeline")
+logger.warning("PIPELINE_VERSION=diagram-aligned-v1")
 gpt_client = GPTLLMClient()
 pipeline = ChatPipeline(llm_client=gpt_client)
 
@@ -97,7 +100,13 @@ async def get_document(doc_id: str):
     raise HTTPException(status_code=404, detail="PDF file not found")
 
 @app.post("/chat", response_model=ChatResponse)
-async def chat(req: ChatRequest):
+async def chat(
+    req: ChatRequest,
+    force_intent: Optional[str] = Query(
+        default=None,
+        description="Optional override for intent routing. One of: EXACT_RULE, NEAR_RULE, OUT_OF_SCOPE",
+    ),
+):
     logger.info("Chat request received")
 
     history = None
@@ -111,6 +120,8 @@ async def chat(req: ChatRequest):
     result = await pipeline.answer_question(
         req.question,
         conversation_history=history,
+        debug=True,
+        force_intent=force_intent,
     )
 
     sources = [
@@ -129,6 +140,12 @@ async def chat(req: ChatRequest):
     # Handle different response types (answer vs reply for clarification)
     answer_text = result.get("answer") or result.get("reply", "")
 
+    # Attach debug info if available
+    debug_info = result.get("debug") or {}
+    if force_intent:
+        debug_info["intent_forced"] = True
+        debug_info["forced_intent"] = force_intent
+
     logger.info(
         "Chat response generated (question_type=%s, sources=%d)",
         result.get("question_type"),
@@ -139,8 +156,14 @@ async def chat(req: ChatRequest):
         answer=answer_text,
         question_type=result["question_type"],
         sources=sources,
+        debug=debug_info or None,
     )
 
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=10000)
+
+# Example curl commands for demo-stable routing:
+# curl -X POST "http://127.0.0.1:10000/chat?force_intent=EXACT_RULE" -H "Content-Type: application/json" -d "{\"question\":\"điều kiện tốt nghiệp là gì\"}"
+# curl -X POST "http://127.0.0.1:10000/chat?force_intent=NEAR_RULE" -H "Content-Type: application/json" -d "{\"question\":\"em rớt 1 môn có sao không\"}"
+# curl -X POST "http://127.0.0.1:10000/chat?force_intent=OUT_OF_SCOPE" -H "Content-Type: application/json" -d "{\"question\":\"canteen hôm nay bán gì\"}"
