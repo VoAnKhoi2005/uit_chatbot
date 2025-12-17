@@ -1,11 +1,12 @@
-from graph.src.db import *
 import sys
+
+from graph.src.db import init_mongo
 from vector_db import *
 
 
 def main():
     # Kết nối MongoDB
-    mongo_client = init_mongo()
+    mongo_client = init_mongo("")
     if not mongo_client:
         print("❌ Failed to connect to MongoDB. Exiting.")
         sys.exit(1)

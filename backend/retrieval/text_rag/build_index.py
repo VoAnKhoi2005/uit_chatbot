@@ -6,15 +6,16 @@ import logging
 import os
 from pathlib import Path
 
-from .chunker import iter_all_chunks
-from .embeddings import TextEmbedder
-from .vector_store import ChunkVectorStore
+from retrieval.text_rag.chunker import iter_all_chunks
+from retrieval.text_rag.embeddings import TextEmbedder
+from retrieval.text_rag.vector_store import ChunkVectorStore
 
 
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
-    content_path = Path(os.getenv("UIT_CONTENT_JSON", "backend/graph/mongo_export_uit/KB_UIT.items.json"))
-    db_path = Path(os.getenv("UIT_VECTOR_DB", "backend/retrieval/text_rag/vector_store.db"))
+    content_path = Path(os.getenv("UIT_CONTENT_JSON", r"E:\Github\uit_chatbot\backend\graph\mongo_export_uit\KB_UIT.items.json"))
+    db_path = Path(os.getenv("UIT_VECTOR_DB", "vector_store.db"))
+    print("DB Path:", db_path)
     max_chars = int(os.getenv("UIT_CHUNK_MAX_CHARS", "800"))
 
     # build_index always uses full embedding (offline indexing)
