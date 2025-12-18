@@ -1,12 +1,29 @@
 from __future__ import annotations
 
+import os
 from collections import defaultdict
+from pathlib import Path
 from typing import List, Dict, Any
+
+import phonlp
+from graph.src.triplet_extraction.pos_taging import init_vncorenlp
+from graph.src.triplet_extraction.triplet_extraction import triplet_extraction
 from retrieval.src.db.vector_db import ConceptRelationDB
+from retrieval.src.extract_triplet import load_stopwords
 
 class TripletRetriever:
     def __init__(self):
         self.vector_db = ConceptRelationDB()
+        
+        # Initialize NLP models at startup
+        base_dir = Path(__file__).resolve().parent.parent.parent.parent
+        vncorenlp_dir = base_dir / "graph" / "nlp_models" / "VnCoreNLP-1.2"
+        phonlp_dir = base_dir / "graph" / "nlp_models" / "phonlp"
+        stopwords_file = base_dir / "graph" / "stopwords.csv"
+        
+        self.vncorenlp_client = init_vncorenlp(str(vncorenlp_dir))
+        self.phonlp_model = phonlp.load(save_dir=str(phonlp_dir))
+        self.stopwords = load_stopwords(str(stopwords_file))
 
     def _search_document_ids(self, text: str, is_concept: bool = True) -> List[str]:
         if is_concept:
@@ -28,10 +45,15 @@ class TripletRetriever:
     def search_relations_document_ids(self, text: str) -> List[str]:
         return self._search_document_ids(text, is_concept=False)
 
-    def search_triplet(self, triplet: Dict[str, str]) -> List[Dict[str, Any]]:
-        c1 = triplet["c1"]
-        c2 = triplet["c2"]
-        r = triplet["r"]
+    def search_triplet(self, triplet) -> List[Dict[str, Any]]:
+        # Handle both dict and tuple formats
+        if isinstance(triplet, dict):
+            c1 = triplet["c1"]
+            c2 = triplet["c2"]
+            r = triplet["r"]
+        else:
+            # Assume tuple format (c1, r, c2)
+            c1, r, c2 = triplet
 
         ds1 = self.search_concepts_document_ids(c1)
         ds2 = self.search_concepts_document_ids(c2)
@@ -66,6 +88,17 @@ class TripletRetriever:
             {"score": 1, "ids": priority_3_ids}
         ]
         return results
+
+    def search_triplets_from_question(self, question, top_k=8):
+        triplets = triplet_extraction(
+            text=question,
+            vncorenlp_client=self.vncorenlp_client,
+            phoNLP_model=self.phonlp_model,
+            stopwords=self.stopwords,
+            max_depth=2
+        )
+
+        return self.search_triplets(triplets)[:top_k]
 
     def search_triplets(self, triplets: List[Dict[str, str]]) -> List[Dict[str, Any]]:
         """

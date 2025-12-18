@@ -39,7 +39,7 @@ class ChatPipeline:
     EXACT_SCORE_DEFAULT = 0.33
     EXACT_DOM_DEFAULT = 0.45
     # New thresholds for diagram-aligned routing
-    EXACT_GOOD_SCORE = 0.55
+    EXACT_GOOD_SCORE = 0.45
     NEAR_MIN_GOOD_SCORE = 0.25
 
     # Generous domain keywords for study/training questions (accent-insensitive)
@@ -82,25 +82,32 @@ class ChatPipeline:
         "uit",
         "dhcntt",
         "truong",
-        "p.dtdh",
+        "dtdh",
+        "pttpc",
+        "chuong trinh",
+        "cttn",
+        "clc",
+        "cvht",
+        "cbct",
+        "nckh",
     ]
 
     # Obvious non-study / smalltalk keywords (accent-insensitive)
     NON_STUDY_KEYWORDS = [
-        "mua",
-        "nang",
-        "thoi tiet",
-        "du bao",
-        "bao nhieu do",
-        "nhiet do",
-        "bao",
-        "troi",
-        "canteen",
-        "can tin",
-        "phim",
-        "nhac",
-        "tinh yeu",
-        "bong da",
+        # "mua",
+        # "nang",
+        # "thoi tiet",
+        # "du bao",
+        # "bao nhieu do",
+        # "nhiet do",
+        # "bao",
+        # "troi",
+        # "canteen",
+        # "can tin",
+        # "phim",
+        # "nhac",
+        # "tinh yeu",
+        # "bong da",
     ]
     
     def __init__(
@@ -508,6 +515,282 @@ class ChatPipeline:
         # Update state
         self.state_store.update(user_id, question, selected_article_id)
         self.logger.info("[PIPELINE] Answer generation complete")
+        return result
+
+    async def get_context(
+            self,
+            question: str,
+            conversation_history: List[Dict[str, str]] | None = None,
+            debug: bool = False,
+            force_intent: Optional[str] = None,
+    ):
+        """
+        Answer a question, optionally with conversation history for multi-turn context.
+
+        Args:
+            question: The current question
+            conversation_history: List of previous messages in format [{"role": "user|bot", "content": "..."}]
+        """
+        self.logger.info("[PIPELINE] Starting answer_question for user=%s, question=%r", question)
+
+        # --- Hard OUT for obviously non-study/smalltalk questions ---
+        if self.is_obviously_non_study(question):
+            self.logger.info("[PIPELINE] Hard OUT_OF_SCOPE for obvious non-study question")
+            debug_info: Dict[str, Any] = {
+                "is_obviously_non_study": True,
+                "final_intent": QuestionType.OUT_OF_SCOPE.value,
+                "model_intent_suggestion": None,
+                "demo_override": False,
+                "intent_forced": False,
+                "answer_style": "helpful_out_of_scope",
+                "intent_decision_reason": "Hard OUT for obvious non-study/smalltalk question.",
+            }
+            base = await self._handle_out_of_scope(question)
+            # Ensure no KB bullets / sources
+            base["sources"] = []
+            base["question_type"] = QuestionType.OUT_OF_SCOPE.value
+            base["debug"] = debug_info
+            return base
+
+        # --- Intent classification (model label only, routing adjusted by thresholds) ---
+        classification_input = question
+        if conversation_history:
+            recent_history = (
+                conversation_history[-3:] if len(conversation_history) > 3 else conversation_history
+            )
+            history_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in recent_history])
+            classification_input = f"{history_text}\n\nCurrent question: {question}"
+
+        self.logger.info("[PIPELINE] Classifying question type via LLM...")
+        q_type = await classify_question(classification_input, self.llm_client)
+        self.logger.info("[PIPELINE] Question classified as: %s", q_type.value)
+
+        # --- Build retrieval query (rewrite for NEAR_RULE) ---
+        self.logger.info("[PIPELINE] Building retrieval query...")
+        retrieval_query = await self._build_retrieval_query_async(question, q_type, conversation_history or [])
+        self.logger.info("[PIPELINE] Retrieval query: %r", retrieval_query)
+
+        # --- HYBRID RETRIEVAL ---
+        if not self.hybrid:
+            self.logger.error("[PIPELINE] HybridOrchestrator is None, cannot proceed")
+            raise RuntimeError(
+                "HybridOrchestrator not initialized. This likely means TripletRetriever or VectorStore failed to initialize. "
+                "Check that: (1) vector_store.db exists, (2) graph NLP models are available, "
+                "(3) UIT_DISABLE_TRIPLET_RAG environment variable is not set if you need triplet retrieval."
+            )
+
+        self.logger.info(
+            "[PIPELINE] Running hybrid retrieval (text_top_k=%d, graph_top_k=%d)...",
+            self.top_k,
+            self.top_k,
+        )
+        # Always request debug info so we can compute routing metrics
+        hybrid_result = self.hybrid.run(
+            retrieval_query,
+            text_top_k=self.top_k,
+            graph_top_k=self.top_k,
+            debug=True,
+        )
+        context = hybrid_result["context"]
+        grounding = hybrid_result["grounding"]
+        selected_article_id = grounding.get("article_id")
+        dominance = grounding.get("dominance", 0.0)
+        candidates = grounding.get("candidates", [])
+        top_evidence = hybrid_result.get("top_evidence_for_debug", []) or []
+        text_hits = hybrid_result.get("text_hits", []) or []
+        graph_hits = hybrid_result.get("graph_hits", []) or []
+
+        num_evidence = len(top_evidence)
+        max_score = max((ev.get("score", 0.0) for ev in top_evidence), default=0.0)
+        anchor_count = len(candidates)
+
+        # --- C) Calibration & Confidence: evidence-quality filter ---
+        # C2: Compute good_hits (filter out TOC/heading noise)
+        good_hits = [h for h in text_hits if not self.is_toc_like(h.get("text", ""))]
+        good_count = len(good_hits)
+        toc_hits_count = len(text_hits) - good_count
+        good_max_score = max((h.get("score", 0.0) for h in good_hits), default=0.0) if good_hits else 0.0
+
+        # Domain detection (D0: Domain Gate)
+        # Use enhanced domain detection with LLM fallback if needed
+        is_study_domain, domain_reason = await self.is_study_domain_enhanced(
+            question, retrieval_query, []
+        )
+
+        # Thresholds (allow override via env)
+        out_score = float(os.getenv("UIT_ROUTING_OUT_SCORE", str(self.OUT_SCORE_DEFAULT)))
+        exact_score = float(os.getenv("UIT_ROUTING_EXACT_SCORE", str(self.EXACT_SCORE_DEFAULT)))
+        exact_dom = float(os.getenv("UIT_ROUTING_EXACT_DOM", str(self.EXACT_DOM_DEFAULT)))
+        exact_good_score = float(os.getenv("UIT_ROUTING_EXACT_GOOD_SCORE", str(self.EXACT_GOOD_SCORE)))
+        near_min_good_score = float(os.getenv("UIT_ROUTING_NEAR_MIN_GOOD_SCORE", str(self.NEAR_MIN_GOOD_SCORE)))
+
+        # --- Intent decision ---
+        intent_forced = False
+        final_intent = q_type.value
+        intent_reason = ""
+
+        # Normalize force_intent
+        force_intent_normalized = None
+        if force_intent:
+            fi = force_intent.strip().upper()
+            if fi in {QuestionType.EXACT_RULE.value, QuestionType.NEAR_RULE.value, QuestionType.OUT_OF_SCOPE.value}:
+                force_intent_normalized = fi
+
+        if force_intent_normalized:
+            intent_forced = True
+            final_intent = force_intent_normalized
+            intent_reason = f"Forced via API parameter force_intent={force_intent_normalized}"
+        else:
+            # --- D) Intent Decision (diagram-aligned) ---
+            # D1: Intent policy using good_hits and new thresholds
+            if not is_study_domain:
+                # Non-study domain: always OUT_OF_SCOPE
+                final_intent = QuestionType.OUT_OF_SCOPE.value
+                intent_reason = "OUT_OF_SCOPE because question is not in study domain."
+            else:
+                # Study domain: use good_hits for routing
+                if good_count == 0 or good_max_score < near_min_good_score:
+                    # No good evidence or very weak evidence
+                    final_intent = QuestionType.NEAR_RULE.value
+                    intent_reason = (
+                        "NEAR_RULE (in_domain_no_evidence) because good_count=0 or good_max_score < NEAR_MIN_GOOD_SCORE."
+                    )
+                elif good_max_score >= exact_good_score and (dominance >= exact_dom or max_score >= exact_score):
+                    # Strong evidence and high confidence
+                    final_intent = QuestionType.EXACT_RULE.value
+                    intent_reason = (
+                        "EXACT_RULE because good_max_score >= EXACT_GOOD_SCORE and dominance/max_score thresholds passed."
+                    )
+                else:
+                    # Moderate evidence
+                    final_intent = QuestionType.NEAR_RULE.value
+                    intent_reason = (
+                        "NEAR_RULE (grounded_with_clarification) because study-domain question has moderate evidence."
+                    )
+
+        # Log intent decision (D spec)
+        self.logger.info(
+            "[INTENT] study=%s, good_count=%d, good_max_score=%.3f, dominance=%.3f, final=%s",
+            is_study_domain,
+            good_count,
+            good_max_score,
+            dominance,
+            final_intent,
+        )
+
+        debug_info: Dict[str, Any] = {
+            "max_score": max_score,
+            "dominance": dominance,
+            "num_evidence": num_evidence,
+            "anchor_count": anchor_count,
+            "has_domain_signal": is_study_domain,
+            "is_study_domain": is_study_domain,
+            "domain_reason": domain_reason,
+            "good_count": good_count,
+            "good_max_score": good_max_score,
+            "toc_hits_count": toc_hits_count,
+            # For backward compatibility, keep classifier_label and chosen_intent,
+            # but also expose clearer names.
+            "classifier_label": q_type.value,
+            "model_intent_suggestion": q_type.value,
+            "chosen_intent": final_intent,
+            "final_intent": final_intent,
+            "intent_forced": intent_forced,
+            "forced_intent": force_intent_normalized,
+            "intent_decision_reason": intent_reason,
+        }
+
+        if debug:
+            debug_info["text_hits"] = text_hits
+            debug_info["graph_hits"] = graph_hits
+
+        # --- OUT_OF_SCOPE branch ---
+        if final_intent == QuestionType.OUT_OF_SCOPE.value:
+            self.logger.info("[PIPELINE] Handling OUT_OF_SCOPE intent")
+            debug_info["answer_style"] = "helpful_out_of_scope"
+            base = await self._handle_out_of_scope(question)
+            base["debug"] = debug_info
+            # Ensure question_type in response matches final intent
+            base["question_type"] = final_intent
+            return base
+
+        # --- Normal answer flow (EXACT_RULE / NEAR_RULE) ---
+        self.logger.info(
+            "[PIPELINE] Generating answer for article_id=%s with intent=%s",
+            selected_article_id,
+            final_intent,
+        )
+
+        # --- E) Compose Context + Citations (diagram box) ---
+        # Use good_hits only for context composition
+        evidence_for_context = good_hits if good_hits else []
+
+        # Determine answer style for NEAR
+        answer_style = "grounded_with_clarification"
+        if final_intent == QuestionType.NEAR_RULE.value:
+            if good_count == 0 or good_max_score < near_min_good_score:
+                answer_style = "in_domain_no_evidence"
+                # For in_domain_no_evidence: do not compose KB context
+                evidence_for_context = []
+            else:
+                answer_style = "grounded_with_clarification"
+                # For grounded_with_clarification: use top 3 good_hits to keep concise
+                evidence_for_context = good_hits[:3]
+
+        # EXACT: compose context using good_hits only (not TOC hits)
+        if final_intent == QuestionType.EXACT_RULE.value:
+            evidence_for_context = good_hits
+
+        # Build context from evidence_for_context
+        if evidence_for_context:
+            context_lines = ["Các đoạn trích liên quan:"]
+            for ev in evidence_for_context:
+                text = ev.get("text", "").strip()
+                article_id_ev = ev.get("article_id") or ""
+                clause_id_ev = ev.get("clause_id") or ""
+                if text:
+                    context_lines.append(f"- Article: {article_id_ev}, Clause: {clause_id_ev}, Text: {text}")
+            context = "\n".join(context_lines)
+        else:
+            context = ""
+
+        # Enrich ontology facts chỉ theo grounding
+        ontology_facts = []
+        if selected_article_id:
+            try:
+                ontology_facts = get_article_by_id(self.ontology_graph, selected_article_id)
+                self.logger.debug("[PIPELINE] Loaded %d ontology facts for article_id=%s", len(ontology_facts),
+                                  selected_article_id)
+            except Exception as e:
+                self.logger.warning("[PIPELINE] Failed to load ontology facts: %s", e)
+                ontology_facts = []
+        # Add ontology facts to context
+        if ontology_facts:
+            context = f"{context}\n\nONTOLOGY FACTS:\n" + "\n".join([f.get("text", "") for f in ontology_facts])
+            self.logger.debug("[PIPELINE] Added ontology facts to context")
+
+        # --- F9: Citation builder ---
+        # Use evidence_for_context for citations (good_hits only)
+        citations = build_citations(evidence_for_context, self.registry)
+        citation_text = "; ".join([c["display"] for c in citations]) if citations else None
+        self.logger.debug("[PIPELINE] Built %d citations", len(citations) if citations else 0)
+
+        # --- F) LLM Generate Answer (diagram box) ---
+        self.logger.info("[PIPELINE] Calling LLM to generate answer...")
+        if final_intent == QuestionType.EXACT_RULE.value:
+            system_prompt = EXACT_RULE_ANSWER_SYSTEM_PROMPT
+            # Add rule about numeric thresholds (F spec)
+            system_prompt += "\n\nQUAN TRỌNG: Không được xuất ra các ngưỡng số (ví dụ: điểm, tín chỉ, thời gian) trừ khi chúng xuất hiện nguyên văn trong bằng chứng được cung cấp."
+        else:
+            # NEAR_RULE or any other in-domain fallback
+            system_prompt = ANSWER_SYSTEM_PROMPT
+
+        result = {
+            "system_prompt": system_prompt,
+            "context": context,
+            "debug": debug_info,
+        }
+
         return result
 
     async def _handle_out_of_scope(self, question: str) -> Dict[str, Any]:

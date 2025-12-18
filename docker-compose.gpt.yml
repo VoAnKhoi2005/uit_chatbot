@@ -2,7 +2,8 @@
 #
 # Prerequisites (run on host before building):
 #   1. Generate ontology TTL: python -m ontology.from_jsonl
-#   2. Build vector index: python -m retrieval.text_rag.build_index
+#   2. Build text vector index: python -m retrieval.text_rag.build_index
+#   3. Build graph vector index: python -m retrieval.src.db.import_vector_db (if needed)
 #
 # Usage:
 #   docker compose -f docker-compose.gpt.yml build    # Build both images
@@ -13,6 +14,8 @@
 # Services:
 #   - Backend API (GPT): http://localhost:10000
 #   - Frontend UI: http://localhost:4173
+#
+# Note: Vector DBs are mounted from backend/ folder to ensure latest indexed data is used
 
 services:
   backend:
@@ -25,17 +28,19 @@ services:
     environment:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
-      UIT_TTL_PATH: /app/ontology/uit_regulations.ttl
-      UIT_VECTOR_DB: /app/data/vector_store.db
+      UIT_TTL_PATH: /app/backend/ontology/uit_regulations.ttl
+      UIT_VECTOR_DB: /app/backend/retrieval/text_rag/vector_store.db
+      VECTOR_DB_PATH: /app/backend/retrieval/src/db/vector.db
       UIT_DISABLE_LOCAL_EMBEDDER: ${UIT_DISABLE_LOCAL_EMBEDDER:-1}
       PYTHONUNBUFFERED: 1
     ports:
       - "10000:10000"
     volumes:
-      # Mount only specific files/dirs that may change during development
-      - ./ontology:/app/ontology:ro
-      - ./data/vector_store.db:/app/data/vector_store.db:ro
-      # Note: graph/mongo_export_uit and jupyter/doc_sources.csv are baked into image
+      # Mount vector DBs from backend folder (read-only)
+      - ./backend/retrieval/text_rag/vector_store.db:/app/backend/retrieval/text_rag/vector_store.db:ro
+      - ./backend/retrieval/src/db/vector.db:/app/backend/retrieval/src/db/vector.db:ro
+      - ./backend/ontology:/app/backend/ontology:ro
+      # Note: graph/mongo_export_uit and data/doc_sources.csv are baked into image
     restart: on-failure
     # Backend runs uvicorn backend.api.main_gpt:app on port 10000
     # Environment variables (OPENAI_API_KEY, OPENAI_MODEL, etc.) loaded from .env
