@@ -54,4 +54,4 @@ logs/
 .DS_Store
 *.db-journal
 
-pdfs/
+# pdfs/  # Commented out - PDFs needed for document serving endpoint

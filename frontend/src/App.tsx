@@ -464,12 +464,6 @@ export default function App() {
                     >
                       "Điều kiện tốt nghiệp là gì?"
                     </div>
-                    <div 
-                      className="example-chip" 
-                      onClick={() => setInput("Quy định về bảo lưu")}
-                    >
-                      "Quy định về bảo lưu"
-                    </div>
                   </div>
                 </div>
               )}
