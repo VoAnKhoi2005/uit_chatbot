@@ -104,8 +104,16 @@ $env:UIT_CONTENT_JSON="graph/mongo_export_uit/KB_UIT.items.json"
 $env:UIT_VECTOR_DB="retrieval/text_rag/vector_store.db"
 python -m retrieval.text_rag.build_index
 
+$env:UIT_TRIPLETS_PATH="graph/mongo_export_uit/v3/KB_UIT.triplets.json"
+python -m retrieval.src.retrieval.build_graph_index
+
 Set-Location ..
 ```
+
+The last step pre-warms the knowledge-graph embedding cache (see
+`retrieval/src/db/faiss_store.py`) so the app's own next start doesn't need
+to call the embedder for any unchanged node/triple text - only for what
+actually changed since the last rebuild.
 
 ## Environment variables
 

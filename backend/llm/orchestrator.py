@@ -163,7 +163,12 @@ class ChatPipeline:
             self.logger.info("GraphRetriever disabled via UIT_DISABLE_TRIPLET_RAG")
         else:
             try:
-                self.graph_retriever = GraphRetriever(embedder=self.embedder)
+                # Minimum cosine similarity a newly-discovered node needs to keep
+                # being expanded from during graph traversal; "" / "none" disables
+                # pruning. See GraphRetriever.expand().
+                prune_raw = os.getenv("UIT_GRAPH_PRUNE_THRESHOLD", "0.1").strip().lower()
+                graph_prune_threshold = None if prune_raw in ("", "none", "off") else float(prune_raw)
+                self.graph_retriever = GraphRetriever(embedder=self.embedder, prune_threshold=graph_prune_threshold)
                 self.logger.info(
                     "GraphRetriever initialized successfully (%d nodes, %d triples)",
                     len(self.graph_retriever.nodes),

@@ -4,6 +4,7 @@
 #   1. Generate ontology TTL: python -m ontology.from_jsonl
 #   2. Build text vector index: python -m retrieval.text_rag.build_index
 #   3. Build graph vector index: python -m retrieval.src.db.import_vector_db (if needed)
+#   4. Warm the graph embedding cache: python -m retrieval.src.retrieval.build_graph_index
 #
 # Usage:
 #   docker compose -f docker-compose.gpt.yml build    # Build both images
@@ -39,6 +40,7 @@ services:
       # Mount vector DBs from backend folder (read-only)
       - ./backend/retrieval/text_rag/vector_store.db:/app/backend/retrieval/text_rag/vector_store.db:ro
       - ./backend/retrieval/src/db/vector.db:/app/backend/retrieval/src/db/vector.db:ro
+      - ./backend/retrieval/src/db/faiss_indexes:/app/backend/retrieval/src/db/faiss_indexes:ro
       - ./backend/ontology:/app/backend/ontology:ro
       # Note: graph/mongo_export_uit and data/doc_sources.csv are baked into image
     restart: on-failure

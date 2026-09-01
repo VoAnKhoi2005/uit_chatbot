@@ -21,6 +21,7 @@ torchaudio
 
 # Now install sentence-transformers (will use CPU PyTorch above)
 sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
 
 # NLP models for Vietnamese
 phonlp>=0.2.0

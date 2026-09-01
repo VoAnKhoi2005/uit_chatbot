@@ -12,6 +12,7 @@ rdflib>=6.3.0
 # Vector embeddings and ML
 numpy>=1.24.0
 sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
 
 # HTTP client for Groq API
 requests>=2.31.0
