@@ -10,10 +10,9 @@ Example usage:
 from __future__ import annotations
 
 import asyncio
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock
 
 from backend.llm.orchestrator import ChatPipeline
-from backend.llm.question_types import QuestionType
 
 
 async def test_exact_rule_direct_answer():
@@ -23,11 +22,7 @@ async def test_exact_rule_direct_answer():
     """
     # Mock LLM client (should NOT be called for EXACT_RULE)
     mock_llm_client = MagicMock()
-    
-    # Mock classify_question để trả về EXACT_RULE
-    async def mock_classify(question, client):
-        return QuestionType.EXACT_RULE
-    
+
     # Mock vector store để trả về chunks có thông tin về tín chỉ
     mock_vector_store = MagicMock()
     mock_chunks = [
@@ -58,11 +53,9 @@ async def test_exact_rule_direct_answer():
         ontology_graph=mock_ontology_graph,
     )
     
-    # Patch classify_question
-    with patch("backend.llm.orchestrator.classify_question", side_effect=mock_classify):
-        # Test question
-        question = "Sinh viên được đăng ký tối đa bao nhiêu tín chỉ trong 1 học kỳ chính?"
-        result = await pipeline.answer_question(question)
+    # Test question
+    question = "Sinh viên được đăng ký tối đa bao nhiêu tín chỉ trong 1 học kỳ chính?"
+    result = await pipeline.answer_question(question)
     
     # Assertions
     assert result["question_type"] == "EXACT_RULE"
@@ -95,24 +88,20 @@ async def test_exact_rule_no_sources():
     trả về fallback message.
     """
     mock_llm_client = MagicMock()
-    
-    async def mock_classify(question, client):
-        return QuestionType.EXACT_RULE
-    
+
     mock_vector_store = MagicMock()
     mock_vector_store.search = MagicMock(return_value=[])  # No chunks
-    
+
     mock_ontology_graph = MagicMock()
-    
+
     pipeline = ChatPipeline(
         llm_client=mock_llm_client,
         vector_store=mock_vector_store,
         ontology_graph=mock_ontology_graph,
     )
-    
-    with patch("backend.llm.orchestrator.classify_question", side_effect=mock_classify):
-        question = "Câu hỏi không có trong dữ liệu"
-        result = await pipeline.answer_question(question)
+
+    question = "Câu hỏi không có trong dữ liệu"
+    result = await pipeline.answer_question(question)
     
     assert result["question_type"] == "EXACT_RULE"
     assert len(result["sources"]) == 0, "Không có sources"

@@ -10,10 +10,9 @@ Example usage:
 from __future__ import annotations
 
 import asyncio
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock, MagicMock
 
 from backend.llm.orchestrator import ChatPipeline
-from backend.llm.question_types import QuestionType
 
 
 def test_vietnamese_normalization():
@@ -176,25 +175,25 @@ async def test_multi_turn_query_building():
     current_question = "Vậy nếu em bị cảnh báo thì có ảnh hưởng gì không?"
     retrieval_query = await pipeline._build_retrieval_query_async(
         current_question,
-        QuestionType.NEAR_RULE,
         conversation_history
     )
-    
+
     # Should combine previous question with current
     assert "rớt 3 môn" in retrieval_query.lower() or "cảnh báo" in retrieval_query.lower(), \
         f"Multi-turn query should include context. Got: {retrieval_query}"
-    
+
     # Test without discourse marker
     current_question2 = "Điều kiện để bị cảnh báo học vụ là gì?"
     retrieval_query2 = await pipeline._build_retrieval_query_async(
         current_question2,
-        QuestionType.EXACT_RULE,
         conversation_history
     )
-    
-    # Should NOT combine (no discourse marker)
-    assert current_question2 in retrieval_query2, \
-        f"Query without discourse marker should not combine. Got: {retrieval_query2}"
+
+    # Should NOT combine (no discourse marker): the previous turn's question
+    # must not be pulled into this one, regardless of how the (always-on)
+    # regulation-oriented rewrite phrases the retrieval query itself.
+    assert "rớt 3 môn" not in retrieval_query2.lower(), \
+        f"Query without discourse marker should not pull in the previous turn. Got: {retrieval_query2}"
     
     print("✅ Multi-turn query building test passed!")
     print(f"With discourse marker: {retrieval_query[:100]}...")

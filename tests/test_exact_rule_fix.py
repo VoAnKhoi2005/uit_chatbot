@@ -10,10 +10,9 @@ Example usage:
 from __future__ import annotations
 
 import asyncio
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock, MagicMock
 
 from backend.llm.orchestrator import ChatPipeline
-from backend.llm.question_types import QuestionType
 
 
 async def test_exact_rule_with_sources():
@@ -23,11 +22,7 @@ async def test_exact_rule_with_sources():
     """
     # Mock LLM client
     mock_llm_client = MagicMock()
-    
-    # Mock classify_question để trả về EXACT_RULE
-    async def mock_classify(question, client):
-        return QuestionType.EXACT_RULE
-    
+
     # Mock generate để trả về answer dựa trên context
     async def mock_generate(system_prompt, user_prompt, context=""):
         # Kiểm tra xem có dùng EXACT_RULE_ANSWER_SYSTEM_PROMPT không
@@ -69,11 +64,9 @@ async def test_exact_rule_with_sources():
         ontology_graph=mock_ontology_graph,
     )
     
-    # Patch classify_question
-    with patch("backend.llm.orchestrator.classify_question", side_effect=mock_classify):
-        # Test question
-        question = "Sinh viên được đăng ký tối đa bao nhiêu tín chỉ trong 1 học kỳ chính?"
-        result = await pipeline.answer_question(question)
+    # Test question
+    question = "Sinh viên được đăng ký tối đa bao nhiêu tín chỉ trong 1 học kỳ chính?"
+    result = await pipeline.answer_question(question)
     
     # Assertions
     assert result["question_type"] == "EXACT_RULE"

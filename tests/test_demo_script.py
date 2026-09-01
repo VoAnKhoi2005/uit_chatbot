@@ -10,10 +10,9 @@ Example usage:
 from __future__ import annotations
 
 import asyncio
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock, MagicMock
 
 from backend.llm.orchestrator import ChatPipeline
-from backend.llm.question_types import QuestionType
 
 
 # Demo questions
@@ -30,11 +29,7 @@ async def test_q1_exact_rule():
     Q1: "Sinh viên được đăng ký tối đa bao nhiêu tín chỉ trong 1 học kỳ chính?"
     """
     mock_llm_client = MagicMock()
-    
-    async def mock_classify(question, client):
-        # Should classify as EXACT_RULE
-        return QuestionType.EXACT_RULE
-    
+
     mock_vector_store = MagicMock()
     mock_chunks = [
         {
@@ -54,15 +49,14 @@ async def test_q1_exact_rule():
     ]
     mock_vector_store.search = MagicMock(return_value=mock_chunks)
     mock_ontology_graph = MagicMock()
-    
+
     pipeline = ChatPipeline(
         llm_client=mock_llm_client,
         vector_store=mock_vector_store,
         ontology_graph=mock_ontology_graph,
     )
-    
-    with patch("backend.llm.orchestrator.classify_question", side_effect=mock_classify):
-        result = await pipeline.answer_question(Q1)
+
+    result = await pipeline.answer_question(Q1)
     
     # Assertions
     assert result["question_type"] == "EXACT_RULE", f"Expected EXACT_RULE, got {result['question_type']}"
@@ -96,30 +90,25 @@ async def test_q2_near_rule():
     Q2: "Em rớt 3 môn thì có bị sao không ạ?"
     """
     mock_llm_client = MagicMock()
-    
-    async def mock_classify(question, client):
-        # Should classify as NEAR_RULE (informal but about regulations)
-        return QuestionType.NEAR_RULE
-    
+
     async def mock_generate(system_prompt, user_prompt, context=""):
         # LLM should answer based on context
         return "Theo quy định, sinh viên có thể bị cảnh báo học vụ nếu kết quả học tập không đạt..."
-    
+
     mock_llm_client.generate = AsyncMock(side_effect=mock_generate)
-    mock_llm_client.generate_json = AsyncMock(return_value={"label": "NEAR_RULE", "reason": "..."})
-    
+    mock_llm_client.generate_json = AsyncMock(return_value={"label": "IN_SCOPE", "reason": "..."})
+
     mock_vector_store = MagicMock()
     mock_vector_store.search = MagicMock(return_value=[])  # May or may not have sources
     mock_ontology_graph = MagicMock()
-    
+
     pipeline = ChatPipeline(
         llm_client=mock_llm_client,
         vector_store=mock_vector_store,
         ontology_graph=mock_ontology_graph,
     )
-    
-    with patch("backend.llm.orchestrator.classify_question", side_effect=mock_classify):
-        result = await pipeline.answer_question(Q2)
+
+    result = await pipeline.answer_question(Q2)
     
     assert result["question_type"] == "NEAR_RULE", \
         f"Expected NEAR_RULE, got {result['question_type']}"
@@ -138,28 +127,24 @@ async def test_q3_out_of_scope():
     Q3: "Theo thầy em nên học lại hay rút môn thì tốt hơn?"
     """
     mock_llm_client = MagicMock()
-    
-    async def mock_classify(question, client):
-        return QuestionType.OUT_OF_SCOPE
-    
+
     async def mock_generate(system_prompt, user_prompt, context=""):
         return "Câu hỏi này cần lời khuyên cá nhân. Bạn nên liên hệ cố vấn học tập hoặc Phòng Đào tạo..."
-    
+
     mock_llm_client.generate = AsyncMock(side_effect=mock_generate)
     mock_llm_client.generate_json = AsyncMock(return_value={"label": "OUT_OF_SCOPE", "reason": "..."})
-    
+
     mock_vector_store = MagicMock()
     mock_vector_store.search = MagicMock(return_value=[])
     mock_ontology_graph = MagicMock()
-    
+
     pipeline = ChatPipeline(
         llm_client=mock_llm_client,
         vector_store=mock_vector_store,
         ontology_graph=mock_ontology_graph,
     )
-    
-    with patch("backend.llm.orchestrator.classify_question", side_effect=mock_classify):
-        result = await pipeline.answer_question(Q3)
+
+    result = await pipeline.answer_question(Q3)
     
     assert result["question_type"] == "OUT_OF_SCOPE", \
         f"Expected OUT_OF_SCOPE, got {result['question_type']}"
@@ -181,14 +166,7 @@ async def test_q4_q5_multiturn():
     Q5: "Vậy nếu em bị cảnh báo thì có ảnh hưởng gì không?"
     """
     mock_llm_client = MagicMock()
-    
-    async def mock_classify_q4(question, client):
-        return QuestionType.EXACT_RULE
-    
-    async def mock_classify_q5(question, client):
-        # Q5 should be NEAR_RULE (informal but about regulations)
-        return QuestionType.NEAR_RULE
-    
+
     async def mock_generate(system_prompt, user_prompt, context=""):
         if "cảnh báo" in user_prompt.lower() and "ảnh hưởng" in user_prompt.lower():
             # Q5: should reference previous context about warning
@@ -196,8 +174,8 @@ async def test_q4_q5_multiturn():
         return "Default answer"
     
     mock_llm_client.generate = AsyncMock(side_effect=mock_generate)
-    mock_llm_client.generate_json = AsyncMock(return_value={"label": "NEAR_RULE", "reason": "..."})
-    
+    mock_llm_client.generate_json = AsyncMock(return_value={"label": "IN_SCOPE", "reason": "..."})
+
     mock_vector_store = MagicMock()
     mock_chunks_q4 = [
         {
@@ -222,9 +200,8 @@ async def test_q4_q5_multiturn():
     )
     
     # Q4
-    with patch("backend.llm.orchestrator.classify_question", side_effect=mock_classify_q4):
-        result_q4 = await pipeline.answer_question(Q4)
-    
+    result_q4 = await pipeline.answer_question(Q4)
+
     assert result_q4["question_type"] == "EXACT_RULE"
     assert "3,0" in result_q4["answer"] or "4,0" in result_q4["answer"] or "cảnh báo" in result_q4["answer"].lower()
     
@@ -234,8 +211,7 @@ async def test_q4_q5_multiturn():
         {"role": "bot", "content": result_q4["answer"]}
     ]
     
-    with patch("backend.llm.orchestrator.classify_question", side_effect=mock_classify_q5):
-        result_q5 = await pipeline.answer_question(Q5, conversation_history=conversation_history)
+    result_q5 = await pipeline.answer_question(Q5, conversation_history=conversation_history)
     
     assert result_q5["question_type"] == "NEAR_RULE" or result_q5["question_type"] == "EXACT_RULE"
     # Answer should reference "cảnh báo" from previous context

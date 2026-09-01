@@ -10,10 +10,9 @@ Example usage:
 from __future__ import annotations
 
 import asyncio
-from unittest.mock import AsyncMock, MagicMock, patch
+from unittest.mock import AsyncMock, MagicMock
 
 from backend.llm.orchestrator import ChatPipeline
-from backend.llm.question_types import QuestionType
 
 
 # Demo questions
@@ -29,12 +28,9 @@ async def test_q1_keyword_ranking():
     Test that the system picks the rule with credit limits (14-24, 30) instead of a generic rule.
     """
     mock_llm_client = MagicMock()
-    
-    async def mock_classify(question, client):
-        return QuestionType.EXACT_RULE
-    
+
     mock_vector_store = MagicMock()
-    
+
     # Simulate retrieved chunks: Rule A (wrong, generic) and Rule B (correct, has credit limits)
     mock_chunks = [
         {
@@ -66,8 +62,7 @@ async def test_q1_keyword_ranking():
         ontology_graph=mock_ontology_graph,
     )
     
-    with patch("backend.llm.orchestrator.classify_question", side_effect=mock_classify):
-        result = await pipeline.answer_question(Q1)
+    result = await pipeline.answer_question(Q1)
     
     # Assertions
     assert result["question_type"] == "EXACT_RULE"
@@ -106,10 +101,7 @@ async def test_q2_near_rule_helpful():
     instead of saying "không có thông tin".
     """
     mock_llm_client = MagicMock()
-    
-    async def mock_classify(question, client):
-        return QuestionType.NEAR_RULE
-    
+
     async def mock_generate(system_prompt, user_prompt, context=""):
         # LLM should map "rớt 3 môn" to academic warning regulations
         # and answer based on available rules in context
@@ -123,8 +115,8 @@ async def test_q2_near_rule_helpful():
         return "Default answer"
     
     mock_llm_client.generate = AsyncMock(side_effect=mock_generate)
-    mock_llm_client.generate_json = AsyncMock(return_value={"label": "NEAR_RULE", "reason": "..."})
-    
+    mock_llm_client.generate_json = AsyncMock(return_value={"label": "IN_SCOPE", "reason": "..."})
+
     mock_vector_store = MagicMock()
     # Simulate some academic warning rules in context
     mock_chunks = [
@@ -149,8 +141,7 @@ async def test_q2_near_rule_helpful():
         ontology_graph=mock_ontology_graph,
     )
     
-    with patch("backend.llm.orchestrator.classify_question", side_effect=mock_classify):
-        result = await pipeline.answer_question(Q2)
+    result = await pipeline.answer_question(Q2)
     
     assert result["question_type"] == "NEAR_RULE", \
         f"Expected NEAR_RULE, got {result['question_type']}"

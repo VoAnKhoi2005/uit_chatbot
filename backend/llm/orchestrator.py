@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from llm.client import LLMClient
-from llm.question_classifier import classify_question
+from llm.scope_gate import check_in_scope
 from llm.question_types import QuestionType
 from llm.prompts import (
     ANSWER_SYSTEM_PROMPT,
@@ -241,7 +241,7 @@ class ChatPipeline:
             base["debug"] = debug_info
             return base
 
-        # --- Intent classification (model label only, routing adjusted by thresholds) ---
+        # --- Multi-turn context for the scope gate (uses recent history, if any) ---
         classification_input = question
         if conversation_history:
             recent_history = (
@@ -250,13 +250,9 @@ class ChatPipeline:
             history_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in recent_history])
             classification_input = f"{history_text}\n\nCurrent question: {question}"
 
-        self.logger.info("[PIPELINE] Classifying question type via LLM...")
-        q_type = await classify_question(classification_input, self.llm_client)
-        self.logger.info("[PIPELINE] Question classified as: %s", q_type.value)
-
-        # --- Build retrieval query (rewrite for NEAR_RULE) ---
+        # --- Build retrieval query (regulation-oriented rewrite) ---
         self.logger.info("[PIPELINE] Building retrieval query...")
-        retrieval_query = await self._build_retrieval_query_async(question, q_type, conversation_history or [])
+        retrieval_query = await self._build_retrieval_query_async(question, conversation_history or [])
         self.logger.info("[PIPELINE] Retrieval query: %r", retrieval_query)
         
         # --- HYBRID RETRIEVAL ---
@@ -314,8 +310,10 @@ class ChatPipeline:
         near_min_good_score = float(os.getenv("UIT_ROUTING_NEAR_MIN_GOOD_SCORE", str(self.NEAR_MIN_GOOD_SCORE)))
 
         # --- Intent decision ---
+        # EXACT_RULE vs NEAR_RULE is decided below from retrieval evidence quality;
+        # this initial value only matters if some future path fails to overwrite it.
         intent_forced = False
-        final_intent = q_type.value
+        final_intent = QuestionType.NEAR_RULE.value
         intent_reason = ""
 
         # Normalize force_intent
@@ -378,10 +376,7 @@ class ChatPipeline:
             "good_count": good_count,
             "good_max_score": good_max_score,
             "toc_hits_count": toc_hits_count,
-            # For backward compatibility, keep classifier_label and chosen_intent,
-            # but also expose clearer names.
-            "classifier_label": q_type.value,
-            "model_intent_suggestion": q_type.value,
+            "model_intent_suggestion": "IN_SCOPE" if is_study_domain else "OUT_OF_SCOPE",
             "chosen_intent": final_intent,
             "final_intent": final_intent,
             "intent_forced": intent_forced,
@@ -569,7 +564,7 @@ class ChatPipeline:
             base["debug"] = debug_info
             return base
 
-        # --- Intent classification (model label only, routing adjusted by thresholds) ---
+        # --- Multi-turn context for the scope gate (uses recent history, if any) ---
         classification_input = question
         if conversation_history:
             recent_history = (
@@ -578,13 +573,9 @@ class ChatPipeline:
             history_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in recent_history])
             classification_input = f"{history_text}\n\nCurrent question: {question}"
 
-        self.logger.info("[PIPELINE] Classifying question type via LLM...")
-        q_type = await classify_question(classification_input, self.llm_client)
-        self.logger.info("[PIPELINE] Question classified as: %s", q_type.value)
-
-        # --- Build retrieval query (rewrite for NEAR_RULE) ---
+        # --- Build retrieval query (regulation-oriented rewrite) ---
         self.logger.info("[PIPELINE] Building retrieval query...")
-        retrieval_query = await self._build_retrieval_query_async(question, q_type, conversation_history or [])
+        retrieval_query = await self._build_retrieval_query_async(question, conversation_history or [])
         self.logger.info("[PIPELINE] Retrieval query: %r", retrieval_query)
 
         # --- HYBRID RETRIEVAL ---
@@ -642,8 +633,10 @@ class ChatPipeline:
         near_min_good_score = float(os.getenv("UIT_ROUTING_NEAR_MIN_GOOD_SCORE", str(self.NEAR_MIN_GOOD_SCORE)))
 
         # --- Intent decision ---
+        # EXACT_RULE vs NEAR_RULE is decided below from retrieval evidence quality;
+        # this initial value only matters if some future path fails to overwrite it.
         intent_forced = False
-        final_intent = q_type.value
+        final_intent = QuestionType.NEAR_RULE.value
         intent_reason = ""
 
         # Normalize force_intent
@@ -706,10 +699,7 @@ class ChatPipeline:
             "good_count": good_count,
             "good_max_score": good_max_score,
             "toc_hits_count": toc_hits_count,
-            # For backward compatibility, keep classifier_label and chosen_intent,
-            # but also expose clearer names.
-            "classifier_label": q_type.value,
-            "model_intent_suggestion": q_type.value,
+            "model_intent_suggestion": "IN_SCOPE" if is_study_domain else "OUT_OF_SCOPE",
             "chosen_intent": final_intent,
             "final_intent": final_intent,
             "intent_forced": intent_forced,
@@ -1265,30 +1255,30 @@ class ChatPipeline:
         self, question: str, rewritten_query: str = "", keywords: List[str] = None
     ) -> tuple[bool, str]:
         """
-        Domain gate with LLM fallback (D0 spec).
-        Layer A: heuristic keyword list (score-based).
-        Layer B: if uncertain, call LLM classifier to output strict JSON.
+        Domain/out-of-scope gate.
+        Layer A: heuristic keyword list (fast path, score-based, no LLM call).
+        Layer B: if the heuristic finds no signal at all, fall back to the
+        simple LLM scope gate (see llm.scope_gate.check_in_scope) instead of
+        just defaulting to out-of-scope.
         Returns: (is_study_domain: bool, reason: str)
         """
         # Layer A: heuristic keyword check
         normalized = self._normalize_vietnamese(question)
         heuristic_score = sum(1 for kw in self.STUDY_KEYWORDS if kw in normalized)
-        
-        # If strong signal (multiple keywords), return True
+
         if heuristic_score >= 2:
             return True, f"Heuristic: found {heuristic_score} study keywords"
-        
-        # If at least one keyword, likely study domain
         if heuristic_score >= 1:
-            return True, f"Heuristic: found study keyword"
-        
-        # If no keywords but question is very short or ambiguous, use LLM fallback
-        # For now, we'll use heuristic only (LLM fallback can be added if needed)
-        # For uncertain cases with no keywords, default to False
-        if heuristic_score == 0:
-            return False, "Heuristic: no study keywords found"
-        
-        return False, "Heuristic: uncertain"
+            return True, "Heuristic: found study keyword"
+
+        # Layer B: no heuristic signal at all - ask the LLM instead of assuming out-of-scope.
+        classification_input = f"{rewritten_query}\n\n{question}" if rewritten_query else question
+        try:
+            in_scope = await check_in_scope(classification_input, self.llm_client)
+            return in_scope, f"LLM scope gate: {'in_scope' if in_scope else 'out_of_scope'}"
+        except Exception as e:
+            self.logger.warning("[SCOPE-GATE] LLM gate failed, defaulting to out-of-scope: %s", e)
+            return False, f"LLM scope gate failed ({e}); defaulted to out_of_scope"
 
     def is_obviously_non_study(self, question: str) -> bool:
         """Detect clearly non-study topics like weather, canteen, movies, sports, love advice."""
@@ -1781,19 +1771,17 @@ Chỉ trả về JSON, không có text khác."""
     async def _build_retrieval_query_async(
         self,
         question: str,
-        q_type: QuestionType,
         conversation_history: List[Dict[str, str]] | None,
     ) -> str:
         """
         Build retrieval query with query rewriting (async) and multi-turn context.
+
+        Always rewrites into a formal, regulation-oriented query (no more
+        upfront EXACT_RULE/NEAR_RULE label to gate this on - EXACT_RULE vs
+        NEAR_RULE is decided later from retrieval evidence quality).
         """
-        # Step 1: Query rewriting for NEAR_RULE
-        if q_type == QuestionType.NEAR_RULE:
-            rewritten = await self._rewrite_query_for_regulations(question)
-            current_query = rewritten
-        else:
-            current_query = question
-        
+        current_query = await self._rewrite_query_for_regulations(question)
+
         # Step 2: Multi-turn query building
         normalized_question = self._normalize_vietnamese(question)
         discourse_markers = ["vay", "the", "con", "neu vay", "vay thi"]
