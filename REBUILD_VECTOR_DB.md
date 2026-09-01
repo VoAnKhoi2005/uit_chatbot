@@ -37,13 +37,14 @@ UIT_CHUNK_MAX_CHARS=800
 ### What It Does
 1. Reads `KB_UIT.items.json` (article data)
 2. Splits articles into ~800 character chunks
-3. Generates Vietnamese SBERT embeddings
+3. Generates embeddings via a server-side OpenAI-protocol API call (default
+   model: Qwen3 Embedding 8B - see `EMBEDDING_MODEL` in the main README)
 4. Stores in SQLite: chunk_id, article_id, clause_id, text, metadata, embeddings
 
 ### Current Stats
 - **Records**: 1,562 text chunks
 - **Size**: 7.39 MB
-- **Model**: Vietnamese SBERT
+- **Model**: Qwen3 Embedding 8B (via OpenAI-protocol API, e.g. OpenRouter)
 
 ---
 

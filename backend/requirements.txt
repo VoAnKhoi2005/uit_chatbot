@@ -10,8 +10,13 @@ pydantic-settings>=2.2.1
 rdflib>=6.3.0
 
 # Vector embeddings and ML
+# Embeddings are computed server-side via the OpenAI-protocol API
+# (retrieval/text_rag/embeddings.py, default model Qwen3 Embedding 8B) - no
+# local embedding model/torch needed for the live pipeline. sentence-transformers
+# is only needed for the legacy, unused-by-the-live-pipeline
+# retrieval.src.db.vector_db.ConceptRelationDB / ingestion tools; install it
+# separately (`pip install sentence-transformers`) if you need those.
 numpy>=1.24.0
-sentence-transformers>=2.2.0
 faiss-cpu>=1.7.4
 
 # HTTP client for Groq API

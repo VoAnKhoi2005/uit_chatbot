@@ -7,7 +7,12 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
-from sentence_transformers import SentenceTransformer, util
+
+# Legacy: sentence-transformers is only needed by ConceptRelationDB below (the
+# superseded, pre-GraphRetriever concept/relation store - see
+# retrieval.src.retrieval.graph_retriever), and only once it's actually
+# constructed, not just imported. Kept lazy so the live pipeline - which
+# doesn't use this class - never needs the dependency installed.
 
 DEFAULT_DB_PATH = Path(__file__).resolve().parent / "vector.db"
 db_path: str = os.getenv("VECTOR_DB_PATH", str(DEFAULT_DB_PATH))

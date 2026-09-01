@@ -118,12 +118,16 @@ It's separate from the ad hoc scripts in `backend/retrieval/src/eval/` and
 Common runtime variables:
 
 - `LLM_BASE_URL` (required - any OpenAI-protocol endpoint, e.g. `https://api.openai.com/v1`,
-  `https://api.groq.com/openai/v1`, or a local server's `/v1` URL)
+  `https://api.groq.com/openai/v1`, `https://openrouter.ai/api/v1`, or a local server's `/v1` URL)
 - `LLM_API_KEY` (required; `OPENAI_API_KEY` also accepted as a fallback)
 - `LLM_MODEL` (required; `OPENAI_MODEL` also accepted as a fallback)
+- `EMBEDDING_BASE_URL` / `EMBEDDING_API_KEY` (optional - fall back to `LLM_BASE_URL`/`LLM_API_KEY`,
+  since a provider like OpenRouter serves both chat and embeddings from the same account)
+- `EMBEDDING_MODEL` (default: `qwen/qwen3-embedding-8b` - server-side, no local model/torch needed)
 - `UIT_TTL_PATH` (default expects `backend/ontology/uit_regulations.ttl`)
 - `UIT_VECTOR_DB` (default expects backend vector DB path)
-- `UIT_DISABLE_LOCAL_EMBEDDER` (`true`/`false`, lightweight retrieval mode)
+- `UIT_DISABLE_LOCAL_EMBEDDER` (`true`/`false` - disables the dense/embedding-based retrieval
+  signal, BM25-only; the embedder itself is a remote API call either way, not a local model)
 - `UIT_DISABLE_TRIPLET_RAG` (`true`/`false`, disables graph triplet retrieval)
 
 ## API endpoints
