@@ -1,4 +1,5 @@
 import argparse
+import asyncio
 import json
 from retrieval.src.eval.datasets import load_eval_set
 from retrieval.src.eval.metrics import hit_at_k, refusal_accuracy, faithfulness_proxy, citation_precision_proxy
@@ -7,14 +8,7 @@ from llm.orchestrator import ChatPipeline
 from pathlib import Path
 import logging
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, required=True)
-    parser.add_argument('--output_json', type=str, default='reports/eval_results.json')
-    parser.add_argument('--output_md', type=str, default='reports/eval_summary.md')
-    parser.add_argument('--registry_db', type=str, default='metadata_registry.db')
-    args = parser.parse_args()
-
+async def run_eval(args):
     Path("reports").mkdir(exist_ok=True)
     eval_set = load_eval_set(args.dataset)
     registry = MetadataRegistry(args.registry_db)
@@ -26,14 +20,17 @@ def main():
         expected_in_scope = ex.get("expected_in_scope", True)
         expected_article_ids = ex.get("expected_article_ids", [])
         expected_keywords = ex.get("expected_keywords", [])
-        # Call pipeline
-        out = pipeline.answer_question(question, debug=True)
+        # Call pipeline (answer_question is async - must be awaited)
+        out = await pipeline.answer_question(question, debug=True)
         answer = out["answer"]
         grounding = out.get("grounding", {})
         predicted_article_id = grounding.get("article_id")
         predicted_intent = out.get("question_type")
-        text_hits = out.get("text_hits", [])
-        graph_hits = out.get("graph_hits", [])
+        # text_hits/graph_hits only exist when debug=True, and live under
+        # out["debug"] - not at the top level of the result.
+        debug_info = out.get("debug", {})
+        text_hits = debug_info.get("text_hits", [])
+        graph_hits = debug_info.get("graph_hits", [])
         citations = []
         if predicted_article_id:
             meta = registry.get_citation_by_article(predicted_article_id)
@@ -64,9 +61,20 @@ def main():
         f.write("| id | hit@5 | refusal | faithfulness | citation |\n|---|---|---|---|---|\n")
         for r in results:
             f.write(f"| {r['id']} | {r['hit@5']} | {r['refusal_acc']} | {r['faithfulness']} | {r['citation_precision']} |\n")
-        pass_rate = sum(1 for r in results if r['hit@5']) / len(results)
+        pass_rate = (sum(1 for r in results if r['hit@5']) / len(results)) if results else 0.0
         f.write(f"\n**Pass rate (hit@5): {pass_rate:.2%}**\n")
     print(f"Eval done. Pass rate (hit@5): {pass_rate:.2%}")
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--dataset', type=str, required=True)
+    parser.add_argument('--output_json', type=str, default='reports/eval_results.json')
+    parser.add_argument('--output_md', type=str, default='reports/eval_summary.md')
+    parser.add_argument('--registry_db', type=str, default='metadata_registry.db')
+    args = parser.parse_args()
+    asyncio.run(run_eval(args))
+
 
 if __name__ == "__main__":
     main()
