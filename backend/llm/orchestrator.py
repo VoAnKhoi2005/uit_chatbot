@@ -38,8 +38,22 @@ class ChatPipeline:
     
     # Routing thresholds (can be overridden via env for tuning)
     OUT_SCORE_DEFAULT = 0.18
+    # EXACT_SCORE_DEFAULT compares against `max_score`, the top *RRF-fused*
+    # score (see hybrid_orchestrator.reciprocal_rank_fusion, rrf_k=60) - with
+    # that k, the theoretical maximum RRF score is 1/61 + 1/61 ≈ 0.033 (a
+    # rank-1 hit on both text and graph paths), so a 0.33 threshold (an order
+    # of magnitude higher) can never be satisfied. This was a leftover from
+    # before the RRF migration, when scores were on a raw 0-1 similarity
+    # scale - it silently turned the `max_score >= exact_score` half of the
+    # EXACT_RULE OR-condition into dead code, forcing routing to rely on
+    # `dominance` alone and pushing clearly-answerable questions into the
+    # more conservative NEAR_RULE (clarification) flow. EXACT_GOOD_SCORE_STRONG
+    # replaces it: an alternate path to EXACT_RULE when the single best text
+    # hit is very confident on its own (0-1 scale, same as EXACT_GOOD_SCORE),
+    # even if RRF dominance is diluted by other candidates.
     EXACT_SCORE_DEFAULT = 0.33
     EXACT_DOM_DEFAULT = 0.45
+    EXACT_GOOD_SCORE_STRONG = 0.70
     # New thresholds for diagram-aligned routing
     EXACT_GOOD_SCORE = 0.45
     NEAR_MIN_GOOD_SCORE = 0.25
@@ -307,6 +321,9 @@ class ChatPipeline:
         exact_score = float(os.getenv("UIT_ROUTING_EXACT_SCORE", str(self.EXACT_SCORE_DEFAULT)))
         exact_dom = float(os.getenv("UIT_ROUTING_EXACT_DOM", str(self.EXACT_DOM_DEFAULT)))
         exact_good_score = float(os.getenv("UIT_ROUTING_EXACT_GOOD_SCORE", str(self.EXACT_GOOD_SCORE)))
+        exact_good_score_strong = float(
+            os.getenv("UIT_ROUTING_EXACT_GOOD_SCORE_STRONG", str(self.EXACT_GOOD_SCORE_STRONG))
+        )
         near_min_good_score = float(os.getenv("UIT_ROUTING_NEAR_MIN_GOOD_SCORE", str(self.NEAR_MIN_GOOD_SCORE)))
 
         # --- Intent decision ---
@@ -342,11 +359,16 @@ class ChatPipeline:
                     intent_reason = (
                         "NEAR_RULE (in_domain_no_evidence) because good_count=0 or good_max_score < NEAR_MIN_GOOD_SCORE."
                     )
-                elif good_max_score >= exact_good_score and (dominance >= exact_dom or max_score >= exact_score):
-                    # Strong evidence and high confidence
+                elif good_max_score >= exact_good_score and (
+                    dominance >= exact_dom or good_max_score >= exact_good_score_strong
+                ):
+                    # Strong evidence and high confidence - either the top article
+                    # dominates the fused evidence, or the single best text hit is
+                    # confident enough on its own (see EXACT_GOOD_SCORE_STRONG).
                     final_intent = QuestionType.EXACT_RULE.value
                     intent_reason = (
-                        "EXACT_RULE because good_max_score >= EXACT_GOOD_SCORE and dominance/max_score thresholds passed."
+                        "EXACT_RULE because good_max_score >= EXACT_GOOD_SCORE and "
+                        "(dominance >= EXACT_DOM or good_max_score >= EXACT_GOOD_SCORE_STRONG)."
                     )
                 else:
                     # Moderate evidence
@@ -630,6 +652,9 @@ class ChatPipeline:
         exact_score = float(os.getenv("UIT_ROUTING_EXACT_SCORE", str(self.EXACT_SCORE_DEFAULT)))
         exact_dom = float(os.getenv("UIT_ROUTING_EXACT_DOM", str(self.EXACT_DOM_DEFAULT)))
         exact_good_score = float(os.getenv("UIT_ROUTING_EXACT_GOOD_SCORE", str(self.EXACT_GOOD_SCORE)))
+        exact_good_score_strong = float(
+            os.getenv("UIT_ROUTING_EXACT_GOOD_SCORE_STRONG", str(self.EXACT_GOOD_SCORE_STRONG))
+        )
         near_min_good_score = float(os.getenv("UIT_ROUTING_NEAR_MIN_GOOD_SCORE", str(self.NEAR_MIN_GOOD_SCORE)))
 
         # --- Intent decision ---
@@ -665,11 +690,16 @@ class ChatPipeline:
                     intent_reason = (
                         "NEAR_RULE (in_domain_no_evidence) because good_count=0 or good_max_score < NEAR_MIN_GOOD_SCORE."
                     )
-                elif good_max_score >= exact_good_score and (dominance >= exact_dom or max_score >= exact_score):
-                    # Strong evidence and high confidence
+                elif good_max_score >= exact_good_score and (
+                    dominance >= exact_dom or good_max_score >= exact_good_score_strong
+                ):
+                    # Strong evidence and high confidence - either the top article
+                    # dominates the fused evidence, or the single best text hit is
+                    # confident enough on its own (see EXACT_GOOD_SCORE_STRONG).
                     final_intent = QuestionType.EXACT_RULE.value
                     intent_reason = (
-                        "EXACT_RULE because good_max_score >= EXACT_GOOD_SCORE and dominance/max_score thresholds passed."
+                        "EXACT_RULE because good_max_score >= EXACT_GOOD_SCORE and "
+                        "(dominance >= EXACT_DOM or good_max_score >= EXACT_GOOD_SCORE_STRONG)."
                     )
                 else:
                     # Moderate evidence

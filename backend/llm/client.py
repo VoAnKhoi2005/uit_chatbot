@@ -13,6 +13,8 @@ class Settings(BaseSettings):
     llm_base_url: str | None = None
     llm_api_key: str | None = None
     llm_model: str | None = None
+    llm_max_tokens: int = 2048
+    llm_disable_reasoning: bool = True
 
     class Config:
         env_prefix = ""
@@ -59,6 +61,8 @@ class LLMClient:
 
         self.base_url = base_url
         self.model = model
+        self.max_tokens = self.settings.llm_max_tokens
+        self.disable_reasoning = self.settings.llm_disable_reasoning
         self.client = OpenAI(api_key=api_key, base_url=base_url)
 
     async def generate(self, system_prompt: str, user_prompt: str, context: str = "") -> str:
@@ -77,15 +81,33 @@ class LLMClient:
         return await loop.run_in_executor(None, self._sync_generate, messages)
 
     def _sync_generate(self, messages: list) -> str:
-        response = self.client.chat.completions.create(model=self.model, messages=messages)
+        # Without max_tokens, some OpenRouter models (reasoning/"flash"
+        # variants that emit hidden reasoning tokens counted against the
+        # output budget) fall back to a provider default too small to finish
+        # - the visible answer gets cut off mid-sentence with no error, which
+        # silently produced incomplete answers (and tanked eval scores that
+        # compare against a complete golden answer). Disabling reasoning
+        # removes that hidden consumption entirely for a customer-facing
+        # answer that doesn't need visible chain-of-thought; LLM_DISABLE_REASONING=false
+        # restores it, LLM_MAX_TOKENS overrides the token budget (default 2048).
+        kwargs: Dict[str, Any] = {"model": self.model, "messages": messages, "max_tokens": self.max_tokens}
+        if self.disable_reasoning:
+            kwargs["extra_body"] = {"reasoning": {"enabled": False}}
+        response = self.client.chat.completions.create(**kwargs)
         content = response.choices[0].message.content
         usage = response.usage
+        finish_reason = response.choices[0].finish_reason
         self.logger.debug(
-            "[LLM] Response received (prompt=%s, completion=%s, total=%s tokens)",
+            "[LLM] Response received (prompt=%s, completion=%s, total=%s tokens, finish_reason=%s)",
             getattr(usage, "prompt_tokens", None),
             getattr(usage, "completion_tokens", None),
             getattr(usage, "total_tokens", None),
+            finish_reason,
         )
+        if finish_reason == "length":
+            self.logger.warning(
+                "[LLM] Response truncated by max_tokens=%s - answer may be incomplete", self.max_tokens
+            )
         return content
 
     async def generate_json(self, system_prompt: str, user_prompt: str) -> Dict[str, Any]:

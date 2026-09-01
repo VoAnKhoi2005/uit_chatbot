@@ -115,6 +115,21 @@ class ChunkVectorStore:
         row = cursor.fetchone()
         return int(row[0]) if row and row[0] is not None else 0
 
+    def clear(self) -> None:
+        """Delete every indexed chunk. `index_chunks` only ever upserts by
+        chunk_id, so a source item that's removed/renamed (e.g. a duplicate
+        dropped at ingestion) leaves its old row behind forever unless the
+        table is cleared first - a rebuild (build_index.py) should always
+        start from empty, not accumulate stale rows across runs."""
+        self.conn.execute("DELETE FROM chunk_vectors")
+        self.conn.commit()
+        self._rows_cache = None
+        self._rows_cache_count = -1
+        self._bm25_index = None
+        self._bm25_index_count = -1
+        self._so_hieu_index = None
+        self._so_hieu_index_count = -1
+
     def _setup(self) -> None:
         self.conn.execute(
             """

@@ -22,6 +22,14 @@ def main() -> None:
     embedder = TextEmbedder()
     # Explicitly disable lightweight mode for indexing
     store = ChunkVectorStore(db_path, disable_local_embedder=False)
+    # A rebuild replaces the index outright - index_chunks only upserts by
+    # chunk_id, so without this a source item removed since the last build
+    # (e.g. a near-duplicate now deduped away) would leave its stale row
+    # behind indefinitely.
+    existing = store.count_chunks()
+    if existing:
+        logging.info("Clearing %d existing chunk(s) from %s before rebuilding", existing, db_path)
+        store.clear()
 
     batch = []
     seen_docs: set[tuple[str, str | None]] = set()
