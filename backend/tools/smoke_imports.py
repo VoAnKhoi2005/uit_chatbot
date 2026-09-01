@@ -1,8 +1,8 @@
 # Smoke test for critical imports and class wiring
 
 try:
-    from main_gpt import app
-    print("[OK] FastAPI app import: backend.api.main_gpt:app")
+    from main import app
+    print("[OK] FastAPI app import: backend.main:app")
 except Exception as e:
     print("[FAIL] FastAPI app import:", e)
 

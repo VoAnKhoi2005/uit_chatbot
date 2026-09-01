@@ -10,7 +10,7 @@ import json
 import sys
 from pathlib import Path
 
-from llm.gpt_client import GPTLLMClient
+from llm.client import LLMClient
 from llm.orchestrator import ChatPipeline
 
 async def main():
@@ -33,8 +33,8 @@ async def main():
 
     # Initialize real backend pipeline
     print('\nInitializing ChatPipeline...')
-    gpt_client = GPTLLMClient()
-    pipeline = ChatPipeline(llm_client=gpt_client)
+    llm_client = LLMClient()
+    pipeline = ChatPipeline(llm_client=llm_client)
     print('Pipeline initialized')
 
     # Process each question through real pipeline

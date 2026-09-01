@@ -6,11 +6,13 @@ per run, not one: `context_recall` and `answer_correctness` need a golden
 answer and the rest don't, so an item without one only skips those two
 metrics rather than being dropped or scored against a blank reference.
 
-Judge LLM/embeddings are OpenAI-API-compatible and configurable via env vars
-(JUDGE_MODEL/JUDGE_BASE_URL/JUDGE_API_KEY - defaults reuse this repo's own
-GROQ_API_KEY, since Groq's endpoint is OpenAI-compatible; JUDGE_EMBED_MODEL
-defaults to the same sentence-transformers model retrieval already uses, via
-HuggingfaceEmbeddings, so no second paid embedding API is required).
+Judge LLM/embeddings are OpenAI-protocol and configurable via env vars
+(JUDGE_MODEL/JUDGE_BASE_URL/JUDGE_API_KEY - unset, they fall back to the same
+LLM_BASE_URL/LLM_API_KEY/LLM_MODEL the chat backend's own generic
+backend/llm/client.py::LLMClient uses, so there's one place to point at an
+OpenAI-protocol endpoint, not two; JUDGE_EMBED_MODEL defaults to the same
+sentence-transformers model retrieval already uses, via HuggingfaceEmbeddings,
+so no second paid embedding API is required).
 """
 from __future__ import annotations
 
@@ -46,11 +48,18 @@ def _build_llm_and_embeddings():
     from ragas.embeddings import HuggingfaceEmbeddings
     from ragas.llms import LangchainLLMWrapper
 
-    model = os.getenv("JUDGE_MODEL", "llama-3.3-70b-versatile")
-    base_url = os.getenv("JUDGE_BASE_URL", "https://api.groq.com/openai/v1")
-    api_key = os.getenv("JUDGE_API_KEY") or os.getenv("GROQ_API_KEY") or os.getenv("OPENAI_API_KEY")
+    # JUDGE_* overrides let the judge use a different model/endpoint than chat
+    # itself (e.g. a stronger judge model); unset, it reuses the same generic
+    # OpenAI-protocol config backend/llm/client.py::LLMClient uses.
+    model = os.getenv("JUDGE_MODEL") or os.getenv("LLM_MODEL") or os.getenv("OPENAI_MODEL")
+    base_url = os.getenv("JUDGE_BASE_URL") or os.getenv("LLM_BASE_URL")
+    api_key = os.getenv("JUDGE_API_KEY") or os.getenv("LLM_API_KEY") or os.getenv("OPENAI_API_KEY")
+    if not base_url:
+        raise ContractError("environment", "JUDGE_BASE_URL or LLM_BASE_URL is required for the judge")
+    if not model:
+        raise ContractError("environment", "JUDGE_MODEL, LLM_MODEL, or OPENAI_MODEL is required for the judge")
     if not api_key:
-        raise ContractError("environment", "JUDGE_API_KEY/GROQ_API_KEY/OPENAI_API_KEY is required for the judge")
+        raise ContractError("environment", "JUDGE_API_KEY, LLM_API_KEY, or OPENAI_API_KEY is required for the judge")
 
     llm = LangchainLLMWrapper(ChatOpenAI(model=model, base_url=base_url, api_key=api_key, temperature=0))
 

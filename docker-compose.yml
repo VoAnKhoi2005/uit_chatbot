@@ -24,8 +24,8 @@ services:
       - .env
     ports:
       - "10000:10000"
-    # Backend runs uvicorn backend.api.main:app on port 10000
-    # Environment variables (GROQ_API_KEY, GROQ_MODEL, etc.) loaded from .env
+    # Backend runs uvicorn main:app on port 10000
+    # Environment variables (LLM_BASE_URL, LLM_API_KEY, LLM_MODEL, etc.) loaded from .env
 
   frontend:
     build:

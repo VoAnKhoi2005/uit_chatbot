@@ -38,6 +38,12 @@ EXPOSE 10000
 ENV PYTHONUNBUFFERED=1 \
     PYTHONPATH=/app/backend
 
+# cwd=/app/backend so the relative default/`.env` paths (e.g. UIT_TTL_PATH=
+# ontology/uit_regulations.ttl, no "backend/" prefix) resolve the same way
+# they do everywhere else this app is run - locally via `cd backend` (see
+# README "Data rebuild"), and in ChatPipeline's own os.getenv(...) defaults.
+WORKDIR /app/backend
+
 # Run the FastAPI app
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "10000"]
 

@@ -25,7 +25,7 @@ High-level flow from user question through retrieval, grounding, and final respo
 - `frontend/`: Vite + React web client
 - `backend/ontology/`: ontology loader and generated `uit_regulations.ttl`
 - `backend/retrieval/`: text and graph retrieval logic
-- `docker-compose.gpt.yml`: GPT backend + frontend
+- `docker-compose.yml`: backend + frontend
 
 ## Prerequisites
 
@@ -37,14 +37,16 @@ High-level flow from user question through retrieval, grounding, and final respo
 ## Quick start (recommended: Docker Compose)
 
 1. Create `.env` in the repository root:
-   - `OPENAI_API_KEY=...`
+   - `LLM_BASE_URL=...` (an OpenAI-protocol endpoint, e.g. `https://api.openai.com/v1`)
+   - `LLM_API_KEY=...`
+   - `LLM_MODEL=...`
 2. Start services:
-   - `docker compose -f docker-compose.gpt.yml up --build`
+   - `docker compose up --build`
 3. Open:
    - Frontend: `http://localhost:4173`
    - Backend health: `http://localhost:10000/health`
 
-Stop with `docker compose -f docker-compose.gpt.yml down`.
+Stop with `docker compose down`.
 
 ## Local run (without Docker)
 
@@ -56,22 +58,10 @@ Install dependencies:
 python -m pip install -r backend\requirements.txt
 ```
 
-For GPT variant:
-
-```powershell
-python -m pip install -r backend\requirements.gpt.txt
-```
-
 Run API from repo root:
 
 ```powershell
 uvicorn main:app --app-dir backend --host 0.0.0.0 --port 10000
-```
-
-Run GPT API variant:
-
-```powershell
-uvicorn main_gpt:app --app-dir backend --host 0.0.0.0 --port 10000
 ```
 
 ### 2) Frontend
@@ -127,8 +117,10 @@ It's separate from the ad hoc scripts in `backend/retrieval/src/eval/` and
 
 Common runtime variables:
 
-- `OPENAI_API_KEY` (GPT backend)
-- `OPENAI_MODEL` (default: `gpt-4o-mini`)
+- `LLM_BASE_URL` (required - any OpenAI-protocol endpoint, e.g. `https://api.openai.com/v1`,
+  `https://api.groq.com/openai/v1`, or a local server's `/v1` URL)
+- `LLM_API_KEY` (required; `OPENAI_API_KEY` also accepted as a fallback)
+- `LLM_MODEL` (required; `OPENAI_MODEL` also accepted as a fallback)
 - `UIT_TTL_PATH` (default expects `backend/ontology/uit_regulations.ttl`)
 - `UIT_VECTOR_DB` (default expects backend vector DB path)
 - `UIT_DISABLE_LOCAL_EMBEDDER` (`true`/`false`, lightweight retrieval mode)

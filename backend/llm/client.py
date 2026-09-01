@@ -1,18 +1,18 @@
 from __future__ import annotations
 
 import asyncio
+import logging
 import os
 from typing import Any, Dict
 
-# Note: With Pydantic v2, BaseSettings lives in the separate pydantic-settings package.
+from openai import OpenAI
 from pydantic_settings import BaseSettings
-
-from groq_client import call_groq_llm
 
 
 class Settings(BaseSettings):
-    groq_api_key: str | None = None
-    groq_model: str = "llama3-8b-8192"
+    llm_base_url: str | None = None
+    llm_api_key: str | None = None
+    llm_model: str | None = None
 
     class Config:
         env_prefix = ""
@@ -21,27 +21,72 @@ class Settings(BaseSettings):
 
 
 class LLMClient:
-    """Async wrapper over Groq via shared groq_client helper."""
+    """Generic OpenAI-protocol chat client.
+
+    Works against any endpoint that speaks the OpenAI chat-completions API -
+    OpenAI itself, Groq, OpenRouter, a local vLLM/Ollama server, etc. - by
+    pointing `OpenAI(base_url=...)` at whatever URL is configured. Nothing
+    here is provider-specific: there is exactly one client for the whole
+    system, configured entirely by LLM_BASE_URL / LLM_API_KEY / LLM_MODEL.
+
+    `OPENAI_API_KEY`/`OPENAI_MODEL` are read as fallbacks only so an existing
+    .env doesn't need every key renamed at once; the LLM_* names win when set.
+    """
 
     def __init__(self, settings: Settings | None = None) -> None:
         self.settings = settings or Settings()
-        api_key = self.settings.groq_api_key or os.getenv("GROQ_API_KEY") or os.getenv("GROK_API_KEY")
+        self.logger = logging.getLogger("uit_chatbot.llm_client")
+
+        base_url = self.settings.llm_base_url or os.getenv("LLM_BASE_URL")
+        if not base_url:
+            raise EnvironmentError(
+                "LLM_BASE_URL is required - set it to the OpenAI-protocol endpoint "
+                "to call (e.g. https://api.openai.com/v1, https://api.groq.com/openai/v1, "
+                "or a local server's /v1 URL)."
+            )
+
+        api_key = (
+            self.settings.llm_api_key
+            or os.getenv("LLM_API_KEY")
+            or os.getenv("OPENAI_API_KEY")
+        )
         if not api_key:
-            raise EnvironmentError("GROQ_API_KEY is required")
-        # groq_client reads env directly; we still keep model for clarity
-        self.model = os.getenv("GROQ_MODEL", self.settings.groq_model)
+            raise EnvironmentError("LLM_API_KEY (or OPENAI_API_KEY) is required")
+
+        model = self.settings.llm_model or os.getenv("LLM_MODEL") or os.getenv("OPENAI_MODEL")
+        if not model:
+            raise EnvironmentError("LLM_MODEL (or OPENAI_MODEL) is required")
+
+        self.base_url = base_url
+        self.model = model
+        self.client = OpenAI(api_key=api_key, base_url=base_url)
 
     async def generate(self, system_prompt: str, user_prompt: str, context: str = "") -> str:
-        # Build user prompt with context if provided
         full_user_prompt = user_prompt
         if context:
             full_user_prompt = f"{user_prompt}\n\nContext:\n{context}"
-        
-        # Pass system and user prompts separately to Groq API
+
+        messages = []
+        if system_prompt:
+            messages.append({"role": "system", "content": system_prompt})
+        messages.append({"role": "user", "content": full_user_prompt})
+
+        self.logger.debug("[LLM] Calling %s (model=%s), messages=%d", self.base_url, self.model, len(messages))
+
         loop = asyncio.get_event_loop()
-        return await loop.run_in_executor(
-            None, call_groq_llm, system_prompt, full_user_prompt
+        return await loop.run_in_executor(None, self._sync_generate, messages)
+
+    def _sync_generate(self, messages: list) -> str:
+        response = self.client.chat.completions.create(model=self.model, messages=messages)
+        content = response.choices[0].message.content
+        usage = response.usage
+        self.logger.debug(
+            "[LLM] Response received (prompt=%s, completion=%s, total=%s tokens)",
+            getattr(usage, "prompt_tokens", None),
+            getattr(usage, "completion_tokens", None),
+            getattr(usage, "total_tokens", None),
         )
+        return content
 
     async def generate_json(self, system_prompt: str, user_prompt: str) -> Dict[str, Any]:
         raw = await self.generate(system_prompt, user_prompt)
@@ -51,4 +96,3 @@ class LLMClient:
             return json.loads(raw)
         except Exception:
             return {"label": None, "reason": raw}
-

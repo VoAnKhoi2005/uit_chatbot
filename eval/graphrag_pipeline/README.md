@@ -29,7 +29,7 @@ both requirement sets are needed:
 ```bash
 pip install -r ../../backend/requirements.txt
 pip install -r requirements.txt
-cp .env.example .env   # fill in JUDGE_API_KEY, or leave blank to reuse GROQ_API_KEY
+cp .env.example .env   # fill in JUDGE_*, or leave blank to reuse the backend's LLM_* config
 ```
 
 Run the whole pipeline (from this directory):
@@ -93,9 +93,11 @@ golden answer or silently scoring against a blank reference.
 
 Judge LLM and embedding model are configurable via env vars (`JUDGE_MODEL`,
 `JUDGE_BASE_URL`, `JUDGE_API_KEY`, `JUDGE_EMBED_MODEL`) - see `.env.example`.
-Defaults point at Groq's OpenAI-compatible endpoint (reusing `GROQ_API_KEY`)
-and the same `sentence-transformers` model retrieval already uses locally
-for embeddings, so a run needs only one paid API (the judge LLM calls).
+Left unset, they fall back to the same `LLM_BASE_URL`/`LLM_API_KEY`/`LLM_MODEL`
+the chat backend's own generic client uses (any OpenAI-protocol endpoint), and
+embeddings fall back to the same `sentence-transformers` model retrieval
+already uses locally - so a run needs only one paid API (the judge LLM calls)
+unless you deliberately point the judge somewhere different.
 
 ## Artifacts
 
