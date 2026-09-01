@@ -1,7 +1,12 @@
 pydantic>=2
 python-dotenv
+httpx
 ragas>=0.2
 langchain-openai
-sentence-transformers
+# ragas.llms.base imports langchain_community.chat_models.vertexai
+# unconditionally, even though we don't use Vertex AI - that submodule was
+# removed from langchain-community's own 0.4.x reorg (ragas 0.4.3 hasn't
+# caught up yet), so this needs pinning below that line.
+langchain-community==0.3.31
 pytest
 pytest-asyncio

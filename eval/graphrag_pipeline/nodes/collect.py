@@ -1,9 +1,13 @@
 """Node: collect — ask the UIT chatbot every test-set question, keep what really happened.
 
-Adapted from SchemaGraph's graphrag_pipeline/nodes/collect.py. Calls
-ChatPipeline in-process (see adapters/uit_chatbot_client.py) instead of a
-remote chat API, so there is no RAG-trace-file polling: the retrieval
-evidence comes back in the same call as the answer.
+Adapted from SchemaGraph's graphrag_pipeline/nodes/collect.py. Calls the
+backend's own `POST /chat` over HTTP (see adapters/uit_chatbot_client.py) -
+this node never imports anything from `backend/`, so it only needs
+eval/graphrag_pipeline/requirements.txt installed, and the backend just needs
+to be reachable (e.g. `docker compose up backend`, EVAL_BACKEND_URL pointed
+at it). No RAG-trace-file polling either way: the retrieval evidence
+(`debug.text_hits`/`debug.graph_hits`) comes back in the same response as
+the answer.
 """
 from __future__ import annotations
 
@@ -13,7 +17,7 @@ import sys
 from pathlib import Path
 
 from graphrag_pipeline.adapters.uit_chatbot_client import UitChatbotClient
-from graphrag_pipeline.config import RunPaths, env_str, ensure_run_config, load_pipeline_env, resolve_testset, utcnow_iso
+from graphrag_pipeline.config import RunPaths, ensure_run_config, load_pipeline_env, resolve_testset, utcnow_iso
 from graphrag_pipeline.contracts import ContractError, ResponseRow, append_jsonl
 from graphrag_pipeline.nodes._base import EXIT_ITEM_FAILURES, EXIT_OK, NodeRun, add_common_args, run_cli
 from graphrag_pipeline.testset import load_testset
@@ -54,7 +58,8 @@ async def collect_one(item: dict, client: UitChatbotClient, ts: str) -> Response
     )
 
 
-async def _run_collect(items: list[dict], client: UitChatbotClient, workers: int, responses_path: Path) -> int:
+async def _run_collect(items: list[dict], workers: int, responses_path: Path) -> int:
+    client = UitChatbotClient()
     semaphore = asyncio.Semaphore(max(1, workers))
     written = 0
     write_lock = asyncio.Lock()
@@ -68,7 +73,10 @@ async def _run_collect(items: list[dict], client: UitChatbotClient, workers: int
             written += 1
             print(f"[{written}/{len(items)}] {row.qa_id} status={row.status}")
 
-    await asyncio.gather(*(worker(item) for item in items))
+    try:
+        await asyncio.gather(*(worker(item) for item in items))
+    finally:
+        await client.aclose()
     return written
 
 
@@ -125,8 +133,7 @@ def main(argv: list[str]) -> int:
 
         if pending:
             load_pipeline_env()
-            client = UitChatbotClient()
-            n_written = asyncio.run(_run_collect(pending, client, args.workers, responses_path))
+            n_written = asyncio.run(_run_collect(pending, args.workers, responses_path))
         else:
             n_written = 0
 

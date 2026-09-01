@@ -85,15 +85,13 @@ class ResponseRow(_Artifact):
 
 # https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/ - the
 # subset relevant to a retrieval+generation pipeline without a fixed golden
-# context list. context_recall/answer_correctness need golden_answer;
-# faithfulness/answer_relevancy/context_precision don't.
-RAGAS_METRICS = (
-    "faithfulness",
-    "answer_relevancy",
-    "context_precision",
-    "context_recall",
-    "answer_correctness",
-)
+# context list. Limited to answer_correctness ("accuracy" against the golden
+# answer) rather than all five - each extra metric is another judge LLM call
+# per question, and this is the one that actually needs a reference answer
+# to mean anything. Add metrics back here (faithfulness, answer_relevancy,
+# context_precision don't need golden_answer; context_recall does) if the
+# speed tradeoff is worth it for a given run.
+RAGAS_METRICS = ("answer_correctness",)
 
 
 class RagasScoreRow(_Artifact):

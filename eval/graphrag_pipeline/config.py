@@ -64,8 +64,16 @@ class RunPaths:
 
 
 def load_pipeline_env(package_dir: Path | None = None) -> None:
-    """Load `<package>/.env` without overriding values already in the shell."""
+    """Load env vars for the pipeline, without overriding values already in the shell.
+
+    Two files, repo-root first: `collect` constructs ChatPipeline directly, so
+    it needs the backend's own config (LLM_BASE_URL, UIT_TTL_PATH, ...) from
+    the repo-root `.env` - the same one Docker Compose loads - not just this
+    package's own `.env` (JUDGE_*-specific overrides only).
+    """
     base = package_dir or Path(__file__).parent
+    repo_root_env = base.parent.parent / ".env"
+    load_dotenv(repo_root_env, override=False)
     load_dotenv(base / ".env", override=False)
 
 

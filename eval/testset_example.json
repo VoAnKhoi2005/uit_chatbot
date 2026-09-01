@@ -14,11 +14,13 @@
   {
     "qa_id": "q3",
     "type": "academic_warning",
-    "question": "Thế nào là cảnh báo học vụ?"
+    "question": "Thế nào là cảnh báo học vụ?",
+    "golden_answer": "Cảnh báo học vụ là hình thức xử lý sinh viên có kết quả học tập yếu, ví dụ điểm trung bình học kỳ hoặc điểm trung bình chung tích lũy dưới mức quy định của trường."
   },
   {
     "qa_id": "q4",
     "type": "out_of_scope",
-    "question": "Hôm nay trời có mưa không?"
+    "question": "Hôm nay trời có mưa không?",
+    "golden_answer": "Đây là câu hỏi ngoài phạm vi quy chế đào tạo của trường; chatbot không có dữ liệu để trả lời câu hỏi về thời tiết."
   }
 ]
