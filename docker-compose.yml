@@ -1,6 +1,6 @@
 # UIT Chatbot - Docker Compose Configuration
 #
-# Prerequisites (run on host before building):
+# Prerequisites (run on host before building, from inside backend/ - see README "Data rebuild"):
 #   1. Generate ontology TTL: python -m ontology.from_jsonl
 #   2. Build vector index: python -m retrieval.text_rag.build_index
 #

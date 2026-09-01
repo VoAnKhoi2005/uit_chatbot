@@ -87,17 +87,24 @@ Set API endpoint with `VITE_API_BASE_URL` if needed.
 
 ## Data rebuild (only when source data changes)
 
-If you update exported UIT source files and need to regenerate backend artifacts:
+If you update exported UIT source files and need to regenerate backend artifacts,
+run these from inside `backend/` (matching how the app itself is served, via
+`--app-dir backend`) so `python -m ...` resolves `ontology`/`retrieval` against
+`backend/`'s packages rather than any stray top-level copy:
 
 ```powershell
-$env:UIT_TRIPLETS_PATH="backend/graph/mongo_export_uit/KB_UIT.triplets.json"
-$env:UIT_ITEMS_PATH="backend/graph/mongo_export_uit/KB_UIT.items.json"
-$env:UIT_TTL_PATH="backend/ontology/uit_regulations.ttl"
+Set-Location backend
+
+$env:UIT_TRIPLETS_PATH="graph/mongo_export_uit/KB_UIT.triplets.json"
+$env:UIT_ITEMS_PATH="graph/mongo_export_uit/KB_UIT.items.json"
+$env:UIT_TTL_PATH="ontology/uit_regulations.ttl"
 python -m ontology.from_jsonl
 
-$env:UIT_CONTENT_JSON="backend/graph/mongo_export_uit/KB_UIT.items.json"
-$env:UIT_VECTOR_DB="backend/retrieval/text_rag/vector_store.db"
+$env:UIT_CONTENT_JSON="graph/mongo_export_uit/KB_UIT.items.json"
+$env:UIT_VECTOR_DB="retrieval/text_rag/vector_store.db"
 python -m retrieval.text_rag.build_index
+
+Set-Location ..
 ```
 
 ## Environment variables
