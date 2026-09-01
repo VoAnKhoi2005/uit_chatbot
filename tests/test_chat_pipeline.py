@@ -14,14 +14,18 @@ class DummyLLM:
 
 
 class DummyVectorStore:
-    def search(self, query, embedder, top_k=5):
+    def search(self, query, embedder=None, top_k=5, alpha=0.5, candidate_k=None):
         return [
             {
                 "article_id": "A-1",
                 "clause_id": "C-1",
                 "text": "Khoản 1 nội dung.",
+                "score": 0.9,
             }
         ]
+
+    def get_chunks_by_so_hieu(self, so_hieu):
+        return []
 
 
 class DummyEmbedder:

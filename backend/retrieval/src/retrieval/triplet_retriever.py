@@ -12,6 +12,16 @@ from retrieval.src.db.vector_db import ConceptRelationDB
 from retrieval.src.extract_triplet import load_stopwords
 
 class TripletRetriever:
+    """Legacy question-time triplet extractor + doc-id lookup.
+
+    Superseded by ``retrieval.src.retrieval.graph_retriever.GraphRetriever``,
+    which implements Path 2 (keyword + semantic seeding, bounded-hop
+    expansion) of the dual-path retrieval pipeline without needing to run
+    NLP triplet extraction on every query. Kept around for scripts that still
+    depend on it (e.g. offline ingestion); no longer wired into
+    ``HybridOrchestrator``/``ChatPipeline``.
+    """
+
     def __init__(self):
         self.vector_db = ConceptRelationDB()
         

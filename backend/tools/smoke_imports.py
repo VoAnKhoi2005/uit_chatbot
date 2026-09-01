@@ -19,8 +19,14 @@ except Exception as e:
     print("[FAIL] HybridOrchestrator import:", e)
 
 try:
+    from retrieval.src.retrieval.graph_retriever import GraphRetriever
+    print("[OK] GraphRetriever import")
+except Exception as e:
+    print("[FAIL] GraphRetriever import:", e)
+
+try:
     from retrieval.src.retrieval.triplet_retriever import TripletRetriever
-    print("[OK] TripletRetriever import")
+    print("[OK] TripletRetriever import (legacy, unused by the pipeline)")
 except Exception as e:
     print("[FAIL] TripletRetriever import:", e)
 

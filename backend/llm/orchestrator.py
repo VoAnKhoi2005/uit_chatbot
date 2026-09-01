@@ -20,12 +20,14 @@ from llm.state import ConversationStateStore
 from ontology.loader import load_ontology, get_article_by_id
 from retrieval.src.registry.metadata_registry import MetadataRegistry
 from retrieval.src.retrieval.hybrid_orchestrator import HybridOrchestrator
-from retrieval.src.retrieval.triplet_retriever import TripletRetriever
+from retrieval.src.retrieval.graph_retriever import GraphRetriever
 from retrieval.text_rag.chunker import iter_all_chunks
 from retrieval.text_rag.vector_store import ChunkVectorStore
 
 # Check if local embedder is disabled
 UIT_DISABLE_LOCAL_EMBEDDER = os.getenv("UIT_DISABLE_LOCAL_EMBEDDER", "false").lower() == "true"
+# Disables Path 2 (knowledge-graph retrieval) of the dual-path pipeline; text-only
+# retrieval still works when this is set. Name kept for backward-compat with existing deploys.
 UIT_DISABLE_TRIPLET_RAG = os.getenv("UIT_DISABLE_TRIPLET_RAG", "false").lower() in ("true", "1")
 
 
@@ -152,29 +154,32 @@ class ChatPipeline:
             self.logger.error("Failed to initialize VectorStore: %s", e, exc_info=True)
             self.vector_store = None
 
-        try:
-            self.triplet_retriever = TripletRetriever()
-            self.logger.info("TripletRetriever initialized successfully")
-        except Exception as e:
-            if not UIT_DISABLE_TRIPLET_RAG:
-                self.logger.error("Failed to initialize TripletRetriever: %s", e, exc_info=True)
-            else:
-                self.logger.info("TripletRetriever disabled via UIT_DISABLE_TRIPLET_RAG")
-            self.triplet_retriever = None
+        # Path 2 of the dual-path pipeline: knowledge-graph retriever (seed + expand).
+        # Much lighter than the old triplet extractor - no NLP models are loaded at
+        # query time, only the exported (subject, relation, object) triples - so a
+        # failure here no longer needs to take down text retrieval (Path 1) with it.
+        if UIT_DISABLE_TRIPLET_RAG:
+            self.graph_retriever = None
+            self.logger.info("GraphRetriever disabled via UIT_DISABLE_TRIPLET_RAG")
+        else:
+            try:
+                self.graph_retriever = GraphRetriever(embedder=self.embedder)
+                self.logger.info(
+                    "GraphRetriever initialized successfully (%d nodes, %d triples)",
+                    len(self.graph_retriever.nodes),
+                    len(self.graph_retriever.triples),
+                )
+            except Exception as e:
+                self.logger.error("Failed to initialize GraphRetriever: %s", e, exc_info=True)
+                self.graph_retriever = None
 
         try:
-            if self.vector_store and self.triplet_retriever:
-                self.hybrid = HybridOrchestrator(self.vector_store, self.triplet_retriever)
+            if self.vector_store:
+                self.hybrid = HybridOrchestrator(self.vector_store, self.graph_retriever)
                 self.logger.info("HybridOrchestrator initialized successfully")
             else:
                 self.hybrid = None
-                if not self.vector_store:
-                    self.logger.warning("HybridOrchestrator NOT initialized: VectorStore is None")
-                if not self.triplet_retriever:
-                    if UIT_DISABLE_TRIPLET_RAG:
-                        self.logger.info("HybridOrchestrator NOT initialized: TripletRetriever disabled, will use vector-only mode")
-                    else:
-                        self.logger.warning("HybridOrchestrator NOT initialized: TripletRetriever is None")
+                self.logger.warning("HybridOrchestrator NOT initialized: VectorStore is None")
         except Exception as e:
             self.logger.error("Failed to initialize HybridOrchestrator: %s", e, exc_info=True)
             self.hybrid = None
@@ -253,7 +258,7 @@ class ChatPipeline:
         if not self.hybrid:
             self.logger.error("[PIPELINE] HybridOrchestrator is None, cannot proceed")
             raise RuntimeError(
-                "HybridOrchestrator not initialized. This likely means TripletRetriever or VectorStore failed to initialize. "
+                "HybridOrchestrator not initialized. This likely means VectorStore failed to initialize. "
                 "Check that: (1) vector_store.db exists, (2) graph NLP models are available, "
                 "(3) UIT_DISABLE_TRIPLET_RAG environment variable is not set if you need triplet retrieval."
             )
@@ -431,7 +436,14 @@ class ChatPipeline:
             context = "\n".join(context_lines)
         else:
             context = ""
-        
+
+        # Path 2 of the dual-path pipeline: fold in knowledge-graph facts grounded to
+        # the selected article, so relationally-connected evidence (computed above but
+        # previously only logged for debug) actually reaches the LLM's context.
+        graph_facts_block = self._graph_facts_block(graph_hits, selected_article_id)
+        if graph_facts_block:
+            context = f"{context}\n\n{graph_facts_block}".strip()
+
         # Enrich ontology facts chỉ theo grounding
         ontology_facts = []
         if selected_article_id:
@@ -574,7 +586,7 @@ class ChatPipeline:
         if not self.hybrid:
             self.logger.error("[PIPELINE] HybridOrchestrator is None, cannot proceed")
             raise RuntimeError(
-                "HybridOrchestrator not initialized. This likely means TripletRetriever or VectorStore failed to initialize. "
+                "HybridOrchestrator not initialized. This likely means VectorStore failed to initialize. "
                 "Check that: (1) vector_store.db exists, (2) graph NLP models are available, "
                 "(3) UIT_DISABLE_TRIPLET_RAG environment variable is not set if you need triplet retrieval."
             )
@@ -814,6 +826,24 @@ class ChatPipeline:
                 "answer_style": "helpful_out_of_scope",
             },
         }
+
+    def _graph_facts_block(self, graph_hits: List[Dict[str, Any]], article_id: Optional[str]) -> str:
+        """Render Path-2 (knowledge-graph) triples grounded to `article_id` as a
+        'GRAPH FACTS:' block, deduplicated and in verbalized subject/predicate/object form."""
+        if not article_id or not graph_hits:
+            return ""
+        facts: List[str] = []
+        seen: set[str] = set()
+        for gh in graph_hits:
+            if gh.get("article_id") != article_id:
+                continue
+            fact = f"{gh.get('subject','')} — {gh.get('predicate','')} — {gh.get('object','')}"
+            if fact not in seen:
+                seen.add(fact)
+                facts.append(fact)
+        if not facts:
+            return ""
+        return "GRAPH FACTS:\n" + "\n".join(facts)
 
     def _fetch_ontology_facts(self, chunks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         facts: List[Dict[str, Any]] = []

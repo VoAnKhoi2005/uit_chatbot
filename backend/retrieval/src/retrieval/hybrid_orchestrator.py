@@ -1,98 +1,194 @@
-from __future__ import annotations
-import math
-from dataclasses import dataclass
-from typing import List, Dict, Optional, Tuple, Any
+"""Dual-Path Graph Retrieval orchestrator.
 
-from retrieval.src.retrieval.triplet_retriever import TripletRetriever
+Queries the chunk-level index (Path 1) and the knowledge graph (Path 2) in
+parallel and merges their outputs into a single ranked context, so the LLM
+gets evidence that is both textually precise and relationally complete.
+
+Path 1 (text): ``ChunkVectorStore.search`` already fuses BM25 lexical scores
+with dense cosine-similarity scores (min-max normalized, weighted linear
+sum) - see ``retrieval.text_rag.vector_store``.
+
+Path 2 (graph): seed anchor nodes via keyword + semantic search over the
+knowledge graph, expand outward a bounded number of hops to recover
+relationally-connected facts, then map the collected triples back to their
+source text units so citations stay traceable to the regulation text.
+
+Because chunk-level relevance (Path 1) and graph proximity to a seed node
+(Path 2) are scored on fundamentally different, non-comparable bases, the
+two ranked lists are fused with Reciprocal Rank Fusion (RRF) rather than a
+raw weighted sum - this keeps whichever path happens to produce larger
+score magnitudes from silently dominating the merged ranking.
+"""
+
+from __future__ import annotations
+
+import unicodedata
+from collections import defaultdict
+from typing import Any, Dict, List, Optional, Tuple
+
+from retrieval.src.retrieval.graph_retriever import GraphRetriever
 from retrieval.text_rag.vector_store import ChunkVectorStore
 
 
-@dataclass
-class Evidence:
-    source: str  # "text" or "graph"
-    score: float  # normalized 0..1
-    article_id: Optional[str]
-    payload: dict
-    text: str
+def _normalize(text: str) -> str:
+    text = (text or "").lower()
+    text = unicodedata.normalize("NFD", text)
+    text = "".join(c for c in text if unicodedata.category(c) != "Mn")
+    return " ".join(text.split())
 
-def normalize_score(source: str, score: float) -> float:
-    """
-    Normalize score to [0,1] for fusion.
-    Text: cosine similarity [-1,1] or [0,1].
-    Graph: TODO - calibrate if needed.
-    """
-    if source == "text":
-        # Assume cosine [-1,1] or [0,1]
-        if score < 0:
-            return (score + 1) / 2
-        return min(max(score, 0.0), 1.0)
-    elif source == "graph":
-        # TODO: calibrate graph score if needed
-        return min(max(score, 0.0), 1.0)
-    return 0.0
 
 class HybridOrchestrator:
-    def __init__(self, text_store: ChunkVectorStore, triplet_retriever: TripletRetriever):
+    def __init__(
+        self,
+        text_store: ChunkVectorStore,
+        graph_retriever: Optional[GraphRetriever],
+        alpha: float = 0.5,
+        rrf_k: int = 60,
+    ):
         self.text_store = text_store
-        self.triplet_retriever = triplet_retriever
+        self.graph_retriever = graph_retriever
+        # Weight given to the lexical (BM25) signal within Path 1; passed
+        # through to ChunkVectorStore.search's min-max-normalized fusion.
+        self.alpha = alpha
+        # RRF damping constant; higher values flatten the influence of rank.
+        self.rrf_k = rrf_k
 
-    def hybrid_retrieve(self, question: str, text_top_k=8, graph_top_k=8) -> Tuple[List[dict], List[dict]]:
-        text_hits = self.text_store.search(question, top_k=text_top_k)
-        graph_hits = self.triplet_retriever.search_triplets_from_question(question, top_k=graph_top_k)
-        return text_hits, graph_hits
+    # ------------------------------------------------------------------
+    # Path 1: hybrid text retrieval (BM25 + dense, already fused in the store)
+    # ------------------------------------------------------------------
 
-    def fuse_hits(self, text_hits: List[dict], graph_hits: List[dict]) -> List[Evidence]:
-        evidence = []
-        for hit in text_hits:
-            evidence.append(Evidence(
-                source="text",
-                score=normalize_score("text", hit.get("score", 0)),
-                article_id=hit.get("article_id"),
-                payload={
-                    **hit,
-                    "doc_id": hit.get("doc_id"),
-                    "doc_title": hit.get("doc_title"),
-                    "so_hieu": hit.get("so_hieu"),
-                },
-                text=hit.get("text", "")
-            ))
-        for hit in graph_hits:
-            # Verbalize triplet
-            s = hit.get("subject", "")
-            p = hit.get("predicate", "")
-            o = hit.get("object", "")
-            triplet_text = f"{s} — {p} — {o}"
-            evidence.append(Evidence(
-                source="graph",
-                score=normalize_score("graph", hit.get("score", 0)),
-                article_id=hit.get("article_id"),
-                payload=hit,
-                text=triplet_text
-            ))
-        return evidence
+    def retrieve_text(self, question: str, top_k: int = 8) -> List[dict]:
+        return self.text_store.search(question, top_k=top_k, alpha=self.alpha)
 
-    def rerank_evidence(self, evidence: List[Evidence], question: str) -> List[Evidence]:
-        # Simple rerank: lexical overlap + type bonus
-        def lexical_overlap(q, t):
-            q_set = set(q.lower().split())
-            t_set = set(t.lower().split())
-            return len(q_set & t_set) / (len(q_set) + 1e-6)
-        reranked = []
-        for ev in evidence:
-            overlap = lexical_overlap(question, ev.text)
-            type_bonus = 0.1 if ev.source == "graph" else 0.0
-            new_score = 0.7 * ev.score + 0.2 * overlap + 0.1 * type_bonus
-            reranked.append(ev.__class__(**{**ev.__dict__, "score": new_score}))
-        reranked.sort(key=lambda x: x.score, reverse=True)
-        return reranked
+    # ------------------------------------------------------------------
+    # Path 2: knowledge-graph retrieval (seed -> expand -> map to text)
+    # ------------------------------------------------------------------
 
-    def select_grounding(self, evidence: List[Evidence]) -> Dict[str, Any]:
-        # Group by article_id, sum score
-        from collections import defaultdict
-        score_by_article = defaultdict(float)
-        for ev in evidence:
-            if ev.article_id:
-                score_by_article[ev.article_id] += ev.score
+    def retrieve_graph(self, question: str, top_k: int = 8, seed_top_k: int = 5, max_hops: int = 2) -> List[dict]:
+        if self.graph_retriever is None:
+            return []
+        candidate_k = max(top_k * 3, 15)
+        raw_triples = self.graph_retriever.retrieve(
+            question, candidate_k=candidate_k, seed_top_k=seed_top_k, max_hops=max_hops
+        )
+        mapped = self._map_triples_to_text(raw_triples)
+        mapped.sort(key=lambda h: h["score"], reverse=True)
+        return mapped[:top_k]
+
+    def _map_triples_to_text(self, triples: List[dict]) -> List[dict]:
+        """Map collected triples back to their source text units, preserving traceability."""
+        lookup = getattr(self.text_store, "get_chunks_by_so_hieu", None)
+        results = []
+        for t in triples:
+            so_hieu = t.get("document_number")
+            chunks = lookup(so_hieu) if (lookup and so_hieu) else []
+            best_chunk = self._best_matching_chunk(chunks, t.get("subject", ""), t.get("object", ""))
+            entry = {
+                "subject": t.get("subject"),
+                "predicate": t.get("predicate"),
+                "object": t.get("object"),
+                "score": t.get("score", 0.0),
+                "so_hieu": so_hieu,
+                "document_id": t.get("document_id"),
+            }
+            if best_chunk:
+                entry.update(
+                    {
+                        "chunk_id": best_chunk.get("chunk_id"),
+                        "article_id": best_chunk.get("article_id"),
+                        "clause_id": best_chunk.get("clause_id"),
+                        "text": best_chunk.get("text", ""),
+                        "doc_id": best_chunk.get("doc_id"),
+                        "doc_title": best_chunk.get("doc_title"),
+                    }
+                )
+            else:
+                entry.update(
+                    {
+                        "chunk_id": None,
+                        "article_id": None,
+                        "clause_id": None,
+                        "text": "",
+                        "doc_id": None,
+                        "doc_title": None,
+                    }
+                )
+            results.append(entry)
+        return results
+
+    @staticmethod
+    def _best_matching_chunk(chunks: List[dict], subject: str, obj: str) -> Optional[dict]:
+        if not chunks:
+            return None
+        s_norm, o_norm = _normalize(subject), _normalize(obj)
+        best, best_score = None, -1
+        for c in chunks:
+            text_norm = _normalize(c.get("text", ""))
+            score = (1 if s_norm and s_norm in text_norm else 0) + (1 if o_norm and o_norm in text_norm else 0)
+            if score > best_score:
+                best, best_score = c, score
+        # Fall back to the document's first chunk when neither term is found verbatim,
+        # so the triple still carries a doc-level citation rather than none at all.
+        return best if best is not None else chunks[0]
+
+    # ------------------------------------------------------------------
+    # Fusion: Reciprocal Rank Fusion of the two ranked lists
+    # ------------------------------------------------------------------
+
+    @staticmethod
+    def _item_key(item: dict, source: str) -> Tuple:
+        if item.get("chunk_id"):
+            return ("chunk", item["chunk_id"])
+        if source == "graph":
+            return ("triple", item.get("subject"), item.get("predicate"), item.get("object"))
+        return ("text", item.get("article_id"), item.get("clause_id"), (item.get("text") or "")[:80])
+
+    def reciprocal_rank_fusion(self, text_hits: List[dict], graph_hits: List[dict]) -> List[dict]:
+        rrf_scores: Dict[Tuple, float] = defaultdict(float)
+        sources_by_key: Dict[Tuple, set] = defaultdict(set)
+        payload_by_key: Dict[Tuple, dict] = {}
+
+        for rank, item in enumerate(text_hits, start=1):
+            key = self._item_key(item, "text")
+            rrf_scores[key] += 1.0 / (self.rrf_k + rank)
+            sources_by_key[key].add("text")
+            payload_by_key.setdefault(key, {**item, "source": "text"})
+
+        for rank, item in enumerate(graph_hits, start=1):
+            key = self._item_key(item, "graph")
+            rrf_scores[key] += 1.0 / (self.rrf_k + rank)
+            sources_by_key[key].add("graph")
+            existing = payload_by_key.get(key)
+            if existing is None:
+                payload_by_key[key] = {**item, "source": "graph"}
+            else:
+                # Same underlying text unit reached via both paths: keep the text
+                # excerpt and attach the graph triple as a supporting fact.
+                existing.setdefault("graph_triples", []).append(
+                    {"subject": item.get("subject"), "predicate": item.get("predicate"), "object": item.get("object")}
+                )
+                existing["source"] = "text+graph"
+
+        fused = []
+        for key, score in rrf_scores.items():
+            payload = dict(payload_by_key[key])
+            payload["score"] = score
+            payload["rrf_score"] = score
+            payload["sources"] = sorted(sources_by_key[key])
+            fused.append(payload)
+        fused.sort(key=lambda x: x["rrf_score"], reverse=True)
+        return fused
+
+    # ------------------------------------------------------------------
+    # Grounding + context assembly
+    # ------------------------------------------------------------------
+
+    def select_grounding(self, fused: List[dict]) -> Dict[str, Any]:
+        score_by_article: Dict[str, float] = defaultdict(float)
+        for ev in fused:
+            aid = ev.get("article_id")
+            if aid:
+                score_by_article[aid] += ev.get("rrf_score", 0.0)
         if not score_by_article:
             return {"article_id": None, "dominance": 0.0, "candidates": []}
         sorted_items = sorted(score_by_article.items(), key=lambda x: x[1], reverse=True)
@@ -102,50 +198,47 @@ class HybridOrchestrator:
         return {
             "article_id": top_id,
             "dominance": dominance,
-            "candidates": [{"article_id": aid, "score": s} for aid, s in sorted_items]
+            "candidates": [{"article_id": aid, "score": s} for aid, s in sorted_items],
         }
 
-    def build_context(self, evidence: List[Evidence], article_id: Optional[str]) -> str:
-        # GRAPH FACTS
-        graph_facts = [ev.text for ev in evidence if ev.source == "graph" and ev.article_id == article_id]
-        # TEXT EXCERPTS
-        text_chunks = [ev.text for ev in evidence if ev.source == "text" and ev.article_id == article_id]
+    def build_context(self, fused: List[dict], article_id: Optional[str]) -> str:
+        graph_facts: List[str] = []
+        text_chunks: List[str] = []
+        for ev in fused:
+            if ev.get("article_id") != article_id:
+                continue
+            for t in ev.get("graph_triples", []) or []:
+                graph_facts.append(f"{t.get('subject','')} — {t.get('predicate','')} — {t.get('object','')}")
+            if ev.get("source") == "graph" and not ev.get("text"):
+                graph_facts.append(f"{ev.get('subject','')} — {ev.get('predicate','')} — {ev.get('object','')}")
+            if ev.get("text"):
+                text_chunks.append(ev["text"])
+
         context = ""
         if graph_facts:
-            context += "GRAPH FACTS:\n" + "\n".join(graph_facts) + "\n\n"
+            context += "GRAPH FACTS:\n" + "\n".join(dict.fromkeys(graph_facts)) + "\n\n"
         if text_chunks:
-            context += "TEXT EXCERPTS:\n" + "\n".join(text_chunks)
+            context += "TEXT EXCERPTS:\n" + "\n".join(dict.fromkeys(text_chunks))
         return context.strip()
 
-    def run(self, question: str, text_top_k=8, graph_top_k=8, debug: bool = False) -> Dict[str, Any]:
-        text_hits, graph_hits = self.hybrid_retrieve(question, text_top_k, graph_top_k)
-        evidence = self.fuse_hits(text_hits, graph_hits)
-        evidence = self.rerank_evidence(evidence, question)
-        grounding = self.select_grounding(evidence)
-        context = self.build_context(evidence, grounding["article_id"])
-        
-        # Convert evidence to dict with flattened payload fields
-        def evidence_to_dict(ev: Evidence) -> dict:
-            result = {
-                "source": ev.source,
-                "score": ev.score,
-                "article_id": ev.article_id,
-                "text": ev.text,
-                "clause_id": ev.payload.get("clause_id"),
-                "title": ev.payload.get("title") or ev.payload.get("metadata", {}).get("title"),
-                "doc_id": ev.payload.get("doc_id"),
-                "doc_title": ev.payload.get("doc_title"),
-                "so_hieu": ev.payload.get("so_hieu"),
-            }
-            return result
-        
-        result = {
+    # ------------------------------------------------------------------
+    # Entry point
+    # ------------------------------------------------------------------
+
+    def run(self, question: str, text_top_k: int = 8, graph_top_k: int = 8, debug: bool = False) -> Dict[str, Any]:
+        text_hits = self.retrieve_text(question, top_k=text_top_k)
+        graph_hits = self.retrieve_graph(question, top_k=graph_top_k)
+        fused = self.reciprocal_rank_fusion(text_hits, graph_hits)
+        grounding = self.select_grounding(fused)
+        context = self.build_context(fused, grounding["article_id"])
+
+        result: Dict[str, Any] = {
             "context": context,
             "grounding": grounding,
-            "top_evidence_for_debug": [evidence_to_dict(ev) for ev in evidence[:10]]
+            "top_evidence_for_debug": fused[:10],
         }
         if debug:
-            # Include additional debug info
             result["text_hits"] = text_hits[:5]
             result["graph_hits"] = graph_hits[:5]
+            result["fused_evidence"] = fused[:10]
         return result

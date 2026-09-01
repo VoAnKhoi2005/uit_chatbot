@@ -1,8 +1,8 @@
 import json
 from pathlib import Path
 
-from retrieval.text_rag.chunker import chunk_document
-from retrieval.text_rag.load_from_jsonl import iter_raw_docs
+from backend.retrieval.text_rag.chunker import chunk_document
+from backend.retrieval.text_rag.load_from_jsonl import iter_raw_docs
 
 
 def test_iter_raw_docs_and_chunking(tmp_path: Path) -> None:
