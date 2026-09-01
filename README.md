@@ -115,6 +115,14 @@ The last step pre-warms the knowledge-graph embedding cache (see
 to call the embedder for any unchanged node/triple text - only for what
 actually changed since the last rebuild.
 
+## Evaluation
+
+`eval/graphrag_pipeline/` is a RAGAS-based offline evaluation pipeline
+(collect -> judge -> report), adapted from an external SchemaGraph project.
+See its own [README](eval/graphrag_pipeline/README.md) for setup and usage.
+It's separate from the ad hoc scripts in `backend/retrieval/src/eval/` and
+`system_test/`.
+
 ## Environment variables
 
 Common runtime variables:

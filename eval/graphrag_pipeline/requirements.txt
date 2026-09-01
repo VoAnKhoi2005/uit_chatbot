@@ -1,0 +1,7 @@
+pydantic>=2
+python-dotenv
+ragas>=0.2
+langchain-openai
+sentence-transformers
+pytest
+pytest-asyncio

@@ -1,0 +1,24 @@
+[
+  {
+    "qa_id": "q1",
+    "type": "credit_limit",
+    "question": "Sinh viên được đăng ký tối đa bao nhiêu tín chỉ trong 1 học kỳ chính?",
+    "golden_answer": "Sinh viên được đăng ký từ 14 đến 24 tín chỉ mỗi học kỳ chính; sinh viên có điểm trung bình chung từ 8,0 trở lên được phép đăng ký tối đa 30 tín chỉ."
+  },
+  {
+    "qa_id": "q2",
+    "type": "tuition",
+    "question": "Sinh viên phải nộp học phí khi nào?",
+    "golden_answer": "Sinh viên nộp học phí theo thời hạn quy định của trường cho từng học kỳ, thường vào đầu học kỳ."
+  },
+  {
+    "qa_id": "q3",
+    "type": "academic_warning",
+    "question": "Thế nào là cảnh báo học vụ?"
+  },
+  {
+    "qa_id": "q4",
+    "type": "out_of_scope",
+    "question": "Hôm nay trời có mưa không?"
+  }
+]
